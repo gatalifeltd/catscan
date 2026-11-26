@@ -146,7 +146,7 @@ test("expect: review fixes (invalid globs, locale, NFC, lone surrogates, stdin)"
   const bad = (text, re, file = "x.yaml") => assert.throws(() => expect.parse(text, file), (e) => e.code === "invalid-expect-file" && re.test(e.message));
   bad('shots:\n  "[z-a].png": { present: [A] }\n', /not a valid glob/);
   bad("locale: de de\nshots: {}\n", /BCP 47/);
-  bad(JSON.stringify({ shots: { "a.png": { present: ["\ud800"] } } }).replace("\\ud800", "\\ud800"), /not valid Unicode/, "x.json");
+  bad(JSON.stringify({ shots: { "a.png": { present: ["\ud800"] } } }), /not valid Unicode/, "x.json");
   const e = expect.parse("shots:\n  \u00dc.png: { present: [A] }\n  \"a]*.png\": { present: [B] }\n", "x.yaml");
   assert.deepEqual(expect.checksFor(e, expect.relativeTo("d", "d/U\u0308.png", true)).present, ["A"]);
   assert.deepEqual(expect.checksFor(e, "a]1.png").present, ["B"]);

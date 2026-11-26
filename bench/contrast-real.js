@@ -47,7 +47,7 @@ function images(dir) {
 function identity(rel) {
   const parts = rel.split(path.sep);
   const locale = parts[parts.length - 2];
-  const name = parts[parts.length - 1].replace(/\.\w+$/, "").replace(/^\d+-/, "").replace(new RegExp(`(^|-)${locale.replace(/[-]/g, "\\-")}(-|$)`), "$1");
+  const name = parts[parts.length - 1].replace(/\.\w+$/, "").replace(/^\d+-/, "").replace(new RegExp(`(^|-)${locale.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&")}(-|$)`), "$1");
   return [...parts.slice(0, -2), name].join("/");
 }
 const half = (rel) => (crypto.createHash("sha256").update(identity(rel)).digest()[0] % 2 === 0 ? "dev" : "held_out");

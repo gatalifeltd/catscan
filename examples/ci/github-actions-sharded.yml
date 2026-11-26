@@ -2,7 +2,7 @@
 #   1. `npm ci && npm run screenshots -- --device ... --locales ...`: the step that makes one shard's screenshots;
 #   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
 #   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
-# First green run without expectations: npx @catscan/cli@1.0.1 check shots --present "<text every screen shows>" --format github
+# First green run without expectations: npx @catscan/cli@1.0.2 check shots --present "<text every screen shows>" --format github
 # Shards get no expectation flags: the merge job alone checks coverage, so a shard that never ran shows as missing.
 # --device tags each shard's results; --expect-devices on the merge names every device, as --expect-locales-from names every locale.
 # Every job pins one catscan version: a version before the device axis cannot read these results files (docs/results.md#device-axis).
@@ -30,10 +30,10 @@ jobs:
       - run: npm ci && npm run screenshots -- --device "${{ matrix.device }}" --locales "${{ matrix.locales }}"
       # Only if you ship a locale catscan reads with Tesseract, such as el, he, hr or et (catscan languages lists them; the doctor line fails with the install command until this runs; install options: https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/tesseract.md):
       # - run: brew install tesseract tesseract-lang
-      - run: npx @catscan/cli@1.0.1 doctor --expect-locales "${{ matrix.locales }}"
+      - run: npx @catscan/cli@1.0.2 doctor --expect-locales "${{ matrix.locales }}"
       # Approved legacy findings (docs/results.md#known-findings): add --known catscan-known.json here and to results merge below; only new findings fail
       # Thresholds (docs/cli.md#severity-and-certainty): only findings at or above both levels fail the job; default: every finding. On a finding command: --min-severity major --min-certainty medium; pass the same flags here and to results merge below
-      - run: npx @catscan/cli@1.0.1 check shots --device "${{ matrix.device }}" --expect checks.yaml --format github --results "shard-${{ matrix.group }}-${{ matrix.device }}.json"
+      - run: npx @catscan/cli@1.0.2 check shots --device "${{ matrix.device }}" --expect checks.yaml --format github --results "shard-${{ matrix.group }}-${{ matrix.device }}.json"
       - if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with: { name: "shard-${{ matrix.group }}-${{ matrix.device }}", path: "shard-${{ matrix.group }}-${{ matrix.device }}.json", retention-days: 7 }
@@ -50,7 +50,7 @@ jobs:
       - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
         with: { pattern: "shard-*", merge-multiple: true }
       # With thresholds on the shards, pass the same --min-severity and --min-certainty here: the merge recomputes each gate.
-      - run: npx @catscan/cli@1.0.1 results merge shard-*.json --expect-devices ios,android --expect-locales-from locales --out catscan-results.json
+      - run: npx @catscan/cli@1.0.2 results merge shard-*.json --expect-devices ios,android --expect-locales-from locales --out catscan-results.json
       - if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with: { name: catscan, path: catscan-results.json, retention-days: 7 }

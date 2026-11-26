@@ -84,7 +84,7 @@ function substitutions(shell) {
     if (c === "\n" && !quote && heredocs.length) {
       outer += c;
       for (const word of heredocs.splice(0)) {
-        const re = new RegExp(`\\n\\t*${word.replace(/[.-]/g, "\\$&")}[ \\t]*(?=\\n|$)`, "g");
+        const re = new RegExp(`\\n\\t*${word.replace(/[.*+?^${}()|[\]\\-]/g, "\\$&")}[ \\t]*(?=\\n|$)`, "g");
         re.lastIndex = i;
         const m = re.exec(shell);
         const end = m ? m.index : shell.length;

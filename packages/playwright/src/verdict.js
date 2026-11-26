@@ -15,7 +15,13 @@ const ANCHORS = new Set([
 ]);
 const anchorFor = (code) => (ANCHORS.has(code) ? code : "other-errors");
 
-const trimDot = (s) => String(s ?? "").trim().replace(/\.+$/, "");
+// A loop, not /\.+$/: that regex is quadratic on a long run of dots followed by another character (TODO-109).
+const trimDot = (s) => {
+  const t = String(s ?? "").trim();
+  let n = t.length;
+  while (n > 0 && t[n - 1] === ".") n--;
+  return t.slice(0, n);
+};
 
 /** A `CatscanError` in the D18 shape. `hint` is the one command or option that fixes it. */
 function fail(code, what, hint, Cls = CatscanError) {

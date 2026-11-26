@@ -481,3 +481,16 @@ test("thresholds: minSeverity and minCertainty validated; a below-threshold find
   h = harness({ respond: respond([]) });
   await assert.rejects(h.matchers.toShowText.call(h.ctx(), h.page, "x", { readyText: false, minSeverity: "major" }), (e) => e.code === "playwright-usage");
 });
+
+// Value: protects=a long run of dots in an error message cannot stall the matcher (CodeQL js/polynomial-redos);
+// fails_when=trimDot goes back to /\.+$/, which is quadratic on dots followed by another character; why_new=no test
+// timed it (TODO-109); seam=none; no_claim=other regexes in the package
+test("an error message with a long run of dots is trimmed in linear time (TODO-109)", () => {
+  const message = `${".".repeat(100000)}x...`;
+  const t0 = process.hrtime.bigint();
+  const r = classify({ verdict: "error", error: { code: "internal", message, hint: "rerun." } });
+  const ms = Number(process.hrtime.bigint() - t0) / 1e6;
+  assert.equal(r.kind, "throw");
+  assert.ok(r.error.message.includes(`${".".repeat(100000)}x. Fix: rerun. See `), r.error.message.slice(-120));
+  assert.ok(ms < 500, `classify took ${ms} ms`);
+});

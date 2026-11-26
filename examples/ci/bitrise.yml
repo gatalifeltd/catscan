@@ -3,7 +3,7 @@
 #   1. `npm ci && npm run screenshots`: the step that makes your screenshots;
 #   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
 #   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
-# First green run without expectations: npx @catscan/cli@1.0.1 check shots --present "<text every screen shows>" --junit catscan.xml
+# First green run without expectations: npx @catscan/cli@1.0.2 check shots --present "<text every screen shows>" --junit catscan.xml
 # catscan needs Node 22 or newer on an Apple silicon Mac. The reports hold your screenshots' text: keep them short-lived.
 format_version: "13"
 workflows:
@@ -19,9 +19,9 @@ workflows:
                 npm ci && npm run screenshots
                 # Only if you ship a locale catscan reads with Tesseract, such as el, he, hr or et (catscan languages lists them; the doctor line fails with the install command until this runs; install options: https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/tesseract.md):
                 # brew install tesseract tesseract-lang
-                npx @catscan/cli@1.0.1 doctor --expect-locales-from locales
+                npx @catscan/cli@1.0.2 doctor --expect-locales-from locales
                 mkdir -p "$BITRISE_TEST_RESULT_DIR/catscan"
-                npx @catscan/cli@1.0.1 check shots --expect checks.yaml --expect-locales-from locales --junit "$BITRISE_TEST_RESULT_DIR/catscan/catscan.xml" --results "$BITRISE_DEPLOY_DIR/catscan-results.json"
+                npx @catscan/cli@1.0.2 check shots --expect checks.yaml --expect-locales-from locales --junit "$BITRISE_TEST_RESULT_DIR/catscan/catscan.xml" --results "$BITRISE_DEPLOY_DIR/catscan-results.json"
       - custom-test-results-export@1:
           is_always_run: true
           inputs:

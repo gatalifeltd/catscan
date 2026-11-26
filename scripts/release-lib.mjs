@@ -60,6 +60,8 @@ export const TEXT_CARRIERS = [
   { files: "docs/public-release.md", re: /^(\| Lab version \| )([^\s(]+)/gm, say: "Lab version row starts with ", lab: true, history: true },
 ];
 const SEMVER = /^\d+\.\d+\.\d+$/;
+// VERSION is read from disk and may hold any text, so a version inside a regex is escaped whole (TODO-109).
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 /** The repo-relative files a carrier pattern names, sorted; `*` is one path segment. */
 export function carrierFiles(root, pattern) {
@@ -187,7 +189,7 @@ export function planBump(root, to, { from = null, note = "see CHANGELOG.md", ren
     let out;
     if (JSON.stringify(before, null, 2) + "\n" === text) out = JSON.stringify(want, null, 2) + "\n";
     else {
-      const esc = old.replace(/\./g, "\\.");
+      const esc = escapeRe(old);
       out = text.replace(new RegExp(`("(?:version|@catscan/[^"]+)"\\s*:\\s*")${esc}(")`, "g"), `$1${to}$2`);
       if (JSON.stringify(JSON.parse(out)) !== JSON.stringify(want)) { problems.push(`${c.file}: cannot move its versions without reformatting it`); continue; }
     }
@@ -213,7 +215,7 @@ export function planBump(root, to, { from = null, note = "see CHANGELOG.md", ren
 
   // D5: an empty heading for the new release, so docs:check passes until /ship's CHANGELOG step fills it.
   if (!changelog.includes(`## [${to}]`)) {
-    const oldHead = new RegExp(`^## \\[${old.replace(/\./g, "\\.")}\\]`, "m");
+    const oldHead = new RegExp(`^## \\[${escapeRe(old)}\\]`, "m");
     if (renumber && oldHead.test(changelog)) writes["CHANGELOG.md"] = changelog.replace(oldHead, `## [${to}]`);
     else {
       const at = changelog.search(/^## \[\d/m);

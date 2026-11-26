@@ -240,7 +240,7 @@ The file:
 {
   "known_schema": 1,
   "key_algo": 1,
-  "catscan": "1.0.1",
+  "catscan": "1.0.2",
   "axes": [],
   "reader": { "engine": "vision-accurate-rev3", "vision_revision": 3, "macos": "15" },
   "scope": { "truncated": { "flags": ["--reasons ellipsis,overflow"], "allow": null } },

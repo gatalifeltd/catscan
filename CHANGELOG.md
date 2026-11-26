@@ -2,6 +2,13 @@
 
 All notable changes to catscan, newest first. catscan was developed privately before its first public version; earlier versions are not listed.
 
+## [1.0.2] - 2026-11-26
+
+### Fixed
+- `@catscan/playwright`: an error message that holds a very long run of dots followed by other text no longer stalls the test run while catscan formats it; trailing dots are now trimmed in linear time.
+- Release tooling: a malformed `VERSION` file is reported as a problem instead of crashing the version bump.
+- Benchmark scripts escape locale names, heredoc words and Android string backslashes correctly.
+
 ## [1.0.1] - 2026-11-26
 
 ### Docs

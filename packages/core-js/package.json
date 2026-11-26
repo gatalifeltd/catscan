@@ -1,6 +1,6 @@
 {
   "name": "@catscan/core-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared Node layer for catscan: binary launcher, serve client, renderers, exit code.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/core-js" },
@@ -16,6 +16,6 @@
     "yaml": "2.9.1"
   },
   "optionalDependencies": {
-    "@catscan/cli-darwin-arm64": "1.0.1"
+    "@catscan/cli-darwin-arm64": "1.0.2"
   }
 }

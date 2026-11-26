@@ -2,6 +2,26 @@
   "schema": 1,
   "releases": [
     {
+      "version": "1.0.2",
+      "state": {
+        "protocol": 23,
+        "results_schema": [
+          1,
+          2
+        ],
+        "doctor_schema": "https://catscan.dev/schema/doctor-1.json",
+        "exit_codes": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "changes": []
+    },
+    {
       "version": "1.0.1",
       "state": {
         "protocol": 23,

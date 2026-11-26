@@ -78,7 +78,7 @@ npx catscan truncated shots/de --locale de --boxes shots/de --report catscan-rep
 
 The report is one offline page: a locale x screen matrix where a missing screenshot shows as `missing`, and the failing screenshots with their boxes drawn ([`docs/report.md`](docs/report.md)). Next: the recipe for your stack in [`docs/start-here.md`](docs/start-here.md).
 
-![catscan HTML report: coverage matrix with a missing locale, failed screenshots with boxes](docs/img/report.png)
+![catscan HTML report: a 5-screen by 5-locale coverage matrix with severity badges and one missing cell, filters, failed screenshots with boxes](docs/img/report.png)
 
 ## Entry points
 

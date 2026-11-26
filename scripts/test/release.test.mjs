@@ -490,6 +490,22 @@ labTest("bump: every real carrier moves to the new version, versions agrees, and
   fs.rmSync(root, { recursive: true, force: true });
 });
 
+// Value: protects=a VERSION file holding regex characters is a named problem, never a SyntaxError (D11; CodeQL
+// js/regex-injection); fails_when=the CHANGELOG heading regex is built from an unescaped version; why_new=only dots
+// were escaped (TODO-109); seam=none; no_claim=none beyond protects
+labTest("bump: a VERSION with regex characters is a named problem, not a thrown SyntaxError (TODO-109)", () => {
+  const root = carrierRepo();
+  fs.writeFileSync(path.join(root, "VERSION"), "1.0.(\n");
+  // A hand-formatted manifest at the same version takes the text-edit path, whose regex holds the version too.
+  const m = JSON.parse(readIn(root, "package.json"));
+  m.version = "1.0.(";
+  fs.writeFileSync(path.join(root, "package.json"), JSON.stringify(m) + "\n");
+  const r = planBump(root, "9.9.9");
+  assert.deepEqual(r.writes, {});
+  assert.ok(r.problems.length > 0);
+  fs.rmSync(root, { recursive: true, force: true });
+});
+
 // Value: protects=a bump writes nothing and names the file when a carrier is stale or has nothing to replace;
 // fails_when=bump half-writes or skips an unmatched carrier silently; why_new=new command (TODO-094); seam=none;
 // no_claim=none beyond protects

@@ -55,7 +55,7 @@ function writeCatalog(dir, fmt, strings) {
     return path.join(dir, "en.lproj/Localizable.strings");
   }
   if (fmt === "android") {
-    const x = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/'/g, "\\'");
+    const x = (s) => s.replace(/\\/g, "\\\\").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/'/g, "\\'");
     fs.mkdirSync(path.join(dir, "values"), { recursive: true });
     fs.writeFileSync(path.join(dir, "values/strings.xml"), `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n${Object.entries(strings).map(([k, v]) => `    <string name="${k}">${x(v)}</string>`).join("\n")}\n</resources>\n`);
     return path.join(dir, "values/strings.xml");

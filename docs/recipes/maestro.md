@@ -2,7 +2,7 @@
 
 Maestro checks screens through the accessibility tree. Text drawn by a game engine, a canvas or a web view without accessibility labels is invisible to `assertVisible`, so a screen can show a raw key or the wrong language and still pass. catscan reads the screenshots your flows already take, with Apple Vision on the Mac, and fails on raw keys, untranslated strings, missing text and cut-off labels.
 
-Maestro's `runScript` sandbox cannot start processes, so catscan runs next to the flow, not inside a step. Tested with catscan 1.0.1, Maestro 2.6.0, Xcode 27.2 (iOS 27.2 simulator) and an Android 16 QPR2 emulator (API 36.1); [`results/maestro-e2e/`](../../results/maestro-e2e/) has every version of the last end-to-end run.
+Maestro's `runScript` sandbox cannot start processes, so catscan runs next to the flow, not inside a step. Tested with catscan 1.0.2, Maestro 2.6.0, Xcode 27.2 (iOS 27.2 simulator) and an Android 16 QPR2 emulator (API 36.1); [`results/maestro-e2e/`](../../results/maestro-e2e/) has every version of the last end-to-end run.
 
 ## 0. First verdict (one minute)
 
