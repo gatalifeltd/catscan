@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shop strings -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">Shopkeeper</string>
+    <string name="shop_title">Shop</string>
+    <string name="welcome">Welcome, <xliff:g id="name" example="Ana">%1$s</xliff:g>!</string>
+    <string name="apostrophe">Don\'t miss \@deals or \?</string>
+    <string name="entities">Terms &amp; conditions &#169;</string>
+    <string name="markup">Read the <b>terms</b> now</string>
+    <string name="cdata"><![CDATA[Tap <i>here</i> to start]]></string>
+    <string name="quoted">"  Keep spaces  "</string>
+    <string name="multiline">
+        Line one
+        continues
+    </string>
+    <string name="percent" formatted="false">100% done</string>
+    <string name="ref">@string/shop_title</string>
+    <string name="empty"></string>
+    <string name="selfclosed"/>
+    <plurals name="items">
+        <item quantity="one">%d item</item>
+        <item quantity="other">%d items</item>
+    </plurals>
+    <string-array name="sizes">
+        <item>Small</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="codes" translatable="false">
+        <item>XS</item>
+    </string-array>
+</resources>

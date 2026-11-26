@@ -1,0 +1,253 @@
+{
+  "locale": "et",
+  "icu_locale": "et",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Venemaa",
+      "kind": "region"
+    },
+    {
+      "text": "Mehhiko",
+      "kind": "region"
+    },
+    {
+      "text": "Taiwan",
+      "kind": "region"
+    },
+    {
+      "text": "Šveits",
+      "kind": "region"
+    },
+    {
+      "text": "Hongkongi erihalduspiirkond",
+      "kind": "region"
+    },
+    {
+      "text": "Saudi Araabia",
+      "kind": "region"
+    },
+    {
+      "text": "Austraalia",
+      "kind": "region"
+    },
+    {
+      "text": "Iisrael",
+      "kind": "region"
+    },
+    {
+      "text": "Portugal",
+      "kind": "region"
+    },
+    {
+      "text": "Soome",
+      "kind": "region"
+    },
+    {
+      "text": "Holland",
+      "kind": "region"
+    },
+    {
+      "text": "Kanada",
+      "kind": "region"
+    },
+    {
+      "text": "poola",
+      "kind": "language"
+    },
+    {
+      "text": "serbia",
+      "kind": "language"
+    },
+    {
+      "text": "norra",
+      "kind": "language"
+    },
+    {
+      "text": "jaapani",
+      "kind": "language"
+    },
+    {
+      "text": "saksa",
+      "kind": "language"
+    },
+    {
+      "text": "taani",
+      "kind": "language"
+    },
+    {
+      "text": "pärsia",
+      "kind": "language"
+    },
+    {
+      "text": "malai",
+      "kind": "language"
+    },
+    {
+      "text": "ungari",
+      "kind": "language"
+    },
+    {
+      "text": "kreeka",
+      "kind": "language"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "India ruupia",
+      "kind": "currency"
+    },
+    {
+      "text": "Indoneesia ruupia",
+      "kind": "currency"
+    },
+    {
+      "text": "Türgi liir",
+      "kind": "currency"
+    },
+    {
+      "text": "Lõuna-Korea vonn",
+      "kind": "currency"
+    },
+    {
+      "text": "USA dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "august",
+      "kind": "month"
+    },
+    {
+      "text": "juuni",
+      "kind": "month"
+    },
+    {
+      "text": "märts",
+      "kind": "month"
+    },
+    {
+      "text": "september",
+      "kind": "month"
+    },
+    {
+      "text": "kolmapäev",
+      "kind": "weekday"
+    },
+    {
+      "text": "teisipäev",
+      "kind": "weekday"
+    },
+    {
+      "text": "pühapäev",
+      "kind": "weekday"
+    },
+    {
+      "text": "ajavöönd",
+      "kind": "field"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "kvartal",
+      "kind": "field"
+    },
+    {
+      "text": "enne/pärast lõunat",
+      "kind": "field"
+    },
+    {
+      "text": "aasta",
+      "kind": "field"
+    },
+    {
+      "text": "1 tunni pärast",
+      "kind": "relative"
+    },
+    {
+      "text": "5 sekundi eest",
+      "kind": "relative"
+    },
+    {
+      "text": "järgmine nädal",
+      "kind": "relative"
+    },
+    {
+      "text": "3 sekundi pärast",
+      "kind": "relative"
+    },
+    {
+      "text": "3 nädala pärast",
+      "kind": "relative"
+    },
+    {
+      "text": "eelmine kuu",
+      "kind": "relative"
+    },
+    {
+      "text": "eelmine nädal",
+      "kind": "relative"
+    },
+    {
+      "text": "3 tunni pärast",
+      "kind": "relative"
+    },
+    {
+      "text": "1 sekundi pärast",
+      "kind": "relative"
+    },
+    {
+      "text": "1 tunni eest",
+      "kind": "relative"
+    },
+    {
+      "text": "2 megabaiti",
+      "kind": "unit"
+    },
+    {
+      "text": "5 protsenti",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilomeetrit tunnis",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabaiti",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogrammi",
+      "kind": "unit"
+    },
+    {
+      "text": "5 meetrit",
+      "kind": "unit"
+    },
+    {
+      "text": "5 liitrit",
+      "kind": "unit"
+    },
+    {
+      "text": "2 nädalat",
+      "kind": "unit"
+    },
+    {
+      "text": "reede, 19. juuli 2024",
+      "kind": "date"
+    },
+    {
+      "text": "reede, 6. november 2026",
+      "kind": "date"
+    }
+  ]
+}

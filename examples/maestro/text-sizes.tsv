@@ -1,0 +1,27 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 GATALIFE LTD
+# The one label -> setting mapping. run-all.sh reads it; docs/recipes/large-text.md and the Playwright
+# example are tested against it. Columns (tab-separated): label, platform (ios, android, web), value: iOS
+# "xcrun simctl ui <udid> content_size <value>", Android "adb shell settings put system font_scale <value>",
+# web page zoom. A label with no row for a platform has no setting there.
+label	platform	value
+default	ios	large
+default	android	1.0
+default	web	100%
+large	ios	accessibility-extra-extra-extra-large
+large	android	2.0
+large	web	200%
+xl	ios	extra-large
+xxl	ios	extra-extra-large
+xxxl	ios	extra-extra-extra-large
+ax1	ios	accessibility-medium
+ax2	ios	accessibility-large
+ax3	ios	accessibility-extra-large
+ax4	ios	accessibility-extra-extra-large
+ax5	ios	accessibility-extra-extra-extra-large
+fs1.3	android	1.3
+fs1.5	android	1.5
+fs1.8	android	1.8
+fs2.0	android	2.0
+zoom150	web	150%
+zoom200	web	200%

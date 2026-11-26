@@ -1,0 +1,253 @@
+{
+  "locale": "ko",
+  "icu_locale": "ko",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "아르헨티나",
+      "kind": "region"
+    },
+    {
+      "text": "아일랜드",
+      "kind": "region"
+    },
+    {
+      "text": "에스토니아",
+      "kind": "region"
+    },
+    {
+      "text": "튀르키예",
+      "kind": "region"
+    },
+    {
+      "text": "일본",
+      "kind": "region"
+    },
+    {
+      "text": "이탈리아",
+      "kind": "region"
+    },
+    {
+      "text": "우크라이나",
+      "kind": "region"
+    },
+    {
+      "text": "체코",
+      "kind": "region"
+    },
+    {
+      "text": "슬로바키아",
+      "kind": "region"
+    },
+    {
+      "text": "세르비아",
+      "kind": "region"
+    },
+    {
+      "text": "포르투갈",
+      "kind": "region"
+    },
+    {
+      "text": "그리스",
+      "kind": "region"
+    },
+    {
+      "text": "영어",
+      "kind": "language"
+    },
+    {
+      "text": "스페인어",
+      "kind": "language"
+    },
+    {
+      "text": "중국어",
+      "kind": "language"
+    },
+    {
+      "text": "조지아어",
+      "kind": "language"
+    },
+    {
+      "text": "한국어",
+      "kind": "language"
+    },
+    {
+      "text": "스웨덴어",
+      "kind": "language"
+    },
+    {
+      "text": "히브리어",
+      "kind": "language"
+    },
+    {
+      "text": "폴란드어",
+      "kind": "language"
+    },
+    {
+      "text": "아르메니아어",
+      "kind": "language"
+    },
+    {
+      "text": "노르웨이어",
+      "kind": "language"
+    },
+    {
+      "text": "영국 파운드",
+      "kind": "currency"
+    },
+    {
+      "text": "대한민국 원",
+      "kind": "currency"
+    },
+    {
+      "text": "중국 위안화",
+      "kind": "currency"
+    },
+    {
+      "text": "폴란드 즈워티",
+      "kind": "currency"
+    },
+    {
+      "text": "노르웨이 크로네",
+      "kind": "currency"
+    },
+    {
+      "text": "러시아 루블",
+      "kind": "currency"
+    },
+    {
+      "text": "11월",
+      "kind": "month"
+    },
+    {
+      "text": "3월",
+      "kind": "month"
+    },
+    {
+      "text": "2월",
+      "kind": "month"
+    },
+    {
+      "text": "7월",
+      "kind": "month"
+    },
+    {
+      "text": "화요일",
+      "kind": "weekday"
+    },
+    {
+      "text": "수요일",
+      "kind": "weekday"
+    },
+    {
+      "text": "금요일",
+      "kind": "weekday"
+    },
+    {
+      "text": "분기",
+      "kind": "field"
+    },
+    {
+      "text": "오전/오후",
+      "kind": "field"
+    },
+    {
+      "text": "시간대",
+      "kind": "field"
+    },
+    {
+      "text": "연호",
+      "kind": "field"
+    },
+    {
+      "text": "5시간 전",
+      "kind": "relative"
+    },
+    {
+      "text": "3초 후",
+      "kind": "relative"
+    },
+    {
+      "text": "5년 전",
+      "kind": "relative"
+    },
+    {
+      "text": "5개월 전",
+      "kind": "relative"
+    },
+    {
+      "text": "5일 전",
+      "kind": "relative"
+    },
+    {
+      "text": "어제",
+      "kind": "relative"
+    },
+    {
+      "text": "5분 전",
+      "kind": "relative"
+    },
+    {
+      "text": "다음 달",
+      "kind": "relative"
+    },
+    {
+      "text": "다음 주",
+      "kind": "relative"
+    },
+    {
+      "text": "내일",
+      "kind": "relative"
+    },
+    {
+      "text": "2킬로그램",
+      "kind": "unit"
+    },
+    {
+      "text": "섭씨 2도",
+      "kind": "unit"
+    },
+    {
+      "text": "5킬로미터",
+      "kind": "unit"
+    },
+    {
+      "text": "2메가바이트",
+      "kind": "unit"
+    },
+    {
+      "text": "5메가바이트",
+      "kind": "unit"
+    },
+    {
+      "text": "섭씨 5도",
+      "kind": "unit"
+    },
+    {
+      "text": "5기가바이트",
+      "kind": "unit"
+    },
+    {
+      "text": "2기가바이트",
+      "kind": "unit"
+    },
+    {
+      "text": "인도네시아 루피아",
+      "kind": "currency"
+    },
+    {
+      "text": "덴마크어",
+      "kind": "language"
+    },
+    {
+      "text": "호주 달러",
+      "kind": "currency"
+    }
+  ]
+}

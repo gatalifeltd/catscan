@@ -1,0 +1,253 @@
+{
+  "locale": "ca",
+  "icu_locale": "ca",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Nova Zelanda",
+      "kind": "region"
+    },
+    {
+      "text": "Geòrgia",
+      "kind": "region"
+    },
+    {
+      "text": "Letònia",
+      "kind": "region"
+    },
+    {
+      "text": "Polònia",
+      "kind": "region"
+    },
+    {
+      "text": "Països Baixos",
+      "kind": "region"
+    },
+    {
+      "text": "Marroc",
+      "kind": "region"
+    },
+    {
+      "text": "Grècia",
+      "kind": "region"
+    },
+    {
+      "text": "Israel",
+      "kind": "region"
+    },
+    {
+      "text": "Tailàndia",
+      "kind": "region"
+    },
+    {
+      "text": "Rússia",
+      "kind": "region"
+    },
+    {
+      "text": "Romania",
+      "kind": "region"
+    },
+    {
+      "text": "Bèlgica",
+      "kind": "region"
+    },
+    {
+      "text": "persa",
+      "kind": "language"
+    },
+    {
+      "text": "hongarès",
+      "kind": "language"
+    },
+    {
+      "text": "anglès",
+      "kind": "language"
+    },
+    {
+      "text": "xinès",
+      "kind": "language"
+    },
+    {
+      "text": "danès",
+      "kind": "language"
+    },
+    {
+      "text": "espanyol",
+      "kind": "language"
+    },
+    {
+      "text": "indonesi",
+      "kind": "language"
+    },
+    {
+      "text": "portuguès",
+      "kind": "language"
+    },
+    {
+      "text": "japonès",
+      "kind": "language"
+    },
+    {
+      "text": "serbi",
+      "kind": "language"
+    },
+    {
+      "text": "corona noruega",
+      "kind": "currency"
+    },
+    {
+      "text": "peso mexicà",
+      "kind": "currency"
+    },
+    {
+      "text": "corona txeca",
+      "kind": "currency"
+    },
+    {
+      "text": "dong vietnamita",
+      "kind": "currency"
+    },
+    {
+      "text": "lliura esterlina",
+      "kind": "currency"
+    },
+    {
+      "text": "rupia índia",
+      "kind": "currency"
+    },
+    {
+      "text": "juny",
+      "kind": "month"
+    },
+    {
+      "text": "gener",
+      "kind": "month"
+    },
+    {
+      "text": "novembre",
+      "kind": "month"
+    },
+    {
+      "text": "octubre",
+      "kind": "month"
+    },
+    {
+      "text": "divendres",
+      "kind": "weekday"
+    },
+    {
+      "text": "dilluns",
+      "kind": "weekday"
+    },
+    {
+      "text": "dissabte",
+      "kind": "weekday"
+    },
+    {
+      "text": "setmana",
+      "kind": "field"
+    },
+    {
+      "text": "a. m./p. m.",
+      "kind": "field"
+    },
+    {
+      "text": "fus horari",
+      "kind": "field"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "segon",
+      "kind": "field"
+    },
+    {
+      "text": "d’aquí a 1 hora",
+      "kind": "relative"
+    },
+    {
+      "text": "fa 5 trimestres",
+      "kind": "relative"
+    },
+    {
+      "text": "l’any que ve",
+      "kind": "relative"
+    },
+    {
+      "text": "fa 1 hora",
+      "kind": "relative"
+    },
+    {
+      "text": "d’aquí a 3 trimestres",
+      "kind": "relative"
+    },
+    {
+      "text": "fa 5 hores",
+      "kind": "relative"
+    },
+    {
+      "text": "d’aquí a 3 mesos",
+      "kind": "relative"
+    },
+    {
+      "text": "ahir",
+      "kind": "relative"
+    },
+    {
+      "text": "el mes passat",
+      "kind": "relative"
+    },
+    {
+      "text": "fa 5 anys",
+      "kind": "relative"
+    },
+    {
+      "text": "5 graus Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litres",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 quilograms",
+      "kind": "unit"
+    },
+    {
+      "text": "5 quilòmetres",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 dies",
+      "kind": "unit"
+    },
+    {
+      "text": "2 hores",
+      "kind": "unit"
+    },
+    {
+      "text": "marathi",
+      "kind": "language"
+    }
+  ]
+}

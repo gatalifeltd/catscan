@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Shop strings -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">Shopkeeper</string>
+    <string name="shop_title">[Šhöp öñé]</string>
+    <string name="welcome">[Wélçömé, <xliff:g id="name" example="Ana">%1$s</xliff:g>! öñé twö]</string>
+    <string name="apostrophe">[Döñ\'t míšš \@déálš ör \? öñé twö thréé]</string>
+    <string name="entities">[Térmš &amp; çöñdítíöñš &#169; öñé twö]</string>
+    <string name="markup">[Réád thé <b>térmš</b> ñöw öñé twö]</string>
+    <string name="cdata">[<![CDATA[Táp <i>héré</i> tö štárt]]> öñé twö]</string>
+    <string name="quoted">["  Kéép špáçéš  " öñé twö]</string>
+    <string name="multiline">
+        [Líñé öñé
+        çöñtíñüéš öñé twö thréé föür]
+    </string>
+    <string name="percent" formatted="false">[100% döñé öñé]</string>
+    <string name="ref">@string/shop_title</string>
+    <string name="empty"></string>
+    <string name="selfclosed"/>
+    <plurals name="items">
+        <item quantity="one">[%d ítém öñé twö]</item>
+        <item quantity="other">[%d ítémš öñé twö]</item>
+    </plurals>
+    <string-array name="sizes">
+        <item>[Šmáll öñé]</item>
+        <item>[Lárgé öñé]</item>
+    </string-array>
+    <string-array name="codes" translatable="false">
+        <item>XS</item>
+    </string-array>
+</resources>

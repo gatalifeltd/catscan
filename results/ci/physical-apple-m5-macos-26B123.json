@@ -1,0 +1,1979 @@
+{
+  "spec": "15",
+  "host_id": "physical-apple-m5-macos-26B123",
+  "date": "2026-11-10",
+  "command": "node scripts/ci-measure.mjs run",
+  "images_from": "rendered here (bench --quick --keep)",
+  "tools": {
+    "catscan": "0.13.1",
+    "macos": "27.2.0",
+    "macos_build": "26B123",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+    "xcode": "Xcode 27.0",
+    "runner_image": null
+  },
+  "host": {
+    "chip": "Apple M5",
+    "model": "Mac17,2",
+    "host_class": "physical",
+    "cpus": 10,
+    "memory_gb": 32
+  },
+  "ci": null,
+  "neural_engine": {
+    "core_ml": "present",
+    "devices": [
+      {
+        "cores": 16,
+        "kind": "neural_engine"
+      },
+      {
+        "kind": "gpu",
+        "name": "Apple M5"
+      },
+      {
+        "kind": "cpu"
+      }
+    ],
+    "doctor": "present",
+    "evidence": {
+      "method": "cpu-time",
+      "reason": "sudo -n is not available"
+    }
+  },
+  "locales": [
+    "en",
+    "de",
+    "fr",
+    "ja",
+    "zh-Hans",
+    "ko",
+    "ru",
+    "ar"
+  ],
+  "accuracy": {
+    "checks": 320,
+    "correct": 318,
+    "check_accuracy": 99.4,
+    "by_locale": {
+      "en": 97.5,
+      "fr": 100,
+      "de": 100,
+      "zh-Hans": 100,
+      "ko": 100,
+      "ja": 100,
+      "ru": 100,
+      "ar": 97.5
+    }
+  },
+  "timing": {
+    "runs": [
+      {
+        "images": 240,
+        "median_ms": 45,
+        "p95_ms": 81,
+        "cold_ms": 142,
+        "cpu_s_per_image": 0.02,
+        "wall_s": 6.229
+      },
+      {
+        "images": 240,
+        "median_ms": 43,
+        "p95_ms": 75,
+        "cold_ms": 122,
+        "cpu_s_per_image": 0.02,
+        "wall_s": 5.949
+      },
+      {
+        "images": 240,
+        "median_ms": 39,
+        "p95_ms": 69,
+        "cold_ms": 178,
+        "cpu_s_per_image": 0.019,
+        "wall_s": 5.508
+      }
+    ],
+    "median_ms": 43,
+    "p95_ms": 75,
+    "spread_ms": 6,
+    "cpu_s_per_image": 0.02
+  },
+  "answers": [
+    {
+      "image": "ar/00-clip-16-light-flat.png",
+      "image_sha256": "e1690ee3524868666e7b73387d878f20d17f5d8c75479bde78e55127d767d6be",
+      "output_sha256": "c1570f447279aa7fd1a3ef954125505291cc39769114e5aa70090a6dac492b97",
+      "lines": [
+        "الإمارات العربيا"
+      ]
+    },
+    {
+      "image": "ar/00-ellipsis-16-light-flat.png",
+      "image_sha256": "a71393b329b3805440ffd6c4faba4ed97eb19daea3d064351076e09cac81f40a",
+      "output_sha256": "a9b83f8dde3d675e3a02f266c89d8e1840ca8f76a19ea511603c6592decee451",
+      "lines": [
+        "الإمارات العر..."
+      ]
+    },
+    {
+      "image": "ar/00-fit-16-light-flat.png",
+      "image_sha256": "454baa949469c5af1af5b51fd96d49ff800300ad1a9eb700165fac35c4c0e612",
+      "output_sha256": "ddd43a8d0c8e05858c3396ec622795ca48156f77e5780c0a4e32f9ca93010ab0",
+      "lines": [
+        "الإمارات العربية المتحدة"
+      ]
+    },
+    {
+      "image": "ar/01-clip-16-light-flat.png",
+      "image_sha256": "e1fec7b0c8055949117911c19d5cbac1872ed07211ef9404681850aee32e4796",
+      "output_sha256": "3a7bd01e803279ef5279602f747e123b60a73b84fca262cee7ac54f1631b890c",
+      "lines": [
+        "النرو"
+      ]
+    },
+    {
+      "image": "ar/01-ellipsis-16-light-flat.png",
+      "image_sha256": "d5de17cf36c8cc35d623624a9d6c962d769b2929b364b7ee41a52344c2f73451",
+      "output_sha256": "5b7929c881ef8ca1965156f41362b29b6588825c2539c4c0dc59601e6d3f4ea6",
+      "lines": [
+        "الذ..."
+      ]
+    },
+    {
+      "image": "ar/01-fit-16-light-flat.png",
+      "image_sha256": "8857f586bb3a1a0e761da3e9138b02b2820bc19270a0e8b6fe75b1cb75928067",
+      "output_sha256": "9b083e7eb4f2da0c06d6003f8955e51123eb4e1b111ed6b150e07a87d49ff43c",
+      "lines": [
+        "النرويج"
+      ]
+    },
+    {
+      "image": "ar/02-clip-16-light-flat.png",
+      "image_sha256": "9b364818420ff9325383be4daa38838844e9a034f038e4b3d01b3ecf757f5af0",
+      "output_sha256": "97f4bba03fa803d33699cd7d509c9941f55a1ec94896b9a852be6bcf897e40e4",
+      "lines": [
+        "صر"
+      ]
+    },
+    {
+      "image": "ar/02-ellipsis-16-light-flat.png",
+      "image_sha256": "a7aa98fa5eecbd6b42a7e1ec83cc8b7a90b9195a74e43f557adae74ddea26df7",
+      "output_sha256": "1a50a33a17c584e55b0cabfbf8090ec48324b5cd840153a4ed14025ba0edb233",
+      "lines": []
+    },
+    {
+      "image": "ar/02-fit-16-light-flat.png",
+      "image_sha256": "ee00fedaa84dd20ab0de58a0cf3f2be99d82f2cc155ad789e0dde19e2b7fda38",
+      "output_sha256": "f98e053355efc097ec88bb241c6a5c89d5f75f673378833f5faeb28984a7aed7",
+      "lines": [
+        "صربيا"
+      ]
+    },
+    {
+      "image": "ar/03-clip-16-light-flat.png",
+      "image_sha256": "fa1cc56ecc52d58cd872613798948690eaeba985d46f4079ce042669998d9bb9",
+      "output_sha256": "b9c268facfc99b06ff4a3720fcb3123ac4c3c3863229dddea30daa497e55cd5f",
+      "lines": []
+    },
+    {
+      "image": "ar/03-ellipsis-16-light-flat.png",
+      "image_sha256": "cd195e4d7ff87058520a2202ef7cfb27655cdbf7b180c02320fc07e77ce5fd82",
+      "output_sha256": "4ac636a0a6fe5404e8332fd44035a953a753b9dbcc32c43bddbc86cc99c8712c",
+      "lines": [
+        "الب..."
+      ]
+    },
+    {
+      "image": "ar/03-fit-16-light-flat.png",
+      "image_sha256": "31e32a07134f6c1da7cf8bf6f7ccc8da3e8556330960590dfb12c7a524edd66d",
+      "output_sha256": "1be5f6669b77cdf3aff5df9cacfc3f9364d7027f66d6429b037fd4aa8a39c94c",
+      "lines": [
+        "البرتغال"
+      ]
+    },
+    {
+      "image": "ar/04-clip-16-light-flat.png",
+      "image_sha256": "34d2c66098c5816072962e28445ea5a3e857250487d8281c5650d850f8ea6264",
+      "output_sha256": "0620aca161423dda2a7a4fba2b4af1db7ea3600703a42dad5ed861131d4bd863",
+      "lines": [
+        "تايلا"
+      ]
+    },
+    {
+      "image": "ar/04-ellipsis-16-light-flat.png",
+      "image_sha256": "8f9aee2d95bc8d7a1f7e6639a3ec686c43f2a0a0355adef7d14777327c180f82",
+      "output_sha256": "6b66cee17a61e95027cd8da88a768d37d79aaa565b40247c88aff76e9e979795",
+      "lines": []
+    },
+    {
+      "image": "ar/04-fit-16-light-flat.png",
+      "image_sha256": "06725666556362b949aaf2ac8be62a6bfdc21df4f442900f093371297d1d10ab",
+      "output_sha256": "3be52695de3cea095004e7052438ebff18cd981ade33a7610b9d10e5a91bfd0f",
+      "lines": [
+        "تايلاند"
+      ]
+    },
+    {
+      "image": "ar/05-clip-16-light-flat.png",
+      "image_sha256": "86c49df3727f2a3729b1dadc0c02912dd0fe79c3f7c0c6d0318e1f12e45b546e",
+      "output_sha256": "8d28fe0a799174bec04eec445b766fb382f250eeebae0de28bc5667650df0c72",
+      "lines": []
+    },
+    {
+      "image": "ar/05-ellipsis-16-light-flat.png",
+      "image_sha256": "111788dd552c0252ac9485e87e55ffb74480e2ad1a6fe7e39c8ba83a6525661a",
+      "output_sha256": "f6a70306aa36b762d5f20e3469b6a9b35baa2f581700691602912cb741b3f638",
+      "lines": [
+        "أس..."
+      ]
+    },
+    {
+      "image": "ar/05-fit-16-light-flat.png",
+      "image_sha256": "baf616371b9ff3fb2663ed23ecf573655a15c53bf9389bc90fd20f0ec583e51d",
+      "output_sha256": "87807fe1a073d890712cce948e160e516ed11e2c8010d77cf186806f6792e397",
+      "lines": [
+        "أستراليا"
+      ]
+    },
+    {
+      "image": "ar/06-clip-16-light-flat.png",
+      "image_sha256": "653ac635cb9fc4403f8658217749f03215778e80835795f997b29e9ac683d40c",
+      "output_sha256": "20fd9433116504f453f22d76bc379e87d3ba863d96e75032282e9132a4444916",
+      "lines": [
+        "الفلب"
+      ]
+    },
+    {
+      "image": "ar/06-ellipsis-16-light-flat.png",
+      "image_sha256": "a31a2f8df9118a79a7bd88d23b35611d7b6deaef2d39d240c158c9df32fe074a",
+      "output_sha256": "2a92f8ab062d281264b73715ef4c64cc4980ff55c936f4ecf054ece6a37f0129",
+      "lines": [
+        "ال..."
+      ]
+    },
+    {
+      "image": "ar/06-fit-16-light-flat.png",
+      "image_sha256": "13757e1e35b062f6201077ce2fb71ab6927a719fddf5d238c37530a552bc253d",
+      "output_sha256": "7c174830f5b0a87698a6d8cabbc3e200dfacaf540efb6094f7782e5d3351f38b",
+      "lines": [
+        "الفلبين"
+      ]
+    },
+    {
+      "image": "ar/07-clip-16-light-flat.png",
+      "image_sha256": "b7d45b6a2f84718dd6a870f86916c38df0fed32ed005ce07854d003356e803e0",
+      "output_sha256": "66bff04dc830222aadbade02ea12cf75825e7bf62cc0b5538e01c34e4f85a16c",
+      "lines": [
+        "إسرا"
+      ]
+    },
+    {
+      "image": "ar/07-ellipsis-16-light-flat.png",
+      "image_sha256": "02f5c073c2247da19e3a8644e6a2d2ab66d9d61ff1ae3b6baa7336744c1f9642",
+      "output_sha256": "6c16baac8205eb2873da82102ae6ddc87e972b4b7390e77923b8f2ab3470945e",
+      "lines": [
+        "إس..."
+      ]
+    },
+    {
+      "image": "ar/07-fit-16-light-flat.png",
+      "image_sha256": "a074f369cc895062ad3968e1b4caf9c9bcaaaab67b7e5195de0b41a154f27091",
+      "output_sha256": "ca6c1fbe5f71c2e4b70362d84896e6d8b99a0ab8b12fd0ef5323a81c40984907",
+      "lines": [
+        "إسرائيل"
+      ]
+    },
+    {
+      "image": "ar/08-clip-16-light-flat.png",
+      "image_sha256": "5b67f9b2de5bed7394565f4cc7aebbe322eeed803fb62fb53c2b2b26b6045bd9",
+      "output_sha256": "6d0f64892ee3d27ccd4b131c3adb477f65fb5387d16441f4803996ef7887a4ec",
+      "lines": [
+        "إسبا"
+      ]
+    },
+    {
+      "image": "ar/08-ellipsis-16-light-flat.png",
+      "image_sha256": "c103745193d3039e99e8c4224285bb9dc79e29a1bf94143284964573187cdaf3",
+      "output_sha256": "9086371e74f2d77d0b56b0e72518323da3b5d68db92e4da69bed6d03ce8a0351",
+      "lines": [
+        "إ..."
+      ]
+    },
+    {
+      "image": "ar/08-fit-16-light-flat.png",
+      "image_sha256": "68c046ba724f578cd40ce9d09e38a3e6d0bad1e70a7961a17ad67842880d0aa8",
+      "output_sha256": "21e6845e7992ecc9772546c0de9ccb265951369eb40a8f3556da500f3af06606",
+      "lines": [
+        "إسبانيا"
+      ]
+    },
+    {
+      "image": "ar/09-clip-16-light-flat.png",
+      "image_sha256": "987f67a3c650f9221ebbd61c3e227d9cba2278fb17117d102f8e2b417f29c242",
+      "output_sha256": "6266c45f3028ea782f6de7fc885a08ce25cc53660a74bd9d0c18d9b343d0e2c7",
+      "lines": []
+    },
+    {
+      "image": "ar/09-ellipsis-16-light-flat.png",
+      "image_sha256": "7270d3f477d597c75068d151b9dd0e2c713bb5a633b018081d33540c8366e4d0",
+      "output_sha256": "27d4124e9cbe4b489c18a74f1e974d10e81a76ec137a1ec4ffe701c23b745474",
+      "lines": [
+        "الذ..."
+      ]
+    },
+    {
+      "image": "ar/09-fit-16-light-flat.png",
+      "image_sha256": "ee0c7c4d7489a07641f1dc38a13874e1577061308eae672ca732f547cd75f20e",
+      "output_sha256": "99c9ad4f0e3107ce881daa9984a0a8dbe752ecac00d70fbcf691b165e866c9ea",
+      "lines": []
+    },
+    {
+      "image": "de/00-clip-16-light-flat.png",
+      "image_sha256": "01b5c84c9f46b5185d91fbbb8ac07095add80e9bd30176d7809ac208e917be57",
+      "output_sha256": "24b53ee7e8f0d8120a02256123a5e9c7754d603bf5d9646619eee939d8a35efc",
+      "lines": [
+        "Tschec"
+      ]
+    },
+    {
+      "image": "de/00-ellipsis-16-light-flat.png",
+      "image_sha256": "e6d763c8bdfeda59e87fc98805e9172e56712282448fc0cd9f6ba6d486ab2c6d",
+      "output_sha256": "36cd9a08b24c2e27e6354fc4b8580271165c4b77dd39447a2a7399c5daf2e53c",
+      "lines": [
+        "Tsch..."
+      ]
+    },
+    {
+      "image": "de/00-fit-16-light-flat.png",
+      "image_sha256": "b0094f9531e26daa06347c509277e2222c6e22fb4f2eaa353b93b921bcc2ae01",
+      "output_sha256": "08a0b642e64667abf9a1245bb72440049b65269b1f2c7fc1c1bc61c4ff1bf14f",
+      "lines": [
+        "Tschechien"
+      ]
+    },
+    {
+      "image": "de/01-clip-16-light-flat.png",
+      "image_sha256": "2dd8d6b341894e96d404f8da7082077f0f81517e6eb7defb859471545782001d",
+      "output_sha256": "1006b50b95a61c058eed14e401a1e588f19b29b6d4b52f576e8e06bb1fe0d420",
+      "lines": [
+        "Singa"
+      ]
+    },
+    {
+      "image": "de/01-ellipsis-16-light-flat.png",
+      "image_sha256": "8b4f990cece68ee11fb2855b6d2c92b740d852af6e0b1477c60d60cb40ec2346",
+      "output_sha256": "2569492a15989de3266cb1f59eccba17558babdd48c97184fdaba9609ea34b91",
+      "lines": [
+        "Sin..."
+      ]
+    },
+    {
+      "image": "de/01-fit-16-light-flat.png",
+      "image_sha256": "e83e5f14c14b5dcde059af5e4f1f466d984cf0ed537b2eb0b4b835da8b7e427c",
+      "output_sha256": "0c0dc032243fc344426d1eae6c8d27714921795bee70b956b085310d665060bd",
+      "lines": [
+        "Singapur"
+      ]
+    },
+    {
+      "image": "de/02-clip-16-light-flat.png",
+      "image_sha256": "ee919a8b9968d98006c9258d1bb5c827d09c19c236377de725ddb5bb86513152",
+      "output_sha256": "8070184bbed416f7ab94b423a1c04a8b3cdacab70d73364e350c974e774ce771",
+      "lines": [
+        "Schwe"
+      ]
+    },
+    {
+      "image": "de/02-ellipsis-16-light-flat.png",
+      "image_sha256": "bf2bb50daed93ac6353b6fd169eef97b62feb8e9c749b30a6a8b16095bc3b670",
+      "output_sha256": "4739bddc3fcd94bf86fb7ec2ce1258ecd9d061e0a4bd8e58e608e6e91de8ea2b",
+      "lines": [
+        "Sch..."
+      ]
+    },
+    {
+      "image": "de/02-fit-16-light-flat.png",
+      "image_sha256": "3503713861040ceadc24103b9fa0388ab126455d24baa8fa9ba575580635e3b2",
+      "output_sha256": "57ee767982d988bcb376534b7ee568869c83aa8fdf468275191115fadd2cfdef",
+      "lines": [
+        "Schweden"
+      ]
+    },
+    {
+      "image": "de/03-clip-16-light-flat.png",
+      "image_sha256": "625dbccd45b56245f2e03836a2109d03e84f41898c87042b73bdefbe4b9a7d0a",
+      "output_sha256": "02c5644694684e08ba31bfeb99613203e7b5d53ec864ca759dcfbffd6282e752",
+      "lines": [
+        "Pol"
+      ]
+    },
+    {
+      "image": "de/03-ellipsis-16-light-flat.png",
+      "image_sha256": "ee8e98683d193693c22af9ffebf6958110cfe10d6bd868cacf248ec81b8040db",
+      "output_sha256": "2eaa1c61a6818ddb6deddda91bf1fbfd079588264545367ed4eeadd19972b713",
+      "lines": []
+    },
+    {
+      "image": "de/03-fit-16-light-flat.png",
+      "image_sha256": "39cf85a45503154b824700a010e86faee244a36aa85cace36a515d096bf49a62",
+      "output_sha256": "c6acd33e6a33fb537797621ff730cfdf1e78e8fe81ab85b77f02357815e68c03",
+      "lines": [
+        "Polen"
+      ]
+    },
+    {
+      "image": "de/04-clip-16-light-flat.png",
+      "image_sha256": "bc5b531c6491cc80c223352e6269270734beec29d8fc007de52211560d0470c3",
+      "output_sha256": "ebe776d80feb3142825a79a536afaa2e8472277b9e28405a500cfbc4570c5035",
+      "lines": [
+        "Isla"
+      ]
+    },
+    {
+      "image": "de/04-ellipsis-16-light-flat.png",
+      "image_sha256": "28b3f312ed3594b3db54521f8927bfe3f6153aa6260623fad3345352d542e2a8",
+      "output_sha256": "f3b01d7aabd7b37e2a08b0b104173c975e1252d15b0c92a8352cd986a6fae7a2",
+      "lines": [
+        "|S..."
+      ]
+    },
+    {
+      "image": "de/04-fit-16-light-flat.png",
+      "image_sha256": "b794f4723e395268f5d8ae3654efda2e048f46fab3d34cf4df1878a4bd6d9193",
+      "output_sha256": "ff8842cd7d3601f8f380181b6c3ee9b07b7a8df9d68dc6492dce216099ffaa8b",
+      "lines": [
+        "Island"
+      ]
+    },
+    {
+      "image": "de/05-clip-16-light-flat.png",
+      "image_sha256": "234b34c16e2234cab79815e04646bd014580a34616923a583d6a5ba7867efb99",
+      "output_sha256": "40e9571689a894ba4e79f39ead055bde4c5389d13be4ba838e0fb13312a79b45",
+      "lines": [
+        "Lettl"
+      ]
+    },
+    {
+      "image": "de/05-ellipsis-16-light-flat.png",
+      "image_sha256": "4d51f6dca73d3a035c59d89db25bf61e154e65f65e09a8328101b7b68ac6cb10",
+      "output_sha256": "cab3694bdb63805801a6fad8446acb2e75b6e05b679c29a90c79bc2f0bd38181",
+      "lines": [
+        "Let..."
+      ]
+    },
+    {
+      "image": "de/05-fit-16-light-flat.png",
+      "image_sha256": "f8336229785d2ed924fb068e4ac0353ce25b0df9a1e680a898e6fe094b659909",
+      "output_sha256": "7c52c6f24c7c074aad221b70b41be0248ba036ba9c8db42a4d31d3e8a033006b",
+      "lines": [
+        "Lettland"
+      ]
+    },
+    {
+      "image": "de/06-clip-16-light-flat.png",
+      "image_sha256": "51b68139e9f4ca2d1213182a586df5357d4fab301756b08365b353f4d06f741c",
+      "output_sha256": "4e62a9c1e1fe670076aa78f73b0feab58ad52a32d9d7b2ea1b79d2d9e25ec1a0",
+      "lines": [
+        "Chi"
+      ]
+    },
+    {
+      "image": "de/06-ellipsis-16-light-flat.png",
+      "image_sha256": "ffa8fd10c5f6140845db7f07ac30d5120ff301e9d34c22eb9bec2cd62b28bc96",
+      "output_sha256": "ebbbfb0cab94a3da90050328941a4c92563c2f6b63f0418519269ea996297988",
+      "lines": [
+        "C..."
+      ]
+    },
+    {
+      "image": "de/06-fit-16-light-flat.png",
+      "image_sha256": "98399582605409d00533efbcdd2422db7d50294133b3c75f35d7593bd44c1f15",
+      "output_sha256": "39f58f011a270a2bb163934c2d359ca5454d3f4cfb802ce10ae060b1c4883723",
+      "lines": [
+        "China"
+      ]
+    },
+    {
+      "image": "de/07-clip-16-light-flat.png",
+      "image_sha256": "6ed60031a91ec89e648af68ce21f76f088c3cec5772cb4560c89b42f4ee995a0",
+      "output_sha256": "80005ca62d307378bc0d2bb7cc9feb565822b63374585fe387d91b86d451a83f",
+      "lines": [
+        "Itali"
+      ]
+    },
+    {
+      "image": "de/07-ellipsis-16-light-flat.png",
+      "image_sha256": "a7aee52ace9770cb8c30f3e5b3d79c69cede41bb53615d937c09913131c47949",
+      "output_sha256": "0390b4c64a7352ab43a3bfb3176df90a79194133069bb662d69ccda5daf204d6",
+      "lines": [
+        "t..."
+      ]
+    },
+    {
+      "image": "de/07-fit-16-light-flat.png",
+      "image_sha256": "79431e6deb82103f3b1ea136cc53854bbb6827bc6445ce3d46752b2bb6e8761a",
+      "output_sha256": "f153e4b20340ceefdf3c5350501eb2dd63e21e2e867fcf29fbd46132e5bc0f1a",
+      "lines": [
+        "Italien"
+      ]
+    },
+    {
+      "image": "de/08-clip-16-light-flat.png",
+      "image_sha256": "85c06a0b9d6381a85e5660d405e29f12746cac1ae1b0213d8266d03a85086aea",
+      "output_sha256": "1c5cd9e56eab948908a54f5fe6db22c0f466de0f69ec2e8f31ebf089e2109095",
+      "lines": [
+        "Rumä"
+      ]
+    },
+    {
+      "image": "de/08-ellipsis-16-light-flat.png",
+      "image_sha256": "f046d1387896cc0d76f09686f19306f5307d34975e9a92ff3937c3576e82b418",
+      "output_sha256": "4ef0f794c3eeef93c48f59f73f82de87448a571a859e943fbcaa5ff4da810d02",
+      "lines": [
+        "RU..."
+      ]
+    },
+    {
+      "image": "de/08-fit-16-light-flat.png",
+      "image_sha256": "0e7ed4a480cf47cc4abb71e482ebab9062222c3a691d3ff1f06ea5a8accf75dd",
+      "output_sha256": "c778ba0b150f71288a3845d30ccaeb4696bbb318551b7d440a310fd9db346ed5",
+      "lines": [
+        "Rumänien"
+      ]
+    },
+    {
+      "image": "de/09-clip-16-light-flat.png",
+      "image_sha256": "fbe8f9b28cdfc6d32ca9b853c8eb783736fb88d2328f9133ece943d552b7b3eb",
+      "output_sha256": "922a0a37771ebaa6fb88b9aaa5e2ba9fa42fe79e6029250cc567e9872b97f899",
+      "lines": [
+        "Serb"
+      ]
+    },
+    {
+      "image": "de/09-ellipsis-16-light-flat.png",
+      "image_sha256": "55317d8226b077957942e40fd5a9b823b0a86e16a90cee14da21503f006a890a",
+      "output_sha256": "6020561f43aa443bad2be4fedd4ba886b994b4a2be6120110dbd3fcbce50417d",
+      "lines": [
+        "Se..."
+      ]
+    },
+    {
+      "image": "de/09-fit-16-light-flat.png",
+      "image_sha256": "5d2c3f1dcdf9ffb6b984ac6f32c0abf920d6f10087b3ef57b7e528f0b2bfec5f",
+      "output_sha256": "3e42886a582e281ec95407695a4fad891553f97c0a7f59d231a0d4d13fc73434",
+      "lines": [
+        "Serbien"
+      ]
+    },
+    {
+      "image": "en/00-clip-16-light-flat.png",
+      "image_sha256": "e8b3191c0cd3d3473ba6fd7d52a4d7ea9dd9e130d0569fe85c33c9173bf35c36",
+      "output_sha256": "e624fd09615c7f1b906327e67696993f12d5bc8bfc7bbd7ca57de0284904b9fc",
+      "lines": [
+        "Luxemk"
+      ]
+    },
+    {
+      "image": "en/00-ellipsis-16-light-flat.png",
+      "image_sha256": "b590bc03c26a3324d09242436ca36ba915c7fbc131dbdc7bd2e71addfa2d1bb9",
+      "output_sha256": "9143b6594c1237c8ce6efdc9e9f7dba105668fbde35408a496a5cd54f881a381",
+      "lines": [
+        "Luxe..."
+      ]
+    },
+    {
+      "image": "en/00-fit-16-light-flat.png",
+      "image_sha256": "4261eed191c73cf89a0c2d6b1931ec010a60cb253510e6c68ecb1ebbfae48860",
+      "output_sha256": "426cf46a14266429362740d4f3d149e5261371eb678599b9f2c8df9e00a0cea3",
+      "lines": [
+        "Luxembourg"
+      ]
+    },
+    {
+      "image": "en/01-clip-16-light-flat.png",
+      "image_sha256": "ec3521741bff7649c1608631fd5e4b9934b80221d4e14c951f1b6fc8caa658b6",
+      "output_sha256": "137f1bd8dc8862389f87dedea4544da756226f6416963774a6ca96d008cf207a",
+      "lines": [
+        "Finla"
+      ]
+    },
+    {
+      "image": "en/01-ellipsis-16-light-flat.png",
+      "image_sha256": "80a1914b0c8b23a3897c4f1605708ea441197e3584f99e6d422efc49557ca72f",
+      "output_sha256": "3f1d0b35f969b24129371e6df5870a21a27f4d158cdae131ad3c14a4de5829aa",
+      "lines": [
+        "Fi..."
+      ]
+    },
+    {
+      "image": "en/01-fit-16-light-flat.png",
+      "image_sha256": "13387def625b60e726d26712801762327905f2088431dd791300a8a93b0199f2",
+      "output_sha256": "61a5cb9fbaedf345463fb17d213e9cfe49a42bf6bed71ac96244e80732b460ad",
+      "lines": [
+        "Finland"
+      ]
+    },
+    {
+      "image": "en/02-clip-16-light-flat.png",
+      "image_sha256": "1351588eda0a9aa5a089910cbcbeb0aa80b2033cb725abaa1e84a27e86e7e791",
+      "output_sha256": "19c56fe7bd1599013dc608a5c75e13003b5991d75c2aefdd106e4744e23cfaf3",
+      "lines": []
+    },
+    {
+      "image": "en/02-ellipsis-16-light-flat.png",
+      "image_sha256": "eef9decf10555f7fe4ab5cd9b1bc283ccbf4c16e06f8587dd2e8adf60298f255",
+      "output_sha256": "4ffe1fb4f4637fef5624af2e4045590497b5151e58e9a2b1f821715eaf566370",
+      "lines": []
+    },
+    {
+      "image": "en/02-fit-16-light-flat.png",
+      "image_sha256": "2205f9ee68a1c5d3e6183f367cff576a909241093b6ce44a271dc042b9f2ef5c",
+      "output_sha256": "57261ef24af6a916bf89078d00febbe3f2f03a78852b61df2394597489df1cc5",
+      "lines": []
+    },
+    {
+      "image": "en/03-clip-16-light-flat.png",
+      "image_sha256": "ad5b3aad7b26f3f8d7d002c7783c06a853b1c4fefb5c108f6b6d03f23fd2cc94",
+      "output_sha256": "caee5abd063c7376aade764d6c3728ed1ed2cf026cdd633dadbf3103e394b07a",
+      "lines": [
+        "United Kir"
+      ]
+    },
+    {
+      "image": "en/03-ellipsis-16-light-flat.png",
+      "image_sha256": "ea2867812e8048365b5657757d72aefd8b55ce5ba6710a4aa25d512787f47dc0",
+      "output_sha256": "c41c7e91ea02f2ab9b05c40bc4d66e5d9b5f8c3bc83ba08178a3649a1c3786d6",
+      "lines": [
+        "United..."
+      ]
+    },
+    {
+      "image": "en/03-fit-16-light-flat.png",
+      "image_sha256": "25426340b3f0fa57a32f63e8e8a912d77a831894b1f4dfa5af37475b22bf40d5",
+      "output_sha256": "c4b2c6384a6be0e4dec6f1d7f9b00c127420b9e65a9716c98997a87468dd8ab8",
+      "lines": [
+        "United Kingdom"
+      ]
+    },
+    {
+      "image": "en/04-clip-16-light-flat.png",
+      "image_sha256": "e90e0748e54a3871653cd80f75896f43b30e8485cd39751f0c5fba384fb54a8c",
+      "output_sha256": "d1a7f55e3bd0cc083630951264d8aeb60b7e26ddeb53586cd56afbcced453c81",
+      "lines": [
+        "Argen"
+      ]
+    },
+    {
+      "image": "en/04-ellipsis-16-light-flat.png",
+      "image_sha256": "33306b8ab876f84363d6164a4f3704cf0a122c583f3dfcaa1b88e6416999e72b",
+      "output_sha256": "2d871ce3f07609b5cc94bf3e4fbad92e63149c4f1673e5f2fa829cf868d16c35",
+      "lines": [
+        "Arg..."
+      ]
+    },
+    {
+      "image": "en/04-fit-16-light-flat.png",
+      "image_sha256": "753dd3b6b1955e9505e41c5639f2db94371a181b153306819d90149db9b89f03",
+      "output_sha256": "0ca4e84a0dc5d64284d0c701d65eb5cbf718208eef1a53fcf977ff5cd22a5aa2",
+      "lines": [
+        "Argentina"
+      ]
+    },
+    {
+      "image": "en/05-clip-16-light-flat.png",
+      "image_sha256": "b654ff5a5e8e3335767e78b5674553817ebf351c246342995e3ee2b51c65e005",
+      "output_sha256": "96835c2bc1ae4d856314e950f04ed8e24ad57d41728fdb6f05d3186d7bdfbf25",
+      "lines": [
+        "Lithua"
+      ]
+    },
+    {
+      "image": "en/05-ellipsis-16-light-flat.png",
+      "image_sha256": "e57e371aa6e5a468675c1c361de3e8cc0f3f6a3ac7aebea57de173a4cd0e045e",
+      "output_sha256": "ce09e686f1166debf4a7490b0a175bafb4d98536e0f9bfa090cf0e348f78ba6a",
+      "lines": [
+        "Lith..."
+      ]
+    },
+    {
+      "image": "en/05-fit-16-light-flat.png",
+      "image_sha256": "96344492e27f7da4661830d66bdbcbf24190dc2418ec5926f8df1e549dbfe35b",
+      "output_sha256": "7af6ff1f678c3569f5a6f63f8220299bb9c5305bef82cf97a5851d6412bb5442",
+      "lines": [
+        "Lithuania"
+      ]
+    },
+    {
+      "image": "en/06-clip-16-light-flat.png",
+      "image_sha256": "8ea93dd2dbff7e1188204483ad3e3b5eb8ff9b95ade268d6ce9b927cc9d5d2b3",
+      "output_sha256": "9e0f387394f7e9b9bbe195d8cebc9d93f2cae3c77456414fb989f7ef356db5e2",
+      "lines": [
+        "Croa"
+      ]
+    },
+    {
+      "image": "en/06-ellipsis-16-light-flat.png",
+      "image_sha256": "3d24e9e982636039cc7814c1dfb65055b2a1b7704ac55a8f8a45db43b7327875",
+      "output_sha256": "964993522fdaec67bb29b7f30c04a1138edc4c511cb550cb7443236f83a6d47e",
+      "lines": [
+        "Cr..."
+      ]
+    },
+    {
+      "image": "en/06-fit-16-light-flat.png",
+      "image_sha256": "ce096a45c62ea2dd3c40ecb19c162924adc655c6468963afc2ed087b373efcb1",
+      "output_sha256": "2d70aa7ce1f67e850fb7e47a484b5a084868c90fbcb658f64cd5bed8b9a6d7c5",
+      "lines": [
+        "Croatia"
+      ]
+    },
+    {
+      "image": "en/07-clip-16-light-flat.png",
+      "image_sha256": "0072e2846fda034faf713dd2a48e3b15b3bb22c17002439e7df7d74086f7ccae",
+      "output_sha256": "1a9bc43835f7cb70510d1c9ea4a8cbd432886bc3c5f296c768149d3b6ff7366b",
+      "lines": [
+        "Austr"
+      ]
+    },
+    {
+      "image": "en/07-ellipsis-16-light-flat.png",
+      "image_sha256": "bd9a7a504f1034e878441b2a403b252b5c14b528ac431b21136cdf2464a0bea9",
+      "output_sha256": "871d978c0b35bbf769a14bb90e01e3705a4eefa60dec6dd1bb3744ad4cc399be",
+      "lines": [
+        "AU..."
+      ]
+    },
+    {
+      "image": "en/07-fit-16-light-flat.png",
+      "image_sha256": "d88970335a142509f36cbefe9de5a3841b09ae70117df7379f1d9bbcf90ff36c",
+      "output_sha256": "3f0b0dc1d3777fd5f6afca96cdb45f1658dd4a12ed04781fec8c71c5efc69128",
+      "lines": [
+        "Australia"
+      ]
+    },
+    {
+      "image": "en/08-clip-16-light-flat.png",
+      "image_sha256": "2f9caa24b650f4f87253cc18c797d127c7d9e7041b74d899f0882fbfd1274820",
+      "output_sha256": "21f3ddf4d170eebdd68cf0d7dc94c8315b05589ea705003bfacffdb9d6a315c1",
+      "lines": [
+        "Pe"
+      ]
+    },
+    {
+      "image": "en/08-ellipsis-16-light-flat.png",
+      "image_sha256": "2a9a78763baa9dd5ea60b8a0721ef0c5c2d060c570a41be05e4be52abeb5c70a",
+      "output_sha256": "b23f014869b4014902fb0180b9d54c44cd5e01c89cf272a67e46dc94135f3cdd",
+      "lines": []
+    },
+    {
+      "image": "en/08-fit-16-light-flat.png",
+      "image_sha256": "638408e3c40e89c500ce5c960d8f371af6499c33739593f6893afaec5f5e76d9",
+      "output_sha256": "bb694e9e411196720f93e53d80f1f929b4e6385c39b94dddffaefa92ad40dc75",
+      "lines": [
+        "Peru"
+      ]
+    },
+    {
+      "image": "en/09-clip-16-light-flat.png",
+      "image_sha256": "fd4d7f2c6abd14259adb545fbfc3231656d9a4986738d508f479249a7d39f113",
+      "output_sha256": "7712ef4ff99f1e27aaa712569d78ddc3d2fd0ddde3bf7c9bfb3f3c71ebd996dd",
+      "lines": [
+        "Swer"
+      ]
+    },
+    {
+      "image": "en/09-ellipsis-16-light-flat.png",
+      "image_sha256": "5f60e19707b5ef1f9ccf47ada6b9b73c6b19998a8963bb8a62730a7dbec0fc03",
+      "output_sha256": "d9abbab20142cef729a8e400ea3dd03c8dbbecdb6badc01fcf700c1296278a5e",
+      "lines": [
+        "Sw..."
+      ]
+    },
+    {
+      "image": "en/09-fit-16-light-flat.png",
+      "image_sha256": "02554b3840b4b0d5208c45d60ccc209f04819ea2a9fec14f47b812598810273e",
+      "output_sha256": "232d2b562230b94fcaf7d726c8f7aa8fa78e95b75b57945c04d6701f835a5ad0",
+      "lines": [
+        "Sweden"
+      ]
+    },
+    {
+      "image": "fr/00-clip-16-light-flat.png",
+      "image_sha256": "9c4717eaf6a9c5aa8993e0268e36742b2c069647a339ca12a2145fbc695e197d",
+      "output_sha256": "76cf76beef53bdc9750dc1ee11ebd7eab3792627a132a49e74f88e80befcb7e2",
+      "lines": [
+        "Portu"
+      ]
+    },
+    {
+      "image": "fr/00-ellipsis-16-light-flat.png",
+      "image_sha256": "cdc9c0404712f34f4040fc4591bd32489fa96d39c8a794c8e9b0b882be1844a7",
+      "output_sha256": "43b5902cb2bc8d9331554cde2f6b72dd76518bc56741f2c83fb6ce32a3cfc0e7",
+      "lines": [
+        "Por..."
+      ]
+    },
+    {
+      "image": "fr/00-fit-16-light-flat.png",
+      "image_sha256": "cf3d982b0695cb2bcb05e4741e86a08fb3e5924b571d7ca7a09cb78c0b121e52",
+      "output_sha256": "1732d1cf6eca3a6d3ecaec4c0500770534f63a3653bcf8296ce82d8b21cd071b",
+      "lines": [
+        "Portugal"
+      ]
+    },
+    {
+      "image": "fr/01-clip-16-light-flat.png",
+      "image_sha256": "79e32a0a09a61ba07450385ec11b741c2f901c34d8fc3dbb9fed94a945c43403",
+      "output_sha256": "89caa70da1a116700654a8b3614b6a298dee5f308d7f3cde817bc22563a3ff1a",
+      "lines": [
+        "Tura"
+      ]
+    },
+    {
+      "image": "fr/01-ellipsis-16-light-flat.png",
+      "image_sha256": "d79d412c1e7b06c62b8b1023dc2ac9708e9bfc633aeabe61ac118740fd62526c",
+      "output_sha256": "07c3b3732b49213b48084aa4dc31bfe5a6e191f2ef8cdfaec75cf69ee0f0dfc9",
+      "lines": [
+        "TU..."
+      ]
+    },
+    {
+      "image": "fr/01-fit-16-light-flat.png",
+      "image_sha256": "476921aa2e5599cb82cbfac1f9379943b49a8094fb1fa11fc0b6df981a687db6",
+      "output_sha256": "90c5740d0ea77d6a5032418673e5297b39f39f7c2cc4fc54f429d6d44d24a1c7",
+      "lines": [
+        "Turquie"
+      ]
+    },
+    {
+      "image": "fr/02-clip-16-light-flat.png",
+      "image_sha256": "f7046aaa693095403bd5ae972a12e1b5d76deceb2adb9c809eab2ee09fc94326",
+      "output_sha256": "646f4800eef7556a2c338d8fc50e90a639f5a2f8a74d04ca7f0b35d78fc31c76",
+      "lines": [
+        "Slova"
+      ]
+    },
+    {
+      "image": "fr/02-ellipsis-16-light-flat.png",
+      "image_sha256": "de034fa73b732bc43eaea8576fe75433a6fbe9dac88a8eca418e339f2555f4f7",
+      "output_sha256": "f04eaeb6336b640eec9d445fb84e0e64c1d59bd1939e1bb46762893ef7c06003",
+      "lines": [
+        "Slov..."
+      ]
+    },
+    {
+      "image": "fr/02-fit-16-light-flat.png",
+      "image_sha256": "a06061f9313d328ce9bf5762ddd17780c057dc4a14d408af60616267db217588",
+      "output_sha256": "e34fa167fa68545cb27c401404c50df8062d81dea051b674d5ba57178a98a087",
+      "lines": [
+        "Slovaquie"
+      ]
+    },
+    {
+      "image": "fr/03-clip-16-light-flat.png",
+      "image_sha256": "8c72e1430e0448f3f70f118a084a8809499f5c906e35e734bf1b00200957082d",
+      "output_sha256": "3aebdff1c3d52d64791678f7453605cf2d17557560779b18a382158c393b375c",
+      "lines": [
+        "Tchéc"
+      ]
+    },
+    {
+      "image": "fr/03-ellipsis-16-light-flat.png",
+      "image_sha256": "0ee60ec9b7f32119f623bc4b4dd8ab547f43458452d06c9c25fb5c07d54e1b31",
+      "output_sha256": "4e75a91c684ed2b715d17ba70b5d1926be7a7a7c5e2dab5e0d2002843a46bac7",
+      "lines": [
+        "Tch..."
+      ]
+    },
+    {
+      "image": "fr/03-fit-16-light-flat.png",
+      "image_sha256": "ea2cd221fe5cc5051bf53a8cf8e068c2e9868fc02341d49cd02964b5fa14ac43",
+      "output_sha256": "d116d883db538501d9dcb9f1c951a6e0593842a8c0d2622e52ffefc6906dbd16",
+      "lines": [
+        "Tchéquie"
+      ]
+    },
+    {
+      "image": "fr/04-clip-16-light-flat.png",
+      "image_sha256": "bbadb7be4302274950118fba5f98194d66c062614119078f6f158b3dc3583281",
+      "output_sha256": "905d6a98ce301c5f0e2e0bed3120d7ca4f81f5fd70b204e3978efaa06d992327",
+      "lines": [
+        "Roum"
+      ]
+    },
+    {
+      "image": "fr/04-ellipsis-16-light-flat.png",
+      "image_sha256": "804171b2c1c377d657498ccb6e511621f94df76e44d41295ec0902b3b8758a3b",
+      "output_sha256": "fe63b7cdb1c1c487abcbeaba90c8976aafc8c92812bcf05c712944f95e05c2ce",
+      "lines": [
+        "Rou..."
+      ]
+    },
+    {
+      "image": "fr/04-fit-16-light-flat.png",
+      "image_sha256": "2ad76e741a8499bb918c5e69675c5508176b8c0626aac9d3009f0dfac59d3742",
+      "output_sha256": "19d72239e0d4b46721b43ac2f7dc4ff5117ee0e441a5f49727ffbc3dcaffeeed",
+      "lines": [
+        "Roumanie"
+      ]
+    },
+    {
+      "image": "fr/05-clip-16-light-flat.png",
+      "image_sha256": "0f4e1dc1699b58ef3b1ed6ba983f1d929c98732263abec7dfb727af85a22142c",
+      "output_sha256": "718b13c2e5780ae1c49c7c04f97717dbefb9abae851c2ed5698e33dd697dcfbc",
+      "lines": [
+        "Pakis"
+      ]
+    },
+    {
+      "image": "fr/05-ellipsis-16-light-flat.png",
+      "image_sha256": "2e5fbffc5cb45bfee33cc6de445bba13d2f3ce39d931fc8f223996b0caa57b6a",
+      "output_sha256": "309d921c0b88fb5f2f85a951bb3ca99af73464c1de034a3e736bbe8013491668",
+      "lines": [
+        "pa..."
+      ]
+    },
+    {
+      "image": "fr/05-fit-16-light-flat.png",
+      "image_sha256": "15f7dd2107df26fae496b24f6ce83ee57719f2bad0fb5b3988a540d813bc2cba",
+      "output_sha256": "e8ef84c7f821883432f071d9b7dbc5f7748637fcaf957b7e5b32b50cb6c88cdc",
+      "lines": [
+        "Pakistan"
+      ]
+    },
+    {
+      "image": "fr/06-clip-16-light-flat.png",
+      "image_sha256": "3988a4c187138f9a83dc56d8c173455586702248f397ba2fbbd1168c746878eb",
+      "output_sha256": "c80b64893a1fff8df7d53c3265042be2eb346f0e328b0a11a320ddc8bf391136",
+      "lines": [
+        "Royaum"
+      ]
+    },
+    {
+      "image": "fr/06-ellipsis-16-light-flat.png",
+      "image_sha256": "3fa6d823c092b3f7ac6127753842b6600d19d95a0b51402c52c4abda853917b1",
+      "output_sha256": "37fd4c830b728dbbf02b05d517ee60d6e8e26f5a975e0b1e9bdc8f79f4db4f6b",
+      "lines": [
+        "Royau..."
+      ]
+    },
+    {
+      "image": "fr/06-fit-16-light-flat.png",
+      "image_sha256": "9488a4e134b57da27dabfbd84ea656f5af1814f2b614bbd5fdc36d1a5c078be7",
+      "output_sha256": "6975ae0b40deaffee8be9e887a3a848d45711ed139731f2e23eadbb60b4f8938",
+      "lines": [
+        "Royaume-Uni"
+      ]
+    },
+    {
+      "image": "fr/07-clip-16-light-flat.png",
+      "image_sha256": "98ceddc1edc3075a44a55367c258c8a50ed29f1a502a0e57ccd995e0d160b16f",
+      "output_sha256": "4c617f10b64dfb0896a4aa5eb7d3724033fc6b8f2355158ce017d059418c3ce9",
+      "lines": [
+        "Autri"
+      ]
+    },
+    {
+      "image": "fr/07-ellipsis-16-light-flat.png",
+      "image_sha256": "b36491711ced083fb97567a6d0fa453c42a33f88d86198ccaadf5971c07b17b3",
+      "output_sha256": "9fc8cd317d60eab791b2b9ea598875c99244245c3e19773845e904c5e9bf6925",
+      "lines": [
+        "Aut..."
+      ]
+    },
+    {
+      "image": "fr/07-fit-16-light-flat.png",
+      "image_sha256": "1bba9c758e2a283ecc206f3d9f7f53f95da494897562fba7bdae312ac8e6a9ba",
+      "output_sha256": "abfc856c39e28b88f4b5756d1cf0e3fb92ed7522800dd72d4f2e19a8272be3ca",
+      "lines": [
+        "Autriche"
+      ]
+    },
+    {
+      "image": "fr/08-clip-16-light-flat.png",
+      "image_sha256": "059b73db076c876e8585cf90c989597807aa276001812226926c953279739609",
+      "output_sha256": "16a0740cfb875b763507771c727852103c80864c0c8e88c2eb855baff95725d9",
+      "lines": [
+        "Bulga"
+      ]
+    },
+    {
+      "image": "fr/08-ellipsis-16-light-flat.png",
+      "image_sha256": "7792ed79c990e8428cc6120da6e59c14564f22f70353e1ef0bd8832bb64c052f",
+      "output_sha256": "85f02225cd8afdb37ed407ab5aa53790f1e39330c68fa64dd4ec7f6cae242b4e",
+      "lines": [
+        "Bul..."
+      ]
+    },
+    {
+      "image": "fr/08-fit-16-light-flat.png",
+      "image_sha256": "edf0cd8fca39c075e83f8f52050556b774d835e7c234be0b85cd44eff053c408",
+      "output_sha256": "0906eee87cd56ecf80f8a8926e583287db4218dfb205a26ae8e0b9fe12a7e96d",
+      "lines": [
+        "Bulgarie"
+      ]
+    },
+    {
+      "image": "fr/09-clip-16-light-flat.png",
+      "image_sha256": "0072e2846fda034faf713dd2a48e3b15b3bb22c17002439e7df7d74086f7ccae",
+      "output_sha256": "d77b92aa5fa21423b8664fef78bc88cb8af9f75b7ae1ca7add1ba3e5375f24cb",
+      "lines": [
+        "Austr"
+      ]
+    },
+    {
+      "image": "fr/09-ellipsis-16-light-flat.png",
+      "image_sha256": "bd9a7a504f1034e878441b2a403b252b5c14b528ac431b21136cdf2464a0bea9",
+      "output_sha256": "4f340224ca03de13379c77985d936176703e31aa69e9e4270882a6d71b1bd52c",
+      "lines": [
+        "AU..."
+      ]
+    },
+    {
+      "image": "fr/09-fit-16-light-flat.png",
+      "image_sha256": "2e6016d1a1b95372e2fd6ba982b32698fb84c561f1412e8189a8a13586a96c71",
+      "output_sha256": "97e29beb2f4c479b6969e8c959f1967e1e570ab70c21b870d88fcf76c8bd1ed8",
+      "lines": [
+        "Australie"
+      ]
+    },
+    {
+      "image": "ja/00-clip-16-light-flat.png",
+      "image_sha256": "93e14b3ec578e4f064a37928e3471efe9dba64871b3752ee9fd1e09e3169828c",
+      "output_sha256": "44022d0dcd5b297834a36fe07d73b41691101ed26517abaa3ee4327f44f1e3c6",
+      "lines": [
+        "1（4"
+      ]
+    },
+    {
+      "image": "ja/00-ellipsis-16-light-flat.png",
+      "image_sha256": "863693d1cb3998358e82e3ff98a012f2afb2565f797e39bdd70ea46282a89c29",
+      "output_sha256": "f2e0378429014336bcc822b6b602ac89d58193b692802f80988ac8b65b3a34db",
+      "lines": []
+    },
+    {
+      "image": "ja/00-fit-16-light-flat.png",
+      "image_sha256": "5ac697b1cca22f0f53f8f4d5e79317ad53c6aca62d258f6f5ecd8ce3d897320c",
+      "output_sha256": "c8c2ef20659ec12bd79fed03cd545c3412f16d1b5452d1c7d4e1ce112caa994f",
+      "lines": [
+        "トルコ"
+      ]
+    },
+    {
+      "image": "ja/01-clip-16-light-flat.png",
+      "image_sha256": "eabc99024a1e62706268b3b1645b284169846be4344ab8151adab11c2ccb1328",
+      "output_sha256": "45d88c3e5e21df45ed938e5bb85ebd9cbf720cd2996011019cadc5c2de786668",
+      "lines": [
+        "オースト"
+      ]
+    },
+    {
+      "image": "ja/01-ellipsis-16-light-flat.png",
+      "image_sha256": "409ed1fd6f4eb7fb98dea1c1b78d86fb1ee933831d9e48167e32b7c62cb85328",
+      "output_sha256": "b05cc1a4dcb840af1d1bffa7ae1a5bafa9b65c4e89c0e3195f8fcc6ce83b4679",
+      "lines": [
+        "オー⋯"
+      ]
+    },
+    {
+      "image": "ja/01-fit-16-light-flat.png",
+      "image_sha256": "03605f84d09eb06522452fd088c8ce589477379466bba38663af6ed3635dced9",
+      "output_sha256": "daed9cf46894757125ccdd52581a9df56f83ddd853ccb4e8a8ee53f99b616736",
+      "lines": [
+        "オーストリア"
+      ]
+    },
+    {
+      "image": "ja/02-clip-16-light-flat.png",
+      "image_sha256": "ce2a5e7342b007a30b1edba89679a4f2deeb34b4a4b849f525fdcb216b27ceaf",
+      "output_sha256": "044811eff4d1a19f293579bb41ad08aadeba5d77eced6f084f5b54d2ef4085f0",
+      "lines": [
+        "ポーラ"
+      ]
+    },
+    {
+      "image": "ja/02-ellipsis-16-light-flat.png",
+      "image_sha256": "7c8ef826e61f65704306d19027f8da3b67c6fb516ac9df9068ae7a25692f4df0",
+      "output_sha256": "e13406ae7376ec84273bb569e9ef3abf1921b413522569545e3b9caa01aae53f",
+      "lines": [
+        "ポー."
+      ]
+    },
+    {
+      "image": "ja/02-fit-16-light-flat.png",
+      "image_sha256": "a026b026bd9a61bd1f2a39e6aa166c4b4e8bd4ed9c2771065749a949a89265c1",
+      "output_sha256": "f3cd26ab0ae05795ca69c98ff0b783888361be4cb1c765b7c159bcba6b5434b2",
+      "lines": [
+        "ポーランド"
+      ]
+    },
+    {
+      "image": "ja/03-clip-16-light-flat.png",
+      "image_sha256": "c013c0462d84ed77fe193778df8dc85b0c0649f0dbbe55d0d903bd2fb8668dfa",
+      "output_sha256": "29fee4b707aa27d56b9b89da6963d7296106fc398344ee5f0a576c4a7b66ec69",
+      "lines": [
+        "イギ！"
+      ]
+    },
+    {
+      "image": "ja/03-ellipsis-16-light-flat.png",
+      "image_sha256": "d027f138e0e949cc2b75bbf1e9a7f29c7b3816b3c4da1cdd29dd1c8efc1e80c3",
+      "output_sha256": "42475973b69ecdcab27f6ce4aad63bc6011c6bdb34d6e649ddf230cf5dc79789",
+      "lines": []
+    },
+    {
+      "image": "ja/03-fit-16-light-flat.png",
+      "image_sha256": "1c98501e6fb9fb181439d0ea34aacda2b70bd7881e816607d4a4a0724a04826e",
+      "output_sha256": "4f202930dbae4ebd282d2c6a87d1cf8b10646c5dcb5f9e25beecf2b74762c380",
+      "lines": [
+        "イギリス"
+      ]
+    },
+    {
+      "image": "ja/04-clip-16-light-flat.png",
+      "image_sha256": "fec7d0318b863fd9fe35a6638fa94db5d6d8a4c3d2d6f3ec1f5cc072cdda2dea",
+      "output_sha256": "1a080f1fec506281e7ef5a5657b92394bab689014cad0165521ec559fcdc8375",
+      "lines": [
+        "ギリミ"
+      ]
+    },
+    {
+      "image": "ja/04-ellipsis-16-light-flat.png",
+      "image_sha256": "70a4cc92e23f94ecce361d15e0b159a1faf0c845ee946ede1ee8a2e3d3e6aa40",
+      "output_sha256": "844ec94512ae94433d416a8601ea692d69c226826c64ae7d7c542aba2ca88f98",
+      "lines": [
+        "ギ.."
+      ]
+    },
+    {
+      "image": "ja/04-fit-16-light-flat.png",
+      "image_sha256": "dcbb929d6195d4b59df25ccc00b955b369451aaf6b72505bc8e2d0731a3db528",
+      "output_sha256": "be300d1d8dca53f24ceae009b4ab80a199cfa1902e2faab1a659913377be0b32",
+      "lines": [
+        "ギリシャ"
+      ]
+    },
+    {
+      "image": "ja/05-clip-16-light-flat.png",
+      "image_sha256": "6d7e393bf1b980cb6eb37514bb748606a533547b93db60ceff5d1d6f32308541",
+      "output_sha256": "ef197fb42df515b9febe5e398780aa738a7dd33c6a39bcd42844882d3fcdc514",
+      "lines": [
+        "ルクセン"
+      ]
+    },
+    {
+      "image": "ja/05-ellipsis-16-light-flat.png",
+      "image_sha256": "b28a8a04d7c60e9e8b53d40782022f6d026354762efd43867017c94bae819234",
+      "output_sha256": "98d5e08464a428ba5fc6909355f943628740a160c5017d07ee1698f06b196c66",
+      "lines": [
+        "ルクセ…・"
+      ]
+    },
+    {
+      "image": "ja/05-fit-16-light-flat.png",
+      "image_sha256": "814650cc73970d9a34018e12a6ab1389b9b2d44290f695fde17732e9c785a285",
+      "output_sha256": "adb1518e4a8eff3e6927170443ab923689c95620e5b3ff9af0e737f9b65af6fa",
+      "lines": [
+        "ルクセンブルク"
+      ]
+    },
+    {
+      "image": "ja/06-clip-16-light-flat.png",
+      "image_sha256": "ce59fd654cb917333a8d091165ecdc11cf2c0c0a3f09752bf6c30d825450756c",
+      "output_sha256": "afa41cca41aff47bc5720d2253141c9f3a2697807b1c8b13d898d28e75ecae44",
+      "lines": [
+        "フラン"
+      ]
+    },
+    {
+      "image": "ja/06-ellipsis-16-light-flat.png",
+      "image_sha256": "daa041333b5e52824ff1e6aa6ab554a6713de120488af2088e02e7b5d0ce51e8",
+      "output_sha256": "40411eccd34c468b8f3ea95ab4ce5c353f3d41f7354b9f63c51b5ec082cce64f",
+      "lines": [
+        "7."
+      ]
+    },
+    {
+      "image": "ja/06-fit-16-light-flat.png",
+      "image_sha256": "60002c1378db605a11fc7491e973861582c82c20f08eef3de48bf75d80d0d3da",
+      "output_sha256": "3eeef27f21d2350230cffa7b02a96c5f72bf8d949168ac2fb71b337572e031ed",
+      "lines": [
+        "フランス"
+      ]
+    },
+    {
+      "image": "ja/07-clip-16-light-flat.png",
+      "image_sha256": "78ffe9eeec6ae002f4abb02c856ca2b9827e69603bed480aea8ffc4f0343785e",
+      "output_sha256": "9a08a35bb23e8485249c03dfdaa5e3e33a4b7d8bf03b541a70a261e4175e7cd6",
+      "lines": [
+        "夕•"
+      ]
+    },
+    {
+      "image": "ja/07-ellipsis-16-light-flat.png",
+      "image_sha256": "48f77713b4e9a504639641c86b598719bfabc67fad62263a22d0a299ae8dd5e1",
+      "output_sha256": "3498b4a9045c3805dd5e42beeda729e3336bc250d8fd041cee30fe7455db6d78",
+      "lines": []
+    },
+    {
+      "image": "ja/07-fit-16-light-flat.png",
+      "image_sha256": "6d696f15af3c97acfd1026cc491cb29e993cdd0a5a3976fc4f8284a3f9ca1bbd",
+      "output_sha256": "82ba2757bed066bb1490c94e587c28d7cf80973ae91fd0dd2097d4894926e497",
+      "lines": [
+        "タイ"
+      ]
+    },
+    {
+      "image": "ja/08-clip-16-light-flat.png",
+      "image_sha256": "54964dcadc4e0d8867a7a1fb098f92adb14c5b78bf352b9b208282c37dcf0bee",
+      "output_sha256": "43994dfbea5a23fb0e15b1f948a98147ab836e3a77feb2e7c7ed4f641583e5d9",
+      "lines": [
+        "リトア"
+      ]
+    },
+    {
+      "image": "ja/08-ellipsis-16-light-flat.png",
+      "image_sha256": "2cbb010da6fc12fd9f5b05971fe0285940fe32227e2263da3776560d7aa31c5e",
+      "output_sha256": "a392e9d3e833d0e14cd346e4652bbad608641ac4cd777d8f6d7862735b67b264",
+      "lines": [
+        "リー..."
+      ]
+    },
+    {
+      "image": "ja/08-fit-16-light-flat.png",
+      "image_sha256": "c5f93514ee46f3f0954ed164520504c9d82f43f35130f2e620f26753acbc81d7",
+      "output_sha256": "cc7f7ba78f53ca801e895b480aa4c538911dba5aef15ac5ed827516e0fb20a18",
+      "lines": [
+        "リトアニア"
+      ]
+    },
+    {
+      "image": "ja/09-clip-16-light-flat.png",
+      "image_sha256": "2400aa717c65e6985167c8c02223340e35e337bd5b787bd966e9aa34a9fa9601",
+      "output_sha256": "f9c8455b4dce1d46eb6adab9de94d4fc1c5b20007ed560858c0116e0e7cde8a8",
+      "lines": [
+        "メキシ"
+      ]
+    },
+    {
+      "image": "ja/09-ellipsis-16-light-flat.png",
+      "image_sha256": "7db38e3aa1bed9e3f5f30c91e22a55c249ebaa18ba9741797eb4ee0992daf569",
+      "output_sha256": "b5c4976cd5918536a9922fe60c63cd36c05c81c54b86ef62abf1e0d622a07728",
+      "lines": [
+        "メ.."
+      ]
+    },
+    {
+      "image": "ja/09-fit-16-light-flat.png",
+      "image_sha256": "0adfc67764c5bd90bc062fb4e60f63b240f703fa8303c68598c9cbb94e010c3a",
+      "output_sha256": "62ad9479f95892ecf333234a808772d27aac967bf6db5c7779b873cd580f3ef7",
+      "lines": [
+        "メキシコ"
+      ]
+    },
+    {
+      "image": "ko/00-clip-16-light-flat.png",
+      "image_sha256": "78be25c318d057cb9aa7ac2448e811f9e299d4090e35cd52a3b162f7e65e59af",
+      "output_sha256": "ab0e37549bdcaa96e01513d23eda80b4243fa95243f1b03bf1a7bd28e6ce7a73",
+      "lines": [
+        "아르헨"
+      ]
+    },
+    {
+      "image": "ko/00-ellipsis-16-light-flat.png",
+      "image_sha256": "6ff1a53f9e8c0fd780fcccfb39a7d29c5545ddc6f894d08366d0828fec2213d1",
+      "output_sha256": "817c4ff02403d77e6f1c299951a5348cfaa9c28b3cff21c99e6d62fede2f3185",
+      "lines": [
+        "아르..."
+      ]
+    },
+    {
+      "image": "ko/00-fit-16-light-flat.png",
+      "image_sha256": "82dcb7250c898ed7f0dce85cb51317fab9bd5e4298347496d8f74781d2d11bf2",
+      "output_sha256": "ee954508c38ec5cbfdf6eeb2e7773bee0bcf1c9f085ae057d5e2c726bda9a86b",
+      "lines": [
+        "아르헨티나"
+      ]
+    },
+    {
+      "image": "ko/01-clip-16-light-flat.png",
+      "image_sha256": "b4a3421491be2c2626498daa092ffd56c7192420f14d07f9b59ca45d05761cbb",
+      "output_sha256": "1db96322f30e72ce38a9cab81870cbda9793d25a5042aee37ac8d65a8b63a85c",
+      "lines": [
+        "아일"
+      ]
+    },
+    {
+      "image": "ko/01-ellipsis-16-light-flat.png",
+      "image_sha256": "2bbde998c48d8474d23a4c2795f3a07105aac4ac37e1ec31aa0c0a019573482f",
+      "output_sha256": "5b1726068e453da360d8584a74c0b80eab36dc3c8b4d26bb6096a707dd9dd3f6",
+      "lines": [
+        "아..."
+      ]
+    },
+    {
+      "image": "ko/01-fit-16-light-flat.png",
+      "image_sha256": "64d4d684a7620b53781719af424625b8763a68cd75424f018bd75b109038277a",
+      "output_sha256": "87f9f43cc53cedcc7a08b91e312c958e4ad940bd8d402275691937af5cd5d246",
+      "lines": [
+        "아일랜드"
+      ]
+    },
+    {
+      "image": "ko/02-clip-16-light-flat.png",
+      "image_sha256": "c4fa3ad194f81069c1305aa14fc56cba00b2ff796cf4f6bb4c996ad6132fc1de",
+      "output_sha256": "1ca738d15a545f404ff32c4b0416cf68dcb7b0debaf88552d39515a9f7e52658",
+      "lines": [
+        "에스토"
+      ]
+    },
+    {
+      "image": "ko/02-ellipsis-16-light-flat.png",
+      "image_sha256": "d5ac933a443ff48ffc950b24b8fc9e023bc3043d1405caf15c3f1715b6fa4c77",
+      "output_sha256": "37808a20017c4ae92cf84460522ac50a5c17b18963120cffb45edd32aaacaa6a",
+      "lines": [
+        "에스..."
+      ]
+    },
+    {
+      "image": "ko/02-fit-16-light-flat.png",
+      "image_sha256": "5c4e58a20163944a6cf6ff78e755dbc587fbc2d22c57e96fd2ce211e964ecff8",
+      "output_sha256": "590ef29ba85aad3e7fc17cb3871eb1db617c28ca63fe6980562aae25693f78b2",
+      "lines": [
+        "에스토니아"
+      ]
+    },
+    {
+      "image": "ko/03-clip-16-light-flat.png",
+      "image_sha256": "f1f4753dd9a2e1c908028806551fac469aec3f2eb480f967c07883adb9ae2268",
+      "output_sha256": "05c3c073a7a9c82dcda633b487167c65b9ce53d056284795af14b4b556375818",
+      "lines": [
+        "튀르크"
+      ]
+    },
+    {
+      "image": "ko/03-ellipsis-16-light-flat.png",
+      "image_sha256": "dbda84a5ba5aeeb642e19cdcf8bf26884fae6844cc72c5fe783d2561eb076c52",
+      "output_sha256": "ca93a2a9468db8e8f150d2f72509514cb07907fc7b4e311cd0281b7c970327e9",
+      "lines": [
+        "튀..."
+      ]
+    },
+    {
+      "image": "ko/03-fit-16-light-flat.png",
+      "image_sha256": "938fa3c64da094401a8adda06b65ffef9fd62e2cc055bac6661ddeba2580dd57",
+      "output_sha256": "24e56b06a36056bc479cf46aab9dc1e7e8d07483e3a66c044ff4d14729bb9f62",
+      "lines": [
+        "튀르키예"
+      ]
+    },
+    {
+      "image": "ko/04-clip-16-light-flat.png",
+      "image_sha256": "73528a4edbbb36ee1428f13d7e88663c2d78dd80ab68a9f5812c2e1f06c137ff",
+      "output_sha256": "116d64bd1e5adaece1ef59b79653d291a5fdb22cfbaeeb3014a5dd929624a853",
+      "lines": [
+        "일."
+      ]
+    },
+    {
+      "image": "ko/04-ellipsis-16-light-flat.png",
+      "image_sha256": "090e8a477b6471a9f98d91f4403c07bb205817de069e8c6c47a9acf3aa075344",
+      "output_sha256": "3bdb16a1654aff4885cd54005e20dd8a6a7ed969a8a17d7895465a5faf700205",
+      "lines": []
+    },
+    {
+      "image": "ko/04-fit-16-light-flat.png",
+      "image_sha256": "33d7664d5e08c53ea2e7614632e26f8fc6d846175e7602c9e82b90e633dd5802",
+      "output_sha256": "75a0a31aa4d301f716a8378a6fcf169d78dfb107e17d4181101efc589660ab41",
+      "lines": [
+        "일본"
+      ]
+    },
+    {
+      "image": "ko/05-clip-16-light-flat.png",
+      "image_sha256": "f2af3218e5e1663fd67ba94cd4500eb2f8b7e3d6e83669c5ff06a768ffa7ab78",
+      "output_sha256": "eb373964573fd04188f781c062fe06287a6c2ecadb82117c97052c28a6a2329a",
+      "lines": [
+        "이탈리"
+      ]
+    },
+    {
+      "image": "ko/05-ellipsis-16-light-flat.png",
+      "image_sha256": "420077a0ae0bf14f718e736b78e9eb63e95d4efe9995693cd26aaff2eaf13e53",
+      "output_sha256": "cd96706a3e9e9b12ee33dc4732a09267ddd68f7fd4ff0e24098840d74f908c76",
+      "lines": [
+        "이..."
+      ]
+    },
+    {
+      "image": "ko/05-fit-16-light-flat.png",
+      "image_sha256": "6569ef8504dce7ea8bb42bf70b5d0c6a8c3ddc9794feab78d728f0885437c3f8",
+      "output_sha256": "d126a72a0192303922ada4e58e503808b26f518b8da1c53bcaee9da95a124e29",
+      "lines": [
+        "이탈리아"
+      ]
+    },
+    {
+      "image": "ko/06-clip-16-light-flat.png",
+      "image_sha256": "5f55877766036865003ab8844eea840131aae0002e592d1c5a454a7e763b0a1a",
+      "output_sha256": "d7d572ad58cc30c0120cfd0beed174fd5028c51d23670724265720d321e33c65",
+      "lines": [
+        "우크라"
+      ]
+    },
+    {
+      "image": "ko/06-ellipsis-16-light-flat.png",
+      "image_sha256": "f0a10e4a4653c2339dce587dbd38df3d1f0e6f6e0c8cd2ff62897847aafe73c7",
+      "output_sha256": "b9d8d9e38be2fe6c900a97a1380779ef575915f320b0ddebbb016b4a4f8aa91a",
+      "lines": [
+        "우크..."
+      ]
+    },
+    {
+      "image": "ko/06-fit-16-light-flat.png",
+      "image_sha256": "147187e0034aa036ecb196fbc50927602229d996db9cbd133b5ede72884823c1",
+      "output_sha256": "6f441f1afa708ed6f13c32a5d4ca4310c911e1f907f4aef34c37db4060caf866",
+      "lines": [
+        "우크라이나"
+      ]
+    },
+    {
+      "image": "ko/07-clip-16-light-flat.png",
+      "image_sha256": "aa2660b4d4b0e8fb1a4ac877f4213e1a2f50923a4dba2b5a7f39f71a017d00a3",
+      "output_sha256": "b6caf55c0febe13c88a16ef4f16c59d8ae437b4fb92c37121567757aec90d557",
+      "lines": [
+        "체."
+      ]
+    },
+    {
+      "image": "ko/07-ellipsis-16-light-flat.png",
+      "image_sha256": "090e8a477b6471a9f98d91f4403c07bb205817de069e8c6c47a9acf3aa075344",
+      "output_sha256": "1f2f6731294dbe391c3d2a45970e7c2eef60bd1dad6e1e2f69743e97f73a12c5",
+      "lines": []
+    },
+    {
+      "image": "ko/07-fit-16-light-flat.png",
+      "image_sha256": "f3d53a3e29c9e37f9a3c9b2dd4cd0cdfc919a353983d7d959cf674bad079108d",
+      "output_sha256": "8a1dc29d0e651ab5461f1ff93b466e8ba63bdf91c0fc6c8945d312d50bed5a05",
+      "lines": [
+        "체코"
+      ]
+    },
+    {
+      "image": "ko/08-clip-16-light-flat.png",
+      "image_sha256": "9d76888bd305f2f212910956cf77497105b56af23986b38af09b905840f01f47",
+      "output_sha256": "d4f1bfbdd0740177731d73425812c43b246677fe13274b62e53976791a8f4d6f",
+      "lines": [
+        "슬로바"
+      ]
+    },
+    {
+      "image": "ko/08-ellipsis-16-light-flat.png",
+      "image_sha256": "b21f22367a90efe46460f9d781a1c7c8eeaf57455220a2ef181780320278e652",
+      "output_sha256": "7552e477c2f623ca66e73eb13e041ee1282cb9889d7b2aa8e8c809e0650e3b10",
+      "lines": [
+        "슬로..."
+      ]
+    },
+    {
+      "image": "ko/08-fit-16-light-flat.png",
+      "image_sha256": "d0a16f50d60018ec87ada0e6f71e6770f62872c01e82c8b8c78ec37602f37194",
+      "output_sha256": "7dd02d5cb2aa6595a453d4a39c20511c27ed47709f9d8fcb27855caf3382f72f",
+      "lines": [
+        "슬로바키아"
+      ]
+    },
+    {
+      "image": "ko/09-clip-16-light-flat.png",
+      "image_sha256": "d1ee851902ab54d4db62001d07cd2ddaa966608ed0668ee86e86e4b60b7356c5",
+      "output_sha256": "711158990544d6b00577c3de699e9b95cdc4435bd053efc3604d37f6d255e55b",
+      "lines": [
+        "세르!"
+      ]
+    },
+    {
+      "image": "ko/09-ellipsis-16-light-flat.png",
+      "image_sha256": "c97bb2a53c42873214576247904a20b394bb7ea8fafc0a32dfd7ac9366004bee",
+      "output_sha256": "78e2b4e7c7cf1bda275fb74a92377b72293ee878fc7a9b6599290e71d71a5e09",
+      "lines": [
+        "세..."
+      ]
+    },
+    {
+      "image": "ko/09-fit-16-light-flat.png",
+      "image_sha256": "6e3dae48cba8d0241fdc89d3e2d8364dc45d155a21b96b5b67fa267cad2e096b",
+      "output_sha256": "e3f506632e6682ac08d6c163876c418727181c1a07cf8f0552513b13c527ad57",
+      "lines": [
+        "세르비아"
+      ]
+    },
+    {
+      "image": "ru/00-clip-16-light-flat.png",
+      "image_sha256": "4e744de35f9078cd65aa600e7188b451a3a0ef7c624e80515ddc11e0ab28c493",
+      "output_sha256": "9714bf7945405da903180d868fc5754a75f90ea0d41a4b6ecab1896ea33245da",
+      "lines": [
+        "Укра"
+      ]
+    },
+    {
+      "image": "ru/00-ellipsis-16-light-flat.png",
+      "image_sha256": "5765cd6749771cf51b23671cb1acc3f80c0c9407ea8e9581a733757f6166c854",
+      "output_sha256": "4835dc86462faf6c713c932afd95c4723acf81b195254032113650dc97f68cb9",
+      "lines": [
+        "Укр..."
+      ]
+    },
+    {
+      "image": "ru/00-fit-16-light-flat.png",
+      "image_sha256": "9d4df429f845c5e58f81dfbd49b8ab8934d8238c10230ab3806c31fe490c2ad8",
+      "output_sha256": "55ae526a846044c9292b9c362baa1071a92b23ab8b12bf924b8a4ad1b8daaa22",
+      "lines": [
+        "Украина"
+      ]
+    },
+    {
+      "image": "ru/01-clip-16-light-flat.png",
+      "image_sha256": "4de3bcba945f82c8f35086720ffb4bc8d44858598f557a228e6feea1a40931c6",
+      "output_sha256": "c962b98a9e63982b9b1f9abca2abc3505db0f7f23ee8e824a38acb7f3fe5de30",
+      "lines": [
+        "Индон"
+      ]
+    },
+    {
+      "image": "ru/01-ellipsis-16-light-flat.png",
+      "image_sha256": "7290fd1b4cc766d1b155b62c2917be2c1e9485642e53537a5f7bb8ce11634e99",
+      "output_sha256": "2514a1e6873079ad4c0cb36b8ca94de6ebd39b0dbb90dba47cf804a11cd16e9a",
+      "lines": [
+        "ИнД.."
+      ]
+    },
+    {
+      "image": "ru/01-fit-16-light-flat.png",
+      "image_sha256": "d1e630bcb7356d8eb9775cdc3aa1764c5e89a3e8e9b2be2a7bbfa5dabc166219",
+      "output_sha256": "0ff983819efaf1132854f6038ea90cb96c6b56b261497f3ac744920ae2b6c580",
+      "lines": [
+        "Индонезия"
+      ]
+    },
+    {
+      "image": "ru/02-clip-16-light-flat.png",
+      "image_sha256": "e6c827fb4112e062cfc317298bbaf7ad7c7598aea6675f6b54238e8b5921bcc4",
+      "output_sha256": "249603a63c31d7b395827a5eb278baf9618e68ec7810b61f9a5da3125e297354",
+      "lines": [
+        "Пакис"
+      ]
+    },
+    {
+      "image": "ru/02-ellipsis-16-light-flat.png",
+      "image_sha256": "c1d14c681e1f708129c3601196f12f76c58aef1d468e222062a9842546a69668",
+      "output_sha256": "100963714b984f57c16d003e95c5333fc97c9f2387cee68bbd7435735e8140fe",
+      "lines": [
+        "Пак."
+      ]
+    },
+    {
+      "image": "ru/02-fit-16-light-flat.png",
+      "image_sha256": "fc90e56e78105a74ccd9f976e5c5c14add2d6eaeb4760a2ac7b0385559a231b2",
+      "output_sha256": "8a70742b8048d22297b0d6644154b398cdb4d12a790da85eb5d83c8653a35fdd",
+      "lines": [
+        "Пакистан"
+      ]
+    },
+    {
+      "image": "ru/03-clip-16-light-flat.png",
+      "image_sha256": "c71412f495dde437ace8f2ca7dbe9d0af5f2348f2b0e899804497297158bfc12",
+      "output_sha256": "5f9009a7887bb32392fa5b41ac13191c65bd001aa11ccf44d7afcb70a0a80c49",
+      "lines": [
+        "Нидерл"
+      ]
+    },
+    {
+      "image": "ru/03-ellipsis-16-light-flat.png",
+      "image_sha256": "4982b071b00d85d4b4166fdadb25f6909835b92dc5f6644797748dc0df652ef3",
+      "output_sha256": "036cc90acee2b65c447ceb65b56ee63b1678a519dfa66ef8524d0f82d080206b",
+      "lines": [
+        "Ниде…"
+      ]
+    },
+    {
+      "image": "ru/03-fit-16-light-flat.png",
+      "image_sha256": "509d36475c64de067108d6a8507d95135585068b0558961109e71748351ec627",
+      "output_sha256": "d24f127b1913ff6f093734e5e17afd9c88d2006d4b16e79ca2da4be3bf966aca",
+      "lines": [
+        "Нидерланды"
+      ]
+    },
+    {
+      "image": "ru/04-clip-16-light-flat.png",
+      "image_sha256": "162a57152a82cb65efb610eabfc68c31d9776d21e0459ab92e38fe99500c3ee4",
+      "output_sha256": "51908b261ba13d83fce27d9855e52078efdcec001d5744599d4f02b697e9d939",
+      "lines": [
+        "Лать"
+      ]
+    },
+    {
+      "image": "ru/04-ellipsis-16-light-flat.png",
+      "image_sha256": "4dd98b5dd4f3cdcfb5c46008772d72c0e61cf9b688e937800b4adf77cb356d04",
+      "output_sha256": "873259a83b3be0cfd8fdac1fc73cde3587127f5840865209fba169dcf2a08aeb",
+      "lines": [
+        "Ла..."
+      ]
+    },
+    {
+      "image": "ru/04-fit-16-light-flat.png",
+      "image_sha256": "5336e11c19bd98fcbb7b034417c93244d678e2686c171472cced49c8ad2f4230",
+      "output_sha256": "0c12d7271d065bbc58465ca18cd9d5c642f18a4d987257a9f3f5a3a66534aab4",
+      "lines": [
+        "Латвия"
+      ]
+    },
+    {
+      "image": "ru/05-clip-16-light-flat.png",
+      "image_sha256": "16f7b79b7531d24c599c9c8b331ce96c4188c958f5ca6b5c4d16f277b6553d76",
+      "output_sha256": "34d6e8e31e1e53452254cc615b7a3e1c8f5c1a2c5b1d5cb4ce24ee51a7f2d753",
+      "lines": [
+        "Ир"
+      ]
+    },
+    {
+      "image": "ru/05-ellipsis-16-light-flat.png",
+      "image_sha256": "3491557f052ab86d744cc31380c94c23f595c2bb8b1cbc2a127a294fe8df9cae",
+      "output_sha256": "1c8a2a9a5b6ed135d7431c30e3a57276172752d625d1068089721cd0f64ff6d0",
+      "lines": [
+        "И..."
+      ]
+    },
+    {
+      "image": "ru/05-fit-16-light-flat.png",
+      "image_sha256": "e3739c5771eea497302f054bf7a196d5248d6d25ada55b6709e0acfdb438f1cc",
+      "output_sha256": "8acd6434c5de88dd494c9fccce00a8f4a807f79afa6a1f3ff7f1cd15958b7606",
+      "lines": [
+        "Иран"
+      ]
+    },
+    {
+      "image": "ru/06-clip-16-light-flat.png",
+      "image_sha256": "d90e1a3ecbfd3c37a24b0b9dd47307f9ea7095c6b5082bd27322f4fbbb1d9da0",
+      "output_sha256": "05874ad9f0f63c6907098d657fda4d7eeb54ab3647e031ed1be41a6a1507ee38",
+      "lines": [
+        "Изра"
+      ]
+    },
+    {
+      "image": "ru/06-ellipsis-16-light-flat.png",
+      "image_sha256": "01838a9059dbf3d243a69c522141784e41ea979a559a314eba85469220eac26a",
+      "output_sha256": "f59ccbbd040215ad7bc63ee470c5db0dc460f3c00c33557ee8bef088adce77d5",
+      "lines": [
+        "Из..."
+      ]
+    },
+    {
+      "image": "ru/06-fit-16-light-flat.png",
+      "image_sha256": "4044390469ab032ae8ba73e97fc4ec6e9264524904953a9e11cbbf10d64de7cc",
+      "output_sha256": "5cd6a4f06a020deefb9fb6adb4c3fedfce6dd2ac2a68d2d29a4310cb3166d897",
+      "lines": [
+        "Израиль"
+      ]
+    },
+    {
+      "image": "ru/07-clip-16-light-flat.png",
+      "image_sha256": "41910194e3f08631983489adecce1ac6bb91aa7966b0757af849c6fe4531cdb7",
+      "output_sha256": "563f758d9fbb822f3de7d70e7a57144445bb03ce4961b17d692b8363c5cd6222",
+      "lines": [
+        "Малай"
+      ]
+    },
+    {
+      "image": "ru/07-ellipsis-16-light-flat.png",
+      "image_sha256": "d8cffbe4134459c79698b7fc780e8474313ef87e5ad725b8d16eda41fb227ed3",
+      "output_sha256": "e3aae37c0b740613c8bbb0952622571ce0b7fae62d073383a53c6963ac94a3fe",
+      "lines": [
+        "Мал..."
+      ]
+    },
+    {
+      "image": "ru/07-fit-16-light-flat.png",
+      "image_sha256": "2fbdd2bee6d1cf78fd4878a6e1eee1df3501c16595309a809b914144e0c020af",
+      "output_sha256": "aec3dec3dbd14c3f91411d81485c19ddf81b96923a16b0a09486b7f7277d8d13",
+      "lines": [
+        "Малайзия"
+      ]
+    },
+    {
+      "image": "ru/08-clip-16-light-flat.png",
+      "image_sha256": "e31ec602cc1f63a4977128d43a4eea2147a4051d9d64ca10fc546e918bed89d4",
+      "output_sha256": "c4d74912d9b4c3df41b245432998955da7cb25a1881bd2c28ced80c249f4d423",
+      "lines": [
+        "Ислан"
+      ]
+    },
+    {
+      "image": "ru/08-ellipsis-16-light-flat.png",
+      "image_sha256": "28d034459cc83df2492783216e6d507228a295748179b217b63bb92228e1b27e",
+      "output_sha256": "d3ccfc4c5f8c13337d631819813dba03ce3991ee6626822dc547c12b47464d52",
+      "lines": [
+        "Исл..."
+      ]
+    },
+    {
+      "image": "ru/08-fit-16-light-flat.png",
+      "image_sha256": "8d63d1b6f7f5bc77a364c6d1b63d9b41e45edadf1964c76b936da1972d9968c8",
+      "output_sha256": "f8f842dc9eac514a72f0e5cf599e8519b36ec4e6ea2321c5648044c0d463c55e",
+      "lines": [
+        "Исландия"
+      ]
+    },
+    {
+      "image": "ru/09-clip-16-light-flat.png",
+      "image_sha256": "1274ae0075788fafdb6e3b4461bb1a78cb62b72f35b6f209c9bdbc9a3dfacbb1",
+      "output_sha256": "53799c7758db716d388c691450c3c78ab2699fbfc76d3fc19ef955762167b105",
+      "lines": [
+        "Эсто"
+      ]
+    },
+    {
+      "image": "ru/09-ellipsis-16-light-flat.png",
+      "image_sha256": "f4787bfd46bca035f8bec442cc1060771311821b697942dd36f47410a47235eb",
+      "output_sha256": "583262b90793582421e0ad4316e44fa92c12bd8eb5cfbe1d59ace3556eaa3e49",
+      "lines": [
+        "Эст..."
+      ]
+    },
+    {
+      "image": "ru/09-fit-16-light-flat.png",
+      "image_sha256": "052af7bea1d934a4e99603c378445badebcc338b1d31ad22728893b1d569acc1",
+      "output_sha256": "d9a9897ac4392482566347c705c406fbe8b350e936ac2204f886920789993350",
+      "lines": [
+        "Эстония"
+      ]
+    },
+    {
+      "image": "zh-Hans/00-clip-16-light-flat.png",
+      "image_sha256": "f15418019ae0cc1012f864cd1a1238fadf025c4005dcba6a969b8301a797d316",
+      "output_sha256": "bc0e111ca9b30c029396517c1632319e32101cbde899f71fc4a3a1c4eb7f54ee",
+      "lines": [
+        "克罗士"
+      ]
+    },
+    {
+      "image": "zh-Hans/00-ellipsis-16-light-flat.png",
+      "image_sha256": "223d7feee13d0dc3ae640ed25b3011bbe9c12ce3ee33e06ca0f1da290b4b0f74",
+      "output_sha256": "93215f101276cdd7faf2c1a7169886f97722fba3d96b58ddacdea6cd29fc73e8",
+      "lines": [
+        "克."
+      ]
+    },
+    {
+      "image": "zh-Hans/00-fit-16-light-flat.png",
+      "image_sha256": "8ecc60c7de61352206a7a348800b439381fbcdb81c88df6e8cde18b31d0f858b",
+      "output_sha256": "7c618e9f773a81a20359b00c0f5b0ebdd639a2eca3f9b1df8f2ebb195f3b4920",
+      "lines": [
+        "克罗地亚"
+      ]
+    },
+    {
+      "image": "zh-Hans/01-clip-16-light-flat.png",
+      "image_sha256": "09f8564ba7e84fe6ea1751af4e0cc05a1c65fcb3a60beb2e827ab018cb43a16e",
+      "output_sha256": "e9eb434935695ae63b822b0344affda707a16aefbfbf69db839b075930669932",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/01-ellipsis-16-light-flat.png",
+      "image_sha256": "fa345f1f1456b2dcb3203321240edde82de44b6ee603777bcc7229c6f41e29c2",
+      "output_sha256": "649969c777ba31614ea4bc201de4fcdc9fa22234c433840824be38f80d66ec47",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/01-fit-16-light-flat.png",
+      "image_sha256": "a57ed84ff669ada5a624f48a491c814a0da6afdd8d47b058670843556ce29ed4",
+      "output_sha256": "33ff30885d45b4b2de1047b891fa29099f43f421bcc0494e7a81d5077ff011a9",
+      "lines": [
+        "捷克"
+      ]
+    },
+    {
+      "image": "zh-Hans/02-clip-16-light-flat.png",
+      "image_sha256": "96201de3565cc142b756aae67bf66e71620081daaf77ab5417817d1e7f0ce21e",
+      "output_sha256": "6fe62db6745360ca42e127d52f81ca609b5b510b7290b08ef9030999abbb86dc",
+      "lines": [
+        "希/"
+      ]
+    },
+    {
+      "image": "zh-Hans/02-ellipsis-16-light-flat.png",
+      "image_sha256": "fa345f1f1456b2dcb3203321240edde82de44b6ee603777bcc7229c6f41e29c2",
+      "output_sha256": "ae0800c65eb072ace8687aeb6690212da6585b62c912042534526c65544d4d2a",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/02-fit-16-light-flat.png",
+      "image_sha256": "1e31ddfa31cb7a69a460b84016ad6ac28af771798a55646837543854172ad5c8",
+      "output_sha256": "905391d268bc75191f519b74ef71ee387bdd967b859b27b4655049b251b31857",
+      "lines": [
+        "希腊"
+      ]
+    },
+    {
+      "image": "zh-Hans/03-clip-16-light-flat.png",
+      "image_sha256": "0b4a69b0771be486788ad8ee561ca3db84ec62570ba78869a024f11c1e7ab42e",
+      "output_sha256": "fce21a1771d031c02063d65986dad32a13ae81291100d212cb3fb5f6dd0677fe",
+      "lines": [
+        "法"
+      ]
+    },
+    {
+      "image": "zh-Hans/03-ellipsis-16-light-flat.png",
+      "image_sha256": "fa345f1f1456b2dcb3203321240edde82de44b6ee603777bcc7229c6f41e29c2",
+      "output_sha256": "e14b37e602a556242f92df8ee5e7117681ff0cf3bc0bd8de93a42aa14d1d46a0",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/03-fit-16-light-flat.png",
+      "image_sha256": "d6c23259d9e52134251424478a7497f5e7abc26f9a0e575cce8a602963af6e71",
+      "output_sha256": "51ed38264ed8f282355c37b85c26287033a69f45a675edfb894e106390223c3b",
+      "lines": [
+        "法国"
+      ]
+    },
+    {
+      "image": "zh-Hans/04-clip-16-light-flat.png",
+      "image_sha256": "7e5334db36d77af40c90908eaf2da211321564a215987924c4c85460cb0e1271",
+      "output_sha256": "5179044b9a4d09b1be01552a6115c330af73d034644cbe18764f6281c8461ee0",
+      "lines": [
+        "亚美斤"
+      ]
+    },
+    {
+      "image": "zh-Hans/04-ellipsis-16-light-flat.png",
+      "image_sha256": "b009f5fe892e73869f39be760fe3bcfb789fa51395287220991b73ceeb2e43ad",
+      "output_sha256": "14f131fe3413e061d378efa219fffcaf8638a09e2df41f577c27eadeef2dbc5c",
+      "lines": [
+        "•巫"
+      ]
+    },
+    {
+      "image": "zh-Hans/04-fit-16-light-flat.png",
+      "image_sha256": "42a8160bad3799962580c1b7792a2cb1f86720d5a9dd8ce3bb1f5d8d70146355",
+      "output_sha256": "e0888036bbb182912f76cdb816c543c653ab4c2748e3e60a650d334cd2250a86",
+      "lines": [
+        "亚美尼亚"
+      ]
+    },
+    {
+      "image": "zh-Hans/05-clip-16-light-flat.png",
+      "image_sha256": "0feee908991da575057cbc2c47bdd98bcefe00bbcb2a2db9f63304c183d344bb",
+      "output_sha256": "52268fd6d483b40bada79c1cc26a096d346b4b5f8c7a9ba31fd0867194e13f55",
+      "lines": [
+        "葡莓"
+      ]
+    },
+    {
+      "image": "zh-Hans/05-ellipsis-16-light-flat.png",
+      "image_sha256": "d74cfe85f7e6b39e411fcdb0a53f41cd76a688da343276e4513cfb4d2b9898f2",
+      "output_sha256": "a08635d16e7a7e40c0c7602e9fe8c17e7ce62f217102a4ba6d0d2f6f5612c792",
+      "lines": [
+        "葡…"
+      ]
+    },
+    {
+      "image": "zh-Hans/05-fit-16-light-flat.png",
+      "image_sha256": "540da257ffbeed019505a845e043309b45571ae965fdd96262dd6b64752322b3",
+      "output_sha256": "e1064dbad12a3850538c19662ff4eac1aff2682f4b25bcadcddd42dc15a67678",
+      "lines": [
+        "葡萄牙"
+      ]
+    },
+    {
+      "image": "zh-Hans/06-clip-16-light-flat.png",
+      "image_sha256": "5c4daca4ad0b997e8c05719c93a3b00721a5c379227aa69caed74e9d57fb1abb",
+      "output_sha256": "ec33125929aa3ecde3e92a485f2583f1074be13fe66e3e5c875ee20461c49b03",
+      "lines": [
+        "匈牙"
+      ]
+    },
+    {
+      "image": "zh-Hans/06-ellipsis-16-light-flat.png",
+      "image_sha256": "52652206a46558e4c1ad3fbe15e753bc0ca59472a86bebf4d572d3dde51c03ac",
+      "output_sha256": "1fab9de2d46b6db48dd4270e5303cf0b47519793f7d74ca6321bdd005d9d7d51",
+      "lines": [
+        "匈."
+      ]
+    },
+    {
+      "image": "zh-Hans/06-fit-16-light-flat.png",
+      "image_sha256": "03d8d986589125196f553a2a5386f30300fa4d4841a81357683698063d1bb12b",
+      "output_sha256": "236ea3385dc2f88800ec0b21686ba15f87df2a356f565e051d4cd511b23d1c1f",
+      "lines": [
+        "匈牙利"
+      ]
+    },
+    {
+      "image": "zh-Hans/07-clip-16-light-flat.png",
+      "image_sha256": "36b7ba52df5343bf7689b6949bc4282b2830dc66cebffb3f73067db9cf50fad0",
+      "output_sha256": "b4e71c7f56bb37a8f4b63b94688a147418565a4c887c5258e6c118b0bf44129e",
+      "lines": [
+        "智"
+      ]
+    },
+    {
+      "image": "zh-Hans/07-ellipsis-16-light-flat.png",
+      "image_sha256": "fa345f1f1456b2dcb3203321240edde82de44b6ee603777bcc7229c6f41e29c2",
+      "output_sha256": "818cf0023d2fbd4a869e52cff9771a40aa922edbc779a405890584d308d7d89d",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/07-fit-16-light-flat.png",
+      "image_sha256": "a4aa6e18927dfd51b28395208b2842ffa195b2b6297a22288c6410bf24a29b0a",
+      "output_sha256": "c939e66fc8157e6c9d91aabce4becea364dd0ca1bffdd7992b305f60f1daf396",
+      "lines": [
+        "智利"
+      ]
+    },
+    {
+      "image": "zh-Hans/08-clip-16-light-flat.png",
+      "image_sha256": "d40d28c899b2686282e2b1b60cc709ac8ec7e4d87d0901377a39356bb2e9cb6e",
+      "output_sha256": "8def8eec0a03c7443f299bb4ab8e5bfce4f120badecbc17a0027ec8165e3f1a6",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/08-ellipsis-16-light-flat.png",
+      "image_sha256": "20faae803728e018c534cb91210a6b62e91e0d47e316fc37e3c5c44c3cf7d3a7",
+      "output_sha256": "2d9a392d0fc9fa08e3f248cee22862d19ed5575063b8dedc6ed77445704bb215",
+      "lines": []
+    },
+    {
+      "image": "zh-Hans/08-fit-16-light-flat.png",
+      "image_sha256": "dc67b2f015e91d62effad8c311e0706e76a86800ddbf1d208b68ce76346ce819",
+      "output_sha256": "7c035ef7e9c9772b639f1c509a13b8358289461039b68d7ff4bd2e0cfffd418b",
+      "lines": [
+        "立陶宛"
+      ]
+    },
+    {
+      "image": "zh-Hans/09-clip-16-light-flat.png",
+      "image_sha256": "c2f984cbd3f733e451a439e91749611316ae01145c67bdf215f2ae3f63e92e6c",
+      "output_sha256": "0554cfa5768f57413ffe07817b8a5506e86bc6b64a3708094f62360674e977ec",
+      "lines": [
+        "埃塞俄"
+      ]
+    },
+    {
+      "image": "zh-Hans/09-ellipsis-16-light-flat.png",
+      "image_sha256": "12f73847e3ffc726026ec723c8f8667f229e22373eb2446983dc3f8b123cf305",
+      "output_sha256": "7c25f2ece4d8a6387b816049a0a60771c5b1269ffd771d78e8c8d4f51459ba2d",
+      "lines": [
+        "埃塞.….."
+      ]
+    },
+    {
+      "image": "zh-Hans/09-fit-16-light-flat.png",
+      "image_sha256": "6b84748455cdaf96b085e34cd481394c5158676677ba0df795075362d7aaeb0d",
+      "output_sha256": "470adb25d2239274ee4c1deb4d6af0d09273f0657ac589df8345060fd1ad8a8f",
+      "lines": [
+        "埃塞俄比亚"
+      ]
+    }
+  ]
+}

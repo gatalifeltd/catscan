@@ -1,0 +1,169 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/doctor-1.json",
+  "title": "catscan doctor (schema 1)",
+  "description": "Output of `catscan doctor --json`. New fields may be added in minor versions; renaming or removing one needs a schema bump. engine, host and fallback are null when catscan-core could not run.",
+  "type": "object",
+  "required": ["schema", "catscan", "engine", "host", "fallback"],
+  "properties": {
+    "schema": { "const": 1 },
+    "catscan": { "type": "string" },
+    "engine": { "type": ["string", "null"] },
+    "host": {
+      "type": ["object", "null"],
+      "required": ["chip", "arch", "host_class", "macos", "vision_revision"],
+      "properties": {
+        "chip": { "type": "string" },
+        "arch": { "type": "string" },
+        "host_class": { "enum": ["physical", "vm"] },
+        "macos": { "type": "string" },
+        "vision_revision": { "type": "integer" },
+        "macos_build": { "type": "string" }
+      }
+    },
+    "fallback": {
+      "type": ["object", "null"],
+      "required": ["engine", "path", "version", "tessdata", "packs", "searched", "locales"],
+      "properties": {
+        "engine": { "type": ["string", "null"], "pattern": "^tesseract-.+$" },
+        "path": { "type": ["string", "null"] },
+        "version": { "type": ["string", "null"] },
+        "tessdata": { "type": ["string", "null"] },
+        "packs": { "type": "array", "items": { "type": "string" } },
+        "searched": { "type": "array", "items": { "type": "string" } },
+        "fix": { "description": "The command that makes Tesseract read every fallback locale here; null when it already does.", "type": ["string", "null"] },
+        "locales": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["locale", "packs", "installed", "missing"],
+            "properties": {
+              "locale": { "type": "string" },
+              "packs": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+              "installed": { "type": "boolean" },
+              "missing": { "type": "array", "items": { "type": "string" } },
+              "self_test": {
+                "description": "A word in the locale's script read with Tesseract; only for a locale --expect-locales listed.",
+                "type": "object", "required": ["ms", "pass"],
+                "properties": { "ms": { "type": "integer", "minimum": 0 }, "pass": { "type": "boolean" } }
+              }
+            }
+          }
+        }
+      }
+    },
+    "requested": {
+      "description": "With --expect-locales[-from], one entry per locale: the reader that reads it and whether it works here.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["locale", "reader", "ok"],
+        "properties": {
+          "locale": { "type": "string" },
+          "reader": { "enum": ["vision", "tesseract", null] },
+          "fallback_locale": { "type": "string" },
+          "ok": { "type": "boolean" },
+          "self_test": {
+            "description": "The Tesseract read of a word in this locale with the packs a check in it runs.",
+            "type": "object", "required": ["ms", "pass"],
+            "properties": { "ms": { "type": "integer", "minimum": 0 }, "pass": { "type": "boolean" } }
+          },
+          "error": {
+            "type": "object", "required": ["code", "message"],
+            "properties": { "code": { "type": "string" }, "message": { "type": "string" }, "hint": { "type": ["string", "null"] } }
+          }
+        }
+      }
+    },
+    "neural_engine": { "enum": ["present", "absent", "unknown"] },
+    "update": {
+      "description": "A newer @catscan/cli on npm, from the registry's dist-tags or a cached answer; null when the check is off (--offline, CATSCAN_NO_UPDATE_CHECK, CI) or failed. Absent from doctor replies that never check (MCP). Never affects ok.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["latest", "current", "newer", "checked_at", "source"],
+          "properties": {
+            "latest": { "type": "string" },
+            "current": { "type": "string" },
+            "newer": { "type": "boolean" },
+            "checked_at": { "type": "string" },
+            "source": { "enum": ["registry", "cache"] }
+          }
+        }
+      ]
+    },
+    "ci": {
+      "description": "The CI service, from the same detector that fills the results file's run.ci; null outside CI.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["provider", "runner", "commit", "ref", "run_id"],
+          "properties": {
+            "provider": { "enum": ["github-actions", "gitlab-ci", "circleci", "bitrise", "codemagic", "azure-pipelines", "buildkite", "jenkins"] },
+            "runner": { "type": ["string", "null"] },
+            "commit": { "type": ["string", "null"] },
+            "ref": { "type": ["string", "null"] },
+            "run_id": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "vision": {
+      "type": "object",
+      "required": ["revision", "languages"],
+      "properties": {
+        "revision": { "type": "integer" },
+        "languages": {
+          "type": "object",
+          "required": ["accurate", "fast"],
+          "properties": { "accurate": { "type": "integer", "minimum": 0 }, "fast": { "type": "integer", "minimum": 0 } }
+        }
+      }
+    },
+    "self_test": {
+      "type": "object",
+      "required": ["ms", "pass"],
+      "properties": { "ms": { "type": "integer", "minimum": 0 }, "pass": { "type": "boolean" } }
+    },
+    "binary": {
+      "type": ["object", "null"],
+      "required": ["path", "source", "version", "arch", "signature"],
+      "properties": {
+        "path": { "type": "string" },
+        "source": { "enum": ["package", "env", "build"] },
+        "version": { "type": ["string", "null"] },
+        "arch": { "type": ["string", "null"] },
+        "signature": {
+          "type": ["object", "null"],
+          "required": ["valid", "team_id", "notarized"],
+          "properties": {
+            "valid": { "type": "boolean" },
+            "team_id": { "type": ["string", "null"] },
+            "notarized": { "type": ["boolean", "null"] }
+          }
+        }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["version", "arch"],
+      "properties": { "version": { "type": "string" }, "arch": { "type": "string" } }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "ok", "value", "advice"],
+        "properties": {
+          "name": { "enum": ["node", "platform", "macos", "binary", "version", "signature", "vision", "self_test", "tesseract", "catalogs", "locale"] },
+          "ok": { "type": "boolean" },
+          "value": { "type": "string" },
+          "advice": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "ok": { "type": "boolean" }
+  }
+}

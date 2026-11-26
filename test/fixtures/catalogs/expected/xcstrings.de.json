@@ -1,0 +1,24 @@
+{
+  "Done editing": {
+    "reason": "catalog-missing"
+  },
+  "settings.title": [
+    [
+      "Kontoeinstellungen"
+    ]
+  ],
+  "photos.count": {
+    "reason": "catalog-missing"
+  },
+  "device.hint": {
+    "reason": "catalog-missing"
+  },
+  "folder.files": {
+    "reason": "catalog-missing"
+  },
+  "brand": [
+    [
+      "Catscan Studio"
+    ]
+  ]
+}

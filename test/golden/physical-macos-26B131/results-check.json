@@ -1,0 +1,305 @@
+{
+  "results_schema": 1,
+  "run": null,
+  "coverage": {
+    "layout": "{locale}/{screen}",
+    "expected_locales": [
+      "de",
+      "fr",
+      "ja"
+    ],
+    "expected_screens": [
+      "home",
+      "paywall"
+    ],
+    "expected_devices": null,
+    "expected_text_sizes": null,
+    "received": 3,
+    "missing": [
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "fr",
+        "screen": "paywall"
+      },
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "ja",
+        "screen": "home"
+      },
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "ja",
+        "screen": "paywall"
+      }
+    ]
+  },
+  "totals": {
+    "pass": 2,
+    "fail": 4,
+    "needs-reader": 0,
+    "unsupported": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "catscan": "X",
+      "checks": [
+        {
+          "box": [
+            0.0937,
+            0.8292,
+            0.165,
+            0.0219
+          ],
+          "confidence": 1,
+          "kind": "present",
+          "line": "Weiter",
+          "text": "Weiter",
+          "verdict": "pass"
+        }
+      ],
+      "command": "check",
+      "device": null,
+      "engine": "vision-accurate-rev3",
+      "findings": [],
+      "host": "host",
+      "image": {
+        "height": 2796,
+        "width": 1290
+      },
+      "locale": "de",
+      "ms": 0,
+      "path": "shots/de/home.png",
+      "platform": null,
+      "schema": 1,
+      "screen": "home",
+      "text": {
+        "algo": 1,
+        "digest": "sha256:df241b682b20a895cfba94101a83a252f55e30f4b26f1aa76a33ac22eb29aac8",
+        "ignore": null,
+        "lines": [
+          "jetzt testen",
+          "weiter"
+        ],
+        "tokens": [
+          "jetzt",
+          "testen",
+          "weiter"
+        ]
+      },
+      "text_size": null,
+      "verdict": "pass",
+      "warnings": [],
+      "change": null
+    },
+    {
+      "catscan": "X",
+      "checks": [
+        {
+          "box": [
+            0.0937,
+            0.8292,
+            0.165,
+            0.0219
+          ],
+          "confidence": 1,
+          "kind": "present",
+          "line": "Weiter",
+          "text": "Weiter",
+          "verdict": "pass"
+        }
+      ],
+      "command": "check",
+      "device": null,
+      "engine": "vision-accurate-rev3",
+      "findings": [],
+      "host": "host",
+      "image": {
+        "height": 2796,
+        "width": 1290
+      },
+      "locale": "de",
+      "ms": 0,
+      "path": "shots/de/paywall.png",
+      "platform": null,
+      "schema": 1,
+      "screen": "paywall",
+      "text": {
+        "algo": 1,
+        "digest": "sha256:df241b682b20a895cfba94101a83a252f55e30f4b26f1aa76a33ac22eb29aac8",
+        "ignore": null,
+        "lines": [
+          "jetzt testen",
+          "weiter"
+        ],
+        "tokens": [
+          "jetzt",
+          "testen",
+          "weiter"
+        ]
+      },
+      "text_size": null,
+      "verdict": "pass",
+      "warnings": [],
+      "change": null
+    },
+    {
+      "catscan": "X",
+      "checks": [
+        {
+          "box": null,
+          "closest": {
+            "box": [
+              0.0986,
+              0.7901,
+              0.1706,
+              0.036
+            ],
+            "distance": 10,
+            "line": "Déconnexion"
+          },
+          "confidence": null,
+          "kind": "present",
+          "line": null,
+          "text": "Weiter",
+          "verdict": "fail",
+          "severity": "critical",
+          "certainty": "medium",
+          "precision": 0.98,
+          "gate": true
+        }
+      ],
+      "command": "check",
+      "device": null,
+      "engine": "vision-accurate-rev3",
+      "findings": [],
+      "host": "host",
+      "image": {
+        "height": 1536,
+        "width": 2048
+      },
+      "locale": "fr",
+      "ms": 0,
+      "path": "shots/fr/home.png",
+      "platform": null,
+      "schema": 1,
+      "screen": "home",
+      "text": {
+        "algo": 1,
+        "digest": "sha256:7ce26a4e4ee3e7b96a9817bf7b618ff0f9390626c41b2c37821ca51e8646b7d1",
+        "ignore": null,
+        "lines": [
+          "paramètres du compte",
+          "déconnexion"
+        ],
+        "tokens": [
+          "compte",
+          "deconnexion",
+          "du",
+          "parametres"
+        ]
+      },
+      "text_size": null,
+      "verdict": "fail",
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "fr",
+      "screen": "paywall",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "fr/paywall",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "ja",
+      "screen": "home",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "ja/home",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "ja",
+      "screen": "paywall",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "ja/paywall",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    }
+  ],
+  "baseline": null
+}

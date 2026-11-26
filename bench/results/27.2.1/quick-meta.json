@@ -1,0 +1,460 @@
+{
+  "spec": "05",
+  "quick": true,
+  "command": "npm run bench -- --quick --record",
+  "locales": [
+    "en",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "pt-BR",
+    "zh-Hans",
+    "zh-Hant",
+    "yue-Hans",
+    "yue-Hant",
+    "ko",
+    "ja",
+    "ru",
+    "uk",
+    "th",
+    "vi",
+    "ar",
+    "ars",
+    "tr",
+    "id",
+    "cs",
+    "da",
+    "nl",
+    "no",
+    "nn",
+    "nb",
+    "ms",
+    "pl",
+    "ro",
+    "sv",
+    "fi",
+    "hi",
+    "mr",
+    "ca",
+    "eu",
+    "gl",
+    "lb",
+    "fil",
+    "el",
+    "he",
+    "bg",
+    "sr",
+    "sr-Latn",
+    "hu",
+    "fa",
+    "ka",
+    "hy",
+    "hr",
+    "sk",
+    "sl",
+    "lt",
+    "lv",
+    "mt",
+    "ga",
+    "is",
+    "mk",
+    "bs",
+    "be",
+    "et",
+    "cy",
+    "sq"
+  ],
+  "commit": "59a53e5547221e1ebe3efa26c9d09f9ad4aefb5b",
+  "date": "2026-11-11",
+  "timing": "under load: 0 simulator(s) booted, 1 emulator(s) running; sequential check over the quick variant's fit images, median of the response ms",
+  "machine": "Mac17,2",
+  "tools": {
+    "catscan": "0.17.2",
+    "macos": "27.2.1",
+    "macos_build": "26B131",
+    "vision_revision": 3,
+    "chip": "Apple M5",
+    "host_class": "physical",
+    "node": "v26.13.0",
+    "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+    "tesseract": "tesseract 5.5.4",
+    "leptonica": "leptonica-1.87.0",
+    "tessdata": {
+      "script/Greek": "52e201e4a22336d89ee202b579aca04f15ffd6e5e6af1fe164498f2c7de898e6",
+      "heb": "11f9e43ab227f786352a50f75c94c2e9906f1baba86d93276da19da7ce0904db",
+      "bul": "aebc9b0fcc8cfaf8a9f38a02bb7b85052bd850744696a2c11cf0081820e5b21e",
+      "srp": "aa41ae3d9cc705e60d398ab38a5c3cc8b772c0d420c7d4f0859beb13d0e321b6",
+      "srp_latn": "54b2e001bd8a336bdffc249c1487b8b7cb712f0a031f2551930ba050ebefa2a0",
+      "hun": "35067e7cfe102dcdc953f9a758fdfaa6296b17a1ee6d874ee780fa306430b9fb",
+      "fas": "db1c0a91208aff00d3cf1ed2c1d23f76419afd5f024688b4f71adc3f2ce4a505",
+      "kat": "557abb6f1c68bc1b286f1bdd00bb6b82f85a427a91899807dab6c2f6c7986731",
+      "hye": "b701d0d95799a716143dedb0197504e56f27a1bb133d6607ff5778c6988cb67c",
+      "hrv": "9e515d9832ce259dbab550b1cc6b998f8b929faf2edacaaca981b05adb130571",
+      "slk": "fbcc400a9c74c6a13d922fcb1211b655d1b165387b675ed75cd2dbd756b974a5",
+      "slv": "b937632c17ce5fdf20535d25feec044da10a0c4c8234f4302d5606fd671cf60d",
+      "lit": "1e383df5b055583bc01cb5764ecdf74c540753f2cb3f8205e7105361da4bc989",
+      "lav": "7d9eaf22254b381f18b806cd6cb647862a397a7221adbce3e22cc421793a8847",
+      "mlt": "3040b443d5d49e4183da0eaaf58d1033c3a616153d35d2342a56777f9bbb31c7",
+      "gle": "2fe9ba6119aac7e2a20d6cfb69ed91afe9520f41bc7e3a903f84280f2663858d",
+      "isl": "5ec828c363f3f0062c3caf08216677cf5f3c0c981b05fab445123a16b98f10a9",
+      "mkd": "58622bf154830fa62103359938564aeb8112b929759e22a48224f3ecfaac34c6",
+      "bos": "6cc8cc87cf1afbfa6a41febb725dbadb14bed96a46685906440a6eb8a7892f04",
+      "bel": "9c6668a0b202f3dcfe074b64620d108e1902ca7498a40b5a11b4a3da6112d58f",
+      "est": "515d4a773682b286369511e83fe412bcff16a92a886f99c761c1d760a7e30456",
+      "cym": "7f6ee3374749645a7c92dfe773f5c3d6492194d371712ecfd775edc53c363fb4",
+      "sqi": "1d89621d9afe8ddf35b403ecf8951edea52c3a960d241f287b1a7b2c5ba8daac"
+    }
+  },
+  "corpus": {
+    "seed": 5,
+    "groups": [
+      {
+        "node": "v24.18.0",
+        "icu": "78.3",
+        "cldr": "48.0",
+        "locales": [
+          "en",
+          "fr",
+          "it",
+          "de",
+          "es",
+          "pt-BR",
+          "zh-Hans",
+          "zh-Hant",
+          "yue-Hans",
+          "yue-Hant",
+          "ko",
+          "ja",
+          "ru",
+          "uk",
+          "th",
+          "vi",
+          "ar",
+          "ars",
+          "tr",
+          "id",
+          "cs",
+          "da",
+          "nl",
+          "no",
+          "nn",
+          "nb",
+          "ms",
+          "pl",
+          "ro",
+          "sv",
+          "fi",
+          "hi",
+          "mr",
+          "el",
+          "he",
+          "bg",
+          "sr",
+          "sr-Latn",
+          "hu",
+          "fa",
+          "ka",
+          "hy"
+        ]
+      },
+      {
+        "node": "v26.13.0",
+        "icu": "79.1",
+        "cldr": "49.0",
+        "locales": [
+          "ca",
+          "eu",
+          "gl",
+          "lb",
+          "fil",
+          "hr",
+          "sk",
+          "sl",
+          "lt",
+          "lv",
+          "mt",
+          "ga",
+          "is",
+          "mk",
+          "bs",
+          "be",
+          "et",
+          "cy",
+          "sq"
+        ]
+      }
+    ]
+  },
+  "fonts": {
+    "en": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "it": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "de": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "es": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "pt-BR": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "zh-Hans": [
+      ".PingFangUIDisplaySC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "zh-Hant": [
+      ".PingFangUIDisplayTC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "yue-Hans": [
+      ".PingFangUIDisplaySC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "yue-Hant": [
+      ".PingFangUIDisplayHK-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ko": [
+      ".AppleSDGothicNeoI-Regular 22.0d2e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ja": [
+      ".HiraKakuInterface-W4 22.0d2e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ru": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "uk": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "th": [
+      ".SFNS-Regular 22.0d5e1",
+      ".ThonburiUI-Regular 22.0d2e2"
+    ],
+    "vi": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ar": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ars": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "tr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "id": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "cs": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "da": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "no": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nn": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nb": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ms": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "pl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ro": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sv": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fi": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hi": [
+      ".SFDevanagari-Regular 22.0d6e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "mr": [
+      ".SFDevanagari-Regular 22.0d6e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ca": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "eu": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "gl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "lb": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fil": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "el": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "he": [
+      ".SFHebrew-Regular 22.0d3e3",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "bg": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sr-Latn": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hu": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fa": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ka": [
+      ".SFGeorgian-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hy": [
+      ".SFArmenian-Regular 22.0d3e4",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sk": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "lt": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "lv": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "mt": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ga": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "is": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "mk": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "bs": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "be": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "et": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "cy": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sq": [
+      ".SFNS-Regular 22.0d5e1"
+    ]
+  },
+  "runs": [
+    {
+      "command": "npm run bench -- --quick --record",
+      "locales": [
+        "en",
+        "fr",
+        "it",
+        "de",
+        "es",
+        "pt-BR",
+        "zh-Hans",
+        "zh-Hant",
+        "yue-Hans",
+        "yue-Hant",
+        "ko",
+        "ja",
+        "ru",
+        "uk",
+        "th",
+        "vi",
+        "ar",
+        "ars",
+        "tr",
+        "id",
+        "cs",
+        "da",
+        "nl",
+        "no",
+        "nn",
+        "nb",
+        "ms",
+        "pl",
+        "ro",
+        "sv",
+        "fi",
+        "hi",
+        "mr",
+        "ca",
+        "eu",
+        "gl",
+        "lb",
+        "fil",
+        "el",
+        "he",
+        "bg",
+        "sr",
+        "sr-Latn",
+        "hu",
+        "fa",
+        "ka",
+        "hy",
+        "hr",
+        "sk",
+        "sl",
+        "lt",
+        "lv",
+        "mt",
+        "ga",
+        "is",
+        "mk",
+        "bs",
+        "be",
+        "et",
+        "cy",
+        "sq"
+      ],
+      "commit": "59a53e5547221e1ebe3efa26c9d09f9ad4aefb5b",
+      "date": "2026-11-11",
+      "timing": "under load: 0 simulator(s) booted, 1 emulator(s) running; sequential check over the quick variant's fit images, median of the response ms"
+    }
+  ]
+}

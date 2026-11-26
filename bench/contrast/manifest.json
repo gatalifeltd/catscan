@@ -1,0 +1,44 @@
+{
+  "todo": "054",
+  "generator": "bench/contrast/generate.swift",
+  "command": "swiftc -O bench/contrast/generate.swift -o <bin> && <bin> <outdir>",
+  "images": 3694,
+  "halves": {
+    "dev": 1847,
+    "held_out": 1847
+  },
+  "backgrounds": {
+    "flat": 1902,
+    "gradient": 360,
+    "busy": 353,
+    "photo": 359,
+    "photo-under": 363,
+    "icon-beside": 357
+  },
+  "variants": {
+    "plain": 3221,
+    "mixed-colour": 158,
+    "mixed-weight": 157,
+    "outlined": 158
+  },
+  "modes": {
+    "light": 1302,
+    "dark": 1302,
+    "color": 1090
+  },
+  "locales": {
+    "en": 3217,
+    "zh-Hans": 121,
+    "ja": 120,
+    "ar": 117,
+    "hi": 119
+  },
+  "sizes": {
+    "normal": 2380,
+    "large": 1314
+  },
+  "busy": 1075,
+  "labels_sha256": "9191be651ac4c2c59420425dfa743e3b0d28d4d7b7108d8b7b3f96345d0eb802",
+  "images_sha256": "7b59b37e75c2e40a43af7363bf11a5e679b9104512f6c60ffab4c7f8086f9ddc",
+  "note": "Seed 5402. The hashes hold for the macOS and fonts recorded in results/contrast.json (busy truths are measured on the drawn background). Images and labels stay outside git."
+}

@@ -1,0 +1,29 @@
+{
+  "image": {
+    "width": 1080,
+    "height": 2400
+  },
+  "elements": [
+    {
+      "id": "com.example:id/title",
+      "box": [
+        0.0444,
+        0.0833,
+        0.4741,
+        0.0333
+      ],
+      "clips": true,
+      "text": "Einstellungen"
+    },
+    {
+      "id": null,
+      "box": [
+        0.0444,
+        0.0833,
+        0.0481,
+        0.0333
+      ],
+      "clips": true
+    }
+  ]
+}

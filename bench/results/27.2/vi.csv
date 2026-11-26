@@ -1,0 +1,212 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+vi,vision-accurate-rev3,false,2160,0,2880,2826,98.13,720,666,0.925,0.0083,1294,9,146,711,0.9931,0.8986,30,0|0|0|0|0|0|0|0|0|719,0|0|0|2|0|1|0|0|0|702
+image,case,present,absent,truncated,cer,read
+vi/00-fit-12-light-flat.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-12-light-gradient.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-12-dark-flat.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-16-light-gradient.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-16-dark-flat.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-16-dark-gradient.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-24-light-flat.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-24-light-gradient.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-24-dark-flat.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-fit-24-dark-gradient.png,fit,fail,pass,no,1,A Rập Xê-út
+vi/00-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/00-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+vi/01-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/01-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/01-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/01-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/01-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/01-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/01-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/02-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/02-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/05-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/05-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/05-clip-16-light-flat.png,clip,,pass,no,,
+vi/05-clip-16-dark-flat.png,clip,,pass,no,,
+vi/05-clip-24-light-flat.png,clip,,pass,no,,
+vi/05-clip-24-dark-flat.png,clip,,pass,no,,
+vi/06-fit-12-light-flat.png,fit,fail,pass,no,1,Hàn Quôc
+vi/06-clip-24-light-flat.png,clip,,pass,no,,
+vi/08-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/10-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/11-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/12-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiềng Marathi
+vi/12-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/12-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/13-fit-12-light-flat.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-fit-12-light-gradient.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-fit-12-dark-gradient.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-fit-24-dark-gradient.png,fit,fail,pass,no,1,Tiềng Pháp
+vi/13-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/13-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/14-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/14-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/14-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/14-clip-12-dark-gradient.png,clip,,pass,no,,
+vi/14-clip-16-dark-flat.png,clip,,pass,no,,
+vi/15-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/15-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/15-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/15-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/15-clip-16-dark-gradient.png,clip,,pass,no,,
+vi/16-fit-12-light-flat.png,fit,fail,pass,no,1,Tiềng Hy Lạp
+vi/16-fit-12-light-gradient.png,fit,fail,pass,no,1,Tiềng Hy Lạp
+vi/16-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiêng Hy Lạp
+vi/16-fit-24-light-flat.png,fit,fail,pass,no,1,Tiêng Hy Lạp
+vi/16-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiêng Hy Lạp
+vi/16-fit-24-dark-gradient.png,fit,fail,pass,no,1,Tiềng Hy Lạp
+vi/16-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/16-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/17-fit-12-light-flat.png,fit,fail,pass,no,1,Tiêng Serbia
+vi/17-fit-12-light-gradient.png,fit,fail,pass,no,1,Tiềng Serbia
+vi/17-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiêng Serbia
+vi/17-fit-12-dark-gradient.png,fit,fail,pass,no,1,Tiềng Serbia
+vi/17-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/18-fit-12-light-flat.png,fit,fail,pass,no,1,Tiềng Na Uy
+vi/18-fit-12-light-gradient.png,fit,fail,pass,no,1,Tiềng Na Uy
+vi/18-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiêng Na Uy
+vi/18-fit-12-dark-gradient.png,fit,fail,pass,no,1,Tiềng Na Uy
+vi/18-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiềng Na Uy
+vi/18-fit-24-dark-gradient.png,fit,fail,pass,no,1,Tiềng Na Uy
+vi/18-clip-16-dark-gradient.png,clip,,pass,no,,
+vi/19-fit-12-light-flat.png,fit,fail,pass,no,1,Tiêng Mã Lai
+vi/19-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiềng Mã Lai
+vi/19-fit-12-dark-gradient.png,fit,fail,pass,no,1,Tiềng Mã Lai
+vi/19-fit-24-light-flat.png,fit,fail,pass,no,1,Tiềng Mã Lai
+vi/19-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiềng Mã Lai
+vi/19-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/19-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/19-clip-16-dark-flat.png,clip,,pass,no,,
+vi/19-clip-16-dark-gradient.png,clip,,pass,no,,
+vi/20-fit-12-light-flat.png,fit,fail,pass,no,1,Tiềng Hindi
+vi/20-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/20-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/20-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/21-fit-12-light-flat.png,fit,fail,pass,no,1,Tiêng Do Thái
+vi/21-fit-12-light-gradient.png,fit,fail,pass,screen-edge,1,Tiêng Do Thái
+vi/21-fit-12-dark-flat.png,fit,fail,pass,no,1,Tiêng Do Thái
+vi/21-fit-12-dark-gradient.png,fit,fail,pass,no,1,Tiềng Do Thái
+vi/21-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/21-fit-24-dark-flat.png,fit,fail,pass,no,1,Tiềng Do Thái
+vi/21-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/21-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/25-fit-12-light-flat.png,fit,fail,pass,no,1,Krona Thụy Điền
+vi/25-fit-12-light-gradient.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/25-fit-12-dark-flat.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/25-fit-12-dark-gradient.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/25-fit-24-light-flat.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/25-fit-24-light-gradient.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/25-fit-24-dark-flat.png,fit,fail,pass,no,1,Krona Thụy Điến
+vi/27-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/27-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/27-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/27-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/27-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/27-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/27-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/28-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/28-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/29-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/29-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/29-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/30-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/30-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/33-fit-16-dark-gradient.png,fit,fail,pass,no,1,Thứ Bẻy
+vi/33-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/33-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/35-clip-16-light-gradient.png,clip,,pass,no,,
+vi/36-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/36-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/36-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/36-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/36-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/36-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/36-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/37-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/37-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/38-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/38-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/38-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/38-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/38-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/38-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/39-clip-12-light-flat.png,clip,,pass,no,,
+vi/39-clip-12-light-gradient.png,clip,,pass,no,,
+vi/39-clip-12-dark-flat.png,clip,,pass,no,,
+vi/39-clip-12-dark-gradient.png,clip,,pass,no,,
+vi/39-clip-16-light-gradient.png,clip,,pass,no,,
+vi/39-clip-24-light-flat.png,clip,,pass,no,,
+vi/39-clip-24-light-gradient.png,clip,,pass,no,,
+vi/39-clip-24-dark-flat.png,clip,,pass,no,,
+vi/39-clip-24-dark-gradient.png,clip,,pass,no,,
+vi/41-clip-12-light-flat.png,clip,,pass,no,,
+vi/41-clip-12-light-gradient.png,clip,,pass,no,,
+vi/41-clip-12-dark-flat.png,clip,,pass,no,,
+vi/41-clip-16-light-flat.png,clip,,pass,no,,
+vi/41-clip-16-light-gradient.png,clip,,pass,no,,
+vi/42-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/43-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/43-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/43-clip-12-light-flat.png,clip,,pass,no,,
+vi/43-clip-12-light-gradient.png,clip,,pass,no,,
+vi/43-clip-24-light-flat.png,clip,,pass,no,,
+vi/43-clip-24-light-gradient.png,clip,,pass,no,,
+vi/43-clip-24-dark-flat.png,clip,,pass,no,,
+vi/43-clip-24-dark-gradient.png,clip,,pass,no,,
+vi/45-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+vi/45-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+vi/52-fit-12-light-flat.png,fit,fail,pass,no,6,
+vi/52-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/52-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/52-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/52-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/52-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/52-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/52-clip-24-light-gradient.png,clip,,pass,no,,
+vi/53-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+vi/53-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/53-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/53-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+vi/55-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+vi/55-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+vi/55-clip-12-light-gradient.png,clip,,pass,no,,
+vi/55-clip-12-dark-gradient.png,clip,,pass,no,,
+vi/55-clip-16-light-gradient.png,clip,,pass,no,,
+vi/55-clip-24-light-flat.png,clip,,pass,no,,
+vi/55-clip-24-light-gradient.png,clip,,pass,no,,
+vi/56-clip-12-dark-flat.png,clip,,pass,no,,
+vi/56-clip-12-dark-gradient.png,clip,,pass,no,,
+vi/56-clip-16-dark-gradient.png,clip,,pass,no,,
+vi/58-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+vi/58-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,

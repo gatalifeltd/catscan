@@ -1,0 +1,253 @@
+{
+  "locale": "yue-Hans",
+  "icu_locale": "yue-Hans",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "巴西",
+      "kind": "region"
+    },
+    {
+      "text": "意大利",
+      "kind": "region"
+    },
+    {
+      "text": "克罗埃西亚",
+      "kind": "region"
+    },
+    {
+      "text": "挪威",
+      "kind": "region"
+    },
+    {
+      "text": "罗马尼亚",
+      "kind": "region"
+    },
+    {
+      "text": "爱沙尼亚",
+      "kind": "region"
+    },
+    {
+      "text": "印尼",
+      "kind": "region"
+    },
+    {
+      "text": "泰国",
+      "kind": "region"
+    },
+    {
+      "text": "沙特阿拉伯",
+      "kind": "region"
+    },
+    {
+      "text": "土耳其",
+      "kind": "region"
+    },
+    {
+      "text": "瑞典",
+      "kind": "region"
+    },
+    {
+      "text": "芬兰",
+      "kind": "region"
+    },
+    {
+      "text": "韩文",
+      "kind": "language"
+    },
+    {
+      "text": "乔治亚文",
+      "kind": "language"
+    },
+    {
+      "text": "德文",
+      "kind": "language"
+    },
+    {
+      "text": "捷克文",
+      "kind": "language"
+    },
+    {
+      "text": "俄文",
+      "kind": "language"
+    },
+    {
+      "text": "保加利亚文",
+      "kind": "language"
+    },
+    {
+      "text": "波兰文",
+      "kind": "language"
+    },
+    {
+      "text": "泰文",
+      "kind": "language"
+    },
+    {
+      "text": "马来文",
+      "kind": "language"
+    },
+    {
+      "text": "希腊文",
+      "kind": "language"
+    },
+    {
+      "text": "波兰兹罗提",
+      "kind": "currency"
+    },
+    {
+      "text": "日圆",
+      "kind": "currency"
+    },
+    {
+      "text": "韩圆",
+      "kind": "currency"
+    },
+    {
+      "text": "越南盾",
+      "kind": "currency"
+    },
+    {
+      "text": "美元",
+      "kind": "currency"
+    },
+    {
+      "text": "人民币",
+      "kind": "currency"
+    },
+    {
+      "text": "3月",
+      "kind": "month"
+    },
+    {
+      "text": "7月",
+      "kind": "month"
+    },
+    {
+      "text": "11月",
+      "kind": "month"
+    },
+    {
+      "text": "4月",
+      "kind": "month"
+    },
+    {
+      "text": "星期日",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期二",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期三",
+      "kind": "weekday"
+    },
+    {
+      "text": "时区",
+      "kind": "field"
+    },
+    {
+      "text": "小时",
+      "kind": "field"
+    },
+    {
+      "text": "年代",
+      "kind": "field"
+    },
+    {
+      "text": "上午/下午",
+      "kind": "field"
+    },
+    {
+      "text": "分钟",
+      "kind": "field"
+    },
+    {
+      "text": "下年",
+      "kind": "relative"
+    },
+    {
+      "text": "寻日",
+      "kind": "relative"
+    },
+    {
+      "text": "上一季",
+      "kind": "relative"
+    },
+    {
+      "text": "听日",
+      "kind": "relative"
+    },
+    {
+      "text": "5 季前",
+      "kind": "relative"
+    },
+    {
+      "text": "下一季",
+      "kind": "relative"
+    },
+    {
+      "text": "3 秒后",
+      "kind": "relative"
+    },
+    {
+      "text": "3 年后",
+      "kind": "relative"
+    },
+    {
+      "text": "上星期",
+      "kind": "relative"
+    },
+    {
+      "text": "1 秒前",
+      "kind": "relative"
+    },
+    {
+      "text": "2 公斤",
+      "kind": "unit"
+    },
+    {
+      "text": "2%",
+      "kind": "unit"
+    },
+    {
+      "text": "2 MB",
+      "kind": "unit"
+    },
+    {
+      "text": "5 MB",
+      "kind": "unit"
+    },
+    {
+      "text": "5 公斤",
+      "kind": "unit"
+    },
+    {
+      "text": "2 个月",
+      "kind": "unit"
+    },
+    {
+      "text": "5 周",
+      "kind": "unit"
+    },
+    {
+      "text": "2 GB",
+      "kind": "unit"
+    },
+    {
+      "text": "澳币",
+      "kind": "currency"
+    },
+    {
+      "text": "丹麦",
+      "kind": "region"
+    }
+  ]
+}

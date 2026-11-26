@@ -1,0 +1,63 @@
+[
+  { "name": "01-en-phone.png", "locale": "en", "width": 1290, "height": 2796, "lines": [
+    { "text": "Welcome back", "x": 120, "y": 300, "size": 96 },
+    { "text": "Continue with email", "x": 120, "y": 1400, "size": 64 },
+    { "text": "Terms of Service", "x": 120, "y": 2500, "size": 48 } ] },
+  { "name": "02-en-small.png", "locale": "en", "width": 640, "height": 360, "lines": [
+    { "text": "GAME OVER", "x": 160, "y": 120, "size": 56 },
+    { "text": "Press start", "x": 200, "y": 240, "size": 32 } ] },
+  { "name": "03-de-phone.png", "locale": "de", "width": 1290, "height": 2796, "lines": [
+    { "text": "Jetzt testen", "x": 120, "y": 600, "size": 80 },
+    { "text": "Weiter", "x": 120, "y": 2300, "size": 72 } ] },
+  { "name": "04-fr-tablet.png", "locale": "fr", "width": 2048, "height": 1536, "lines": [
+    { "text": "Paramètres du compte", "x": 200, "y": 300, "size": 72 },
+    { "text": "Déconnexion", "x": 200, "y": 1200, "size": 60 } ] },
+  { "name": "05-es-phone.png", "locale": "es", "width": 1080, "height": 1920, "lines": [
+    { "text": "Iniciar sesión", "x": 100, "y": 400, "size": 72 },
+    { "text": "¿Olvidaste tu contraseña?", "x": 100, "y": 900, "size": 48 } ] },
+  { "name": "06-pt-BR-phone.png", "locale": "pt-BR", "width": 1080, "height": 1920, "lines": [
+    { "text": "Começar agora", "x": 100, "y": 500, "size": 72 },
+    { "text": "Assinatura anual", "x": 100, "y": 1200, "size": 56 } ] },
+  { "name": "07-ru-phone.png", "locale": "ru", "width": 1080, "height": 2400, "lines": [
+    { "text": "Продолжить", "x": 100, "y": 500, "size": 80 },
+    { "text": "Настройки профиля", "x": 100, "y": 1300, "size": 60 } ] },
+  { "name": "08-uk-phone.png", "locale": "uk", "width": 1080, "height": 2400, "lines": [
+    { "text": "Почати гру", "x": 100, "y": 700, "size": 80 },
+    { "text": "Налаштування", "x": 100, "y": 1500, "size": 60 } ] },
+  { "name": "09-pl-small.png", "locale": "pl", "width": 750, "height": 1334, "lines": [
+    { "text": "Zaloguj się", "x": 80, "y": 300, "size": 56 },
+    { "text": "Spróbuj ponownie", "x": 80, "y": 800, "size": 44 } ] },
+  { "name": "10-ja-phone.png", "locale": "ja", "width": 1290, "height": 2796, "lines": [
+    { "text": "次へ進む", "x": 120, "y": 600, "size": 96 },
+    { "text": "設定を保存", "x": 120, "y": 1800, "size": 80 } ] },
+  { "name": "11-zh-Hans-phone.png", "locale": "zh-Hans", "width": 1290, "height": 2796, "lines": [
+    { "text": "开始游戏", "x": 120, "y": 700, "size": 96 },
+    { "text": "设置", "x": 120, "y": 1900, "size": 80 } ] },
+  { "name": "12-ko-phone.png", "locale": "ko", "width": 1290, "height": 2796, "lines": [
+    { "text": "계속하기", "x": 120, "y": 700, "size": 96 },
+    { "text": "로그인", "x": 120, "y": 1900, "size": 80 } ] },
+  { "name": "13-it-landscape.png", "locale": "it", "width": 2796, "height": 1290, "lines": [
+    { "text": "Gioca ancora", "x": 300, "y": 300, "size": 96 },
+    { "text": "Classifica", "x": 1800, "y": 300, "size": 96 } ] },
+  { "name": "14-en-raw-key.png", "locale": "en", "width": 1080, "height": 1920, "lines": [
+    { "text": "onboarding.next_button", "x": 100, "y": 800, "size": 56 } ] },
+  { "name": "15-en-wrapped.png", "locale": "en", "width": 1080, "height": 1920, "lines": [
+    { "text": "Unlock every level", "x": 100, "y": 700, "size": 64 },
+    { "text": "and remove ads", "x": 100, "y": 790, "size": 64 } ] },
+  { "name": "16-en-tall-tiled.png", "locale": "en", "width": 1200, "height": 9000, "lines": [
+    { "text": "Top of the page", "x": 100, "y": 200, "size": 64 },
+    { "text": "Across the seam", "x": 100, "y": 3900, "size": 64 },
+    { "text": "Bottom of the page", "x": 100, "y": 8700, "size": 64 } ] },
+  { "name": "17-de-umlauts.png", "locale": "de", "width": 1080, "height": 1920, "lines": [
+    { "text": "Größe wählen", "x": 100, "y": 500, "size": 72 },
+    { "text": "Schließen", "x": 100, "y": 1100, "size": 72 } ] },
+  { "name": "18-sv-phone.png", "locale": "sv", "width": 1080, "height": 1920, "lines": [
+    { "text": "Fortsätt", "x": 100, "y": 600, "size": 72 },
+    { "text": "Köp nu", "x": 100, "y": 1200, "size": 72 } ] },
+  { "name": "19-en-short.png", "locale": "en", "width": 1080, "height": 1920, "lines": [
+    { "text": "OK", "x": 400, "y": 800, "size": 96 },
+    { "text": "BOOK NOW", "x": 300, "y": 1200, "size": 72 } ] },
+  { "name": "20-th-phone.png", "locale": "th", "width": 1080, "height": 1920, "lines": [
+    { "text": "เริ่มเกม", "x": 100, "y": 600, "size": 96 },
+    { "text": "ตั้งค่า", "x": 100, "y": 1200, "size": 80 } ] }
+]

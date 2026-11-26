@@ -1,0 +1,253 @@
+{
+  "locale": "ka",
+  "icu_locale": "ka",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "შვედეთი",
+      "kind": "region"
+    },
+    {
+      "text": "ინდონეზია",
+      "kind": "region"
+    },
+    {
+      "text": "ბულგარეთი",
+      "kind": "region"
+    },
+    {
+      "text": "უკრაინა",
+      "kind": "region"
+    },
+    {
+      "text": "უნგრეთი",
+      "kind": "region"
+    },
+    {
+      "text": "კოლუმბია",
+      "kind": "region"
+    },
+    {
+      "text": "ლუქსემბურგი",
+      "kind": "region"
+    },
+    {
+      "text": "ირანი",
+      "kind": "region"
+    },
+    {
+      "text": "ნიგერია",
+      "kind": "region"
+    },
+    {
+      "text": "ნორვეგია",
+      "kind": "region"
+    },
+    {
+      "text": "ესტონეთი",
+      "kind": "region"
+    },
+    {
+      "text": "ეთიოპია",
+      "kind": "region"
+    },
+    {
+      "text": "თურქული",
+      "kind": "language"
+    },
+    {
+      "text": "ფინური",
+      "kind": "language"
+    },
+    {
+      "text": "პოლონური",
+      "kind": "language"
+    },
+    {
+      "text": "ნორვეგიული",
+      "kind": "language"
+    },
+    {
+      "text": "არაბული",
+      "kind": "language"
+    },
+    {
+      "text": "სომხური",
+      "kind": "language"
+    },
+    {
+      "text": "ბერძნული",
+      "kind": "language"
+    },
+    {
+      "text": "უნგრული",
+      "kind": "language"
+    },
+    {
+      "text": "ინგლისური",
+      "kind": "language"
+    },
+    {
+      "text": "გერმანული",
+      "kind": "language"
+    },
+    {
+      "text": "ჩეხური კრონა",
+      "kind": "currency"
+    },
+    {
+      "text": "შვედური კრონა",
+      "kind": "currency"
+    },
+    {
+      "text": "ბრიტანული გირვანქა სტერლინგი",
+      "kind": "currency"
+    },
+    {
+      "text": "აშშ დოლარი",
+      "kind": "currency"
+    },
+    {
+      "text": "კანადური დოლარი",
+      "kind": "currency"
+    },
+    {
+      "text": "მექსიკური პესო",
+      "kind": "currency"
+    },
+    {
+      "text": "ნოემბერი",
+      "kind": "month"
+    },
+    {
+      "text": "ივლისი",
+      "kind": "month"
+    },
+    {
+      "text": "აგვისტო",
+      "kind": "month"
+    },
+    {
+      "text": "ივნისი",
+      "kind": "month"
+    },
+    {
+      "text": "შაბათი",
+      "kind": "weekday"
+    },
+    {
+      "text": "პარასკევი",
+      "kind": "weekday"
+    },
+    {
+      "text": "კვირა",
+      "kind": "weekday"
+    },
+    {
+      "text": "დროის სარტყელი",
+      "kind": "field"
+    },
+    {
+      "text": "კვარტალი",
+      "kind": "field"
+    },
+    {
+      "text": "ეპოქა",
+      "kind": "field"
+    },
+    {
+      "text": "დღის ნახევარი",
+      "kind": "field"
+    },
+    {
+      "text": "წუთი",
+      "kind": "field"
+    },
+    {
+      "text": "3 წუთში",
+      "kind": "relative"
+    },
+    {
+      "text": "გასულ წელს",
+      "kind": "relative"
+    },
+    {
+      "text": "გასულ თვეს",
+      "kind": "relative"
+    },
+    {
+      "text": "ხვალ",
+      "kind": "relative"
+    },
+    {
+      "text": "3 საათში",
+      "kind": "relative"
+    },
+    {
+      "text": "შემდეგ კვარტალში",
+      "kind": "relative"
+    },
+    {
+      "text": "5 თვის წინ",
+      "kind": "relative"
+    },
+    {
+      "text": "5 კვირის წინ",
+      "kind": "relative"
+    },
+    {
+      "text": "გუშინ",
+      "kind": "relative"
+    },
+    {
+      "text": "3 წამში",
+      "kind": "relative"
+    },
+    {
+      "text": "5 საათი",
+      "kind": "unit"
+    },
+    {
+      "text": "5 კილოგრამი",
+      "kind": "unit"
+    },
+    {
+      "text": "2 კილოგრამი",
+      "kind": "unit"
+    },
+    {
+      "text": "2 კილომეტრი საათში",
+      "kind": "unit"
+    },
+    {
+      "text": "2 პროცენტი",
+      "kind": "unit"
+    },
+    {
+      "text": "2 დღე",
+      "kind": "unit"
+    },
+    {
+      "text": "2 საათი",
+      "kind": "unit"
+    },
+    {
+      "text": "5 დღე",
+      "kind": "unit"
+    },
+    {
+      "text": "ვიეტნამური",
+      "kind": "language"
+    },
+    {
+      "text": "5 ლიტრი",
+      "kind": "unit"
+    }
+  ]
+}

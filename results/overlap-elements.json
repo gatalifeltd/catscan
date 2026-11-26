@@ -1,0 +1,2117 @@
+{
+ "spec": "TODO-046, TODO-049",
+ "script": "bench/overlap-elements.js",
+ "generator": "bench/overlap/elements-generate.mjs",
+ "strings": "bench/untranslated/strings.json",
+ "manifest": "bench/overlap/elements-manifest.json",
+ "seed": 46,
+ "locales": [
+  "de",
+  "fr",
+  "es",
+  "it",
+  "pt-BR",
+  "pl",
+  "tr",
+  "ru",
+  "uk",
+  "ja",
+  "ko",
+  "zh-Hans"
+ ],
+ "layouts": [
+  "vv",
+  "row",
+  "icon",
+  "image",
+  "switch",
+  "checkbox",
+  "slider",
+  "field",
+  "select",
+  "panel"
+ ],
+ "panels": [
+  "footer",
+  "toast",
+  "sheet"
+ ],
+ "amounts_css_px": [
+  -4,
+  0,
+  2,
+  4,
+  8,
+  16
+ ],
+ "sizes_css_px": [
+  13,
+  17,
+  24
+ ],
+ "drawn": 1620,
+ "skipped_layout": 19,
+ "gate_bars": {
+  "precision": 0.9,
+  "recall": 0.8,
+  "minPx": 4,
+  "falseAlarmsPer100": 2,
+  "gameRecall": 0.8
+ },
+ "held_out": {
+  "text-text": {
+   "images": 216,
+   "positives": 111,
+   "negatives": 72,
+   "tp": 69,
+   "fp": 7,
+   "precision": 0.9079,
+   "recall": 0.6216,
+   "recall_wilson95": [
+    0.5288,
+    0.7063
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 9,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 48,
+     "found": 7,
+     "recall": 0.1458
+    },
+    "2": {
+     "images": 24,
+     "found": 8,
+     "recall": 0.3333
+    },
+    "4": {
+     "images": 48,
+     "found": 23,
+     "recall": 0.4792
+    },
+    "8": {
+     "images": 24,
+     "found": 16,
+     "recall": 0.6667
+    },
+    "16": {
+     "images": 48,
+     "found": 30,
+     "recall": 0.625
+    },
+    "-4": {
+     "images": 24,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "per_layout_4px_up": {
+    "vv": {
+     "images": 52,
+     "found": 33,
+     "recall": 0.6346
+    },
+    "row": {
+     "images": 59,
+     "found": 36,
+     "recall": 0.6102
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 40,
+     "found": 28,
+     "recall": 0.7
+    },
+    "17": {
+     "images": 23,
+     "found": 16,
+     "recall": 0.6957
+    },
+    "24": {
+     "images": 48,
+     "found": 25,
+     "recall": 0.5208
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 37,
+     "found": 22,
+     "recall": 0.5946
+    },
+    "2": {
+     "images": 38,
+     "found": 26,
+     "recall": 0.6842
+    },
+    "3": {
+     "images": 36,
+     "found": 21,
+     "recall": 0.5833
+    }
+   },
+   "negative_images_flagged": 8,
+   "false_alarm_list": [
+    {
+     "image": "fr/0093-row-0-13.png",
+     "line": "En ligne / Réglages",
+     "overlap": 0.07
+    },
+    {
+     "image": "es/0167-row-0-24.png",
+     "line": "Hola, {name} / Ajustes",
+     "overlap": 0.19
+    },
+    {
+     "image": "pt-BR/0311-row-0-24.png",
+     "line": "Cancelar / Catscan Pro",
+     "overlap": 0.15
+    },
+    {
+     "image": "pl/0381-row-0-13.png",
+     "line": "Zaloguj się / Wi-Fi",
+     "overlap": 0.28
+    },
+    {
+     "image": "tr/0435-vv-0-13.png",
+     "line": "Değişiklikleri kaydet / Tüm özelliklerin kilidini aç",
+     "overlap": 0.63
+    },
+    {
+     "image": "tr/0455-row-0-24.png",
+     "line": "Ana Sayfa / Çıkış yap",
+     "overlap": 0.18
+    },
+    {
+     "image": "ja/0651-vv-0-13.png",
+     "line": "サインイン / プライバシー",
+     "overlap": 0.28
+    }
+   ]
+  },
+  "text-graphic": {
+   "images": 209,
+   "positives": 108,
+   "negatives": 68,
+   "tp": 84,
+   "fp": 8,
+   "precision": 0.913,
+   "recall": 0.7778,
+   "recall_wilson95": [
+    0.6906,
+    0.8459
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 9,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 44,
+     "found": 6,
+     "recall": 0.1364
+    },
+    "2": {
+     "images": 24,
+     "found": 14,
+     "recall": 0.5833
+    },
+    "4": {
+     "images": 46,
+     "found": 38,
+     "recall": 0.8261
+    },
+    "8": {
+     "images": 23,
+     "found": 18,
+     "recall": 0.7826
+    },
+    "16": {
+     "images": 48,
+     "found": 28,
+     "recall": 0.5833
+    },
+    "-4": {
+     "images": 24,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "per_layout_4px_up": {
+    "icon-h": {
+     "images": 27,
+     "found": 25,
+     "recall": 0.9259
+    },
+    "icon-v": {
+     "images": 26,
+     "found": 25,
+     "recall": 0.9615
+    },
+    "image-h": {
+     "images": 29,
+     "found": 16,
+     "recall": 0.5517
+    },
+    "image-v": {
+     "images": 26,
+     "found": 18,
+     "recall": 0.6923
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 44,
+     "found": 33,
+     "recall": 0.75
+    },
+    "17": {
+     "images": 22,
+     "found": 18,
+     "recall": 0.8182
+    },
+    "24": {
+     "images": 42,
+     "found": 33,
+     "recall": 0.7857
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 38,
+     "found": 24,
+     "recall": 0.6316
+    },
+    "2": {
+     "images": 36,
+     "found": 31,
+     "recall": 0.8611
+    },
+    "3": {
+     "images": 34,
+     "found": 29,
+     "recall": 0.8529
+    }
+   },
+   "negative_images_flagged": 6,
+   "false_alarm_list": [
+    {
+     "image": "de/0057-image-0-13.png",
+     "line": "Änderungen speichern / [g]",
+     "overlap": 0.1
+    },
+    {
+     "image": "it/0239-row-0-24.png",
+     "line": "Nessuna connessione a Internet / [graphic]",
+     "overlap": 0.13
+    },
+    {
+     "image": "pt-BR/0327-icon-0-13.png",
+     "line": "Baixar / [g]",
+     "overlap": 0.38
+    },
+    {
+     "image": "tr/0473-icon-0-24.png",
+     "line": "Wi-Fi / [g]",
+     "overlap": 0.4
+    },
+    {
+     "image": "ru/0543-icon-0-13.png",
+     "line": "Войти / [g]",
+     "overlap": 0.5
+    },
+    {
+     "image": "uk/0617-icon-0-24.png",
+     "line": "Premium / [g]",
+     "overlap": 0.6
+    },
+    {
+     "image": "uk/0647-image-16-24.png",
+     "line": "Немає підключення до інтернету / [graphic]",
+     "overlap": 0.59
+    },
+    {
+     "image": "ja/0687-icon-0-13.png",
+     "line": "設定 / [g]",
+     "overlap": 0.12
+    }
+   ]
+  },
+  "text-control": {
+   "images": 179,
+   "positives": 87,
+   "negatives": 59,
+   "tp": 68,
+   "fp": 10,
+   "precision": 0.8718,
+   "recall": 0.7816,
+   "recall_wilson95": [
+    0.6839,
+    0.8555
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 3,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 30,
+     "found": 8,
+     "recall": 0.2667
+    },
+    "2": {
+     "images": 30,
+     "found": 13,
+     "recall": 0.4333
+    },
+    "4": {
+     "images": 30,
+     "found": 24,
+     "recall": 0.8
+    },
+    "8": {
+     "images": 30,
+     "found": 25,
+     "recall": 0.8333
+    },
+    "16": {
+     "images": 30,
+     "found": 19,
+     "recall": 0.6333
+    },
+    "-4": {
+     "images": 29,
+     "found": 1,
+     "recall": 0.0345
+    }
+   },
+   "per_layout_4px_up": {
+    "switch-h": {
+     "images": 10,
+     "found": 9,
+     "recall": 0.9
+    },
+    "switch-v": {
+     "images": 8,
+     "found": 7,
+     "recall": 0.875
+    },
+    "checkbox-h": {
+     "images": 9,
+     "found": 7,
+     "recall": 0.7778
+    },
+    "slider-v": {
+     "images": 8,
+     "found": 7,
+     "recall": 0.875
+    },
+    "field-v": {
+     "images": 8,
+     "found": 8,
+     "recall": 1
+    },
+    "field-h": {
+     "images": 10,
+     "found": 7,
+     "recall": 0.7
+    },
+    "select-v": {
+     "images": 9,
+     "found": 7,
+     "recall": 0.7778
+    },
+    "checkbox-v": {
+     "images": 7,
+     "found": 6,
+     "recall": 0.8571
+    },
+    "slider-h": {
+     "images": 9,
+     "found": 7,
+     "recall": 0.7778
+    },
+    "select-h": {
+     "images": 9,
+     "found": 3,
+     "recall": 0.3333
+    }
+   },
+   "per_kind": {
+    "switch": {
+     "positives": 18,
+     "found": 16,
+     "tp": 16,
+     "fp": 2,
+     "precision": 0.8889,
+     "recall": 0.8889,
+     "recall_wilson95": [
+      0.672,
+      0.969
+     ]
+    },
+    "checkbox": {
+     "positives": 16,
+     "found": 13,
+     "tp": 13,
+     "fp": 3,
+     "precision": 0.8125,
+     "recall": 0.8125,
+     "recall_wilson95": [
+      0.5699,
+      0.9341
+     ]
+    },
+    "slider": {
+     "positives": 17,
+     "found": 14,
+     "tp": 14,
+     "fp": 1,
+     "precision": 0.9333,
+     "recall": 0.8235,
+     "recall_wilson95": [
+      0.5897,
+      0.9381
+     ]
+    },
+    "field": {
+     "positives": 18,
+     "found": 15,
+     "tp": 15,
+     "fp": 0,
+     "precision": 1,
+     "recall": 0.8333,
+     "recall_wilson95": [
+      0.6078,
+      0.9416
+     ]
+    },
+    "select": {
+     "positives": 18,
+     "found": 10,
+     "tp": 10,
+     "fp": 4,
+     "precision": 0.7143,
+     "recall": 0.5556,
+     "recall_wilson95": [
+      0.3372,
+      0.7544
+     ]
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 28,
+     "found": 21,
+     "recall": 0.75
+    },
+    "17": {
+     "images": 34,
+     "found": 26,
+     "recall": 0.7647
+    },
+    "24": {
+     "images": 25,
+     "found": 21,
+     "recall": 0.84
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 24,
+     "found": 20,
+     "recall": 0.8333
+    },
+    "2": {
+     "images": 35,
+     "found": 26,
+     "recall": 0.7429
+    },
+    "3": {
+     "images": 28,
+     "found": 22,
+     "recall": 0.7857
+    }
+   },
+   "negative_images_flagged": 9,
+   "false_alarm_list": [
+    {
+     "image": "de/0865-switch-0-17.png",
+     "line": "Einstellungen / [g]",
+     "overlap": 0.16
+    },
+    {
+     "image": "de/0877-slider-0-17.png",
+     "line": "WLAN / [g]",
+     "overlap": 0.08
+    },
+    {
+     "image": "de/0889-select-0-13.png",
+     "line": "Keine Internetverbindung / [g]",
+     "overlap": 0.2
+    },
+    {
+     "image": "fr/0933-checkbox--4-17.png",
+     "line": "Rechercher des produits / [g]",
+     "overlap": 0.33
+    },
+    {
+     "image": "es/0997-checkbox-0-24.png",
+     "line": "Ajustes / [g]",
+     "overlap": 0.17
+    },
+    {
+     "image": "pt-BR/1123-checkbox-0-13.png",
+     "line": "Restaurar compras / [g]",
+     "overlap": 0.33
+    },
+    {
+     "image": "pt-BR/1141-select-0-24.png",
+     "line": "Notificações / [g]",
+     "overlap": 0.18
+    },
+    {
+     "image": "tr/1267-select-0-13.png",
+     "line": "%d gün kaldı / [g]",
+     "overlap": 0.23
+    },
+    {
+     "image": "ru/1333-select-8-24.png",
+     "line": "Нет подключения к интернету / [graphic]",
+     "overlap": 0.12
+    },
+    {
+     "image": "uk/1369-switch-0-24.png",
+     "line": "Налаштування / [g]",
+     "overlap": 0.03
+    }
+   ],
+   "shipped": {
+    "kinds": [
+     "field",
+     "slider"
+    ],
+    "positives": 35,
+    "tp": 29,
+    "fp": 1,
+    "precision": 0.9667,
+    "recall": 0.8286,
+    "recall_wilson95": [
+     0.6732,
+     0.919
+    ],
+    "gate_pass": true
+   }
+  },
+  "occlusion": {
+   "images": 198,
+   "positives": 53,
+   "negatives": 108,
+   "tp": 29,
+   "fp": 2,
+   "precision": 0.9355,
+   "recall": 0.5472,
+   "recall_wilson95": [
+    0.4145,
+    0.6734
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 1,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 18,
+     "found": 2,
+     "recall": 0.1111
+    },
+    "2": {
+     "images": 18,
+     "found": 4,
+     "recall": 0.2222
+    },
+    "4": {
+     "images": 18,
+     "found": 8,
+     "recall": 0.4444
+    },
+    "8": {
+     "images": 54,
+     "found": 16,
+     "recall": 0.2963
+    },
+    "16": {
+     "images": 54,
+     "found": 5,
+     "recall": 0.0926
+    },
+    "-4": {
+     "images": 18,
+     "found": 0,
+     "recall": 0
+    },
+    "full": {
+     "images": 18,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "per_layout_4px_up": {
+    "panel-footer": {
+     "images": 18,
+     "found": 10,
+     "recall": 0.5556
+    },
+    "panel-toast": {
+     "images": 18,
+     "found": 11,
+     "recall": 0.6111
+    },
+    "panel-sheet": {
+     "images": 17,
+     "found": 8,
+     "recall": 0.4706
+    }
+   },
+   "per_variant": {
+    "footer-cut": {
+     "images": 30,
+     "found": 10,
+     "recall": 0.3333
+    },
+    "footer-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "footer-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "toast-cut": {
+     "images": 30,
+     "found": 12,
+     "recall": 0.4
+    },
+    "toast-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "toast-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "sheet-cut": {
+     "images": 30,
+     "found": 9,
+     "recall": 0.3
+    },
+    "sheet-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "sheet-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "hidden_full": {
+    "images": 18,
+    "found": 0,
+    "recall": 0
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 15,
+     "found": 10,
+     "recall": 0.6667
+    },
+    "17": {
+     "images": 20,
+     "found": 8,
+     "recall": 0.4
+    },
+    "24": {
+     "images": 18,
+     "found": 11,
+     "recall": 0.6111
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 21,
+     "found": 9,
+     "recall": 0.4286
+    },
+    "2": {
+     "images": 16,
+     "found": 12,
+     "recall": 0.75
+    },
+    "3": {
+     "images": 16,
+     "found": 8,
+     "recall": 0.5
+    }
+   },
+   "negative_images_flagged": 2,
+   "false_alarm_list": [
+    {
+     "image": "fr/0969-panel-toast-cut-0-17.png",
+     "line": "Accueil / [p]",
+     "overlap": 0.06
+    },
+    {
+     "image": "tr/1295-panel-sheet-cut-0-13.png",
+     "line": "Ürün ara / [p]",
+     "overlap": 0.17
+    }
+   ]
+  }
+ },
+ "dev": {
+  "text-text": {
+   "images": 216,
+   "positives": 88,
+   "negatives": 72,
+   "tp": 62,
+   "fp": 3,
+   "precision": 0.9538,
+   "recall": 0.7045,
+   "recall_wilson95": [
+    0.6023,
+    0.7897
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 8,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 24,
+     "found": 3,
+     "recall": 0.125
+    },
+    "2": {
+     "images": 48,
+     "found": 12,
+     "recall": 0.25
+    },
+    "4": {
+     "images": 24,
+     "found": 9,
+     "recall": 0.375
+    },
+    "8": {
+     "images": 48,
+     "found": 36,
+     "recall": 0.75
+    },
+    "16": {
+     "images": 24,
+     "found": 17,
+     "recall": 0.7083
+    },
+    "-4": {
+     "images": 48,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "per_layout_4px_up": {
+    "vv": {
+     "images": 40,
+     "found": 28,
+     "recall": 0.7
+    },
+    "row": {
+     "images": 48,
+     "found": 34,
+     "recall": 0.7083
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 22,
+     "found": 16,
+     "recall": 0.7273
+    },
+    "17": {
+     "images": 42,
+     "found": 26,
+     "recall": 0.619
+    },
+    "24": {
+     "images": 24,
+     "found": 20,
+     "recall": 0.8333
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 20,
+     "found": 13,
+     "recall": 0.65
+    },
+    "2": {
+     "images": 26,
+     "found": 19,
+     "recall": 0.7308
+    },
+    "3": {
+     "images": 42,
+     "found": 30,
+     "recall": 0.7143
+    }
+   },
+   "negative_images_flagged": 3,
+   "false_alarm_list": [
+    {
+     "image": "fr/0094-row-0-17.png",
+     "line": "Notifications / En ligne",
+     "overlap": 0.29
+    },
+    {
+     "image": "pt-BR/0310-row-0-17.png",
+     "line": "Olá, {name} / Privacidade",
+     "overlap": 0.05
+    },
+    {
+     "image": "zh-Hans/0796-vv-0-17.png",
+     "line": "还剩 %d 天 / 你好，{name}",
+     "overlap": 0.3
+    }
+   ]
+  },
+  "text-graphic": {
+   "images": 207,
+   "positives": 88,
+   "negatives": 69,
+   "tp": 59,
+   "fp": 5,
+   "precision": 0.9219,
+   "recall": 0.6705,
+   "recall_wilson95": [
+    0.5669,
+    0.7597
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 5,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 22,
+     "found": 3,
+     "recall": 0.1364
+    },
+    "2": {
+     "images": 45,
+     "found": 25,
+     "recall": 0.5556
+    },
+    "4": {
+     "images": 24,
+     "found": 16,
+     "recall": 0.6667
+    },
+    "8": {
+     "images": 45,
+     "found": 27,
+     "recall": 0.6
+    },
+    "16": {
+     "images": 24,
+     "found": 16,
+     "recall": 0.6667
+    },
+    "-4": {
+     "images": 47,
+     "found": 1,
+     "recall": 0.0213
+    }
+   },
+   "per_layout_4px_up": {
+    "icon-v": {
+     "images": 29,
+     "found": 23,
+     "recall": 0.7931
+    },
+    "icon-h": {
+     "images": 14,
+     "found": 13,
+     "recall": 0.9286
+    },
+    "image-h": {
+     "images": 17,
+     "found": 10,
+     "recall": 0.5882
+    },
+    "image-v": {
+     "images": 28,
+     "found": 13,
+     "recall": 0.4643
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 23,
+     "found": 15,
+     "recall": 0.6522
+    },
+    "17": {
+     "images": 46,
+     "found": 32,
+     "recall": 0.6957
+    },
+    "24": {
+     "images": 19,
+     "found": 12,
+     "recall": 0.6316
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 35,
+     "found": 20,
+     "recall": 0.5714
+    },
+    "2": {
+     "images": 24,
+     "found": 20,
+     "recall": 0.8333
+    },
+    "3": {
+     "images": 29,
+     "found": 19,
+     "recall": 0.6552
+    }
+   },
+   "negative_images_flagged": 4,
+   "false_alarm_list": [
+    {
+     "image": "de/0058-image-0-17.png",
+     "line": "Hilfe-Center / [g]",
+     "overlap": 0.1
+    },
+    {
+     "image": "ru/0536-row-8-24.png",
+     "line": "Нет подключения к интернету / [graphic]",
+     "overlap": 0.51
+    },
+    {
+     "image": "ru/0544-icon-0-17.png",
+     "line": "Осталось %d дн. / [g]",
+     "overlap": 0.26
+    },
+    {
+     "image": "ru/0560-image--4-24.png",
+     "line": "Удалить аккаунт / [g]",
+     "overlap": 0.07
+    },
+    {
+     "image": "zh-Hans/0850-image-0-17.png",
+     "line": "{count} 件商品 / [g]",
+     "overlap": 0.13
+    }
+   ]
+  },
+  "text-control": {
+   "images": 179,
+   "positives": 86,
+   "negatives": 60,
+   "tp": 63,
+   "fp": 10,
+   "precision": 0.863,
+   "recall": 0.7326,
+   "recall_wilson95": [
+    0.6305,
+    0.8147
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 3,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 30,
+     "found": 9,
+     "recall": 0.3
+    },
+    "2": {
+     "images": 30,
+     "found": 14,
+     "recall": 0.4667
+    },
+    "4": {
+     "images": 29,
+     "found": 22,
+     "recall": 0.7586
+    },
+    "8": {
+     "images": 30,
+     "found": 23,
+     "recall": 0.7667
+    },
+    "16": {
+     "images": 30,
+     "found": 18,
+     "recall": 0.6
+    },
+    "-4": {
+     "images": 30,
+     "found": 1,
+     "recall": 0.0333
+    }
+   },
+   "per_layout_4px_up": {
+    "switch-h": {
+     "images": 11,
+     "found": 10,
+     "recall": 0.9091
+    },
+    "checkbox-h": {
+     "images": 10,
+     "found": 6,
+     "recall": 0.6
+    },
+    "slider-v": {
+     "images": 9,
+     "found": 9,
+     "recall": 1
+    },
+    "field-v": {
+     "images": 7,
+     "found": 4,
+     "recall": 0.5714
+    },
+    "select-v": {
+     "images": 8,
+     "found": 7,
+     "recall": 0.875
+    },
+    "checkbox-v": {
+     "images": 7,
+     "found": 6,
+     "recall": 0.8571
+    },
+    "field-h": {
+     "images": 11,
+     "found": 7,
+     "recall": 0.6364
+    },
+    "select-h": {
+     "images": 10,
+     "found": 2,
+     "recall": 0.2
+    },
+    "switch-v": {
+     "images": 6,
+     "found": 6,
+     "recall": 1
+    },
+    "slider-h": {
+     "images": 7,
+     "found": 6,
+     "recall": 0.8571
+    }
+   },
+   "per_kind": {
+    "switch": {
+     "positives": 17,
+     "found": 16,
+     "tp": 16,
+     "fp": 0,
+     "precision": 1,
+     "recall": 0.9412,
+     "recall_wilson95": [
+      0.7302,
+      0.9895
+     ]
+    },
+    "checkbox": {
+     "positives": 17,
+     "found": 12,
+     "tp": 12,
+     "fp": 4,
+     "precision": 0.75,
+     "recall": 0.7059,
+     "recall_wilson95": [
+      0.4687,
+      0.8672
+     ]
+    },
+    "slider": {
+     "positives": 16,
+     "found": 15,
+     "tp": 15,
+     "fp": 4,
+     "precision": 0.7895,
+     "recall": 0.9375,
+     "recall_wilson95": [
+      0.7167,
+      0.9889
+     ]
+    },
+    "field": {
+     "positives": 18,
+     "found": 11,
+     "tp": 11,
+     "fp": 1,
+     "precision": 0.9167,
+     "recall": 0.6111,
+     "recall_wilson95": [
+      0.3862,
+      0.797
+     ]
+    },
+    "select": {
+     "positives": 18,
+     "found": 9,
+     "tp": 9,
+     "fp": 1,
+     "precision": 0.9,
+     "recall": 0.5,
+     "recall_wilson95": [
+      0.2903,
+      0.7097
+     ]
+    }
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 22,
+     "found": 14,
+     "recall": 0.6364
+    },
+    "17": {
+     "images": 29,
+     "found": 24,
+     "recall": 0.8276
+    },
+    "24": {
+     "images": 35,
+     "found": 25,
+     "recall": 0.7143
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 24,
+     "found": 15,
+     "recall": 0.625
+    },
+    "2": {
+     "images": 27,
+     "found": 23,
+     "recall": 0.8519
+    },
+    "3": {
+     "images": 35,
+     "found": 25,
+     "recall": 0.7143
+    }
+   },
+   "negative_images_flagged": 10,
+   "false_alarm_list": [
+    {
+     "image": "fr/0934-checkbox-0-24.png",
+     "line": "Catscan Pro / [g]",
+     "overlap": 0.5
+    },
+    {
+     "image": "pl/1186-checkbox-0-13.png",
+     "line": "Wyloguj się / [g]",
+     "overlap": 0.12
+    },
+    {
+     "image": "pl/1192-slider-0-13.png",
+     "line": "Język / [g]",
+     "overlap": 0.12
+    },
+    {
+     "image": "pl/1204-select-0-13.png",
+     "line": "Przywróć zakupy / [g]",
+     "overlap": 0.21
+    },
+    {
+     "image": "ru/1312-checkbox-0-17.png",
+     "line": "Удалить аккаунт / [g]",
+     "overlap": 0.22
+    },
+    {
+     "image": "ru/1318-slider-0-13.png",
+     "line": "Нет подключения к интернету / [g]",
+     "overlap": 0.05
+    },
+    {
+     "image": "ru/1324-field-0-17.png",
+     "line": "Параметры / [g]",
+     "overlap": 0.23
+    },
+    {
+     "image": "uk/1380-slider--4-24.png",
+     "line": "Catscan Pro / [g]",
+     "overlap": 0.05
+    },
+    {
+     "image": "ja/1444-slider-0-13.png",
+     "line": "Wi-Fi / [g]",
+     "overlap": 0.1
+    },
+    {
+     "image": "zh-Hans/1564-checkbox-0-13.png",
+     "line": "编辑个人资料 / [g]",
+     "overlap": 0.5
+    }
+   ]
+  },
+  "occlusion": {
+   "images": 197,
+   "positives": 53,
+   "negatives": 106,
+   "tp": 26,
+   "fp": 1,
+   "precision": 0.963,
+   "recall": 0.4906,
+   "recall_wilson95": [
+    0.3612,
+    0.6212
+   ],
+   "gate_pass": false,
+   "contained_positives": {
+    "images": 3,
+    "found": 0,
+    "recall": 0
+   },
+   "per_amount": {
+    "0": {
+     "images": 18,
+     "found": 2,
+     "recall": 0.1111
+    },
+    "2": {
+     "images": 18,
+     "found": 3,
+     "recall": 0.1667
+    },
+    "4": {
+     "images": 18,
+     "found": 7,
+     "recall": 0.3889
+    },
+    "8": {
+     "images": 54,
+     "found": 14,
+     "recall": 0.2593
+    },
+    "16": {
+     "images": 54,
+     "found": 4,
+     "recall": 0.0741
+    },
+    "-4": {
+     "images": 18,
+     "found": 0,
+     "recall": 0
+    },
+    "full": {
+     "images": 17,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "per_layout_4px_up": {
+    "panel-footer": {
+     "images": 15,
+     "found": 7,
+     "recall": 0.4667
+    },
+    "panel-toast": {
+     "images": 20,
+     "found": 12,
+     "recall": 0.6
+    },
+    "panel-sheet": {
+     "images": 18,
+     "found": 7,
+     "recall": 0.3889
+    }
+   },
+   "per_variant": {
+    "footer-cut": {
+     "images": 30,
+     "found": 7,
+     "recall": 0.2333
+    },
+    "footer-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "footer-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "toast-cut": {
+     "images": 30,
+     "found": 13,
+     "recall": 0.4333
+    },
+    "toast-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "toast-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "sheet-cut": {
+     "images": 30,
+     "found": 7,
+     "recall": 0.2333
+    },
+    "sheet-top": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    },
+    "sheet-scroll": {
+     "images": 12,
+     "found": 0,
+     "recall": 0
+    }
+   },
+   "hidden_full": {
+    "images": 17,
+    "found": 0,
+    "recall": 0
+   },
+   "per_size_4px_up": {
+    "13": {
+     "images": 15,
+     "found": 7,
+     "recall": 0.4667
+    },
+    "17": {
+     "images": 19,
+     "found": 11,
+     "recall": 0.5789
+    },
+    "24": {
+     "images": 19,
+     "found": 8,
+     "recall": 0.4211
+    }
+   },
+   "per_dpr_4px_up": {
+    "1": {
+     "images": 15,
+     "found": 9,
+     "recall": 0.6
+    },
+    "2": {
+     "images": 14,
+     "found": 5,
+     "recall": 0.3571
+    },
+    "3": {
+     "images": 24,
+     "found": 12,
+     "recall": 0.5
+    }
+   },
+   "negative_images_flagged": 2,
+   "false_alarm_list": [
+    {
+     "image": "es/1032-panel-toast-cut-0-17.png",
+     "line": "Wi-Fi / [p]",
+     "overlap": 0.14
+    }
+   ]
+  }
+ },
+ "games": {
+  "negatives": 86,
+  "negative_flags": 0,
+  "negative_images_flagged": [],
+  "positives": 771,
+  "found": 377,
+  "contained": 5,
+  "contained_found": 0,
+  "excluded": 2,
+  "by_k": {
+   "4": {
+    "images": 174,
+    "found": 100,
+    "recall": 0.5747,
+    "wilson95": [
+     0.5004,
+     0.6458
+    ]
+   },
+   "8": {
+    "images": 235,
+    "found": 135,
+    "recall": 0.5745,
+    "wilson95": [
+     0.5106,
+     0.636
+    ]
+   },
+   "16": {
+    "images": 214,
+    "found": 80,
+    "recall": 0.3738,
+    "wilson95": [
+     0.3118,
+     0.4403
+    ]
+   },
+   "24": {
+    "images": 148,
+    "found": 62,
+    "recall": 0.4189,
+    "wilson95": [
+     0.3425,
+     0.4995
+    ]
+   }
+  },
+  "by_axis": {
+   "vertical": {
+    "images": 650,
+    "found": 351,
+    "recall": 0.54,
+    "wilson95": [
+     0.5016,
+     0.578
+    ]
+   },
+   "horizontal": {
+    "images": 121,
+    "found": 26,
+    "recall": 0.2149,
+    "wilson95": [
+     0.1511,
+     0.2962
+    ]
+   }
+  },
+  "apps": {
+   "game-1": {
+    "game_commit": "4ff521431286bbf0621f6b837c520701d75cdcef",
+    "tools": {
+     "node": "v26.13.0",
+     "playwright": "1.65.0",
+     "chromium": "158.0.8127.18"
+    }
+   }
+  },
+  "recall": 0.489,
+  "recall_wilson95": [
+   0.4538,
+   0.5242
+  ],
+  "contained_share": 0.0064,
+  "false_alarms_per_100": 0
+ },
+ "native": {
+  "images": 972,
+  "flags": 74,
+  "unreviewed": 0,
+  "real_overlaps": 61,
+  "false_alarms": 13,
+  "false_alarms_per_100": 1.34,
+  "list": [
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "radio button, unchecked / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "radio button, unchecked / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "Χρέωση κάθε μήνα / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "Χρέωση κάθε μήνα / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "radio button, checked / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "radio button, checked / 0%",
+    "overlap": 0.35,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "Μόνο 39,99 $/έτος / 0%",
+    "overlap": 0.46,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l1-rung1.png",
+    "line": "Μόνο 39,99 $/έτος / 0%",
+    "overlap": 0.46,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/el/funnel-l5-plans.png",
+    "line": "Το κατάστημα μπορεί να ζητήσει τρόπο πληρωμής. Δεν θα χρεωθείς πριν την παραμονή της λήξης της δοκιμής σου. / Επαναφορά αγορών",
+    "overlap": 0.6,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/pl/funnel-l5-plans.png",
+    "line": "Przywróć zakupy / 0%",
+    "overlap": 0.4,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/app-1/pl/funnel-l5-plans.png",
+    "line": "Przywróć zakupy / 0%",
+    "overlap": 0.4,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/game-1/fr/death-screen-chest-line.png",
+    "line": "Le transfo est vexé / C’était écrit ENTRER. Tu es resté dehors.",
+    "overlap": 0.01,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation/game-1/fr/death-screen.png",
+    "line": "Le transfo est vexé / C’était écrit ENTRER. Tu es resté dehors.",
+    "overlap": 0.01,
+    "type": "text-text",
+    "verdict": "false-alarm"
+   },
+   {
+    "path": "truncation-android/app-1-android/de/funnel-l6-diary.png",
+    "line": "Essen hinzufügen / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/de/funnel-l6-diary.png",
+    "line": "Essen hinzufügen / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/de/funnel-l6-diary.png",
+    "line": "Essen hinzufügen / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/de/funnel-l6-diary.png",
+    "line": "Essen hinzufügen / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "0 ml / 2.100 ml / Προσθήκη φαγητού",
+    "overlap": 0.14,
+    "type": "text-text",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "Προσθήκη φαγητού / [diary-water-glass]",
+    "overlap": 0.17,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "Προσθήκη φαγητού / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "Προσθήκη φαγητού / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "Προσθήκη φαγητού / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/el/funnel-l6-diary.png",
+    "line": "Προσθήκη φαγητού / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.26,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/en/funnel-l6-diary.png",
+    "line": "Add food / [diary-water-glass]",
+    "overlap": 0.24,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.16,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/es/funnel-l6-diary.png",
+    "line": "Añadir comida / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.12,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/it/funnel-l6-diary.png",
+    "line": "Aggiungi cibo / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.81,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.81,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.81,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.36,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.36,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ja/funnel-l6-diary.png",
+    "line": "食品を追加 / [diary-water-glass]",
+    "overlap": 0.36,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ko/funnel-l6-diary.png",
+    "line": "식품 추가 / [diary-water-glass]",
+    "overlap": 0.49,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ko/funnel-l6-diary.png",
+    "line": "식품 추가 / [diary-water-glass]",
+    "overlap": 0.64,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ko/funnel-l6-diary.png",
+    "line": "식품 추가 / [diary-water-glass]",
+    "overlap": 0.47,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.17,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/pl/funnel-l6-diary.png",
+    "line": "Dodaj jedzenie / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ru/funnel-l6-diary.png",
+    "line": "Добавить еду / [diary-water-glass]",
+    "overlap": 0.36,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ru/funnel-l6-diary.png",
+    "line": "Добавить еду / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ru/funnel-l6-diary.png",
+    "line": "Добавить еду / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/ru/funnel-l6-diary.png",
+    "line": "Добавить еду / [diary-water-glass]",
+    "overlap": 0.69,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.77,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.06,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   },
+   {
+    "path": "truncation-android/app-1-android/tr/funnel-l6-diary.png",
+    "line": "Yiyecek ekle / [diary-water-glass]",
+    "overlap": 0.31,
+    "type": "text-graphic",
+    "verdict": "real"
+   }
+  ]
+ },
+ "real_negatives": {
+  "screens": 1058,
+  "false_alarms": 13,
+  "per_100": 1.23
+ },
+ "gate": {
+  "text-text": {
+   "synthetic": false,
+   "real_negatives": true,
+   "games": false,
+   "pass": false
+  },
+  "text-graphic": {
+   "synthetic": false,
+   "real_negatives": true,
+   "games": null,
+   "pass": false
+  },
+  "text-control": {
+   "synthetic": true,
+   "real_negatives": true,
+   "games": null,
+   "pass": true
+  },
+  "occlusion": {
+   "synthetic": false,
+   "real_negatives": null,
+   "games": null,
+   "pass": false
+  }
+ },
+ "decision": "TODO-046 D18: ships without --experimental at the measured numbers; TODO-049 D6: occlusion runs only under --experimental (no real negatives with panels)",
+ "tools": {
+  "playwright": "1.65.1",
+  "chromium": "159.0.8154.6",
+  "catscan": "0.32.1",
+  "chip": "Apple M5",
+  "macos": "27.2.1",
+  "macos_build": "26B131",
+  "vision_revision": 3,
+  "node": "v26.13.0",
+  "swiftc": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)",
+  "xcode": "Xcode 27.2"
+ },
+ "date": "2026-11-16"
+}

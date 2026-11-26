@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-02",
+  "git": "4757789",
+  "clean_tree": true,
+  "npm": "11.16.0",
+  "catscan": "0.0.1",
+  "engine": "vision-accurate-rev3",
+  "macos": "27.2",
+  "macos_build": "26B123",
+  "chip": "Apple M5",
+  "host_class": "physical",
+  "node": "v24.18.0",
+  "swift": "Apple Swift version 6.4",
+  "loadavg_1m_at_start": 3.2,
+  "phone_check": {
+    "images": 4,
+    "samples": 23,
+    "sequential_median_ms": 83,
+    "sequential_max_ms": 94,
+    "pool2_median_ms": 132,
+    "pool2_wall_ms_per_image": 70.4,
+    "target_ms": 100
+  },
+  "serve_round_trip": {
+    "samples": 30,
+    "path_median_ms": 76.8,
+    "base64_median_ms": 78.9,
+    "target_ms": 100
+  },
+  "batch": {
+    "images": 509,
+    "wall_s": 29.54,
+    "target_s": 45,
+    "exit": 0
+  }
+}

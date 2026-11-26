@@ -1,0 +1,280 @@
+# catscan=0.17.2 macos=27.2.1 macos_build=26B131 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+sq,tesseract-5.5.4,false,2160,0,2880,2798,97.15,720,638,0.8861,0.0147,1246,0,194,720,1,0.8653,126,1|1|0|1|3|2|2|5|19|686,5|1|1|5|7|19|18|52|125|484
+image,case,present,absent,truncated,cer,read
+sq/00-fit-16-dark-gradient.png,fit,fail,pass,no,1,Holandé
+sq/00-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/02-clip-24-light-flat.png,clip,,pass,no,,
+sq/02-clip-24-light-gradient.png,clip,,pass,no,,
+sq/02-clip-24-dark-flat.png,clip,,pass,no,,
+sq/02-clip-24-dark-gradient.png,clip,,pass,no,,
+sq/04-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/04-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/04-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/04-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/04-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/04-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/04-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/05-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/05-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/06-fit-12-light-flat.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-12-light-gradient.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-12-dark-flat.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-12-dark-gradient.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-16-light-gradient.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-16-dark-flat.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-16-dark-gradient.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-24-light-flat.png,fit,fail,pass,no,1,Irlandé
+sq/06-fit-24-light-gradient.png,fit,fail,pass,no,1,Irandë
+sq/06-fit-24-dark-flat.png,fit,fail,pass,no,1,Irandë
+sq/06-fit-24-dark-gradient.png,fit,fail,pass,no,1,Irandë
+sq/06-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/06-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/06-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/06-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/06-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/06-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/07-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/08-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/08-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/08-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/09-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/09-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/09-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/09-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/09-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/10-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/10-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/11-clip-16-light-flat.png,clip,,pass,no,,
+sq/11-clip-16-light-gradient.png,clip,,pass,no,,
+sq/11-clip-16-dark-flat.png,clip,,pass,no,,
+sq/29-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/30-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/30-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/31-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/31-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/32-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/32-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/33-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/34-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/34-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/34-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/34-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/34-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/34-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/35-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/35-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/37-fit-12-light-flat.png,fit,fail,pass,no,1,ditë ejavës
+sq/37-fit-12-light-gradient.png,fit,fail,pass,no,1,ditë ejavës
+sq/37-fit-12-dark-flat.png,fit,fail,pass,no,1,ditë ejavës
+sq/37-fit-12-dark-gradient.png,fit,fail,pass,no,1,ditë ejavës
+sq/38-clip-12-light-flat.png,clip,,pass,no,,
+sq/38-clip-12-light-gradient.png,clip,,pass,no,,
+sq/38-clip-12-dark-flat.png,clip,,pass,no,,
+sq/38-clip-12-dark-gradient.png,clip,,pass,no,,
+sq/38-clip-16-light-flat.png,clip,,pass,no,,
+sq/38-clip-16-light-gradient.png,clip,,pass,no,,
+sq/38-clip-16-dark-flat.png,clip,,pass,no,,
+sq/38-clip-16-dark-gradient.png,clip,,pass,no,,
+sq/39-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/39-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/39-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/41-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/41-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/42-fit-12-dark-gradient.png,fit,fail,pass,no,1,b javë më parë
+sq/42-fit-16-light-flat.png,fit,fail,pass,no,2,bjavë më parë
+sq/42-fit-16-light-gradient.png,fit,fail,pass,no,2,bjavë më parë
+sq/42-fit-16-dark-flat.png,fit,fail,pass,no,2,bjavë më parë
+sq/42-fit-16-dark-gradient.png,fit,fail,pass,no,2,bjavë më parë
+sq/42-fit-24-light-flat.png,fit,fail,pass,no,1,5 javé më parë
+sq/42-fit-24-light-gradient.png,fit,fail,pass,no,1,5 javé më parë
+sq/42-fit-24-dark-flat.png,fit,fail,pass,no,1,5 javé më parë
+sq/42-fit-24-dark-gradient.png,fit,fail,pass,no,1,5 javé më parë
+sq/43-fit-12-dark-flat.png,fit,fail,pass,no,1,b sekonda më parë
+sq/43-fit-12-dark-gradient.png,fit,fail,pass,no,1,b sekonda më parë
+sq/43-fit-16-light-flat.png,fit,fail,pass,no,1,b sekonda më parë
+sq/43-fit-16-light-gradient.png,fit,fail,pass,no,1,b sekonda më parë
+sq/43-fit-16-dark-flat.png,fit,fail,pass,no,1,b sekonda më parë
+sq/43-fit-16-dark-gradient.png,fit,fail,pass,no,1,b sekonda më parë
+sq/45-fit-12-dark-flat.png,fit,fail,pass,no,1,b minuta më parë
+sq/45-fit-16-light-flat.png,fit,fail,pass,no,1,b minuta më parë
+sq/45-fit-16-light-gradient.png,fit,fail,pass,no,1,b minuta më parë
+sq/45-fit-16-dark-flat.png,fit,fail,pass,no,1,b minuta më parë
+sq/45-fit-16-dark-gradient.png,fit,fail,pass,no,1,b minuta më parë
+sq/46-fit-12-dark-flat.png,fit,fail,pass,no,1,b vjet më parë
+sq/46-fit-12-dark-gradient.png,fit,fail,pass,no,1,b vjet më parë
+sq/46-fit-16-light-flat.png,fit,fail,pass,no,1,b vjet më parë
+sq/46-fit-16-light-gradient.png,fit,fail,pass,no,1,b vjet më parë
+sq/46-fit-16-dark-gradient.png,fit,fail,pass,no,1,b vjet më parë
+sq/47-fit-12-dark-flat.png,fit,fail,pass,no,1,b orë më parë
+sq/47-fit-12-dark-gradient.png,fit,fail,pass,no,1,b orë më parë
+sq/47-fit-16-light-flat.png,fit,fail,pass,no,2,borë më parë
+sq/47-fit-16-light-gradient.png,fit,fail,pass,no,2,borë më parë
+sq/47-fit-16-dark-flat.png,fit,fail,pass,no,2,borë më parë
+sq/47-fit-16-dark-gradient.png,fit,fail,pass,no,2,borë më parë
+sq/49-fit-16-light-flat.png,fit,fail,pass,no,3,paslore
+sq/49-fit-16-light-gradient.png,fit,fail,pass,no,3,paslore
+sq/49-fit-16-dark-flat.png,fit,fail,pass,no,3,paslore
+sq/49-fit-16-dark-gradient.png,fit,fail,pass,no,3,paslore
+sq/49-fit-24-light-flat.png,fit,fail,pass,no,1,pas 1ore
+sq/49-fit-24-light-gradient.png,fit,fail,pass,no,1,pas 1ore
+sq/49-fit-24-dark-flat.png,fit,fail,pass,no,1,pas 1ore
+sq/49-fit-24-dark-gradient.png,fit,fail,pass,no,1,pas 1ore
+sq/49-clip-12-light-flat.png,clip,,pass,no,,
+sq/49-clip-12-light-gradient.png,clip,,pass,no,,
+sq/49-clip-12-dark-flat.png,clip,,pass,no,,
+sq/49-clip-12-dark-gradient.png,clip,,pass,no,,
+sq/49-clip-16-light-flat.png,clip,,pass,no,,
+sq/49-clip-16-light-gradient.png,clip,,pass,no,,
+sq/49-clip-16-dark-flat.png,clip,,pass,no,,
+sq/49-clip-16-dark-gradient.png,clip,,pass,no,,
+sq/49-clip-24-light-flat.png,clip,,pass,no,,
+sq/49-clip-24-light-gradient.png,clip,,pass,no,,
+sq/49-clip-24-dark-flat.png,clip,,pass,no,,
+sq/49-clip-24-dark-gradient.png,clip,,pass,no,,
+sq/51-fit-12-light-flat.png,fit,fail,pass,no,1,2 oré
+sq/51-fit-12-light-gradient.png,fit,fail,pass,no,1,2 oré
+sq/51-fit-12-dark-flat.png,fit,fail,pass,no,1,2 oré
+sq/51-fit-12-dark-gradient.png,fit,fail,pass,no,1,2 oré
+sq/51-fit-16-light-flat.png,fit,fail,pass,no,1,2 ore
+sq/51-fit-16-light-gradient.png,fit,fail,pass,no,1,2 ore
+sq/51-fit-16-dark-flat.png,fit,fail,pass,no,1,2 oré
+sq/51-fit-16-dark-gradient.png,fit,fail,pass,no,1,2 ore
+sq/51-fit-24-light-flat.png,fit,fail,pass,no,2,Zorë
+sq/51-fit-24-light-gradient.png,fit,fail,pass,no,2,Zorë
+sq/51-fit-24-dark-flat.png,fit,fail,pass,no,2,Zorë
+sq/51-fit-24-dark-gradient.png,fit,fail,pass,no,2,Zorë
+sq/51-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/51-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/51-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/51-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/51-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/51-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/51-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/52-fit-16-light-flat.png,fit,fail,pass,no,1,b kilometra në orë
+sq/52-fit-16-light-gradient.png,fit,fail,pass,no,1,b kilometra në orë
+sq/52-fit-16-dark-flat.png,fit,fail,pass,no,1,b kilometra në orë
+sq/52-fit-16-dark-gradient.png,fit,fail,pass,no,1,b kilometra në orë
+sq/54-fit-16-light-flat.png,fit,fail,pass,no,1,b përqind
+sq/54-fit-16-light-gradient.png,fit,fail,pass,no,1,b përqind
+sq/54-fit-16-dark-flat.png,fit,fail,pass,no,1,b përqind
+sq/54-fit-16-dark-gradient.png,fit,fail,pass,no,1,b përqind
+sq/54-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/54-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/54-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/54-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/54-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/54-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/54-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/55-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/55-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/56-fit-12-light-flat.png,fit,fail,pass,no,2,blitra
+sq/56-fit-12-light-gradient.png,fit,fail,pass,no,2,blitra
+sq/56-fit-12-dark-flat.png,fit,fail,pass,no,2,blitra
+sq/56-fit-12-dark-gradient.png,fit,fail,pass,no,2,blitra
+sq/56-fit-16-light-flat.png,fit,fail,pass,no,2,blitra
+sq/56-fit-16-dark-flat.png,fit,fail,pass,no,2,blitra
+sq/56-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+sq/56-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+sq/56-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+sq/56-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+sq/56-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+sq/56-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+sq/56-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+sq/57-fit-12-dark-flat.png,fit,fail,pass,no,1,b megabajt

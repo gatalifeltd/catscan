@@ -1,0 +1,253 @@
+{
+  "locale": "he",
+  "icu_locale": "he",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "לטביה",
+      "kind": "region"
+    },
+    {
+      "text": "קנדה",
+      "kind": "region"
+    },
+    {
+      "text": "לוקסמבורג",
+      "kind": "region"
+    },
+    {
+      "text": "אוקראינה",
+      "kind": "region"
+    },
+    {
+      "text": "פורטוגל",
+      "kind": "region"
+    },
+    {
+      "text": "רוסיה",
+      "kind": "region"
+    },
+    {
+      "text": "דרום אפריקה",
+      "kind": "region"
+    },
+    {
+      "text": "ארגנטינה",
+      "kind": "region"
+    },
+    {
+      "text": "וייטנאם",
+      "kind": "region"
+    },
+    {
+      "text": "בולגריה",
+      "kind": "region"
+    },
+    {
+      "text": "אתיופיה",
+      "kind": "region"
+    },
+    {
+      "text": "תאילנד",
+      "kind": "region"
+    },
+    {
+      "text": "מלאית",
+      "kind": "language"
+    },
+    {
+      "text": "סרבית",
+      "kind": "language"
+    },
+    {
+      "text": "איטלקית",
+      "kind": "language"
+    },
+    {
+      "text": "אוקראינית",
+      "kind": "language"
+    },
+    {
+      "text": "ערבית",
+      "kind": "language"
+    },
+    {
+      "text": "גאורגית",
+      "kind": "language"
+    },
+    {
+      "text": "יוונית",
+      "kind": "language"
+    },
+    {
+      "text": "פורטוגזית",
+      "kind": "language"
+    },
+    {
+      "text": "פרסית",
+      "kind": "language"
+    },
+    {
+      "text": "תאית",
+      "kind": "language"
+    },
+    {
+      "text": "פסו מקסיקני",
+      "kind": "currency"
+    },
+    {
+      "text": "דונג וייטנאמי",
+      "kind": "currency"
+    },
+    {
+      "text": "כתר דני",
+      "kind": "currency"
+    },
+    {
+      "text": "וון דרום קוריאני",
+      "kind": "currency"
+    },
+    {
+      "text": "רובל רוסי",
+      "kind": "currency"
+    },
+    {
+      "text": "פורינט הונגרי",
+      "kind": "currency"
+    },
+    {
+      "text": "יוני",
+      "kind": "month"
+    },
+    {
+      "text": "פברואר",
+      "kind": "month"
+    },
+    {
+      "text": "אוקטובר",
+      "kind": "month"
+    },
+    {
+      "text": "ספטמבר",
+      "kind": "month"
+    },
+    {
+      "text": "יום ראשון",
+      "kind": "weekday"
+    },
+    {
+      "text": "יום רביעי",
+      "kind": "weekday"
+    },
+    {
+      "text": "יום שישי",
+      "kind": "weekday"
+    },
+    {
+      "text": "חודש",
+      "kind": "field"
+    },
+    {
+      "text": "רבעון",
+      "kind": "field"
+    },
+    {
+      "text": "שבוע",
+      "kind": "field"
+    },
+    {
+      "text": "אזור זמן",
+      "kind": "field"
+    },
+    {
+      "text": "תקופה",
+      "kind": "field"
+    },
+    {
+      "text": "לפני דקה (1)",
+      "kind": "relative"
+    },
+    {
+      "text": "בעוד שעה (1)",
+      "kind": "relative"
+    },
+    {
+      "text": "בעוד 3 שעות",
+      "kind": "relative"
+    },
+    {
+      "text": "לפני 5 שניות",
+      "kind": "relative"
+    },
+    {
+      "text": "בעוד 3 שניות",
+      "kind": "relative"
+    },
+    {
+      "text": "לפני שעה (1)",
+      "kind": "relative"
+    },
+    {
+      "text": "לפני 5 שעות",
+      "kind": "relative"
+    },
+    {
+      "text": "בעוד 3 דקות",
+      "kind": "relative"
+    },
+    {
+      "text": "לפני שנייה",
+      "kind": "relative"
+    },
+    {
+      "text": "לפני 5 ימים",
+      "kind": "relative"
+    },
+    {
+      "text": "5 קילוגרם",
+      "kind": "unit"
+    },
+    {
+      "text": "5 דקות",
+      "kind": "unit"
+    },
+    {
+      "text": "5 מגה-בייט",
+      "kind": "unit"
+    },
+    {
+      "text": "2 מעלות צלזיוס",
+      "kind": "unit"
+    },
+    {
+      "text": "2 מטרים",
+      "kind": "unit"
+    },
+    {
+      "text": "5 מעלות צלזיוס",
+      "kind": "unit"
+    },
+    {
+      "text": "2 קילומטר לשעה",
+      "kind": "unit"
+    },
+    {
+      "text": "2 מגה-בייט",
+      "kind": "unit"
+    },
+    {
+      "text": "יום שני, 3 במרץ 2025",
+      "kind": "date"
+    },
+    {
+      "text": "ינואר",
+      "kind": "month"
+    }
+  ]
+}

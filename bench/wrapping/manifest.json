@@ -1,0 +1,59 @@
+{
+ "todo": "074",
+ "note": "Images and sidecars are regenerated into bench/wrapping/out (gitignored) by bench/wrapping.js; the hashes cover the sorted per-file sha256 lists of each half (en twins included). th and ar strings are written in the generator; the other 12 locales come from bench/untranslated/strings.json.",
+ "synthetic": {
+  "generator": "bench/wrapping/generate.mjs",
+  "script": "bench/wrapping.js",
+  "seed": 74,
+  "locales": [
+   "de",
+   "fr",
+   "es",
+   "it",
+   "pt-BR",
+   "pl",
+   "tr",
+   "ru",
+   "uk",
+   "ja",
+   "ko",
+   "zh-Hans",
+   "th",
+   "ar"
+  ],
+  "base_locale": "en",
+  "plan": "per locale 24 screens (even dev, odd held out): nav title, 0-3 segments, 3 buttons, 3 chips (30% with a subtitle), a subtitle, a paragraph, 3-5 tab bar items; widths fit, wrap or leave the last word alone",
+  "viewport": {
+   "width": 390,
+   "height": 844
+  },
+  "device_scale_factor": 3,
+  "dev": {
+   "screens": 168,
+   "images": 336,
+   "images_sha256": "62ed4225b78942b6b9762dd65a84500abc4435613f1722ed6aed3d564f82f641",
+   "boxes_sha256": "36fc82892bd85f34aad27eb854c29574db5fd9ed009016c153c23a9db39e947c"
+  },
+  "held": {
+   "screens": 168,
+   "images": 336,
+   "images_sha256": "81e12565ab2453770bf87c49a9f70a40a259832337963f77600e6df238efae7e",
+   "boxes_sha256": "ecfd5be09709b7b8b71e631e4cbe5daee2815a938b69a84f94af968605835f60"
+  },
+  "tools": {
+   "playwright": "1.65.1",
+   "chromium": "159.0.8154.6",
+   "chromium_args": [
+    "--use-angle=metal"
+   ],
+   "device_scale_factor": 3,
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "webgl_renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M5, Unspecified Version)"
+  }
+ },
+ "rendered": "pending (spec 14 sample apps with catscan pseudo --expand 40, hand-labeled)",
+ "real": "pending (datasets/truncation*, hand review on the label review page)"
+}

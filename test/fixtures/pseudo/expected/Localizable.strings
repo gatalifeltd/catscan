@@ -1,0 +1,9 @@
+/* Shop screen */
+"shop.title" = "[Šhöp öñé]";
+"shop.buy" = "[Büý %@ för %1$@ öñé twö thréé]";   // trailing comment
+"shop.quote" = "[Hé šáíd \"Héllö\"\náñd léft\U00A0ñöw öñé twö thréé]";
+"shop.percent" = "[100% šüré, %d%% öff öñé twö thréé]";
+"shop.substitution" = "[Ýöü hávé %#@items@ öñé twö]";
+"shop.keyonly";
+"shop.url" = "https://example.com";
+"shop.empty" = "";

@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "shop": "Shop",
+    "back":   "Back"
+  },
+  "greeting": "Hello {{name}}, welcome back!",
+  "price": "{{val, currency}} per month",
+  "items_one": "{{count}} item",
+  "items_other": "{{count}} items",
+  "icu": "{count, plural, one {# new message} other {# new messages}}",
+  "rich": "Read the <0>terms</0> and <b>privacy policy</b>",
+  "nested": "See $t(nav.shop) for ${product}",
+  "escaped": "Say \"hi\"\nthen \u00e9 go",
+  "url": "https://example.com/help",
+  "email": "help@example.com",
+  "digits": "123-456",
+  "empty": "",
+  "list": ["First", "Second"],
+  "flag": true,
+  "count": 3
+}

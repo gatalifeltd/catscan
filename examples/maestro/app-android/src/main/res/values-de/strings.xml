@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_title">Willkommen</string>
+    <string name="onboarding_body">Prüfe jeden Bildschirm in jeder Sprache.</string>
+    <string name="onboarding_next">Weiter</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_notifications">Benachrichtigungseinstellungen</string>
+    <string name="settings_play">Spielen</string>
+    <string name="game_complete">Level geschafft</string>
+    <string name="game_score">Punkte 1200</string>
+</resources>

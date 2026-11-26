@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/video-frame-1.json",
+  "title": "catscan video frame line (schema 1)",
+  "description": "catscan video --json --frames: one line per sampled frame, before the video's result envelope.",
+  "type": "object",
+  "required": [
+    "schema",
+    "catscan",
+    "command",
+    "path",
+    "t",
+    "lines"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": 1
+    },
+    "catscan": {
+      "type": "string"
+    },
+    "command": {
+      "const": "video-frame"
+    },
+    "path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "t": {
+      "type": "number",
+      "minimum": 0
+    },
+    "lines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "text",
+          "box",
+          "confidence"
+        ],
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "box": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "image": {
+    "width": 393,
+    "height": 852
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "clips": true
+    },
+    {
+      "id": "Einstellungen",
+      "box": [
+        0,
+        0.0692,
+        1,
+        0.0516
+      ],
+      "clips": true,
+      "panel": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.3575,
+        0.0822,
+        0.285,
+        0.0258
+      ],
+      "clips": true,
+      "text": "Einstellungen"
+    },
+    {
+      "id": "continue",
+      "box": [
+        0.0407,
+        0.892,
+        0.9186,
+        0.0587
+      ],
+      "clips": true,
+      "text": "Mit E-Mail fortfahren, Taste",
+      "graphic": true,
+      "control": true
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0.3521,
+        0.2036,
+        0.0235
+      ],
+      "clips": true,
+      "text": "Angebot der Woche",
+      "offscreen": true
+    },
+    {
+      "id": "email",
+      "box": [
+        0.0407,
+        0.4695,
+        0.9186,
+        0.0399
+      ],
+      "clips": true,
+      "text": "anna@example.com",
+      "graphic": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0407,
+        0.5282,
+        0.5089,
+        0.0235
+      ],
+      "clips": true,
+      "text": "Anna's Konto"
+    }
+  ]
+}

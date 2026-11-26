@@ -1,0 +1,325 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+hy,tesseract-5.5.4,false,2160,0,2880,2781,96.56,720,621,0.8625,0.0244,1218,0,222,720,1,0.8458,72,10|2|2|9|6|5|18|17|43|608,29|10|8|9|27|28|48|53|111|374
+image,case,present,absent,truncated,cer,read
+hy/01-fit-16-dark-gradient.png,fit,fail,pass,no,6,ալում ը
+hy/01-fit-24-dark-flat.png,fit,fail,pass,no,4,առում
+hy/01-fit-24-dark-gradient.png,fit,fail,pass,no,6,ալում մ
+hy/01-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/01-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/01-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/01-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/01-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/01-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/01-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/01-clip-12-light-flat.png,clip,,pass,no,,
+hy/01-clip-12-light-gradient.png,clip,,pass,no,,
+hy/01-clip-12-dark-flat.png,clip,,pass,no,,
+hy/01-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/03-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/03-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/03-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/03-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/03-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/03-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/09-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/09-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/13-clip-12-dark-flat.png,clip,,pass,no,,
+hy/13-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/16-clip-12-light-flat.png,clip,,pass,no,,
+hy/17-fit-12-light-flat.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-12-light-gradient.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-12-dark-flat.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-12-dark-gradient.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-16-light-gradient.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-16-dark-flat.png,fit,fail,pass,no,1,Բունգարերեն
+hy/17-fit-16-dark-gradient.png,fit,fail,pass,no,1,Բունգարերեն
+hy/24-fit-12-light-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-12-light-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-12-dark-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-12-dark-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-16-light-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-16-light-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-16-dark-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-16-dark-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-24-light-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-24-light-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-24-dark-flat.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/24-fit-24-dark-gradient.png,fit,fail,pass,no,1,Բունգարական ֆորինտ
+hy/25-fit-12-dark-flat.png,fit,fail,pass,no,16,UhGuiuwuwywu nnuq
+hy/25-fit-12-dark-gradient.png,fit,fail,pass,no,16,ՄԱՂԱՂՈՒՈՈՈՂՆՆՄ»|
+hy/28-fit-24-dark-flat.png,fit,fail,pass,no,11,uGuyunGuptn
+hy/28-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/29-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/29-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/31-fit-12-light-flat.png,fit,fail,pass,no,1,Ռունիս
+hy/31-fit-12-light-gradient.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-12-dark-flat.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-12-dark-gradient.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-16-light-flat.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-16-light-gradient.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-16-dark-flat.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-16-dark-gradient.png,fit,fail,pass,no,1,Բունիս
+hy/31-fit-24-light-gradient.png,fit,fail,pass,no,1,Բունիս
+hy/31-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/31-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/33-fit-12-light-flat.png,fit,fail,pass,no,1,Ոինգշաբթի
+hy/33-fit-12-light-gradient.png,fit,fail,pass,no,1,Ոինգշաբթի
+hy/33-fit-12-dark-flat.png,fit,fail,pass,no,1,Ոինգշաբթի
+hy/33-fit-12-dark-gradient.png,fit,fail,pass,no,1,Ոինգշաբթի
+hy/33-fit-16-dark-flat.png,fit,fail,pass,no,1,Բինգշաբթի
+hy/33-fit-16-dark-gradient.png,fit,fail,pass,no,1,Բինգշաբթի
+hy/33-fit-24-light-flat.png,fit,fail,pass,no,2,հոիսգշաբթի
+hy/33-fit-24-light-gradient.png,fit,fail,pass,no,2,հոիսգշաբթի
+hy/33-fit-24-dark-flat.png,fit,fail,pass,no,2,ոիսգշաբթի
+hy/33-fit-24-dark-gradient.png,fit,fail,pass,no,1,հիսգշաբթի
+hy/33-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/33-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/33-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/33-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/37-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/37-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/37-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/37-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/38-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/38-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/40-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/40-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/40-clip-12-light-flat.png,clip,,pass,no,,
+hy/40-clip-12-light-gradient.png,clip,,pass,no,,
+hy/40-clip-12-dark-flat.png,clip,,pass,no,,
+hy/40-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/40-clip-16-light-flat.png,clip,,pass,no,,
+hy/40-clip-16-light-gradient.png,clip,,pass,no,,
+hy/40-clip-16-dark-flat.png,clip,,pass,no,,
+hy/40-clip-16-dark-gradient.png,clip,,pass,no,,
+hy/40-clip-24-light-flat.png,clip,,pass,no,,
+hy/40-clip-24-light-gradient.png,clip,,pass,no,,
+hy/40-clip-24-dark-flat.png,clip,,pass,no,,
+hy/40-clip-24-dark-gradient.png,clip,,pass,no,,
+hy/41-fit-12-light-flat.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-12-light-gradient.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-12-dark-flat.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-12-dark-gradient.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-24-light-flat.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-24-light-gradient.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-24-dark-flat.png,fit,fail,pass,no,1,Յ օրից
+hy/41-fit-24-dark-gradient.png,fit,fail,pass,no,1,Յ օրից
+hy/41-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/41-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/41-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/41-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/41-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/41-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/41-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/42-fit-24-light-flat.png,fit,fail,pass,no,1,5 շաբաթ առա
+hy/43-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/43-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/43-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/43-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/43-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/43-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/43-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/44-fit-12-light-flat.png,fit,fail,pass,no,1,Յ ամսից
+hy/44-fit-12-dark-flat.png,fit,fail,pass,no,1,Յ ամսից
+hy/44-fit-12-dark-gradient.png,fit,fail,pass,no,1,Յ ամսից
+hy/45-fit-16-light-flat.png,fit,fail,pass,no,1,1 րոպե առած
+hy/45-fit-24-light-flat.png,fit,fail,pass,no,1,Ղ րոպե առաջ
+hy/45-fit-24-dark-flat.png,fit,fail,pass,no,1,Ղ րոպե առաջ
+hy/45-fit-24-dark-gradient.png,fit,fail,pass,no,1,Ղ րոպե առաջ
+hy/46-fit-12-light-flat.png,fit,fail,pass,no,1,Ռաջորդ շաբաթ
+hy/46-fit-12-light-gradient.png,fit,fail,pass,no,1,Ռաջորդ շաբաթ
+hy/46-fit-12-dark-flat.png,fit,fail,pass,no,1,Ռաջորդ շաբաթ
+hy/46-fit-12-dark-gradient.png,fit,fail,pass,no,1,Ռաջորդ շաբաթ
+hy/46-fit-16-light-flat.png,fit,fail,pass,no,1,Բաջորդ շաբաթ
+hy/46-fit-16-light-gradient.png,fit,fail,pass,no,1,Բաջորդ շաբաթ
+hy/46-fit-16-dark-flat.png,fit,fail,pass,no,1,Բաջորդ շաբաթ
+hy/46-fit-16-dark-gradient.png,fit,fail,pass,no,1,Բաջորդ շաբաթ
+hy/47-fit-12-light-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-12-light-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-12-dark-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-12-dark-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-16-light-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-16-light-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-16-dark-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-16-dark-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-24-light-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-24-light-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-24-dark-flat.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-fit-24-dark-gradient.png,fit,fail,pass,no,1,Յ շաբաթից
+hy/47-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/47-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/47-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/47-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/47-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/47-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/47-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/48-fit-12-light-flat.png,fit,fail,pass,no,1,Յ տարուց
+hy/48-fit-12-dark-gradient.png,fit,fail,pass,no,1,Յ տարուց
+hy/48-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/48-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/48-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/48-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/48-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/48-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/48-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/49-fit-12-light-flat.png,fit,fail,pass,no,1,Յ ժամից
+hy/49-fit-12-light-gradient.png,fit,fail,pass,no,1,Յ ժամից
+hy/49-fit-12-dark-gradient.png,fit,fail,pass,no,1,Յ ժամից
+hy/49-fit-24-dark-flat.png,fit,fail,pass,no,5,3 dwuhg
+hy/49-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/49-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/49-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/49-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/49-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/49-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/49-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/49-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/49-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/50-fit-16-dark-gradient.png,fit,fail,pass,no,1,Տ լիտր
+hy/50-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/50-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/50-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/50-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/50-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/50-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/50-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/51-fit-16-light-flat.png,fit,fail,pass,no,1,5օր
+hy/51-fit-16-light-gradient.png,fit,fail,pass,no,1,5օր
+hy/51-fit-16-dark-flat.png,fit,fail,pass,no,1,5օր
+hy/51-fit-16-dark-gradient.png,fit,fail,pass,no,1,5օր
+hy/51-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/51-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/51-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/51-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/51-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/51-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/51-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/52-fit-12-dark-flat.png,fit,fail,pass,no,15,5 uhtndtGunn dun.
+hy/52-clip-12-light-flat.png,clip,,pass,no,,
+hy/52-clip-12-light-gradient.png,clip,,pass,no,,
+hy/52-clip-12-dark-flat.png,clip,,pass,no,,
+hy/52-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/52-clip-16-light-flat.png,clip,,pass,no,,
+hy/52-clip-16-light-gradient.png,clip,,pass,no,,
+hy/52-clip-16-dark-flat.png,clip,,pass,no,,
+hy/52-clip-16-dark-gradient.png,clip,,pass,no,,
+hy/52-clip-24-light-flat.png,clip,,pass,no,,
+hy/52-clip-24-light-gradient.png,clip,,pass,no,,
+hy/52-clip-24-dark-flat.png,clip,,pass,no,,
+hy/52-clip-24-dark-gradient.png,clip,,pass,no,,
+hy/53-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/53-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/53-clip-12-light-flat.png,clip,,pass,no,,
+hy/53-clip-12-light-gradient.png,clip,,pass,no,,
+hy/53-clip-12-dark-flat.png,clip,,pass,no,,
+hy/53-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/54-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/54-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/54-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/54-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/54-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/54-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/54-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/54-clip-12-light-flat.png,clip,,pass,no,,
+hy/54-clip-12-light-gradient.png,clip,,pass,no,,
+hy/54-clip-12-dark-flat.png,clip,,pass,no,,
+hy/54-clip-12-dark-gradient.png,clip,,pass,no,,
+hy/55-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+hy/55-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+hy/55-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/55-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/55-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+hy/55-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+hy/55-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+hy/56-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/56-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+hy/56-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+hy/56-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+hy/59-fit-12-light-flat.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-12-light-gradient.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-12-dark-gradient.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-16-light-flat.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-16-light-gradient.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-16-dark-flat.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-fit-16-dark-gradient.png,fit,fail,pass,no,1,"2024 թ. Բուլիսի 19, ուրբաթ"
+hy/59-clip-16-light-flat.png,clip,,pass,no,,
+hy/59-clip-16-light-gradient.png,clip,,pass,no,,
+hy/59-clip-16-dark-flat.png,clip,,pass,no,,
+hy/59-clip-16-dark-gradient.png,clip,,pass,no,,

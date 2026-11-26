@@ -1,0 +1,7 @@
+name: ui
+on: pull_request
+jobs:
+  ui:
+    runs-on: [self-hosted, macOS, ARM64]
+    steps:
+      - run: npx -y @catscan/cli@0.1.0 check shots --present Menu --results out/ci.json --baseline ci/baseline.json

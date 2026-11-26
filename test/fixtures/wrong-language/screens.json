@@ -1,0 +1,114 @@
+[
+ {
+  "name": "w01-clean.png",
+  "locale": "pt-BR",
+  "width": 1000,
+  "height": 440,
+  "lines": [
+   {
+    "text": "Configurações",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Restaurar compras",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Cancelar",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   },
+   {
+    "text": "Catscan Pro",
+    "x": 60,
+    "y": 330,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "w02-catalog.png",
+  "locale": "pt-BR",
+  "width": 1000,
+  "height": 260,
+  "lines": [
+   {
+    "text": "Configurações",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Comprar ahora",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "w03-langid.png",
+  "locale": "pt-BR",
+  "width": 1000,
+  "height": 260,
+  "lines": [
+   {
+    "text": "Configurações",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Guarda todos los cambios antes de salir",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "w04-base.png",
+  "locale": "pt-BR",
+  "width": 1000,
+  "height": 260,
+  "lines": [
+   {
+    "text": "Settings",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Cancelar",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "w05-short.png",
+  "locale": "pt-BR",
+  "width": 1000,
+  "height": 260,
+  "lines": [
+   {
+    "text": "Jugar ahora",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "12:30",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ }
+]

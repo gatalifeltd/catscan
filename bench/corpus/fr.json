@@ -1,0 +1,253 @@
+{
+  "locale": "fr",
+  "icu_locale": "fr",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Portugal",
+      "kind": "region"
+    },
+    {
+      "text": "Turquie",
+      "kind": "region"
+    },
+    {
+      "text": "Slovaquie",
+      "kind": "region"
+    },
+    {
+      "text": "Tchéquie",
+      "kind": "region"
+    },
+    {
+      "text": "Roumanie",
+      "kind": "region"
+    },
+    {
+      "text": "Pakistan",
+      "kind": "region"
+    },
+    {
+      "text": "Royaume-Uni",
+      "kind": "region"
+    },
+    {
+      "text": "Autriche",
+      "kind": "region"
+    },
+    {
+      "text": "Bulgarie",
+      "kind": "region"
+    },
+    {
+      "text": "Australie",
+      "kind": "region"
+    },
+    {
+      "text": "Inde",
+      "kind": "region"
+    },
+    {
+      "text": "Argentine",
+      "kind": "region"
+    },
+    {
+      "text": "serbe",
+      "kind": "language"
+    },
+    {
+      "text": "norvégien",
+      "kind": "language"
+    },
+    {
+      "text": "indonésien",
+      "kind": "language"
+    },
+    {
+      "text": "bulgare",
+      "kind": "language"
+    },
+    {
+      "text": "géorgien",
+      "kind": "language"
+    },
+    {
+      "text": "portugais",
+      "kind": "language"
+    },
+    {
+      "text": "français",
+      "kind": "language"
+    },
+    {
+      "text": "persan",
+      "kind": "language"
+    },
+    {
+      "text": "hébreu",
+      "kind": "language"
+    },
+    {
+      "text": "suédois",
+      "kind": "language"
+    },
+    {
+      "text": "zloty polonais",
+      "kind": "currency"
+    },
+    {
+      "text": "dollar canadien",
+      "kind": "currency"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "couronne tchèque",
+      "kind": "currency"
+    },
+    {
+      "text": "couronne danoise",
+      "kind": "currency"
+    },
+    {
+      "text": "rouble russe",
+      "kind": "currency"
+    },
+    {
+      "text": "novembre",
+      "kind": "month"
+    },
+    {
+      "text": "février",
+      "kind": "month"
+    },
+    {
+      "text": "octobre",
+      "kind": "month"
+    },
+    {
+      "text": "mars",
+      "kind": "month"
+    },
+    {
+      "text": "mercredi",
+      "kind": "weekday"
+    },
+    {
+      "text": "mardi",
+      "kind": "weekday"
+    },
+    {
+      "text": "jeudi",
+      "kind": "weekday"
+    },
+    {
+      "text": "mois",
+      "kind": "field"
+    },
+    {
+      "text": "jour de la semaine",
+      "kind": "field"
+    },
+    {
+      "text": "fuseau horaire",
+      "kind": "field"
+    },
+    {
+      "text": "minute",
+      "kind": "field"
+    },
+    {
+      "text": "heure",
+      "kind": "field"
+    },
+    {
+      "text": "dans 3 jours",
+      "kind": "relative"
+    },
+    {
+      "text": "dans 1 seconde",
+      "kind": "relative"
+    },
+    {
+      "text": "il y a 5 semaines",
+      "kind": "relative"
+    },
+    {
+      "text": "le trimestre dernier",
+      "kind": "relative"
+    },
+    {
+      "text": "dans 3 semaines",
+      "kind": "relative"
+    },
+    {
+      "text": "dans 3 ans",
+      "kind": "relative"
+    },
+    {
+      "text": "dans 3 secondes",
+      "kind": "relative"
+    },
+    {
+      "text": "il y a 1 seconde",
+      "kind": "relative"
+    },
+    {
+      "text": "la semaine dernière",
+      "kind": "relative"
+    },
+    {
+      "text": "le trimestre prochain",
+      "kind": "relative"
+    },
+    {
+      "text": "2 degrés Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilogrammes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigaoctets",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogrammes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilomètres",
+      "kind": "unit"
+    },
+    {
+      "text": "2 pour cent",
+      "kind": "unit"
+    },
+    {
+      "text": "5 mètres",
+      "kind": "unit"
+    },
+    {
+      "text": "5 jours",
+      "kind": "unit"
+    },
+    {
+      "text": "vendredi 19 juillet 2024",
+      "kind": "date"
+    },
+    {
+      "text": "livre turque",
+      "kind": "currency"
+    }
+  ]
+}

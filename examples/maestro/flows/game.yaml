@@ -1,0 +1,13 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 GATALIFE LTD
+# The game screen draws its text on a canvas with no accessibility labels: assertVisible cannot see it, catscan can.
+appId: ${APP_ID}
+---
+- launchApp:
+    arguments: { AppleLanguages: "(${LOCALE})", AppleLocale: "${LOCALE}" }   # iOS; Android sets the locale before the run
+- tapOn: { id: "next" }
+- tapOn: { id: "play" }
+- extendedWaitUntil:
+    visible: { id: "game" }
+    timeout: 15000
+- takeScreenshot: shots/${PLATFORM}/game.${LOCALE}

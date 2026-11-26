@@ -1,0 +1,253 @@
+{
+  "locale": "hr",
+  "icu_locale": "hr",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Nizozemska",
+      "kind": "region"
+    },
+    {
+      "text": "Švedska",
+      "kind": "region"
+    },
+    {
+      "text": "Novi Zeland",
+      "kind": "region"
+    },
+    {
+      "text": "Sjedinjene Američke Države",
+      "kind": "region"
+    },
+    {
+      "text": "Latvija",
+      "kind": "region"
+    },
+    {
+      "text": "Španjolska",
+      "kind": "region"
+    },
+    {
+      "text": "Ujedinjeni Arapski Emirati",
+      "kind": "region"
+    },
+    {
+      "text": "Saudijska Arabija",
+      "kind": "region"
+    },
+    {
+      "text": "Japan",
+      "kind": "region"
+    },
+    {
+      "text": "Irska",
+      "kind": "region"
+    },
+    {
+      "text": "Kenija",
+      "kind": "region"
+    },
+    {
+      "text": "Južnoafrička Republika",
+      "kind": "region"
+    },
+    {
+      "text": "rumunjski",
+      "kind": "language"
+    },
+    {
+      "text": "švedski",
+      "kind": "language"
+    },
+    {
+      "text": "indonezijski",
+      "kind": "language"
+    },
+    {
+      "text": "malajski",
+      "kind": "language"
+    },
+    {
+      "text": "marathski",
+      "kind": "language"
+    },
+    {
+      "text": "perzijski",
+      "kind": "language"
+    },
+    {
+      "text": "armenski",
+      "kind": "language"
+    },
+    {
+      "text": "gruzijski",
+      "kind": "language"
+    },
+    {
+      "text": "vijetnamski",
+      "kind": "language"
+    },
+    {
+      "text": "poljski",
+      "kind": "language"
+    },
+    {
+      "text": "australski dolar",
+      "kind": "currency"
+    },
+    {
+      "text": "poljska zlota",
+      "kind": "currency"
+    },
+    {
+      "text": "turska lira",
+      "kind": "currency"
+    },
+    {
+      "text": "kineski yuan",
+      "kind": "currency"
+    },
+    {
+      "text": "južnokorejski won",
+      "kind": "currency"
+    },
+    {
+      "text": "ruski rubalj",
+      "kind": "currency"
+    },
+    {
+      "text": "rujan",
+      "kind": "month"
+    },
+    {
+      "text": "listopad",
+      "kind": "month"
+    },
+    {
+      "text": "veljača",
+      "kind": "month"
+    },
+    {
+      "text": "kolovoz",
+      "kind": "month"
+    },
+    {
+      "text": "ponedjeljak",
+      "kind": "weekday"
+    },
+    {
+      "text": "subota",
+      "kind": "weekday"
+    },
+    {
+      "text": "srijeda",
+      "kind": "weekday"
+    },
+    {
+      "text": "mjesec",
+      "kind": "field"
+    },
+    {
+      "text": "minuta",
+      "kind": "field"
+    },
+    {
+      "text": "vremenska zona",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "tjedan",
+      "kind": "field"
+    },
+    {
+      "text": "za 1 sat",
+      "kind": "relative"
+    },
+    {
+      "text": "sljedeći kvartal",
+      "kind": "relative"
+    },
+    {
+      "text": "za 1 minutu",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 godine",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 1 minutu",
+      "kind": "relative"
+    },
+    {
+      "text": "sutra",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 5 godina",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 5 sati",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 sata",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 minute",
+      "kind": "relative"
+    },
+    {
+      "text": "5 gigabajta",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litara",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometara",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilograma",
+      "kind": "unit"
+    },
+    {
+      "text": "2 dana",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometra",
+      "kind": "unit"
+    },
+    {
+      "text": "5 posto",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Celzijevih stupnjeva",
+      "kind": "unit"
+    },
+    {
+      "text": "petak, 19. srpnja 2024.",
+      "kind": "date"
+    },
+    {
+      "text": "petak, 6. studenoga 2026.",
+      "kind": "date"
+    }
+  ]
+}

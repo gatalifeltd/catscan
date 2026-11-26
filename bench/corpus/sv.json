@@ -1,0 +1,253 @@
+{
+  "locale": "sv",
+  "icu_locale": "sv",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Ukraina",
+      "kind": "region"
+    },
+    {
+      "text": "Grekland",
+      "kind": "region"
+    },
+    {
+      "text": "Serbien",
+      "kind": "region"
+    },
+    {
+      "text": "Slovenien",
+      "kind": "region"
+    },
+    {
+      "text": "Marocko",
+      "kind": "region"
+    },
+    {
+      "text": "Storbritannien",
+      "kind": "region"
+    },
+    {
+      "text": "Sydafrika",
+      "kind": "region"
+    },
+    {
+      "text": "Lettland",
+      "kind": "region"
+    },
+    {
+      "text": "Kanada",
+      "kind": "region"
+    },
+    {
+      "text": "Sverige",
+      "kind": "region"
+    },
+    {
+      "text": "Kina",
+      "kind": "region"
+    },
+    {
+      "text": "Nigeria",
+      "kind": "region"
+    },
+    {
+      "text": "ungerska",
+      "kind": "language"
+    },
+    {
+      "text": "georgiska",
+      "kind": "language"
+    },
+    {
+      "text": "danska",
+      "kind": "language"
+    },
+    {
+      "text": "japanska",
+      "kind": "language"
+    },
+    {
+      "text": "ukrainska",
+      "kind": "language"
+    },
+    {
+      "text": "tyska",
+      "kind": "language"
+    },
+    {
+      "text": "svenska",
+      "kind": "language"
+    },
+    {
+      "text": "arabiska",
+      "kind": "language"
+    },
+    {
+      "text": "armeniska",
+      "kind": "language"
+    },
+    {
+      "text": "vietnamesiska",
+      "kind": "language"
+    },
+    {
+      "text": "kanadensisk dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "ungersk forint",
+      "kind": "currency"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "japansk yen",
+      "kind": "currency"
+    },
+    {
+      "text": "thailändsk baht",
+      "kind": "currency"
+    },
+    {
+      "text": "indonesisk rupie",
+      "kind": "currency"
+    },
+    {
+      "text": "juni",
+      "kind": "month"
+    },
+    {
+      "text": "september",
+      "kind": "month"
+    },
+    {
+      "text": "december",
+      "kind": "month"
+    },
+    {
+      "text": "juli",
+      "kind": "month"
+    },
+    {
+      "text": "torsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "lördag",
+      "kind": "weekday"
+    },
+    {
+      "text": "onsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "tidszon",
+      "kind": "field"
+    },
+    {
+      "text": "kvartal",
+      "kind": "field"
+    },
+    {
+      "text": "månad",
+      "kind": "field"
+    },
+    {
+      "text": "timme",
+      "kind": "field"
+    },
+    {
+      "text": "om 3 sekunder",
+      "kind": "relative"
+    },
+    {
+      "text": "för 5 dagar sedan",
+      "kind": "relative"
+    },
+    {
+      "text": "för 5 år sedan",
+      "kind": "relative"
+    },
+    {
+      "text": "om 1 sekund",
+      "kind": "relative"
+    },
+    {
+      "text": "nästa år",
+      "kind": "relative"
+    },
+    {
+      "text": "förra veckan",
+      "kind": "relative"
+    },
+    {
+      "text": "för 5 veckor sedan",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 år",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 timmar",
+      "kind": "relative"
+    },
+    {
+      "text": "för 5 sekunder sedan",
+      "kind": "relative"
+    },
+    {
+      "text": "5 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 dygn",
+      "kind": "unit"
+    },
+    {
+      "text": "2 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 grader Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 dygn",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilogram",
+      "kind": "unit"
+    },
+    {
+      "text": "måndag 3 mars 2025",
+      "kind": "date"
+    },
+    {
+      "text": "fredag 6 november 2026",
+      "kind": "date"
+    }
+  ]
+}

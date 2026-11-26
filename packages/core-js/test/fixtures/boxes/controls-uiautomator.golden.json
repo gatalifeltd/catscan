@@ -1,0 +1,97 @@
+{
+  "image": {
+    "width": 1080,
+    "height": 2400
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        0.9738
+      ],
+      "clips": true
+    },
+    {
+      "id": "com.example:id/list",
+      "box": [
+        0,
+        0.0833,
+        1,
+        0.6667
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0444,
+        0.1,
+        0.5111,
+        0.025
+      ],
+      "clips": true,
+      "text": "Lieferadresse",
+      "scrolls": true
+    },
+    {
+      "id": "com.example:id/email",
+      "box": [
+        0.0444,
+        0.1333,
+        0.9111,
+        0.0417
+      ],
+      "clips": true,
+      "text": "anna@example.com",
+      "graphic": true,
+      "scrolls": true
+    },
+    {
+      "id": "com.example:id/notify",
+      "box": [
+        0.8333,
+        0.7708,
+        0.1222,
+        0.0333
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0444,
+        0.7708,
+        0.0667,
+        0.03
+      ],
+      "clips": true,
+      "graphic": true
+    },
+    {
+      "id": "com.example:id/rating",
+      "box": [
+        0.0444,
+        0.8333,
+        0.4185,
+        0.0333
+      ],
+      "clips": true,
+      "text": "4,5"
+    },
+    {
+      "id": null,
+      "box": [
+        0.1296,
+        0.775,
+        0.6852,
+        0.025
+      ],
+      "clips": true,
+      "text": "Benachrichtigungen"
+    }
+  ],
+  "orientation": "portrait"
+}

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/known-1.json",
+  "title": "catscan known findings file (known_schema 1)",
+  "description": "Approved known findings: written by catscan results known, applied by --known. A finding matches a row by its key (no box); a key found more often than its count makes every finding of the key new. New fields may be added in minor versions; readers refuse a newer known_schema or key_algo.",
+  "type": "object",
+  "required": ["known_schema", "key_algo", "catscan", "axes", "reader", "scope", "findings"],
+  "properties": {
+    "known_schema": { "const": 1 },
+    "key_algo": { "const": 1, "description": "The identity-text rule rows were keyed with: NFKC, case-folded, clock times and digit runs as #, punctuation dropped, U+0300-U+036F combining marks removed, whitespace collapsed." },
+    "catscan": { "type": "string", "description": "The catscan version that last wrote the file." },
+    "axes": { "type": "array", "uniqueItems": true, "items": { "enum": ["device", "text_size"] }, "description": "The cell axes the rows were approved with; a run on other axes warns known-scope-differs." },
+    "reader": {
+      "description": "The approving runs' engine, Vision revision and macOS major; null when they were mixed.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["engine", "vision_revision", "macos"],
+          "properties": {
+            "engine": { "type": ["string", "null"] },
+            "vision_revision": { "type": ["integer", "null"] },
+            "macos": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "description": "Per command, the flags of the approving run that decide which findings exist, and the sha256 of its --allow file (null when none or unreadable).",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["flags", "allow"],
+        "properties": {
+          "flags": { "type": "array", "items": { "type": "string" } },
+          "allow": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }] }
+        }
+      }
+    },
+    "findings": {
+      "type": "array",
+      "description": "One row per key, sorted by every field.",
+      "items": {
+        "type": "object",
+        "required": ["command", "pseudo", "device", "locale", "screen", "path", "kind", "rule", "text", "count"],
+        "properties": {
+          "command": { "type": "string" },
+          "pseudo": { "type": "boolean" },
+          "device": { "type": ["string", "null"] },
+          "text_size": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$", "not": { "const": "default" }, "description": "The text size when it is not default; absent for default, which rows approved before the axis match." },
+          "locale": { "type": ["string", "null"] },
+          "screen": { "type": ["string", "null"], "description": "From the layout; null when the cell is the input path." },
+          "path": { "type": ["string", "null"], "description": "The input path when no layout mapped it; else null." },
+          "kind": { "type": "string" },
+          "rule": { "type": ["string", "null"], "description": "The finding registry rule (reason, signal, evidence, rule or field); null when the kind has none." },
+          "text": { "type": ["string", "null"], "description": "Normalized identity text; null when the kind has none (pseudo-not-applied)." },
+          "count": { "type": "integer", "minimum": 1 }
+        },
+        "allOf": [
+          { "if": { "properties": { "screen": { "type": "string" } } }, "then": { "properties": { "path": { "type": "null" } } } }
+        ]
+      }
+    }
+  }
+}

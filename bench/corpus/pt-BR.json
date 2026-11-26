@@ -1,0 +1,253 @@
+{
+  "locale": "pt-BR",
+  "icu_locale": "pt-BR",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Taiwan",
+      "kind": "region"
+    },
+    {
+      "text": "Estados Unidos",
+      "kind": "region"
+    },
+    {
+      "text": "Singapura",
+      "kind": "region"
+    },
+    {
+      "text": "Ucrânia",
+      "kind": "region"
+    },
+    {
+      "text": "Países Baixos",
+      "kind": "region"
+    },
+    {
+      "text": "Armênia",
+      "kind": "region"
+    },
+    {
+      "text": "Suécia",
+      "kind": "region"
+    },
+    {
+      "text": "Hungria",
+      "kind": "region"
+    },
+    {
+      "text": "Lituânia",
+      "kind": "region"
+    },
+    {
+      "text": "França",
+      "kind": "region"
+    },
+    {
+      "text": "Nigéria",
+      "kind": "region"
+    },
+    {
+      "text": "Marrocos",
+      "kind": "region"
+    },
+    {
+      "text": "holandês",
+      "kind": "language"
+    },
+    {
+      "text": "finlandês",
+      "kind": "language"
+    },
+    {
+      "text": "búlgaro",
+      "kind": "language"
+    },
+    {
+      "text": "tailandês",
+      "kind": "language"
+    },
+    {
+      "text": "sueco",
+      "kind": "language"
+    },
+    {
+      "text": "japonês",
+      "kind": "language"
+    },
+    {
+      "text": "armênio",
+      "kind": "language"
+    },
+    {
+      "text": "malaio",
+      "kind": "language"
+    },
+    {
+      "text": "hebraico",
+      "kind": "language"
+    },
+    {
+      "text": "indonésio",
+      "kind": "language"
+    },
+    {
+      "text": "Dólar americano",
+      "kind": "currency"
+    },
+    {
+      "text": "Rupia indonésia",
+      "kind": "currency"
+    },
+    {
+      "text": "Coroa sueca",
+      "kind": "currency"
+    },
+    {
+      "text": "Dólar australiano",
+      "kind": "currency"
+    },
+    {
+      "text": "Franco suíço",
+      "kind": "currency"
+    },
+    {
+      "text": "Peso mexicano",
+      "kind": "currency"
+    },
+    {
+      "text": "julho",
+      "kind": "month"
+    },
+    {
+      "text": "março",
+      "kind": "month"
+    },
+    {
+      "text": "novembro",
+      "kind": "month"
+    },
+    {
+      "text": "outubro",
+      "kind": "month"
+    },
+    {
+      "text": "terça-feira",
+      "kind": "weekday"
+    },
+    {
+      "text": "segunda-feira",
+      "kind": "weekday"
+    },
+    {
+      "text": "quinta-feira",
+      "kind": "weekday"
+    },
+    {
+      "text": "fuso horário",
+      "kind": "field"
+    },
+    {
+      "text": "dia da semana",
+      "kind": "field"
+    },
+    {
+      "text": "hora",
+      "kind": "field"
+    },
+    {
+      "text": "segundo",
+      "kind": "field"
+    },
+    {
+      "text": "trimestre",
+      "kind": "field"
+    },
+    {
+      "text": "em 3 anos",
+      "kind": "relative"
+    },
+    {
+      "text": "mês passado",
+      "kind": "relative"
+    },
+    {
+      "text": "em 3 dias",
+      "kind": "relative"
+    },
+    {
+      "text": "semana passada",
+      "kind": "relative"
+    },
+    {
+      "text": "em 3 semanas",
+      "kind": "relative"
+    },
+    {
+      "text": "há 5 minutos",
+      "kind": "relative"
+    },
+    {
+      "text": "há 1 minuto",
+      "kind": "relative"
+    },
+    {
+      "text": "próxima semana",
+      "kind": "relative"
+    },
+    {
+      "text": "em 3 meses",
+      "kind": "relative"
+    },
+    {
+      "text": "próximo mês",
+      "kind": "relative"
+    },
+    {
+      "text": "2 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metros",
+      "kind": "unit"
+    },
+    {
+      "text": "2 quilogramas",
+      "kind": "unit"
+    },
+    {
+      "text": "2 por cento",
+      "kind": "unit"
+    },
+    {
+      "text": "2 semanas",
+      "kind": "unit"
+    },
+    {
+      "text": "2 graus Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 meses",
+      "kind": "unit"
+    },
+    {
+      "text": "Rússia",
+      "kind": "region"
+    },
+    {
+      "text": "janeiro",
+      "kind": "month"
+    }
+  ]
+}

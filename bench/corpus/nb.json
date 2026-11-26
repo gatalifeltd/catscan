@@ -1,0 +1,253 @@
+{
+  "locale": "nb",
+  "icu_locale": "nb",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Storbritannia",
+      "kind": "region"
+    },
+    {
+      "text": "Hellas",
+      "kind": "region"
+    },
+    {
+      "text": "Singapore",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Kenya",
+      "kind": "region"
+    },
+    {
+      "text": "Mexico",
+      "kind": "region"
+    },
+    {
+      "text": "Malaysia",
+      "kind": "region"
+    },
+    {
+      "text": "Argentina",
+      "kind": "region"
+    },
+    {
+      "text": "Luxemburg",
+      "kind": "region"
+    },
+    {
+      "text": "Iran",
+      "kind": "region"
+    },
+    {
+      "text": "Brasil",
+      "kind": "region"
+    },
+    {
+      "text": "Finland",
+      "kind": "region"
+    },
+    {
+      "text": "finsk",
+      "kind": "language"
+    },
+    {
+      "text": "arabisk",
+      "kind": "language"
+    },
+    {
+      "text": "kinesisk",
+      "kind": "language"
+    },
+    {
+      "text": "vietnamesisk",
+      "kind": "language"
+    },
+    {
+      "text": "nederlandsk",
+      "kind": "language"
+    },
+    {
+      "text": "svensk",
+      "kind": "language"
+    },
+    {
+      "text": "hebraisk",
+      "kind": "language"
+    },
+    {
+      "text": "persisk",
+      "kind": "language"
+    },
+    {
+      "text": "indonesisk",
+      "kind": "language"
+    },
+    {
+      "text": "tysk",
+      "kind": "language"
+    },
+    {
+      "text": "russiske rubler",
+      "kind": "currency"
+    },
+    {
+      "text": "japanske yen",
+      "kind": "currency"
+    },
+    {
+      "text": "australske dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "amerikanske dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "norske kroner",
+      "kind": "currency"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "november",
+      "kind": "month"
+    },
+    {
+      "text": "desember",
+      "kind": "month"
+    },
+    {
+      "text": "februar",
+      "kind": "month"
+    },
+    {
+      "text": "september",
+      "kind": "month"
+    },
+    {
+      "text": "fredag",
+      "kind": "weekday"
+    },
+    {
+      "text": "torsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "tirsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "sekund",
+      "kind": "field"
+    },
+    {
+      "text": "a.m./p.m.",
+      "kind": "field"
+    },
+    {
+      "text": "måned",
+      "kind": "field"
+    },
+    {
+      "text": "ukedag",
+      "kind": "field"
+    },
+    {
+      "text": "time",
+      "kind": "field"
+    },
+    {
+      "text": "for 1 minutt siden",
+      "kind": "relative"
+    },
+    {
+      "text": "i går",
+      "kind": "relative"
+    },
+    {
+      "text": "forrige kvartal",
+      "kind": "relative"
+    },
+    {
+      "text": "neste år",
+      "kind": "relative"
+    },
+    {
+      "text": "om 1 minutt",
+      "kind": "relative"
+    },
+    {
+      "text": "neste uke",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 år",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 uker",
+      "kind": "relative"
+    },
+    {
+      "text": "for 5 år siden",
+      "kind": "relative"
+    },
+    {
+      "text": "forrige uke",
+      "kind": "relative"
+    },
+    {
+      "text": "5 minutter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometer",
+      "kind": "unit"
+    },
+    {
+      "text": "5 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometer",
+      "kind": "unit"
+    },
+    {
+      "text": "5 prosent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 døgn",
+      "kind": "unit"
+    },
+    {
+      "text": "2 grader celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 døgn",
+      "kind": "unit"
+    },
+    {
+      "text": "mandag 3. mars 2025",
+      "kind": "date"
+    },
+    {
+      "text": "Sør-Korea",
+      "kind": "region"
+    }
+  ]
+}

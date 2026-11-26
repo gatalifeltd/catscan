@@ -1,0 +1,31 @@
+{
+  "script": "bench/formats-real.js",
+  "sets": {
+    "paywalls": {
+      "screens": 12,
+      "flagged_screens": 0,
+      "flags": 0,
+      "by_rule": {},
+      "price_exempt": 0,
+      "flags_per_100_screens": 0
+    },
+    "clean": {
+      "screens": 247,
+      "flagged_screens": 0,
+      "flags": 0,
+      "by_rule": {},
+      "price_exempt": 0,
+      "flags_per_100_screens": 0
+    }
+  },
+  "prices_sha256": "130d365746e8c409a63db907996f5a08a5a6a8a25c538dd3c5b14fa7fdbf76e8",
+  "flag_ids": [],
+  "tools": {
+    "catscan": "0.38.0",
+    "macos": "27.2.1 (26B131)",
+    "vision_revision": 3,
+    "node": "v26.13.0"
+  },
+  "measured": "2026-11-17",
+  "note": "0 flags, so real precision is unmeasured (D40); real recall unmeasured (one locale, one storefront)"
+}

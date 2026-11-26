@@ -1,0 +1,15 @@
+Attributes: Application, 0x10450a8f0, pid: 41862, label: 'Shop'
+Element subtree:
+ →Application, 0x10450a8f0, pid: 41862, label: 'Shop'
+    Window (Main), 0x10450ad10, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x10450ae30, {{0.0, 0.0}, {393.0, 852.0}}
+        NavigationBar, 0x10450af50, {{0.0, 59.0}, {393.0, 44.0}}, identifier: 'Einstellungen'
+          StaticText, 0x10450b070, {{140.5, 70.0}, {112.0, 22.0}}, label: 'Einstellungen'
+        Button, 0x10450b190, {{16.0, 760.0}, {361.0, 50.0}}, identifier: 'continue', label: 'Mit E-Mail fortfahren, Taste'
+        StaticText, 0x10450b2b0, {{-40.0, 300.0}, {120.0, 20.0}}, label: 'Angebot der Woche'
+        TextField, 0x10450b3d0, {{16.0, 400.0}, {361.0, 34.0}}, identifier: 'email', placeholderValue: 'E-Mail', value: anna@example.com
+        StaticText, 0x10450b4f0, {{16.0, 450.0}, {200.0, 20.0}}, label: 'Anna's Konto'
+Path to element:
+ →Application, 0x10450a8f0, pid: 41862, label: 'Shop'
+Query chain:
+ →Find: Target Application 'com.example.shop'

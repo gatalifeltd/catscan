@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "shop": "[Šhöp öñé]",
+    "back":   "[Báçk öñé]"
+  },
+  "greeting": "[Héllö {{name}}, wélçömé báçk! öñé twö thréé]",
+  "price": "[{{val, currency}} pér möñth öñé twö]",
+  "items_one": "[{{count}} ítém öñé twö]",
+  "items_other": "[{{count}} ítémš öñé twö]",
+  "icu": "[{count, plural, one {# ñéw méššágé} other {# ñéw méššágéš}} öñé twö]",
+  "rich": "[Réád thé <0>térmš</0> áñd <b>príváçý pölíçý</b> öñé twö thréé]",
+  "nested": "[Šéé $t(nav.shop) för ${product} öñé twö thréé]",
+  "escaped": "[Šáý \"hí\"\nthéñ \u00e9 gö öñé twö]",
+  "url": "https://example.com/help",
+  "email": "help@example.com",
+  "digits": "123-456",
+  "empty": "",
+  "list": ["[Fíršt öñé]", "[Šéçöñd öñé]"],
+  "flag": true,
+  "count": 3
+}

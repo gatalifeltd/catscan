@@ -1,0 +1,253 @@
+{
+  "locale": "ar",
+  "icu_locale": "ar",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "الإمارات العربية المتحدة",
+      "kind": "region"
+    },
+    {
+      "text": "النرويج",
+      "kind": "region"
+    },
+    {
+      "text": "صربيا",
+      "kind": "region"
+    },
+    {
+      "text": "البرتغال",
+      "kind": "region"
+    },
+    {
+      "text": "تايلاند",
+      "kind": "region"
+    },
+    {
+      "text": "أستراليا",
+      "kind": "region"
+    },
+    {
+      "text": "الفلبين",
+      "kind": "region"
+    },
+    {
+      "text": "إسرائيل",
+      "kind": "region"
+    },
+    {
+      "text": "إسبانيا",
+      "kind": "region"
+    },
+    {
+      "text": "النمسا",
+      "kind": "region"
+    },
+    {
+      "text": "اليابان",
+      "kind": "region"
+    },
+    {
+      "text": "الولايات المتحدة",
+      "kind": "region"
+    },
+    {
+      "text": "العبرية",
+      "kind": "language"
+    },
+    {
+      "text": "الكورية",
+      "kind": "language"
+    },
+    {
+      "text": "الأوكرانية",
+      "kind": "language"
+    },
+    {
+      "text": "الروسية",
+      "kind": "language"
+    },
+    {
+      "text": "الجورجية",
+      "kind": "language"
+    },
+    {
+      "text": "الفنلندية",
+      "kind": "language"
+    },
+    {
+      "text": "الماراثية",
+      "kind": "language"
+    },
+    {
+      "text": "البولندية",
+      "kind": "language"
+    },
+    {
+      "text": "الدانمركية",
+      "kind": "language"
+    },
+    {
+      "text": "الهنغارية",
+      "kind": "language"
+    },
+    {
+      "text": "دولار أمريكي",
+      "kind": "currency"
+    },
+    {
+      "text": "جنيه إسترليني",
+      "kind": "currency"
+    },
+    {
+      "text": "دولار كندي",
+      "kind": "currency"
+    },
+    {
+      "text": "كرونة سويدية",
+      "kind": "currency"
+    },
+    {
+      "text": "وون كوريا الجنوبية",
+      "kind": "currency"
+    },
+    {
+      "text": "بيزو مكسيكي",
+      "kind": "currency"
+    },
+    {
+      "text": "أغسطس",
+      "kind": "month"
+    },
+    {
+      "text": "أكتوبر",
+      "kind": "month"
+    },
+    {
+      "text": "يوليو",
+      "kind": "month"
+    },
+    {
+      "text": "يناير",
+      "kind": "month"
+    },
+    {
+      "text": "الجمعة",
+      "kind": "weekday"
+    },
+    {
+      "text": "الاثنين",
+      "kind": "weekday"
+    },
+    {
+      "text": "الثلاثاء",
+      "kind": "weekday"
+    },
+    {
+      "text": "الدقائق",
+      "kind": "field"
+    },
+    {
+      "text": "الثواني",
+      "kind": "field"
+    },
+    {
+      "text": "اليوم",
+      "kind": "field"
+    },
+    {
+      "text": "الأسبوع",
+      "kind": "field"
+    },
+    {
+      "text": "العصر",
+      "kind": "field"
+    },
+    {
+      "text": "الشهر القادم",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال 3 دقائق",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل 5 أرباع سنة",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل ساعة واحدة",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال 3 أشهر",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل 5 أشهر",
+      "kind": "relative"
+    },
+    {
+      "text": "الشهر الماضي",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال 3 أسابيع",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل 5 أيام",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل دقيقة واحدة",
+      "kind": "relative"
+    },
+    {
+      "text": "2 ميغابايت",
+      "kind": "unit"
+    },
+    {
+      "text": "2 لتر",
+      "kind": "unit"
+    },
+    {
+      "text": "أسبوعان",
+      "kind": "unit"
+    },
+    {
+      "text": "5 كيلومتر في الساعة",
+      "kind": "unit"
+    },
+    {
+      "text": "ساعتان",
+      "kind": "unit"
+    },
+    {
+      "text": "5 درجة مئوية",
+      "kind": "unit"
+    },
+    {
+      "text": "5 كيلوغرام",
+      "kind": "unit"
+    },
+    {
+      "text": "يومان",
+      "kind": "unit"
+    },
+    {
+      "text": "جورجيا",
+      "kind": "region"
+    },
+    {
+      "text": "روسيا",
+      "kind": "region"
+    }
+  ]
+}

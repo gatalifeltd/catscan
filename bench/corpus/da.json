@@ -1,0 +1,253 @@
+{
+  "locale": "da",
+  "icu_locale": "da",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Storbritannien",
+      "kind": "region"
+    },
+    {
+      "text": "SAR Hongkong",
+      "kind": "region"
+    },
+    {
+      "text": "Colombia",
+      "kind": "region"
+    },
+    {
+      "text": "Grækenland",
+      "kind": "region"
+    },
+    {
+      "text": "Ukraine",
+      "kind": "region"
+    },
+    {
+      "text": "Marokko",
+      "kind": "region"
+    },
+    {
+      "text": "Peru",
+      "kind": "region"
+    },
+    {
+      "text": "Ungarn",
+      "kind": "region"
+    },
+    {
+      "text": "Estland",
+      "kind": "region"
+    },
+    {
+      "text": "Egypten",
+      "kind": "region"
+    },
+    {
+      "text": "Tjekkiet",
+      "kind": "region"
+    },
+    {
+      "text": "Filippinerne",
+      "kind": "region"
+    },
+    {
+      "text": "italiensk",
+      "kind": "language"
+    },
+    {
+      "text": "malajisk",
+      "kind": "language"
+    },
+    {
+      "text": "norsk",
+      "kind": "language"
+    },
+    {
+      "text": "armensk",
+      "kind": "language"
+    },
+    {
+      "text": "rumænsk",
+      "kind": "language"
+    },
+    {
+      "text": "hebraisk",
+      "kind": "language"
+    },
+    {
+      "text": "thai",
+      "kind": "language"
+    },
+    {
+      "text": "fransk",
+      "kind": "language"
+    },
+    {
+      "text": "polsk",
+      "kind": "language"
+    },
+    {
+      "text": "kroatisk",
+      "kind": "language"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "japansk yen",
+      "kind": "currency"
+    },
+    {
+      "text": "brasiliansk real",
+      "kind": "currency"
+    },
+    {
+      "text": "amerikansk dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "russisk rubel",
+      "kind": "currency"
+    },
+    {
+      "text": "indisk rupee",
+      "kind": "currency"
+    },
+    {
+      "text": "januar",
+      "kind": "month"
+    },
+    {
+      "text": "august",
+      "kind": "month"
+    },
+    {
+      "text": "juni",
+      "kind": "month"
+    },
+    {
+      "text": "juli",
+      "kind": "month"
+    },
+    {
+      "text": "fredag",
+      "kind": "weekday"
+    },
+    {
+      "text": "torsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "søndag",
+      "kind": "weekday"
+    },
+    {
+      "text": "sekund",
+      "kind": "field"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "måned",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "ugedag",
+      "kind": "field"
+    },
+    {
+      "text": "for 5 kvartaler siden",
+      "kind": "relative"
+    },
+    {
+      "text": "i morgen",
+      "kind": "relative"
+    },
+    {
+      "text": "sidste år",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 kvartaler",
+      "kind": "relative"
+    },
+    {
+      "text": "for 5 dage siden",
+      "kind": "relative"
+    },
+    {
+      "text": "for 5 år siden",
+      "kind": "relative"
+    },
+    {
+      "text": "i går",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 uger",
+      "kind": "relative"
+    },
+    {
+      "text": "for 1 time siden",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 år",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilogram",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogram",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 uger",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometer i timen",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometer",
+      "kind": "unit"
+    },
+    {
+      "text": "2 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "mandag den 3. marts 2025",
+      "kind": "date"
+    },
+    {
+      "text": "november",
+      "kind": "month"
+    }
+  ]
+}

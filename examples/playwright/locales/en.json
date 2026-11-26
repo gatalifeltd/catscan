@@ -1,0 +1,5 @@
+{
+  "game": { "title": "Star Hopper", "over": "GAME OVER", "paused": "Paused" },
+  "hud": { "score": "Score: {score}" },
+  "menu": { "play": "Play", "settings": "Settings", "quit": "Quit" }
+}

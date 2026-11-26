@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/languages-1.json",
+  "title": "catscan languages (schema 1)",
+  "description": "Output of `catscan languages --json`. New fields may be added in minor versions; renaming or removing one needs a schema bump.",
+  "type": "object",
+  "required": ["schema", "catscan", "engine", "host", "os_table", "languages"],
+  "properties": {
+    "schema": { "const": 1 },
+    "catscan": { "type": "string" },
+    "engine": { "type": "string" },
+    "host": {
+      "type": "object",
+      "required": ["chip", "arch", "host_class", "macos", "vision_revision"],
+      "properties": {
+        "chip": { "type": "string" },
+        "arch": { "type": "string" },
+        "host_class": { "enum": ["physical", "vm"] },
+        "macos": { "type": "string" },
+        "vision_revision": { "type": "integer" }
+      }
+    },
+    "os_table": {
+      "type": "object",
+      "required": ["macos", "known", "matches", "added", "removed"],
+      "properties": {
+        "macos": { "type": "integer" },
+        "known": { "type": "boolean" },
+        "matches": { "type": "boolean" },
+        "added": { "type": "array", "items": { "type": "string" } },
+        "removed": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "fallback_locales": { "type": "array", "items": { "type": "string" } },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["locale", "vision", "aliases", "script", "direction", "no_spaces", "in_table", "supported", "fallback"],
+        "properties": {
+          "locale": { "type": "string" },
+          "vision": { "type": "string" },
+          "aliases": { "type": "array", "items": { "type": "string" } },
+          "script": { "type": "string" },
+          "direction": { "enum": ["ltr", "rtl", null] },
+          "no_spaces": { "type": ["boolean", "null"] },
+          "in_table": { "type": "boolean" },
+          "supported": { "type": "boolean" },
+          "fallback": { "type": "null" }
+        }
+      }
+    }
+  }
+}

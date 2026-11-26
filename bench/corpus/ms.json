@@ -1,0 +1,253 @@
+{
+  "locale": "ms",
+  "icu_locale": "ms",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Afrika Selatan",
+      "kind": "region"
+    },
+    {
+      "text": "Hungary",
+      "kind": "region"
+    },
+    {
+      "text": "Maghribi",
+      "kind": "region"
+    },
+    {
+      "text": "Vietnam",
+      "kind": "region"
+    },
+    {
+      "text": "Australia",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Taiwan",
+      "kind": "region"
+    },
+    {
+      "text": "Ireland",
+      "kind": "region"
+    },
+    {
+      "text": "Bulgaria",
+      "kind": "region"
+    },
+    {
+      "text": "Switzerland",
+      "kind": "region"
+    },
+    {
+      "text": "Brazil",
+      "kind": "region"
+    },
+    {
+      "text": "Norway",
+      "kind": "region"
+    },
+    {
+      "text": "Hindi",
+      "kind": "language"
+    },
+    {
+      "text": "Armenia",
+      "kind": "language"
+    },
+    {
+      "text": "Turki",
+      "kind": "language"
+    },
+    {
+      "text": "Georgia",
+      "kind": "language"
+    },
+    {
+      "text": "Perancis",
+      "kind": "language"
+    },
+    {
+      "text": "Czech",
+      "kind": "language"
+    },
+    {
+      "text": "Rusia",
+      "kind": "language"
+    },
+    {
+      "text": "Sepanyol",
+      "kind": "language"
+    },
+    {
+      "text": "Arab",
+      "kind": "language"
+    },
+    {
+      "text": "Ibrani",
+      "kind": "language"
+    },
+    {
+      "text": "Yen Jepun",
+      "kind": "currency"
+    },
+    {
+      "text": "Won Korea Selatan",
+      "kind": "currency"
+    },
+    {
+      "text": "Dolar AS",
+      "kind": "currency"
+    },
+    {
+      "text": "Euro",
+      "kind": "currency"
+    },
+    {
+      "text": "Peso Mexico",
+      "kind": "currency"
+    },
+    {
+      "text": "Baht Thai",
+      "kind": "currency"
+    },
+    {
+      "text": "Februari",
+      "kind": "month"
+    },
+    {
+      "text": "Oktober",
+      "kind": "month"
+    },
+    {
+      "text": "September",
+      "kind": "month"
+    },
+    {
+      "text": "Julai",
+      "kind": "month"
+    },
+    {
+      "text": "Sabtu",
+      "kind": "weekday"
+    },
+    {
+      "text": "Ahad",
+      "kind": "weekday"
+    },
+    {
+      "text": "Khamis",
+      "kind": "weekday"
+    },
+    {
+      "text": "hari",
+      "kind": "field"
+    },
+    {
+      "text": "bulan",
+      "kind": "field"
+    },
+    {
+      "text": "tahun",
+      "kind": "field"
+    },
+    {
+      "text": "zon waktu",
+      "kind": "field"
+    },
+    {
+      "text": "minggu",
+      "kind": "field"
+    },
+    {
+      "text": "esok",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 3 saat",
+      "kind": "relative"
+    },
+    {
+      "text": "5 saat lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 minit lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "1 minit lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 3 minit",
+      "kind": "relative"
+    },
+    {
+      "text": "1 jam lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 1 saat",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 1 minit",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 3 jam",
+      "kind": "relative"
+    },
+    {
+      "text": "5 gigabait",
+      "kind": "unit"
+    },
+    {
+      "text": "5 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabait",
+      "kind": "unit"
+    },
+    {
+      "text": "2 jam",
+      "kind": "unit"
+    },
+    {
+      "text": "5 peratus",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometer",
+      "kind": "unit"
+    },
+    {
+      "text": "2 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabait",
+      "kind": "unit"
+    },
+    {
+      "text": "Isnin, 3 Mac 2025",
+      "kind": "date"
+    },
+    {
+      "text": "Jumaat, 6 November 2026",
+      "kind": "date"
+    }
+  ]
+}

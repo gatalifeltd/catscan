@@ -1,0 +1,253 @@
+{
+  "locale": "nl",
+  "icu_locale": "nl",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Vietnam",
+      "kind": "region"
+    },
+    {
+      "text": "Ierland",
+      "kind": "region"
+    },
+    {
+      "text": "Mexico",
+      "kind": "region"
+    },
+    {
+      "text": "Frankrijk",
+      "kind": "region"
+    },
+    {
+      "text": "Pakistan",
+      "kind": "region"
+    },
+    {
+      "text": "Servië",
+      "kind": "region"
+    },
+    {
+      "text": "Oekraïne",
+      "kind": "region"
+    },
+    {
+      "text": "Nederland",
+      "kind": "region"
+    },
+    {
+      "text": "Denemarken",
+      "kind": "region"
+    },
+    {
+      "text": "Zwitserland",
+      "kind": "region"
+    },
+    {
+      "text": "Japan",
+      "kind": "region"
+    },
+    {
+      "text": "Noorwegen",
+      "kind": "region"
+    },
+    {
+      "text": "Georgisch",
+      "kind": "language"
+    },
+    {
+      "text": "Turks",
+      "kind": "language"
+    },
+    {
+      "text": "Noors",
+      "kind": "language"
+    },
+    {
+      "text": "Zweeds",
+      "kind": "language"
+    },
+    {
+      "text": "Kroatisch",
+      "kind": "language"
+    },
+    {
+      "text": "Oekraïens",
+      "kind": "language"
+    },
+    {
+      "text": "Grieks",
+      "kind": "language"
+    },
+    {
+      "text": "Russisch",
+      "kind": "language"
+    },
+    {
+      "text": "Koreaans",
+      "kind": "language"
+    },
+    {
+      "text": "Duits",
+      "kind": "language"
+    },
+    {
+      "text": "Poolse zloty",
+      "kind": "currency"
+    },
+    {
+      "text": "Indonesische roepia",
+      "kind": "currency"
+    },
+    {
+      "text": "Mexicaanse peso",
+      "kind": "currency"
+    },
+    {
+      "text": "Britse pond",
+      "kind": "currency"
+    },
+    {
+      "text": "Deense kroon",
+      "kind": "currency"
+    },
+    {
+      "text": "Amerikaanse dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "juli",
+      "kind": "month"
+    },
+    {
+      "text": "maart",
+      "kind": "month"
+    },
+    {
+      "text": "september",
+      "kind": "month"
+    },
+    {
+      "text": "januari",
+      "kind": "month"
+    },
+    {
+      "text": "dinsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "donderdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "maandag",
+      "kind": "weekday"
+    },
+    {
+      "text": "dag van de week",
+      "kind": "field"
+    },
+    {
+      "text": "a.m./p.m.",
+      "kind": "field"
+    },
+    {
+      "text": "kwartaal",
+      "kind": "field"
+    },
+    {
+      "text": "jaar",
+      "kind": "field"
+    },
+    {
+      "text": "tijdperk",
+      "kind": "field"
+    },
+    {
+      "text": "5 uur geleden",
+      "kind": "relative"
+    },
+    {
+      "text": "over 3 seconden",
+      "kind": "relative"
+    },
+    {
+      "text": "over 3 maanden",
+      "kind": "relative"
+    },
+    {
+      "text": "5 seconden geleden",
+      "kind": "relative"
+    },
+    {
+      "text": "over 1 uur",
+      "kind": "relative"
+    },
+    {
+      "text": "vorige week",
+      "kind": "relative"
+    },
+    {
+      "text": "volgende week",
+      "kind": "relative"
+    },
+    {
+      "text": "over 3 dagen",
+      "kind": "relative"
+    },
+    {
+      "text": "over 3 uur",
+      "kind": "relative"
+    },
+    {
+      "text": "1 minuut geleden",
+      "kind": "relative"
+    },
+    {
+      "text": "5 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 maanden",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogram",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometer per uur",
+      "kind": "unit"
+    },
+    {
+      "text": "2 meter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "vrijdag 6 november 2026",
+      "kind": "date"
+    },
+    {
+      "text": "Hongaars",
+      "kind": "language"
+    }
+  ]
+}

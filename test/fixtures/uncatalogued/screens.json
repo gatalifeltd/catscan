@@ -1,0 +1,12 @@
+[
+  { "name": "u01-clean.png", "locale": "de", "width": 1100, "height": 420, "lines": [
+    { "text": "Einstellungen und Datenschutz", "x": 40, "y": 60, "size": 34 },
+    { "text": "Hallo, Anna", "x": 40, "y": 140, "size": 34 },
+    { "text": "Read the latest news from our team", "x": 40, "y": 220, "size": 34 },
+    { "text": "12:30", "x": 40, "y": 300, "size": 34 } ] },
+  { "name": "u02-hardcoded.png", "locale": "de", "width": 1100, "height": 420, "lines": [
+    { "text": "Einstellungen und Datenschutz", "x": 40, "y": 60, "size": 34 },
+    { "text": "Tägliche Belohnung abholen", "x": 40, "y": 140, "size": 34 },
+    { "text": "Lies hier die neuen Berichte unseres Teams", "x": 40, "y": 220, "size": 34 },
+    { "text": "Marta Kowalczyk", "x": 40, "y": 300, "size": 34 } ] }
+]

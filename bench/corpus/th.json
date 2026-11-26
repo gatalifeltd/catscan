@@ -1,0 +1,253 @@
+{
+  "locale": "th",
+  "icu_locale": "th",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "สโลวีเนีย",
+      "kind": "region"
+    },
+    {
+      "text": "จีน",
+      "kind": "region"
+    },
+    {
+      "text": "ชิลี",
+      "kind": "region"
+    },
+    {
+      "text": "สหราชอาณาจักร",
+      "kind": "region"
+    },
+    {
+      "text": "โครเอเชีย",
+      "kind": "region"
+    },
+    {
+      "text": "เช็ก",
+      "kind": "region"
+    },
+    {
+      "text": "สโลวะเกีย",
+      "kind": "region"
+    },
+    {
+      "text": "ไต้หวัน",
+      "kind": "region"
+    },
+    {
+      "text": "ปากีสถาน",
+      "kind": "region"
+    },
+    {
+      "text": "รัสเซีย",
+      "kind": "region"
+    },
+    {
+      "text": "เปรู",
+      "kind": "region"
+    },
+    {
+      "text": "อิสราเอล",
+      "kind": "region"
+    },
+    {
+      "text": "อาหรับ",
+      "kind": "language"
+    },
+    {
+      "text": "อิตาลี",
+      "kind": "language"
+    },
+    {
+      "text": "ญี่ปุ่น",
+      "kind": "language"
+    },
+    {
+      "text": "ฟินแลนด์",
+      "kind": "language"
+    },
+    {
+      "text": "ยูเครน",
+      "kind": "language"
+    },
+    {
+      "text": "ไทย",
+      "kind": "language"
+    },
+    {
+      "text": "ฮังการี",
+      "kind": "language"
+    },
+    {
+      "text": "เยอรมัน",
+      "kind": "language"
+    },
+    {
+      "text": "จอร์เจีย",
+      "kind": "language"
+    },
+    {
+      "text": "ตุรกี",
+      "kind": "language"
+    },
+    {
+      "text": "โครนเดนมาร์ก",
+      "kind": "currency"
+    },
+    {
+      "text": "ฟรังก์สวิส",
+      "kind": "currency"
+    },
+    {
+      "text": "โครนนอร์เวย์",
+      "kind": "currency"
+    },
+    {
+      "text": "ยูโร",
+      "kind": "currency"
+    },
+    {
+      "text": "เปโซเม็กซิโก",
+      "kind": "currency"
+    },
+    {
+      "text": "เรียลบราซิล",
+      "kind": "currency"
+    },
+    {
+      "text": "กันยายน",
+      "kind": "month"
+    },
+    {
+      "text": "ธันวาคม",
+      "kind": "month"
+    },
+    {
+      "text": "กุมภาพันธ์",
+      "kind": "month"
+    },
+    {
+      "text": "มกราคม",
+      "kind": "month"
+    },
+    {
+      "text": "วันพุธ",
+      "kind": "weekday"
+    },
+    {
+      "text": "วันศุกร์",
+      "kind": "weekday"
+    },
+    {
+      "text": "วันพฤหัสบดี",
+      "kind": "weekday"
+    },
+    {
+      "text": "เดือน",
+      "kind": "field"
+    },
+    {
+      "text": "วินาที",
+      "kind": "field"
+    },
+    {
+      "text": "ช่วงวัน",
+      "kind": "field"
+    },
+    {
+      "text": "ชั่วโมง",
+      "kind": "field"
+    },
+    {
+      "text": "ไตรมาส",
+      "kind": "field"
+    },
+    {
+      "text": "ปีที่แล้ว",
+      "kind": "relative"
+    },
+    {
+      "text": "สัปดาห์ที่แล้ว",
+      "kind": "relative"
+    },
+    {
+      "text": "5 สัปดาห์ที่ผ่านมา",
+      "kind": "relative"
+    },
+    {
+      "text": "ในอีก 3 สัปดาห์",
+      "kind": "relative"
+    },
+    {
+      "text": "ในอีก 3 ปี",
+      "kind": "relative"
+    },
+    {
+      "text": "พรุ่งนี้",
+      "kind": "relative"
+    },
+    {
+      "text": "ในอีก 3 วัน",
+      "kind": "relative"
+    },
+    {
+      "text": "เมื่อวาน",
+      "kind": "relative"
+    },
+    {
+      "text": "ปีหน้า",
+      "kind": "relative"
+    },
+    {
+      "text": "ในอีก 1 นาที",
+      "kind": "relative"
+    },
+    {
+      "text": "5 กิกะไบต์",
+      "kind": "unit"
+    },
+    {
+      "text": "5 กิโลเมตร",
+      "kind": "unit"
+    },
+    {
+      "text": "2 เปอร์เซ็นต์",
+      "kind": "unit"
+    },
+    {
+      "text": "2 เมกะไบต์",
+      "kind": "unit"
+    },
+    {
+      "text": "5 วัน",
+      "kind": "unit"
+    },
+    {
+      "text": "5 เมตร",
+      "kind": "unit"
+    },
+    {
+      "text": "5 กิโลกรัม",
+      "kind": "unit"
+    },
+    {
+      "text": "5 นาที",
+      "kind": "unit"
+    },
+    {
+      "text": "วันจันทร์ที่ 3 มีนาคม พ.ศ. 2568",
+      "kind": "date"
+    },
+    {
+      "text": "สวิตเซอร์แลนด์",
+      "kind": "region"
+    }
+  ]
+}

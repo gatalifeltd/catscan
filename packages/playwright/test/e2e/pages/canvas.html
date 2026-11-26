@@ -1,0 +1,18 @@
+<!doctype html>
+<!-- Spec 13 fixture: text drawn into a canvas only. ?delay=1 draws "Play" and a raw key after 1 s. -->
+<html><head><meta charset="utf-8"><title>canvas</title>
+<style>body{margin:0;background:#fff}canvas{display:block}</style></head>
+<body><canvas id="game" width="800" height="400"></canvas>
+<script>
+const x = document.getElementById("game").getContext("2d");
+x.fillStyle = "#fff"; x.fillRect(0, 0, 800, 400);
+x.fillStyle = "#111"; x.font = "bold 56px Helvetica, Arial, sans-serif";
+const q = new URLSearchParams(location.search);
+const draw = () => {
+  x.fillText("GAME OVER", 60, 120);
+  x.font = "40px Helvetica, Arial, sans-serif";
+  x.fillText("Score 120", 60, 210);
+  if (q.has("delay")) { x.fillText("Play", 60, 290); x.fillText("home.title", 60, 370); }
+};
+if (q.has("delay")) setTimeout(draw, 1000); else draw();
+</script></body></html>

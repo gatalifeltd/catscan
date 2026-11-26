@@ -1,0 +1,253 @@
+{
+  "locale": "mk",
+  "icu_locale": "mk",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Словенија",
+      "kind": "region"
+    },
+    {
+      "text": "Хонгконг САР Кина",
+      "kind": "region"
+    },
+    {
+      "text": "Ерменија",
+      "kind": "region"
+    },
+    {
+      "text": "Израел",
+      "kind": "region"
+    },
+    {
+      "text": "Србија",
+      "kind": "region"
+    },
+    {
+      "text": "Холандија",
+      "kind": "region"
+    },
+    {
+      "text": "Хрватска",
+      "kind": "region"
+    },
+    {
+      "text": "Норвешка",
+      "kind": "region"
+    },
+    {
+      "text": "Етиопија",
+      "kind": "region"
+    },
+    {
+      "text": "Литванија",
+      "kind": "region"
+    },
+    {
+      "text": "Чиле",
+      "kind": "region"
+    },
+    {
+      "text": "Исланд",
+      "kind": "region"
+    },
+    {
+      "text": "арапски",
+      "kind": "language"
+    },
+    {
+      "text": "дански",
+      "kind": "language"
+    },
+    {
+      "text": "чешки",
+      "kind": "language"
+    },
+    {
+      "text": "кинески",
+      "kind": "language"
+    },
+    {
+      "text": "ерменски",
+      "kind": "language"
+    },
+    {
+      "text": "виетнамски",
+      "kind": "language"
+    },
+    {
+      "text": "јапонски",
+      "kind": "language"
+    },
+    {
+      "text": "норвешки",
+      "kind": "language"
+    },
+    {
+      "text": "хебрејски",
+      "kind": "language"
+    },
+    {
+      "text": "италијански",
+      "kind": "language"
+    },
+    {
+      "text": "Британска фунта",
+      "kind": "currency"
+    },
+    {
+      "text": "Индиска рупија",
+      "kind": "currency"
+    },
+    {
+      "text": "Јужно корејски вон",
+      "kind": "currency"
+    },
+    {
+      "text": "Индонезиска рупија",
+      "kind": "currency"
+    },
+    {
+      "text": "Руска рубља",
+      "kind": "currency"
+    },
+    {
+      "text": "Таи бат",
+      "kind": "currency"
+    },
+    {
+      "text": "јануари",
+      "kind": "month"
+    },
+    {
+      "text": "септември",
+      "kind": "month"
+    },
+    {
+      "text": "октомври",
+      "kind": "month"
+    },
+    {
+      "text": "август",
+      "kind": "month"
+    },
+    {
+      "text": "понеделник",
+      "kind": "weekday"
+    },
+    {
+      "text": "недела",
+      "kind": "weekday"
+    },
+    {
+      "text": "вторник",
+      "kind": "weekday"
+    },
+    {
+      "text": "претпладне/попладне",
+      "kind": "field"
+    },
+    {
+      "text": "година",
+      "kind": "field"
+    },
+    {
+      "text": "тримесечје",
+      "kind": "field"
+    },
+    {
+      "text": "седмица",
+      "kind": "field"
+    },
+    {
+      "text": "временска зона",
+      "kind": "field"
+    },
+    {
+      "text": "пред 1 секунда",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 5 месеци",
+      "kind": "relative"
+    },
+    {
+      "text": "за 3 тримесечја",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 5 минути",
+      "kind": "relative"
+    },
+    {
+      "text": "следниот месец",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 1 час",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 5 дена",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 5 часа",
+      "kind": "relative"
+    },
+    {
+      "text": "пред 5 години",
+      "kind": "relative"
+    },
+    {
+      "text": "минатиот месец",
+      "kind": "relative"
+    },
+    {
+      "text": "2 проценти",
+      "kind": "unit"
+    },
+    {
+      "text": "5 километри",
+      "kind": "unit"
+    },
+    {
+      "text": "5 седмици",
+      "kind": "unit"
+    },
+    {
+      "text": "2 километри",
+      "kind": "unit"
+    },
+    {
+      "text": "5 килограми",
+      "kind": "unit"
+    },
+    {
+      "text": "5 мегабајти",
+      "kind": "unit"
+    },
+    {
+      "text": "2 гигабајти",
+      "kind": "unit"
+    },
+    {
+      "text": "5 гигабајти",
+      "kind": "unit"
+    },
+    {
+      "text": "петок, 6 ноември 2026 г.",
+      "kind": "date"
+    },
+    {
+      "text": "петок, 19 јули 2024 г.",
+      "kind": "date"
+    }
+  ]
+}

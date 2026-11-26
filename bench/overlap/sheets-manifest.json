@@ -1,0 +1,123 @@
+{
+ "spec": "TODO-072",
+ "positives": {
+  "dir": "datasets/stacked-text/boxes",
+  "locales": 11,
+  "files": [
+   {
+    "path": "datasets/stacked-text/boxes/de/unlock-wait.boxes.json",
+    "bytes": 2780,
+    "sha256": "a03b1131424aececa5828b9131648da60bb559f7c0d7873f7ef8398a38a2b926"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/de/unlock-wait.png",
+    "bytes": 743153,
+    "sha256": "7927e2dd6157600d6d5987e9de05f6d22c5e5d2e668bb4c17b8e0834e26ee204"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/el/unlock-wait.boxes.json",
+    "bytes": 2935,
+    "sha256": "03c628c3cbd7a9ae010e964569dc885bc9d676d975d32b6de5fd99eca2191e57"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/el/unlock-wait.png",
+    "bytes": 751436,
+    "sha256": "c8f2480e6084215b693b5ab985906db6cd4d34805a15a804aaf351bac251a3d6"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/en/unlock-wait.boxes.json",
+    "bytes": 2749,
+    "sha256": "3990911ce349af50d2ca1752890b696bd6f70308f775d7c669f8a9eb573d2471"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/en/unlock-wait.png",
+    "bytes": 737540,
+    "sha256": "f0420346fe9aa209c486f79740228173a0782fc0cfceac352636833648e9bacf"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/es/unlock-wait.boxes.json",
+    "bytes": 2771,
+    "sha256": "b20eef5e864899cfc4583459c80b0a404dc398da2d3081901b886233dff648ef"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/es/unlock-wait.png",
+    "bytes": 747197,
+    "sha256": "7edcc488c78cb661643a217b32e63f2e1cc4f2c304685cf76b6b2220689b094b"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/fr/unlock-wait.boxes.json",
+    "bytes": 2774,
+    "sha256": "8881f5972e94abdc2ad5286d5516ba4f329e8440596480b2a3baf643c4754d24"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/fr/unlock-wait.png",
+    "bytes": 742610,
+    "sha256": "48b379c9dcc8262a6dde98491883bff087b57391949eb0337f43df09b0f34c46"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/it/unlock-wait.boxes.json",
+    "bytes": 2774,
+    "sha256": "2831c2261223fb5f7248eb540fb84757435576dd0c2ae1bbdacd948b15a267d2"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/it/unlock-wait.png",
+    "bytes": 737572,
+    "sha256": "21299cf21a75071b92270dabc4a5d20d534385dc97c13ad3e4f33711ff000801"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/pl/unlock-wait.boxes.json",
+    "bytes": 2791,
+    "sha256": "0f2bbcec6e346b1ee81a3690695b5538cf0bb2671012b6ad80f1ef31277fcec1"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/pl/unlock-wait.png",
+    "bytes": 751060,
+    "sha256": "1b28102c0c1bb2443ce228baba2b5713646509239fdc68c9d7edb50c7c13348d"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/pt-BR/unlock-wait.boxes.json",
+    "bytes": 2777,
+    "sha256": "d7b8a16a1232dae6d0fbf6db88c5696d5a9988d630b46b3f618eabaa51b1cf5e"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/pt-BR/unlock-wait.png",
+    "bytes": 742955,
+    "sha256": "f69e3e0f7d6ee0761f6dab207fce2d7e622e21a0f39277d080f789832518854e"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/ru/unlock-wait.boxes.json",
+    "bytes": 2926,
+    "sha256": "0be7aa7c902473c18c3aaf96d00e1cfbde66bfc9b4351c7adffade85358beffa"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/ru/unlock-wait.png",
+    "bytes": 743927,
+    "sha256": "c7bb70995dc0c9c4572c74b04e135a65577c1984eb9092dc4eea798a2dc8dd54"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/tr/unlock-wait.boxes.json",
+    "bytes": 2769,
+    "sha256": "cd0f105d0ee6b978bf43f91677a0855e4125ee030ba6b8f6fc7a89512a8e7dcb"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/tr/unlock-wait.png",
+    "bytes": 740430,
+    "sha256": "5164de3260f02a1802710978fe8b773ed065f3278610ef9578045129be6301bd"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/uk/unlock-wait.boxes.json",
+    "bytes": 2928,
+    "sha256": "169b249b4f54f3a0bcf504b452f1c63d956e0974f74b48e25a1322618ecb1a63"
+   },
+   {
+    "path": "datasets/stacked-text/boxes/uk/unlock-wait.png",
+    "bytes": 741590,
+    "sha256": "b2ed70f3abf9214af79a21deb82e2b1c5b22a1149919c4ecbbff5035e485ecb2"
+   }
+  ]
+ },
+ "synthetic": {
+  "generator": "bench/stacked/generate.swift",
+  "note": "drawn at run time, labels.json and images as TODO-067"
+ }
+}

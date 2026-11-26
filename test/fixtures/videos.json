@@ -1,0 +1,22 @@
+[
+  {
+    "name": "timed.mp4", "codec": "h264", "width": 720, "height": 1280, "fps": 10, "duration": 4,
+    "labels": [
+      { "text": "Tap to start", "from": 0, "to": 1.5, "x": 120, "y": 300, "size": 64 },
+      { "text": "GAME OVER", "from": 2, "to": 3.5, "x": 120, "y": 600, "size": 80 },
+      { "text": "KEY_RAW_LABEL", "from": 1, "to": 1.1, "x": 60, "y": 900, "size": 56 }
+    ]
+  },
+  {
+    "name": "hevc.mov", "codec": "hevc", "width": 720, "height": 1280, "fps": 10, "duration": 2,
+    "labels": [{ "text": "Level complete", "from": 1, "to": 2, "x": 80, "y": 500, "size": 64 }]
+  },
+  {
+    "name": "rotated.mov", "codec": "h264", "width": 720, "height": 1280, "fps": 10, "duration": 2, "rotate": 90,
+    "labels": [{ "text": "Portrait mode", "from": 0, "to": 2, "x": 80, "y": 400, "size": 72 }]
+  },
+  {
+    "name": "audio-long.mov", "codec": "h264", "width": 720, "height": 1280, "fps": 10, "duration": 2, "audio": 3.5,
+    "labels": [{ "text": "Recording ends", "from": 0, "to": 2, "x": 80, "y": 400, "size": 64 }]
+  }
+]

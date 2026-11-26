@@ -1,0 +1,6 @@
+{
+  "note": "Spec 06 D82: real truncations every gate run reports by name. text_sha256 is the SHA-256 of the element text; the string itself stays out of git.",
+  "anchors": [
+    { "id": "dnt-ru-result-toast", "app": "game-2", "locale": "ru", "screen": "result-toast", "text_sha256": "5c80948795fbf76bf551d2dfa6621eb509c418837386e77bb64b20cdc5251f38" }
+  ]
+}

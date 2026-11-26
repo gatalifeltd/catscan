@@ -1,0 +1,7 @@
+{
+  "shop": { "buy": "Buy now", "restore": "Restore purchases" },
+  "settings": { "title": "Settings" },
+  "common": { "cancel": "Cancel" },
+  "brand": "Catscan Pro",
+  "help": "Tap here to restore your purchases"
+}

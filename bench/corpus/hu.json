@@ -1,0 +1,253 @@
+{
+  "locale": "hu",
+  "icu_locale": "hu",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Olaszország",
+      "kind": "region"
+    },
+    {
+      "text": "Magyarország",
+      "kind": "region"
+    },
+    {
+      "text": "Luxemburg",
+      "kind": "region"
+    },
+    {
+      "text": "Szaúd-Arábia",
+      "kind": "region"
+    },
+    {
+      "text": "Oroszország",
+      "kind": "region"
+    },
+    {
+      "text": "Kanada",
+      "kind": "region"
+    },
+    {
+      "text": "Hollandia",
+      "kind": "region"
+    },
+    {
+      "text": "Etiópia",
+      "kind": "region"
+    },
+    {
+      "text": "Malajzia",
+      "kind": "region"
+    },
+    {
+      "text": "Dél-Korea",
+      "kind": "region"
+    },
+    {
+      "text": "Örményország",
+      "kind": "region"
+    },
+    {
+      "text": "Belgium",
+      "kind": "region"
+    },
+    {
+      "text": "vietnámi",
+      "kind": "language"
+    },
+    {
+      "text": "német",
+      "kind": "language"
+    },
+    {
+      "text": "koreai",
+      "kind": "language"
+    },
+    {
+      "text": "arab",
+      "kind": "language"
+    },
+    {
+      "text": "japán",
+      "kind": "language"
+    },
+    {
+      "text": "lengyel",
+      "kind": "language"
+    },
+    {
+      "text": "thai",
+      "kind": "language"
+    },
+    {
+      "text": "grúz",
+      "kind": "language"
+    },
+    {
+      "text": "szerb",
+      "kind": "language"
+    },
+    {
+      "text": "finn",
+      "kind": "language"
+    },
+    {
+      "text": "angol font",
+      "kind": "currency"
+    },
+    {
+      "text": "orosz rubel",
+      "kind": "currency"
+    },
+    {
+      "text": "svéd korona",
+      "kind": "currency"
+    },
+    {
+      "text": "ausztrál dollár",
+      "kind": "currency"
+    },
+    {
+      "text": "euró",
+      "kind": "currency"
+    },
+    {
+      "text": "indonéz rúpia",
+      "kind": "currency"
+    },
+    {
+      "text": "július",
+      "kind": "month"
+    },
+    {
+      "text": "január",
+      "kind": "month"
+    },
+    {
+      "text": "december",
+      "kind": "month"
+    },
+    {
+      "text": "augusztus",
+      "kind": "month"
+    },
+    {
+      "text": "szombat",
+      "kind": "weekday"
+    },
+    {
+      "text": "hétfő",
+      "kind": "weekday"
+    },
+    {
+      "text": "kedd",
+      "kind": "weekday"
+    },
+    {
+      "text": "hét napja",
+      "kind": "field"
+    },
+    {
+      "text": "negyedév",
+      "kind": "field"
+    },
+    {
+      "text": "hónap",
+      "kind": "field"
+    },
+    {
+      "text": "napszak",
+      "kind": "field"
+    },
+    {
+      "text": "időzóna",
+      "kind": "field"
+    },
+    {
+      "text": "3 perc múlva",
+      "kind": "relative"
+    },
+    {
+      "text": "előző hét",
+      "kind": "relative"
+    },
+    {
+      "text": "5 perccel ezelőtt",
+      "kind": "relative"
+    },
+    {
+      "text": "5 órával ezelőtt",
+      "kind": "relative"
+    },
+    {
+      "text": "1 órával ezelőtt",
+      "kind": "relative"
+    },
+    {
+      "text": "5 héttel ezelőtt",
+      "kind": "relative"
+    },
+    {
+      "text": "holnap",
+      "kind": "relative"
+    },
+    {
+      "text": "5 másodperccel ezelőtt",
+      "kind": "relative"
+    },
+    {
+      "text": "előző év",
+      "kind": "relative"
+    },
+    {
+      "text": "következő év",
+      "kind": "relative"
+    },
+    {
+      "text": "2 megabájt",
+      "kind": "unit"
+    },
+    {
+      "text": "5 óra",
+      "kind": "unit"
+    },
+    {
+      "text": "2 százalék",
+      "kind": "unit"
+    },
+    {
+      "text": "5 méter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 méter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabájt",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabájt",
+      "kind": "unit"
+    },
+    {
+      "text": "2 perc",
+      "kind": "unit"
+    },
+    {
+      "text": "2026. november 6., péntek",
+      "kind": "date"
+    },
+    {
+      "text": "izraeli új sékel",
+      "kind": "currency"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "locale": "hy",
+  "icu_locale": "hy",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Էստոնիա",
+      "kind": "region"
+    },
+    {
+      "text": "Պերու",
+      "kind": "region"
+    },
+    {
+      "text": "Իռլանդիա",
+      "kind": "region"
+    },
+    {
+      "text": "Թայվան",
+      "kind": "region"
+    },
+    {
+      "text": "Ավստրիա",
+      "kind": "region"
+    },
+    {
+      "text": "Սաուդյան Արաբիա",
+      "kind": "region"
+    },
+    {
+      "text": "Բելգիա",
+      "kind": "region"
+    },
+    {
+      "text": "Հարավաֆրիկյան Հանրապետություն",
+      "kind": "region"
+    },
+    {
+      "text": "Թուրքիա",
+      "kind": "region"
+    },
+    {
+      "text": "Պակիստան",
+      "kind": "region"
+    },
+    {
+      "text": "Ինդոնեզիա",
+      "kind": "region"
+    },
+    {
+      "text": "Ավստրալիա",
+      "kind": "region"
+    },
+    {
+      "text": "ռումիներեն",
+      "kind": "language"
+    },
+    {
+      "text": "թայերեն",
+      "kind": "language"
+    },
+    {
+      "text": "դանիերեն",
+      "kind": "language"
+    },
+    {
+      "text": "ռուսերեն",
+      "kind": "language"
+    },
+    {
+      "text": "ֆրանսերեն",
+      "kind": "language"
+    },
+    {
+      "text": "հունգարերեն",
+      "kind": "language"
+    },
+    {
+      "text": "պորտուգալերեն",
+      "kind": "language"
+    },
+    {
+      "text": "պարսկերեն",
+      "kind": "language"
+    },
+    {
+      "text": "վրացերեն",
+      "kind": "language"
+    },
+    {
+      "text": "գերմաներեն",
+      "kind": "language"
+    },
+    {
+      "text": "դանիական կրոն",
+      "kind": "currency"
+    },
+    {
+      "text": "շվեդական կրոն",
+      "kind": "currency"
+    },
+    {
+      "text": "հունգարական ֆորինտ",
+      "kind": "currency"
+    },
+    {
+      "text": "վիետնամական դոնգ",
+      "kind": "currency"
+    },
+    {
+      "text": "նորվեգական կրոն",
+      "kind": "currency"
+    },
+    {
+      "text": "չինական յուան",
+      "kind": "currency"
+    },
+    {
+      "text": "սեպտեմբեր",
+      "kind": "month"
+    },
+    {
+      "text": "մայիս",
+      "kind": "month"
+    },
+    {
+      "text": "փետրվար",
+      "kind": "month"
+    },
+    {
+      "text": "հունիս",
+      "kind": "month"
+    },
+    {
+      "text": "չորեքշաբթի",
+      "kind": "weekday"
+    },
+    {
+      "text": "հինգշաբթի",
+      "kind": "weekday"
+    },
+    {
+      "text": "երեքշաբթի",
+      "kind": "weekday"
+    },
+    {
+      "text": "շաբաթվա օր",
+      "kind": "field"
+    },
+    {
+      "text": "վայրկյան",
+      "kind": "field"
+    },
+    {
+      "text": "ժամային գոտի",
+      "kind": "field"
+    },
+    {
+      "text": "ամիս",
+      "kind": "field"
+    },
+    {
+      "text": "եռամսյակ",
+      "kind": "field"
+    },
+    {
+      "text": "վաղը",
+      "kind": "relative"
+    },
+    {
+      "text": "3 օրից",
+      "kind": "relative"
+    },
+    {
+      "text": "5 շաբաթ առաջ",
+      "kind": "relative"
+    },
+    {
+      "text": "երեկ",
+      "kind": "relative"
+    },
+    {
+      "text": "3 ամսից",
+      "kind": "relative"
+    },
+    {
+      "text": "1 րոպե առաջ",
+      "kind": "relative"
+    },
+    {
+      "text": "հաջորդ շաբաթ",
+      "kind": "relative"
+    },
+    {
+      "text": "3 շաբաթից",
+      "kind": "relative"
+    },
+    {
+      "text": "3 տարուց",
+      "kind": "relative"
+    },
+    {
+      "text": "3 ժամից",
+      "kind": "relative"
+    },
+    {
+      "text": "5 լիտր",
+      "kind": "unit"
+    },
+    {
+      "text": "5 օր",
+      "kind": "unit"
+    },
+    {
+      "text": "5 կիլոմետր ժամում",
+      "kind": "unit"
+    },
+    {
+      "text": "2 մեգաբայթ",
+      "kind": "unit"
+    },
+    {
+      "text": "5 րոպե",
+      "kind": "unit"
+    },
+    {
+      "text": "5 ժամ",
+      "kind": "unit"
+    },
+    {
+      "text": "2 տոկոս",
+      "kind": "unit"
+    },
+    {
+      "text": "5 մեգաբայթ",
+      "kind": "unit"
+    },
+    {
+      "text": "2025 թ. մարտի 3, երկուշաբթի",
+      "kind": "date"
+    },
+    {
+      "text": "2024 թ. հուլիսի 19, ուրբաթ",
+      "kind": "date"
+    }
+  ]
+}

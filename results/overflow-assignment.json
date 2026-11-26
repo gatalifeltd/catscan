@@ -1,0 +1,413 @@
+{
+  "todo": "TODO-044",
+  "date": "2026-11-15",
+  "scripts": [
+    "bench/truncation.js",
+    "bench/overflow-real.js"
+  ],
+  "synthetic": "test/fixtures/truncation-set.js (OVERFLOW_PER 10), drawn by test/fixtures/generate.swift",
+  "real": "datasets/truncation (343), datasets/truncation-android (192) per datasets/MANIFEST.md; every overflow flag judged by eye",
+  "arms": {
+    "d3": {
+      "build": "TODO-036 D3 (origin/main fd26d1f)",
+      "synthetic": {
+        "precision": 0.9948,
+        "recall": 0.4226,
+        "tp": 382,
+        "fp": 2,
+        "fn": 522,
+        "start_aligned": {
+          "precision": 0.9922,
+          "recall": 0.3923,
+          "tp": 255,
+          "fp": 2,
+          "fn": 395
+        },
+        "centered": {
+          "precision": 0.9845,
+          "recall": 0.5,
+          "tp": 127,
+          "fp": 2,
+          "fn": 127
+        },
+        "found_by_case": {
+          "over-clip": {
+            "screens": 130,
+            "flagged": 125
+          },
+          "over-visible": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "over-card": {
+            "screens": 130,
+            "flagged": 0
+          },
+          "over-card-text": {
+            "screens": 130,
+            "flagged": 0
+          },
+          "over-icon": {
+            "screens": 130,
+            "flagged": 2
+          },
+          "over-center-icon": {
+            "screens": 127,
+            "flagged": 2
+          },
+          "overhang-card": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "d68": {
+            "screens": 4,
+            "flagged": 0
+          }
+        },
+        "with_boxes": {
+          "precision": 1,
+          "recall": 0.9875,
+          "tp": 474,
+          "fp": 0,
+          "fn": 6
+        },
+        "without_boxes": {
+          "precision": 1,
+          "recall": 0.8771,
+          "tp": 421,
+          "fp": 0,
+          "fn": 59
+        }
+      },
+      "real": {
+        "truncation": {
+          "screens": 343,
+          "flagged_screens": 3,
+          "flags": 3
+        },
+        "truncation-android": {
+          "screens": 192,
+          "flagged_screens": 1,
+          "flags": 1
+        },
+        "flags": 4,
+        "false_flags": 4,
+        "false_flags_per_100": 0.75
+      }
+    },
+    "filtered": {
+      "build": "text-filtered assignment (D1)",
+      "synthetic": {
+        "precision": 0.9978,
+        "recall": 0.9812,
+        "tp": 887,
+        "fp": 2,
+        "fn": 17,
+        "start_aligned": {
+          "precision": 0.9969,
+          "recall": 0.98,
+          "tp": 637,
+          "fp": 2,
+          "fn": 13
+        },
+        "centered": {
+          "precision": 0.9921,
+          "recall": 0.9843,
+          "tp": 250,
+          "fp": 2,
+          "fn": 4
+        },
+        "found_by_case": {
+          "over-clip": {
+            "screens": 130,
+            "flagged": 125
+          },
+          "over-visible": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "over-card": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-card-text": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-icon": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center-icon": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang-card": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "d68": {
+            "screens": 4,
+            "flagged": 0
+          }
+        },
+        "with_boxes": {
+          "precision": 1,
+          "recall": 0.9875,
+          "tp": 474,
+          "fp": 0,
+          "fn": 6
+        },
+        "without_boxes": {
+          "precision": 1,
+          "recall": 0.8771,
+          "tp": 421,
+          "fp": 0,
+          "fn": 59
+        }
+      },
+      "real": {
+        "truncation": {
+          "screens": 343,
+          "flagged_screens": 8,
+          "flags": 8
+        },
+        "truncation-android": {
+          "screens": 192,
+          "flagged_screens": 8,
+          "flags": 8
+        },
+        "flags": 16,
+        "false_flags": 16,
+        "false_flags_per_100": 2.99
+      }
+    },
+    "trim": {
+      "build": "text-filtered + symbol trim",
+      "synthetic": {
+        "precision": 0.9977,
+        "recall": 0.979,
+        "tp": 885,
+        "fp": 2,
+        "fn": 19,
+        "start_aligned": {
+          "precision": 0.9969,
+          "recall": 0.9769,
+          "tp": 635,
+          "fp": 2,
+          "fn": 15
+        },
+        "centered": {
+          "precision": 0.9921,
+          "recall": 0.9843,
+          "tp": 250,
+          "fp": 2,
+          "fn": 4
+        },
+        "found_by_case": {
+          "over-clip": {
+            "screens": 130,
+            "flagged": 125
+          },
+          "over-visible": {
+            "screens": 130,
+            "flagged": 126
+          },
+          "over-center": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "over-card": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-card-text": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-icon": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center-icon": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang-card": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "d68": {
+            "screens": 4,
+            "flagged": 0
+          }
+        },
+        "with_boxes": {
+          "precision": 1,
+          "recall": 0.9875,
+          "tp": 474,
+          "fp": 0,
+          "fn": 6
+        },
+        "without_boxes": {
+          "precision": 1,
+          "recall": 0.8771,
+          "tp": 421,
+          "fp": 0,
+          "fn": 59
+        }
+      },
+      "real": {
+        "truncation": {
+          "screens": 343,
+          "flagged_screens": 1,
+          "flags": 1
+        },
+        "truncation-android": {
+          "screens": 192,
+          "flagged_screens": 2,
+          "flags": 2
+        },
+        "flags": 3,
+        "false_flags": 3,
+        "false_flags_per_100": 0.56
+      }
+    },
+    "shipped": {
+      "build": "text-filtered + symbol trim keeping the element text own end symbols, offscreen masked; v0.29.0 merged with v0.28.0 (34b2c23)",
+      "synthetic": {
+        "precision": 0.9978,
+        "recall": 0.9812,
+        "tp": 887,
+        "fp": 2,
+        "fn": 17,
+        "start_aligned": {
+          "precision": 0.9969,
+          "recall": 0.98,
+          "tp": 637,
+          "fp": 2,
+          "fn": 13
+        },
+        "centered": {
+          "precision": 0.9921,
+          "recall": 0.9843,
+          "tp": 250,
+          "fp": 2,
+          "fn": 4
+        },
+        "found_by_case": {
+          "over-clip": {
+            "screens": 130,
+            "flagged": 125
+          },
+          "over-visible": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "over-card": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-card-text": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-icon": {
+            "screens": 130,
+            "flagged": 128
+          },
+          "over-center-icon": {
+            "screens": 127,
+            "flagged": 125
+          },
+          "overhang-card": {
+            "screens": 130,
+            "flagged": 1
+          },
+          "d68": {
+            "screens": 4,
+            "flagged": 0
+          }
+        },
+        "with_boxes": {
+          "precision": 1,
+          "recall": 0.9875,
+          "tp": 474,
+          "fp": 0,
+          "fn": 6
+        },
+        "without_boxes": {
+          "precision": 1,
+          "recall": 0.8771,
+          "tp": 421,
+          "fp": 0,
+          "fn": 59
+        }
+      },
+      "real": {
+        "truncation": {
+          "screens": 343,
+          "flagged_screens": 1,
+          "flags": 1
+        },
+        "truncation-android": {
+          "screens": 192,
+          "flagged_screens": 2,
+          "flags": 2
+        },
+        "flags": 3,
+        "false_flags": 3,
+        "false_flags_per_100": 0.56
+      },
+      "tools": {
+        "catscan": "0.29.0",
+        "macos": "27.2.1 (26B131)",
+        "vision_revision": 3,
+        "node": "v26.13.0",
+        "generator": "test/fixtures/generate.swift"
+      },
+      "real_tools": {
+        "catscan": "0.29.0",
+        "macos": "27.2.1 (26B131)",
+        "vision_revision": 3,
+        "node": "v26.13.0"
+      }
+    }
+  },
+  "tools": {
+    "catscan": "0.27.0",
+    "macos": "27.2.1 (26B131)",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "generator": "test/fixtures/generate.swift"
+  },
+  "found_by_case_note": "arms d3, filtered and trim count a screen flagged on a finding of any reason; arm shipped counts overflow findings only (review fix)"
+}

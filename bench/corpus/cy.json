@@ -1,0 +1,253 @@
+{
+  "locale": "cy",
+  "icu_locale": "cy",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Lithwania",
+      "kind": "region"
+    },
+    {
+      "text": "Slofenia",
+      "kind": "region"
+    },
+    {
+      "text": "Y Ffindir",
+      "kind": "region"
+    },
+    {
+      "text": "Iwerddon",
+      "kind": "region"
+    },
+    {
+      "text": "Yr Unol Daleithiau",
+      "kind": "region"
+    },
+    {
+      "text": "Estonia",
+      "kind": "region"
+    },
+    {
+      "text": "Croatia",
+      "kind": "region"
+    },
+    {
+      "text": "Lwcsembwrg",
+      "kind": "region"
+    },
+    {
+      "text": "Rwmania",
+      "kind": "region"
+    },
+    {
+      "text": "Gwlad Groeg",
+      "kind": "region"
+    },
+    {
+      "text": "Gwlad Thai",
+      "kind": "region"
+    },
+    {
+      "text": "Taiwan",
+      "kind": "region"
+    },
+    {
+      "text": "Maleieg",
+      "kind": "language"
+    },
+    {
+      "text": "Japaneeg",
+      "kind": "language"
+    },
+    {
+      "text": "Rwmaneg",
+      "kind": "language"
+    },
+    {
+      "text": "Eidaleg",
+      "kind": "language"
+    },
+    {
+      "text": "Hindi",
+      "kind": "language"
+    },
+    {
+      "text": "Indoneseg",
+      "kind": "language"
+    },
+    {
+      "text": "Serbeg",
+      "kind": "language"
+    },
+    {
+      "text": "Wcreineg",
+      "kind": "language"
+    },
+    {
+      "text": "Rwseg",
+      "kind": "language"
+    },
+    {
+      "text": "Iseldireg",
+      "kind": "language"
+    },
+    {
+      "text": "Won De Corea",
+      "kind": "currency"
+    },
+    {
+      "text": "Yuan Tsieina",
+      "kind": "currency"
+    },
+    {
+      "text": "Rwpî India",
+      "kind": "currency"
+    },
+    {
+      "text": "Zloty Gwlad Pwyl",
+      "kind": "currency"
+    },
+    {
+      "text": "Yen Japan",
+      "kind": "currency"
+    },
+    {
+      "text": "Fforint Hwngari",
+      "kind": "currency"
+    },
+    {
+      "text": "Mawrth",
+      "kind": "month"
+    },
+    {
+      "text": "Mehefin",
+      "kind": "month"
+    },
+    {
+      "text": "Hydref",
+      "kind": "month"
+    },
+    {
+      "text": "Rhagfyr",
+      "kind": "month"
+    },
+    {
+      "text": "Dydd Llun",
+      "kind": "weekday"
+    },
+    {
+      "text": "Dydd Sadwrn",
+      "kind": "weekday"
+    },
+    {
+      "text": "Dydd Sul",
+      "kind": "weekday"
+    },
+    {
+      "text": "eiliad",
+      "kind": "field"
+    },
+    {
+      "text": "diwrnod",
+      "kind": "field"
+    },
+    {
+      "text": "wythnos",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "munud",
+      "kind": "field"
+    },
+    {
+      "text": "chwarter nesaf",
+      "kind": "relative"
+    },
+    {
+      "text": "llynedd",
+      "kind": "relative"
+    },
+    {
+      "text": "5 awr yn ôl",
+      "kind": "relative"
+    },
+    {
+      "text": "blwyddyn nesaf",
+      "kind": "relative"
+    },
+    {
+      "text": "yfory",
+      "kind": "relative"
+    },
+    {
+      "text": "5 o chwarteri yn ôl",
+      "kind": "relative"
+    },
+    {
+      "text": "mis nesaf",
+      "kind": "relative"
+    },
+    {
+      "text": "mis diwethaf",
+      "kind": "relative"
+    },
+    {
+      "text": "ymhen 3 awr",
+      "kind": "relative"
+    },
+    {
+      "text": "ymhen 3 chwarter",
+      "kind": "relative"
+    },
+    {
+      "text": "5 y cant",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabeit",
+      "kind": "unit"
+    },
+    {
+      "text": "5 cilometr yr awr",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gradd Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litr",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gilometr yr awr",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kg",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabeit",
+      "kind": "unit"
+    },
+    {
+      "text": "Dydd Gwener, 19 Gorffennaf 2024",
+      "kind": "date"
+    },
+    {
+      "text": "Dydd Gwener, 6 Tachwedd 2026",
+      "kind": "date"
+    }
+  ]
+}

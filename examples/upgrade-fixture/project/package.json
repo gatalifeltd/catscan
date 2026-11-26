@@ -1,0 +1,10 @@
+{
+  "name": "upgrade-fixture",
+  "private": true,
+  "scripts": {
+    "check:ui": "catscan check shots --present Menu --results out/ui.json"
+  },
+  "devDependencies": {
+    "@catscan/cli": "0.1.0"
+  }
+}

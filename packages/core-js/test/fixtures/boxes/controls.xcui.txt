@@ -1,0 +1,16 @@
+Attributes: Application, 0x10450a8f0, pid: 41862, label: 'Shop'
+Element subtree:
+ →Application, 0x10450a8f0, pid: 41862, label: 'Shop'
+    Window (Main), 0x10450ad10, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x10450ae30, {{0.0, 0.0}, {393.0, 852.0}}
+        ScrollView, 0x10450ae31, {{0.0, 100.0}, {393.0, 600.0}}
+          StaticText, 0x10450ae32, {{16.0, 120.0}, {200.0, 20.0}}, label: 'Lieferadresse'
+          CheckBox, 0x10450ae33, {{16.0, 150.0}, {24.0, 24.0}}, identifier: 'terms', label: 'Bedingungen'
+          Stepper, 0x10450ae34, {{250.0, 150.0}, {94.0, 32.0}}, identifier: 'qty'
+          SearchField, 0x10450ae35, {{16.0, 200.0}, {361.0, 36.0}}, identifier: 'search', placeholderValue: 'Suchen'
+          SecureTextField, 0x10450ae36, {{16.0, 250.0}, {361.0, 36.0}}, identifier: 'pin'
+          TextView, 0x10450ae37, {{16.0, 300.0}, {361.0, 80.0}}, value: Lange Beschreibung
+        StaticText, 0x10450ae38, {{16.0, 720.0}, {361.0, 40.0}}, label: 'Gesamtsumme inklusive Versand'
+        Toolbar, 0x10450ae39, {{0.0, 740.0}, {393.0, 49.0}}, identifier: 'footer'
+          Button, 0x10450ae3a, {{16.0, 745.0}, {361.0, 40.0}}, identifier: 'buy', label: 'Kaufen'
+      Keyboard, 0x10450ae3b, {{0.0, 800.0}, {393.0, 52.0}}

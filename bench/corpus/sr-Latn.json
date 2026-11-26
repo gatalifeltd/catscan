@@ -1,0 +1,253 @@
+{
+  "locale": "sr-Latn",
+  "icu_locale": "sr-Latn",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Rusija",
+      "kind": "region"
+    },
+    {
+      "text": "Iran",
+      "kind": "region"
+    },
+    {
+      "text": "Holandija",
+      "kind": "region"
+    },
+    {
+      "text": "Rumunija",
+      "kind": "region"
+    },
+    {
+      "text": "Egipat",
+      "kind": "region"
+    },
+    {
+      "text": "Srbija",
+      "kind": "region"
+    },
+    {
+      "text": "Irska",
+      "kind": "region"
+    },
+    {
+      "text": "Grčka",
+      "kind": "region"
+    },
+    {
+      "text": "Indija",
+      "kind": "region"
+    },
+    {
+      "text": "Island",
+      "kind": "region"
+    },
+    {
+      "text": "Poljska",
+      "kind": "region"
+    },
+    {
+      "text": "Japan",
+      "kind": "region"
+    },
+    {
+      "text": "kineski",
+      "kind": "language"
+    },
+    {
+      "text": "hrvatski",
+      "kind": "language"
+    },
+    {
+      "text": "mađarski",
+      "kind": "language"
+    },
+    {
+      "text": "grčki",
+      "kind": "language"
+    },
+    {
+      "text": "ruski",
+      "kind": "language"
+    },
+    {
+      "text": "gruzijski",
+      "kind": "language"
+    },
+    {
+      "text": "arapski",
+      "kind": "language"
+    },
+    {
+      "text": "bugarski",
+      "kind": "language"
+    },
+    {
+      "text": "švedski",
+      "kind": "language"
+    },
+    {
+      "text": "korejski",
+      "kind": "language"
+    },
+    {
+      "text": "britanska funta",
+      "kind": "currency"
+    },
+    {
+      "text": "švajcarski franak",
+      "kind": "currency"
+    },
+    {
+      "text": "brazilski real",
+      "kind": "currency"
+    },
+    {
+      "text": "kanadski dolar",
+      "kind": "currency"
+    },
+    {
+      "text": "indijska rupija",
+      "kind": "currency"
+    },
+    {
+      "text": "vijetnamski dong",
+      "kind": "currency"
+    },
+    {
+      "text": "novembar",
+      "kind": "month"
+    },
+    {
+      "text": "april",
+      "kind": "month"
+    },
+    {
+      "text": "mart",
+      "kind": "month"
+    },
+    {
+      "text": "februar",
+      "kind": "month"
+    },
+    {
+      "text": "utorak",
+      "kind": "weekday"
+    },
+    {
+      "text": "četvrtak",
+      "kind": "weekday"
+    },
+    {
+      "text": "sreda",
+      "kind": "weekday"
+    },
+    {
+      "text": "sekund",
+      "kind": "field"
+    },
+    {
+      "text": "godina",
+      "kind": "field"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "nedelja",
+      "kind": "field"
+    },
+    {
+      "text": "mesec",
+      "kind": "field"
+    },
+    {
+      "text": "za 3 godine",
+      "kind": "relative"
+    },
+    {
+      "text": "pre 1 sata",
+      "kind": "relative"
+    },
+    {
+      "text": "prošle nedelje",
+      "kind": "relative"
+    },
+    {
+      "text": "sutra",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 nedelje",
+      "kind": "relative"
+    },
+    {
+      "text": "prošle godine",
+      "kind": "relative"
+    },
+    {
+      "text": "sledeće nedelje",
+      "kind": "relative"
+    },
+    {
+      "text": "prošlog kvartala",
+      "kind": "relative"
+    },
+    {
+      "text": "pre 5 sati",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 sata",
+      "kind": "relative"
+    },
+    {
+      "text": "2 nedelje",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilograma",
+      "kind": "unit"
+    },
+    {
+      "text": "2 procenata",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litara",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procenata",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometra na sat",
+      "kind": "unit"
+    },
+    {
+      "text": "5 dana",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilograma",
+      "kind": "unit"
+    },
+    {
+      "text": "petak, 19. jul 2024.",
+      "kind": "date"
+    },
+    {
+      "text": "Tajland",
+      "kind": "region"
+    }
+  ]
+}

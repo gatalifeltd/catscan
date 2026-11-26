@@ -1,0 +1,253 @@
+{
+  "locale": "bs",
+  "icu_locale": "bs",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Rusija",
+      "kind": "region"
+    },
+    {
+      "text": "Filipini",
+      "kind": "region"
+    },
+    {
+      "text": "Kina",
+      "kind": "region"
+    },
+    {
+      "text": "Nizozemska",
+      "kind": "region"
+    },
+    {
+      "text": "Island",
+      "kind": "region"
+    },
+    {
+      "text": "Kenija",
+      "kind": "region"
+    },
+    {
+      "text": "Ujedinjeno Kraljevstvo",
+      "kind": "region"
+    },
+    {
+      "text": "Indonezija",
+      "kind": "region"
+    },
+    {
+      "text": "Malezija",
+      "kind": "region"
+    },
+    {
+      "text": "Ukrajina",
+      "kind": "region"
+    },
+    {
+      "text": "Armenija",
+      "kind": "region"
+    },
+    {
+      "text": "Litvanija",
+      "kind": "region"
+    },
+    {
+      "text": "engleski",
+      "kind": "language"
+    },
+    {
+      "text": "finski",
+      "kind": "language"
+    },
+    {
+      "text": "poljski",
+      "kind": "language"
+    },
+    {
+      "text": "danski",
+      "kind": "language"
+    },
+    {
+      "text": "španski",
+      "kind": "language"
+    },
+    {
+      "text": "korejski",
+      "kind": "language"
+    },
+    {
+      "text": "ukrajinski",
+      "kind": "language"
+    },
+    {
+      "text": "perzijski",
+      "kind": "language"
+    },
+    {
+      "text": "srpski",
+      "kind": "language"
+    },
+    {
+      "text": "italijanski",
+      "kind": "language"
+    },
+    {
+      "text": "Izraelski novi šekel",
+      "kind": "currency"
+    },
+    {
+      "text": "Ruska rublja",
+      "kind": "currency"
+    },
+    {
+      "text": "Češka kruna",
+      "kind": "currency"
+    },
+    {
+      "text": "Japanski jen",
+      "kind": "currency"
+    },
+    {
+      "text": "Tajlandski baht",
+      "kind": "currency"
+    },
+    {
+      "text": "Indonežanska rupija",
+      "kind": "currency"
+    },
+    {
+      "text": "mart",
+      "kind": "month"
+    },
+    {
+      "text": "februar",
+      "kind": "month"
+    },
+    {
+      "text": "januar",
+      "kind": "month"
+    },
+    {
+      "text": "juli",
+      "kind": "month"
+    },
+    {
+      "text": "petak",
+      "kind": "weekday"
+    },
+    {
+      "text": "četvrtak",
+      "kind": "weekday"
+    },
+    {
+      "text": "subota",
+      "kind": "weekday"
+    },
+    {
+      "text": "mjesec",
+      "kind": "field"
+    },
+    {
+      "text": "sedmica",
+      "kind": "field"
+    },
+    {
+      "text": "vremenska zona",
+      "kind": "field"
+    },
+    {
+      "text": "prijepodne/poslijepodne",
+      "kind": "field"
+    },
+    {
+      "text": "godina",
+      "kind": "field"
+    },
+    {
+      "text": "sljedeći kvartal",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 5 sekundi",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 sekunde",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 5 kvartala",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 sedmice",
+      "kind": "relative"
+    },
+    {
+      "text": "prije 5 sati",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 dana",
+      "kind": "relative"
+    },
+    {
+      "text": "posljednji kvartal",
+      "kind": "relative"
+    },
+    {
+      "text": "sljedeće sedmice",
+      "kind": "relative"
+    },
+    {
+      "text": "sutra",
+      "kind": "relative"
+    },
+    {
+      "text": "5 gigabajta",
+      "kind": "unit"
+    },
+    {
+      "text": "2 stepena Celzijusa",
+      "kind": "unit"
+    },
+    {
+      "text": "2 minute",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometara na sat",
+      "kind": "unit"
+    },
+    {
+      "text": "5 stepeni Celzijusa",
+      "kind": "unit"
+    },
+    {
+      "text": "2 sata",
+      "kind": "unit"
+    },
+    {
+      "text": "2 sedmice",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabajta",
+      "kind": "unit"
+    },
+    {
+      "text": "april",
+      "kind": "month"
+    },
+    {
+      "text": "Novi Zeland",
+      "kind": "region"
+    }
+  ]
+}

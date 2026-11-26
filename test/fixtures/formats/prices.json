@@ -1,0 +1,4 @@
+[
+  {"product": "pro.yearly", "price": "39.99", "currency": "EUR", "period": "P1Y", "trial": "P1W"},
+  {"product": "pro.monthly", "price": "7.99", "currency": "EUR", "period": "P1M", "trial": null}
+]

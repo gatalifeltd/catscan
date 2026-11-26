@@ -1,0 +1,15 @@
+name: Feature request
+description: A check, an option or an integration catscan does not have yet.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What you need
+      description: The check or behavior, and the screens or pipeline it is for.
+    validations:
+      required: true
+  - type: textarea
+    id: today
+    attributes:
+      label: What you do today instead

@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: Apache-2.0
+// Copyright 2026 GATALIFE LTD
+// The same strings as ../en.json, kept in TypeScript (TODO-092).
+import type { Messages } from './types';
+
+export default {
+  home: {
+    title: 'Welcome back, {name}!',
+    cta: `Start your free trial`,
+    items: ['First item here', "Second item here"],
+  },
+  greeting: 'Hello {{user}}, good morning',
+  order: 'Order {0} has shipped',
+  cart_one: '{{count}} item in your cart',
+  'cart_other': "{{count}} items in your cart",
+  sale: 'Save 50%% on everything',
+  price: 'Total price: %.2f euros',
+  files: '{count, plural, one {# file selected} other {# files selected}}',
+  mixed: '<b>Bold offer</b> ends <1>tonight</1><br/>Shop now please',
+  inbox: '{gender, select, female {{n, plural, one {She has one message} other {She has # messages}}} other {{n, plural, one {They have one message} other {They have # messages}}}}',
+  ['braces']: 'Use {curly braces} with care',
+  short: 'OK',
+} as const satisfies Messages;

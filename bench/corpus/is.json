@@ -1,0 +1,253 @@
+{
+  "locale": "is",
+  "icu_locale": "is",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Ítalía",
+      "kind": "region"
+    },
+    {
+      "text": "Japan",
+      "kind": "region"
+    },
+    {
+      "text": "Sádi-Arabía",
+      "kind": "region"
+    },
+    {
+      "text": "Brasilía",
+      "kind": "region"
+    },
+    {
+      "text": "Úkraína",
+      "kind": "region"
+    },
+    {
+      "text": "Ísrael",
+      "kind": "region"
+    },
+    {
+      "text": "Kanada",
+      "kind": "region"
+    },
+    {
+      "text": "Pakistan",
+      "kind": "region"
+    },
+    {
+      "text": "Slóvakía",
+      "kind": "region"
+    },
+    {
+      "text": "Íran",
+      "kind": "region"
+    },
+    {
+      "text": "Frakkland",
+      "kind": "region"
+    },
+    {
+      "text": "Bretland",
+      "kind": "region"
+    },
+    {
+      "text": "hebreska",
+      "kind": "language"
+    },
+    {
+      "text": "þýska",
+      "kind": "language"
+    },
+    {
+      "text": "indónesíska",
+      "kind": "language"
+    },
+    {
+      "text": "kóreska",
+      "kind": "language"
+    },
+    {
+      "text": "pólska",
+      "kind": "language"
+    },
+    {
+      "text": "sænska",
+      "kind": "language"
+    },
+    {
+      "text": "ítalska",
+      "kind": "language"
+    },
+    {
+      "text": "armenska",
+      "kind": "language"
+    },
+    {
+      "text": "taílenska",
+      "kind": "language"
+    },
+    {
+      "text": "serbneska",
+      "kind": "language"
+    },
+    {
+      "text": "ungversk fórinta",
+      "kind": "currency"
+    },
+    {
+      "text": "sterlingspund",
+      "kind": "currency"
+    },
+    {
+      "text": "norsk króna",
+      "kind": "currency"
+    },
+    {
+      "text": "dönsk króna",
+      "kind": "currency"
+    },
+    {
+      "text": "mexíkóskur pesi",
+      "kind": "currency"
+    },
+    {
+      "text": "svissneskur franki",
+      "kind": "currency"
+    },
+    {
+      "text": "september",
+      "kind": "month"
+    },
+    {
+      "text": "mars",
+      "kind": "month"
+    },
+    {
+      "text": "desember",
+      "kind": "month"
+    },
+    {
+      "text": "febrúar",
+      "kind": "month"
+    },
+    {
+      "text": "sunnudagur",
+      "kind": "weekday"
+    },
+    {
+      "text": "laugardagur",
+      "kind": "weekday"
+    },
+    {
+      "text": "fimmtudagur",
+      "kind": "weekday"
+    },
+    {
+      "text": "f.h./e.h.",
+      "kind": "field"
+    },
+    {
+      "text": "sekúnda",
+      "kind": "field"
+    },
+    {
+      "text": "tímabelti",
+      "kind": "field"
+    },
+    {
+      "text": "klukkustund",
+      "kind": "field"
+    },
+    {
+      "text": "tímabil",
+      "kind": "field"
+    },
+    {
+      "text": "eftir 1 sekúndu",
+      "kind": "relative"
+    },
+    {
+      "text": "eftir 1 mínútu",
+      "kind": "relative"
+    },
+    {
+      "text": "fyrir 1 mínútu",
+      "kind": "relative"
+    },
+    {
+      "text": "fyrir 5 mánuðum",
+      "kind": "relative"
+    },
+    {
+      "text": "eftir 3 ársfjórðunga",
+      "kind": "relative"
+    },
+    {
+      "text": "fyrir 5 vikum",
+      "kind": "relative"
+    },
+    {
+      "text": "síðasti ársfjórðungur",
+      "kind": "relative"
+    },
+    {
+      "text": "fyrir 5 mínútum",
+      "kind": "relative"
+    },
+    {
+      "text": "fyrir 1 sekúndu",
+      "kind": "relative"
+    },
+    {
+      "text": "eftir 3 mánuði",
+      "kind": "relative"
+    },
+    {
+      "text": "5 vikur",
+      "kind": "unit"
+    },
+    {
+      "text": "5 mínútur",
+      "kind": "unit"
+    },
+    {
+      "text": "2 mánuðir",
+      "kind": "unit"
+    },
+    {
+      "text": "2 mínútur",
+      "kind": "unit"
+    },
+    {
+      "text": "5 prósent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 dagar",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabæti",
+      "kind": "unit"
+    },
+    {
+      "text": "5 mánuðir",
+      "kind": "unit"
+    },
+    {
+      "text": "föstudagur, 19. júlí 2024",
+      "kind": "date"
+    },
+    {
+      "text": "föstudagur, 6. nóvember 2026",
+      "kind": "date"
+    }
+  ]
+}

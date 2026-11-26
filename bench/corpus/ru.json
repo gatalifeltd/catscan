@@ -1,0 +1,253 @@
+{
+  "locale": "ru",
+  "icu_locale": "ru",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Украина",
+      "kind": "region"
+    },
+    {
+      "text": "Индонезия",
+      "kind": "region"
+    },
+    {
+      "text": "Пакистан",
+      "kind": "region"
+    },
+    {
+      "text": "Нидерланды",
+      "kind": "region"
+    },
+    {
+      "text": "Латвия",
+      "kind": "region"
+    },
+    {
+      "text": "Иран",
+      "kind": "region"
+    },
+    {
+      "text": "Израиль",
+      "kind": "region"
+    },
+    {
+      "text": "Малайзия",
+      "kind": "region"
+    },
+    {
+      "text": "Исландия",
+      "kind": "region"
+    },
+    {
+      "text": "Эстония",
+      "kind": "region"
+    },
+    {
+      "text": "Южно-Африканская Республика",
+      "kind": "region"
+    },
+    {
+      "text": "Испания",
+      "kind": "region"
+    },
+    {
+      "text": "английский",
+      "kind": "language"
+    },
+    {
+      "text": "турецкий",
+      "kind": "language"
+    },
+    {
+      "text": "болгарский",
+      "kind": "language"
+    },
+    {
+      "text": "маратхи",
+      "kind": "language"
+    },
+    {
+      "text": "армянский",
+      "kind": "language"
+    },
+    {
+      "text": "грузинский",
+      "kind": "language"
+    },
+    {
+      "text": "шведский",
+      "kind": "language"
+    },
+    {
+      "text": "тайский",
+      "kind": "language"
+    },
+    {
+      "text": "хинди",
+      "kind": "language"
+    },
+    {
+      "text": "вьетнамский",
+      "kind": "language"
+    },
+    {
+      "text": "турецкая лира",
+      "kind": "currency"
+    },
+    {
+      "text": "индонезийская рупия",
+      "kind": "currency"
+    },
+    {
+      "text": "доллар США",
+      "kind": "currency"
+    },
+    {
+      "text": "южнокорейская вона",
+      "kind": "currency"
+    },
+    {
+      "text": "норвежская крона",
+      "kind": "currency"
+    },
+    {
+      "text": "польский злотый",
+      "kind": "currency"
+    },
+    {
+      "text": "декабрь",
+      "kind": "month"
+    },
+    {
+      "text": "сентябрь",
+      "kind": "month"
+    },
+    {
+      "text": "ноябрь",
+      "kind": "month"
+    },
+    {
+      "text": "апрель",
+      "kind": "month"
+    },
+    {
+      "text": "вторник",
+      "kind": "weekday"
+    },
+    {
+      "text": "понедельник",
+      "kind": "weekday"
+    },
+    {
+      "text": "пятница",
+      "kind": "weekday"
+    },
+    {
+      "text": "квартал",
+      "kind": "field"
+    },
+    {
+      "text": "день недели",
+      "kind": "field"
+    },
+    {
+      "text": "неделя",
+      "kind": "field"
+    },
+    {
+      "text": "секунда",
+      "kind": "field"
+    },
+    {
+      "text": "минута",
+      "kind": "field"
+    },
+    {
+      "text": "5 часов назад",
+      "kind": "relative"
+    },
+    {
+      "text": "через 1 час",
+      "kind": "relative"
+    },
+    {
+      "text": "на следующей неделе",
+      "kind": "relative"
+    },
+    {
+      "text": "в прошлом году",
+      "kind": "relative"
+    },
+    {
+      "text": "5 секунд назад",
+      "kind": "relative"
+    },
+    {
+      "text": "в следующем месяце",
+      "kind": "relative"
+    },
+    {
+      "text": "1 час назад",
+      "kind": "relative"
+    },
+    {
+      "text": "через 3 часа",
+      "kind": "relative"
+    },
+    {
+      "text": "в следующем году",
+      "kind": "relative"
+    },
+    {
+      "text": "в прошлом месяце",
+      "kind": "relative"
+    },
+    {
+      "text": "2 гигабайта",
+      "kind": "unit"
+    },
+    {
+      "text": "5 мегабайт",
+      "kind": "unit"
+    },
+    {
+      "text": "5 килограмм",
+      "kind": "unit"
+    },
+    {
+      "text": "5 литров",
+      "kind": "unit"
+    },
+    {
+      "text": "5 месяцев",
+      "kind": "unit"
+    },
+    {
+      "text": "5 метров",
+      "kind": "unit"
+    },
+    {
+      "text": "5 процентов",
+      "kind": "unit"
+    },
+    {
+      "text": "2 метра",
+      "kind": "unit"
+    },
+    {
+      "text": "японская иена",
+      "kind": "currency"
+    },
+    {
+      "text": "индонезийский",
+      "kind": "language"
+    }
+  ]
+}

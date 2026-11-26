@@ -1,0 +1,253 @@
+{
+  "locale": "lv",
+  "icu_locale": "lv",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Austrālija",
+      "kind": "region"
+    },
+    {
+      "text": "Indonēzija",
+      "kind": "region"
+    },
+    {
+      "text": "Turcija",
+      "kind": "region"
+    },
+    {
+      "text": "Meksika",
+      "kind": "region"
+    },
+    {
+      "text": "Horvātija",
+      "kind": "region"
+    },
+    {
+      "text": "Norvēģija",
+      "kind": "region"
+    },
+    {
+      "text": "Taizeme",
+      "kind": "region"
+    },
+    {
+      "text": "Armēnija",
+      "kind": "region"
+    },
+    {
+      "text": "Singapūra",
+      "kind": "region"
+    },
+    {
+      "text": "Etiopija",
+      "kind": "region"
+    },
+    {
+      "text": "Peru",
+      "kind": "region"
+    },
+    {
+      "text": "Nigērija",
+      "kind": "region"
+    },
+    {
+      "text": "turku",
+      "kind": "language"
+    },
+    {
+      "text": "angļu",
+      "kind": "language"
+    },
+    {
+      "text": "ungāru",
+      "kind": "language"
+    },
+    {
+      "text": "dāņu",
+      "kind": "language"
+    },
+    {
+      "text": "portugāļu",
+      "kind": "language"
+    },
+    {
+      "text": "malajiešu",
+      "kind": "language"
+    },
+    {
+      "text": "arābu",
+      "kind": "language"
+    },
+    {
+      "text": "krievu",
+      "kind": "language"
+    },
+    {
+      "text": "korejiešu",
+      "kind": "language"
+    },
+    {
+      "text": "gruzīnu",
+      "kind": "language"
+    },
+    {
+      "text": "Dānijas krona",
+      "kind": "currency"
+    },
+    {
+      "text": "Kanādas dolārs",
+      "kind": "currency"
+    },
+    {
+      "text": "Izraēlas šekelis",
+      "kind": "currency"
+    },
+    {
+      "text": "Lielbritānijas mārciņa",
+      "kind": "currency"
+    },
+    {
+      "text": "Japānas jena",
+      "kind": "currency"
+    },
+    {
+      "text": "Čehijas krona",
+      "kind": "currency"
+    },
+    {
+      "text": "februāris",
+      "kind": "month"
+    },
+    {
+      "text": "oktobris",
+      "kind": "month"
+    },
+    {
+      "text": "decembris",
+      "kind": "month"
+    },
+    {
+      "text": "jūlijs",
+      "kind": "month"
+    },
+    {
+      "text": "Svētdiena",
+      "kind": "weekday"
+    },
+    {
+      "text": "Pirmdiena",
+      "kind": "weekday"
+    },
+    {
+      "text": "Sestdiena",
+      "kind": "weekday"
+    },
+    {
+      "text": "nedēļas diena",
+      "kind": "field"
+    },
+    {
+      "text": "minūtes",
+      "kind": "field"
+    },
+    {
+      "text": "stundas",
+      "kind": "field"
+    },
+    {
+      "text": "priekšpusdienā/pēcpusdienā",
+      "kind": "field"
+    },
+    {
+      "text": "sekundes",
+      "kind": "field"
+    },
+    {
+      "text": "pirms 5 stundām",
+      "kind": "relative"
+    },
+    {
+      "text": "nākamajā nedēļā",
+      "kind": "relative"
+    },
+    {
+      "text": "pagājušajā mēnesī",
+      "kind": "relative"
+    },
+    {
+      "text": "pēc 3 gadiem",
+      "kind": "relative"
+    },
+    {
+      "text": "pirms 5 nedēļām",
+      "kind": "relative"
+    },
+    {
+      "text": "pēc 3 mēnešiem",
+      "kind": "relative"
+    },
+    {
+      "text": "pēc 3 minūtēm",
+      "kind": "relative"
+    },
+    {
+      "text": "pagājušajā gadā",
+      "kind": "relative"
+    },
+    {
+      "text": "pirms 5 dienām",
+      "kind": "relative"
+    },
+    {
+      "text": "pirms 5 mēnešiem",
+      "kind": "relative"
+    },
+    {
+      "text": "5 kilometri stundā",
+      "kind": "unit"
+    },
+    {
+      "text": "5 dienas",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogrami",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabaiti",
+      "kind": "unit"
+    },
+    {
+      "text": "2 litri",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabaits",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litri",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabaiti",
+      "kind": "unit"
+    },
+    {
+      "text": "piektdiena, 2026. gada 6. novembris",
+      "kind": "date"
+    },
+    {
+      "text": "Ķīna",
+      "kind": "region"
+    }
+  ]
+}

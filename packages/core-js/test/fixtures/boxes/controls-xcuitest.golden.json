@@ -1,0 +1,145 @@
+{
+  "image": {
+    "width": 393,
+    "height": 852
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0.1174,
+        1,
+        0.7042
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0407,
+        0.1408,
+        0.5089,
+        0.0235
+      ],
+      "clips": true,
+      "text": "Lieferadresse",
+      "scrolls": true
+    },
+    {
+      "id": "terms",
+      "box": [
+        0.0407,
+        0.1761,
+        0.0611,
+        0.0282
+      ],
+      "clips": true,
+      "text": "Bedingungen",
+      "scrolls": true
+    },
+    {
+      "id": "qty",
+      "box": [
+        0.6361,
+        0.1761,
+        0.2392,
+        0.0376
+      ],
+      "clips": true,
+      "scrolls": true
+    },
+    {
+      "id": "search",
+      "box": [
+        0.0407,
+        0.2347,
+        0.9186,
+        0.0423
+      ],
+      "clips": true,
+      "graphic": true,
+      "scrolls": true
+    },
+    {
+      "id": "pin",
+      "box": [
+        0.0407,
+        0.2934,
+        0.9186,
+        0.0423
+      ],
+      "clips": true,
+      "graphic": true,
+      "scrolls": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0407,
+        0.3521,
+        0.9186,
+        0.0939
+      ],
+      "clips": true,
+      "text": "Lange Beschreibung",
+      "scrolls": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0407,
+        0.8451,
+        0.9186,
+        0.0469
+      ],
+      "clips": true,
+      "text": "Gesamtsumme inklusive Versand"
+    },
+    {
+      "id": "footer",
+      "box": [
+        0,
+        0.8685,
+        1,
+        0.0575
+      ],
+      "clips": true,
+      "panel": true
+    },
+    {
+      "id": "buy",
+      "box": [
+        0.0407,
+        0.8744,
+        0.9186,
+        0.0469
+      ],
+      "clips": true,
+      "text": "Kaufen",
+      "graphic": true,
+      "control": true
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0.939,
+        1,
+        0.061
+      ],
+      "clips": true,
+      "panel": true
+    }
+  ]
+}

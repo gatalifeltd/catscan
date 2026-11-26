@@ -1,0 +1,23 @@
+{
+  "name": "@catscan/mcp",
+  "version": "1.0.0",
+  "description": "MCP server for catscan: on-device screenshot and video text checks for coding agents (macOS, Apple Vision).",
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/mcp" },
+  "homepage": "https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/mcp.md",
+  "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "coding-agents", "macos", "apple-vision", "ocr", "screenshot-testing", "localization"],
+  "mcpName": "io.github.gatalifeltd/catscan",
+  "bin": { "catscan-mcp": "bin/catscan-mcp.js" },
+  "main": "src/server.js",
+  "files": ["bin", "src"],
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "zod": "4.6.7"
+  },
+  "optionalDependencies": {
+    "@catscan/cli": "1.0.0",
+    "@catscan/core-js": "1.0.0"
+  }
+}

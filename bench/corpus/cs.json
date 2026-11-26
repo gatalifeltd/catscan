@@ -1,0 +1,253 @@
+{
+  "locale": "cs",
+  "icu_locale": "cs",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Singapur",
+      "kind": "region"
+    },
+    {
+      "text": "Jižní Korea",
+      "kind": "region"
+    },
+    {
+      "text": "Španělsko",
+      "kind": "region"
+    },
+    {
+      "text": "Lotyšsko",
+      "kind": "region"
+    },
+    {
+      "text": "Chile",
+      "kind": "region"
+    },
+    {
+      "text": "Maroko",
+      "kind": "region"
+    },
+    {
+      "text": "Rakousko",
+      "kind": "region"
+    },
+    {
+      "text": "Lucembursko",
+      "kind": "region"
+    },
+    {
+      "text": "Nizozemsko",
+      "kind": "region"
+    },
+    {
+      "text": "Litva",
+      "kind": "region"
+    },
+    {
+      "text": "Indie",
+      "kind": "region"
+    },
+    {
+      "text": "Vietnam",
+      "kind": "region"
+    },
+    {
+      "text": "čeština",
+      "kind": "language"
+    },
+    {
+      "text": "italština",
+      "kind": "language"
+    },
+    {
+      "text": "portugalština",
+      "kind": "language"
+    },
+    {
+      "text": "arabština",
+      "kind": "language"
+    },
+    {
+      "text": "čínština",
+      "kind": "language"
+    },
+    {
+      "text": "chorvatština",
+      "kind": "language"
+    },
+    {
+      "text": "maďarština",
+      "kind": "language"
+    },
+    {
+      "text": "malajština",
+      "kind": "language"
+    },
+    {
+      "text": "arménština",
+      "kind": "language"
+    },
+    {
+      "text": "srbština",
+      "kind": "language"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "japonský jen",
+      "kind": "currency"
+    },
+    {
+      "text": "mexické peso",
+      "kind": "currency"
+    },
+    {
+      "text": "polský zlotý",
+      "kind": "currency"
+    },
+    {
+      "text": "čínský jüan",
+      "kind": "currency"
+    },
+    {
+      "text": "jihokorejský won",
+      "kind": "currency"
+    },
+    {
+      "text": "červen",
+      "kind": "month"
+    },
+    {
+      "text": "listopad",
+      "kind": "month"
+    },
+    {
+      "text": "duben",
+      "kind": "month"
+    },
+    {
+      "text": "únor",
+      "kind": "month"
+    },
+    {
+      "text": "pondělí",
+      "kind": "weekday"
+    },
+    {
+      "text": "pátek",
+      "kind": "weekday"
+    },
+    {
+      "text": "sobota",
+      "kind": "weekday"
+    },
+    {
+      "text": "čtvrtletí",
+      "kind": "field"
+    },
+    {
+      "text": "sekunda",
+      "kind": "field"
+    },
+    {
+      "text": "minuta",
+      "kind": "field"
+    },
+    {
+      "text": "měsíc",
+      "kind": "field"
+    },
+    {
+      "text": "časové pásmo",
+      "kind": "field"
+    },
+    {
+      "text": "včera",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 sekundy",
+      "kind": "relative"
+    },
+    {
+      "text": "za 1 minutu",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 hodiny",
+      "kind": "relative"
+    },
+    {
+      "text": "před 1 sekundou",
+      "kind": "relative"
+    },
+    {
+      "text": "za 1 sekundu",
+      "kind": "relative"
+    },
+    {
+      "text": "před 5 hodinami",
+      "kind": "relative"
+    },
+    {
+      "text": "před 1 minutou",
+      "kind": "relative"
+    },
+    {
+      "text": "zítra",
+      "kind": "relative"
+    },
+    {
+      "text": "minulý týden",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilometry",
+      "kind": "unit"
+    },
+    {
+      "text": "2 týdny",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litrů",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metry",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilogramů",
+      "kind": "unit"
+    },
+    {
+      "text": "5 stupňů Celsia",
+      "kind": "unit"
+    },
+    {
+      "text": "2 litry",
+      "kind": "unit"
+    },
+    {
+      "text": "minulý rok",
+      "kind": "relative"
+    },
+    {
+      "text": "hindština",
+      "kind": "language"
+    }
+  ]
+}

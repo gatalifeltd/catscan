@@ -1,0 +1,253 @@
+{
+  "locale": "yue-Hant",
+  "icu_locale": "yue-Hant",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "捷克",
+      "kind": "region"
+    },
+    {
+      "text": "新西蘭",
+      "kind": "region"
+    },
+    {
+      "text": "克羅埃西亞",
+      "kind": "region"
+    },
+    {
+      "text": "丹麥",
+      "kind": "region"
+    },
+    {
+      "text": "伊朗",
+      "kind": "region"
+    },
+    {
+      "text": "匈牙利",
+      "kind": "region"
+    },
+    {
+      "text": "哥倫比亞",
+      "kind": "region"
+    },
+    {
+      "text": "芬蘭",
+      "kind": "region"
+    },
+    {
+      "text": "俄羅斯",
+      "kind": "region"
+    },
+    {
+      "text": "日本",
+      "kind": "region"
+    },
+    {
+      "text": "冰島",
+      "kind": "region"
+    },
+    {
+      "text": "烏克蘭",
+      "kind": "region"
+    },
+    {
+      "text": "俄文",
+      "kind": "language"
+    },
+    {
+      "text": "希伯來文",
+      "kind": "language"
+    },
+    {
+      "text": "越南文",
+      "kind": "language"
+    },
+    {
+      "text": "德文",
+      "kind": "language"
+    },
+    {
+      "text": "泰文",
+      "kind": "language"
+    },
+    {
+      "text": "挪威文",
+      "kind": "language"
+    },
+    {
+      "text": "英文",
+      "kind": "language"
+    },
+    {
+      "text": "荷蘭文",
+      "kind": "language"
+    },
+    {
+      "text": "北印度文",
+      "kind": "language"
+    },
+    {
+      "text": "馬拉地文",
+      "kind": "language"
+    },
+    {
+      "text": "瑞士法郎",
+      "kind": "currency"
+    },
+    {
+      "text": "瑞典克朗",
+      "kind": "currency"
+    },
+    {
+      "text": "日圓",
+      "kind": "currency"
+    },
+    {
+      "text": "挪威克朗",
+      "kind": "currency"
+    },
+    {
+      "text": "波蘭茲羅提",
+      "kind": "currency"
+    },
+    {
+      "text": "巴西里拉",
+      "kind": "currency"
+    },
+    {
+      "text": "7月",
+      "kind": "month"
+    },
+    {
+      "text": "1月",
+      "kind": "month"
+    },
+    {
+      "text": "2月",
+      "kind": "month"
+    },
+    {
+      "text": "5月",
+      "kind": "month"
+    },
+    {
+      "text": "星期日",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期五",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期三",
+      "kind": "weekday"
+    },
+    {
+      "text": "小時",
+      "kind": "field"
+    },
+    {
+      "text": "上午/下午",
+      "kind": "field"
+    },
+    {
+      "text": "週天",
+      "kind": "field"
+    },
+    {
+      "text": "年代",
+      "kind": "field"
+    },
+    {
+      "text": "分鐘",
+      "kind": "field"
+    },
+    {
+      "text": "上一季",
+      "kind": "relative"
+    },
+    {
+      "text": "5 年前",
+      "kind": "relative"
+    },
+    {
+      "text": "3 個星期後",
+      "kind": "relative"
+    },
+    {
+      "text": "5 個月前",
+      "kind": "relative"
+    },
+    {
+      "text": "3 日後",
+      "kind": "relative"
+    },
+    {
+      "text": "下年",
+      "kind": "relative"
+    },
+    {
+      "text": "5 日前",
+      "kind": "relative"
+    },
+    {
+      "text": "舊年",
+      "kind": "relative"
+    },
+    {
+      "text": "3 秒後",
+      "kind": "relative"
+    },
+    {
+      "text": "下一季",
+      "kind": "relative"
+    },
+    {
+      "text": "攝氏 5 度",
+      "kind": "unit"
+    },
+    {
+      "text": "2 公升",
+      "kind": "unit"
+    },
+    {
+      "text": "5 天",
+      "kind": "unit"
+    },
+    {
+      "text": "5 MB",
+      "kind": "unit"
+    },
+    {
+      "text": "2 天",
+      "kind": "unit"
+    },
+    {
+      "text": "5 米",
+      "kind": "unit"
+    },
+    {
+      "text": "攝氏 2 度",
+      "kind": "unit"
+    },
+    {
+      "text": "2%",
+      "kind": "unit"
+    },
+    {
+      "text": "2025年3月3日 星期一",
+      "kind": "date"
+    },
+    {
+      "text": "韓圓",
+      "kind": "currency"
+    }
+  ]
+}

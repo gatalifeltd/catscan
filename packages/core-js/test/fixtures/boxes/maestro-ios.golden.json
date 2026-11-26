@@ -1,0 +1,179 @@
+{
+  "image": {
+    "width": 393,
+    "height": 852
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "clips": true
+    },
+    {
+      "id": "title",
+      "box": [
+        0.0611,
+        0.1408,
+        0.4478,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Einstellungen"
+    },
+    {
+      "id": "close",
+      "box": [
+        0.8906,
+        0.0704,
+        0.0763,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Schließen"
+    },
+    {
+      "id": "menu",
+      "box": [
+        0.0611,
+        0.2347,
+        0.8779,
+        0.1408
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0611,
+        0.2347,
+        0.2443,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Konto"
+    },
+    {
+      "id": null,
+      "box": [
+        0.0611,
+        0.2817,
+        0.2443,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Profil"
+    },
+    {
+      "id": null,
+      "box": [
+        0.0611,
+        0.3286,
+        0.2952,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Abmelden"
+    },
+    {
+      "id": "language",
+      "box": [
+        0.0611,
+        0.3991,
+        0.4478,
+        0.0352
+      ],
+      "clips": true,
+      "text": "Deutsch"
+    },
+    {
+      "id": "continue",
+      "box": [
+        0.0407,
+        0.892,
+        0.9186,
+        0.0587
+      ],
+      "clips": true,
+      "text": "Mit E-Mail fortfahren"
+    },
+    {
+      "id": null,
+      "box": [
+        0.2799,
+        0.9096,
+        0.4402,
+        0.0235
+      ],
+      "clips": true,
+      "text": "Mit E-Mail fortfahren"
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0.8216,
+        1,
+        0.0352
+      ],
+      "clips": true,
+      "text": "0 %"
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        0.0634
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.1374,
+        0.0258,
+        0.1018,
+        0.0235
+      ],
+      "clips": true,
+      "text": "9:41"
+    },
+    {
+      "id": null,
+      "box": [
+        0.7328,
+        0.0305,
+        0.0483,
+        0.0141
+      ],
+      "clips": true,
+      "text": "Kein Signal"
+    }
+  ]
+}

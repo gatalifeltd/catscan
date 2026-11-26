@@ -1,0 +1,119 @@
+{
+ "todo": "067",
+ "note": "Images stay in datasets/ (gitignored). Counts are the screens each bench read; sha256 of the synthetic set covers the sorted per-image sha256 list.",
+ "synthetic": {
+  "generator": "bench/stacked/generate.swift",
+  "output": "datasets/stacked-synth (or a temp dir: node bench/stacked.js generates it)",
+  "images": 468,
+  "layout": "13 locales x 4 backgrounds (light, dark, checker, mosaic) x 9 kinds (clean, shadow, outline, stack2 at 0/0.1/0.25/0.5 of the line height, stack3 at 0, ghost); even file numbers dev, odd held out",
+  "labels_sha256": "515319b6b591852b0a3729cc97c2d54575e6a81e493ffdf5760b0b45a5ab4291",
+  "images_sha256": "45fff77289670a1d5557a7db3b0e36954fbc995f182517f47c686f3aa41f161e",
+  "rendered_on": "macOS 27.2.1 (26B131), Apple M5"
+ },
+ "real": {
+  "calibration": {
+   "folders": [
+    "datasets/truncation",
+    "datasets/truncation-android",
+    "datasets/truncation-extra",
+    "datasets/truncation-android-extra"
+   ],
+   "screens": 972
+  },
+  "held_out": {
+   "folders": [
+    "datasets/d1",
+    "datasets/d2"
+   ],
+   "screens": 509
+  },
+  "held_out_game": {
+   "folders": [
+    "datasets/stacked-text/<locale>/unlock-wait-clean.png",
+    "datasets/stacked-text/<locale>/unlock-page{1,2,3}-clean.png"
+   ],
+   "screens": 44,
+   "checked": 40,
+   "source": "the owner's game at commit 577cca1fd9 (web Chromium on the GPU, 360 dp at device pixel ratio 3, 1082x2202 PNG), captured 2026-11-18: the fixed unlock sheet in its wait state and each of its three pages open"
+  },
+  "recapture": {
+   "folders": [
+    "datasets/stacked-text/<locale>/unlock-wait-stacked.png"
+   ],
+   "screens": 11,
+   "checked": 10,
+   "locales": [
+    "de",
+    "el",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "pl",
+    "pt-BR",
+    "ru",
+    "tr",
+    "uk"
+   ],
+   "source": "the owner's game at commit 577cca1fd9 (web Chromium on the GPU, 360 dp at device pixel ratio 3, 1082x2202 PNG), captured 2026-11-18 with the sheet's fix reverted (its pages shown during the 3 s wait), 1.6 s into the wait, so all three pages' text is stacked"
+  },
+  "positives": "bench/stacked/positives.json",
+  "recapture_files_sha256": {
+   "datasets/stacked-text/de/unlock-page1-clean.png": "460ae3746666aaf6e7c24fd5e270949bbac6efa9d48b34eba8817ece712a7d3c",
+   "datasets/stacked-text/de/unlock-page2-clean.png": "7f0d6cccb83ecf35228a0070ca6358a36a278d2ee05cedbd7be938916b5b1fc6",
+   "datasets/stacked-text/de/unlock-page3-clean.png": "d809ccf0ffa84ace522350b26d97b6361f65f9d01ea6f5e8a6156d265ffead04",
+   "datasets/stacked-text/de/unlock-wait-clean.png": "47913cec7e0bb812b28a95d560c3572c8bcbb19dd408858a78b62c4c1ff817f8",
+   "datasets/stacked-text/de/unlock-wait-stacked.png": "2661593731655341ba132212fb753a73c0e255913c0b1f9b4a229d7b3decad63",
+   "datasets/stacked-text/el/unlock-page1-clean.png": "1133fffc3ed6843c8a3a75a40b8b92880610308e1fe73520f73a3346b8dfbb7a",
+   "datasets/stacked-text/el/unlock-page2-clean.png": "e42490589dadd1ee84fffce8efe98cdbb0596b561492b114725f467fadf411c3",
+   "datasets/stacked-text/el/unlock-page3-clean.png": "fda39a21c64f13f64706a3452184790faefffd4623fe763e7d06b2705e3772a6",
+   "datasets/stacked-text/el/unlock-wait-clean.png": "3ba804186cd3d656f411a00a7929d38cd6640264ccfd70538b7d204f6bcf7f98",
+   "datasets/stacked-text/el/unlock-wait-stacked.png": "4150cf8b23b95c74b6e88114aa4731ac44299f66a346c2f071dbd0e5374edea5",
+   "datasets/stacked-text/en/unlock-page1-clean.png": "78c19e5e3cb5b786662452b386f7d6ad5e0424ca33cccf8ac615d950907c2d2a",
+   "datasets/stacked-text/en/unlock-page2-clean.png": "7beab75e1d4de898139dc3b503c03c56c42bd93e0432b3f0b26bf55d88881df1",
+   "datasets/stacked-text/en/unlock-page3-clean.png": "f9a52c54d5c1643678075f8dee31afe6d6d12078323f463569bc40f341d2972e",
+   "datasets/stacked-text/en/unlock-wait-clean.png": "f1f864cfafc9001d894b29956a5e515d31c0b3577e08a6346b367575062fc0a7",
+   "datasets/stacked-text/en/unlock-wait-stacked.png": "8fac4af8dbf859c07f291e70b982a24eb5ea3db6a3137bcb7278726a72d02a34",
+   "datasets/stacked-text/es/unlock-page1-clean.png": "00d3cf004d481f98620fee8b9a707f6a5bb27357af45871e18352b53f35c686d",
+   "datasets/stacked-text/es/unlock-page2-clean.png": "d5b25f7dc2dce7077546c0e137f724e25ee3ebd4cf389568e0c5b2b63b672a67",
+   "datasets/stacked-text/es/unlock-page3-clean.png": "e23516942746f43ed91473a9a51ab04e42508ccabc9d86a6a2db79fd6c660a38",
+   "datasets/stacked-text/es/unlock-wait-clean.png": "f98541781fe42d91b475da0c78c2e12ec6d662d922d3af71d6e3c9c1bd742c1c",
+   "datasets/stacked-text/es/unlock-wait-stacked.png": "c318644684797d575bfd57034f5f6134dfe11445b7f13f0563e0e6b47243c87d",
+   "datasets/stacked-text/fr/unlock-page1-clean.png": "d7ca596c04632e7a940bcad8a094c76c382b20e3551c20ea4c2f7c05c8a10de0",
+   "datasets/stacked-text/fr/unlock-page2-clean.png": "53ea480163188e80c4127d88146e96edcceb89cf7318c577d66e659c92fbc4e8",
+   "datasets/stacked-text/fr/unlock-page3-clean.png": "fcf95c253678be833e3aba00e82b43020c1bc1bb86769980ea69093b4010e78c",
+   "datasets/stacked-text/fr/unlock-wait-clean.png": "1a1071d8e6a1eaea422fba89c9d5d7baca8afbe9c21d00aed4265ab10242b072",
+   "datasets/stacked-text/fr/unlock-wait-stacked.png": "36eb0cedb152c5f84f414632d5a3c2319192af4f6e3de2fc9216afa177fda333",
+   "datasets/stacked-text/it/unlock-page1-clean.png": "84019a669ed1cf959bc050128d97935c2c94665c7ce582362150e0885f51a675",
+   "datasets/stacked-text/it/unlock-page2-clean.png": "a3fa81becc2d249537cbc8aa3fd8394112727eada41bff76930484baba6416fc",
+   "datasets/stacked-text/it/unlock-page3-clean.png": "c27e3f8d382d8946ff95c0e18e2ffe37991804b15d62238a68f365a3372f614e",
+   "datasets/stacked-text/it/unlock-wait-clean.png": "7e2205ce39c3503aa4c933db909d6524ca18bf0e1f26fbbacc5d1b596ecbde45",
+   "datasets/stacked-text/it/unlock-wait-stacked.png": "89969ac969e46429135ba90108eb8ce0997483559fc7e206ad619e846c4c3c82",
+   "datasets/stacked-text/pl/unlock-page1-clean.png": "07e7a0805430243efd35acd3d9460a43c910c2e530bd9fce550ecbca6b51227a",
+   "datasets/stacked-text/pl/unlock-page2-clean.png": "edfc478ef3305f2828d34f44370273126b5a11485d9e7922f379fb46c0bee4e4",
+   "datasets/stacked-text/pl/unlock-page3-clean.png": "aa4ba4b1027b220773833d280c6edba5090af0b05c6c7d0c06b1c1bd09742b74",
+   "datasets/stacked-text/pl/unlock-wait-clean.png": "f219e379e8bd29bd66871368ad446371a9a2cc75a550a8d9000d729d2db4853d",
+   "datasets/stacked-text/pl/unlock-wait-stacked.png": "b25d4ffb9019f2ba1fc1d1abf71544859d13fb57b68802bcd939122b48865618",
+   "datasets/stacked-text/pt-BR/unlock-page1-clean.png": "fff08646de255bc07aa7a71a1b9df8a2cc55f5876693e634d517561db1c5b912",
+   "datasets/stacked-text/pt-BR/unlock-page2-clean.png": "cd615d7c290ce7cb8bbe3f310c8534bf91d837f168cd8551a0871537f6284477",
+   "datasets/stacked-text/pt-BR/unlock-page3-clean.png": "9dcf2717d4490631eb2b7583dd5f1821a981ed192ad69e073dd5fb4293512a48",
+   "datasets/stacked-text/pt-BR/unlock-wait-clean.png": "7e7d2938d3da2fb8dd74c4e2863150bc95aaa7dd3101bb4bd69fa450c8321202",
+   "datasets/stacked-text/pt-BR/unlock-wait-stacked.png": "6d1b172aeb844798d5dde462408fe5608d5f90e967ed345f3254a77a426a04ca",
+   "datasets/stacked-text/ru/unlock-page1-clean.png": "861f3d12d6e694368e8a5f59aa355b8d3bef3ae21505cd642f20af01a3f7a4e3",
+   "datasets/stacked-text/ru/unlock-page2-clean.png": "439f603f6d9b8160b2057ca5d2a5c03a887aa7116a8f20eeb3bcc26abed38122",
+   "datasets/stacked-text/ru/unlock-page3-clean.png": "0c51d3351f098ac032e4a1ad80fccc7c35b8866a22d8b1e5ac61109e57c31b5d",
+   "datasets/stacked-text/ru/unlock-wait-clean.png": "c218acdfdb2347f715b0c47aafd674813d20ca7ee3dc517f05b58d72ef09892a",
+   "datasets/stacked-text/ru/unlock-wait-stacked.png": "e56eb65307133f86693cd4e42ad74285202d3ab5b6562fb343d551c7bfc3758b",
+   "datasets/stacked-text/tr/unlock-page1-clean.png": "3dfa823c2ed9ba47c65885894e18fec023cf252a18288ceeb78e4aeb0c1cb740",
+   "datasets/stacked-text/tr/unlock-page2-clean.png": "355b1d37bd4ebd44bb630b8a92268f6926e7cee660fadf8c7166159ee659bec1",
+   "datasets/stacked-text/tr/unlock-page3-clean.png": "c30f471db591bbd824c453141fa96984473c19c108feb659fc4882452b375abc",
+   "datasets/stacked-text/tr/unlock-wait-clean.png": "36b39b933c3624ca44b2f6431e233e3ed27e32cb31a2190b4fee9e2bbeb165a5",
+   "datasets/stacked-text/tr/unlock-wait-stacked.png": "a11049c46b2410b83f3877b3073961e1937bade06e1fb49d7b1ad0339f9b1301",
+   "datasets/stacked-text/uk/unlock-page1-clean.png": "96a6bbb29de7ba2fc1cf98daccce1a69c6ea994f2d2afde1f0db8c2100c7cfae",
+   "datasets/stacked-text/uk/unlock-page2-clean.png": "140b4295ce833b2e1f3047c517ce282c895469ff0148894d7130682b30029c66",
+   "datasets/stacked-text/uk/unlock-page3-clean.png": "2f9287199176cc44dd37356f4bb120e215552419d761ddf13b4a8a417c6ca603",
+   "datasets/stacked-text/uk/unlock-wait-clean.png": "fc1d71f874b6048182b64e4dad7aeeeefca34a1b5054a58d25d062cc2190d568",
+   "datasets/stacked-text/uk/unlock-wait-stacked.png": "53c188d6d63fd4b3deda8225b123d798fdf8d5cc70b39be3bfcb0830567ede52"
+  }
+ }
+}

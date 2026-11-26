@@ -1,0 +1,16 @@
+[
+  {"name": "f01-clean.png", "locale": "de", "width": 1000, "height": 700, "lines": [
+    {"text": "Premium holen", "x": 60, "y": 60, "size": 44},
+    {"text": "39,99 € pro Jahr", "x": 60, "y": 170, "size": 44},
+    {"text": "7,99 € pro Monat", "x": 60, "y": 280, "size": 44},
+    {"text": "Verlängert am 25.11.26", "x": 60, "y": 390, "size": 44},
+    {"text": "Version 2.10.3", "x": 60, "y": 500, "size": 44}]},
+  {"name": "f02-defects.png", "locale": "de", "width": 1000, "height": 700, "lines": [
+    {"text": "Punkte 1,234.56", "x": 60, "y": 60, "size": 44},
+    {"text": "Verlängert am 11/25/2026", "x": 60, "y": 170, "size": 44},
+    {"text": "Pro 4,99 $ pro Monat", "x": 60, "y": 280, "size": 44},
+    {"text": "39,99 € pro Monat", "x": 60, "y": 390, "size": 44}]},
+  {"name": "f03-mixed.png", "locale": "en", "width": 1000, "height": 400, "lines": [
+    {"text": "Monthly $7.99", "x": 60, "y": 60, "size": 44},
+    {"text": "Yearly €39.99", "x": 60, "y": 170, "size": 44}]}
+]

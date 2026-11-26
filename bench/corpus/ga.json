@@ -1,0 +1,253 @@
+{
+  "locale": "ga",
+  "icu_locale": "ga",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "an Mhalaeisia",
+      "kind": "region"
+    },
+    {
+      "text": "an Cholóim",
+      "kind": "region"
+    },
+    {
+      "text": "an Airgintín",
+      "kind": "region"
+    },
+    {
+      "text": "an Rómáin",
+      "kind": "region"
+    },
+    {
+      "text": "an Afraic Theas",
+      "kind": "region"
+    },
+    {
+      "text": "an Bheilg",
+      "kind": "region"
+    },
+    {
+      "text": "Maracó",
+      "kind": "region"
+    },
+    {
+      "text": "an Phacastáin",
+      "kind": "region"
+    },
+    {
+      "text": "an Ghearmáin",
+      "kind": "region"
+    },
+    {
+      "text": "an Aetóip",
+      "kind": "region"
+    },
+    {
+      "text": "an Eastóin",
+      "kind": "region"
+    },
+    {
+      "text": "an Ríocht Aontaithe",
+      "kind": "region"
+    },
+    {
+      "text": "Maraitis",
+      "kind": "language"
+    },
+    {
+      "text": "Gearmáinis",
+      "kind": "language"
+    },
+    {
+      "text": "Indinéisis",
+      "kind": "language"
+    },
+    {
+      "text": "Airméinis",
+      "kind": "language"
+    },
+    {
+      "text": "Béarla",
+      "kind": "language"
+    },
+    {
+      "text": "Peirsis",
+      "kind": "language"
+    },
+    {
+      "text": "Ollainnis",
+      "kind": "language"
+    },
+    {
+      "text": "Spáinnis",
+      "kind": "language"
+    },
+    {
+      "text": "Sínis",
+      "kind": "language"
+    },
+    {
+      "text": "Iodáilis",
+      "kind": "language"
+    },
+    {
+      "text": "Zloty na Polainne",
+      "kind": "currency"
+    },
+    {
+      "text": "Dollar S.A.M.",
+      "kind": "currency"
+    },
+    {
+      "text": "Yuan na Síne",
+      "kind": "currency"
+    },
+    {
+      "text": "Rúipí na hIndia",
+      "kind": "currency"
+    },
+    {
+      "text": "Lira na Tuirce",
+      "kind": "currency"
+    },
+    {
+      "text": "Coróin na hIorua",
+      "kind": "currency"
+    },
+    {
+      "text": "Eanáir",
+      "kind": "month"
+    },
+    {
+      "text": "Deireadh Fómhair",
+      "kind": "month"
+    },
+    {
+      "text": "Márta",
+      "kind": "month"
+    },
+    {
+      "text": "Aibreán",
+      "kind": "month"
+    },
+    {
+      "text": "Dé hAoine",
+      "kind": "weekday"
+    },
+    {
+      "text": "Déardaoin",
+      "kind": "weekday"
+    },
+    {
+      "text": "Dé Luain",
+      "kind": "weekday"
+    },
+    {
+      "text": "ráithe",
+      "kind": "field"
+    },
+    {
+      "text": "uair",
+      "kind": "field"
+    },
+    {
+      "text": "bliain",
+      "kind": "field"
+    },
+    {
+      "text": "soicind",
+      "kind": "field"
+    },
+    {
+      "text": "nóiméad",
+      "kind": "field"
+    },
+    {
+      "text": "i gceann 3 bliana",
+      "kind": "relative"
+    },
+    {
+      "text": "5 lá ó shin",
+      "kind": "relative"
+    },
+    {
+      "text": "anuraidh",
+      "kind": "relative"
+    },
+    {
+      "text": "an tseachtain seo caite",
+      "kind": "relative"
+    },
+    {
+      "text": "an bhliain seo chugainn",
+      "kind": "relative"
+    },
+    {
+      "text": "an tseachtain seo chugainn",
+      "kind": "relative"
+    },
+    {
+      "text": "inné",
+      "kind": "relative"
+    },
+    {
+      "text": "5 seachtaine ó shin",
+      "kind": "relative"
+    },
+    {
+      "text": "an mhí seo caite",
+      "kind": "relative"
+    },
+    {
+      "text": "5 mhí ó shin",
+      "kind": "relative"
+    },
+    {
+      "text": "2 lítear",
+      "kind": "unit"
+    },
+    {
+      "text": "5 mheigibheart",
+      "kind": "unit"
+    },
+    {
+      "text": "2 km/u",
+      "kind": "unit"
+    },
+    {
+      "text": "5 nóim",
+      "kind": "unit"
+    },
+    {
+      "text": "5 km/u",
+      "kind": "unit"
+    },
+    {
+      "text": "5 ghigibheart",
+      "kind": "unit"
+    },
+    {
+      "text": "5 lítear",
+      "kind": "unit"
+    },
+    {
+      "text": "2 chiliméadar",
+      "kind": "unit"
+    },
+    {
+      "text": "an Íoslainn",
+      "kind": "region"
+    },
+    {
+      "text": "Araibis",
+      "kind": "language"
+    }
+  ]
+}

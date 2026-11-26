@@ -1,0 +1,8 @@
+# Per-screen checks for German (catscan check --expect, docs/cli.md#--expect-files).
+locale: de
+shots:
+  onboarding.de.png: { present: ["Willkommen", "Weiter"], absent: ["onboarding.body"] }
+  # Not the 30-letter label: on Android, Vision reads it with a space inside ("Benachrichtigungseinstel lungen");
+  # truncated and the settings dump check it instead (docs/gotchas/vision.md).
+  settings.de.png: { present: ["Einstellungen", "Spielen"] }
+  game.de.png: { present: ["Level geschafft"] }

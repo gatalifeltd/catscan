@@ -1,0 +1,253 @@
+{
+  "locale": "zh-Hant",
+  "icu_locale": "zh-Hant",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "冰島",
+      "kind": "region"
+    },
+    {
+      "text": "泰國",
+      "kind": "region"
+    },
+    {
+      "text": "越南",
+      "kind": "region"
+    },
+    {
+      "text": "土耳其",
+      "kind": "region"
+    },
+    {
+      "text": "美國",
+      "kind": "region"
+    },
+    {
+      "text": "保加利亞",
+      "kind": "region"
+    },
+    {
+      "text": "捷克",
+      "kind": "region"
+    },
+    {
+      "text": "愛爾蘭",
+      "kind": "region"
+    },
+    {
+      "text": "丹麥",
+      "kind": "region"
+    },
+    {
+      "text": "巴基斯坦",
+      "kind": "region"
+    },
+    {
+      "text": "烏克蘭",
+      "kind": "region"
+    },
+    {
+      "text": "盧森堡",
+      "kind": "region"
+    },
+    {
+      "text": "匈牙利文",
+      "kind": "language"
+    },
+    {
+      "text": "印地文",
+      "kind": "language"
+    },
+    {
+      "text": "葡萄牙文",
+      "kind": "language"
+    },
+    {
+      "text": "馬拉地文",
+      "kind": "language"
+    },
+    {
+      "text": "日文",
+      "kind": "language"
+    },
+    {
+      "text": "希伯來文",
+      "kind": "language"
+    },
+    {
+      "text": "荷蘭文",
+      "kind": "language"
+    },
+    {
+      "text": "俄文",
+      "kind": "language"
+    },
+    {
+      "text": "希臘文",
+      "kind": "language"
+    },
+    {
+      "text": "羅馬尼亞文",
+      "kind": "language"
+    },
+    {
+      "text": "瑞典克朗",
+      "kind": "currency"
+    },
+    {
+      "text": "英鎊",
+      "kind": "currency"
+    },
+    {
+      "text": "泰銖",
+      "kind": "currency"
+    },
+    {
+      "text": "波蘭茲羅提",
+      "kind": "currency"
+    },
+    {
+      "text": "巴西雷亞爾",
+      "kind": "currency"
+    },
+    {
+      "text": "美元",
+      "kind": "currency"
+    },
+    {
+      "text": "5月",
+      "kind": "month"
+    },
+    {
+      "text": "7月",
+      "kind": "month"
+    },
+    {
+      "text": "8月",
+      "kind": "month"
+    },
+    {
+      "text": "2月",
+      "kind": "month"
+    },
+    {
+      "text": "星期三",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期日",
+      "kind": "weekday"
+    },
+    {
+      "text": "星期二",
+      "kind": "weekday"
+    },
+    {
+      "text": "時區",
+      "kind": "field"
+    },
+    {
+      "text": "小時",
+      "kind": "field"
+    },
+    {
+      "text": "分鐘",
+      "kind": "field"
+    },
+    {
+      "text": "季度",
+      "kind": "field"
+    },
+    {
+      "text": "時段",
+      "kind": "field"
+    },
+    {
+      "text": "3 個月後",
+      "kind": "relative"
+    },
+    {
+      "text": "5 季前",
+      "kind": "relative"
+    },
+    {
+      "text": "5 秒前",
+      "kind": "relative"
+    },
+    {
+      "text": "明天",
+      "kind": "relative"
+    },
+    {
+      "text": "下個月",
+      "kind": "relative"
+    },
+    {
+      "text": "上週",
+      "kind": "relative"
+    },
+    {
+      "text": "下週",
+      "kind": "relative"
+    },
+    {
+      "text": "5 年前",
+      "kind": "relative"
+    },
+    {
+      "text": "3 年後",
+      "kind": "relative"
+    },
+    {
+      "text": "上個月",
+      "kind": "relative"
+    },
+    {
+      "text": "2 公斤",
+      "kind": "unit"
+    },
+    {
+      "text": "5 公斤",
+      "kind": "unit"
+    },
+    {
+      "text": "5 公升",
+      "kind": "unit"
+    },
+    {
+      "text": "5 週",
+      "kind": "unit"
+    },
+    {
+      "text": "2 公尺",
+      "kind": "unit"
+    },
+    {
+      "text": "5 GB",
+      "kind": "unit"
+    },
+    {
+      "text": "5%",
+      "kind": "unit"
+    },
+    {
+      "text": "5 天",
+      "kind": "unit"
+    },
+    {
+      "text": "2026年11月6日 星期五",
+      "kind": "date"
+    },
+    {
+      "text": "2025年3月3日 星期一",
+      "kind": "date"
+    }
+  ]
+}

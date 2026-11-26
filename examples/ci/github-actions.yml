@@ -1,0 +1,30 @@
+# catscan on GitHub Actions (community-tested: no recorded run yet; docs/recipes/ci.md). Copy to .github/workflows/catscan.yml and replace:
+#   1. `npm ci && npm run screenshots`: the step that makes your screenshots;
+#   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
+#   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
+# First green run without expectations: npx @catscan/cli@1.0.0 check shots --present "<text every screen shows>" --format github
+# The report artifacts hold your screenshots and their text (catscan.html, docs/report.md): anyone with read access
+# to the repo can download them.
+name: catscan
+on: [pull_request]
+permissions:
+  contents: read
+jobs:
+  screens:
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with: { persist-credentials: false }
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: 26.13.0 }
+      - run: npm ci && npm run screenshots
+      # Only if you ship a locale catscan reads with Tesseract, such as el, he, hr or et (catscan languages lists them; the doctor line fails with the install command until this runs; install options: https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/tesseract.md):
+      # - run: brew install tesseract tesseract-lang
+      - run: npx @catscan/cli@1.0.0 doctor --expect-locales-from locales
+      # Thresholds (docs/cli.md#severity-and-certainty): only findings at or above both levels fail the job; default: every finding. On a finding command: --min-severity major --min-certainty medium
+      # Approved legacy findings (docs/results.md#known-findings): add --known catscan-known.json to the check below; only new findings fail
+      - run: npx @catscan/cli@1.0.0 check shots --expect checks.yaml --expect-locales-from locales --format github --junit catscan.xml --results catscan-results.json --report catscan.html
+      - if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with: { name: catscan, path: "catscan*", retention-days: 7 }

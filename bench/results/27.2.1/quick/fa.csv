@@ -1,0 +1,26 @@
+# catscan=0.17.2 macos=27.2.1 macos_build=26B131 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+fa,tesseract-5.5.4,false,30,0,40,32,80,10,2,0.2,0.5325,6,0,14,10,1,0.3,87,0|0|0|1|0|0|0|0|1|2,0|0|1|0|0|0|1|0|3|0
+image,case,present,absent,truncated,cer,read
+fa/00-fit-16-light-flat.png,fit,fail,pass,no,8,
+fa/00-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/00-clip-16-light-flat.png,clip,,pass,no,,
+fa/02-fit-16-light-flat.png,fit,fail,pass,no,7,
+fa/02-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/02-clip-16-light-flat.png,clip,,pass,no,,
+fa/03-fit-16-light-flat.png,fit,fail,pass,no,1,امارات متحدة عربی
+fa/03-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/04-fit-16-light-flat.png,fit,fail,pass,no,6,
+fa/04-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/04-clip-16-light-flat.png,clip,,pass,no,,
+fa/05-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/05-clip-16-light-flat.png,clip,,pass,no,,
+fa/06-fit-16-light-flat.png,fit,fail,pass,no,5,
+fa/06-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/07-fit-16-light-flat.png,fit,fail,pass,no,3,فرا
+fa/07-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/08-fit-16-light-flat.png,fit,fail,pass,no,4,
+fa/08-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fa/08-clip-16-light-flat.png,clip,,pass,no,,
+fa/09-fit-16-light-flat.png,fit,fail,pass,no,7,
+fa/09-ellipsis-16-light-flat.png,ellipsis,,pass,no,,

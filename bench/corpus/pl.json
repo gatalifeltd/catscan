@@ -1,0 +1,253 @@
+{
+  "locale": "pl",
+  "icu_locale": "pl",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Arabia Saudyjska",
+      "kind": "region"
+    },
+    {
+      "text": "Singapur",
+      "kind": "region"
+    },
+    {
+      "text": "Chile",
+      "kind": "region"
+    },
+    {
+      "text": "Łotwa",
+      "kind": "region"
+    },
+    {
+      "text": "Węgry",
+      "kind": "region"
+    },
+    {
+      "text": "Norwegia",
+      "kind": "region"
+    },
+    {
+      "text": "Ukraina",
+      "kind": "region"
+    },
+    {
+      "text": "Luksemburg",
+      "kind": "region"
+    },
+    {
+      "text": "Tajwan",
+      "kind": "region"
+    },
+    {
+      "text": "Portugalia",
+      "kind": "region"
+    },
+    {
+      "text": "Francja",
+      "kind": "region"
+    },
+    {
+      "text": "Filipiny",
+      "kind": "region"
+    },
+    {
+      "text": "norweski",
+      "kind": "language"
+    },
+    {
+      "text": "indonezyjski",
+      "kind": "language"
+    },
+    {
+      "text": "malajski",
+      "kind": "language"
+    },
+    {
+      "text": "turecki",
+      "kind": "language"
+    },
+    {
+      "text": "bułgarski",
+      "kind": "language"
+    },
+    {
+      "text": "chiński",
+      "kind": "language"
+    },
+    {
+      "text": "koreański",
+      "kind": "language"
+    },
+    {
+      "text": "portugalski",
+      "kind": "language"
+    },
+    {
+      "text": "angielski",
+      "kind": "language"
+    },
+    {
+      "text": "marathi",
+      "kind": "language"
+    },
+    {
+      "text": "dolar australijski",
+      "kind": "currency"
+    },
+    {
+      "text": "złoty polski",
+      "kind": "currency"
+    },
+    {
+      "text": "dolar kanadyjski",
+      "kind": "currency"
+    },
+    {
+      "text": "forint węgierski",
+      "kind": "currency"
+    },
+    {
+      "text": "korona czeska",
+      "kind": "currency"
+    },
+    {
+      "text": "dolar amerykański",
+      "kind": "currency"
+    },
+    {
+      "text": "październik",
+      "kind": "month"
+    },
+    {
+      "text": "wrzesień",
+      "kind": "month"
+    },
+    {
+      "text": "lipiec",
+      "kind": "month"
+    },
+    {
+      "text": "grudzień",
+      "kind": "month"
+    },
+    {
+      "text": "piątek",
+      "kind": "weekday"
+    },
+    {
+      "text": "wtorek",
+      "kind": "weekday"
+    },
+    {
+      "text": "środa",
+      "kind": "weekday"
+    },
+    {
+      "text": "tydzień",
+      "kind": "field"
+    },
+    {
+      "text": "kwartał",
+      "kind": "field"
+    },
+    {
+      "text": "sekunda",
+      "kind": "field"
+    },
+    {
+      "text": "dzień tygodnia",
+      "kind": "field"
+    },
+    {
+      "text": "godzina",
+      "kind": "field"
+    },
+    {
+      "text": "za 3 sekundy",
+      "kind": "relative"
+    },
+    {
+      "text": "za 1 sekundę",
+      "kind": "relative"
+    },
+    {
+      "text": "w przyszłym tygodniu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 dni temu",
+      "kind": "relative"
+    },
+    {
+      "text": "za 3 godziny",
+      "kind": "relative"
+    },
+    {
+      "text": "za 1 godzinę",
+      "kind": "relative"
+    },
+    {
+      "text": "1 minutę temu",
+      "kind": "relative"
+    },
+    {
+      "text": "1 sekundę temu",
+      "kind": "relative"
+    },
+    {
+      "text": "w przyszłym miesiącu",
+      "kind": "relative"
+    },
+    {
+      "text": "w przyszłym kwartale",
+      "kind": "relative"
+    },
+    {
+      "text": "2 megabajty",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metry",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilogramy",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometry",
+      "kind": "unit"
+    },
+    {
+      "text": "2 godziny",
+      "kind": "unit"
+    },
+    {
+      "text": "2 miesiące",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procent",
+      "kind": "unit"
+    },
+    {
+      "text": "5 tygodni",
+      "kind": "unit"
+    },
+    {
+      "text": "poniedziałek, 3 marca 2025",
+      "kind": "date"
+    },
+    {
+      "text": "5 minut",
+      "kind": "unit"
+    }
+  ]
+}

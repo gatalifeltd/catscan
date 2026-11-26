@@ -1,0 +1,103 @@
+{
+  "todo": "036 T2",
+  "script": "bench/wrong-language-real.js",
+  "reviewed": "2026-11-17, by eye on the screenshots, first pass at 21cc832",
+  "note": "Ids are sha256(image path relative to its set, line) truncated to 16 hex; no recognized text is committed (spec 06 Privacy). The D31 guards were added after this review and remove all four, so the final pass ran on the same screens it was tuned on. An intermediate build (194570b, placeholder words allowed anywhere) re-flagged id 1668787d8e2076fb; ce45f45 places each placeholder and removes it again.",
+  "verdicts": [
+    {
+      "id": "0fbca479bb2a0681",
+      "set": "d1",
+      "locale": "el",
+      "evidence": "langid",
+      "language": "es",
+      "verdict": "false",
+      "reason": "Greek line (mixed with the Latin brand) named es by the recognizer"
+    },
+    {
+      "id": "1668787d8e2076fb",
+      "set": "d1",
+      "locale": "es",
+      "evidence": "catalog",
+      "language": "pt-BR",
+      "verdict": "false",
+      "reason": "es line holding the word desde, the pt-BR string desde {date}"
+    },
+    {
+      "id": "57f8d41991b8d99c",
+      "set": "d1",
+      "locale": "fr",
+      "evidence": "catalog",
+      "language": "tr",
+      "verdict": "false",
+      "reason": "fr line holding the word dans, the tr string Dans"
+    },
+    {
+      "id": "a2665a5998a71d9d",
+      "set": "d2-game-a",
+      "locale": "uk",
+      "evidence": "langid",
+      "language": "ru",
+      "verdict": "false",
+      "reason": "Ukrainian caps line with an OCR fragment, named ru"
+    }
+  ],
+  "first_pass": {
+    "screens": 509,
+    "flags": 4,
+    "true_flags": 0
+  },
+  "second_pass": {
+    "commit": "ce45f45",
+    "screens": 509,
+    "flags": 0,
+    "sets": {
+      "d1": {
+        "screens": 259,
+        "flagged_screens": 0,
+        "flags": 0,
+        "by_evidence": {
+          "catalog": 0,
+          "langid": 0
+        },
+        "flags_per_100_screens": 0
+      },
+      "d2-game-b": {
+        "screens": 48,
+        "flagged_screens": 0,
+        "flags": 0,
+        "by_evidence": {
+          "catalog": 0,
+          "langid": 0
+        },
+        "flags_per_100_screens": 0
+      },
+      "d2-game-a": {
+        "screens": 48,
+        "flagged_screens": 0,
+        "flags": 0,
+        "by_evidence": {
+          "catalog": 0,
+          "langid": 0
+        },
+        "flags_per_100_screens": 0
+      },
+      "d2-e2e": {
+        "screens": 154,
+        "flagged_screens": 0,
+        "flags": 0,
+        "by_evidence": {
+          "catalog": 0,
+          "langid": 0
+        },
+        "flags_per_100_screens": 0
+      }
+    },
+    "tools": {
+      "catscan": "0.35.1",
+      "macos": "27.2.1 (26B131)",
+      "vision_revision": 3,
+      "node": "v26.13.0"
+    }
+  },
+  "catalogs": "d1: the ai app catalogs (factory 87d0363aa, apps/ai/src/i18n/*.ts object literals read as JSON); d2: the games catalogs (the games repository 24f36387d, packages/i18n bundles merged with each app src/i18n; e2e with both apps). Paths live in a config file outside git."
+}

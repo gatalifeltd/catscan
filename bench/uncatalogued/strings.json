@@ -1,0 +1,1011 @@
+{
+  "note": "Seed data for the synthetic uncatalogued benchmark (TODO-036 T4, D47 D54): run-language sentences no catalog holds, near-catalog prose, and dynamic negatives (names, handles, user text, server titles) guarded as a project would.",
+  "seeds": {
+    "de": [
+      "Wähle mindestens drei Themen, die dich interessieren",
+      "Du kannst das später jederzeit ändern",
+      "Dunkles Design nach Sonnenuntergang automatisch aktivieren",
+      "Tippe zweimal, um ein Bild zu vergrößern",
+      "Die Datei ist zu groß zum Hochladen",
+      "Der Server antwortet gerade nicht",
+      "Dein Passwort muss ein Sonderzeichen enthalten",
+      "Diese Seite konnte nicht geladen werden",
+      "Gutschein einlösen und beim Einkauf sparen",
+      "Versandkostenfrei ab dem zweiten Artikel",
+      "Lieferung an eine andere Adresse",
+      "Jemand hat deinen Beitrag kommentiert",
+      "Neue Follower warten auf deine Antwort",
+      "Teile diesen Link mit deinen Freunden",
+      "Dein Abo verlängert sich automatisch",
+      "Erinnerungen für tägliche Ziele einrichten",
+      "Ton und Vibration bei neuen Nachrichten",
+      "Richte jetzt die Zwei-Faktor-Authentifizierung ein",
+      "Wir haben dir einen Bestätigungscode gesendet",
+      "Dieser Benutzername ist bereits vergeben",
+      "Zum Scannen wird Zugriff auf die Kamera benötigt",
+      "Der Gerätespeicher ist fast voll",
+      "Deine Wunschliste wurde aktualisiert",
+      "Bewerte uns, wenn dir die App gefällt",
+      "Lesezeichen in einen neuen Ordner verschieben",
+      "Synchronisierung mit anderen Geräten pausiert",
+      "Ungültiges Format, bitte prüfe deine Eingabe"
+    ],
+    "fr": [
+      "Choisissez au moins trois sujets qui vous intéressent",
+      "Vous pourrez modifier ce choix plus tard",
+      "Activer le mode sombre au coucher du soleil",
+      "Touchez deux fois pour agrandir une image",
+      "Ce fichier est trop volumineux pour être envoyé",
+      "Le serveur ne répond pas pour le moment",
+      "Votre mot de passe doit contenir un symbole",
+      "Impossible de charger cette page",
+      "Utilisez un code promo pour économiser",
+      "Livraison offerte dès le deuxième article",
+      "Livrer à une autre adresse",
+      "Un abonné a commenté votre publication",
+      "De nouveaux abonnés attendent votre réponse",
+      "Partagez ce lien avec vos amis",
+      "Votre abonnement sera renouvelé automatiquement",
+      "Programmez des rappels pour vos objectifs quotidiens",
+      "Son et vibration pour les nouveaux messages",
+      "Configurez la validation en deux étapes",
+      "Nous vous avons envoyé un code de confirmation",
+      "Ce nom est déjà pris par un autre membre",
+      "La caméra est requise pour numériser vos documents",
+      "Le stockage de votre appareil est presque plein",
+      "Votre liste de souhaits a été mise à jour",
+      "Laissez une note si vous appréciez le service",
+      "Rangez vos favoris dans un nouveau dossier",
+      "Synchronisation suspendue sur vos autres appareils",
+      "Format non valide, vérifiez votre saisie"
+    ],
+    "es": [
+      "Elige al menos tres temas que te interesen",
+      "Puedes cambiar esto más adelante",
+      "Activar el modo oscuro al anochecer",
+      "Toca dos veces para ampliar una imagen",
+      "El archivo es demasiado grande para subirlo",
+      "El servidor no responde en este momento",
+      "Tu contraseña debe incluir un símbolo",
+      "No pudimos cargar esta página",
+      "Canjea un cupón y ahorra en tu compra",
+      "Envío gratis a partir del segundo artículo",
+      "Enviar a otra dirección",
+      "Alguien comentó tu publicación",
+      "Tienes nuevos seguidores esperando respuesta",
+      "Comparte este enlace con tus amigos",
+      "Tu suscripción se renovará automáticamente",
+      "Programa recordatorios para tus metas diarias",
+      "Sonido y vibración para mensajes nuevos",
+      "Configura la verificación en dos pasos",
+      "Te enviamos un código de confirmación",
+      "Ese nombre de usuario ya está ocupado",
+      "Se necesita la cámara para escanear documentos",
+      "El almacenamiento del dispositivo está casi lleno",
+      "Tu lista de deseos se actualizó",
+      "Califícanos si te gusta la aplicación",
+      "Guarda los marcadores en una carpeta nueva",
+      "La sincronización con otros dispositivos está en pausa",
+      "Formato no válido, revisa los datos"
+    ],
+    "it": [
+      "Scegli almeno tre argomenti che ti interessano",
+      "Potrai cambiare questa scelta più avanti",
+      "Attiva il tema scuro al tramonto",
+      "Tocca due volte per ingrandire una foto",
+      "Il file è troppo grande per il caricamento",
+      "Il server non risponde in questo momento",
+      "La password deve contenere un simbolo",
+      "Impossibile caricare questa pagina",
+      "Usa un codice sconto e risparmia",
+      "Spedizione gratuita dal secondo articolo",
+      "Spedisci a un altro indirizzo",
+      "Qualcuno ha commentato il tuo post",
+      "Nuovi follower aspettano una tua risposta",
+      "Condividi questo link con i tuoi amici",
+      "Il tuo abbonamento si rinnova automaticamente",
+      "Imposta promemoria per i tuoi obiettivi quotidiani",
+      "Suono e vibrazione per i nuovi messaggi",
+      "Configura la verifica in due passaggi",
+      "Ti abbiamo inviato un codice di conferma",
+      "Questo nome utente è già in uso",
+      "Serve la fotocamera per scansionare documenti",
+      "La memoria del dispositivo è quasi piena",
+      "La tua lista dei desideri è stata aggiornata",
+      "Lasciaci una recensione se ti piace il servizio",
+      "Salva i segnalibri in una nuova cartella",
+      "Sincronizzazione con gli altri dispositivi in pausa",
+      "Formato non valido, controlla i dati inseriti"
+    ],
+    "pt-BR": [
+      "Escolha pelo menos três temas do seu interesse",
+      "Você pode mudar isso mais tarde",
+      "Ativar o modo escuro ao anoitecer",
+      "Toque duas vezes para ampliar uma imagem",
+      "O arquivo é grande demais para enviar",
+      "O servidor não está respondendo agora",
+      "Sua senha precisa ter um símbolo",
+      "Não foi possível carregar esta página",
+      "Use um cupom e economize na compra",
+      "Frete grátis a partir do segundo item",
+      "Entregar em outro endereço",
+      "Alguém comentou na sua publicação",
+      "Novos seguidores aguardam sua resposta",
+      "Compartilhe este link com seus amigos",
+      "Sua assinatura será renovada automaticamente",
+      "Crie lembretes para suas metas diárias",
+      "Som e vibração para novas mensagens",
+      "Configure a verificação em duas etapas",
+      "Enviamos um código de confirmação para você",
+      "Esse nome de usuário já está em uso",
+      "A câmera é necessária para digitalizar documentos",
+      "O armazenamento do aparelho está quase cheio",
+      "Sua lista de desejos foi atualizada",
+      "Avalie o aplicativo se estiver gostando",
+      "Guarde os favoritos em uma pasta nova",
+      "Sincronização com outros aparelhos pausada",
+      "Formato inválido, confira os dados"
+    ],
+    "pl": [
+      "Wybierz co najmniej trzy tematy, które cię interesują",
+      "Możesz to zmienić w dowolnej chwili",
+      "Włącz ciemny motyw po zachodzie słońca",
+      "Stuknij dwa razy, aby powiększyć zdjęcie",
+      "Plik jest za duży, by go przesłać",
+      "Serwer w tej chwili nie odpowiada",
+      "Hasło musi zawierać znak specjalny",
+      "Nie udało się wczytać tej strony",
+      "Użyj kodu rabatowego i zaoszczędź",
+      "Darmowa wysyłka od drugiego produktu",
+      "Wyślij na inny adres",
+      "Ktoś skomentował twój wpis",
+      "Nowi obserwujący czekają na twoją odpowiedź",
+      "Udostępnij ten link znajomym",
+      "Subskrypcja odnowi się automatycznie",
+      "Ustaw przypomnienia o codziennych celach",
+      "Dźwięk i wibracje dla nowych wiadomości",
+      "Skonfiguruj weryfikację dwuetapową",
+      "Wysłaliśmy ci kod potwierdzający",
+      "Ta nazwa użytkownika jest już zajęta",
+      "Do skanowania potrzebny jest dostęp do aparatu",
+      "Pamięć urządzenia jest prawie pełna",
+      "Twoja lista życzeń została zaktualizowana",
+      "Oceń aplikację, jeśli ci się podoba",
+      "Przenieś zakładki do nowego folderu",
+      "Synchronizacja z innymi urządzeniami wstrzymana",
+      "Nieprawidłowy format, sprawdź wpisane dane"
+    ],
+    "tr": [
+      "İlgini çeken en az üç konu seç",
+      "Bunu daha sonra istediğin zaman değiştirebilirsin",
+      "Gün batımında karanlık temayı etkinleştir",
+      "Fotoğrafı büyütmek için iki kez tıkla",
+      "Dosya yüklemek için fazla büyük",
+      "Sunucu şu anda yanıt vermiyor",
+      "Şifren en az bir sembol içermeli",
+      "Bu sayfa yüklenemedi",
+      "Kupon kodu kullan ve tasarruf et",
+      "İkinci üründen itibaren kargo bedava",
+      "Başka bir adrese gönder",
+      "Biri gönderine yorum yaptı",
+      "Yeni takipçiler yanıtını bekliyor",
+      "Bu bağlantıyı arkadaşlarınla paylaş",
+      "Aboneliğin otomatik olarak yenilenecek",
+      "Günlük hedeflerin için hatırlatıcı kur",
+      "Yeni mesajlar için ses ve titreşim",
+      "İki adımlı doğrulamayı ayarla",
+      "Sana bir onay kodu gönderdik",
+      "Bu kullanıcı adı zaten alınmış",
+      "Belge taramak için kamera izni gerekiyor",
+      "Cihaz depolama alanı neredeyse dolu",
+      "İstek listen güncellendi",
+      "Uygulamayı beğendiysen bize puan ver",
+      "Yer imlerini yeni bir klasöre taşı",
+      "Diğer cihazlarla eşitleme duraklatıldı",
+      "Geçersiz biçim, girdiğin bilgileri kontrol et"
+    ],
+    "ru": [
+      "Выберите хотя бы три интересные темы",
+      "Это можно изменить в любой момент",
+      "Включать тёмную тему после заката",
+      "Нажмите дважды, чтобы увеличить снимок",
+      "Файл слишком большой для отправки",
+      "Сервер сейчас не отвечает",
+      "Пароль должен содержать спецсимвол",
+      "Не удалось открыть эту страницу",
+      "Примените промокод и сэкономьте",
+      "Бесплатная доставка со второго товара",
+      "Доставить по другому адресу",
+      "Кто-то прокомментировал вашу запись",
+      "Новые подписчики ждут вашего ответа",
+      "Поделитесь этой ссылкой с друзьями",
+      "Подписка продлится автоматически",
+      "Настройте напоминания о ежедневных целях",
+      "Звук и вибрация для новых сообщений",
+      "Включите двухэтапную проверку",
+      "Мы отправили вам код подтверждения",
+      "Это имя пользователя уже занято",
+      "Для сканирования нужен доступ к камере",
+      "Память устройства почти заполнена",
+      "Ваш список желаний обновлён",
+      "Оцените приложение, если оно вам нравится",
+      "Переместите закладки в новую папку",
+      "Синхронизация с другими устройствами приостановлена",
+      "Неверный формат, проверьте введённые данные"
+    ],
+    "uk": [
+      "Оберіть щонайменше три цікаві теми",
+      "Це можна змінити будь-коли пізніше",
+      "Вмикати темну тему після заходу сонця",
+      "Торкніться двічі, щоб збільшити знімок",
+      "Файл завеликий для надсилання",
+      "Сервер зараз не відповідає",
+      "Пароль має містити спецсимвол",
+      "Не вдалося відкрити цю сторінку",
+      "Застосуйте промокод і заощадьте",
+      "Безкоштовна доставка з другого товару",
+      "Доставити на іншу адресу",
+      "Хтось прокоментував ваш допис",
+      "Нові підписники чекають на вашу відповідь",
+      "Поділіться цим посиланням із друзями",
+      "Підписка продовжиться автоматично",
+      "Налаштуйте нагадування про щоденні цілі",
+      "Звук і вібрація для нових повідомлень",
+      "Увімкніть двоетапну перевірку",
+      "Ми надіслали вам код підтвердження",
+      "Цей логін уже зайнятий",
+      "Для сканування потрібен доступ до камери",
+      "Сховище пристрою майже заповнене",
+      "Ваш список бажань оновлено",
+      "Оцініть застосунок, якщо він вам подобається",
+      "Перемістіть закладки в нову папку",
+      "Синхронізацію з іншими пристроями призупинено",
+      "Неправильний формат, перевірте введені дані"
+    ],
+    "ja": [
+      "興味のあるトピックを三つ選んでください",
+      "この選択はあとで変更できます",
+      "日没後にダークモードに切り替える",
+      "ダブルタップで画像を拡大できます",
+      "ファイルのサイズが大きすぎます",
+      "サーバーが応答していません",
+      "パスワードには記号を含めてください",
+      "このページを読み込めませんでした",
+      "クーポンを使ってお得に購入",
+      "二点目から送料が無料になります",
+      "別の住所に配送する",
+      "あなたの投稿にコメントが付きました",
+      "新しいフォロワーが返信を待っています",
+      "このリンクを友達にシェアしよう",
+      "サブスクリプションは自動で更新されます",
+      "毎日の目標をリマインドします",
+      "新着メッセージのサウンドとバイブ",
+      "二段階認証を有効にしてください",
+      "確認コードを送信しました",
+      "このユーザー名はすでに使われています",
+      "スキャンにはカメラへのアクセスが必要です",
+      "端末の空き容量が残りわずかです",
+      "ほしい物リストを更新しました",
+      "気に入ったらアプリを評価してください",
+      "ブックマークを新しいフォルダに移動",
+      "他のデバイスとの同期を一時停止中",
+      "入力内容の形式が正しくありません"
+    ],
+    "ko": [
+      "관심 있는 주제를 세 개 이상 고르세요",
+      "이 선택은 나중에 바꿀 수 있어요",
+      "해가 지면 다크 모드로 전환",
+      "두 번 탭하여 이미지를 확대하세요",
+      "파일 크기가 너무 큽니다",
+      "서버가 응답하지 않습니다",
+      "비밀번호에 특수 문자를 포함하세요",
+      "이 페이지를 불러오지 못했습니다",
+      "쿠폰을 사용하고 할인을 받으세요",
+      "두 번째 상품부터 무료 배송",
+      "다른 주소로 배송하기",
+      "누군가 회원님의 게시물에 댓글을 남겼어요",
+      "새 팔로워가 답장을 기다리고 있어요",
+      "이 링크를 친구들과 공유하세요",
+      "구독은 자동으로 갱신됩니다",
+      "매일 목표에 맞춰 리마인더를 받아보세요",
+      "새 메시지 소리와 진동",
+      "이중 인증을 켜 두세요",
+      "인증 코드를 보내 드렸습니다",
+      "이미 사용 중인 사용자 이름입니다",
+      "스캔하려면 카메라 접근 권한이 필요합니다",
+      "기기 저장 공간이 거의 가득 찼습니다",
+      "위시리스트가 업데이트되었습니다",
+      "앱이 마음에 드시면 평가를 남겨 주세요",
+      "북마크를 새 폴더로 옮기세요",
+      "다른 기기와의 동기화가 일시 중지됨",
+      "입력 형식이 올바르지 않습니다"
+    ],
+    "zh-Hans": [
+      "请选择至少三个感兴趣的话题",
+      "你可以稍后随时更改这项选择",
+      "日落后自动切换到深色模式",
+      "双击即可放大图片",
+      "文件太大，无法上传",
+      "服务器暂时没有响应",
+      "密码必须包含特殊符号",
+      "抱歉，无法加载此页面",
+      "使用优惠券立享折扣",
+      "第二件商品起免运费",
+      "寄送到其他收货地址",
+      "有人评论了你的动态",
+      "新粉丝正在等待你的回复",
+      "把这个链接分享给朋友",
+      "你的订阅将自动续费",
+      "为每日目标添加提醒",
+      "新消息的提示音和振动",
+      "请开启两步验证以保护账户",
+      "我们已向你发送验证码",
+      "该用户名已被占用",
+      "扫描文档需要相机权限",
+      "设备存储空间即将用完",
+      "你的心愿单已更新",
+      "喜欢这款应用就给我们评分吧",
+      "将书签移到新文件夹",
+      "与其他设备的同步已暂停",
+      "格式无效，请检查输入内容"
+    ]
+  },
+  "near": {
+    "de": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Willkommen zurück in deinem Konto"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Starte heute deine kostenlose Probezeit"
+      },
+      {
+        "id": "error.retry",
+        "text": "Etwas ist schiefgelaufen, versuche es später noch einmal"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Dein Warenkorb ist noch immer leer"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Aktiviere Mitteilungen, um nichts mehr zu verpassen"
+      },
+      {
+        "id": "search.none",
+        "text": "Leider keine Treffer für deine Suche gefunden"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Möchtest du diesen Beitrag jetzt wirklich löschen?"
+      },
+      {
+        "id": "download.wifi",
+        "text": "Große Downloads werden nur über WLAN gestartet"
+      }
+    ],
+    "fr": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Bienvenue dans votre espace personnel"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Enregistrez vos modifications avant de quitter la page"
+      },
+      {
+        "id": "error.retry",
+        "text": "Un problème est survenu, réessayez plus tard"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Votre panier est encore vide"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Activez les notifications pour ne rien manquer"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Voulez-vous vraiment supprimer cette publication ?"
+      }
+    ],
+    "es": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Bienvenido de nuevo a tu cuenta"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Empieza hoy tu prueba sin compromiso"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Tu carrito todavía está vacío"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Activa las notificaciones para no perderte nada"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "¿Seguro que quieres eliminar esta publicación?"
+      },
+      {
+        "id": "profile.photo",
+        "text": "Cambia la portada de tu perfil"
+      }
+    ],
+    "it": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Bentornato nel tuo account"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Salva le tue modifiche prima di chiudere"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Inizia oggi il tuo periodo di prova"
+      },
+      {
+        "id": "search.none",
+        "text": "Nessun prodotto trovato per questa ricerca"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Vuoi davvero eliminare questo post?"
+      },
+      {
+        "id": "download.wifi",
+        "text": "I download riprendono quando torna il Wi-Fi"
+      }
+    ],
+    "pt-BR": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Boas-vindas de volta à sua conta"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Salve suas alterações antes de fechar a página"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Comece hoje mesmo seu teste grátis"
+      },
+      {
+        "id": "error.retry",
+        "text": "Algo deu errado, tente de novo mais tarde"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Seu carrinho ainda está vazio"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Ative as notificações para não perder nada"
+      },
+      {
+        "id": "search.none",
+        "text": "Nenhum produto foi encontrado para esta busca"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Tem certeza de que deseja apagar esta mensagem?"
+      },
+      {
+        "id": "profile.photo",
+        "text": "Altere a foto de capa do seu perfil"
+      },
+      {
+        "id": "download.wifi",
+        "text": "Os downloads grandes são feitos apenas pelo Wi-Fi"
+      }
+    ],
+    "pl": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Witaj ponownie na swoim koncie"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Zapisz swoje zmiany przed zamknięciem"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Rozpocznij swój okres próbny już teraz"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Włącz powiadomienia, aby nic nie przegapić"
+      },
+      {
+        "id": "search.none",
+        "text": "Nie znaleziono produktów dla tego wyszukiwania"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Czy na pewno chcesz usunąć ten wpis?"
+      },
+      {
+        "id": "profile.photo",
+        "text": "Dodaj nowe zdjęcie profilowe"
+      }
+    ],
+    "tr": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Yeni profiline hoş geldin"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Sayfadan çıkmadan önce değişiklikleri kaydet"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Ücretsiz deneme sürecini hemen başlat"
+      },
+      {
+        "id": "error.retry",
+        "text": "Bir şeyler ters gitti, lütfen birazdan yeniden dene"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Alışveriş sepetinde ürün yok"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Hiçbir şeyi kaçırmamak için bildirimleri aç"
+      },
+      {
+        "id": "search.none",
+        "text": "Bu arama için ürün bulunamadı"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Bu gönderiyi silmek istediğinden emin misin?"
+      },
+      {
+        "id": "profile.photo",
+        "text": "Profil fotoğrafını şimdi güncelle"
+      },
+      {
+        "id": "download.wifi",
+        "text": "Güncellemeler yalnızca Wi-Fi üzerinden indirilir"
+      }
+    ],
+    "ru": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Добро пожаловать в ваше новое сообщество"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Сохраните свои изменения перед закрытием"
+      },
+      {
+        "id": "error.retry",
+        "text": "Что-то пошло не так, повторите попытку позже"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Ваша корзина всё ещё пуста"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Включите уведомления, чтобы ничего не пропустить"
+      },
+      {
+        "id": "search.none",
+        "text": "По этому запросу товары не найдены"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Вы уверены, что хотите удалить эту фотографию?"
+      },
+      {
+        "id": "download.wifi",
+        "text": "Загрузки продолжатся после подключения к Wi-Fi"
+      }
+    ],
+    "uk": [
+      {
+        "id": "onboarding.welcome",
+        "text": "Ласкаво просимо до вашої нової спільноти"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "Збережіть свої зміни перед закриттям"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "Почніть безкоштовний пробний тиждень прямо зараз"
+      },
+      {
+        "id": "cart.empty",
+        "text": "Ваш кошик поки що порожній"
+      },
+      {
+        "id": "notify.enable",
+        "text": "Увімкніть сповіщення, щоб нічого не пропустити"
+      },
+      {
+        "id": "search.none",
+        "text": "За цим запитом товарів не знайдено"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "Ви впевнені, що хочете видалити цю фотографію?"
+      },
+      {
+        "id": "profile.photo",
+        "text": "Додайте фото до профілю"
+      }
+    ],
+    "ja": [
+      {
+        "id": "onboarding.welcome",
+        "text": "新しいアカウントへようこそ！準備完了"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "終了する前に変更内容を保存してください"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "今日から無料トライアルを始めよう"
+      },
+      {
+        "id": "error.retry",
+        "text": "問題が発生しました。しばらくしてからお試しください"
+      },
+      {
+        "id": "notify.enable",
+        "text": "通知をオンにしてセール情報をいち早く受け取りましょう"
+      },
+      {
+        "id": "search.none",
+        "text": "該当する商品が見つかりませんでした"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "この投稿を削除してもよろしいですか？"
+      },
+      {
+        "id": "download.wifi",
+        "text": "アップデートはWi-Fi接続時のみ実行されます"
+      }
+    ],
+    "ko": [
+      {
+        "id": "onboarding.welcome",
+        "text": "다시 오신 것을 환영합니다"
+      },
+      {
+        "id": "settings.save_all",
+        "text": "닫기 전에 변경 사항을 꼭 저장하세요"
+      },
+      {
+        "id": "paywall.trial",
+        "text": "지금 바로 무료 체험을 시작하세요"
+      },
+      {
+        "id": "cart.empty",
+        "text": "장바구니가 아직 비어 있어요"
+      },
+      {
+        "id": "account.confirm_delete",
+        "text": "이 게시물을 삭제하시겠습니까?"
+      },
+      {
+        "id": "download.wifi",
+        "text": "다운로드는 Wi-Fi에 연결되면 재개됩니다"
+      }
+    ],
+    "zh-Hans": [
+      {
+        "id": "search.none",
+        "text": "未找到与您的筛选条件相关的结果"
+      },
+      {
+        "id": "search.none",
+        "text": "没有找到与您的搜索相关的内容"
+      },
+      {
+        "id": "download.wifi",
+        "text": "上传仅在连接 Wi-Fi 时进行"
+      },
+      {
+        "id": "download.wifi",
+        "text": "更新仅在连接 Wi-Fi 时自动进行"
+      },
+      {
+        "id": "search.none",
+        "text": "未找到与您的搜索相关的商品信息"
+      },
+      {
+        "id": "download.wifi",
+        "text": "下载将在重新连接 Wi-Fi 后自动继续"
+      }
+    ]
+  },
+  "dynamic": {
+    "names": [
+      "Marta Kowalczyk",
+      "Kenji Morimoto",
+      "Aylin Demirci",
+      "Lukas Brenner",
+      "Sofia Marchetti",
+      "Taras Hrytsenko",
+      "Camille Rousseau",
+      "Diego Fuentes",
+      "Hana Takeuchi",
+      "Minjun Seo",
+      "Xiaoyu Chen",
+      "Priya Raman",
+      "Tomasz Wieczorek",
+      "Ingrid Halvorsen",
+      "Rafael Quintela",
+      "Nadia Orlova",
+      "Emre Toprak",
+      "Chiara Bellini",
+      "Joris Verbeek",
+      "Amara Okafor",
+      "Felix Lindqvist",
+      "Yuki Hoshino",
+      "Bruno Azevedo",
+      "Elif Arslan",
+      "Mateo Ibarra",
+      "Olga Shevchuk"
+    ],
+    "handles": [
+      "@nova_rider",
+      "@pixel_fox",
+      "@luna.bakes",
+      "@urban_kite",
+      "@mint_owl",
+      "@sleepy_comet",
+      "@trail_echo",
+      "@paper_moose",
+      "@coral_dash",
+      "@quiet_birch",
+      "@neon_badger",
+      "@velvet_atlas"
+    ],
+    "user": {
+      "de": [
+        "Sieht richtig gut aus!",
+        "Wann treffen wir uns wieder?",
+        "Bin gleich bei dir",
+        "Danke für den Tipp",
+        "Haha, genau so war es",
+        "Kannst du mir das schicken?"
+      ],
+      "fr": [
+        "Trop beau, bravo à toi",
+        "On se retrouve ce soir ?",
+        "Merci pour le conseil",
+        "Je suis en route",
+        "Haha, exactement ça",
+        "Tu peux me renvoyer le fichier ?"
+      ],
+      "es": [
+        "Qué bonito, me encanta",
+        "¿Nos vemos esta noche?",
+        "Gracias por el consejo",
+        "Voy de camino",
+        "Jaja, justo así fue",
+        "¿Me lo puedes mandar?"
+      ],
+      "it": [
+        "Bellissimo, complimenti davvero",
+        "Ci vediamo stasera?",
+        "Grazie per il consiglio",
+        "Sto arrivando adesso",
+        "Ahah, proprio così",
+        "Me lo puoi mandare?"
+      ],
+      "pt-BR": [
+        "Que lindo, amei demais",
+        "A gente se vê hoje?",
+        "Valeu pela dica",
+        "Já estou a caminho",
+        "Kkkk, foi exatamente isso",
+        "Pode me mandar depois?"
+      ],
+      "pl": [
+        "Świetnie wygląda, gratulacje",
+        "Widzimy się dziś wieczorem?",
+        "Dzięki za radę",
+        "Już jestem w drodze",
+        "Haha, dokładnie tak było",
+        "Możesz mi to wysłać?"
+      ],
+      "tr": [
+        "Çok güzel olmuş, tebrikler",
+        "Bu akşam görüşüyor muyuz?",
+        "Tavsiyen için teşekkürler",
+        "Yoldayım, birazdan oradayım",
+        "Haha, aynen öyle oldu",
+        "Bunu bana atabilir misin?"
+      ],
+      "ru": [
+        "Очень красиво, поздравляю",
+        "Увидимся сегодня вечером?",
+        "Спасибо за совет",
+        "Я уже в пути",
+        "Ахаха, именно так и было",
+        "Можешь мне это скинуть?"
+      ],
+      "uk": [
+        "Дуже гарно, вітаю",
+        "Побачимось сьогодні ввечері?",
+        "Дякую за пораду",
+        "Я вже в дорозі",
+        "Ахах, саме так і було",
+        "Можеш мені це надіслати?"
+      ],
+      "ja": [
+        "すごくいいね、おめでとう",
+        "今夜会える？",
+        "アドバイスありがとう",
+        "今向かってるところ",
+        "笑、まさにそれ",
+        "あとで送ってくれる？"
+      ],
+      "ko": [
+        "정말 멋지다, 축하해",
+        "오늘 저녁에 볼까?",
+        "조언해 줘서 정말 고마워요",
+        "지금 가는 중이야",
+        "ㅋㅋ 딱 그랬어",
+        "나중에 보내줄 수 있어?"
+      ],
+      "zh-Hans": [
+        "太漂亮了，恭喜你",
+        "今晚见个面吗？",
+        "谢谢你的建议",
+        "我已经在路上了",
+        "哈哈，就是这样",
+        "回头发给我好吗？"
+      ]
+    },
+    "server": {
+      "de": {
+        "pattern": "^Staffel \\d+: .+$",
+        "titles": [
+          "Staffel 3: Gefrorene Gipfel",
+          "Staffel 7: Die verlorene Stadt",
+          "Staffel 12: Sturm über dem Meer",
+          "Staffel 1: Neue Wege",
+          "Staffel 5: Schatten im Wald",
+          "Staffel 9: Das letzte Rennen"
+        ]
+      },
+      "fr": {
+        "pattern": "^Saison \\d+ : .+$",
+        "titles": [
+          "Saison 3 : Sommets glacés",
+          "Saison 7 : La cité perdue",
+          "Saison 12 : Tempête sur la mer",
+          "Saison 1 : Nouveaux horizons",
+          "Saison 5 : Ombres dans la forêt",
+          "Saison 9 : La dernière course"
+        ]
+      },
+      "es": {
+        "pattern": "^Temporada \\d+: .+$",
+        "titles": [
+          "Temporada 3: Cumbres heladas",
+          "Temporada 7: La ciudad perdida",
+          "Temporada 12: Tormenta en el mar",
+          "Temporada 1: Nuevos caminos",
+          "Temporada 5: Sombras en el bosque",
+          "Temporada 9: La última carrera"
+        ]
+      },
+      "it": {
+        "pattern": "^Stagione \\d+: .+$",
+        "titles": [
+          "Stagione 3: Vette ghiacciate",
+          "Stagione 7: La città perduta",
+          "Stagione 12: Tempesta sul mare",
+          "Stagione 1: Nuove strade",
+          "Stagione 5: Ombre nel bosco",
+          "Stagione 9: Il giro finale"
+        ]
+      },
+      "pt-BR": {
+        "pattern": "^Temporada \\d+: .+$",
+        "titles": [
+          "Temporada 3: Picos congelados",
+          "Temporada 7: A cidade perdida",
+          "Temporada 12: Tempestade no mar",
+          "Temporada 1: Novos caminhos",
+          "Temporada 5: Sombras na floresta",
+          "Temporada 9: A última corrida"
+        ]
+      },
+      "pl": {
+        "pattern": "^Sezon \\d+: .+$",
+        "titles": [
+          "Sezon 3: Lodowe szczyty",
+          "Sezon 7: Zaginione miasto",
+          "Sezon 12: Burza nad morzem",
+          "Sezon 1: Nowe drogi",
+          "Sezon 5: Cienie w lesie",
+          "Sezon 9: Ostatni wyścig"
+        ]
+      },
+      "tr": {
+        "pattern": "^\\d+\\. Sezon: .+$",
+        "titles": [
+          "3. Sezon: Donmuş Zirveler",
+          "7. Sezon: Kayıp Şehir",
+          "12. Sezon: Denizde Fırtına",
+          "1. Sezon: Yeni Yollar",
+          "5. Sezon: Ormandaki Gölgeler",
+          "9. Sezon: Son Yarış"
+        ]
+      },
+      "ru": {
+        "pattern": "^Сезон \\d+: .+$",
+        "titles": [
+          "Сезон 3: Ледяные вершины",
+          "Сезон 7: Затерянный город",
+          "Сезон 12: Шторм над морем",
+          "Сезон 1: Новые пути",
+          "Сезон 5: Тени в лесу",
+          "Сезон 9: Последняя гонка"
+        ]
+      },
+      "uk": {
+        "pattern": "^Сезон \\d+: .+$",
+        "titles": [
+          "Сезон 3: Крижані вершини",
+          "Сезон 7: Загублене місто",
+          "Сезон 12: Шторм над морем",
+          "Сезон 1: Нові шляхи",
+          "Сезон 5: Тіні в лісі",
+          "Сезон 9: Остання гонка"
+        ]
+      },
+      "ja": {
+        "pattern": "^シーズン\\d+：.+$",
+        "titles": [
+          "シーズン3：凍てつく山頂",
+          "シーズン7：失われた都市",
+          "シーズン12：海上の嵐",
+          "シーズン1：新たな道",
+          "シーズン5：森に潜む影",
+          "シーズン9：最後のレース"
+        ]
+      },
+      "ko": {
+        "pattern": "^시즌 \\d+: .+$",
+        "titles": [
+          "시즌 3: 얼어붙은 봉우리",
+          "시즌 7: 잃어버린 도시",
+          "시즌 12: 바다 위의 폭풍",
+          "시즌 1: 새로운 길",
+          "시즌 5: 숲속의 그림자",
+          "시즌 9: 마지막 레이스"
+        ]
+      },
+      "zh-Hans": {
+        "pattern": "^第\\d+赛季：.+$",
+        "titles": [
+          "第3赛季：冰封山巅",
+          "第7赛季：失落之城",
+          "第12赛季：海上风暴",
+          "第1赛季：新的征程",
+          "第5赛季：林中暗影",
+          "第9赛季：最后的竞速"
+        ]
+      }
+    }
+  }
+}

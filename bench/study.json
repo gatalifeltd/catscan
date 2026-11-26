@@ -1,0 +1,15 @@
+{
+  "measured_on": "Apple M5, macOS 27.2 (26B123), feasibility study",
+  "rows": [
+    { "metric": "Line recall on real screenshots, pooled", "engine": "Vision / Tesseract (474 screenshots, 8 locales)", "value": "98.50 / 74.23", "unit": "%", "date": "2026-10-29", "anchor": "real-screenshots" },
+    { "metric": "Check accuracy on real screenshots", "engine": "Vision, Tesseract for Greek (189 checks)", "value": "99.47", "unit": "%", "date": "2026-10-30", "anchor": "real-screenshots" },
+    { "metric": "Median ms per full-resolution phone screenshot, idle", "engine": "Vision / Tesseract", "value": "58 / 230", "unit": "ms", "date": "2026-10-29", "anchor": "real-screenshots" },
+    { "metric": "Energy per screenshot above idle", "engine": "Vision / Tesseract", "value": "about 0.3 / 1.1", "unit": "J", "date": "2026-10-30", "anchor": "energy", "part": "power" },
+    { "metric": "Check accuracy, LLM APIs", "engine": "6 Claude and GPT models", "value": "98.41-100", "unit": "%", "date": "2026-10-30", "anchor": "llm-apis", "part": "llm" },
+    { "metric": "Median ms per check, LLM APIs", "engine": "6 Claude and GPT models", "value": "1300-3220", "unit": "ms", "date": "2026-10-30", "anchor": "llm-apis", "part": "llm" },
+    { "metric": "USD per 1000 checks, LLM APIs (list prices of 2026-10-30)", "engine": "6 Claude and GPT models", "value": "0.19-8.45", "unit": "", "date": "2026-10-30", "anchor": "llm-apis", "part": "llm" },
+    { "metric": "Median ms per check, coding agents", "engine": "Codex, Cursor (3 models)", "value": "8620-15490", "unit": "ms", "date": "2026-10-30", "anchor": "coding-agents" },
+    { "metric": "Agent tokens, one check verdict vs the screenshot", "engine": "catscan", "value": "36x fewer", "unit": "", "date": "2026-10-29", "anchor": "agent-tokens" },
+    { "metric": "e2e suite slowdown with OCR running beside it", "engine": "Vision", "value": "under 1", "unit": "%", "date": "2026-10-29", "anchor": "beside-an-e2e-suite" }
+  ]
+}

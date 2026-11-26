@@ -1,0 +1,253 @@
+{
+  "locale": "el",
+  "icu_locale": "el",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Σαουδική Αραβία",
+      "kind": "region"
+    },
+    {
+      "text": "Σουηδία",
+      "kind": "region"
+    },
+    {
+      "text": "Γαλλία",
+      "kind": "region"
+    },
+    {
+      "text": "Χιλή",
+      "kind": "region"
+    },
+    {
+      "text": "Μεξικό",
+      "kind": "region"
+    },
+    {
+      "text": "Πορτογαλία",
+      "kind": "region"
+    },
+    {
+      "text": "Χονγκ Κονγκ ΕΔΠ Κίνας",
+      "kind": "region"
+    },
+    {
+      "text": "Ηνωμένα Αραβικά Εμιράτα",
+      "kind": "region"
+    },
+    {
+      "text": "Δανία",
+      "kind": "region"
+    },
+    {
+      "text": "Λουξεμβούργο",
+      "kind": "region"
+    },
+    {
+      "text": "Βέλγιο",
+      "kind": "region"
+    },
+    {
+      "text": "Ιράν",
+      "kind": "region"
+    },
+    {
+      "text": "Γερμανικά",
+      "kind": "language"
+    },
+    {
+      "text": "Σερβικά",
+      "kind": "language"
+    },
+    {
+      "text": "Τσεχικά",
+      "kind": "language"
+    },
+    {
+      "text": "Ταϊλανδικά",
+      "kind": "language"
+    },
+    {
+      "text": "Δανικά",
+      "kind": "language"
+    },
+    {
+      "text": "Κροατικά",
+      "kind": "language"
+    },
+    {
+      "text": "Πορτογαλικά",
+      "kind": "language"
+    },
+    {
+      "text": "Γεωργιανά",
+      "kind": "language"
+    },
+    {
+      "text": "Ινδονησιακά",
+      "kind": "language"
+    },
+    {
+      "text": "Τουρκικά",
+      "kind": "language"
+    },
+    {
+      "text": "Ρούβλι Ρωσίας",
+      "kind": "currency"
+    },
+    {
+      "text": "Πέσο Μεξικού",
+      "kind": "currency"
+    },
+    {
+      "text": "Ευρώ",
+      "kind": "currency"
+    },
+    {
+      "text": "Γιεν Ιαπωνίας",
+      "kind": "currency"
+    },
+    {
+      "text": "Δολάριο Καναδά",
+      "kind": "currency"
+    },
+    {
+      "text": "Λίρα Στερλίνα Βρετανίας",
+      "kind": "currency"
+    },
+    {
+      "text": "Σεπτεμβρίου",
+      "kind": "month"
+    },
+    {
+      "text": "Απριλίου",
+      "kind": "month"
+    },
+    {
+      "text": "Ιουνίου",
+      "kind": "month"
+    },
+    {
+      "text": "Μαρτίου",
+      "kind": "month"
+    },
+    {
+      "text": "Τρίτη",
+      "kind": "weekday"
+    },
+    {
+      "text": "Δευτέρα",
+      "kind": "weekday"
+    },
+    {
+      "text": "Κυριακή",
+      "kind": "weekday"
+    },
+    {
+      "text": "έτος",
+      "kind": "field"
+    },
+    {
+      "text": "μήνας",
+      "kind": "field"
+    },
+    {
+      "text": "εβδομάδα",
+      "kind": "field"
+    },
+    {
+      "text": "λεπτό",
+      "kind": "field"
+    },
+    {
+      "text": "δευτερόλεπτο",
+      "kind": "field"
+    },
+    {
+      "text": "σε 3 μήνες",
+      "kind": "relative"
+    },
+    {
+      "text": "σε 3 εβδομάδες",
+      "kind": "relative"
+    },
+    {
+      "text": "αύριο",
+      "kind": "relative"
+    },
+    {
+      "text": "πριν από 5 μήνες",
+      "kind": "relative"
+    },
+    {
+      "text": "χθες",
+      "kind": "relative"
+    },
+    {
+      "text": "σε 3 λεπτά",
+      "kind": "relative"
+    },
+    {
+      "text": "πριν από 5 έτη",
+      "kind": "relative"
+    },
+    {
+      "text": "πριν από 5 ημέρες",
+      "kind": "relative"
+    },
+    {
+      "text": "σε 3 τρίμηνα",
+      "kind": "relative"
+    },
+    {
+      "text": "σε 1 ώρα",
+      "kind": "relative"
+    },
+    {
+      "text": "2 ώρες",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 μήνες",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 χιλιόμετρα",
+      "kind": "unit"
+    },
+    {
+      "text": "5 χιλιόγραμμα",
+      "kind": "unit"
+    },
+    {
+      "text": "2 βαθμοί Κελσίου",
+      "kind": "unit"
+    },
+    {
+      "text": "2 χιλιόμετρα",
+      "kind": "unit"
+    },
+    {
+      "text": "Παρασκευή 19 Ιουλίου 2024",
+      "kind": "date"
+    },
+    {
+      "text": "Παρασκευή 6 Νοεμβρίου 2026",
+      "kind": "date"
+    }
+  ]
+}

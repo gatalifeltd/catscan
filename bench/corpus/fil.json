@@ -1,0 +1,253 @@
+{
+  "locale": "fil",
+  "icu_locale": "fil",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Vietnam",
+      "kind": "region"
+    },
+    {
+      "text": "Nigeria",
+      "kind": "region"
+    },
+    {
+      "text": "Kenya",
+      "kind": "region"
+    },
+    {
+      "text": "Argentina",
+      "kind": "region"
+    },
+    {
+      "text": "Czechia",
+      "kind": "region"
+    },
+    {
+      "text": "Italy",
+      "kind": "region"
+    },
+    {
+      "text": "South Africa",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Sweden",
+      "kind": "region"
+    },
+    {
+      "text": "Saudi Arabia",
+      "kind": "region"
+    },
+    {
+      "text": "Latvia",
+      "kind": "region"
+    },
+    {
+      "text": "Greece",
+      "kind": "region"
+    },
+    {
+      "text": "Thai",
+      "kind": "language"
+    },
+    {
+      "text": "Italian",
+      "kind": "language"
+    },
+    {
+      "text": "Dutch",
+      "kind": "language"
+    },
+    {
+      "text": "Hebrew",
+      "kind": "language"
+    },
+    {
+      "text": "Russian",
+      "kind": "language"
+    },
+    {
+      "text": "Malay",
+      "kind": "language"
+    },
+    {
+      "text": "Chinese",
+      "kind": "language"
+    },
+    {
+      "text": "Marathi",
+      "kind": "language"
+    },
+    {
+      "text": "Armenian",
+      "kind": "language"
+    },
+    {
+      "text": "German",
+      "kind": "language"
+    },
+    {
+      "text": "British Pound",
+      "kind": "currency"
+    },
+    {
+      "text": "Koruna ng Czech Republic",
+      "kind": "currency"
+    },
+    {
+      "text": "Swedish Krona",
+      "kind": "currency"
+    },
+    {
+      "text": "Euro",
+      "kind": "currency"
+    },
+    {
+      "text": "Indian Rupee",
+      "kind": "currency"
+    },
+    {
+      "text": "Forint ng Hungary",
+      "kind": "currency"
+    },
+    {
+      "text": "Mayo",
+      "kind": "month"
+    },
+    {
+      "text": "Disyembre",
+      "kind": "month"
+    },
+    {
+      "text": "Setyembre",
+      "kind": "month"
+    },
+    {
+      "text": "Agosto",
+      "kind": "month"
+    },
+    {
+      "text": "Lunes",
+      "kind": "weekday"
+    },
+    {
+      "text": "Linggo",
+      "kind": "weekday"
+    },
+    {
+      "text": "Huwebes",
+      "kind": "weekday"
+    },
+    {
+      "text": "buwan",
+      "kind": "field"
+    },
+    {
+      "text": "taon",
+      "kind": "field"
+    },
+    {
+      "text": "minuto",
+      "kind": "field"
+    },
+    {
+      "text": "panahon",
+      "kind": "field"
+    },
+    {
+      "text": "oras",
+      "kind": "field"
+    },
+    {
+      "text": "bukas",
+      "kind": "relative"
+    },
+    {
+      "text": "kahapon",
+      "kind": "relative"
+    },
+    {
+      "text": "5 segundo ang nakalipas",
+      "kind": "relative"
+    },
+    {
+      "text": "sa 3 segundo",
+      "kind": "relative"
+    },
+    {
+      "text": "susunod na quarter",
+      "kind": "relative"
+    },
+    {
+      "text": "nakaraang quarter",
+      "kind": "relative"
+    },
+    {
+      "text": "1 segundo ang nakalipas",
+      "kind": "relative"
+    },
+    {
+      "text": "sa 1 segundo",
+      "kind": "relative"
+    },
+    {
+      "text": "sa 3 araw",
+      "kind": "relative"
+    },
+    {
+      "text": "sa 3 quarter",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilo",
+      "kind": "unit"
+    },
+    {
+      "text": "5 araw",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometro",
+      "kind": "unit"
+    },
+    {
+      "text": "2 porsyento",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 degree Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 metro",
+      "kind": "unit"
+    },
+    {
+      "text": "Biyernes, Hulyo 19, 2024",
+      "kind": "date"
+    },
+    {
+      "text": "Biyernes, Nobyembre 6, 2026",
+      "kind": "date"
+    }
+  ]
+}

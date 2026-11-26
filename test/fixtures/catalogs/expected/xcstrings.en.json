@@ -1,0 +1,43 @@
+{
+  "Done editing": [
+    [
+      "Done editing"
+    ]
+  ],
+  "settings.title": [
+    [
+      "Account settings"
+    ]
+  ],
+  "photos.count": [
+    [
+      "photo selected"
+    ],
+    [
+      "photos selected"
+    ]
+  ],
+  "device.hint": [
+    [
+      "Tap here to begin"
+    ],
+    [
+      "Click here to begin"
+    ]
+  ],
+  "folder.files": [
+    [
+      "Found",
+      "file in the folder"
+    ],
+    [
+      "Found",
+      "files in the folder"
+    ]
+  ],
+  "brand": [
+    [
+      "Catscan Studio"
+    ]
+  ]
+}

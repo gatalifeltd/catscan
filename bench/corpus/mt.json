@@ -1,0 +1,253 @@
+{
+  "locale": "mt",
+  "icu_locale": "mt",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "il-Georgia",
+      "kind": "region"
+    },
+    {
+      "text": "l-Emirati Għarab Magħquda",
+      "kind": "region"
+    },
+    {
+      "text": "il-Kenja",
+      "kind": "region"
+    },
+    {
+      "text": "l-Estonja",
+      "kind": "region"
+    },
+    {
+      "text": "ir-Russja",
+      "kind": "region"
+    },
+    {
+      "text": "l-Irlanda",
+      "kind": "region"
+    },
+    {
+      "text": "il-Portugall",
+      "kind": "region"
+    },
+    {
+      "text": "il-Lussemburgu",
+      "kind": "region"
+    },
+    {
+      "text": "id-Danimarka",
+      "kind": "region"
+    },
+    {
+      "text": "il-Kroazja",
+      "kind": "region"
+    },
+    {
+      "text": "il-Filippini",
+      "kind": "region"
+    },
+    {
+      "text": "l-Iżvezja",
+      "kind": "region"
+    },
+    {
+      "text": "Russu",
+      "kind": "language"
+    },
+    {
+      "text": "Grieg",
+      "kind": "language"
+    },
+    {
+      "text": "Daniż",
+      "kind": "language"
+    },
+    {
+      "text": "Persjan",
+      "kind": "language"
+    },
+    {
+      "text": "Tork",
+      "kind": "language"
+    },
+    {
+      "text": "Pollakk",
+      "kind": "language"
+    },
+    {
+      "text": "Malay",
+      "kind": "language"
+    },
+    {
+      "text": "Tajlandiż",
+      "kind": "language"
+    },
+    {
+      "text": "Ċiniż",
+      "kind": "language"
+    },
+    {
+      "text": "Marathi",
+      "kind": "language"
+    },
+    {
+      "text": "ewro",
+      "kind": "currency"
+    },
+    {
+      "text": "Lulju",
+      "kind": "month"
+    },
+    {
+      "text": "Settembru",
+      "kind": "month"
+    },
+    {
+      "text": "Novembru",
+      "kind": "month"
+    },
+    {
+      "text": "Ġunju",
+      "kind": "month"
+    },
+    {
+      "text": "It-Tnejn",
+      "kind": "weekday"
+    },
+    {
+      "text": "Is-Sibt",
+      "kind": "weekday"
+    },
+    {
+      "text": "L-Erbgħa",
+      "kind": "weekday"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "Sena",
+      "kind": "field"
+    },
+    {
+      "text": "Quarter",
+      "kind": "field"
+    },
+    {
+      "text": "sekonda",
+      "kind": "field"
+    },
+    {
+      "text": "jum tal-ġimgħa",
+      "kind": "field"
+    },
+    {
+      "text": "sa 3 minuti oħra",
+      "kind": "relative"
+    },
+    {
+      "text": "il-ġimgħa d-dieħla",
+      "kind": "relative"
+    },
+    {
+      "text": "ix-xahar li għadda",
+      "kind": "relative"
+    },
+    {
+      "text": "siegħa ilu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 snin ilu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 sigħat ilu",
+      "kind": "relative"
+    },
+    {
+      "text": "sa minuta oħra",
+      "kind": "relative"
+    },
+    {
+      "text": "fi 3 xhur oħra",
+      "kind": "relative"
+    },
+    {
+      "text": "5 sekondi ilu",
+      "kind": "relative"
+    },
+    {
+      "text": "minuta ilu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 kg",
+      "kind": "unit"
+    },
+    {
+      "text": "5 km/h",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 km/h",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kg",
+      "kind": "unit"
+    },
+    {
+      "text": "2 min",
+      "kind": "unit"
+    },
+    {
+      "text": "5 min",
+      "kind": "unit"
+    },
+    {
+      "text": "Frar",
+      "kind": "month"
+    },
+    {
+      "text": "l-Istati Uniti",
+      "kind": "region"
+    },
+    {
+      "text": "Ġorġjan",
+      "kind": "language"
+    },
+    {
+      "text": "il-Litwanja",
+      "kind": "region"
+    },
+    {
+      "text": "fi żmien siegħa oħra",
+      "kind": "relative"
+    },
+    {
+      "text": "il-Pakistan",
+      "kind": "region"
+    },
+    {
+      "text": "Ġermaniż",
+      "kind": "language"
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/results-1.json",
+  "title": "catscan results file (results_schema 1 or 2)",
+  "description": "One run, or merged shards of one run. New fields may be added in minor versions; renaming or removing one needs a results_schema bump. Readers ignore unknown fields, but refuse a file whose axes name an axis they do not know. results_schema is 2 when the file uses an axis (device, text_size), else 1.",
+  "type": "object",
+  "required": ["results_schema", "run", "coverage", "totals", "results"],
+  "properties": {
+    "results_schema": { "enum": [1, 2] },
+    "axes": {
+      "type": "array",
+      "description": "results_schema 2 only: the axes the file uses, in cell-key order. A reader refuses an axis it does not know.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z][a-z_]*$" }
+    },
+    "run": {
+      "type": "object",
+      "required": ["catscan", "started_at", "finished_at", "argv", "host", "ci", "build", "shards"],
+      "properties": {
+        "catscan": { "type": "string" },
+        "started_at": { "$ref": "#/definitions/time" },
+        "finished_at": { "$ref": "#/definitions/time" },
+        "argv": { "$ref": "#/definitions/argv" },
+        "host": { "$ref": "#/definitions/host" },
+        "ci": { "$ref": "#/definitions/ci" },
+        "build": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["id", "version"],
+              "properties": { "id": { "type": ["string", "null"] }, "version": { "type": ["string", "null"] } }
+            }
+          ]
+        },
+        "thresholds": { "$ref": "#/definitions/thresholds", "description": "The run's --min-severity and --min-certainty; after a merge without the flags the shards' common value, or null when they differ (mixed-thresholds). Absent in files from before the scale." },
+        "registry": { "$ref": "#/definitions/registry", "description": "The finding registry that set severity and certainty: the first 12 hex digits of the sha256 of its canonical JSON; null after a merge of shards with different registries (mixed-registry)." },
+        "allow": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$", "description": "sha256 of the run's --allow file, taken when the run read it; absent without --allow. results known records it in the known file's scope." },
+        "shards": {
+          "type": "array",
+          "description": "Merged files only: each shard's run, sorted by started_at.",
+          "items": {
+            "type": "object",
+            "required": ["started_at", "finished_at", "argv", "host", "ci"],
+            "properties": {
+              "started_at": { "$ref": "#/definitions/time" },
+              "finished_at": { "$ref": "#/definitions/time" },
+              "argv": { "$ref": "#/definitions/argv" },
+              "host": { "$ref": "#/definitions/host" },
+              "ci": { "$ref": "#/definitions/ci" },
+              "results_digest": { "type": "string", "pattern": "^[0-9a-f]{64}$", "description": "sha256 of the shard's results without missing entries, canonical JSON; tells shards apart." },
+              "thresholds": { "$ref": "#/definitions/thresholds" },
+              "registry": { "$ref": "#/definitions/registry" },
+              "known_digest": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }], "description": "The shard's known-file digest, when it ran with --known." },
+              "allow": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$", "description": "sha256 of the run's --allow file, taken when the run read it; absent without --allow. results known records it in the known file's scope." }
+            }
+          }
+        }
+      }
+    },
+    "coverage": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["layout", "expected_locales", "expected_screens", "received", "missing"],
+          "properties": {
+            "layout": { "enum": ["{locale}/{screen}", "{screen}.{locale}", "{screen}/{locale}", "{locale}-{screen}", "{screen}-{locale}", "{text_size}/{locale}/{screen}", "{text_size}/{screen}.{locale}", "{text_size}/{screen}/{locale}", "{text_size}/{locale}-{screen}", "{text_size}/{screen}-{locale}", "{device}/{locale}/{screen}", "{device}/{screen}.{locale}", "{device}/{screen}/{locale}", "{device}/{locale}-{screen}", "{device}/{screen}-{locale}", "{device}/{text_size}/{locale}/{screen}", "{device}/{text_size}/{screen}.{locale}", "{device}/{text_size}/{screen}/{locale}", "{device}/{text_size}/{locale}-{screen}", "{device}/{text_size}/{screen}-{locale}"] },
+            "expected_locales": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "expected_screens": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+            "expected_devices": { "oneOf": [{ "type": "null" }, { "type": "array", "items": { "$ref": "#/definitions/device" }, "uniqueItems": true }], "description": "The expected devices, or null when the run has no device axis. Absent in files written before it existed." },
+            "expected_text_sizes": { "oneOf": [{ "type": "null" }, { "type": "array", "items": { "$ref": "#/definitions/text_size" }, "uniqueItems": true }], "description": "The expected text sizes, or null when the run has no text-size axis. A result with text_size null counts as default. Absent in files written before it existed." },
+            "received": { "type": "integer", "minimum": 0 },
+            "missing": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["locale", "screen"],
+                "properties": { "locale": { "type": "string" }, "screen": { "type": "string" }, "device": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/device" }] }, "text_size": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/text_size" }] } }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "totals": {
+      "type": "object",
+      "required": ["pass", "fail", "unsupported", "error"],
+      "properties": {
+        "pass": { "type": "integer", "minimum": 0 },
+        "fail": { "type": "integer", "minimum": 0 },
+        "needs-reader": { "type": "integer", "minimum": 0, "description": "Inputs in a locale catscan reads with a reader that is not installed (absent in files written before it existed)." },
+        "unsupported": { "type": "integer", "minimum": 0 },
+        "error": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "results": {
+      "type": "array",
+      "description": "One result envelope per input, plus the missing entries.",
+      "items": { "$ref": "https://catscan.dev/schema/result-1.json" }
+    },
+    "approved": {
+      "description": "Set by catscan results baseline; the file is then an approved baseline.",
+      "type": "object",
+      "required": ["at", "from"],
+      "properties": { "at": { "$ref": "#/definitions/time" }, "from": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" } }
+    },
+    "known": {
+      "type": "object",
+      "description": "The --known comparison: present only when the run, results merge or report applied a known file.",
+      "required": ["file", "digest", "key_algo", "counts", "gone"],
+      "properties": {
+        "file": { "type": "string" },
+        "digest": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }], "description": "sha256 of the known file; null when it did not exist (known-missing)." },
+        "key_algo": { "type": "integer", "minimum": 1 },
+        "counts": { "type": "object", "required": ["known", "new", "gone"], "properties": { "known": { "type": "integer", "minimum": 0 }, "new": { "type": "integer", "minimum": 0 }, "gone": { "type": "integer", "minimum": 0 } } },
+        "gone": { "type": "array", "description": "Approved rows no longer found in the groups this file read; count is the number gone.", "items": { "type": "object", "required": ["command", "pseudo", "device", "locale", "screen", "path", "kind", "rule", "text", "count"] } }
+      }
+    },
+    "baseline": {
+      "description": "The --baseline comparison, or null.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["file", "digest", "approved", "build", "started_at", "catscan", "ignore_digest", "cells", "counts", "review"],
+          "properties": {
+            "file": { "type": "string" },
+            "digest": { "type": ["string", "null"] },
+            "approved": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/time" }] },
+            "build": { "type": ["string", "null"] },
+            "started_at": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/time" }] },
+            "catscan": { "type": ["string", "null"] },
+            "ignore_digest": { "type": ["string", "null"] },
+            "cells": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["locale", "screen", "state", "review", "reason", "inputs", "diff", "minor_diff", "renamed_from"],
+                "properties": {
+                  "device": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/device" }] },
+                  "text_size": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/text_size" }] },
+                  "locale": { "type": "string" },
+                  "screen": { "type": ["string", "null"] },
+                  "state": { "enum": ["changed", "unchanged", "new", "gone", "ambiguous"] },
+                  "review": { "type": "boolean" },
+                  "reason": { "enum": ["changed", "new", "ambiguous", "failing", "baseline-incomplete", "no-text", "engine-unmeasured", "reader-changed", "baseline-ignore-changed", "baseline-unapproved", null] },
+                  "inputs": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": ["path", "baseline_path", "command"],
+                      "properties": { "path": { "type": ["string", "null"] }, "baseline_path": { "type": ["string", "null"] }, "command": { "type": "string" } }
+                    }
+                  },
+                  "diff": { "$ref": "#/definitions/diff" },
+                  "minor_diff": { "$ref": "#/definitions/diff" },
+                  "renamed_from": { "type": ["string", "null"] }
+                }
+              }
+            },
+            "counts": {
+              "type": "object",
+              "required": ["changed", "unchanged", "new", "gone", "ambiguous"],
+              "additionalProperties": { "type": "integer", "minimum": 0 }
+            },
+            "review": {
+              "type": "object",
+              "required": ["cells", "skip", "denominator", "excluded"],
+              "properties": {
+                "cells": { "type": "integer", "minimum": 0 },
+                "skip": { "type": "integer", "minimum": 0 },
+                "denominator": { "type": "integer", "minimum": 0 },
+                "excluded": {
+                  "type": "object",
+                  "required": ["missing", "unmapped"],
+                  "properties": { "missing": { "type": "integer", "minimum": 0 }, "unmapped": { "type": "integer", "minimum": 0 } }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    { "if": { "properties": { "results_schema": { "const": 2 } } }, "then": { "required": ["axes"] }, "else": { "not": { "required": ["axes"] } } }
+  ],
+  "definitions": {
+    "device": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$" },
+    "text_size": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$" },
+    "thresholds": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["min_severity", "min_certainty"],
+          "properties": { "min_severity": { "enum": ["critical", "major", "minor"] }, "min_certainty": { "enum": ["high", "medium", "low"] } }
+        }
+      ]
+    },
+    "registry": { "type": ["string", "null"], "pattern": "^[0-9a-f]{12}$" },
+    "diff": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["added", "removed", "added_count", "removed_count"],
+          "properties": {
+            "added": { "type": "array", "maxItems": 50, "items": { "type": "string" } },
+            "removed": { "type": "array", "maxItems": 50, "items": { "type": "string" } },
+            "added_count": { "type": "integer", "minimum": 0 },
+            "removed_count": { "type": "integer", "minimum": 0 }
+          }
+        }
+      ]
+    },
+    "time": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$" },
+    "argv": { "type": "array", "items": { "type": "string" } },
+    "host": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["chip", "arch", "host_class", "macos", "vision_revision"],
+          "properties": {
+            "chip": { "type": "string" },
+            "arch": { "type": "string" },
+            "host_class": { "enum": ["physical", "vm"] },
+            "macos": { "type": "string" },
+            "vision_revision": { "type": "integer", "minimum": 1 }
+          }
+        }
+      ]
+    },
+    "ci": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["provider", "runner", "commit", "ref", "run_id"],
+          "properties": {
+            "provider": { "enum": ["github-actions", "gitlab-ci", "circleci", "bitrise", "codemagic", "azure-pipelines", "buildkite", "jenkins"] },
+            "runner": { "type": ["string", "null"] },
+            "commit": { "type": ["string", "null"] },
+            "ref": { "type": ["string", "null"] },
+            "run_id": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "locale": "mr",
+  "icu_locale": "mr",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "आइसलँड",
+      "kind": "region"
+    },
+    {
+      "text": "लाटव्हिया",
+      "kind": "region"
+    },
+    {
+      "text": "इस्त्राइल",
+      "kind": "region"
+    },
+    {
+      "text": "हाँगकाँग एसएआर चीन",
+      "kind": "region"
+    },
+    {
+      "text": "थायलंड",
+      "kind": "region"
+    },
+    {
+      "text": "अर्मेनिया",
+      "kind": "region"
+    },
+    {
+      "text": "रोमानिया",
+      "kind": "region"
+    },
+    {
+      "text": "एस्टोनिया",
+      "kind": "region"
+    },
+    {
+      "text": "स्वित्झर्लंड",
+      "kind": "region"
+    },
+    {
+      "text": "बेल्जियम",
+      "kind": "region"
+    },
+    {
+      "text": "मलेशिया",
+      "kind": "region"
+    },
+    {
+      "text": "इथिओपिया",
+      "kind": "region"
+    },
+    {
+      "text": "सर्बियन",
+      "kind": "language"
+    },
+    {
+      "text": "पोर्तुगीज",
+      "kind": "language"
+    },
+    {
+      "text": "अर्मेनियन",
+      "kind": "language"
+    },
+    {
+      "text": "कोरियन",
+      "kind": "language"
+    },
+    {
+      "text": "रोमानियन",
+      "kind": "language"
+    },
+    {
+      "text": "व्हिएतनामी",
+      "kind": "language"
+    },
+    {
+      "text": "नॉर्वेजियन",
+      "kind": "language"
+    },
+    {
+      "text": "जॉर्जियन",
+      "kind": "language"
+    },
+    {
+      "text": "रशियन",
+      "kind": "language"
+    },
+    {
+      "text": "बल्गेरियन",
+      "kind": "language"
+    },
+    {
+      "text": "स्विस फ्रँक",
+      "kind": "currency"
+    },
+    {
+      "text": "भारतीय रुपया",
+      "kind": "currency"
+    },
+    {
+      "text": "स्वीडिश क्रोना",
+      "kind": "currency"
+    },
+    {
+      "text": "जपानी येन",
+      "kind": "currency"
+    },
+    {
+      "text": "ईस्त्रायली न्यू शेकेल",
+      "kind": "currency"
+    },
+    {
+      "text": "तुर्की लिरा",
+      "kind": "currency"
+    },
+    {
+      "text": "ऑक्टोबर",
+      "kind": "month"
+    },
+    {
+      "text": "सप्टेंबर",
+      "kind": "month"
+    },
+    {
+      "text": "नोव्हेंबर",
+      "kind": "month"
+    },
+    {
+      "text": "डिसेंबर",
+      "kind": "month"
+    },
+    {
+      "text": "गुरुवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "शनिवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "सोमवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "आठवडा",
+      "kind": "field"
+    },
+    {
+      "text": "आठवड्याचा दिवस",
+      "kind": "field"
+    },
+    {
+      "text": "टाइम झोन",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "३ आठवड्यांमध्ये",
+      "kind": "relative"
+    },
+    {
+      "text": "५ तासांपूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "१ तासामध्ये",
+      "kind": "relative"
+    },
+    {
+      "text": "५ तिमाहींपूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "मागील तिमाही",
+      "kind": "relative"
+    },
+    {
+      "text": "१ तासापूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "येत्या ३ महिन्यांमध्ये",
+      "kind": "relative"
+    },
+    {
+      "text": "५ वर्षांपूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "५ मिनिटांपूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "मागील वर्ष",
+      "kind": "relative"
+    },
+    {
+      "text": "५ गिगाबाइट",
+      "kind": "unit"
+    },
+    {
+      "text": "५ महिने",
+      "kind": "unit"
+    },
+    {
+      "text": "५ अंश सेल्सिअस",
+      "kind": "unit"
+    },
+    {
+      "text": "२ गिगाबाइट",
+      "kind": "unit"
+    },
+    {
+      "text": "२ तास",
+      "kind": "unit"
+    },
+    {
+      "text": "२ मेगाबाइट",
+      "kind": "unit"
+    },
+    {
+      "text": "२ दिवस",
+      "kind": "unit"
+    },
+    {
+      "text": "५ लीटर",
+      "kind": "unit"
+    },
+    {
+      "text": "शुक्रवार, १९ जुलै, २०२४",
+      "kind": "date"
+    },
+    {
+      "text": "५ आठवड्यांपूर्वी",
+      "kind": "relative"
+    },
+    {
+      "text": "संयुक्त अरब अमिराती",
+      "kind": "region"
+    }
+  ]
+}

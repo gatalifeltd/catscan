@@ -1,0 +1,13 @@
+<!doctype html>
+<!-- Spec 13 fixture: a moving element (its box changes between reads) and one cut line. -->
+<html><head><meta charset="utf-8"><title>animated</title>
+<style>
+body{margin:24px;font:28px Helvetica, Arial, sans-serif;color:#111;background:#fff}
+.mover{position:relative;display:inline-block}
+.cut{width:220px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:40px}
+</style></head>
+<body><div class="mover" id="m">Loading</div><div class="cut">Notifications and privacy settings</div>
+<script>
+// A timer, not a CSS animation: it moves from the first frame in every engine, so two box reads never agree.
+let n = 0; const m = document.getElementById("m"); setInterval(() => { n = (n + 7) % 400; m.style.left = n + "px"; }, 5);
+</script></body></html>

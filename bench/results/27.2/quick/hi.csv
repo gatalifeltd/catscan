@@ -1,0 +1,8 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+hi,vision-accurate-rev3,false,30,0,40,39,97.5,10,9,0.9,0.0204,17,0,3,10,1,0.85,17,0|0|0|0|0|0|0|0|0|10,0|0|0|0|0|0|0|0|0|9
+image,case,present,absent,truncated,cer,read
+hi/00-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hi/00-clip-16-light-flat.png,clip,,pass,no,,
+hi/05-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hi/08-fit-16-light-flat.png,fit,fail,pass,no,1,दक्षिण अफ्रीका

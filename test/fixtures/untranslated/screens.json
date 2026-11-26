@@ -1,0 +1,274 @@
+[
+ {
+  "name": "u01-clean.png",
+  "locale": "de",
+  "width": 900,
+  "height": 570,
+  "lines": [
+   {
+    "text": "Einstellungen",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Datenschutz",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Mitteilungen",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   },
+   {
+    "text": "Sprache",
+    "x": 60,
+    "y": 330,
+    "size": 40
+   },
+   {
+    "text": "Abmelden",
+    "x": 60,
+    "y": 420,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u02-privacy.png",
+  "locale": "de",
+  "width": 900,
+  "height": 480,
+  "lines": [
+   {
+    "text": "Einstellungen",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Privacy",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Mitteilungen",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   },
+   {
+    "text": "Sprache",
+    "x": 60,
+    "y": 330,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u03-two.png",
+  "locale": "de",
+  "width": 900,
+  "height": 480,
+  "lines": [
+   {
+    "text": "Settings",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Datenschutz",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Notifications",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   },
+   {
+    "text": "Abmelden",
+    "x": 60,
+    "y": 330,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u04-raw-key.png",
+  "locale": "de",
+  "width": 900,
+  "height": 390,
+  "lines": [
+   {
+    "text": "Willkommen zurück",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "paywall.cta_title",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Käufe wiederherstellen",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u05-placeholder.png",
+  "locale": "de",
+  "width": 900,
+  "height": 390,
+  "lines": [
+   {
+    "text": "Warenkorb",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "{{count}} Artikel",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "Weiter",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u06-shared.png",
+  "locale": "de",
+  "width": 900,
+  "height": 480,
+  "lines": [
+   {
+    "text": "Download starten",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Video",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "OK",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   },
+   {
+    "text": "E-Mail",
+    "x": 60,
+    "y": 330,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u07-missing.png",
+  "locale": "de",
+  "width": 900,
+  "height": 300,
+  "lines": [
+   {
+    "text": "Delete account",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Abmelden",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u08-cta.png",
+  "locale": "de",
+  "width": 900,
+  "height": 300,
+  "lines": [
+   {
+    "text": "Catscan Pro",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Start your free trial",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u09-mixed.png",
+  "locale": "de",
+  "width": 900,
+  "height": 300,
+  "lines": [
+   {
+    "text": "Hello, Anna",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Noch %d Tage",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   }
+  ]
+ },
+ {
+  "name": "u10-domain.png",
+  "locale": "de",
+  "width": 900,
+  "height": 390,
+  "lines": [
+   {
+    "text": "acme.ai",
+    "x": 60,
+    "y": 60,
+    "size": 40
+   },
+   {
+    "text": "Version 1.2.3",
+    "x": 60,
+    "y": 150,
+    "size": 40
+   },
+   {
+    "text": "home.title",
+    "x": 60,
+    "y": 240,
+    "size": 40
+   }
+  ]
+ }
+]

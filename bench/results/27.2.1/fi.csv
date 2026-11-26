@@ -1,0 +1,64 @@
+# catscan=0.17.2 macos=27.2.1 macos_build=26B131 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+fi,vision-accurate-rev3,true,2160,0,2880,2868,99.58,720,708,0.9833,0.0022,1395,3,45,717,0.9979,0.9688,29.5,0|0|0|2|0|1|0|0|0|717,0|0|0|0|0|15|0|0|0|705
+image,case,present,absent,truncated,cer,read
+fi/00-fit-12-light-flat.png,fit,fail,pass,no,1,Tsekki
+fi/00-fit-16-light-flat.png,fit,fail,pass,no,1,Tsekki
+fi/00-fit-24-light-flat.png,fit,fail,pass,no,1,Tsekki
+fi/00-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+fi/02-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+fi/02-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+fi/07-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+fi/07-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+fi/07-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+fi/07-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+fi/07-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+fi/07-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+fi/08-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+fi/12-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+fi/12-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+fi/12-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+fi/12-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fi/12-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+fi/12-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+fi/12-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+fi/12-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+fi/12-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+fi/13-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+fi/13-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fi/13-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+fi/13-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+fi/14-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fi/14-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+fi/16-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+fi/18-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+fi/18-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+fi/19-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+fi/22-fit-12-light-flat.png,fit,fail,pass,no,1,Tsekin koruna
+fi/25-clip-12-light-flat.png,clip,,pass,no,,
+fi/25-clip-12-light-gradient.png,clip,,pass,no,,
+fi/25-clip-12-dark-flat.png,clip,,pass,no,,
+fi/25-clip-12-dark-gradient.png,clip,,pass,no,,
+fi/25-clip-16-light-flat.png,clip,,pass,no,,
+fi/25-clip-16-light-gradient.png,clip,,pass,no,,
+fi/25-clip-16-dark-flat.png,clip,,pass,no,,
+fi/25-clip-16-dark-gradient.png,clip,,pass,no,,
+fi/25-clip-24-light-flat.png,clip,,pass,no,,
+fi/25-clip-24-light-gradient.png,clip,,pass,no,,
+fi/25-clip-24-dark-flat.png,clip,,pass,no,,
+fi/25-clip-24-dark-gradient.png,clip,,pass,no,,
+fi/26-fit-12-light-gradient.png,fit,pass,pass,screen-edge,0,
+fi/26-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+fi/30-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+fi/30-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+fi/33-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+fi/36-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+fi/36-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+fi/38-fit-16-light-flat.png,fit,fail,pass,no,1,neljannesvuosi
+fi/38-fit-16-dark-flat.png,fit,fail,pass,no,1,neljannesvuosi
+fi/44-fit-12-dark-flat.png,fit,fail,pass,no,1,3 minuutin päästa
+fi/44-fit-16-dark-gradient.png,fit,fail,pass,no,1,3 minuutin päästă
+fi/44-fit-24-dark-gradient.png,fit,fail,pass,no,1,3 minuutin päästa
+fi/47-fit-12-dark-flat.png,fit,fail,pass,no,3,3 tunnin paâsta
+fi/47-fit-24-dark-flat.png,fit,fail,pass,no,3,3 tunnin pastă
+fi/57-fit-24-dark-flat.png,fit,fail,pass,no,3,5 paivãa

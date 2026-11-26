@@ -1,0 +1,11 @@
+# The button label each UI test screen must show.
+screen-01.png: Sign in
+screen-02.png: Continue
+screen-03.png: Add to cart
+screen-04.png: Checkout
+screen-05.png: Save changes
+screen-06.png: Send message
+screen-07.png: Start free trial
+screen-08.png: Log out
+screen-09.png: Try again
+screen-10.png: Next step

@@ -1,0 +1,3 @@
+"a" = "fine";
+"b" = "missing semicolon"
+"c" = "next";

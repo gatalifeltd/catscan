@@ -1,0 +1,253 @@
+{
+  "locale": "hi",
+  "icu_locale": "hi",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "फ़िनलैंड",
+      "kind": "region"
+    },
+    {
+      "text": "लग्ज़मबर्ग",
+      "kind": "region"
+    },
+    {
+      "text": "अर्जेंटीना",
+      "kind": "region"
+    },
+    {
+      "text": "आइसलैंड",
+      "kind": "region"
+    },
+    {
+      "text": "बेल्जियम",
+      "kind": "region"
+    },
+    {
+      "text": "इज़राइल",
+      "kind": "region"
+    },
+    {
+      "text": "नीदरलैंड",
+      "kind": "region"
+    },
+    {
+      "text": "इथियोपिया",
+      "kind": "region"
+    },
+    {
+      "text": "दक्षिण अफ़्रीका",
+      "kind": "region"
+    },
+    {
+      "text": "आयरलैंड",
+      "kind": "region"
+    },
+    {
+      "text": "स्लोवेनिया",
+      "kind": "region"
+    },
+    {
+      "text": "वियतनाम",
+      "kind": "region"
+    },
+    {
+      "text": "आर्मेनियाई",
+      "kind": "language"
+    },
+    {
+      "text": "क्रोएशियाई",
+      "kind": "language"
+    },
+    {
+      "text": "बुल्गारियाई",
+      "kind": "language"
+    },
+    {
+      "text": "रोमानियाई",
+      "kind": "language"
+    },
+    {
+      "text": "इंडोनेशियाई",
+      "kind": "language"
+    },
+    {
+      "text": "सर्बियाई",
+      "kind": "language"
+    },
+    {
+      "text": "यूक्रेनियाई",
+      "kind": "language"
+    },
+    {
+      "text": "नॉर्वेजियाई",
+      "kind": "language"
+    },
+    {
+      "text": "जॉर्जियाई",
+      "kind": "language"
+    },
+    {
+      "text": "हंगेरियाई",
+      "kind": "language"
+    },
+    {
+      "text": "दक्षिण कोरियाई वॉन",
+      "kind": "currency"
+    },
+    {
+      "text": "ब्रिटिश पाउंड स्टर्लिंग",
+      "kind": "currency"
+    },
+    {
+      "text": "मैक्सिकन पेसो",
+      "kind": "currency"
+    },
+    {
+      "text": "चेक गणराज्य कोरुना",
+      "kind": "currency"
+    },
+    {
+      "text": "स्वीडीश क्रोना",
+      "kind": "currency"
+    },
+    {
+      "text": "जापानी येन",
+      "kind": "currency"
+    },
+    {
+      "text": "अक्टूबर",
+      "kind": "month"
+    },
+    {
+      "text": "जनवरी",
+      "kind": "month"
+    },
+    {
+      "text": "सितंबर",
+      "kind": "month"
+    },
+    {
+      "text": "दिसंबर",
+      "kind": "month"
+    },
+    {
+      "text": "बुधवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "मंगलवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "सोमवार",
+      "kind": "weekday"
+    },
+    {
+      "text": "समय क्षेत्र",
+      "kind": "field"
+    },
+    {
+      "text": "सप्ताह का दिन",
+      "kind": "field"
+    },
+    {
+      "text": "पूर्वाह्न/अपराह्न",
+      "kind": "field"
+    },
+    {
+      "text": "अगला वर्ष",
+      "kind": "relative"
+    },
+    {
+      "text": "3 वर्ष में",
+      "kind": "relative"
+    },
+    {
+      "text": "3 तिमाहियों में",
+      "kind": "relative"
+    },
+    {
+      "text": "अगला माह",
+      "kind": "relative"
+    },
+    {
+      "text": "5 मिनट पहले",
+      "kind": "relative"
+    },
+    {
+      "text": "5 तिमाही पहले",
+      "kind": "relative"
+    },
+    {
+      "text": "3 मिनट में",
+      "kind": "relative"
+    },
+    {
+      "text": "1 सेकंड पहले",
+      "kind": "relative"
+    },
+    {
+      "text": "1 घंटे पहले",
+      "kind": "relative"
+    },
+    {
+      "text": "5 घंटे पहले",
+      "kind": "relative"
+    },
+    {
+      "text": "5 महीने",
+      "kind": "unit"
+    },
+    {
+      "text": "2 मिनट",
+      "kind": "unit"
+    },
+    {
+      "text": "2 गीगाबाइट",
+      "kind": "unit"
+    },
+    {
+      "text": "2 किलोग्राम",
+      "kind": "unit"
+    },
+    {
+      "text": "5 किलोमीटर प्रति घंटा",
+      "kind": "unit"
+    },
+    {
+      "text": "2 घंटे",
+      "kind": "unit"
+    },
+    {
+      "text": "5 मीटर",
+      "kind": "unit"
+    },
+    {
+      "text": "2 किलोमीटर",
+      "kind": "unit"
+    },
+    {
+      "text": "शुक्रवार, 6 नवंबर 2026",
+      "kind": "date"
+    },
+    {
+      "text": "शुक्रवार, 19 जुलाई 2024",
+      "kind": "date"
+    },
+    {
+      "text": "रूसी रूबल",
+      "kind": "currency"
+    },
+    {
+      "text": "5 गीगाबाइट",
+      "kind": "unit"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "locale": "fi",
+  "icu_locale": "fi",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Tšekki",
+      "kind": "region"
+    },
+    {
+      "text": "Etelä-Korea",
+      "kind": "region"
+    },
+    {
+      "text": "Kolumbia",
+      "kind": "region"
+    },
+    {
+      "text": "Slovenia",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Arabiemiirikunnat",
+      "kind": "region"
+    },
+    {
+      "text": "Saudi-Arabia",
+      "kind": "region"
+    },
+    {
+      "text": "Puola",
+      "kind": "region"
+    },
+    {
+      "text": "Venäjä",
+      "kind": "region"
+    },
+    {
+      "text": "Hongkong – Kiinan erityishallintoalue",
+      "kind": "region"
+    },
+    {
+      "text": "Slovakia",
+      "kind": "region"
+    },
+    {
+      "text": "Etelä-Afrikka",
+      "kind": "region"
+    },
+    {
+      "text": "ruotsi",
+      "kind": "language"
+    },
+    {
+      "text": "suomi",
+      "kind": "language"
+    },
+    {
+      "text": "kreikka",
+      "kind": "language"
+    },
+    {
+      "text": "ranska",
+      "kind": "language"
+    },
+    {
+      "text": "portugali",
+      "kind": "language"
+    },
+    {
+      "text": "tanska",
+      "kind": "language"
+    },
+    {
+      "text": "japani",
+      "kind": "language"
+    },
+    {
+      "text": "romania",
+      "kind": "language"
+    },
+    {
+      "text": "heprea",
+      "kind": "language"
+    },
+    {
+      "text": "hollanti",
+      "kind": "language"
+    },
+    {
+      "text": "Tšekin koruna",
+      "kind": "currency"
+    },
+    {
+      "text": "Australian dollari",
+      "kind": "currency"
+    },
+    {
+      "text": "Brasilian real",
+      "kind": "currency"
+    },
+    {
+      "text": "Kiinan juan",
+      "kind": "currency"
+    },
+    {
+      "text": "Norjan kruunu",
+      "kind": "currency"
+    },
+    {
+      "text": "Israelin uusi sekeli",
+      "kind": "currency"
+    },
+    {
+      "text": "huhtikuu",
+      "kind": "month"
+    },
+    {
+      "text": "toukokuu",
+      "kind": "month"
+    },
+    {
+      "text": "lokakuu",
+      "kind": "month"
+    },
+    {
+      "text": "helmikuu",
+      "kind": "month"
+    },
+    {
+      "text": "lauantai",
+      "kind": "weekday"
+    },
+    {
+      "text": "perjantai",
+      "kind": "weekday"
+    },
+    {
+      "text": "keskiviikko",
+      "kind": "weekday"
+    },
+    {
+      "text": "viikonpäivä",
+      "kind": "field"
+    },
+    {
+      "text": "tunti",
+      "kind": "field"
+    },
+    {
+      "text": "aikavyöhyke",
+      "kind": "field"
+    },
+    {
+      "text": "neljännesvuosi",
+      "kind": "field"
+    },
+    {
+      "text": "minuutti",
+      "kind": "field"
+    },
+    {
+      "text": "5 kuukautta sitten",
+      "kind": "relative"
+    },
+    {
+      "text": "1 tunnin päästä",
+      "kind": "relative"
+    },
+    {
+      "text": "viime viikolla",
+      "kind": "relative"
+    },
+    {
+      "text": "5 sekuntia sitten",
+      "kind": "relative"
+    },
+    {
+      "text": "3 minuutin päästä",
+      "kind": "relative"
+    },
+    {
+      "text": "3 kuukauden päästä",
+      "kind": "relative"
+    },
+    {
+      "text": "huomenna",
+      "kind": "relative"
+    },
+    {
+      "text": "3 tunnin päästä",
+      "kind": "relative"
+    },
+    {
+      "text": "viime kuussa",
+      "kind": "relative"
+    },
+    {
+      "text": "viime vuonna",
+      "kind": "relative"
+    },
+    {
+      "text": "2 gigatavua",
+      "kind": "unit"
+    },
+    {
+      "text": "2 viikkoa",
+      "kind": "unit"
+    },
+    {
+      "text": "5 viikkoa",
+      "kind": "unit"
+    },
+    {
+      "text": "2 celsiusastetta",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megatavua",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litraa",
+      "kind": "unit"
+    },
+    {
+      "text": "5 celsiusastetta",
+      "kind": "unit"
+    },
+    {
+      "text": "5 päivää",
+      "kind": "unit"
+    },
+    {
+      "text": "maanantai 3. maaliskuuta 2025",
+      "kind": "date"
+    },
+    {
+      "text": "syyskuu",
+      "kind": "month"
+    }
+  ]
+}

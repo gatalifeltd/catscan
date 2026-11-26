@@ -1,0 +1,6 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+hy,tesseract-5.5.4,false,30,0,40,40,100,10,10,1,0,18,0,2,10,1,0.9,66,0|0|0|0|0|0|0|0|0|10,0|0|0|0|0|0|0|0|3|7
+image,case,present,absent,truncated,cer,read
+hy/01-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+hy/03-ellipsis-16-light-flat.png,ellipsis,,pass,no,,

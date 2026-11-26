@@ -1,0 +1,3190 @@
+{
+  "spec": 10,
+  "date": "2026-11-11",
+  "prompt": "Run the UI tests. Are all 10 screens showing the expected button labels? Name any that do not.",
+  "catscan": {
+    "version": "0.16.0",
+    "source": "local build of this checkout (packages/mcp, core release build); @catscan/cli and @catscan/mcp are not on npm yet",
+    "cli_on_path": "a catscan shim for the local build is first on PATH in the runs marked cli_shim: true (D19)"
+  },
+  "host": {
+    "macos": "27.2.1 (26B131)",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "generator": "bench/generate.swift",
+    "fonts": {
+      "en": [
+        ".SFNS-Regular 22.0d5e1"
+      ]
+    }
+  },
+  "agents": {
+    "codex": {
+      "version": "codex-cli 0.153.4",
+      "settings": {
+        "model": "gpt-5.6-sol",
+        "model_reasoning_effort": "low"
+      },
+      "stopped": null
+    },
+    "claude": {
+      "version": "2.1.126 (Claude Code)",
+      "stopped": null
+    },
+    "cursor": {
+      "version": "2026.11.11-043ef28",
+      "stopped": null
+    }
+  },
+  "runs": [
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 219335,
+        "cache_write": 40489,
+        "output": 2672
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 42,
+      "answer": "No, 2 of the 10 screens have incorrect button labels:\n\n- **screen-01.png** — shows \"Sing in\" (typo) instead of **\"Sign in\"**\n- **screen-07.png** — shows \"Start trial\" instead of **\"Start free trial\"** (missing \"free\")\n\nThe other 8 screens (02, 03, 04, 05, 06, 08, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 235356,
+        "cache_write": 24956,
+        "output": 2870
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 42,
+      "answer": "No — 2 of the 10 screens have wrong button labels:\n\n- **screen-03.png**: expected \"Add to cart\", shows **\"Add to card\"**\n- **screen-08.png**: expected \"Log out\", shows **\"Log in\"**\n\nThe other 8 screens (01, 02, 04, 05, 06, 07, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 234050,
+        "cache_write": 24306,
+        "output": 2426
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 35,
+      "answer": "No — 8 of 10 screens pass; 2 fail:\n\n- **screen-01.png** — expected \"Sign in\", shows \"Sing in\" (typo)\n- **screen-08.png** — expected \"Log out\", shows \"Log in\" (wrong label)\n\nThe other 8 screens (02–07, 09, 10) display their expected labels correctly."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 235396,
+        "cache_write": 24956,
+        "output": 2663
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 38,
+      "answer": "UI tests pass (10/10 render), but 2 screens show the wrong button label:\n\n- **screen-03.png** — expected \"Add to cart\", shows **\"Add to card\"**\n- **screen-10.png** — expected \"Next step\", shows **\"Next stop\"**\n\nThe other 8 screens (01, 02, 04, 05, 06, 07, 08, 09) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 39,
+        "cache_read": 527676,
+        "cache_write": 26304,
+        "output": 2856
+      },
+      "tool_calls": 19,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 54,
+      "answer": "All 10 UI tests ran and rendered screenshots. Button-label checks against `expected.yaml`: **8 of 10 pass; 2 fail**.\n\n- **screen-07.png** — expected \"Start free trial\", shows **\"Start trial\"**\n- **screen-08.png** — expected \"Log out\", shows **\"Log in\"**"
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 235088,
+        "cache_write": 24728,
+        "output": 2677
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 46,
+      "answer": "All 10 UI tests ran. 8 of 10 screens show the expected button label; 2 do not:\n\n- **screen-01.png** — expected \"Sign in\", shows **\"Sing in\"** (typo)\n- **screen-06.png** — expected \"Send message\", shows **\"Send massage\"** (typo)\n\nThe other eight screens (02, 03, 04, 05, 07, 08, 09, 10) match expectations."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 235189,
+        "cache_write": 24755,
+        "output": 2647
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 37,
+      "answer": "No — 8 of 10 screens show the expected button label. 2 fail due to typos:\n\n- **screen-01.png**: expected \"Sign in\" → shows **\"Sing in\"**\n- **screen-02.png**: expected \"Continue\" → shows **\"Contiune\"**\n\nScreens 03–10 all pass."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 234133,
+        "cache_write": 24548,
+        "output": 2689
+      },
+      "tool_calls": 18,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 40,
+      "answer": "The UI tests all passed (10/10 rendered), but 2 of the 10 screens do not show the expected button label:\n\n- **screen-02.png** — expected \"Continue\", shows **\"Contiune\"** (typo)\n- **screen-07.png** — expected \"Start free trial\", shows **\"Start trial\"**\n\nThe other 8 screens (01, 03, 04, 05, 06, 08, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 233786,
+        "cache_write": 24253,
+        "output": 2406
+      },
+      "tool_calls": 18,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 32,
+      "answer": "The UI tests all ran, but 2 of the 10 screens do not show their expected button labels:\n\n- **screen-02.png** — expected `Continue`, shows `Contiune` (typo)\n- **screen-09.png** — expected `Try again`, shows `Retry`\n\nThe other 8 screens (01, 03, 04, 05, 06, 07, 08, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-skill",
+      "with_file": true,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 235072,
+        "cache_write": 24767,
+        "output": 2677
+      },
+      "tool_calls": 18,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 37,
+      "answer": "No, 2 of the 10 screens show incorrect button labels:\n\n- **screen-06.png** — expected \"Send message\", shows **\"Send massage\"** (typo)\n- **screen-10.png** — expected \"Next step\", shows **\"Next stop\"** (typo)\n\nThe other 8 screens (01–05, 07–09) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 34,
+        "cache_read": 487816,
+        "cache_write": 23842,
+        "output": 2489
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 44,
+      "answer": "No — 8 of 10 screens show the expected button label. Two fail:\n\n- **screen-01.png**: expected \"Sign in\", shows \"Sing in\" (typo)\n- **screen-07.png**: expected \"Start free trial\", shows \"Start trial\" (missing \"free\")"
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 27,
+        "cache_read": 290246,
+        "cache_write": 25672,
+        "output": 3476
+      },
+      "tool_calls": 20,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 55,
+      "answer": "UI tests ran — all 10 screens rendered. But two screens do **not** show the expected button label:\n\n- **screen-03.png** — expected \"Add to cart\", actually shows **\"Add to card\"** (typo)\n- **screen-08.png** — expected \"Log out\", actually shows **\"Log in\"**\n\nThe other 8 screens (01, 02, 04, 05, 06, 07, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 34,
+        "cache_read": 487155,
+        "cache_write": 23771,
+        "output": 2509
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 44,
+      "answer": "The 10 UI tests all run and \"pass\" in `npm test`, but checking the rendered screenshots against `expected.yaml`, 2 of the 10 screens show the wrong button label:\n\n- **screen-01.png** — expected \"Sign in\", shows **\"Sing in\"** (typo)\n- **screen-08.png** — expected \"Log out\", shows **\"Log in\"**\n\nThe other 8 screens (02, 03, 04, 05, 06, 07, 09, 10) show their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 45,
+        "cache_read": 551084,
+        "cache_write": 28013,
+        "output": 2923
+      },
+      "tool_calls": 19,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 49,
+      "answer": "All 10 UI tests ran successfully, but **2 screens show the wrong button label**:\n\n- **screen-03.png** — expected \"Add to cart\", shows **\"Add to card\"**\n- **screen-10.png** — expected \"Next step\", shows **\"Next stop\"**\n\nThe other 8 screens (01, 02, 04, 05, 06, 07, 08, 09) all match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 34,
+        "cache_read": 485741,
+        "cache_write": 23532,
+        "output": 2535
+      },
+      "tool_calls": 18,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 46,
+      "answer": "The UI tests run passes all 10 screens, but checking the rendered screenshots against `expected.yaml` shows **2 screens fail** the expected button label:\n\n- **screen-07.png** — expected \"Start free trial\", shows **\"Start trial\"**\n- **screen-08.png** — expected \"Log out\", shows **\"Log in\"**\n\nThe other 8 screens (01–06, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 232476,
+        "cache_write": 23909,
+        "output": 2398
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 33,
+      "answer": "The npm test script passed all 10 renders, but 2 of the 10 screens do NOT show the expected button label:\n\n- **screen-01.png**: expected \"Sign in\", shows \"Sing in\" (typo)\n- **screen-06.png**: expected \"Send message\", shows \"Send massage\" (typo)\n\nThe other 8 (screen-02, 03, 04, 05, 07, 08, 09, 10) match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 25,
+        "cache_read": 233611,
+        "cache_write": 24338,
+        "output": 2626
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 39,
+      "answer": "Ran the UI tests — all 10 passed rendering. Checking the screenshots against `expected.yaml`, 8 of 10 screens show the expected button label. Two have typos:\n\n- **screen-01.png** — expected \"Sign in\", shows **\"Sing in\"**\n- **screen-02.png** — expected \"Continue\", shows **\"Contiune\"**\n\nScreens 03–10 all match their expected labels."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 40,
+        "cache_read": 515256,
+        "cache_write": 24267,
+        "output": 2567
+      },
+      "tool_calls": 19,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 49,
+      "answer": "All 10 UI tests ran successfully, but 2 of 10 screens show incorrect button labels:\n\n- **screen-02.png** — expected `Continue`, shows `Contiune` (typo)\n- **screen-07.png** — expected `Start free trial`, shows `Start trial` (missing \"free\")\n\nThe other 8 screens (01, 03, 04, 05, 06, 08, 09, 10) all display their expected labels correctly."
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 35,
+        "cache_read": 514800,
+        "cache_write": 24153,
+        "output": 2585
+      },
+      "tool_calls": 19,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 44,
+      "answer": "No — 8 of 10 screens match. Two fail:\n\n- **screen-02.png** — expected `Continue`, shows `Contiune` (typo)\n- **screen-09.png** — expected `Try again`, shows `Retry`"
+    },
+    {
+      "agent": "claude",
+      "agent_version": "2.1.126 (Claude Code)",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "claude-opus-4-7[1m]",
+      "variant": "claude-none",
+      "with_file": false,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 23,
+        "cache_read": 183420,
+        "cache_write": 23607,
+        "output": 2477
+      },
+      "tool_calls": 18,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 32,
+      "answer": "No, 2 of 10 screens have incorrect button labels:\n\n- **screen-06.png**: shows \"Send **massage**\" (expected \"Send message\")\n- **screen-10.png**: shows \"Next **stop**\" (expected \"Next step\")\n\nThe other 8 screens (01–05, 07–09) match their expected labels."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 13974,
+        "cache_read": 140672,
+        "cache_write": 0,
+        "output": 1178
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 39,
+      "answer": "No. 8 of 10 screens match.\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-07`: expected “Start free trial”; shows “Start trial”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 14036,
+        "cache_read": 157824,
+        "cache_write": 0,
+        "output": 1201
+      },
+      "tool_calls": 7,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 37,
+      "answer": "No. 8 of 10 labels match.\n\n- `screen-03`: expected “Add to cart,” shows “Add to card”\n- `screen-08`: expected “Log out,” shows “Log in”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 13974,
+        "cache_read": 136704,
+        "cache_write": 0,
+        "output": 1124
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 35,
+      "answer": "No. 8 of 10 screens match.\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-08`: expected “Log out”; shows “Log in”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 13028,
+        "cache_read": 156032,
+        "cache_write": 0,
+        "output": 1234
+      },
+      "tool_calls": 7,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 39,
+      "answer": "No. 8 of 10 screens match.\n\n- `screen-03`: shows “Add to card”; expected “Add to cart”\n- `screen-10`: shows “Next stop”; expected “Next step”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 13476,
+        "cache_read": 139008,
+        "cache_write": 0,
+        "output": 1156
+      },
+      "tool_calls": 6,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 34,
+      "answer": "No. 8 of 10 screens match.\n\n- `screen-07`: expected “Start free trial”; shows “Start trial”\n- `screen-08`: expected “Log out”; shows “Log in”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 26052,
+        "cache_read": 143488,
+        "cache_write": 0,
+        "output": 1161
+      },
+      "tool_calls": 7,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 36,
+      "answer": "No. All 10 UI tests rendered, but 2 labels are incorrect:\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-06`: expected “Send message”; shows “Send massage”\n\nThe other 8 match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 13452,
+        "cache_read": 139648,
+        "cache_write": 0,
+        "output": 1191
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 37,
+      "answer": "No. All 10 UI tests rendered, but 2 screens have incorrect labels:\n\n- `screen-01`: “Sing in” — expected “Sign in”\n- `screen-02`: “Contiune” — expected “Continue”\n\nThe other 8 labels match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 13885,
+        "cache_read": 157056,
+        "cache_write": 0,
+        "output": 1582
+      },
+      "tool_calls": 7,
+      "named": [
+        7
+      ],
+      "correct": false,
+      "opened_image": true,
+      "called_catscan": true,
+      "pass": false,
+      "error": null,
+      "seconds": 42,
+      "answer": "No. The 10 UI tests rendered successfully, but one label is incorrect:\n\n- `screen-07`: shows **“Start trial”**; expected **“Start free trial”**\n\nThe other 9 labels match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 13193,
+        "cache_read": 138752,
+        "cache_write": 0,
+        "output": 1077
+      },
+      "tool_calls": 6,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 34,
+      "answer": "No. 8 of 10 labels match.\n\n- `screen-02`: expected “Continue”; shows “Contiune”\n- `screen-09`: expected “Try again”; shows “Retry”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-skill",
+      "with_file": true,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 27555,
+        "cache_read": 304640,
+        "cache_write": 0,
+        "output": 2024
+      },
+      "tool_calls": 9,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 63,
+      "answer": "No. The UI tests rendered all 10 screens, but 2 labels are incorrect:\n\n- `screen-06`: expected “Send message”; shows “Send massage”\n- `screen-10`: expected “Next step”; shows “Next stop”\n\nThe other 8 labels match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 19871,
+        "cache_read": 118528,
+        "cache_write": 0,
+        "output": 1139
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 35,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-01`: “Sing in” — expected “Sign in”\n- `screen-07`: “Start trial” — expected “Start free trial”\n\nThe other 8 labels match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 20328,
+        "cache_read": 120448,
+        "cache_write": 0,
+        "output": 1158
+      },
+      "tool_calls": 6,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 47,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-03`: “Add to card” — expected “Add to cart”\n- `screen-08`: “Log in” — expected “Log out”\n\nThe other 8 match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 18896,
+        "cache_read": 79872,
+        "cache_write": 0,
+        "output": 857
+      },
+      "tool_calls": 4,
+      "named": [
+        1
+      ],
+      "correct": false,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 33,
+      "answer": "No. **screen-01** is incorrect:\n\n- Expected: “Sign in”\n- Actual: “Sing in”\n\nThe other 9 screens match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 24307,
+        "cache_read": 228224,
+        "cache_write": 0,
+        "output": 1821
+      },
+      "tool_calls": 8,
+      "named": [
+        10
+      ],
+      "correct": false,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 54,
+      "answer": "No. **Screen 10** is incorrect:\n\n- Expected: `Next step`\n- Actual: `Next stop`\n\nScreens 1–9 match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 10450,
+        "cache_read": 109056,
+        "cache_write": 0,
+        "output": 920
+      },
+      "tool_calls": 5,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 44,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-07`: “Start trial” — expected “Start free trial”\n- `screen-08`: “Log in” — expected “Log out”\n\nThe other 8 labels match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 21076,
+        "cache_read": 118016,
+        "cache_write": 0,
+        "output": 1174
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 47,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-01`: “Sing in” — expected “Sign in”\n- `screen-06`: “Send massage” — expected “Send message”\n\nThe other 8 labels match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 49394,
+        "cache_read": 280960,
+        "cache_write": 0,
+        "output": 2447
+      },
+      "tool_calls": 10,
+      "named": [
+        1
+      ],
+      "correct": false,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 69,
+      "answer": "No. **screen-01** is incorrect: it shows **“Sing in”** instead of **“Sign in.”**\n\nThe other 9 screens match their expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 9856,
+        "cache_read": 107520,
+        "cache_write": 0,
+        "output": 882
+      },
+      "tool_calls": 5,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 35,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-02`: **Contiune** — expected **Continue**\n- `screen-07`: **Start trial** — expected **Start free trial**\n\nThe other 8 labels match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 10169,
+        "cache_read": 87552,
+        "cache_write": 0,
+        "output": 787
+      },
+      "tool_calls": 4,
+      "named": [
+        9
+      ],
+      "correct": false,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 30,
+      "answer": "No. **Screen 09** is incorrect:\n\n- Expected: “Try again”\n- Actual: “Retry”\n\nThe other 9 screens match. All 10 rendering tests passed.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-none",
+      "with_file": false,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 20300,
+        "cache_read": 117888,
+        "cache_write": 0,
+        "output": 993
+      },
+      "tool_calls": 6,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": true,
+      "called_catscan": false,
+      "pass": false,
+      "error": null,
+      "seconds": 37,
+      "answer": "No. Two screens have incorrect labels:\n\n- `screen-06`: “Send massage” — expected “Send message”\n- `screen-10`: “Next stop” — expected “Next step”\n\nThe other 8 match.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 25944,
+        "cache_read": 123264,
+        "cache_write": 0,
+        "output": 928
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 31,
+      "answer": "No. 8 of 10 screens have the expected labels.\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-07`: expected “Start free trial”; shows “Start trial”\n\nAll UI tests rendered successfully."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 22511,
+        "cache_read": 128128,
+        "cache_write": 0,
+        "output": 946
+      },
+      "tool_calls": 6,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 32,
+      "answer": "No. 8 of 10 screens match.\n\n- `screen-03.png`: expected “Add to cart,” shows “Add to card”\n- `screen-08.png`: expected “Log out,” shows “Log in”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 13747,
+        "cache_read": 118656,
+        "cache_write": 0,
+        "output": 853
+      },
+      "tool_calls": 5,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 27,
+      "answer": "No. All 10 UI tests rendered, but 2 screens have incorrect labels:\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-08`: expected “Log out”; shows “Log in”\n\nThe other 8 labels match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 13406,
+        "cache_read": 137216,
+        "cache_write": 0,
+        "output": 935
+      },
+      "tool_calls": 6,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 30,
+      "answer": "No. 8 of 10 screens have the expected labels.\n\n- `screen-03.png`: expected “Add to cart,” shows “Add to card.”\n- `screen-10.png`: expected “Next step,” shows “Next stop.”\n\nAll 10 UI render tests passed."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 13836,
+        "cache_read": 137344,
+        "cache_write": 0,
+        "output": 953
+      },
+      "tool_calls": 6,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 34,
+      "answer": "No. The UI tests rendered all 10 screens, but 2 labels are incorrect:\n\n- `screen-07`: expected “Start free trial”; shows “Start trial”\n- `screen-08`: expected “Log out”; shows “Log in”\n\nThe other 8 labels pass."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 13240,
+        "cache_read": 137344,
+        "cache_write": 0,
+        "output": 946
+      },
+      "tool_calls": 6,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 29,
+      "answer": "No. UI tests rendered all 10 screens, but 2 labels are incorrect:\n\n- `screen-01`: expected “Sign in”; shows “Sing in”\n- `screen-06`: expected “Send message”; shows “Send massage”\n\nThe other 8 labels match."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 13678,
+        "cache_read": 158976,
+        "cache_write": 0,
+        "output": 1181
+      },
+      "tool_calls": 7,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 35,
+      "answer": "No. 8 of 10 screens have the expected labels.\n\n- Screen 01: expected “Sign in,” shows “Sing in”\n- Screen 02: expected “Continue,” shows “Contiune”"
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 13534,
+        "cache_read": 137600,
+        "cache_write": 0,
+        "output": 975
+      },
+      "tool_calls": 6,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 34,
+      "answer": "No. 8 of 10 screens have the expected labels.\n\n- `screen-02`: expected “Continue”; shows “Contiune”\n- `screen-07`: expected “Start free trial”; shows “Start trial”\n\nThe UI test runner itself passed all 10 renders."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 13409,
+        "cache_read": 137344,
+        "cache_write": 0,
+        "output": 938
+      },
+      "tool_calls": 6,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 30,
+      "answer": "No. 8 of 10 screens show the expected labels.\n\n- `screen-02`: expected “Continue”; shows “Contiune”\n- `screen-09`: expected “Try again”; shows “Retry”\n\nAll UI tests rendered successfully."
+    },
+    {
+      "agent": "codex",
+      "agent_version": "codex-cli 0.153.4",
+      "catscan": "0.16.0",
+      "cli_shim": true,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11",
+      "model": "gpt-5.6-sol",
+      "variant": "codex-agents-md",
+      "with_file": true,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 13608,
+        "cache_read": 136064,
+        "cache_write": 0,
+        "output": 973
+      },
+      "tool_calls": 6,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 29,
+      "answer": "No. The UI tests rendered all 10 screens, but 2 labels are incorrect:\n\n- `screen-06`: shows “Send massage”; expected “Send message”\n- `screen-10`: shows “Next stop”; expected “Next step”\n\nThe other 8 labels match."
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 15230,
+        "cache_read": 56768,
+        "cache_write": 0,
+        "output": 1614
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 18,
+      "answer": "Running UI tests and comparing button labels to expectations.\nChecking all 10 screenshots against expected labels with catscan:\n**UI tests:** All 10 passed (`npm test` copied renders to `screenshots/`).\n\n**Button labels vs `expected.yaml`:** 8/10 match. **Two screens do not:**\n\n| Screen | Expected | Actually shown |\n|--------|----------|----------------|\n| **screen-01** | Sign in | **Sing in** (typo) |\n| **screen-07** | Start free trial | **Start trial** (“free” missing) |\n\nscreens-02 through 06 and 08 through 10 show the expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 15407,
+        "cache_read": 59456,
+        "cache_write": 0,
+        "output": 1600
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 21,
+      "answer": "Exploring the test setup and running the UI tests.\n\n\nUI tests passed. Verifying button labels with catscan using `expected.yaml`.\n## UI tests\n\n`npm test` finished successfully: all **10** screens rendered and screenshots were written to `screenshots/`.\n\n## Button labels (catscan vs `expected.yaml`)\n\n**8 of 10** match the expected labels.\n\n| Screen | Expected | Verdict |\n|--------|----------|---------|\n| screen-01 | Sign in | pass |\n| screen-02 | Continue | pass |\n| **screen-03** | Add to cart | **fail** — screen shows **“Add to card”** |\n| screen-04 | Checkout | pass |\n| screen-05 | Save changes | pass |\n| screen-06 | Send message | pass |\n| screen-07 | Start free trial | pass |\n| **screen-08** | Log out | **fail** — screen shows **“Log in”** |\n| screen-09 | Try again | pass |\n| screen-10 | Next step | pass |\n\n**Screens that do not match:** **screen-03** (`Add to card` instead of `Add to cart`) and **screen-08** (`Log in` instead of `Log out`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 18050,
+        "cache_read": 85568,
+        "cache_write": 0,
+        "output": 1934
+      },
+      "tool_calls": 19,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 19,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying button labels on the screenshots with catscan and `expected.yaml`.\nChecking each screen against its expected label individually:\n## UI test run\n\n`npm test` finished successfully: **10/10** screens rendered and screenshots were saved under `screenshots/`.\n\n## Button labels vs `expected.yaml`\n\nCatscan compared each screenshot to the expected label. **8 of 10 match**; **2 do not**:\n\n| Screen | Expected | On screen |\n|--------|----------|-----------|\n| **screen-01** | Sign in | **Sing in** (typo) |\n| **screen-08** | Log out | **Log in** |\n\nScreens **02–07** and **09–10** show the expected labels (`Continue`, `Add to cart`, `Checkout`, `Save changes`, `Send message`, `Start free trial`, `Try again`, `Next step`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 16469,
+        "cache_read": 77120,
+        "cache_write": 0,
+        "output": 1763
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 16,
+      "answer": "Exploring the project and running UI tests to verify button labels on all 10 screens.\n\n\n**UI tests:** `npm test` completed successfully — all 10 screens rendered and screenshots were written to `screenshots/`.\n\n**Button labels (checked against `expected.yaml` via catscan):** 8 of 10 match.\n\n| Screen | Expected | On screen |\n|--------|----------|-----------|\n| **screen-03** | Add to cart | **Add to card** (typo: “card” vs “cart”) |\n| **screen-10** | Next step | **Next stop** (“stop” vs “step”) |\n\nScreens **01, 02, 04–09** show the expected labels (`Sign in`, `Continue`, `Checkout`, `Save changes`, `Send message`, `Start free trial`, `Log out`, `Try again`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 38762,
+        "cache_read": 62208,
+        "cache_write": 0,
+        "output": 1433
+      },
+      "tool_calls": 11,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 24,
+      "answer": "Running UI tests and comparing button labels to expectations.\n\n\n**UI tests:** All 10 passed (`npm test` — each screen rendered to `screenshots/`).\n\n**Button labels vs `expected.yaml`:** 8/10 match. **2 do not:**\n\n| Screen | Expected | Shown |\n|--------|----------|-------|\n| **screen-07** | Start free trial | **Start trial** |\n| **screen-08** | Log out | **Log in** |\n\nScreens 01–06 and 09–10 show the expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 12285,
+        "cache_read": 78272,
+        "cache_write": 0,
+        "output": 1810
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 21,
+      "answer": "Exploring the project and running UI tests to verify button labels on all 10 screens.\n\n\n## UI tests\n\nAll **10** UI tests passed (`npm test` copied renders to `screenshots/`).\n\n## Button labels (catscan vs `expected.yaml`)\n\n**8 of 10** match. **2 do not:**\n\n| Screen | Expected | On screen |\n|--------|----------|-----------|\n| **screen-01** | Sign in | **Sing in** |\n| **screen-06** | Send message | **Send massage** |\n\n**Passing:** screen-02 (Continue), screen-03 (Add to cart), screen-04 (Checkout), screen-05 (Save changes), screen-07 (Start free trial), screen-08 (Log out), screen-09 (Try again), screen-10 (Next step).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 14704,
+        "cache_read": 57472,
+        "cache_write": 0,
+        "output": 1692
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 24,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying button labels on screenshots with catscan using `expected.yaml`.\n## UI tests\n\n`npm test` finished cleanly: all **10** screens rendered and screenshots were written to `screenshots/`.\n\nThat script only copies pre-rendered PNGs from `ui-tests/.renders/`; it does **not** assert button copy. Label checks were done with catscan against [`expected.yaml`](expected.yaml).\n\n## Button labels\n\n**No** — not all 10 match the expected labels.\n\n| Screen | Expected | Actual on screen |\n|--------|----------|------------------|\n| **screen-01** | Sign in | **Sing in** (misspelled) |\n| **screen-02** | Continue | **Contiune** (misspelled) |\n| screen-03 through screen-10 | (per `expected.yaml`) | Pass |\n\nThe two that fail are **screen-01** and **screen-02**. The other eight show the correct button text.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 21461,
+        "cache_read": 55296,
+        "cache_write": 0,
+        "output": 1721
+      },
+      "tool_calls": 17,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 24,
+      "answer": "Exploring the UI test setup and expected labels, then running the tests and verifying each screen.\n\n\nVerifying button labels on the generated screenshots with catscan.\n## UI tests\n\n`npm test` completed successfully: all **10** screens rendered to `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 | Sign in | OK |\n| screen-02 | Continue | **Mismatch** — shows **\"Contiune\"** (typo) |\n| screen-03–06, 08–10 | (per spec) | OK |\n| screen-07 | Start free trial | **Mismatch** — shows **\"Start trial\"** (missing “free”) |\n\n**8 of 10** match. **2 do not:** **screen-02** and **screen-07**.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 27655,
+        "cache_read": 63168,
+        "cache_write": 0,
+        "output": 1825
+      },
+      "tool_calls": 20,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 33,
+      "answer": "Running UI tests and comparing button labels to expectations.\n\n\nChecking each screenshot against its expected label:\n## UI tests\n\n`npm test` finished successfully: all **10** screens rendered and screenshots were written to `screenshots/`.\n\n## Button labels (catscan vs `expected.yaml`)\n\n**8 of 10** match. **2 do not:**\n\n| Screen | Expected | Actual on screen |\n|--------|----------|------------------|\n| **screen-02** | Continue | **Contiune** (typo) |\n| **screen-09** | Try again | **Retry** |\n\nThe other eight screens (`screen-01`, `03`–`08`, `10`) show the expected labels. Note that the UI test runner only verifies that screenshots are produced; it does not assert label text.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-rule",
+      "with_file": true,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 15002,
+        "cache_read": 72320,
+        "cache_write": 0,
+        "output": 1747
+      },
+      "tool_calls": 18,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 24,
+      "answer": "Running UI tests and comparing button labels to expectations. Exploring the project setup.\n\n\n## UI tests\n\n`npm test` completed successfully: all **10** screens rendered and screenshots were saved under `screenshots/`.\n\nThat script only copies pre-rendered PNGs from `ui-tests/.renders/`; it does **not** assert button copy.\n\n## Button labels (vs `expected.yaml`)\n\nChecked each screenshot with catscan:\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 | Sign in | ✓ |\n| screen-02 | Continue | ✓ |\n| screen-03 | Add to cart | ✓ |\n| screen-04 | Checkout | ✓ |\n| screen-05 | Save changes | ✓ |\n| screen-06 | Send message | ✗ shows **“Send massage”** |\n| screen-07 | Start free trial | ✓ |\n| screen-08 | Log out | ✓ |\n| screen-09 | Try again | ✓ |\n| screen-10 | Next step | ✗ shows **“Next stop”** |\n\n**Summary:** **8 of 10** match. The mismatches are **screen-06** and **screen-10** (wrong button text on the renders, not missing buttons).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 20805,
+        "cache_read": 101696,
+        "cache_write": 0,
+        "output": 2030
+      },
+      "tool_calls": 21,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 22,
+      "answer": "Exploring the test setup and expected button labels, then running the UI tests.\n\n\nChecking each screen against expected labels; `expected.yaml` isn't in catscan's expect format.\n## UI tests\n\n`npm test` finished successfully: **10 UI tests passed** (each screen rendered and copied to `screenshots/`). That script only checks that renders exist; it does not validate button labels.\n\n## Button labels vs `expected.yaml`\n\n**8 of 10** screens match. **2 do not:**\n\n| Screen | Expected | Actually shown |\n|--------|----------|----------------|\n| **screen-01** | Sign in | **Sing in** |\n| **screen-07** | Start free trial | **Start trial** |\n\nScreens **02–06** and **08–10** match: Continue, Add to cart, Checkout, Save changes, Send message, Log out, Try again, Next step.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 14811,
+        "cache_read": 71040,
+        "cache_write": 0,
+        "output": 1860
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 25,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nUI tests only copy renders; verifying button labels on all 10 screenshots with catscan.\n## UI tests\n\n`npm test` completed successfully: all 10 screens rendered and screenshots were written to `screenshots/`.\n\nThe runner only checks that renders exist; it does **not** assert button copy. Against `expected.yaml`, catscan found **8 of 10** screens with the correct label.\n\n### Mismatches (2)\n\n| Screen | Expected | Actually shown |\n|--------|----------|----------------|\n| **screen-03** | Add to cart | **Add to card** |\n| **screen-08** | Log out | **Log in** |\n\n### Passing (8)\n\nscreen-01 (Sign in), screen-02 (Continue), screen-04 (Checkout), screen-05 (Save changes), screen-06 (Send message), screen-07 (Start free trial), screen-09 (Try again), screen-10 (Next step).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 14799,
+        "cache_read": 71168,
+        "cache_write": 0,
+        "output": 1623
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 16,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying button labels on screenshots with catscan vision tools.\n## UI tests\n\n`npm test` completed successfully: all 10 screens rendered and screenshots were saved to `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n| Screen | Expected | Status |\n|--------|----------|--------|\n| screen-01 | Sign in | **Wrong** — button shows **“Sing in”** (typo) |\n| screen-02–07, 09–10 | (per yaml) | OK |\n| screen-08 | Log out | **Wrong** — button shows **“Log in”** |\n\n**8 of 10** match; **2 do not:**\n\n1. **screen-01** — expected **Sign in**, actual **Sing in**\n2. **screen-08** — expected **Log out**, actual **Log in**",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 15943,
+        "cache_read": 72896,
+        "cache_write": 0,
+        "output": 1453
+      },
+      "tool_calls": 17,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 15,
+      "answer": "Exploring the project and running the UI tests.\n\n\n**UI tests:** `npm test` completed successfully — all **10** screens rendered and screenshots were saved.\n\n**Button labels vs. `expected.yaml`:** **8 of 10** match. **2** do not:\n\n| Screen | Expected | Actually shown |\n|--------|----------|----------------|\n| **screen-03** | Add to cart | **Add to card** |\n| **screen-10** | Next step | **Next stop** |\n\nThe other eight screens (01, 02, 04–09) show the expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 14543,
+        "cache_read": 70528,
+        "cache_write": 0,
+        "output": 1692
+      },
+      "tool_calls": 17,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 33,
+      "answer": "Exploring the project and running the UI tests.\n\n\nTests only copy screenshots; verifying button labels with catscan on all 10 screens.\n## UI tests\n\n`npm test` finished successfully: all **10** screens rendered and screenshots were saved under `screenshots/`.\n\nThat script only copies pre-built renders; it does **not** compare button text. I checked each screenshot against `expected.yaml` with vision OCR.\n\n## Button labels\n\n| Result | Screens |\n|--------|---------|\n| **Match expected** | screen-01 through screen-06, screen-09, screen-10 (8/10) |\n| **Do not match** | **screen-07**, **screen-08** |\n\n**Mismatches:**\n\n1. **screen-07** — expected **“Start free trial”**, screen shows **“Start trial”**.\n2. **screen-08** — expected **“Log out”**, screen shows **“Log in”**.\n\n**Summary:** 8 of 10 screens show the expected labels; **screen-07** and **screen-08** need fixes.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 26663,
+        "cache_read": 59392,
+        "cache_write": 0,
+        "output": 1674
+      },
+      "tool_calls": 18,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 21,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nRunning catscan against screenshots using `expected.yaml` to verify button labels.\n## UI tests\n\n`npm test` completed successfully: all **10** screens rendered and screenshots were written to `screenshots/`.\n\nThe test runner only copies pre-rendered images from `ui-tests/.renders/`; it does **not** assert button text. I checked each screenshot against `expected.yaml` with Vision/catscan.\n\n## Button labels (8/10 match)\n\n| Screen | Expected | Status |\n|--------|----------|--------|\n| screen-01 | Sign in | **Fail** — button shows **“Sing in”** (typo) |\n| screen-02 | Continue | OK |\n| screen-03 | Add to cart | OK |\n| screen-04 | Checkout | OK |\n| screen-05 | Save changes | OK |\n| screen-06 | Send message | **Fail** — button shows **“Send massage”** |\n| screen-07 | Start free trial | OK |\n| screen-08 | Log out | OK |\n| screen-09 | Try again | OK |\n| screen-10 | Next step | OK |\n\n**Screens that do not show the expected label:** `screen-01` and `screen-06`.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 14522,
+        "cache_read": 69952,
+        "cache_write": 0,
+        "output": 1621
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 18,
+      "answer": "Exploring the test setup and expected button labels, then running the UI tests.\n\n\n## UI tests\n\n`npm test` completed successfully: all **10** screens rendered and screenshots were saved to `screenshots/`.\n\n## Button labels vs `expected.yaml`\n\n**8 of 10** match. **2 do not:**\n\n| Screen | Expected | On screen (OCR) |\n|--------|----------|-----------------|\n| **screen-01** | Sign in | **Sing in** (missing “n”) |\n| **screen-02** | Continue | **Contiune** (“u” and “n” swapped) |\n\n**Passing:** screen-03 through screen-10 (Add to cart, Checkout, Save changes, Send message, Start free trial, Log out, Try again, Next step).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 14585,
+        "cache_read": 70720,
+        "cache_write": 0,
+        "output": 1670
+      },
+      "tool_calls": 17,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 39,
+      "answer": "Exploring the project and running the UI tests.\n\n\nVerifying button labels on screenshots with catscan (tests only copy images).\n## UI tests\n\n`npm test` finished successfully: all 10 screens rendered and screenshots were written under `screenshots/`. That script only copies images; it does not assert button text.\n\n## Button labels (vs `expected.yaml`)\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 | Sign in | OK |\n| screen-02 | Continue | **Fail** — button reads **\"Contiune\"** (typo) |\n| screen-03–06, 08–10 | (per yaml) | OK |\n| screen-07 | Start free trial | **Fail** — button reads **\"Start trial\"** (missing “free”) |\n\n**8 of 10** screens show the expected labels.\n\n**Mismatches:**\n\n1. **screen-02** — expected **Continue**, actual **Contiune**\n2. **screen-07** — expected **Start free trial**, actual **Start trial**",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 12756,
+        "cache_read": 62656,
+        "cache_write": 0,
+        "output": 1925
+      },
+      "tool_calls": 17,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 22,
+      "answer": "Exploring the test setup and expected button labels, then running the UI tests.\n\n\nChecking each screen against its expected button label — the expect file format isn't compatible with catscan.\n**UI tests:** `npm test` completed — all 10 screens rendered and screenshots were saved under `screenshots/`.\n\n**Button labels vs `expected.yaml`:** 8/10 match; 2 do not:\n\n| Screen | Expected | Actually shown |\n|--------|----------|----------------|\n| **screen-02** | Continue | **Contiune** (typo) |\n| **screen-09** | Try again | **Retry** |\n\nScreens 01, 03–08, and 10 show the expected labels (`Sign in`, `Add to cart`, `Checkout`, `Save changes`, `Send message`, `Start free trial`, `Log out`, `Next step`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-none",
+      "with_file": false,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 14576,
+        "cache_read": 70336,
+        "cache_write": 0,
+        "output": 1588
+      },
+      "tool_calls": 17,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 26,
+      "answer": "Exploring the test setup and expectations, then running the UI tests.\n\n\nVerifying button labels on screenshots with catscan.\n**UI tests:** `npm test` finished successfully — all 10 screens rendered and screenshots were written to `screenshots/`.\n\n**Button labels vs `expected.yaml`:** Not all match. Eight screens show the expected label; two do not:\n\n| Screen | Expected | Actual (on screen) |\n|--------|----------|-------------------|\n| **screen-06.png** | Send message | **Send massage** (typo) |\n| **screen-10.png** | Next step | **Next stop** |\n\nScreens **01–05**, **07–08**, and **09** match expectations (`Sign in`, `Continue`, `Add to cart`, `Checkout`, `Save changes`, `Start free trial`, `Log out`, `Try again`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 1,
+      "planted": [
+        "screen-01.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 15936,
+        "cache_read": 59072,
+        "cache_write": 0,
+        "output": 1629
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 16,
+      "answer": "Checking how UI tests run and what button labels are expected.\n\n\nVerifying button labels with catscan against `expected.yaml`.\n## UI tests\n\n`npm test` finished cleanly: all **10** screens rendered and screenshots were written under `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 | Sign in | **Fail** — screen shows **“Sing in”** (typo) |\n| screen-02 | Continue | Pass |\n| screen-03 | Add to cart | Pass |\n| screen-04 | Checkout | Pass |\n| screen-05 | Save changes | Pass |\n| screen-06 | Send message | Pass |\n| screen-07 | Start free trial | **Fail** — screen shows **“Start trial”** (missing “free”) |\n| screen-08 | Log out | Pass |\n| screen-09 | Try again | Pass |\n| screen-10 | Next step | Pass |\n\n**2 of 10** screens do not show the expected button labels: **screen-01** and **screen-07**.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 2,
+      "planted": [
+        "screen-03.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 30660,
+        "cache_read": 44224,
+        "cache_write": 0,
+        "output": 1740
+      },
+      "tool_calls": 17,
+      "named": [
+        3,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 19,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying button labels on all screenshots with catscan.\n## UI tests\n\n`npm test` completed successfully: all **10** screens rendered and screenshots were written to `screenshots/`.\n\n## Button labels (catscan `check_text` vs `expected.yaml`)\n\n**8 of 10** show the expected label.\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 | Sign in | pass |\n| screen-02 | Continue | pass |\n| **screen-03** | **Add to cart** | **fail** — screen shows **“Add to card”** |\n| screen-04 | Checkout | pass |\n| screen-05 | Save changes | pass |\n| screen-06 | Send message | pass |\n| screen-07 | Start free trial | pass |\n| **screen-08** | **Log out** | **fail** — screen shows **“Log in”** |\n| screen-09 | Try again | pass |\n| screen-10 | Next step | pass |\n\n**Mismatches:** `screen-03.png` (“Add to card” instead of “Add to cart”) and `screen-08.png` (“Log in” instead of “Log out”).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 3,
+      "planted": [
+        "screen-01.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 15563,
+        "cache_read": 58816,
+        "cache_write": 0,
+        "output": 1601
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 27,
+      "answer": "Exploring the test setup and running the UI tests.\n\n\nVerifying each screenshot's button label with catscan:\n**UI tests:** `npm test` finished successfully — all 10 screens rendered and screenshots were written to `screenshots/`.\n\n**Button labels (catscan vs `expected.yaml`):** **8 of 10 match.** These **2 do not:**\n\n| Screen | Expected | On screen (closest OCR) |\n|--------|----------|-------------------------|\n| **screen-01** | Sign in | **Sing in** |\n| **screen-08** | Log out | **Log in** |\n\nThe other eight (screen-02 through screen-07, screen-09, screen-10) show the expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 4,
+      "planted": [
+        "screen-03.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 15928,
+        "cache_read": 59712,
+        "cache_write": 0,
+        "output": 1813
+      },
+      "tool_calls": 18,
+      "named": [
+        3,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 16,
+      "answer": "Exploring the UI test setup and expected labels, then running the tests.\n\n\nChecking each screenshot individually against `expected.yaml`.\n## UI tests\n\n`npm test` finished successfully: all **10** screens rendered and screenshots were saved under `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n**No — not all 10 match.** Eight screens pass; **two** do not:\n\n| Screen | Expected | Shown (OCR) |\n|--------|----------|-------------|\n| **screen-03** | Add to cart | **Add to card** |\n| **screen-10** | Next step | **Next stop** |\n\nThe other eight (`screen-01`, `02`, `04`–`09`) show the expected labels: Sign in, Continue, Checkout, Save changes, Send message, Start free trial, Log out, and Try again.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 5,
+      "planted": [
+        "screen-07.png",
+        "screen-08.png"
+      ],
+      "tokens": {
+        "input": 15508,
+        "cache_read": 43456,
+        "cache_write": 0,
+        "output": 1471
+      },
+      "tool_calls": 16,
+      "named": [
+        7,
+        8
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 18,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying each screenshot's button label with catscan.\n## UI tests\n\n`npm test` finished successfully: all 10 screens rendered and screenshots were written to `screenshots/`.\n\n## Button labels (catscan vs `expected.yaml`)\n\n| Screen | Expected | Result |\n|--------|----------|--------|\n| screen-01 … screen-06, 09, 10 | — | **Pass** (labels match) |\n| **screen-07** | Start free trial | **Fail** — button shows **“Start trial”** |\n| **screen-08** | Log out | **Fail** — button shows **“Log in”** |\n\n**Summary:** 8 of 10 screens show the expected button text. The mismatches are **screen-07** (missing “free”) and **screen-08** (out vs in).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 6,
+      "planted": [
+        "screen-01.png",
+        "screen-06.png"
+      ],
+      "tokens": {
+        "input": 15756,
+        "cache_read": 91712,
+        "cache_write": 0,
+        "output": 1820
+      },
+      "tool_calls": 19,
+      "named": [
+        1,
+        6
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 25,
+      "answer": "Exploring the project structure and expected labels, then running the UI tests.\n\n\n## UI tests\n\n`npm test` finished successfully: all 10 screens rendered and screenshots were saved under `screenshots/`.\n\n## Button labels (catscan vs `expected.yaml`)\n\n**Not matching expected labels (2):**\n\n| Screen | Expected | On screen (closest OCR) |\n|--------|----------|-------------------------|\n| `screen-01.png` | Sign in | **Sing in** |\n| `screen-06.png` | Send message | **Send massage** |\n\n**Passing (8):** screen-02 (Continue), screen-03 (Add to cart), screen-04 (Checkout), screen-05 (Save changes), screen-07 (Start free trial), screen-08 (Log out), screen-09 (Try again), screen-10 (Next step).\n\nSo **8 of 10** show the expected button text; **screen-01** and **screen-06** have typos on the button (`Sing in`, `Send massage`).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 7,
+      "planted": [
+        "screen-01.png",
+        "screen-02.png"
+      ],
+      "tokens": {
+        "input": 15896,
+        "cache_read": 59008,
+        "cache_write": 0,
+        "output": 1484
+      },
+      "tool_calls": 17,
+      "named": [
+        1,
+        2
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 20,
+      "answer": "Exploring the test setup and expected labels, then running the UI tests.\n\n\nVerifying screenshots against `expected.yaml` with catscan.\n## UI tests\n\n`npm test` finished successfully: all 10 screens were rendered and saved under `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n**8 of 10 match.** These two do not:\n\n| Screen | Expected | On screen (OCR) |\n|--------|----------|-----------------|\n| **screen-01** | Sign in | **Sing in** (typo) |\n| **screen-02** | Continue | **Contiune** (typo) |\n\n**Passing:** screen-03 through screen-10 — Add to cart, Checkout, Save changes, Send message, Start free trial, Log out, Try again, Next step.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 8,
+      "planted": [
+        "screen-02.png",
+        "screen-07.png"
+      ],
+      "tokens": {
+        "input": 15329,
+        "cache_read": 60032,
+        "cache_write": 0,
+        "output": 1863
+      },
+      "tool_calls": 17,
+      "named": [
+        2,
+        7
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 36,
+      "answer": "Exploring the project and running the UI tests.\n\n\nVerifying button labels on all screenshots with catscan.\n## UI tests\n\n`npm test` finished successfully: all **10** screens rendered and screenshots were written to `screenshots/`.\n\n## Button labels (vs `expected.yaml`)\n\n**8 of 10** match. **2 do not:**\n\n| Screen | Expected | On screen |\n|--------|----------|-----------|\n| **screen-02** | Continue | **Contiune** (typo) |\n| **screen-07** | Start free trial | **Start trial** (“free” missing) |\n\n**Passing:** screen-01 (Sign in), screen-03 (Add to cart), screen-04 (Checkout), screen-05 (Save changes), screen-06 (Send message), screen-08 (Log out), screen-09 (Try again), screen-10 (Next step).",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 9,
+      "planted": [
+        "screen-02.png",
+        "screen-09.png"
+      ],
+      "tokens": {
+        "input": 19889,
+        "cache_read": 47936,
+        "cache_write": 0,
+        "output": 1745
+      },
+      "tool_calls": 16,
+      "named": [
+        2,
+        9
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 23,
+      "answer": "Exploring the test setup and running the UI tests.\n\n\nVerifying each screen against its expected label in `screenshots/`.\n## UI test run\n\n`npm test` finished successfully: all 10 screens rendered and screenshots were written to `screenshots/`.\n\nThat script only copies PNGs from `ui-tests/.renders/`; it does **not** assert button labels. Against `expected.yaml`, verified with catscan:\n\n| Result | Screen | Expected | On screen |\n|--------|--------|----------|-----------|\n| ✓ | 01–08, 10 | (per yaml) | Match |\n| ✗ | **screen-02** | Continue | **Contiune** (typo) |\n| ✗ | **screen-09** | Try again | **Retry** |\n\n**8 of 10** match; **screen-02** and **screen-09** do not.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    },
+    {
+      "agent": "cursor",
+      "agent_version": "2026.11.11-043ef28",
+      "model": "Composer 2.5",
+      "variant": "cursor-agents-md",
+      "with_file": true,
+      "seed": 10,
+      "planted": [
+        "screen-06.png",
+        "screen-10.png"
+      ],
+      "tokens": {
+        "input": 15279,
+        "cache_read": 59840,
+        "cache_write": 0,
+        "output": 1650
+      },
+      "tool_calls": 17,
+      "named": [
+        6,
+        10
+      ],
+      "correct": true,
+      "opened_image": false,
+      "called_catscan": true,
+      "pass": true,
+      "error": null,
+      "seconds": 23,
+      "answer": "Exploring the test setup and running the UI tests.\n\n\nVerifying button labels with catscan against `expected.yaml`.\n**UI tests:** `npm test` finished successfully — all 10 screens rendered and screenshots were written to `screenshots/`.\n\n**Button labels (vs `expected.yaml`):** 8 of 10 match. These two do not:\n\n| Screen | Expected | What the screen shows |\n|--------|----------|------------------------|\n| **screen-06** | Send message | **Send massage** |\n| **screen-10** | Next step | **Next stop** |\n\nAll other screens (01–05, 07–09) show the expected labels.",
+      "catscan": "0.15.1",
+      "cli_shim": false,
+      "host": {
+        "macos": "27.2.1 (26B131)",
+        "node": "v26.13.0",
+        "vision_revision": 3
+      },
+      "date": "2026-11-11"
+    }
+  ],
+  "variants": [
+    {
+      "variant": "claude-skill",
+      "agent": "claude",
+      "with_file": true,
+      "file": "plugin skill (--plugin-dir plugins/catscan)",
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 259856.5,
+      "median_uncached_input_tokens": 25,
+      "gate": "pass"
+    },
+    {
+      "variant": "claude-none",
+      "agent": "claude",
+      "with_file": false,
+      "file": null,
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 510133.5,
+      "median_uncached_input_tokens": 34,
+      "gate": null
+    },
+    {
+      "variant": "codex-skill",
+      "agent": "codex",
+      "with_file": true,
+      "file": "skill folder in .agents/skills/screen-check",
+      "runs": 10,
+      "correct": 9,
+      "opened_image": 1,
+      "called_catscan": 10,
+      "pass": 9,
+      "median_input_tokens": 161853,
+      "median_uncached_input_tokens": 13929.5,
+      "gate": "pass"
+    },
+    {
+      "variant": "codex-none",
+      "agent": "codex",
+      "with_file": false,
+      "file": null,
+      "runs": 10,
+      "correct": 6,
+      "opened_image": 10,
+      "called_catscan": 0,
+      "pass": 0,
+      "median_input_tokens": 138293.5,
+      "median_uncached_input_tokens": 20085.5,
+      "gate": null
+    },
+    {
+      "variant": "codex-agents-md",
+      "agent": "codex",
+      "with_file": true,
+      "file": "AGENTS.md snippet",
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 150630.5,
+      "median_uncached_input_tokens": 13643,
+      "gate": "pass"
+    },
+    {
+      "variant": "cursor-rule",
+      "agent": "cursor",
+      "with_file": true,
+      "file": "rule in .cursor/rules/catscan.mdc",
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 88939.5,
+      "median_uncached_input_tokens": 15938,
+      "gate": "pass"
+    },
+    {
+      "variant": "cursor-none",
+      "agent": "cursor",
+      "with_file": false,
+      "file": null,
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 85578,
+      "median_uncached_input_tokens": 14692,
+      "gate": null
+    },
+    {
+      "variant": "cursor-agents-md",
+      "agent": "cursor",
+      "with_file": true,
+      "file": "AGENTS.md snippet",
+      "runs": 10,
+      "correct": 10,
+      "opened_image": 0,
+      "called_catscan": 10,
+      "pass": 10,
+      "median_input_tokens": 74956,
+      "median_uncached_input_tokens": 15826,
+      "gate": "pass"
+    }
+  ]
+}

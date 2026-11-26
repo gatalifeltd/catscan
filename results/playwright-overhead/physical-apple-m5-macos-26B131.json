@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "measured": "2026-11-15",
+  "versions": {
+    "catscan": "0.27.0",
+    "engine": "vision-accurate-rev3",
+    "playwright": "1.65.1",
+    "chromium": "159.0.8154.6",
+    "node": "26.13.0",
+    "macos": "27.2.1 (26B131)",
+    "chip": "Apple M5",
+    "host_class": "physical"
+  },
+  "assertion": {
+    "samples": 30,
+    "warmup": 5,
+    "median_ms": 85.1,
+    "max_ms": 131.9,
+    "target_ms": 150,
+    "pass": true
+  },
+  "suite": {
+    "tests": 40,
+    "workers": 4,
+    "runs": 3,
+    "toHaveText_ms": [
+      2173,
+      2648,
+      2683
+    ],
+    "toShowText_ms": [
+      3851,
+      4045,
+      4220
+    ],
+    "slower_pct": 52.8,
+    "added_ms_per_test": 139.7,
+    "target_ms_per_test": 250,
+    "pass": true
+  }
+}

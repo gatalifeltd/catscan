@@ -1,0 +1,253 @@
+{
+  "locale": "lb",
+  "icu_locale": "lb",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Bulgarien",
+      "kind": "region"
+    },
+    {
+      "text": "Armenien",
+      "kind": "region"
+    },
+    {
+      "text": "Philippinnen",
+      "kind": "region"
+    },
+    {
+      "text": "Polen",
+      "kind": "region"
+    },
+    {
+      "text": "Estland",
+      "kind": "region"
+    },
+    {
+      "text": "Portugal",
+      "kind": "region"
+    },
+    {
+      "text": "Kanada",
+      "kind": "region"
+    },
+    {
+      "text": "Schweden",
+      "kind": "region"
+    },
+    {
+      "text": "Singapur",
+      "kind": "region"
+    },
+    {
+      "text": "Rumänien",
+      "kind": "region"
+    },
+    {
+      "text": "Ethiopien",
+      "kind": "region"
+    },
+    {
+      "text": "Saudi-Arabien",
+      "kind": "region"
+    },
+    {
+      "text": "Polnesch",
+      "kind": "language"
+    },
+    {
+      "text": "Franséisch",
+      "kind": "language"
+    },
+    {
+      "text": "Kroatesch",
+      "kind": "language"
+    },
+    {
+      "text": "Chinesesch",
+      "kind": "language"
+    },
+    {
+      "text": "Hindi",
+      "kind": "language"
+    },
+    {
+      "text": "Portugisesch",
+      "kind": "language"
+    },
+    {
+      "text": "Vietnamesesch",
+      "kind": "language"
+    },
+    {
+      "text": "Koreanesch",
+      "kind": "language"
+    },
+    {
+      "text": "Dänesch",
+      "kind": "language"
+    },
+    {
+      "text": "Finnesch",
+      "kind": "language"
+    },
+    {
+      "text": "Kanadeschen Dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "Ungaresche Forint",
+      "kind": "currency"
+    },
+    {
+      "text": "Mexikanesche Peso",
+      "kind": "currency"
+    },
+    {
+      "text": "Japanesche Yen",
+      "kind": "currency"
+    },
+    {
+      "text": "Indesch Rupie",
+      "kind": "currency"
+    },
+    {
+      "text": "Australeschen Dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "Juli",
+      "kind": "month"
+    },
+    {
+      "text": "Mäerz",
+      "kind": "month"
+    },
+    {
+      "text": "Januar",
+      "kind": "month"
+    },
+    {
+      "text": "Dezember",
+      "kind": "month"
+    },
+    {
+      "text": "Donneschdeg",
+      "kind": "weekday"
+    },
+    {
+      "text": "Méindeg",
+      "kind": "weekday"
+    },
+    {
+      "text": "Mëttwoch",
+      "kind": "weekday"
+    },
+    {
+      "text": "Dageshallschent",
+      "kind": "field"
+    },
+    {
+      "text": "Epoch",
+      "kind": "field"
+    },
+    {
+      "text": "Zäitzon",
+      "kind": "field"
+    },
+    {
+      "text": "Minutt",
+      "kind": "field"
+    },
+    {
+      "text": "Joer",
+      "kind": "field"
+    },
+    {
+      "text": "a(n) 3 Deeg",
+      "kind": "relative"
+    },
+    {
+      "text": "a(n) 3 Méint",
+      "kind": "relative"
+    },
+    {
+      "text": "viru(n) 5 Wochen",
+      "kind": "relative"
+    },
+    {
+      "text": "a(n) 3 Sekonnen",
+      "kind": "relative"
+    },
+    {
+      "text": "nächst Woch",
+      "kind": "relative"
+    },
+    {
+      "text": "lescht Woch",
+      "kind": "relative"
+    },
+    {
+      "text": "leschte Mount",
+      "kind": "relative"
+    },
+    {
+      "text": "a(n) 3 Quartaler",
+      "kind": "relative"
+    },
+    {
+      "text": "an 1 Stonn",
+      "kind": "relative"
+    },
+    {
+      "text": "virun 1 Stonn",
+      "kind": "relative"
+    },
+    {
+      "text": "5 Stonnen",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Kilometer pro Stonn",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Kilometer pro Stonn",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Grad Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Méint",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Deeg",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "Freideg, 6. November 2026",
+      "kind": "date"
+    },
+    {
+      "text": "2 Kilogramm",
+      "kind": "unit"
+    }
+  ]
+}

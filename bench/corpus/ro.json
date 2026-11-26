@@ -1,0 +1,253 @@
+{
+  "locale": "ro",
+  "icu_locale": "ro",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Indonezia",
+      "kind": "region"
+    },
+    {
+      "text": "Emiratele Arabe Unite",
+      "kind": "region"
+    },
+    {
+      "text": "Franța",
+      "kind": "region"
+    },
+    {
+      "text": "Ucraina",
+      "kind": "region"
+    },
+    {
+      "text": "Letonia",
+      "kind": "region"
+    },
+    {
+      "text": "Luxemburg",
+      "kind": "region"
+    },
+    {
+      "text": "Danemarca",
+      "kind": "region"
+    },
+    {
+      "text": "Bulgaria",
+      "kind": "region"
+    },
+    {
+      "text": "Belgia",
+      "kind": "region"
+    },
+    {
+      "text": "Rusia",
+      "kind": "region"
+    },
+    {
+      "text": "Egipt",
+      "kind": "region"
+    },
+    {
+      "text": "Statele Unite ale Americii",
+      "kind": "region"
+    },
+    {
+      "text": "engleză",
+      "kind": "language"
+    },
+    {
+      "text": "vietnameză",
+      "kind": "language"
+    },
+    {
+      "text": "italiană",
+      "kind": "language"
+    },
+    {
+      "text": "spaniolă",
+      "kind": "language"
+    },
+    {
+      "text": "neerlandeză",
+      "kind": "language"
+    },
+    {
+      "text": "persană",
+      "kind": "language"
+    },
+    {
+      "text": "română",
+      "kind": "language"
+    },
+    {
+      "text": "thailandeză",
+      "kind": "language"
+    },
+    {
+      "text": "greacă",
+      "kind": "language"
+    },
+    {
+      "text": "japoneză",
+      "kind": "language"
+    },
+    {
+      "text": "zlot",
+      "kind": "currency"
+    },
+    {
+      "text": "real",
+      "kind": "currency"
+    },
+    {
+      "text": "liră sterlină",
+      "kind": "currency"
+    },
+    {
+      "text": "euro",
+      "kind": "currency"
+    },
+    {
+      "text": "rupie indiană",
+      "kind": "currency"
+    },
+    {
+      "text": "coroană cehă",
+      "kind": "currency"
+    },
+    {
+      "text": "ianuarie",
+      "kind": "month"
+    },
+    {
+      "text": "octombrie",
+      "kind": "month"
+    },
+    {
+      "text": "iunie",
+      "kind": "month"
+    },
+    {
+      "text": "august",
+      "kind": "month"
+    },
+    {
+      "text": "vineri",
+      "kind": "weekday"
+    },
+    {
+      "text": "duminică",
+      "kind": "weekday"
+    },
+    {
+      "text": "marți",
+      "kind": "weekday"
+    },
+    {
+      "text": "fus orar",
+      "kind": "field"
+    },
+    {
+      "text": "minut",
+      "kind": "field"
+    },
+    {
+      "text": "a.m./p.m.",
+      "kind": "field"
+    },
+    {
+      "text": "lună",
+      "kind": "field"
+    },
+    {
+      "text": "săptămână",
+      "kind": "field"
+    },
+    {
+      "text": "peste 3 zile",
+      "kind": "relative"
+    },
+    {
+      "text": "acum 5 ani",
+      "kind": "relative"
+    },
+    {
+      "text": "anul trecut",
+      "kind": "relative"
+    },
+    {
+      "text": "peste 1 secundă",
+      "kind": "relative"
+    },
+    {
+      "text": "săptămâna trecută",
+      "kind": "relative"
+    },
+    {
+      "text": "luna viitoare",
+      "kind": "relative"
+    },
+    {
+      "text": "ieri",
+      "kind": "relative"
+    },
+    {
+      "text": "anul viitor",
+      "kind": "relative"
+    },
+    {
+      "text": "trimestrul viitor",
+      "kind": "relative"
+    },
+    {
+      "text": "peste 3 săptămâni",
+      "kind": "relative"
+    },
+    {
+      "text": "5 metri",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometri",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabyți",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilograme",
+      "kind": "unit"
+    },
+    {
+      "text": "2 zile",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabyți",
+      "kind": "unit"
+    },
+    {
+      "text": "5 ore",
+      "kind": "unit"
+    },
+    {
+      "text": "2 ore",
+      "kind": "unit"
+    },
+    {
+      "text": "luni, 3 martie 2025",
+      "kind": "date"
+    },
+    {
+      "text": "liră turcească",
+      "kind": "currency"
+    }
+  ]
+}

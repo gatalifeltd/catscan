@@ -1,0 +1,233 @@
+{
+  "spec": "03-unsupported-fallback",
+  "script": "node bench/fallback.js",
+  "dataset": {
+    "manifest": "bench/fallback/synthetic.json",
+    "images": 32,
+    "generator": "test/fixtures/generate.swift"
+  },
+  "tools": {
+    "catscan": "0.12.4",
+    "macos": "27.2 (26B123)",
+    "chip": "Apple M5",
+    "host_class": "physical",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+    "tesseract": "tesseract 5.5.4",
+    "leptonica": "leptonica-1.87.0",
+    "tesseract_path": "/opt/homebrew/bin/tesseract"
+  },
+  "gate": {
+    "threshold": 98,
+    "locales": [
+      "el",
+      "he",
+      "bg"
+    ],
+    "pass": true
+  },
+  "no_false_fail_without_fallback": true,
+  "locales": {
+    "el": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": true,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 280.5
+    },
+    "he": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": true,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 388
+    },
+    "bg": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": true,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 261.5
+    },
+    "sr": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": false,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 400.5
+    },
+    "hu": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": false,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 223
+    },
+    "fa": {
+      "checks": 40,
+      "correct": 25,
+      "misses": [
+        {
+          "image": "fa-1.png",
+          "text": "تنظیمات",
+          "closest": "ادامه"
+        },
+        {
+          "image": "fa-1.png",
+          "text": "ذخیره",
+          "closest": "ادامه"
+        },
+        {
+          "image": "fa-1.png",
+          "text": "لغو",
+          "closest": "ادامه"
+        },
+        {
+          "image": "fa-1.png",
+          "text": "ورود",
+          "closest": "ادامه"
+        },
+        {
+          "image": "fa-2.png",
+          "text": "خروج",
+          "closest": "اعلان‌ها"
+        },
+        {
+          "image": "fa-2.png",
+          "text": "اکنون بخرید",
+          "closest": "صفحه اصلی"
+        },
+        {
+          "image": "fa-2.png",
+          "text": "دوباره امتحان کنید",
+          "closest": "دویاره امتحان کنید"
+        },
+        {
+          "image": "fa-3.png",
+          "text": "نمایه من",
+          "closest": null
+        },
+        {
+          "image": "fa-3.png",
+          "text": "جستجو",
+          "closest": null
+        },
+        {
+          "image": "fa-3.png",
+          "text": "فروشگاه",
+          "closest": null
+        },
+        {
+          "image": "fa-3.png",
+          "text": "مرحله بعد",
+          "closest": null
+        },
+        {
+          "image": "fa-3.png",
+          "text": "توقف",
+          "closest": null
+        },
+        {
+          "image": "fa-4.png",
+          "text": "زبان",
+          "closest": "حدف"
+        },
+        {
+          "image": "fa-4.png",
+          "text": "حساب",
+          "closest": "حدف"
+        },
+        {
+          "image": "fa-4.png",
+          "text": "حذف",
+          "closest": "حدف"
+        }
+      ],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": false,
+      "fail_without_fallback": 0,
+      "accuracy": 62.5,
+      "median_ms": 152
+    },
+    "ka": {
+      "checks": 40,
+      "correct": 40,
+      "misses": [],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": false,
+      "fail_without_fallback": 0,
+      "accuracy": 100,
+      "median_ms": 184.5
+    },
+    "hy": {
+      "checks": 40,
+      "correct": 33,
+      "misses": [
+        {
+          "image": "hy-1.png",
+          "text": "Պահպանել",
+          "closest": "Պաճպաձել"
+        },
+        {
+          "image": "hy-2.png",
+          "text": "Ծանուցումներ",
+          "closest": "Ծածուցումներ"
+        },
+        {
+          "image": "hy-2.png",
+          "text": "Ելք",
+          "closest": "Գնել ճիմա"
+        },
+        {
+          "image": "hy-2.png",
+          "text": "Գնել հիմա",
+          "closest": "Գնել ճիմա"
+        },
+        {
+          "image": "hy-3.png",
+          "text": "Հաջորդ մակարդակ",
+          "closest": "Լաջորդ մակարդակ"
+        },
+        {
+          "image": "hy-4.png",
+          "text": "Հաշիվ",
+          "closest": "Լաշիվ"
+        },
+        {
+          "image": "hy-4.png",
+          "text": "Ջնջել",
+          "closest": "Ջեջել"
+        }
+      ],
+      "false_hits": [],
+      "engine": "tesseract-5.5.4",
+      "gated": false,
+      "fail_without_fallback": 0,
+      "accuracy": 82.5,
+      "median_ms": 173
+    }
+  }
+}

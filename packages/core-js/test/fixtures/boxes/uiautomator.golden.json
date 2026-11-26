@@ -1,0 +1,65 @@
+{
+  "image": {
+    "width": 1080,
+    "height": 2400
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0,
+        1,
+        0.9738
+      ],
+      "clips": true
+    },
+    {
+      "id": "com.example:id/title",
+      "box": [
+        0.0444,
+        0.0833,
+        0.4741,
+        0.0333
+      ],
+      "clips": true,
+      "text": "Einstellungen"
+    },
+    {
+      "id": "com.example:id/cta",
+      "box": [
+        0.0444,
+        0.8333,
+        0.9111,
+        0.0583
+      ],
+      "clips": true,
+      "text": "Mit E-Mail fortfah & mehr"
+    },
+    {
+      "id": "com.example:id/close",
+      "box": [
+        0.8889,
+        0.05,
+        0.0667,
+        0.03
+      ],
+      "clips": true,
+      "text": "Schließen",
+      "graphic": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.8333,
+        0.25,
+        0.1667,
+        0.025
+      ],
+      "clips": true,
+      "text": "Weiter",
+      "offscreen": true
+    }
+  ],
+  "orientation": "portrait"
+}

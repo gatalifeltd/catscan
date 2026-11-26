@@ -1,0 +1,71 @@
+# Benchmark corpus sources
+
+Every file here is drawn by [`build.js`](build.js) from Unicode CLDR through the ICU bundled with Node (`Intl.DisplayNames` for regions, languages, currencies and date fields; `Intl.DateTimeFormat` month and weekday names and full dates; `Intl.RelativeTimeFormat`; `Intl.NumberFormat` unit phrases), seed 5, 60 strings per language. Nothing is downloaded.
+
+- Source: Unicode CLDR (the Common Locale Data Repository), https://cldr.unicode.org/
+- License: Unicode License v3, https://www.unicode.org/license.txt - redistribution of the data is permitted with the copyright notice; each file records the Node, ICU and CLDR versions it was drawn from.
+- Copyright: Unicode, Inc.
+
+Files (all CLDR, Unicode License v3):
+
+- `en.json`: ICU locale `en`, ICU 78.3, CLDR 48.0
+- `fr.json`: ICU locale `fr`, ICU 78.3, CLDR 48.0
+- `it.json`: ICU locale `it`, ICU 78.3, CLDR 48.0
+- `de.json`: ICU locale `de`, ICU 78.3, CLDR 48.0
+- `es.json`: ICU locale `es`, ICU 78.3, CLDR 48.0
+- `pt-BR.json`: ICU locale `pt-BR`, ICU 78.3, CLDR 48.0
+- `zh-Hans.json`: ICU locale `zh-Hans`, ICU 78.3, CLDR 48.0
+- `zh-Hant.json`: ICU locale `zh-Hant`, ICU 78.3, CLDR 48.0
+- `yue-Hans.json`: ICU locale `yue-Hans`, ICU 78.3, CLDR 48.0
+- `yue-Hant.json`: ICU locale `yue-Hant`, ICU 78.3, CLDR 48.0
+- `ko.json`: ICU locale `ko`, ICU 78.3, CLDR 48.0
+- `ja.json`: ICU locale `ja`, ICU 78.3, CLDR 48.0
+- `ru.json`: ICU locale `ru`, ICU 78.3, CLDR 48.0
+- `uk.json`: ICU locale `uk`, ICU 78.3, CLDR 48.0
+- `th.json`: ICU locale `th`, ICU 78.3, CLDR 48.0
+- `vi.json`: ICU locale `vi`, ICU 78.3, CLDR 48.0
+- `ar.json`: ICU locale `ar`, ICU 78.3, CLDR 48.0
+- `ars.json`: ICU locale `ars`, ICU 78.3, CLDR 48.0
+- `tr.json`: ICU locale `tr`, ICU 78.3, CLDR 48.0
+- `id.json`: ICU locale `id`, ICU 78.3, CLDR 48.0
+- `cs.json`: ICU locale `cs`, ICU 78.3, CLDR 48.0
+- `da.json`: ICU locale `da`, ICU 78.3, CLDR 48.0
+- `nl.json`: ICU locale `nl`, ICU 78.3, CLDR 48.0
+- `no.json`: ICU locale `no`, ICU 78.3, CLDR 48.0
+- `nn.json`: ICU locale `nn`, ICU 78.3, CLDR 48.0
+- `nb.json`: ICU locale `nb`, ICU 78.3, CLDR 48.0
+- `ms.json`: ICU locale `ms`, ICU 78.3, CLDR 48.0
+- `pl.json`: ICU locale `pl`, ICU 78.3, CLDR 48.0
+- `ro.json`: ICU locale `ro`, ICU 78.3, CLDR 48.0
+- `sv.json`: ICU locale `sv`, ICU 78.3, CLDR 48.0
+- `fi.json`: ICU locale `fi`, ICU 78.3, CLDR 48.0
+- `hi.json`: ICU locale `hi`, ICU 78.3, CLDR 48.0
+- `mr.json`: ICU locale `mr`, ICU 78.3, CLDR 48.0
+- `el.json`: ICU locale `el`, ICU 78.3, CLDR 48.0
+- `he.json`: ICU locale `he`, ICU 78.3, CLDR 48.0
+- `bg.json`: ICU locale `bg`, ICU 78.3, CLDR 48.0
+- `sr.json`: ICU locale `sr`, ICU 78.3, CLDR 48.0
+- `sr-Latn.json`: ICU locale `sr-Latn`, ICU 78.3, CLDR 48.0
+- `hu.json`: ICU locale `hu`, ICU 78.3, CLDR 48.0
+- `fa.json`: ICU locale `fa`, ICU 78.3, CLDR 48.0
+- `ka.json`: ICU locale `ka`, ICU 78.3, CLDR 48.0
+- `hy.json`: ICU locale `hy`, ICU 78.3, CLDR 48.0
+- `ca.json`: ICU locale `ca`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `eu.json`: ICU locale `eu`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `gl.json`: ICU locale `gl`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `et.json`: ICU locale `et`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `cy.json`: ICU locale `cy`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `lb.json`: ICU locale `lb`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `fil.json`: ICU locale `fil`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `sq.json`: ICU locale `sq`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `hr.json`: ICU locale `hr`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `sk.json`: ICU locale `sk`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `sl.json`: ICU locale `sl`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `lt.json`: ICU locale `lt`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `lv.json`: ICU locale `lv`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `mt.json`: ICU locale `mt`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `ga.json`: ICU locale `ga`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `is.json`: ICU locale `is`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `mk.json`: ICU locale `mk`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `bs.json`: ICU locale `bs`, ICU 79.1, CLDR 49.0 (Node v26.13.0)
+- `be.json`: ICU locale `be`, ICU 79.1, CLDR 49.0 (Node v26.13.0)

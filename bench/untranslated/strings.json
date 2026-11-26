@@ -1,0 +1,707 @@
+{
+ "keys": [
+  "tab.home",
+  "tab.settings",
+  "menu.settings",
+  "settings.privacy",
+  "settings.notifications",
+  "settings.language",
+  "account.sign_in",
+  "account.sign_out",
+  "account.delete",
+  "paywall.title",
+  "paywall.restore",
+  "paywall.premium",
+  "cart.title",
+  "cart.checkout",
+  "cart.items",
+  "profile.edit",
+  "profile.greeting",
+  "search.hint",
+  "error.network",
+  "common.cancel",
+  "common.save",
+  "common.ok",
+  "common.online",
+  "wifi.title",
+  "download.button",
+  "download.start",
+  "help.center",
+  "days.left",
+  "brand.name"
+ ],
+ "locales": {
+  "en": [
+   "Home",
+   "Settings",
+   "Settings",
+   "Privacy",
+   "Notifications",
+   "Language",
+   "Sign in",
+   "Sign out",
+   "Delete account",
+   "Unlock all features",
+   "Restore purchases",
+   "Premium",
+   "Shopping cart",
+   "Continue to checkout",
+   "{count} items",
+   "Edit profile",
+   "Hello, {name}",
+   "Search for products",
+   "No internet connection",
+   "Cancel",
+   "Save changes",
+   "OK",
+   "Online",
+   "Wi-Fi",
+   "Download",
+   "Start download",
+   "Help center",
+   "%d days left",
+   "Catscan Pro"
+  ],
+  "de": [
+   "Start",
+   "Einstellungen",
+   "Optionen",
+   "Datenschutz",
+   "Mitteilungen",
+   "Sprache",
+   "Anmelden",
+   "Abmelden",
+   "Konto löschen",
+   "Alle Funktionen freischalten",
+   "Käufe wiederherstellen",
+   "Premium",
+   "Warenkorb",
+   "Weiter zur Kasse",
+   "{count} Artikel",
+   "Profil bearbeiten",
+   "Hallo, {name}",
+   "Nach Produkten suchen",
+   "Keine Internetverbindung",
+   "Abbrechen",
+   "Änderungen speichern",
+   "OK",
+   "Online",
+   "WLAN",
+   "Herunterladen",
+   "Download starten",
+   "Hilfe-Center",
+   "Noch %d Tage",
+   "Catscan Pro"
+  ],
+  "fr": [
+   "Accueil",
+   "Réglages",
+   "Paramètres",
+   "Confidentialité",
+   "Notifications",
+   "Langue",
+   "Se connecter",
+   "Se déconnecter",
+   "Supprimer le compte",
+   "Débloquer toutes les fonctions",
+   "Restaurer les achats",
+   "Premium",
+   "Panier",
+   "Passer à la caisse",
+   "{count} articles",
+   "Modifier le profil",
+   "Bonjour, {name}",
+   "Rechercher des produits",
+   "Pas de connexion Internet",
+   "Annuler",
+   "Enregistrer",
+   "OK",
+   "En ligne",
+   "Wi-Fi",
+   "Télécharger",
+   "Lancer le téléchargement",
+   "Centre d'aide",
+   "Encore %d jours",
+   "Catscan Pro"
+  ],
+  "es": [
+   "Inicio",
+   "Ajustes",
+   "Configuración",
+   "Privacidad",
+   "Notificaciones",
+   "Idioma",
+   "Iniciar sesión",
+   "Cerrar sesión",
+   "Eliminar cuenta",
+   "Desbloquear todas las funciones",
+   "Restaurar compras",
+   "Premium",
+   "Carrito",
+   "Continuar al pago",
+   "{count} artículos",
+   "Editar perfil",
+   "Hola, {name}",
+   "Buscar productos",
+   "Sin conexión a internet",
+   "Cancelar",
+   "Guardar cambios",
+   "OK",
+   "En línea",
+   "Wi-Fi",
+   "Descargar",
+   "Iniciar descarga",
+   "Centro de ayuda",
+   "Quedan %d días",
+   "Catscan Pro"
+  ],
+  "it": [
+   "Home",
+   "Impostazioni",
+   "Opzioni",
+   "Privacy",
+   "Notifiche",
+   "Lingua",
+   "Accedi",
+   "Esci",
+   "Elimina account",
+   "Sblocca tutte le funzioni",
+   "Ripristina acquisti",
+   "Premium",
+   "Carrello",
+   "Procedi al pagamento",
+   "{count} articoli",
+   "Modifica profilo",
+   "Ciao, {name}",
+   "Cerca prodotti",
+   "Nessuna connessione a Internet",
+   "Annulla",
+   "Salva modifiche",
+   "OK",
+   "Online",
+   "Wi-Fi",
+   "Scarica",
+   "Avvia download",
+   "Centro assistenza",
+   "Ancora %d giorni",
+   "Catscan Pro"
+  ],
+  "pt-BR": [
+   "Início",
+   "Ajustes",
+   "Configurações",
+   "Privacidade",
+   "Notificações",
+   "Idioma",
+   "Entrar",
+   "Sair",
+   "Excluir conta",
+   "Desbloquear todos os recursos",
+   "Restaurar compras",
+   "Premium",
+   "Carrinho",
+   "Ir para o pagamento",
+   "{count} itens",
+   "Editar perfil",
+   "Olá, {name}",
+   "Buscar produtos",
+   "Sem conexão com a internet",
+   "Cancelar",
+   "Salvar alterações",
+   "OK",
+   "Online",
+   "Wi-Fi",
+   "Baixar",
+   "Iniciar download",
+   "Central de ajuda",
+   "Faltam %d dias",
+   "Catscan Pro"
+  ],
+  "pl": [
+   "Start",
+   "Ustawienia",
+   "Opcje",
+   "Prywatność",
+   "Powiadomienia",
+   "Język",
+   "Zaloguj się",
+   "Wyloguj się",
+   "Usuń konto",
+   "Odblokuj wszystkie funkcje",
+   "Przywróć zakupy",
+   "Premium",
+   "Koszyk",
+   "Przejdź do kasy",
+   "{count} produktów",
+   "Edytuj profil",
+   "Cześć, {name}",
+   "Szukaj produktów",
+   "Brak połączenia z internetem",
+   "Anuluj",
+   "Zapisz zmiany",
+   "OK",
+   "Online",
+   "Wi-Fi",
+   "Pobierz",
+   "Rozpocznij pobieranie",
+   "Centrum pomocy",
+   "Zostało %d dni",
+   "Catscan Pro"
+  ],
+  "tr": [
+   "Ana Sayfa",
+   "Ayarlar",
+   "Seçenekler",
+   "Gizlilik",
+   "Bildirimler",
+   "Dil",
+   "Giriş yap",
+   "Çıkış yap",
+   "Hesabı sil",
+   "Tüm özelliklerin kilidini aç",
+   "Satın alımları geri yükle",
+   "Premium",
+   "Sepet",
+   "Ödemeye geç",
+   "{count} ürün",
+   "Profili düzenle",
+   "Merhaba, {name}",
+   "Ürün ara",
+   "İnternet bağlantısı yok",
+   "İptal",
+   "Değişiklikleri kaydet",
+   "OK",
+   "Çevrimiçi",
+   "Wi-Fi",
+   "İndir",
+   "İndirmeyi başlat",
+   "Yardım merkezi",
+   "%d gün kaldı",
+   "Catscan Pro"
+  ],
+  "ru": [
+   "Главная",
+   "Настройки",
+   "Параметры",
+   "Конфиденциальность",
+   "Уведомления",
+   "Язык",
+   "Войти",
+   "Выйти",
+   "Удалить аккаунт",
+   "Открыть все функции",
+   "Восстановить покупки",
+   "Premium",
+   "Корзина",
+   "Перейти к оплате",
+   "{count} товаров",
+   "Изменить профиль",
+   "Привет, {name}",
+   "Поиск товаров",
+   "Нет подключения к интернету",
+   "Отмена",
+   "Сохранить изменения",
+   "OK",
+   "Онлайн",
+   "Wi-Fi",
+   "Скачать",
+   "Начать загрузку",
+   "Центр помощи",
+   "Осталось %d дн.",
+   "Catscan Pro"
+  ],
+  "uk": [
+   "Головна",
+   "Налаштування",
+   "Параметри",
+   "Конфіденційність",
+   "Сповіщення",
+   "Мова",
+   "Увійти",
+   "Вийти",
+   "Видалити акаунт",
+   "Відкрити всі функції",
+   "Відновити покупки",
+   "Premium",
+   "Кошик",
+   "Перейти до оплати",
+   "{count} товарів",
+   "Редагувати профіль",
+   "Привіт, {name}",
+   "Пошук товарів",
+   "Немає підключення до інтернету",
+   "Скасувати",
+   "Зберегти зміни",
+   "OK",
+   "Онлайн",
+   "Wi-Fi",
+   "Завантажити",
+   "Почати завантаження",
+   "Центр допомоги",
+   "Залишилось %d дн.",
+   "Catscan Pro"
+  ],
+  "ja": [
+   "ホーム",
+   "設定",
+   "オプション",
+   "プライバシー",
+   "通知",
+   "言語",
+   "サインイン",
+   "サインアウト",
+   "アカウントを削除",
+   "すべての機能を解除",
+   "購入を復元",
+   "Premium",
+   "カート",
+   "レジに進む",
+   "{count}個の商品",
+   "プロフィールを編集",
+   "こんにちは、{name}さん",
+   "商品を検索",
+   "インターネット接続がありません",
+   "キャンセル",
+   "変更を保存",
+   "OK",
+   "オンライン",
+   "Wi-Fi",
+   "ダウンロード",
+   "ダウンロードを開始",
+   "ヘルプセンター",
+   "残り%d日",
+   "Catscan Pro"
+  ],
+  "ko": [
+   "홈",
+   "설정",
+   "옵션",
+   "개인정보 보호",
+   "알림",
+   "언어",
+   "로그인",
+   "로그아웃",
+   "계정 삭제",
+   "모든 기능 잠금 해제",
+   "구매 복원",
+   "Premium",
+   "장바구니",
+   "결제 계속하기",
+   "상품 {count}개",
+   "프로필 편집",
+   "안녕하세요, {name}님",
+   "상품 검색",
+   "인터넷 연결 없음",
+   "취소",
+   "변경 사항 저장",
+   "확인",
+   "온라인",
+   "Wi-Fi",
+   "다운로드",
+   "다운로드 시작",
+   "고객센터",
+   "%d일 남음",
+   "Catscan Pro"
+  ],
+  "zh-Hans": [
+   "首页",
+   "设置",
+   "选项",
+   "隐私",
+   "通知",
+   "语言",
+   "登录",
+   "退出登录",
+   "删除帐户",
+   "解锁所有功能",
+   "恢复购买",
+   "Premium",
+   "购物车",
+   "继续结账",
+   "{count} 件商品",
+   "编辑个人资料",
+   "你好，{name}",
+   "搜索商品",
+   "无网络连接",
+   "取消",
+   "保存更改",
+   "好",
+   "在线",
+   "Wi-Fi",
+   "下载",
+   "开始下载",
+   "帮助中心",
+   "还剩 %d 天",
+   "Catscan Pro"
+  ]
+ },
+ "cases": [
+  {
+   "name": "go-name-on",
+   "todo": "010",
+   "locale": "de",
+   "keys": {
+    "cta.go_on": [
+     "Go {name} on",
+     "Weiter mit {name}"
+    ]
+   },
+   "lines": [
+    "Einstellungen",
+    "Go Anna on",
+    "Konto"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "Go {name} on"
+    }
+   ]
+  },
+  {
+   "name": "go-name-on",
+   "todo": "010",
+   "locale": "fr",
+   "keys": {
+    "cta.go_on": [
+     "Go {name} on",
+     "Continuer avec {name}"
+    ]
+   },
+   "lines": [
+    "Paramètres",
+    "Go Anna on",
+    "Compte"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "Go {name} on"
+    }
+   ]
+  },
+  {
+   "name": "latin-in-ja",
+   "todo": "013",
+   "locale": "ja",
+   "keys": {},
+   "lines": [
+    "Settingsを開く",
+    "ホーム"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "Settings"
+    }
+   ]
+  },
+  {
+   "name": "latin-in-ko",
+   "todo": "013",
+   "locale": "ko",
+   "keys": {},
+   "lines": [
+    "Settings를 열기",
+    "홈"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "Settings"
+    }
+   ]
+  },
+  {
+   "name": "latin-in-zh",
+   "todo": "013",
+   "locale": "zh-Hans",
+   "keys": {},
+   "lines": [
+    "打开Settings",
+    "首页"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "Settings"
+    }
+   ]
+  },
+  {
+   "name": "paragraph-3",
+   "todo": "014",
+   "locale": "de",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Wenn du fortfährst, stimmst du unseren Nutzungsbedingungen zu und bestätigst unsere Datenschutzerklärung"
+    ]
+   },
+   "lines": [
+    "By continuing you agree to",
+    "our Terms of Service and",
+    "acknowledge our Privacy Policy"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy"
+    }
+   ]
+  },
+  {
+   "name": "paragraph-3-translated",
+   "todo": "014",
+   "locale": "de",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Wenn du fortfährst, stimmst du unseren Nutzungsbedingungen zu und bestätigst unsere Datenschutzerklärung"
+    ]
+   },
+   "lines": [
+    "Wenn du fortfährst, stimmst",
+    "du unseren Nutzungsbedingungen zu",
+    "und bestätigst unsere Datenschutzerklärung"
+   ],
+   "truth": []
+  },
+  {
+   "name": "paragraph-3",
+   "todo": "014",
+   "locale": "fr",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "En continuant, vous acceptez nos Conditions d'utilisation et reconnaissez notre Politique de confidentialité"
+    ]
+   },
+   "lines": [
+    "By continuing you agree to",
+    "our Terms of Service and",
+    "acknowledge our Privacy Policy"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy"
+    }
+   ]
+  },
+  {
+   "name": "paragraph-3-translated",
+   "todo": "014",
+   "locale": "fr",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "En continuant, vous acceptez nos Conditions d'utilisation et reconnaissez notre Politique de confidentialité"
+    ]
+   },
+   "lines": [
+    "En continuant, vous acceptez nos",
+    "Conditions d'utilisation et reconnaissez notre",
+    "Politique de confidentialité"
+   ],
+   "truth": []
+  },
+  {
+   "name": "paragraph-3",
+   "todo": "014",
+   "locale": "es",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Al continuar, aceptas nuestros Términos del servicio y reconoces nuestra Política de privacidad"
+    ]
+   },
+   "lines": [
+    "By continuing you agree to",
+    "our Terms of Service and",
+    "acknowledge our Privacy Policy"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy"
+    }
+   ]
+  },
+  {
+   "name": "paragraph-3-translated",
+   "todo": "014",
+   "locale": "es",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Al continuar, aceptas nuestros Términos del servicio y reconoces nuestra Política de privacidad"
+    ]
+   },
+   "lines": [
+    "Al continuar, aceptas nuestros Términos",
+    "del servicio y reconoces nuestra",
+    "Política de privacidad"
+   ],
+   "truth": []
+  },
+  {
+   "name": "paragraph-5",
+   "todo": "014",
+   "locale": "it",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Continuando accetti i nostri Termini di servizio e prendi atto della nostra Informativa sulla privacy"
+    ]
+   },
+   "lines": [
+    "By continuing you",
+    "agree to our",
+    "Terms of Service",
+    "and acknowledge our",
+    "Privacy Policy"
+   ],
+   "truth": [
+    {
+     "kind": "untranslated",
+     "base": "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy"
+    }
+   ]
+  },
+  {
+   "name": "paragraph-5-translated",
+   "todo": "014",
+   "locale": "it",
+   "keys": {
+    "legal.consent": [
+     "By continuing you agree to our Terms of Service and acknowledge our Privacy Policy",
+     "Continuando accetti i nostri Termini di servizio e prendi atto della nostra Informativa sulla privacy"
+    ]
+   },
+   "lines": [
+    "Continuando accetti i",
+    "nostri Termini di",
+    "servizio e prendi",
+    "atto della nostra",
+    "Informativa sulla privacy"
+   ],
+   "truth": []
+  },
+  {
+   "name": "domains-files-taglines",
+   "todo": "015",
+   "locale": "de",
+   "keys": {},
+   "lines": [
+    "www.spiegel.de",
+    "bbc.co.uk",
+    "readme.md",
+    "report.docx",
+    "song.mp3",
+    "denken. machen. teilen"
+   ],
+   "truth": []
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+  "name": "catscan",
+  "version": "1.0.0",
+  "description": "On-device visual checks for screenshots and video on macOS.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatalifeltd/catscan.git"
+  },
+  "homepage": "https://github.com/gatalifeltd/catscan#readme",
+  "bugs": {
+    "url": "https://github.com/gatalifeltd/catscan/issues"
+  },
+  "keywords": [
+    "macos",
+    "apple-vision",
+    "ocr",
+    "screenshot-testing",
+    "visual-testing",
+    "localization",
+    "i18n",
+    "l10n",
+    "lqa",
+    "neural-engine"
+  ],
+  "private": true,
+  "bin": {
+    "catscan": "bin/catscan.js"
+  },
+  "workspaces": [
+    "packages/cli-darwin-arm64",
+    "packages/core-js",
+    "packages/cli",
+    "packages/mcp",
+    "packages/playwright"
+  ],
+  "scripts": {
+    "docs:check": "node scripts/docs-check.mjs && node scripts/check-internal.mjs --allowlist && node bench/languages/table.js --check",
+    "premerge": "bash scripts/premerge.sh",
+    "setup": "node scripts/check-audit.mjs && npm ci --ignore-scripts --no-audit --no-fund",
+    "skills:check": "node scripts/skills-lint.mjs && node --test test/skills/*.test.mjs",
+    "build": "swift build -c release --package-path core",
+    "test": "npm run test:unit && npm run test:swift && npm run test:integration",
+    "test:unit": "node --test packages/core-js/test/*.test.js packages/mcp/test/*.test.js packages/playwright/test/*.test.js bench/test/*.test.js bench/overlap/lab/test/*.test.js scripts/test/*.test.mjs scripts/lab/test/*.test.mjs test/skills/runners/*.test.mjs && npm run test:types",
+    "test:packages": "node --test packages/core-js/test/*.test.js packages/mcp/test/*.test.js packages/playwright/test/*.test.js && node scripts/pack-smoke.mjs && node --test test/upgrade/fixture.test.js",
+    "test:swift": "swift test --package-path core",
+    "test:integration": "node --test --test-concurrency=1 test/*.test.js",
+    "bench": "node bench/languages/run.js",
+    "bench:table": "node bench/languages/table.js",
+    "bench:check": "node bench/languages/table.js --check",
+    "labels:review": "node scripts/truncation-labels.mjs review datasets/truncation",
+    "e2e:maestro": "sh scripts/e2e-maestro.sh",
+    "test:report-browser": "playwright test -c test/report-browser",
+    "test:types": "tsc -p packages/playwright/test/types",
+    "test:playwright": "playwright test -c packages/playwright/test/e2e && node packages/playwright/test/example-run.js && node --test test/adopt/fixture.test.js",
+    "test:playwright:floor": "node packages/playwright/test/floor.js",
+    "bench:playwright": "node scripts/bench-playwright.mjs"
+  },
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1",
+    "@types/node": "26.6.6",
+    "jest": "30.5.2",
+    "typescript": "7.0.2",
+    "vitest": "5.1.0"
+  }
+}

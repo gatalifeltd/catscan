@@ -1,0 +1,6 @@
+# Per-screen checks for French (catscan check --expect, docs/cli.md#--expect-files).
+locale: fr
+shots:
+  onboarding.fr.png: { present: ["Bienvenue", "Suivant"], absent: ["onboarding.body"] }
+  settings.fr.png: { present: ["Réglages", "Réglages des alertes"] }
+  game.fr.png: { present: ["Niveau terminé"] }

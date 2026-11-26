@@ -1,0 +1,216 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+cs,vision-accurate-rev3,false,2160,0,2880,2784,96.67,720,624,0.8667,0.0173,1333,11,107,709,0.9918,0.9257,24,0|0|0|0|0|0|0|0|0|720,0|0|0|3|0|16|0|0|0|694
+image,case,present,absent,truncated,cer,read
+cs/01-fit-16-light-flat.png,fit,fail,pass,no,1,Jizní Korea
+cs/01-fit-16-light-gradient.png,fit,fail,pass,no,1,Jizní Korea
+cs/01-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/02-fit-12-light-flat.png,fit,fail,pass,no,1,Spanělsko
+cs/02-fit-12-dark-gradient.png,fit,fail,pass,no,1,Spanělsko
+cs/02-fit-16-light-flat.png,fit,fail,pass,no,1,Spanělsko
+cs/02-fit-16-light-gradient.png,fit,fail,pass,screen-edge,1,Spanělsko
+cs/02-fit-16-dark-flat.png,fit,fail,pass,no,1,Spanělsko
+cs/02-fit-16-dark-gradient.png,fit,fail,pass,screen-edge,1,Spanělsko
+cs/02-fit-24-light-flat.png,fit,fail,pass,no,1,Spanělsko
+cs/04-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/04-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/04-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/04-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/04-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/05-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/05-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/05-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/05-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+cs/09-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/09-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/09-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/09-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/09-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/09-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/09-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/09-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+cs/09-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/09-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/10-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/10-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/10-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/10-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+cs/10-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/10-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+cs/12-fit-12-dark-gradient.png,fit,fail,pass,no,1,čestina
+cs/12-fit-16-light-flat.png,fit,fail,pass,no,1,čestina
+cs/12-fit-16-light-gradient.png,fit,fail,pass,no,1,čestina
+cs/12-fit-16-dark-flat.png,fit,fail,pass,no,1,čestina
+cs/12-fit-16-dark-gradient.png,fit,fail,pass,no,1,čestina
+cs/13-fit-12-light-flat.png,fit,fail,pass,no,1,italstina
+cs/13-fit-12-light-gradient.png,fit,fail,pass,no,1,italstina
+cs/13-fit-12-dark-gradient.png,fit,fail,pass,no,1,italstina
+cs/13-fit-16-light-flat.png,fit,fail,pass,no,1,italstina
+cs/13-fit-16-light-gradient.png,fit,fail,pass,no,1,italstina
+cs/13-fit-16-dark-gradient.png,fit,fail,pass,no,1,italstina
+cs/14-fit-12-light-flat.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-12-light-gradient.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-12-dark-gradient.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-16-light-flat.png,fit,fail,pass,no,2,portuga stina
+cs/14-fit-16-light-gradient.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-16-dark-flat.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-24-light-flat.png,fit,fail,pass,no,1,portugalstina
+cs/14-fit-24-light-gradient.png,fit,fail,pass,no,1,portugalstina
+cs/15-fit-12-light-flat.png,fit,fail,pass,no,1,arabstina
+cs/15-fit-12-light-gradient.png,fit,fail,pass,no,1,arabstina
+cs/15-fit-12-dark-gradient.png,fit,fail,pass,no,1,arabstina
+cs/15-fit-16-light-flat.png,fit,fail,pass,no,1,arabstina
+cs/16-fit-12-light-flat.png,fit,fail,pass,no,2,cínstina
+cs/16-fit-12-light-gradient.png,fit,fail,pass,no,2,cínstina
+cs/17-fit-12-light-flat.png,fit,fail,pass,no,1,chorvatstina
+cs/17-fit-12-light-gradient.png,fit,fail,pass,no,1,chorvatstina
+cs/17-fit-12-dark-flat.png,fit,fail,pass,no,1,chorvatstina
+cs/17-fit-12-dark-gradient.png,fit,fail,pass,no,1,chorvatstina
+cs/17-fit-16-light-flat.png,fit,fail,pass,no,1,chorvatstina
+cs/18-fit-12-light-flat.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-12-light-gradient.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-12-dark-flat.png,fit,fail,pass,no,1,madarština
+cs/18-fit-12-dark-gradient.png,fit,fail,pass,no,1,madarština
+cs/18-fit-16-light-flat.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-16-light-gradient.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-16-dark-flat.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-16-dark-gradient.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-24-light-flat.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-24-light-gradient.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-24-dark-flat.png,fit,fail,pass,no,2,mad'arština
+cs/18-fit-24-dark-gradient.png,fit,fail,pass,no,2,mad'arština
+cs/19-fit-12-light-gradient.png,fit,fail,pass,no,1,malajstina
+cs/19-fit-16-light-flat.png,fit,fail,pass,no,1,malajstina
+cs/19-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+cs/19-fit-16-dark-flat.png,fit,fail,pass,no,1,malajstina
+cs/19-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+cs/20-fit-12-dark-gradient.png,fit,fail,pass,no,1,arménstina
+cs/20-fit-16-dark-gradient.png,fit,fail,pass,no,1,arménstina
+cs/20-clip-24-light-gradient.png,clip,,pass,no,,
+cs/21-fit-12-light-flat.png,fit,fail,pass,no,1,srbstina
+cs/21-fit-12-light-gradient.png,fit,fail,pass,no,1,srbstina
+cs/21-fit-16-light-flat.png,fit,fail,pass,no,1,srbstina
+cs/22-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/22-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/22-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/22-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+cs/23-fit-12-light-flat.png,fit,fail,pass,no,1,japonsky jen
+cs/23-fit-12-light-gradient.png,fit,fail,pass,no,1,japonsky jen
+cs/23-fit-24-light-gradient.png,fit,fail,pass,no,1,japonsky jen
+cs/23-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/24-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+cs/25-fit-16-light-flat.png,fit,fail,pass,no,1,polský zloty
+cs/25-fit-24-light-flat.png,fit,fail,pass,no,1,polsky zlotý
+cs/25-fit-24-light-gradient.png,fit,fail,pass,no,2,polsky zloty
+cs/25-clip-12-light-flat.png,clip,,pass,no,,
+cs/25-clip-12-light-gradient.png,clip,,pass,no,,
+cs/25-clip-12-dark-flat.png,clip,,pass,no,,
+cs/25-clip-12-dark-gradient.png,clip,,pass,no,,
+cs/25-clip-16-light-flat.png,clip,,pass,no,,
+cs/25-clip-16-light-gradient.png,clip,,pass,no,,
+cs/25-clip-16-dark-flat.png,clip,,pass,no,,
+cs/25-clip-16-dark-gradient.png,clip,,pass,no,,
+cs/25-clip-24-dark-flat.png,clip,,pass,no,,
+cs/26-fit-12-light-flat.png,fit,fail,pass,no,1,cínský jüan
+cs/26-fit-12-light-gradient.png,fit,fail,pass,no,1,cínský jüan
+cs/26-fit-16-light-flat.png,fit,fail,pass,no,1,cínský jüan
+cs/26-fit-16-light-gradient.png,fit,fail,pass,no,1,cínský jüan
+cs/26-fit-24-light-flat.png,fit,fail,pass,no,2,cínsky jüan
+cs/26-fit-24-light-gradient.png,fit,fail,pass,no,2,cínsky jüan
+cs/26-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/26-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/26-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/26-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/28-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+cs/30-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+cs/30-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+cs/30-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/30-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/30-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/30-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/30-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/30-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/31-fit-16-light-flat.png,fit,fail,pass,no,1,unor
+cs/31-fit-24-light-gradient.png,fit,fail,pass,no,1,unor
+cs/31-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/31-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/31-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/31-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+cs/31-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/33-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+cs/35-fit-24-light-flat.png,fit,fail,pass,no,1,čtvrtleti
+cs/35-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/39-fit-12-light-gradient.png,fit,pass,pass,screen-edge,0,
+cs/39-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+cs/40-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/40-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/40-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/40-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/40-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/40-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/40-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+cs/40-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+cs/40-clip-16-light-flat.png,clip,,pass,no,,
+cs/40-clip-16-dark-flat.png,clip,,pass,no,,
+cs/40-clip-16-dark-gradient.png,clip,,pass,no,,
+cs/40-clip-24-light-flat.png,clip,,pass,no,,
+cs/40-clip-24-light-gradient.png,clip,,pass,no,,
+cs/40-clip-24-dark-flat.png,clip,,pass,no,,
+cs/44-fit-12-light-flat.png,fit,fail,pass,no,1,pred 1 sekundou
+cs/44-fit-12-light-gradient.png,fit,fail,pass,no,1,pred 1 sekundou
+cs/46-fit-12-light-flat.png,fit,fail,pass,no,1,pred 5 hodinami
+cs/46-fit-12-light-gradient.png,fit,fail,pass,no,1,pred 5 hodinami
+cs/47-fit-12-light-flat.png,fit,fail,pass,no,1,pred 1 minutou
+cs/47-fit-12-light-gradient.png,fit,fail,pass,no,1,pred 1 minutou
+cs/47-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/47-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/47-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/47-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/47-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/48-fit-12-dark-gradient.png,fit,fail,pass,no,1,zitra
+cs/48-fit-24-light-gradient.png,fit,fail,pass,no,1,zitra
+cs/49-fit-12-light-flat.png,fit,fail,pass,no,1,minulý tyden
+cs/49-fit-12-light-gradient.png,fit,fail,pass,no,1,minuly týden
+cs/49-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/51-fit-12-dark-flat.png,fit,fail,pass,no,1,2 tydny
+cs/51-fit-16-light-flat.png,fit,fail,pass,no,1,2 tydny
+cs/51-fit-16-light-gradient.png,fit,fail,pass,no,1,2 tydny
+cs/51-fit-24-light-flat.png,fit,fail,pass,no,1,2 tydny
+cs/51-clip-24-light-gradient.png,clip,,pass,no,,
+cs/52-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+cs/52-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+cs/52-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/52-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+cs/52-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/54-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+cs/54-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+cs/54-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+cs/55-fit-12-light-gradient.png,fit,fail,pass,no,1,5 kilogramu
+cs/55-fit-12-dark-flat.png,fit,fail,pass,no,1,5 kilogramü
+cs/55-fit-12-dark-gradient.png,fit,fail,pass,no,1,5 kilogramü
+cs/55-fit-16-light-flat.png,fit,fail,pass,no,1,5 kilogramü
+cs/55-fit-16-light-gradient.png,fit,fail,pass,no,1,5 kilogramü
+cs/55-fit-24-light-flat.png,fit,fail,pass,no,1,5 kilogramü
+cs/56-clip-12-light-flat.png,clip,,pass,no,,
+cs/56-clip-12-light-gradient.png,clip,,pass,no,,
+cs/56-clip-12-dark-flat.png,clip,,pass,no,,
+cs/56-clip-12-dark-gradient.png,clip,,pass,no,,
+cs/56-clip-16-light-flat.png,clip,,pass,no,,
+cs/56-clip-16-light-gradient.png,clip,,pass,no,,
+cs/56-clip-16-dark-flat.png,clip,,pass,no,,
+cs/56-clip-16-dark-gradient.png,clip,,pass,no,,
+cs/56-clip-24-light-flat.png,clip,,pass,no,,
+cs/56-clip-24-dark-flat.png,clip,,pass,no,,
+cs/56-clip-24-dark-gradient.png,clip,,pass,no,,
+cs/58-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+cs/58-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+cs/58-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+cs/58-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+cs/58-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+cs/59-fit-16-light-flat.png,fit,fail,pass,no,1,hindstina
+cs/59-fit-16-light-gradient.png,fit,fail,pass,no,1,hindstina

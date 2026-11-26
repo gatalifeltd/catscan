@@ -1,0 +1,45 @@
+{
+  "seed": 39,
+  "shapes": {
+    "app": {
+      "settings.title": "Settings", "settings.privacy": "Privacy policy", "settings.terms": "Terms of use", "settings.language": "Language",
+      "settings.notifications": "Notifications", "account.signin": "Sign in", "account.signout": "Sign out", "account.delete": "Delete account",
+      "account.profile": "Edit profile", "home.search": "Search products", "home.recent": "Recently viewed", "home.deals": "Today's deals",
+      "cart.title": "Your cart", "cart.checkout": "Proceed to checkout", "cart.empty": "Your cart is empty", "order.track": "Track order",
+      "order.history": "Order history", "order.help": "Need help?", "share.invite": "Invite friends", "share.link": "Copy link",
+      "help.contact": "Contact support", "help.faq": "Frequently asked questions", "app.update": "Update available", "app.rate": "Rate this app",
+      "greeting": "Hello, {name}!", "cart.items": "{count} items in your cart", "order.arrives": "Arrives in {count} days",
+      "about.text": "This app helps you find the best deals near you and keeps track of every order you place with us",
+      "privacy.text": "We use your location only to show stores nearby and never share it with anyone without asking you first"
+    },
+    "factory": {
+      "line.status": "Line status", "line.start": "Start production", "line.stop": "Stop production", "line.pause": "Pause line",
+      "shift.report": "Shift report", "shift.handover": "Shift handover", "machine.list": "Machine list", "machine.alarm": "Active alarms",
+      "machine.service": "Service due", "quality.check": "Quality check", "quality.reject": "Reject batch", "quality.approve": "Approve batch",
+      "stock.level": "Stock level", "stock.reorder": "Reorder parts", "stock.scan": "Scan barcode", "team.roster": "Team roster",
+      "team.message": "Send message", "safety.incident": "Report incident", "safety.training": "Safety training", "energy.usage": "Energy usage",
+      "sensor.offline": "Sensor offline", "sensor.calibrate": "Calibrate sensor", "export.csv": "Export report", "sync.now": "Sync now",
+      "operator.hello": "Welcome back, {name}", "batch.count": "{count} batches today", "alarm.count": "{count} open alarms",
+      "safety.text": "Wear protective glasses and gloves at all times while the press is running and stop the line before any service",
+      "handover.text": "Write down every open issue before the shift ends so the next team can continue without calling you at home"
+    },
+    "games": {
+      "menu.play": "Play now", "menu.settings": "Game settings", "menu.shop": "Coin shop", "menu.leaderboard": "Leaderboard",
+      "menu.daily": "Daily reward", "menu.missions": "Daily missions", "level.start": "Start level", "level.retry": "Try again",
+      "level.complete": "Level complete", "level.locked": "Level locked", "level.next": "Next level", "shop.buy": "Buy coins",
+      "shop.restore": "Restore purchases", "shop.offer": "Special offer", "shop.bundle": "Starter bundle", "friends.invite": "Invite friends",
+      "friends.gift": "Send a gift", "event.title": "Winter festival", "event.ends": "Event ends soon", "sound.music": "Music volume",
+      "sound.effects": "Sound effects", "account.link": "Link account", "chat.open": "Open chat", "clan.join": "Join a clan",
+      "player.hello": "Good luck, {name}!", "coins.left": "{count} coins left", "lives.left": "{count} lives remaining",
+      "tutorial.text": "Swipe to move your hero across the board and collect every star before the timer runs out to finish the level",
+      "event.text": "Complete winter missions to earn snowflakes and trade them for rare skins before the festival is over"
+    }
+  },
+  "literals": ["Limited time offer", "Tap here to continue", "Coming soon", "Beta feature", "Connection lost", "New message received", "Free shipping today", "Server maintenance tonight", "Weekly challenge", "Bonus round unlocked"],
+  "names": ["Anna Smith", "Ben Carter", "Chloe Martin", "David Lopez"],
+  "values": ["$4.99", "1,250", "75%", "10:45 PM", "Mar 3, 2026", "12 of 40", "$19.99 per month", "x3"],
+  "system": {
+    "ios": ["Allow “Shop” to use your location?", "Allow Once", "Allow While Using App", "Don't Allow"],
+    "android": ["Allow Shop to access this device's location?", "While using the app", "Only this time", "Don't allow"]
+  }
+}

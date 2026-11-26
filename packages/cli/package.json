@@ -1,0 +1,16 @@
+{
+  "name": "@catscan/cli",
+  "version": "1.0.0",
+  "description": "On-device text checks for app and game screenshots on macOS (Apple Vision).",
+  "license": "Apache-2.0",
+  "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/cli" },
+  "homepage": "https://github.com/gatalifeltd/catscan#readme",
+  "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
+  "keywords": ["cli", "macos", "apple-vision", "ocr", "screenshot-testing", "visual-testing", "localization", "i18n", "l10n", "lqa"],
+  "bin": { "catscan": "bin/catscan.js" },
+  "files": ["bin"],
+  "engines": { "node": ">=22" },
+  "dependencies": {
+    "@catscan/core-js": "1.0.0"
+  }
+}

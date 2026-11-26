@@ -1,0 +1,446 @@
+{
+ "check": "formats",
+ "todo": "TODO-036 T3",
+ "gate": {
+  "precision": 0.97,
+  "recall": 0.85,
+  "per": "rule (price = amount + period + trial)"
+ },
+ "pass": true,
+ "set": {
+  "locales": [
+   "en-US",
+   "en-GB",
+   "en-IN",
+   "de",
+   "fr",
+   "es",
+   "it",
+   "pt-BR",
+   "tr",
+   "ja",
+   "ko",
+   "ru"
+  ],
+  "screens": 600,
+  "per_locale": 50,
+  "storefronts": [
+   "US",
+   "GB",
+   "DE",
+   "FR",
+   "JP",
+   "BR",
+   "IN",
+   "TR"
+  ],
+  "seed": 36003,
+  "generator": "test/fixtures/generate.swift",
+  "values": "bench/formats/values.swift"
+ },
+ "rules": {
+  "number": {
+   "precision": 1,
+   "precision_ci": [
+    0.9725,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9725,
+    1
+   ],
+   "recall_all": 0.9927,
+   "eligible": 136,
+   "seeds": 137,
+   "flags": 136,
+   "false_flags": 0,
+   "pass": true
+  },
+  "date": {
+   "precision": 1,
+   "precision_ci": [
+    0.9727,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9727,
+    1
+   ],
+   "recall_all": 1,
+   "eligible": 137,
+   "seeds": 137,
+   "flags": 137,
+   "false_flags": 0,
+   "pass": true
+  },
+  "time": {
+   "precision": 1,
+   "precision_ci": [
+    0.9711,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9711,
+    1
+   ],
+   "recall_all": 0.9416,
+   "eligible": 129,
+   "seeds": 137,
+   "flags": 129,
+   "false_flags": 0,
+   "pass": true
+  },
+  "currency-placement": {
+   "precision": 0.9909,
+   "precision_ci": [
+    0.9503,
+    0.9984
+   ],
+   "recall_eligible": 0.9909,
+   "recall_eligible_ci": [
+    0.9503,
+    0.9984
+   ],
+   "recall_all": 0.8074,
+   "eligible": 110,
+   "seeds": 135,
+   "flags": 110,
+   "false_flags": 1,
+   "pass": true
+  },
+  "currency": {
+   "precision": 0.982,
+   "precision_ci": [
+    0.9367,
+    0.995
+   ],
+   "recall_eligible": 0.9717,
+   "recall_eligible_ci": [
+    0.9201,
+    0.9903
+   ],
+   "recall_all": 0.7956,
+   "eligible": 106,
+   "seeds": 137,
+   "flags": 111,
+   "false_flags": 2,
+   "pass": true
+  },
+  "mixed-currency": {
+   "precision": 1,
+   "precision_ci": [
+    0.9473,
+    1
+   ],
+   "recall_eligible": 0.8929,
+   "recall_eligible_ci": [
+    0.7853,
+    0.95
+   ],
+   "recall_all": 0.6699,
+   "eligible": 56,
+   "seeds": 103,
+   "flags": 69,
+   "false_flags": 0,
+   "pass": true
+  },
+  "price": {
+   "precision": 0.9953,
+   "precision_ci": [
+    0.9738,
+    0.9992
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9821,
+    1
+   ],
+   "recall_all": 0.8242,
+   "eligible": 211,
+   "seeds": 256,
+   "flags": 212,
+   "false_flags": 1,
+   "pass": true
+  }
+ },
+ "categories": {
+  "number": {
+   "seeds": 137,
+   "eligible": 136,
+   "eligible_share": 0.9927,
+   "flags": 136,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9725,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9725,
+    1
+   ],
+   "recall_all": 0.9927
+  },
+  "date": {
+   "seeds": 137,
+   "eligible": 137,
+   "eligible_share": 1,
+   "flags": 137,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9727,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9727,
+    1
+   ],
+   "recall_all": 1
+  },
+  "time": {
+   "seeds": 137,
+   "eligible": 129,
+   "eligible_share": 0.9416,
+   "flags": 129,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9711,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9711,
+    1
+   ],
+   "recall_all": 0.9416
+  },
+  "currency-placement": {
+   "seeds": 135,
+   "eligible": 110,
+   "eligible_share": 0.8148,
+   "flags": 110,
+   "false_flags": 1,
+   "precision": 0.9909,
+   "precision_ci": [
+    0.9503,
+    0.9984
+   ],
+   "recall_eligible": 0.9909,
+   "recall_eligible_ci": [
+    0.9503,
+    0.9984
+   ],
+   "recall_all": 0.8074
+  },
+  "currency": {
+   "seeds": 137,
+   "eligible": 106,
+   "eligible_share": 0.7737,
+   "flags": 111,
+   "false_flags": 2,
+   "precision": 0.982,
+   "precision_ci": [
+    0.9367,
+    0.995
+   ],
+   "recall_eligible": 0.9717,
+   "recall_eligible_ci": [
+    0.9201,
+    0.9903
+   ],
+   "recall_all": 0.7956
+  },
+  "mixed-currency": {
+   "seeds": 103,
+   "eligible": 56,
+   "eligible_share": 0.5437,
+   "flags": 69,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9473,
+    1
+   ],
+   "recall_eligible": 0.8929,
+   "recall_eligible_ci": [
+    0.7853,
+    0.95
+   ],
+   "recall_all": 0.6699
+  },
+  "amount": {
+   "seeds": 85,
+   "eligible": 71,
+   "eligible_share": 0.8353,
+   "flags": 72,
+   "false_flags": 1,
+   "precision": 0.9861,
+   "precision_ci": [
+    0.9254,
+    0.9975
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9487,
+    1
+   ],
+   "recall_all": 0.8353
+  },
+  "period": {
+   "seeds": 86,
+   "eligible": 72,
+   "eligible_share": 0.8372,
+   "flags": 72,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9493,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9493,
+    1
+   ],
+   "recall_all": 0.8372
+  },
+  "trial": {
+   "seeds": 85,
+   "eligible": 68,
+   "eligible_share": 0.8,
+   "flags": 68,
+   "false_flags": 0,
+   "precision": 1,
+   "precision_ci": [
+    0.9465,
+    1
+   ],
+   "recall_eligible": 1,
+   "recall_eligible_ci": [
+    0.9465,
+    1
+   ],
+   "recall_all": 0.8
+  }
+ },
+ "ms_per_image": 229,
+ "false_flags": [
+  {
+   "screen": "en-IN/IN/029.png",
+   "category": "currency",
+   "token": "$147.79",
+   "line": "Balance $147.79",
+   "expected": null
+  },
+  {
+   "screen": "it/GB/033.png",
+   "category": "currency",
+   "token": "2,99 €",
+   "line": "2,99 € alla settimana",
+   "expected": null
+  },
+  {
+   "screen": "pt-BR/none/004.png",
+   "category": "currency-placement",
+   "token": "12 R$",
+   "line": "Saldo 344, 12 R$",
+   "expected": "R$ 12,00"
+  },
+  {
+   "screen": "ko/JP/014.png",
+   "category": "amount",
+   "token": "JP¥9,800",
+   "line": "JP¥9,800 JP*4,900년",
+   "expected": "JP¥4,900"
+  }
+ ],
+ "misses": [
+  {
+   "screen": "en-IN/IN/012.png",
+   "category": "currency",
+   "token": "€1.64",
+   "line": "Total €1.64",
+   "read": "Total €1.64"
+  },
+  {
+   "screen": "en-IN/IN/013.png",
+   "category": "currency",
+   "token": "€28.52",
+   "line": "Total €28.52",
+   "read": "Total €28.52"
+  },
+  {
+   "screen": "en-IN/IN/015.png",
+   "category": "currency",
+   "token": "€70.96",
+   "line": "Total €70.96",
+   "read": "Total €70.96"
+  },
+  {
+   "screen": "es/none/001.png",
+   "category": "mixed-currency",
+   "token": "11,76 INR",
+   "line": "Total 11,76 INR",
+   "read": "Total 11,76 INR"
+  },
+  {
+   "screen": "es/none/007.png",
+   "category": "mixed-currency",
+   "token": "38,18 INR",
+   "line": "Total 38,18 INR",
+   "read": "Total 38,18 INR"
+  },
+  {
+   "screen": "es/none/008.png",
+   "category": "mixed-currency",
+   "token": "42,88 INR",
+   "line": "Total 42,88 INR",
+   "read": "Total 42,88 INR"
+  },
+  {
+   "screen": "it/none/001.png",
+   "category": "mixed-currency",
+   "token": "10,77 INR",
+   "line": "Totale 10,77 INR",
+   "read": "Totale 10,77 INR"
+  },
+  {
+   "screen": "it/none/004.png",
+   "category": "mixed-currency",
+   "token": "25,46 INR",
+   "line": "Totale 25,46 INR",
+   "read": "Totale 25,46 INR"
+  },
+  {
+   "screen": "pt-BR/none/004.png",
+   "category": "currency-placement",
+   "token": "344,12 R$",
+   "line": "Saldo 344,12 R$",
+   "read": "Saldo 344, 12 R$"
+  },
+  {
+   "screen": "ru/none/001.png",
+   "category": "mixed-currency",
+   "token": "82,69 €",
+   "line": "Итого 82,69 €",
+   "read": "Итого 82,69 €"
+  }
+ ],
+ "tools": {
+  "catscan": "0.38.0",
+  "macos": "27.2.1 (26B131)",
+  "vision_revision": 3,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "node_cldr": "49.0",
+  "tables_cldr_json": "49.0.0",
+  "foundation_fingerprint": "c1454c259da293129f9faa24479988b6c94057ec06869c13162b4248c12f0d28"
+ }
+}

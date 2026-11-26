@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_title">Welcome</string>
+    <string name="onboarding_body">Check every screen in every language.</string>
+    <string name="onboarding_next">Next</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_notifications">Notification settings</string>
+    <string name="settings_play">Play</string>
+    <string name="game_complete">Level complete</string>
+    <string name="game_score">Score 1200</string>
+</resources>

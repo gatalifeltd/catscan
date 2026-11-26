@@ -1,0 +1,348 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://catscan.dev/schema/result-1.json",
+  "title": "catscan result (schema 1)",
+  "description": "One JSON Lines object per input. New fields may be added in minor versions; renaming or removing one needs a schema bump.",
+  "type": "object",
+  "required": ["schema", "catscan", "command", "path", "verdict", "engine", "locale", "image", "screen", "host", "ms", "checks", "findings", "warnings"],
+  "properties": {
+    "schema": { "const": 1 },
+    "catscan": { "type": "string" },
+    "price_exempt": { "type": ["integer", "null"], "minimum": 0, "description": "price: amounts exempt from the price rule as crossed-out \"was\" prices; null when the price rule did not run." },
+    "pseudo": { "const": true, "description": "The run checked a pseudo-localized build (--pseudo); absent otherwise." },
+    "text": {
+      "description": "The text record (results files). null when nothing was read (error, needs-reader, unsupported, missing, video); absent with --text-record none.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["algo", "digest"],
+          "properties": {
+            "algo": { "type": "integer", "minimum": 1 },
+            "tokens": { "type": "array", "items": { "type": "string" } },
+            "lines": { "type": ["array", "null"], "items": { "type": "string" } },
+            "digest": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+            "ignore": { "type": ["string", "null"] }
+          }
+        }
+      ]
+    },
+    "change": { "enum": ["changed", "unchanged", "new", "ambiguous", null], "description": "This input's cell against --baseline; null without one and for text: null." },
+    "command": { "type": "string", "enum": ["check", "read", "untranslated", "video", "truncated", "overlap", "formats", "fit", "contrast"] },
+    "path": { "type": ["string", "null"] },
+    "verdict": { "enum": ["pass", "fail", "needs-reader", "unsupported", "error"] },
+    "engine": { "oneOf": [{ "type": "null" }, { "type": "string", "pattern": "^(vision-accurate-rev[0-9]+|tesseract-.+)$" }], "description": "null only for a missing entry." },
+    "locale": { "type": "string" },
+    "image": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["width", "height"],
+          "properties": { "width": { "type": "integer", "minimum": 1 }, "height": { "type": "integer", "minimum": 1 } }
+        }
+      ]
+    },
+    "screen": { "type": ["string", "null"], "description": "Screen id from --refs or --layout; null otherwise." },
+    "device": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$", "description": "Device label from --device or a {device}/ layout; null otherwise. Absent in envelopes written before it existed." },
+    "platform": { "enum": ["ios", "ipados", "android", "web", "macos", "watchos", "tvos", "visionos", null], "description": "The device label's first token when it names a platform; null otherwise." },
+    "text_size": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$", "description": "Text-size label from --text-size or a {text_size}/ layout; null otherwise, which a cell key reads as default. Absent in envelopes written before it existed." },
+    "device_profile": {
+      "description": "fit only: the device profile the image was checked against; null when none matched (device-unknown).",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["id", "ids", "orientation", "matched_by", "version"],
+          "properties": {
+            "id": { "type": "string" },
+            "ids": { "type": "array", "minItems": 1, "items": { "type": "string" }, "description": "Every profile of this size with the same zones, or the candidates intersected (device-ambiguous)." },
+            "orientation": { "enum": ["portrait", "landscape-left", "landscape-right", "landscape", "portrait-upside-down"], "description": "landscape: the side is unknown, so the cutout was skipped; portrait-upside-down (a sidecar from uiautomator rotation 2): the cutout was skipped." },
+            "matched_by": { "enum": ["flag", "label", "size", "scale"] },
+            "version": { "type": ["string", "null"], "description": "The shipped profile table version; null for a profile file." }
+          }
+        }
+      ]
+    },
+    "reasons_run": { "type": "array", "items": { "enum": ["cutout", "corner", "home-indicator", "wrapped", "orphan"] }, "description": "fit only: the reasons checked on this image." },
+    "reasons_skipped": {
+      "type": "array",
+      "description": "fit only: the reasons not checked on this image, and why.",
+      "items": { "type": "object", "required": ["reason", "cause"], "properties": { "reason": { "enum": ["cutout", "corner", "home-indicator", "wrapped", "orphan"] }, "cause": { "enum": ["device-unknown", "orientation-unknown", "boxes-missing"], "description": "boxes-missing: wrapped or orphan on an image with no sidecar." } } }
+    },
+    "host": {
+      "type": ["object", "null"],
+      "description": "null only for a missing entry.",
+      "required": ["chip", "arch", "host_class", "macos", "vision_revision"],
+      "properties": {
+        "chip": { "type": "string" },
+        "arch": { "type": "string" },
+        "host_class": { "enum": ["physical", "vm"] },
+        "macos": { "type": "string", "pattern": "^[0-9]+(\\.[0-9]+)* \\(.+\\)$", "description": "<version> (<build>)" },
+        "vision_revision": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "ms": { "type": "integer", "minimum": 0 },
+    "checks": { "type": "array", "items": { "$ref": "#/definitions/check" } },
+    "inventory": {
+      "description": "check --all-keys only: which catalog strings the image shows, sorted by key.",
+      "type": "object",
+      "required": ["found", "not_found", "skipped"],
+      "properties": {
+        "found": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "line", "box"],
+            "properties": { "key": { "type": "string" }, "line": { "type": "string" }, "box": { "$ref": "#/definitions/box" } }
+          }
+        },
+        "not_found": { "type": "array", "items": { "type": "string" } },
+        "skipped": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["key", "reason"],
+            "properties": { "key": { "type": "string" }, "reason": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "findings": { "type": "array", "items": { "$ref": "#/definitions/finding" } },
+    "warnings": { "type": "array", "items": { "$ref": "#/definitions/diagnostic" } },
+    "lines": { "type": "array", "items": { "$ref": "#/definitions/line" } },
+    "error": { "$ref": "#/definitions/diagnostic" },
+    "id": { "type": ["string", "null"], "description": "serve only: the request id." },
+    "video": {
+      "description": "video only: the take, upright; null when the file could not be opened.",
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["width", "height", "fps", "duration"],
+          "properties": {
+            "width": { "type": "integer", "minimum": 1 },
+            "height": { "type": "integer", "minimum": 1 },
+            "fps": { "type": "number", "minimum": 0 },
+            "duration": { "type": "number", "exclusiveMinimum": 0 }
+          }
+        }
+      ]
+    },
+    "frames": { "type": "integer", "minimum": 0, "description": "video only: the number of recognized frames." },
+    "samples": {
+      "type": "array",
+      "description": "video over serve with frames: true; the CLI prints them as video-frame lines instead.",
+      "items": {
+        "type": "object",
+        "required": ["t", "lines"],
+        "properties": { "t": { "type": "number", "minimum": 0 }, "lines": { "type": "array", "items": { "$ref": "#/definitions/line" } } }
+      }
+    }
+  },
+  "allOf": [
+    { "if": { "properties": { "verdict": { "enum": ["error", "needs-reader", "unsupported"] } } }, "then": { "required": ["error"] } },
+    { "if": { "properties": { "command": { "const": "read" }, "verdict": { "const": "pass" } } }, "then": { "required": ["lines"] } },
+    { "if": { "properties": { "command": { "const": "video" } } }, "then": { "required": ["video", "frames"] } },
+    { "if": { "properties": { "command": { "const": "formats" }, "error": { "type": "null" }, "path": { "type": "string" } } }, "then": { "required": ["price_exempt"] } }
+  ],
+  "definitions": {
+    "overlapLine": {
+      "type": "object",
+      "required": ["text", "box", "confidence"],
+      "properties": {
+        "text": { "type": ["string", "null"], "description": "The line read (signal boxes) or the element text (signal elements); null for a graphic element." },
+        "box": { "$ref": "#/definitions/box" },
+        "confidence": { "type": ["number", "null"], "description": "null for a graphic element (signal elements)." },
+        "element": {
+          "type": "object",
+          "required": ["id", "box"],
+          "properties": { "id": { "type": ["string", "null"] }, "box": { "$ref": "#/definitions/box" } },
+          "description": "signal elements: the element from the boxes file."
+        }
+      }
+    },
+    "overlapLineRead": {
+      "properties": { "text": { "type": "string" }, "confidence": { "type": "number" } }
+    },
+    "box": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": { "type": "number", "minimum": 0, "maximum": 1 },
+      "description": "[x, y, width, height], normalized 0..1, origin top left, 4 decimals."
+    },
+    "diagnostic": {
+      "type": "object",
+      "required": ["code", "message"],
+      "properties": {
+        "code": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "message": { "type": "string" },
+        "hint": { "type": "string" }
+      }
+    },
+    "line": {
+      "type": "object",
+      "required": ["text", "box", "confidence"],
+      "properties": {
+        "text": { "type": "string" },
+        "box": { "$ref": "#/definitions/box" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "contrast": {
+          "type": "object",
+          "description": "contrast only: the line's measurement, or why it was not measured.",
+          "oneOf": [
+            { "required": ["skipped"], "properties": { "skipped": { "enum": ["too-small", "no-ink", "not-text", "allow", "disabled", "covered"] } }, "additionalProperties": false },
+            {
+              "required": ["ratio", "threshold", "size", "busy", "edges", "ink", "background"],
+              "properties": {
+                "ratio": { "type": "number", "minimum": 1 }, "threshold": { "type": "number" }, "size": { "enum": ["normal", "large", "uncertain"] },
+                "busy": { "type": "boolean" }, "edges": { "type": "number", "minimum": 0, "maximum": 1 },
+                "ink": { "$ref": "#/definitions/hex" }, "background": { "$ref": "#/definitions/hex" },
+                "uncertain": { "const": true, "description": "The split separated poorly or the ink is two colours: never a finding." }
+              },
+              "additionalProperties": false
+            }
+          ]
+        }
+      }
+    },
+    "hex": { "type": "string", "pattern": "^#[0-9A-F]{6}$" },
+    "check": {
+      "type": "object",
+      "required": ["kind", "text", "verdict", "box", "line", "confidence"],
+      "properties": {
+        "kind": { "enum": ["present", "absent"] },
+        "text": { "type": "string" },
+        "verdict": { "enum": ["pass", "fail", "skipped", "needs-reader", "unsupported"] },
+        "box": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/box" }] },
+        "line": { "type": ["string", "null"] },
+        "confidence": { "type": ["number", "null"] },
+        "closest": {
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "required": ["line", "box", "distance"],
+              "properties": {
+                "line": { "type": "string" },
+                "box": { "$ref": "#/definitions/box" },
+                "distance": { "type": "integer", "minimum": 0 },
+                "t": { "type": "number", "minimum": 0, "description": "video: the frame time of the closest line." }
+              }
+            }
+          ]
+        },
+        "reason": { "type": "string" },
+        "key": { "type": "string", "description": "Catalog checks only: the @key without the @." },
+        "catalog": { "type": ["string", "null"], "description": "Catalog checks only: the file the key came from." },
+        "first_seen": { "type": ["number", "null"], "description": "video only: the first frame time the text was found." },
+        "last_seen": { "type": ["number", "null"], "description": "video only: the last frame time the text was found." },
+        "range": { "type": "string", "description": "video only: the --expect range the check came from." },
+        "severity": { "enum": ["critical", "major", "minor"], "description": "How much a real defect of this kind hurts a user, fixed per kind and rule." },
+        "certainty": { "enum": ["high", "medium", "low"], "description": "How likely a finding of this kind, from this reader, is a real defect, from its measured precision. Not confidence, which is how well a line was read." },
+        "precision": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "The measured precision certainty came from, 3 decimals; null when the band does not come from a precision (unmeasured, experimental, deterministic)." },
+        "gate": { "type": "boolean", "description": "True when the item counts toward the verdict and the exit code under the run's --min-severity and --min-certainty; a failed check always gates." }
+      },
+      "allOf": [
+        { "if": { "properties": { "verdict": { "const": "skipped" } } }, "then": { "required": ["reason"] } },
+        { "if": { "properties": { "kind": { "const": "present" }, "verdict": { "const": "fail" } } }, "then": { "required": ["closest"] } }
+      ]
+    },
+    "finding": {
+      "type": "object",
+      "required": ["kind", "box"],
+      "properties": {
+        "kind": { "enum": ["truncated", "overlap", "occluded", "untranslated", "raw-key", "placeholder", "missing", "hardcoded", "pseudo-not-applied", "wrong-language", "format", "currency", "price", "uncatalogued", "fit", "low-contrast", "busy-background"] },
+        "box": { "oneOf": [{ "type": "null" }, { "$ref": "#/definitions/box" }] },
+        "line": { "type": ["string", "null"], "description": "The recognized line (two joined lines for wrapped text). null only for a fit finding on a textless control." },
+        "key": { "type": "string", "description": "untranslated: the catalog key, the first by sort order when several share the base text. raw-key: the catalog key the line was matched to, when exactly one. truncated pseudo-cut and hardcoded: the base catalog key." },
+        "keys": { "type": "array", "items": { "type": "string" }, "description": "untranslated: every key with this base text, when there are several. raw-key: every candidate catalog key, when the line matches several." },
+        "catalog": { "type": ["string", "null"], "description": "untranslated: the target catalog file to fix." },
+        "base": { "type": "string", "description": "untranslated: the base string as written." },
+        "expected": { "type": ["string", "null"], "description": "untranslated: the target string as written; null when the target has none. truncated: the full string (element text or catalog string), or null." },
+        "token": { "type": "string", "description": "placeholder: the unfilled token." },
+        "reason": { "enum": ["ellipsis", "prefix", "edge", "overflow", "screen-edge", "pseudo-cut", "cutout", "corner", "home-indicator", "wrapped", "orphan"], "description": "truncated: the rule that fired. fit: wrapped or orphan (how a label breaks into rows), else the hardware zone that hides the line or control." },
+        "hidden": { "type": ["string", "null"], "description": "fit: the hidden characters in reading order; null for a control." },
+        "hidden_box": { "$ref": "#/definitions/box", "description": "fit: the union of the hidden characters' boxes (the control's box for a control)." },
+        "zone_box": { "$ref": "#/definitions/box", "description": "fit: the bounding box of the zone that was hit, so a report draws it without the profile." },
+        "profile": { "type": "string", "description": "fit: the device profile id the image was checked against; under device-ambiguous, the candidate ids joined by + (only pixels hidden on all of them were checked)." },
+        "rows": { "type": "integer", "minimum": 2, "description": "fit wrapped and orphan: the element's rows on this screenshot." },
+        "base_rows": { "type": ["integer", "null"], "minimum": 1, "description": "fit wrapped: the base element's rows (1) with evidence base; null otherwise." },
+        "base_path": { "type": ["string", "null"], "description": "fit wrapped: the base-locale screenshot of the same screen, with evidence base; null otherwise." },
+        "orphan": { "type": "string", "description": "fit orphan: the last row, one word." },
+        "covered": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "fit: the share of a control's box under the zone, 2 decimals; null for text." },
+        "side": { "enum": ["end", "start"], "description": "truncated pseudo-cut: the end of the string that is missing its marker." },
+        "lost": { "enum": ["filler", "text"], "description": "truncated pseudo-cut: filler, the base string fits but a longer translation will not; text, the base text itself is cut." },
+        "evidence": { "enum": ["base", "none", "catalog", "langid", "declared", "control", null], "description": "fit wrapped: declared (max_lines 1), base (one row in the base locale) or control (a one-line control's only label); null for orphan. hardcoded: base, the line equals a base catalog string (key, catalog and expected name it); none, it matches no catalog string. wrong-language: catalog, the line is another locale's string for a key (key, catalog, expected and evidence_catalog name it); langid, the language recognizer or the line's script." },
+        "language": { "type": ["string", "null"], "description": "wrong-language: the language the line is in, a project locale (or the recognizer's code). uncatalogued: the project locale the recognizer names at 0.95 or more, else null." },
+        "nearest": { "type": ["object", "null"], "required": ["key", "text", "distance"], "properties": { "key": { "type": "string" }, "text": { "type": "string" }, "distance": { "type": "number", "minimum": 0, "maximum": 1 } }, "description": "uncatalogued: the closest catalog string (normalized edit distance below 0.5), else null." },
+        "expected_language": { "type": "string", "description": "wrong-language: the run locale." },
+        "rule": { "type": "string", "description": "format: number | date | time | currency-placement; currency: unexpected | mixed." },
+        "field": { "enum": ["amount", "period", "trial"], "description": "price: what disagrees with the price file." },
+        "product": { "type": "string", "description": "price: the product the amount was bound to." },
+        "currencies": { "type": "array", "items": { "type": "string", "pattern": "^[A-Z]{3}$" }, "description": "currency: the ISO codes seen." },
+        "expected_currency": { "type": ["string", "null"], "description": "currency: the storefront's currency; null only for mixed without one." },
+        "evidence_catalog": { "type": "string", "description": "wrong-language with catalog evidence: the other locale's file that holds the line." },
+        "traits": { "type": "number", "minimum": 0, "maximum": 1, "description": "pseudo-not-applied: the share of lines with a pseudo trait, 2 decimals." },
+        "lines": { "type": "integer", "minimum": 0, "description": "pseudo-not-applied: the lines with letters it was judged on." },
+        "overflow": { "type": "number", "minimum": 0, "description": "truncated overflow: line heights the line runs past its element's edge, 2 decimals." },
+        "element": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "object", "required": ["id", "box"], "properties": { "id": { "type": ["string", "null"] }, "box": { "$ref": "#/definitions/box" } } }
+          ],
+          "description": "truncated: the element the line was matched to, or null without boxes."
+        },
+        "confidence": { "type": ["number", "null"], "description": "truncated: Vision's confidence for the line. fit: the line's, null for a control. wrong-language: the recognizer's probability, 1 for catalog or script evidence." },
+        "a": { "$ref": "#/definitions/overlapLine", "description": "overlap: the upper (then left) line of the pair; with signal elements the text side, its box the element's ink; with signal stacked the line read without language correction." },
+        "b": { "anyOf": [{ "$ref": "#/definitions/overlapLine" }, { "type": "null" }], "description": "overlap: the other line or element; null with signal stacked (one read)." },
+        "stacked_evidence": { "type": "array", "minItems": 1, "items": { "enum": ["correction-dropped", "correction-changed", "dictionary"] }, "description": "overlap, signal stacked: correction-dropped, the corrected read dropped the line; correction-changed, it read the line as other text; dictionary, the production read is mostly words the macOS dictionaries do not know." },
+        "corrected": { "type": ["string", "null"], "description": "overlap, signal stacked: the production (corrected) read of the line's box; null when it dropped the line." },
+        "overlap": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "overlap: the intersection over the smaller box's area; occluded: the share of the text element's box under the panel." },
+        "signal": { "enum": ["boxes", "elements", "sheets", "stacked"], "description": "overlap: the reader that fired: boxes (OCR line geometry), elements (element boxes confirmed by ink), sheets (two text elements of one line height, one inside the other, confirmed by ink: sheets or pages drawn over each other) or stacked (text drawn over text, found by reading without language correction or as words no dictionary knows)." },
+        "ratio": { "type": "number", "minimum": 1, "description": "low-contrast, busy-background: the measured WCAG contrast ratio, 2 decimals." },
+        "threshold": { "type": "number", "description": "low-contrast, busy-background: the WCAG threshold for the line's size and the run's level." },
+        "size": { "enum": ["normal", "large", "uncertain"], "description": "low-contrast, busy-background: the text size class from line height and device scale; uncertain is judged as large." },
+        "ink": { "$ref": "#/definitions/hex", "description": "low-contrast, busy-background: the text colour (sRGB) the ratio was measured with." },
+        "background": { "$ref": "#/definitions/hex", "description": "low-contrast, busy-background: the background colour (sRGB)." },
+        "edges": { "type": "number", "minimum": 0, "maximum": 1, "description": "low-contrast, busy-background: the edge share of the background under and around the line (busy above the threshold)." },
+        "scale": { "type": "number", "minimum": 1, "maximum": 4, "description": "low-contrast, busy-background: the device scale the size came from." },
+        "scale_source": { "enum": ["flag", "boxes", "size-table", "page", "none"], "description": "low-contrast, busy-background: where the scale came from; none means scale 1 was assumed." },
+        "suggest": { "oneOf": [{ "$ref": "#/definitions/hex" }, { "type": "null" }], "description": "low-contrast: the nearest ink of the same hue that passes; null when none does." },
+        "expected_path": { "type": "string", "description": "missing: the layout pattern filled in, without an extension." },
+        "severity": { "enum": ["critical", "major", "minor"], "description": "How much a real defect of this kind hurts a user, fixed per kind and rule." },
+        "certainty": { "enum": ["high", "medium", "low"], "description": "How likely a finding of this kind, from this reader, is a real defect, from its measured precision. Not confidence, which is how well a line was read." },
+        "precision": { "type": ["number", "null"], "minimum": 0, "maximum": 1, "description": "The measured precision certainty came from, 3 decimals; null when the band does not come from a precision (unmeasured, experimental, deterministic)." },
+        "gate": { "type": "boolean", "description": "True when the item counts toward the verdict and the exit code under the run's --min-severity and --min-certainty; a failed check always gates." },
+        "known": { "type": "boolean", "description": "With --known: true when the finding matches an approved row of the known file (it never gates), false when it is new. Absent without --known." },
+        "known_counts": { "type": "object", "required": ["found", "approved"], "properties": { "found": { "type": "integer", "minimum": 1 }, "approved": { "type": "integer", "minimum": 0 } }, "description": "A new finding (known false): how many findings of its key this input has, and how many the known file approves." }
+      },
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "untranslated" } } }, "then": { "required": ["key", "catalog", "base", "expected", "line"] } },
+        { "if": { "properties": { "kind": { "const": "raw-key" } } }, "then": { "required": ["line"] } },
+        { "if": { "properties": { "kind": { "const": "placeholder" } } }, "then": { "required": ["line", "token"] } },
+        { "if": { "properties": { "kind": { "const": "truncated" } } }, "then": { "required": ["line", "reason", "element", "expected", "confidence"] } },
+        { "if": { "properties": { "kind": { "const": "truncated" }, "reason": { "const": "overflow" } }, "required": ["reason"] }, "then": { "required": ["overflow"], "properties": { "element": { "type": "object" } } } },
+        { "if": { "properties": { "kind": { "const": "truncated" }, "reason": { "const": "pseudo-cut" } }, "required": ["reason"] }, "then": { "required": ["side", "lost", "key", "catalog"] } },
+        { "if": { "properties": { "kind": { "const": "hardcoded" } } }, "then": { "required": ["line", "evidence"] } },
+        { "if": { "properties": { "kind": { "const": "hardcoded" }, "evidence": { "const": "base" } }, "required": ["evidence"] }, "then": { "required": ["key", "catalog", "expected"] } },
+        { "if": { "properties": { "kind": { "const": "wrong-language" } } }, "then": { "required": ["line", "language", "expected_language", "evidence", "confidence"], "properties": { "language": { "type": "string" } } } },
+        { "if": { "properties": { "kind": { "const": "uncatalogued" } } }, "then": { "required": ["line", "language", "nearest"] } },
+        { "if": { "properties": { "kind": { "const": "wrong-language" }, "evidence": { "const": "catalog" } }, "required": ["evidence"] }, "then": { "required": ["key", "catalog", "expected", "evidence_catalog"] } },
+        { "if": { "properties": { "kind": { "const": "format" } } }, "then": { "required": ["line", "rule", "token", "expected"], "properties": { "rule": { "enum": ["number", "date", "time", "currency-placement"] } } } },
+        { "if": { "properties": { "kind": { "const": "currency" } } }, "then": { "required": ["line", "rule", "token", "currencies", "expected_currency"], "properties": { "rule": { "enum": ["unexpected", "mixed"] } } } },
+        { "if": { "properties": { "kind": { "const": "currency" }, "rule": { "const": "unexpected" } }, "required": ["rule"] }, "then": { "properties": { "expected_currency": { "type": "string" } } } },
+        { "if": { "properties": { "kind": { "const": "price" } } }, "then": { "required": ["line", "field", "token", "expected"] } },
+        { "if": { "properties": { "kind": { "const": "pseudo-not-applied" } } }, "then": { "required": ["traits", "lines"], "properties": { "box": { "type": "null" } } } },
+        { "if": { "properties": { "kind": { "const": "overlap" } } }, "then": { "required": ["line", "a", "b", "overlap", "signal"] } },
+        { "if": { "properties": { "kind": { "const": "occluded" } } }, "then": { "required": ["line", "a", "b", "overlap", "signal"], "properties": { "signal": { "const": "elements" }, "a": { "properties": { "text": { "type": "string" } } }, "b": { "properties": { "text": { "type": "null" } } } } } },
+        { "if": { "properties": { "kind": { "const": "overlap" }, "signal": { "const": "stacked" } }, "required": ["kind", "signal"] }, "then": { "required": ["stacked_evidence", "corrected"], "properties": { "a": { "$ref": "#/definitions/overlapLineRead" }, "b": { "type": "null" }, "overlap": { "type": "null" } } }, "else": { "properties": { "overlap": { "type": "number" }, "b": { "type": "object" } } } },
+        { "if": { "properties": { "kind": { "const": "overlap" }, "signal": { "const": "boxes" } }, "required": ["kind", "signal"] }, "then": { "properties": { "a": { "$ref": "#/definitions/overlapLineRead" }, "b": { "$ref": "#/definitions/overlapLineRead" } } } },
+        { "if": { "properties": { "kind": { "const": "missing" } } }, "then": { "required": ["expected_path"], "properties": { "box": { "type": "null" } } } },
+        { "if": { "properties": { "kind": { "enum": ["low-contrast", "busy-background"] } } }, "then": { "required": ["line", "ratio", "threshold", "size", "ink", "background", "edges", "scale", "scale_source", "confidence"] } },
+        { "if": { "properties": { "kind": { "const": "fit" }, "reason": { "enum": ["wrapped", "orphan"] } }, "required": ["reason"] }, "then": { "required": ["line", "reason", "element", "rows", "evidence", "confidence"], "properties": { "line": { "type": "string" }, "confidence": { "type": ["number", "null"] } }, "allOf": [{ "if": { "properties": { "reason": { "const": "wrapped" } } }, "then": { "required": ["base_rows", "base_path"], "properties": { "evidence": { "enum": ["declared", "base", "control"] } } }, "else": { "required": ["orphan"], "properties": { "evidence": { "const": null } } } }] }, "else": { "if": { "properties": { "kind": { "const": "fit" } } }, "then": { "required": ["line", "reason", "hidden", "hidden_box", "zone_box", "element", "profile", "covered", "confidence"], "properties": { "reason": { "enum": ["cutout", "corner", "home-indicator"] }, "confidence": { "type": ["number", "null"] } } }, "else": { "properties": { "line": { "type": "string" }, "confidence": { "type": "number" } } } } }
+      ]
+    }
+  }
+}

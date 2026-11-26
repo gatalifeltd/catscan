@@ -1,0 +1,786 @@
+{
+ "check_text": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "present": {
+    "default": [],
+    "description": "Texts that must be shown; @key names a catalog string.",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "absent": {
+    "default": [],
+    "description": "Texts that must not be shown; @key names a catalog string.",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "catalog": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "description": "Localization files for @key texts; {locale} expands."
+   },
+   "expect": {
+    "description": "A catscan --expect file (YAML or JSON) with per-image checks.",
+    "type": "string",
+    "minLength": 1
+   },
+   "pseudo": {
+    "description": "Screens show a pseudo-locale build (catscan pseudo); catalog is the base.",
+    "type": "boolean"
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "read_screen": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "max_lines": {
+    "default": 200,
+    "description": "Lines returned; more set truncated: true.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 9007199254740991
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "find_truncation": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "catalog": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "description": "Localization files for @key texts; {locale} expands."
+   },
+   "boxes_path": {
+    "description": "Element boxes from `catscan boxes`: a file for one image, or a folder of <name>.boxes.json.",
+    "type": "string",
+    "minLength": 1
+   },
+   "reasons": {
+    "description": "Report only these reasons. Default: all.",
+    "minItems": 1,
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "ellipsis",
+      "prefix",
+      "edge",
+      "overflow",
+      "screen-edge",
+      "pseudo-cut"
+     ]
+    }
+   },
+   "pseudo": {
+    "description": "Screens show a pseudo-locale build (catscan pseudo); catalog is the base.",
+    "type": "boolean"
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "find_untranslated": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "base": {
+    "description": "The base-locale catalog; needs catalog.",
+    "type": "string",
+    "minLength": 1
+   },
+   "catalog": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "description": "Localization files for @key texts; {locale} expands."
+   },
+   "allow": {
+    "description": "Strings fine in any language (brand names).",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "base_locale": {
+    "description": "The language of base. Default: the .xcstrings source language, else en.",
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$"
+   },
+   "pseudo": {
+    "description": "Screens show a pseudo-locale build (catscan pseudo); catalog is the base.",
+    "type": "boolean"
+   },
+   "kinds": {
+    "description": "Report only these kinds. Default: all.",
+    "minItems": 1,
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "untranslated",
+      "raw-key",
+      "placeholder",
+      "hardcoded",
+      "wrong-language"
+     ]
+    }
+   },
+   "languages": {
+    "description": "The project's languages, for wrong-language when catalog is not a {locale} template.",
+    "minItems": 1,
+    "type": "array",
+    "items": {
+     "type": "string",
+     "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+     "description": "Screen language (BCP 47, e.g. de). Default en."
+    }
+   },
+   "dynamic": {
+    "description": "pseudo: regexes for whole lines never reported as hardcoded.",
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    }
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path",
+   "locale"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "find_overlap": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "boxes": {
+    "description": "Boxes object, file or folder.",
+    "anyOf": [
+     {
+      "type": "string",
+      "minLength": 1
+     },
+     {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {}
+     }
+    ]
+   },
+   "allow": {
+    "description": "Element ids or texts to skip.",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "min_overlap": {
+    "description": "Share of the smaller box covered.",
+    "type": "number",
+    "exclusiveMinimum": 0,
+    "maximum": 1
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "find_fit_issues": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "device_profile": {
+    "description": "Profile id (catscan fit --list-devices) or profile file.",
+    "type": "string",
+    "minLength": 1
+   },
+   "orientation": {
+    "type": "string",
+    "enum": [
+     "portrait",
+     "landscape-left",
+     "landscape-right"
+    ]
+   },
+   "boxes": {
+    "description": "Boxes object, file or folder; adds icon buttons, needed by wrapped and orphan.",
+    "anyOf": [
+     {
+      "type": "string",
+      "minLength": 1
+     },
+     {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {}
+     }
+    ]
+   },
+   "reasons": {
+    "minItems": 1,
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "cutout",
+      "corner",
+      "home-indicator",
+      "wrapped",
+      "orphan"
+     ]
+    }
+   },
+   "base": {
+    "description": "wrapped: the en screenshot of the same screen.",
+    "type": "string",
+    "minLength": 1
+   },
+   "base_boxes": {
+    "description": "Boxes of base.",
+    "anyOf": [
+     {
+      "type": "string",
+      "minLength": 1
+     },
+     {
+      "type": "object",
+      "properties": {},
+      "additionalProperties": {}
+     }
+    ]
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "find_format_errors": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Image or folder of images, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "storefront": {
+    "description": "Region charged in (DE).",
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,3}$"
+   },
+   "currency": {
+    "description": "ISO code, without storefront.",
+    "type": "string",
+    "pattern": "^[A-Za-z]{3}$"
+   },
+   "prices": {
+    "description": ".storekit or JSON/YAML products.",
+    "type": "string",
+    "minLength": 1
+   },
+   "rules": {
+    "minItems": 1,
+    "type": "array",
+    "items": {
+     "type": "string",
+     "enum": [
+      "number",
+      "date",
+      "time",
+      "currency-placement",
+      "currency",
+      "mixed-currency",
+      "price"
+     ]
+    }
+   },
+   "allow": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "fallback": {
+    "type": "string",
+    "enum": [
+     "tesseract",
+     "none"
+    ],
+    "description": "Reader for locales Vision cannot read."
+   },
+   "min_severity": {
+    "description": "Only findings this severe or worse fail. Default minor.",
+    "type": "string",
+    "enum": [
+     "critical",
+     "major",
+     "minor"
+    ]
+   },
+   "min_certainty": {
+    "description": "Only findings this certain or more fail. Default low.",
+    "type": "string",
+    "enum": [
+     "high",
+     "medium",
+     "low"
+    ]
+   },
+   "known": {
+    "description": "The project's catscan-known.json: approved findings never fail. Pass only if the user asked.",
+    "type": "string",
+    "minLength": 1
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "check_video": {
+  "type": "object",
+  "properties": {
+   "path": {
+    "type": "string",
+    "minLength": 1,
+    "description": "Video or folder of videos, relative to the workspace root."
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Folder cap; the walk stops there, and over_cap: 1 says the folder holds more.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   },
+   "include_passing": {
+    "default": false,
+    "description": "Folder: return passing results too.",
+    "type": "boolean"
+   },
+   "present": {
+    "default": [],
+    "description": "Texts that must appear on at least one sampled frame; @key names a catalog string.",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "absent": {
+    "default": [],
+    "description": "Texts that must appear on no sampled frame; @key names a catalog string.",
+    "type": "array",
+    "items": {
+     "type": "string"
+    }
+   },
+   "every": {
+    "description": "Sampling interval in seconds. Default 0.5.",
+    "type": "number",
+    "exclusiveMinimum": 0
+   },
+   "locale": {
+    "type": "string",
+    "pattern": "^[A-Za-z]{2,8}(?:[-_][A-Za-z0-9]{1,8})*$",
+    "description": "Screen language (BCP 47, e.g. de). Default en."
+   },
+   "catalog": {
+    "type": "array",
+    "items": {
+     "type": "string",
+     "minLength": 1
+    },
+    "description": "Localization files for @key texts; {locale} expands."
+   },
+   "frames": {
+    "default": false,
+    "description": "Add the text of each sampled frame under frame_text.",
+    "type": "boolean"
+   },
+   "max_lines": {
+    "default": 200,
+    "description": "Frame lines returned in total; more set truncated: true.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 9007199254740991
+   }
+  },
+  "required": [
+   "path"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ },
+ "compare_to_baseline": {
+  "type": "object",
+  "properties": {
+   "results": {
+    "type": "string",
+    "minLength": 1,
+    "description": "A catscan --results file, relative to the workspace root."
+   },
+   "baseline": {
+    "type": "string",
+    "minLength": 1,
+    "description": "The approved baseline; a missing file makes every cell new."
+   },
+   "baseline_ignore": {
+    "description": "The --baseline-ignore file the run used.",
+    "type": "string",
+    "minLength": 1
+   },
+   "max_images": {
+    "default": 50,
+    "description": "Cells to review returned; the rest count as over_cap.",
+    "type": "integer",
+    "minimum": 1,
+    "maximum": 10000
+   }
+  },
+  "required": [
+   "results",
+   "baseline"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false
+ }
+}

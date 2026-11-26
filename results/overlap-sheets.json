@@ -1,0 +1,415 @@
+{
+ "spec": "TODO-072",
+ "script": "bench/overlap-sheets.js",
+ "manifest": "bench/overlap/sheets-manifest.json",
+ "gate_bars": {
+  "heldOutPrecision": 0.9,
+  "positivesFlagged": 10,
+  "newFalseAlarms": 0
+ },
+ "gate": {
+  "held_out_precision": true,
+  "positives_as_captured": true,
+  "real_negatives": true,
+  "other_signals_unchanged": true,
+  "pass": true
+ },
+ "synthetic": {
+  "generator": "bench/stacked/generate.swift",
+  "images": 468,
+  "held_out": {
+   "images": 234,
+   "by_kind": {
+    "shadow 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0": {
+     "images": 26,
+     "flagged_any": 24,
+     "flagged_sheets": 24,
+     "false_flags": 0
+    },
+    "stack2 0.25": {
+     "images": 26,
+     "flagged_any": 25,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack3 0": {
+     "images": 26,
+     "flagged_any": 24,
+     "flagged_sheets": 24,
+     "false_flags": 0
+    },
+    "clean 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "outline 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0.1": {
+     "images": 26,
+     "flagged_any": 25,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0.5": {
+     "images": 26,
+     "flagged_any": 25,
+     "flagged_sheets": 0,
+     "false_flags": 7
+    },
+    "ghost 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    }
+   },
+   "sheets": {
+    "flags": 138,
+    "tp": 138,
+    "fp": 0,
+    "precision": 1
+   },
+   "any": {
+    "flags": 293,
+    "tp": 286,
+    "fp": 7,
+    "precision": 0.9761
+   },
+   "stacked_recall": {
+    "images": 130,
+    "found": 123,
+    "recall": 0.9462,
+    "wilson95": [
+     0.893,
+     0.9737
+    ]
+   },
+   "same_place_sheets_recall": {
+    "images": 52,
+    "found": 48,
+    "recall": 0.9231,
+    "wilson95": [
+     0.8183,
+     0.9697
+    ]
+   }
+  },
+  "dev": {
+   "images": 234,
+   "by_kind": {
+    "clean 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "outline 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0.1": {
+     "images": 26,
+     "flagged_any": 26,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0.5": {
+     "images": 26,
+     "flagged_any": 25,
+     "flagged_sheets": 0,
+     "false_flags": 6
+    },
+    "ghost 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "shadow 0": {
+     "images": 26,
+     "flagged_any": 0,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack2 0": {
+     "images": 26,
+     "flagged_any": 23,
+     "flagged_sheets": 23,
+     "false_flags": 0
+    },
+    "stack2 0.25": {
+     "images": 26,
+     "flagged_any": 23,
+     "flagged_sheets": 0,
+     "false_flags": 0
+    },
+    "stack3 0": {
+     "images": 26,
+     "flagged_any": 25,
+     "flagged_sheets": 25,
+     "false_flags": 0
+    }
+   },
+   "sheets": {
+    "flags": 150,
+    "tp": 150,
+    "fp": 0,
+    "precision": 1
+   },
+   "any": {
+    "flags": 284,
+    "tp": 278,
+    "fp": 6,
+    "precision": 0.9789
+   },
+   "stacked_recall": {
+    "images": 130,
+    "found": 122,
+    "recall": 0.9385,
+    "wilson95": [
+     0.8833,
+     0.9685
+    ]
+   },
+   "same_place_sheets_recall": {
+    "images": 52,
+    "found": 48,
+    "recall": 0.9231,
+    "wilson95": [
+     0.8183,
+     0.9697
+    ]
+   }
+  }
+ },
+ "positives": {
+  "dir": "datasets/stacked-text/boxes",
+  "locales": {
+   "de": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0022,
+     "elements": 5,
+     "max_residual": 0.0022
+    },
+    "as_captured": {
+     "overlap": 1,
+     "sheets": 1
+    },
+    "rescaled": {
+     "overlap": 1,
+     "sheets": 1
+    }
+   },
+   "el": {
+    "engine": "tesseract-5.5.4",
+    "fit": {
+     "scale": 1.0018,
+     "elements": 3,
+     "max_residual": 0.0055
+    },
+    "as_captured": {
+     "overlap": 0,
+     "sheets": 0
+    },
+    "rescaled": {
+     "overlap": 0,
+     "sheets": 0
+    }
+   },
+   "en": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0019,
+     "elements": 5,
+     "max_residual": 0.0009
+    },
+    "as_captured": {
+     "overlap": 4,
+     "sheets": 4
+    },
+    "rescaled": {
+     "overlap": 4,
+     "sheets": 4
+    }
+   },
+   "es": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0033,
+     "elements": 5,
+     "max_residual": 0.004
+    },
+    "as_captured": {
+     "overlap": 1,
+     "sheets": 1
+    },
+    "rescaled": {
+     "overlap": 1,
+     "sheets": 1
+    }
+   },
+   "fr": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0017,
+     "elements": 5,
+     "max_residual": 0.0013
+    },
+    "as_captured": {
+     "overlap": 1,
+     "sheets": 1
+    },
+    "rescaled": {
+     "overlap": 1,
+     "sheets": 1
+    }
+   },
+   "it": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0018,
+     "elements": 5,
+     "max_residual": 0.0014
+    },
+    "as_captured": {
+     "overlap": 2,
+     "sheets": 2
+    },
+    "rescaled": {
+     "overlap": 2,
+     "sheets": 2
+    }
+   },
+   "pl": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0017,
+     "elements": 5,
+     "max_residual": 0.0014
+    },
+    "as_captured": {
+     "overlap": 4,
+     "sheets": 4
+    },
+    "rescaled": {
+     "overlap": 4,
+     "sheets": 4
+    }
+   },
+   "pt-BR": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0025,
+     "elements": 5,
+     "max_residual": 0.0016
+    },
+    "as_captured": {
+     "overlap": 1,
+     "sheets": 1
+    },
+    "rescaled": {
+     "overlap": 1,
+     "sheets": 1
+    }
+   },
+   "ru": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0029,
+     "elements": 5,
+     "max_residual": 0.0052
+    },
+    "as_captured": {
+     "overlap": 1,
+     "sheets": 1
+    },
+    "rescaled": {
+     "overlap": 1,
+     "sheets": 1
+    }
+   },
+   "tr": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0023,
+     "elements": 4,
+     "max_residual": 0.0009
+    },
+    "as_captured": {
+     "overlap": 4,
+     "sheets": 4
+    },
+    "rescaled": {
+     "overlap": 4,
+     "sheets": 4
+    }
+   },
+   "uk": {
+    "engine": "vision-accurate-rev3",
+    "fit": {
+     "scale": 1.0019,
+     "elements": 5,
+     "max_residual": 0.0051
+    },
+    "as_captured": {
+     "overlap": 4,
+     "sheets": 4
+    },
+    "rescaled": {
+     "overlap": 4,
+     "sheets": 4
+    }
+   }
+  },
+  "as_captured": {
+   "flagged": 10,
+   "any_overlap": 10
+  },
+  "rescaled": {
+   "flagged": 10,
+   "any_overlap": 10
+  },
+  "count": 11
+ },
+ "real_negatives": {
+  "images": 1058,
+  "native_images": 972,
+  "game_images": 86,
+  "other_signal_flags": 74,
+  "sheets_flags": 0,
+  "unreviewed": 0,
+  "false_alarms": 0,
+  "list": [],
+  "other_signal_flags_baseline": {
+   "flags": 74,
+   "source": "results/overlap-elements.json#/native/flags",
+   "catscan": "0.32.1"
+  }
+ },
+ "tools": {
+  "catscan": "0.50.2",
+  "chip": "Apple M5",
+  "macos": "27.2.1",
+  "macos_build": "26B131",
+  "vision_revision": 3,
+  "node": "v26.13.0",
+  "swiftc": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)",
+  "xcode": "Xcode 27.2"
+ },
+ "date": "2026-11-20"
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<!-- catscan Playwright example: a canvas mini-game in en and de from a JSON catalog. ?faults=1 draws one raw key; ?lng=en-XA loads the pseudo locale. -->
+<html><head><meta charset="utf-8"><title>Star Hopper</title>
+<style>
+body{margin:0;font:24px Helvetica, Arial, sans-serif;background:#0b1d3a;color:#fff}
+canvas{display:block;margin:24px auto 12px}
+nav{display:flex;gap:24px;justify-content:center}
+button{font:inherit;padding:8px 24px;border-radius:8px;border:0;background:#ffd23f;color:#0b1d3a}
+</style></head>
+<body>
+<canvas id="game" width="900" height="420"></canvas>
+<nav><button id="play"></button><button id="settings"></button></nav>
+<script>
+(async () => {
+  // ?lng=en-XA loads the pseudo catalog that `catscan pseudo locales/en.json` writes (never committed).
+  const lng = new URLSearchParams(location.search).get("lng");
+  const lang = lng === "en-XA" ? lng : navigator.language.toLowerCase().startsWith("de") ? "de" : "en";
+  const t = await (await fetch(`locales/${lang}.json`)).json();
+  const faults = new URLSearchParams(location.search).has("faults");
+  const x = document.getElementById("game").getContext("2d");
+  x.fillStyle = "#13294b"; x.fillRect(0, 0, 900, 420);
+  x.fillStyle = "#fff"; x.textAlign = "center";
+  x.font = "bold 64px Helvetica, Arial, sans-serif"; x.fillText(t.game.title, 450, 110);
+  x.font = "40px Helvetica, Arial, sans-serif"; x.fillText(t.hud.score.replace("{score}", "120"), 450, 200);
+  x.font = "bold 56px Helvetica, Arial, sans-serif"; x.fillText(t.game.over, 450, 300);
+  // The deliberate fault: a raw catalog key drawn where a label belongs.
+  if (faults) { x.font = "36px Helvetica, Arial, sans-serif"; x.fillText("menu.quit", 450, 380); }
+  document.getElementById("play").textContent = t.menu.play;
+  document.getElementById("settings").textContent = t.menu.settings;
+})();
+</script>
+</body></html>

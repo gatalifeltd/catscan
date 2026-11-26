@@ -1,0 +1,253 @@
+{
+  "locale": "sr",
+  "icu_locale": "sr",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Вијетнам",
+      "kind": "region"
+    },
+    {
+      "text": "Јапан",
+      "kind": "region"
+    },
+    {
+      "text": "Мароко",
+      "kind": "region"
+    },
+    {
+      "text": "Финска",
+      "kind": "region"
+    },
+    {
+      "text": "Летонија",
+      "kind": "region"
+    },
+    {
+      "text": "Исланд",
+      "kind": "region"
+    },
+    {
+      "text": "САР Хонгконг (Кина)",
+      "kind": "region"
+    },
+    {
+      "text": "Русија",
+      "kind": "region"
+    },
+    {
+      "text": "Чиле",
+      "kind": "region"
+    },
+    {
+      "text": "Словачка",
+      "kind": "region"
+    },
+    {
+      "text": "Нови Зеланд",
+      "kind": "region"
+    },
+    {
+      "text": "Аргентина",
+      "kind": "region"
+    },
+    {
+      "text": "шпански",
+      "kind": "language"
+    },
+    {
+      "text": "португалски",
+      "kind": "language"
+    },
+    {
+      "text": "фински",
+      "kind": "language"
+    },
+    {
+      "text": "норвешки",
+      "kind": "language"
+    },
+    {
+      "text": "персијски",
+      "kind": "language"
+    },
+    {
+      "text": "арапски",
+      "kind": "language"
+    },
+    {
+      "text": "француски",
+      "kind": "language"
+    },
+    {
+      "text": "украјински",
+      "kind": "language"
+    },
+    {
+      "text": "турски",
+      "kind": "language"
+    },
+    {
+      "text": "српски",
+      "kind": "language"
+    },
+    {
+      "text": "британска фунта",
+      "kind": "currency"
+    },
+    {
+      "text": "кинески јуан",
+      "kind": "currency"
+    },
+    {
+      "text": "тајландски бат",
+      "kind": "currency"
+    },
+    {
+      "text": "швајцарски франак",
+      "kind": "currency"
+    },
+    {
+      "text": "турска лира",
+      "kind": "currency"
+    },
+    {
+      "text": "амерички долар",
+      "kind": "currency"
+    },
+    {
+      "text": "децембар",
+      "kind": "month"
+    },
+    {
+      "text": "август",
+      "kind": "month"
+    },
+    {
+      "text": "октобар",
+      "kind": "month"
+    },
+    {
+      "text": "април",
+      "kind": "month"
+    },
+    {
+      "text": "субота",
+      "kind": "weekday"
+    },
+    {
+      "text": "петак",
+      "kind": "weekday"
+    },
+    {
+      "text": "среда",
+      "kind": "weekday"
+    },
+    {
+      "text": "минут",
+      "kind": "field"
+    },
+    {
+      "text": "година",
+      "kind": "field"
+    },
+    {
+      "text": "месец",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "дан у недељи",
+      "kind": "field"
+    },
+    {
+      "text": "за 3 сата",
+      "kind": "relative"
+    },
+    {
+      "text": "за 3 квартала",
+      "kind": "relative"
+    },
+    {
+      "text": "за 3 секунде",
+      "kind": "relative"
+    },
+    {
+      "text": "за 3 недеље",
+      "kind": "relative"
+    },
+    {
+      "text": "прошле године",
+      "kind": "relative"
+    },
+    {
+      "text": "пре 5 секунди",
+      "kind": "relative"
+    },
+    {
+      "text": "пре 1 сата",
+      "kind": "relative"
+    },
+    {
+      "text": "следећег квартала",
+      "kind": "relative"
+    },
+    {
+      "text": "јуче",
+      "kind": "relative"
+    },
+    {
+      "text": "за 3 дана",
+      "kind": "relative"
+    },
+    {
+      "text": "5 сати",
+      "kind": "unit"
+    },
+    {
+      "text": "2 километра",
+      "kind": "unit"
+    },
+    {
+      "text": "2 дана",
+      "kind": "unit"
+    },
+    {
+      "text": "5 дана",
+      "kind": "unit"
+    },
+    {
+      "text": "2 степена Целзијуса",
+      "kind": "unit"
+    },
+    {
+      "text": "2 килограма",
+      "kind": "unit"
+    },
+    {
+      "text": "2 литра",
+      "kind": "unit"
+    },
+    {
+      "text": "5 гигабајтова",
+      "kind": "unit"
+    },
+    {
+      "text": "понедељак, 3. март 2025.",
+      "kind": "date"
+    },
+    {
+      "text": "израелски нови шекел",
+      "kind": "currency"
+    }
+  ]
+}

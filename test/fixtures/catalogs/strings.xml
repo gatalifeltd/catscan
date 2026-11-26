@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Synthetic catalog for spec 02 tests. -->
+    <string name="app_name" translatable="false">Catscan</string>
+    <string name="welcome">Welcome, <xliff:g id="name" example="Ann">%1$s</xliff:g>!</string>
+    <string name="apostrophe">Don\'t stop now</string>
+    <string name="quoted">"Keep   these   spaces"</string>
+    <string name="escapes">Ask \"why\" \@ home\?</string>
+    <string name="unicode">Café is open today</string>
+    <string name="newline">Line one here\nLine two here</string>
+    <string name="cdata"><![CDATA[<b>Bold</b> deals inside]]></string>
+    <string name="html">&lt;b&gt;Escaped markup&lt;/b&gt; works too</string>
+    <string name="percent" formatted="false">100% done already</string>
+    <string name="alias">@string/apostrophe</string>
+    <string name="cycle_a">@string/cycle_b</string>
+    <string name="cycle_b">@string/cycle_a</string>
+    <plurals name="songs">
+        <item quantity="one">%d song found</item>
+        <item quantity="other">%d songs found</item>
+    </plurals>
+    <string-array name="planets">
+        <item>Mercury planet</item>
+        <item>Venus planet</item>
+    </string-array>
+</resources>

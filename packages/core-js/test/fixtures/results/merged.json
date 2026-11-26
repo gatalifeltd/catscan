@@ -1,0 +1,497 @@
+{
+  "results_schema": 1,
+  "run": {
+    "catscan": "X",
+    "started_at": "2026-12-01T10:00:00Z",
+    "finished_at": "2026-12-01T10:09:00Z",
+    "argv": [
+      "results",
+      "merge",
+      "shard-*.json",
+      "--expect-locales",
+      "de,fr,ja,ko,zh-Hant",
+      "--out",
+      "merged.json"
+    ],
+    "host": {
+      "chip": "Apple M1 (Virtual)",
+      "arch": "arm64",
+      "host_class": "vm",
+      "macos": "15.6 (24G84)",
+      "vision_revision": 3
+    },
+    "ci": null,
+    "build": {
+      "id": "4512",
+      "version": "2.8.0"
+    },
+    "shards": [
+      {
+        "started_at": "2026-12-01T10:00:00Z",
+        "finished_at": "2026-12-01T10:02:00Z",
+        "argv": [
+          "check",
+          "shots/de",
+          "shots/fr",
+          "--present",
+          "Continue",
+          "--expect-locales",
+          "de,fr",
+          "--results",
+          "shard-de-fr.json"
+        ],
+        "host": {
+          "chip": "Apple M1 (Virtual)",
+          "arch": "arm64",
+          "host_class": "vm",
+          "macos": "15.6 (24G84)",
+          "vision_revision": 3
+        },
+        "ci": {
+          "provider": "github-actions",
+          "runner": "macos15",
+          "commit": "3f2a9c1",
+          "ref": "refs/heads/main",
+          "run_id": "11"
+        },
+        "thresholds": null,
+        "registry": null,
+        "results_digest": "158d90acf61c6dc5c935814dd1ff31d48daed9aa86e0d2c3c2d2fbca280113c6"
+      },
+      {
+        "started_at": "2026-12-01T10:01:00Z",
+        "finished_at": "2026-12-01T10:03:00Z",
+        "argv": [
+          "check",
+          "shots/ko",
+          "--present",
+          "Continue",
+          "--results",
+          "shard-ko.json"
+        ],
+        "host": {
+          "chip": "Apple M1 (Virtual)",
+          "arch": "arm64",
+          "host_class": "vm",
+          "macos": "15.6 (24G84)",
+          "vision_revision": 3
+        },
+        "ci": {
+          "provider": "github-actions",
+          "runner": "macos15",
+          "commit": "3f2a9c1",
+          "ref": "refs/heads/main",
+          "run_id": "13"
+        },
+        "thresholds": null,
+        "registry": null,
+        "results_digest": "42dc9763d1f00ba833f6ed3650164781dd8aa987bee86ea2955177f919db394e"
+      },
+      {
+        "started_at": "2026-12-01T10:05:00Z",
+        "finished_at": "2026-12-01T10:09:00Z",
+        "argv": [
+          "check",
+          "shots/fr",
+          "shots/ja",
+          "--present",
+          "Continue",
+          "--expect-locales",
+          "fr,ja",
+          "--results",
+          "shard-fr-ja.json"
+        ],
+        "host": {
+          "chip": "Apple M1 (Virtual)",
+          "arch": "arm64",
+          "host_class": "vm",
+          "macos": "15.6 (24G84)",
+          "vision_revision": 3
+        },
+        "ci": {
+          "provider": "github-actions",
+          "runner": "macos15",
+          "commit": "3f2a9c1",
+          "ref": "refs/heads/main",
+          "run_id": "12"
+        },
+        "thresholds": null,
+        "registry": null,
+        "results_digest": "daff770b8e6c169fbfd994a1cf7bb908bd6968bb9ca6abf40b5cd7fc156cde5c"
+      }
+    ],
+    "thresholds": null,
+    "registry": null
+  },
+  "coverage": {
+    "layout": "{locale}/{screen}",
+    "expected_locales": [
+      "de",
+      "fr",
+      "ja",
+      "ko",
+      "zh-Hant"
+    ],
+    "expected_screens": [
+      "home",
+      "paywall"
+    ],
+    "expected_devices": null,
+    "expected_text_sizes": null,
+    "received": 7,
+    "missing": [
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "ja",
+        "screen": "paywall"
+      },
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "ko",
+        "screen": "paywall"
+      },
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "zh-Hant",
+        "screen": "home"
+      },
+      {
+        "device": null,
+        "text_size": null,
+        "locale": "zh-Hant",
+        "screen": "paywall"
+      }
+    ]
+  },
+  "totals": {
+    "pass": 5,
+    "fail": 6,
+    "needs-reader": 0,
+    "unsupported": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/de/home.png",
+      "verdict": "pass",
+      "engine": "vision-accurate-rev3",
+      "locale": "de",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "home",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/de/paywall.png",
+      "verdict": "fail",
+      "engine": "vision-accurate-rev3",
+      "locale": "de",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "paywall",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/fr/home.png",
+      "verdict": "pass",
+      "engine": "vision-accurate-rev3",
+      "locale": "fr",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "home",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [
+        {
+          "code": "duplicate-cell",
+          "message": "2 inputs map to locale fr, screen home under check",
+          "hint": "remove the extra screenshot or fix --layout"
+        }
+      ],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/fr/home.png",
+      "verdict": "pass",
+      "engine": "vision-accurate-rev3",
+      "locale": "fr",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "home",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [
+        {
+          "code": "duplicate-cell",
+          "message": "2 inputs map to locale fr, screen home under check",
+          "hint": "remove the extra screenshot or fix --layout"
+        }
+      ],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/fr/paywall.png",
+      "verdict": "pass",
+      "engine": "vision-accurate-rev3",
+      "locale": "fr",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "paywall",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/ja/home.png",
+      "verdict": "fail",
+      "engine": "vision-accurate-rev3",
+      "locale": "ja",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "home",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": "shots/ko/home.png",
+      "verdict": "pass",
+      "engine": "vision-accurate-rev3",
+      "locale": "ko",
+      "image": {
+        "width": 10,
+        "height": 20
+      },
+      "screen": "home",
+      "host": {
+        "chip": "Apple M1 (Virtual)",
+        "arch": "arm64",
+        "host_class": "vm",
+        "macos": "15.6 (24G84)",
+        "vision_revision": 3
+      },
+      "ms": 5,
+      "checks": [],
+      "findings": [],
+      "warnings": [],
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "ja",
+      "screen": "paywall",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "ja/paywall",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "ko",
+      "screen": "paywall",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "ko/paywall",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "zh-Hant",
+      "screen": "home",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "zh-Hant/home",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    },
+    {
+      "schema": 1,
+      "catscan": "X",
+      "command": "check",
+      "path": null,
+      "verdict": "fail",
+      "engine": null,
+      "locale": "zh-Hant",
+      "screen": "paywall",
+      "device": null,
+      "platform": null,
+      "text_size": null,
+      "image": null,
+      "host": null,
+      "ms": 0,
+      "checks": [],
+      "findings": [
+        {
+          "kind": "missing",
+          "box": null,
+          "expected_path": "zh-Hant/paywall",
+          "severity": "critical",
+          "certainty": "high",
+          "precision": null,
+          "gate": true
+        }
+      ],
+      "warnings": [],
+      "text": null,
+      "change": null
+    }
+  ],
+  "baseline": null
+}

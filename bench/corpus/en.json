@@ -1,0 +1,253 @@
+{
+  "locale": "en",
+  "icu_locale": "en",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Luxembourg",
+      "kind": "region"
+    },
+    {
+      "text": "Finland",
+      "kind": "region"
+    },
+    {
+      "text": "Italy",
+      "kind": "region"
+    },
+    {
+      "text": "United Kingdom",
+      "kind": "region"
+    },
+    {
+      "text": "Argentina",
+      "kind": "region"
+    },
+    {
+      "text": "Lithuania",
+      "kind": "region"
+    },
+    {
+      "text": "Croatia",
+      "kind": "region"
+    },
+    {
+      "text": "Australia",
+      "kind": "region"
+    },
+    {
+      "text": "Peru",
+      "kind": "region"
+    },
+    {
+      "text": "Sweden",
+      "kind": "region"
+    },
+    {
+      "text": "Bulgaria",
+      "kind": "region"
+    },
+    {
+      "text": "India",
+      "kind": "region"
+    },
+    {
+      "text": "French",
+      "kind": "language"
+    },
+    {
+      "text": "Persian",
+      "kind": "language"
+    },
+    {
+      "text": "Norwegian",
+      "kind": "language"
+    },
+    {
+      "text": "Thai",
+      "kind": "language"
+    },
+    {
+      "text": "Romanian",
+      "kind": "language"
+    },
+    {
+      "text": "Swedish",
+      "kind": "language"
+    },
+    {
+      "text": "English",
+      "kind": "language"
+    },
+    {
+      "text": "Chinese",
+      "kind": "language"
+    },
+    {
+      "text": "Italian",
+      "kind": "language"
+    },
+    {
+      "text": "Indonesian",
+      "kind": "language"
+    },
+    {
+      "text": "Czech Koruna",
+      "kind": "currency"
+    },
+    {
+      "text": "South Korean Won",
+      "kind": "currency"
+    },
+    {
+      "text": "Japanese Yen",
+      "kind": "currency"
+    },
+    {
+      "text": "US Dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "Swiss Franc",
+      "kind": "currency"
+    },
+    {
+      "text": "Canadian Dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "June",
+      "kind": "month"
+    },
+    {
+      "text": "February",
+      "kind": "month"
+    },
+    {
+      "text": "October",
+      "kind": "month"
+    },
+    {
+      "text": "November",
+      "kind": "month"
+    },
+    {
+      "text": "Thursday",
+      "kind": "weekday"
+    },
+    {
+      "text": "Monday",
+      "kind": "weekday"
+    },
+    {
+      "text": "Friday",
+      "kind": "weekday"
+    },
+    {
+      "text": "minute",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "year",
+      "kind": "field"
+    },
+    {
+      "text": "month",
+      "kind": "field"
+    },
+    {
+      "text": "time zone",
+      "kind": "field"
+    },
+    {
+      "text": "next quarter",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 seconds",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 weeks",
+      "kind": "relative"
+    },
+    {
+      "text": "5 quarters ago",
+      "kind": "relative"
+    },
+    {
+      "text": "last quarter",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 hours",
+      "kind": "relative"
+    },
+    {
+      "text": "5 seconds ago",
+      "kind": "relative"
+    },
+    {
+      "text": "in 1 hour",
+      "kind": "relative"
+    },
+    {
+      "text": "5 weeks ago",
+      "kind": "relative"
+    },
+    {
+      "text": "5 days ago",
+      "kind": "relative"
+    },
+    {
+      "text": "5 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometers",
+      "kind": "unit"
+    },
+    {
+      "text": "2 weeks",
+      "kind": "unit"
+    },
+    {
+      "text": "5 percent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometers per hour",
+      "kind": "unit"
+    },
+    {
+      "text": "2 days",
+      "kind": "unit"
+    },
+    {
+      "text": "2 degrees Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "Denmark",
+      "kind": "region"
+    },
+    {
+      "text": "Turkish Lira",
+      "kind": "currency"
+    }
+  ]
+}

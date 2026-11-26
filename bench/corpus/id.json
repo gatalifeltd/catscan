@@ -1,0 +1,253 @@
+{
+  "locale": "id",
+  "icu_locale": "id",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Pakistan",
+      "kind": "region"
+    },
+    {
+      "text": "Irlandia",
+      "kind": "region"
+    },
+    {
+      "text": "Belanda",
+      "kind": "region"
+    },
+    {
+      "text": "Portugal",
+      "kind": "region"
+    },
+    {
+      "text": "Polandia",
+      "kind": "region"
+    },
+    {
+      "text": "Norwegia",
+      "kind": "region"
+    },
+    {
+      "text": "Jepang",
+      "kind": "region"
+    },
+    {
+      "text": "Islandia",
+      "kind": "region"
+    },
+    {
+      "text": "Swiss",
+      "kind": "region"
+    },
+    {
+      "text": "Singapura",
+      "kind": "region"
+    },
+    {
+      "text": "Hong Kong DAK Tiongkok",
+      "kind": "region"
+    },
+    {
+      "text": "Uni Emirat Arab",
+      "kind": "region"
+    },
+    {
+      "text": "Swedia",
+      "kind": "language"
+    },
+    {
+      "text": "Georgia",
+      "kind": "language"
+    },
+    {
+      "text": "Thai",
+      "kind": "language"
+    },
+    {
+      "text": "Ceko",
+      "kind": "language"
+    },
+    {
+      "text": "Melayu",
+      "kind": "language"
+    },
+    {
+      "text": "Korea",
+      "kind": "language"
+    },
+    {
+      "text": "Serbia",
+      "kind": "language"
+    },
+    {
+      "text": "Tionghoa",
+      "kind": "language"
+    },
+    {
+      "text": "Hungaria",
+      "kind": "language"
+    },
+    {
+      "text": "Turki",
+      "kind": "language"
+    },
+    {
+      "text": "Yuan Tiongkok",
+      "kind": "currency"
+    },
+    {
+      "text": "Dolar Kanada",
+      "kind": "currency"
+    },
+    {
+      "text": "Rubel Rusia",
+      "kind": "currency"
+    },
+    {
+      "text": "Rupiah Indonesia",
+      "kind": "currency"
+    },
+    {
+      "text": "Krone Denmark",
+      "kind": "currency"
+    },
+    {
+      "text": "Peso Meksiko",
+      "kind": "currency"
+    },
+    {
+      "text": "November",
+      "kind": "month"
+    },
+    {
+      "text": "September",
+      "kind": "month"
+    },
+    {
+      "text": "Juli",
+      "kind": "month"
+    },
+    {
+      "text": "Oktober",
+      "kind": "month"
+    },
+    {
+      "text": "Jumat",
+      "kind": "weekday"
+    },
+    {
+      "text": "Selasa",
+      "kind": "weekday"
+    },
+    {
+      "text": "Kamis",
+      "kind": "weekday"
+    },
+    {
+      "text": "detik",
+      "kind": "field"
+    },
+    {
+      "text": "tahun",
+      "kind": "field"
+    },
+    {
+      "text": "zona waktu",
+      "kind": "field"
+    },
+    {
+      "text": "bulan",
+      "kind": "field"
+    },
+    {
+      "text": "hari dalam seminggu",
+      "kind": "field"
+    },
+    {
+      "text": "minggu depan",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 3 jam",
+      "kind": "relative"
+    },
+    {
+      "text": "Kuartal lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 minggu yang lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 1 jam",
+      "kind": "relative"
+    },
+    {
+      "text": "1 jam yang lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "dalam 3 kuartal",
+      "kind": "relative"
+    },
+    {
+      "text": "5 kuartal yang lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 hari yang lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "minggu lalu",
+      "kind": "relative"
+    },
+    {
+      "text": "5 menit",
+      "kind": "unit"
+    },
+    {
+      "text": "2 persen",
+      "kind": "unit"
+    },
+    {
+      "text": "5 meter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometer per jam",
+      "kind": "unit"
+    },
+    {
+      "text": "2 meter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometer",
+      "kind": "unit"
+    },
+    {
+      "text": "2 jam",
+      "kind": "unit"
+    },
+    {
+      "text": "Senin, 03 Maret 2025",
+      "kind": "date"
+    },
+    {
+      "text": "5 gigabyte",
+      "kind": "unit"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "todo": "039",
+  "part": "T2",
+  "script": "bench/pseudo.js",
+  "seed": "bench/pseudo/seed.json",
+  "generator": "bench/pseudo/generate.swift",
+  "dynamic": "bench/pseudo/dynamic.txt",
+  "catalogs": 12,
+  "screens_per_catalog": 40,
+  "screens": 480,
+  "gate": {
+    "roundtrip": 0.98,
+    "cut": {
+      "precision": 0.95,
+      "recall": 0.9
+    },
+    "hardcoded": {
+      "precision": 0.95,
+      "recall": 0.9
+    },
+    "false_per_100_clean": 1
+  },
+  "metrics": {
+    "roundtrip": {
+      "lines": 1968,
+      "matched": 1950,
+      "share": 0.991
+    },
+    "pseudo_cut": {
+      "precision": 0.992,
+      "recall": 0.929,
+      "recall_any_reason": 0.936,
+      "tp": 130,
+      "fp": 1,
+      "fn": 9,
+      "pseudo_cut_findings": 130,
+      "caught_by_other_reason": 1,
+      "lost_or_side_wrong": 0,
+      "note": "recall: seeded clip cuts reported as pseudo-cut; recall_any_reason adds those an earlier reason (ellipsis, prefix, edge, overflow, screen-edge) reported first; precision over pseudo-cut findings"
+    },
+    "ellipsis_cuts": {
+      "seeded": 43,
+      "found": 42,
+      "note": "seeded ellipsis cuts; the existing ellipsis reason wins on the line"
+    },
+    "hardcoded": {
+      "precision": 0.991,
+      "recall": 1,
+      "tp": 111,
+      "fp": 1,
+      "fn": 0,
+      "evidence_wrong": 0
+    },
+    "raw_key": {
+      "seeded": 47,
+      "found": 46
+    },
+    "placeholder": {
+      "seeded": 48,
+      "found": 46
+    },
+    "pseudo_not_applied": {
+      "seeded": 48,
+      "found": 48,
+      "false": 0
+    },
+    "clean_screens": 159,
+    "false_per_100_clean": 0,
+    "eligible": {
+      "lines": 3470,
+      "judged": 3373,
+      "share": 0.972
+    }
+  },
+  "drops": [],
+  "misses": [
+    "app-json/s18.png roundtrip home.deals: todays deals one two",
+    "app-strings/s14.png roundtrip home.deals: today s deals one two",
+    "app-strings/s18.png roundtrip home.deals: todays deals one two",
+    "app-strings/s25.png roundtrip share.link: copy iink one",
+    "app-strings/s28.png roundtrip home.deals: today s deals one two",
+    "app-strings/s17 false pseudo-cut \"(Ýöür çárt öñé]\"",
+    "app-strings/s17 missed cut-text \"[Šígñ íñ öñé]\"",
+    "app-android/s26 missed cut-start \"[Réçéñtlý víéwéd öñé twö]\"",
+    "app-xcstrings/s14.png roundtrip home.deals: todays deals one two",
+    "app-xcstrings/s15.png roundtrip settings.privacy: privacy poligy one two",
+    "app-xcstrings/s22 missed cut-start \"[Réçéñtlý víéwéd öñé twö]\"",
+    "factory-json/s17 missed cut-start \"[Éñérgý üšágé öñé twö]\"",
+    "factory-android/s23.png roundtrip sync_now: syncnow one",
+    "factory-android/s24 missed cut-text \"[Šçáñ bárçödé öñé twö]\"",
+    "factory-xcstrings/s11.png roundtrip machine.list: carrier wi-fi",
+    "factory-xcstrings/s21 false hardcoded \"safety training\"",
+    "factory-xcstrings/s24 missed cut-text \"[Štárt prödüçtíöñ öñé twö]\"",
+    "games-strings/s11.png roundtrip event.title: winter festiva| one two",
+    "games-strings/s11.png roundtrip coins.left: anna smith",
+    "games-strings/s15.png roundtrip level.start: start leve| one two",
+    "games-strings/s15.png roundtrip clan.join: play now one",
+    "games-strings/s21.png roundtrip level.next: next leve| one",
+    "games-android/s08.png roundtrip event_title: winter festiva| one two",
+    "games-android/s27.png roundtrip sound_music: musicvolume one two",
+    "games-android/s30.png roundtrip menu_missions: daly missions one two",
+    "games-android/s10 missed cut-start \"[Špéçíál öffér öñé twö]\"",
+    "games-android/s25 missed cut-text \"[Jöíñ á çláñ öñé twö]\"",
+    "games-xcstrings/s03.png roundtrip account.link: linkaccount onetwo",
+    "games-xcstrings/s34 missed cut-start \"[Lévél löçkéd öñé twö]\""
+  ],
+  "fonts": [
+    ".SFNS-Regular 22.0d5e1",
+    "AvenirNextCondensed-Regular 22.0d2e1",
+    "Georgia Version 5.00x-4",
+    "HelveticaNeue 22.0d2e1"
+  ],
+  "tools": {
+    "catscan": "0.35.1",
+    "macos": "27.2.1 (26B131)",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "xcode": "Xcode 27.2 Build version 27B52"
+  }
+}

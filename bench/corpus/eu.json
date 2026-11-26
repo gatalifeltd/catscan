@@ -1,0 +1,253 @@
+{
+  "locale": "eu",
+  "icu_locale": "eu",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Kenya",
+      "kind": "region"
+    },
+    {
+      "text": "Filipinak",
+      "kind": "region"
+    },
+    {
+      "text": "India",
+      "kind": "region"
+    },
+    {
+      "text": "Ukraina",
+      "kind": "region"
+    },
+    {
+      "text": "Norvegia",
+      "kind": "region"
+    },
+    {
+      "text": "Etiopia",
+      "kind": "region"
+    },
+    {
+      "text": "Turkia",
+      "kind": "region"
+    },
+    {
+      "text": "Portugal",
+      "kind": "region"
+    },
+    {
+      "text": "Georgia",
+      "kind": "region"
+    },
+    {
+      "text": "Zeelanda Berria",
+      "kind": "region"
+    },
+    {
+      "text": "Hungaria",
+      "kind": "region"
+    },
+    {
+      "text": "Luxenburgo",
+      "kind": "region"
+    },
+    {
+      "text": "ingelesa",
+      "kind": "language"
+    },
+    {
+      "text": "vietnamera",
+      "kind": "language"
+    },
+    {
+      "text": "indonesiera",
+      "kind": "language"
+    },
+    {
+      "text": "serbiera",
+      "kind": "language"
+    },
+    {
+      "text": "thailandiera",
+      "kind": "language"
+    },
+    {
+      "text": "frantsesa",
+      "kind": "language"
+    },
+    {
+      "text": "greziera",
+      "kind": "language"
+    },
+    {
+      "text": "nederlandera",
+      "kind": "language"
+    },
+    {
+      "text": "arabiera",
+      "kind": "language"
+    },
+    {
+      "text": "poloniera",
+      "kind": "language"
+    },
+    {
+      "text": "dolar australiarra",
+      "kind": "currency"
+    },
+    {
+      "text": "zloty poloniarra",
+      "kind": "currency"
+    },
+    {
+      "text": "koroa txekiarra",
+      "kind": "currency"
+    },
+    {
+      "text": "koroa suediarra",
+      "kind": "currency"
+    },
+    {
+      "text": "yen japoniarra",
+      "kind": "currency"
+    },
+    {
+      "text": "libera esterlina",
+      "kind": "currency"
+    },
+    {
+      "text": "urtarrila",
+      "kind": "month"
+    },
+    {
+      "text": "azaroa",
+      "kind": "month"
+    },
+    {
+      "text": "urria",
+      "kind": "month"
+    },
+    {
+      "text": "abendua",
+      "kind": "month"
+    },
+    {
+      "text": "ostirala",
+      "kind": "weekday"
+    },
+    {
+      "text": "osteguna",
+      "kind": "weekday"
+    },
+    {
+      "text": "asteartea",
+      "kind": "weekday"
+    },
+    {
+      "text": "ordua",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "hilabetea",
+      "kind": "field"
+    },
+    {
+      "text": "minutua",
+      "kind": "field"
+    },
+    {
+      "text": "asteguna",
+      "kind": "field"
+    },
+    {
+      "text": "duela 5 minutu",
+      "kind": "relative"
+    },
+    {
+      "text": "bihar",
+      "kind": "relative"
+    },
+    {
+      "text": "3 urte barru",
+      "kind": "relative"
+    },
+    {
+      "text": "duela 5 hilabete",
+      "kind": "relative"
+    },
+    {
+      "text": "duela 5 urte",
+      "kind": "relative"
+    },
+    {
+      "text": "hurrengo urtean",
+      "kind": "relative"
+    },
+    {
+      "text": "1 minutu barru",
+      "kind": "relative"
+    },
+    {
+      "text": "3 ordu barru",
+      "kind": "relative"
+    },
+    {
+      "text": "3 hilabete barru",
+      "kind": "relative"
+    },
+    {
+      "text": "3 minutu barru",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilogramo",
+      "kind": "unit"
+    },
+    {
+      "text": "5 aste",
+      "kind": "unit"
+    },
+    {
+      "text": "2 ordu",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metro",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 ordu",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilometro",
+      "kind": "unit"
+    },
+    {
+      "text": "2 minutu",
+      "kind": "unit"
+    },
+    {
+      "text": "2025(e)ko martxoaren 3(a), astelehena",
+      "kind": "date"
+    },
+    {
+      "text": "japoniera",
+      "kind": "language"
+    }
+  ]
+}

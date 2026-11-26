@@ -1,0 +1,416 @@
+{
+  "spec": "17",
+  "script": "bench/untranslated.js",
+  "strings": "bench/untranslated/strings.json",
+  "seed": 17,
+  "screens": 614,
+  "adversarial_screens": 108,
+  "locales": [
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt-BR",
+    "pl",
+    "tr",
+    "ru",
+    "uk",
+    "ja",
+    "ko",
+    "zh-Hans"
+  ],
+  "gate": {
+    "precision": 0.95,
+    "recall": 0.9
+  },
+  "kinds": {
+    "untranslated": {
+      "tp": 213,
+      "fp": 0,
+      "fn": 1,
+      "precision": 1,
+      "recall": 0.9953,
+      "pass": true,
+      "false_positives": []
+    },
+    "raw-key": {
+      "tp": 203,
+      "fp": 0,
+      "fn": 3,
+      "precision": 1,
+      "recall": 0.9854,
+      "pass": true,
+      "false_positives": []
+    },
+    "placeholder": {
+      "tp": 114,
+      "fp": 0,
+      "fn": 8,
+      "precision": 1,
+      "recall": 0.9344,
+      "pass": true,
+      "false_positives": []
+    }
+  },
+  "per_locale": {
+    "de": {
+      "untranslated": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "fr": {
+      "untranslated": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "es": {
+      "untranslated": {
+        "tp": 22,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "it": {
+      "untranslated": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "pt-BR": {
+      "untranslated": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 18,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "pl": {
+      "untranslated": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 22,
+        "fp": 0,
+        "fn": 1
+      },
+      "placeholder": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "tr": {
+      "untranslated": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 1
+      },
+      "placeholder": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "ru": {
+      "untranslated": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 17,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 13,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "uk": {
+      "untranslated": {
+        "tp": 19,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 23,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "ja": {
+      "untranslated": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 0
+      }
+    },
+    "ko": {
+      "untranslated": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 0
+      },
+      "raw-key": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 1
+      },
+      "placeholder": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 1
+      }
+    },
+    "zh-Hans": {
+      "untranslated": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 1
+      },
+      "raw-key": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 0
+      },
+      "placeholder": {
+        "tp": 6,
+        "fp": 0,
+        "fn": 6
+      }
+    }
+  },
+  "cases": [
+    {
+      "name": "domains-files-taglines",
+      "todo": "015",
+      "locale": "de",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "go-name-on",
+      "todo": "010",
+      "locale": "de",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3-translated",
+      "todo": "014",
+      "locale": "de",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3",
+      "todo": "014",
+      "locale": "de",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "go-name-on",
+      "todo": "010",
+      "locale": "fr",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3-translated",
+      "todo": "014",
+      "locale": "fr",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3",
+      "todo": "014",
+      "locale": "fr",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3-translated",
+      "todo": "014",
+      "locale": "es",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-3",
+      "todo": "014",
+      "locale": "es",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-5-translated",
+      "todo": "014",
+      "locale": "it",
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "paragraph-5",
+      "todo": "014",
+      "locale": "it",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "latin-in-ja",
+      "todo": "013",
+      "locale": "ja",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "latin-in-ko",
+      "todo": "013",
+      "locale": "ko",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    },
+    {
+      "name": "latin-in-zh",
+      "todo": "013",
+      "locale": "zh-Hans",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "pass": true
+    }
+  ],
+  "perf": {
+    "keys": 5000,
+    "image": "1290x2790, 30 lines",
+    "copies": 20,
+    "check_ms_per_image": 74.7,
+    "untranslated_ms_per_image": 90,
+    "budget_ms": 50,
+    "pass": true
+  },
+  "perf_worst": {
+    "keys": 5000,
+    "image": "1290x2790, 30 lines",
+    "copies": 20,
+    "check_ms_per_image": 73.9,
+    "untranslated_ms_per_image": 277.1,
+    "budget_ms": 250,
+    "pass": true,
+    "case": "every base string live, all 30 lines untranslated (TODO-012 D3)"
+  },
+  "tools": {
+    "catscan": "0.12.8",
+    "macos": "27.2 (26B123)",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "generator": "test/fixtures/generate.swift"
+  },
+  "pass": true
+}

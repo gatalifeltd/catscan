@@ -1,0 +1,50 @@
+{
+  "onboarding.next": [
+    [
+      "Continue to the next step"
+    ]
+  ],
+  "welcome": [
+    [
+      "Hello,",
+      "! You have",
+      "new messages"
+    ]
+  ],
+  "quote": [
+    [
+      "Say \"cheese\" now please"
+    ]
+  ],
+  "newline": [
+    [
+      "First line here\nSecond line here"
+    ]
+  ],
+  "unicode": [
+    [
+      "Café au lait served"
+    ]
+  ],
+  "positional": [
+    [
+      "invited",
+      "to the party"
+    ]
+  ],
+  "percent": [
+    [
+      "100% of your progress"
+    ]
+  ],
+  "unquoted.entry": [
+    [
+      "Unquoted names work fine"
+    ]
+  ],
+  "Key is the value": [
+    [
+      "Key is the value"
+    ]
+  ]
+}

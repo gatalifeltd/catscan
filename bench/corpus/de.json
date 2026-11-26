@@ -1,0 +1,253 @@
+{
+  "locale": "de",
+  "icu_locale": "de",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Tschechien",
+      "kind": "region"
+    },
+    {
+      "text": "Singapur",
+      "kind": "region"
+    },
+    {
+      "text": "Schweden",
+      "kind": "region"
+    },
+    {
+      "text": "Polen",
+      "kind": "region"
+    },
+    {
+      "text": "Island",
+      "kind": "region"
+    },
+    {
+      "text": "Lettland",
+      "kind": "region"
+    },
+    {
+      "text": "China",
+      "kind": "region"
+    },
+    {
+      "text": "Italien",
+      "kind": "region"
+    },
+    {
+      "text": "Rumänien",
+      "kind": "region"
+    },
+    {
+      "text": "Serbien",
+      "kind": "region"
+    },
+    {
+      "text": "Russland",
+      "kind": "region"
+    },
+    {
+      "text": "Belgien",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesisch",
+      "kind": "language"
+    },
+    {
+      "text": "Portugiesisch",
+      "kind": "language"
+    },
+    {
+      "text": "Arabisch",
+      "kind": "language"
+    },
+    {
+      "text": "Finnisch",
+      "kind": "language"
+    },
+    {
+      "text": "Spanisch",
+      "kind": "language"
+    },
+    {
+      "text": "Englisch",
+      "kind": "language"
+    },
+    {
+      "text": "Hindi",
+      "kind": "language"
+    },
+    {
+      "text": "Norwegisch",
+      "kind": "language"
+    },
+    {
+      "text": "Polnisch",
+      "kind": "language"
+    },
+    {
+      "text": "Ukrainisch",
+      "kind": "language"
+    },
+    {
+      "text": "Euro",
+      "kind": "currency"
+    },
+    {
+      "text": "Indische Rupie",
+      "kind": "currency"
+    },
+    {
+      "text": "Ungarischer Forint",
+      "kind": "currency"
+    },
+    {
+      "text": "Türkische Lira",
+      "kind": "currency"
+    },
+    {
+      "text": "Britisches Pfund",
+      "kind": "currency"
+    },
+    {
+      "text": "Australischer Dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "Dezember",
+      "kind": "month"
+    },
+    {
+      "text": "Juni",
+      "kind": "month"
+    },
+    {
+      "text": "Juli",
+      "kind": "month"
+    },
+    {
+      "text": "Oktober",
+      "kind": "month"
+    },
+    {
+      "text": "Mittwoch",
+      "kind": "weekday"
+    },
+    {
+      "text": "Samstag",
+      "kind": "weekday"
+    },
+    {
+      "text": "Donnerstag",
+      "kind": "weekday"
+    },
+    {
+      "text": "Tageshälfte",
+      "kind": "field"
+    },
+    {
+      "text": "Epoche",
+      "kind": "field"
+    },
+    {
+      "text": "Woche",
+      "kind": "field"
+    },
+    {
+      "text": "Monat",
+      "kind": "field"
+    },
+    {
+      "text": "Sekunde",
+      "kind": "field"
+    },
+    {
+      "text": "in 3 Quartalen",
+      "kind": "relative"
+    },
+    {
+      "text": "in 1 Minute",
+      "kind": "relative"
+    },
+    {
+      "text": "in 1 Stunde",
+      "kind": "relative"
+    },
+    {
+      "text": "nächstes Jahr",
+      "kind": "relative"
+    },
+    {
+      "text": "vor 5 Jahren",
+      "kind": "relative"
+    },
+    {
+      "text": "letztes Quartal",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 Tagen",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 Stunden",
+      "kind": "relative"
+    },
+    {
+      "text": "vor 1 Minute",
+      "kind": "relative"
+    },
+    {
+      "text": "in 3 Minuten",
+      "kind": "relative"
+    },
+    {
+      "text": "5 Meter",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Stunden",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 Prozent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Tage",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Kilogramm",
+      "kind": "unit"
+    },
+    {
+      "text": "2 Kilometer pro Stunde",
+      "kind": "unit"
+    },
+    {
+      "text": "Montag, 3. März 2025",
+      "kind": "date"
+    },
+    {
+      "text": "Freitag, 6. November 2026",
+      "kind": "date"
+    }
+  ]
+}

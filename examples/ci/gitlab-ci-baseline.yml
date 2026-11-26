@@ -1,0 +1,54 @@
+# catscan changed-only review on GitLab CI hosted macOS runners (community-tested: no recorded run yet; docs/recipes/ci.md#changed-only-review).
+# Add these jobs to .gitlab-ci.yml and replace:
+#   1. `npm ci && npm run screenshots`: the step that makes your screenshots;
+#   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
+#   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
+# First green run without expectations: npx @catscan/cli@1.0.0 check shots --present "<text every screen shows>" --junit catscan.xml --baseline catscan-baseline.json
+# Pushing a release tag is the approval: tag only a build whose screens were reviewed. The tag job stores the
+# approved baseline in the project's generic package registry; merge requests fetch the latest one.
+# The tag job approves the run it makes on the tag commit: tag a commit whose merge-request run was reviewed, with no
+# screen change merged after it. The baseline is only as trusted as its store: protect v* tags and limit package
+# publishing to Maintainers, so a merge-request pipeline cannot replace it.
+# Retention: package files stay until deleted (check the project's package cleanup policy) and follow the project's
+# visibility; the baseline holds your screen text, so keep the project private. Job artifacts expire (expire_in, the
+# instance default is 30 days), so they would lose the baseline between releases.
+.catscan:
+  tags: [saas-macos-medium-m1]
+  image: macos-15-xcode-16
+  stage: test
+  variables:
+    BASELINE_URL: "$CI_API_V4_URL/projects/$CI_PROJECT_ID/packages/generic/catscan-baseline/approved/catscan-baseline.json"
+  before_script:
+    - node --version
+    - npm ci && npm run screenshots
+    # Only if you ship a locale catscan reads with Tesseract, such as el, he, hr or et (catscan languages lists them; the doctor line fails with the install command until this runs; install options: https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/tesseract.md):
+    # - brew install tesseract tesseract-lang
+    - npx @catscan/cli@1.0.0 doctor --expect-locales-from locales
+
+catscan-review:
+  extends: .catscan
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  script:
+    # Before the first approval there is none: catscan warns baseline-missing and every cell is new.
+    - 'curl --fail --silent --header "JOB-TOKEN: $CI_JOB_TOKEN" --output catscan-baseline.json "$BASELINE_URL" || { rm -f catscan-baseline.json; echo "no approved baseline yet"; }'
+    - npx @catscan/cli@1.0.0 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --gitlab-codequality catscan-cq.json --results catscan-results.json --report catscan.html --baseline catscan-baseline.json
+    # Optional: stop the job while any cell needs review (exit codes, JUnit and Code Quality carry no baseline result).
+    # - jq -e '.baseline.review.cells == 0' catscan-results.json
+  artifacts:
+    when: always
+    expire_in: 7 days
+    paths: [catscan-results.json, catscan.xml, catscan-cq.json, catscan.html]
+    reports:
+      junit: catscan.xml
+      codequality: catscan-cq.json
+
+catscan-approve:
+  extends: .catscan
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx @catscan/cli@1.0.0 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --results catscan-results.json
+    # Refuses (exit 1) a run with error, needs-reader, unsupported, missing or ambiguous cells: fix them and tag again.
+    - npx @catscan/cli@1.0.0 results baseline catscan-results.json --out catscan-baseline.json
+    - 'curl --fail --silent --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file catscan-baseline.json "$BASELINE_URL"'

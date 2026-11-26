@@ -1,0 +1,54 @@
+# This repo's CI. Every job runs on a GitHub-hosted runner; a self-hosted runner never
+# serves this repo, and scripts/check-workflows.mjs --product refuses any other runs-on. Outside pull requests
+# are closed before anything runs (close-outside-prs.yml), and fork workflows need approval for all outside
+# collaborators. The golden tests and the nightly bench join once they run on a hosted runner image.
+name: ci
+on:
+  pull_request:
+  push:
+    branches: [main]
+concurrency:
+  # A push to main gets its own group, so no later push cancels or drops its private-names run; pull requests
+  # cancel their older runs.
+  group: ci-${{ github.ref }}-${{ github.event_name == 'push' && github.sha || 'pr' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 26.13.0
+      - run: npm ci
+      - run: npm run build
+      - run: npm run test:unit
+      - run: npm run test:swift
+      - run: npm run bench:check
+      - run: node scripts/docs-check.mjs --public
+      - run: node scripts/check-internal.mjs
+      - run: node scripts/check-workflows.mjs --product .github/workflows
+      - run: node scripts/check-headers.mjs
+      - run: node scripts/check-licenses.mjs
+      # The name list is a secret, so a pull request checks every other rule and prints a notice.
+      - run: node scripts/check-private.mjs --names=if-available
+  # On main the name rule is required; this job holds the secret and never runs on a pull request.
+  private-names:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 26.13.0
+      - run: node scripts/check-private.mjs --names=required
+        env:
+          CATSCAN_PRIVATE_NAMES: ${{ secrets.CATSCAN_PRIVATE_NAMES }}

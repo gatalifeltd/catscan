@@ -1,0 +1,5 @@
+{
+  "game": { "title": "Sternenspringer", "over": "SPIEL VORBEI", "paused": "Pause" },
+  "hud": { "score": "Punkte: {score}" },
+  "menu": { "play": "Spielen", "settings": "Einstellungen", "quit": "Beenden" }
+}

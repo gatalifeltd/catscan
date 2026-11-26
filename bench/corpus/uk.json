@@ -1,0 +1,253 @@
+{
+  "locale": "uk",
+  "icu_locale": "uk",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Мексика",
+      "kind": "region"
+    },
+    {
+      "text": "Філіппіни",
+      "kind": "region"
+    },
+    {
+      "text": "Норвегія",
+      "kind": "region"
+    },
+    {
+      "text": "Іран",
+      "kind": "region"
+    },
+    {
+      "text": "Франція",
+      "kind": "region"
+    },
+    {
+      "text": "Вірменія",
+      "kind": "region"
+    },
+    {
+      "text": "Таїланд",
+      "kind": "region"
+    },
+    {
+      "text": "Іспанія",
+      "kind": "region"
+    },
+    {
+      "text": "Данія",
+      "kind": "region"
+    },
+    {
+      "text": "Словенія",
+      "kind": "region"
+    },
+    {
+      "text": "Болгарія",
+      "kind": "region"
+    },
+    {
+      "text": "Індонезія",
+      "kind": "region"
+    },
+    {
+      "text": "угорська",
+      "kind": "language"
+    },
+    {
+      "text": "англійська",
+      "kind": "language"
+    },
+    {
+      "text": "індонезійська",
+      "kind": "language"
+    },
+    {
+      "text": "польська",
+      "kind": "language"
+    },
+    {
+      "text": "грецька",
+      "kind": "language"
+    },
+    {
+      "text": "іспанська",
+      "kind": "language"
+    },
+    {
+      "text": "гінді",
+      "kind": "language"
+    },
+    {
+      "text": "фінська",
+      "kind": "language"
+    },
+    {
+      "text": "італійська",
+      "kind": "language"
+    },
+    {
+      "text": "румунська",
+      "kind": "language"
+    },
+    {
+      "text": "угорський форинт",
+      "kind": "currency"
+    },
+    {
+      "text": "євро",
+      "kind": "currency"
+    },
+    {
+      "text": "канадський долар",
+      "kind": "currency"
+    },
+    {
+      "text": "турецька ліра",
+      "kind": "currency"
+    },
+    {
+      "text": "вʼєтнамський донг",
+      "kind": "currency"
+    },
+    {
+      "text": "індійська рупія",
+      "kind": "currency"
+    },
+    {
+      "text": "грудень",
+      "kind": "month"
+    },
+    {
+      "text": "червень",
+      "kind": "month"
+    },
+    {
+      "text": "квітень",
+      "kind": "month"
+    },
+    {
+      "text": "березень",
+      "kind": "month"
+    },
+    {
+      "text": "четвер",
+      "kind": "weekday"
+    },
+    {
+      "text": "субота",
+      "kind": "weekday"
+    },
+    {
+      "text": "вівторок",
+      "kind": "weekday"
+    },
+    {
+      "text": "часовий пояс",
+      "kind": "field"
+    },
+    {
+      "text": "хвилина",
+      "kind": "field"
+    },
+    {
+      "text": "тиждень",
+      "kind": "field"
+    },
+    {
+      "text": "квартал",
+      "kind": "field"
+    },
+    {
+      "text": "день тижня",
+      "kind": "field"
+    },
+    {
+      "text": "через 1 годину",
+      "kind": "relative"
+    },
+    {
+      "text": "5 місяців тому",
+      "kind": "relative"
+    },
+    {
+      "text": "через 3 місяці",
+      "kind": "relative"
+    },
+    {
+      "text": "завтра",
+      "kind": "relative"
+    },
+    {
+      "text": "через 3 дні",
+      "kind": "relative"
+    },
+    {
+      "text": "1 секунду тому",
+      "kind": "relative"
+    },
+    {
+      "text": "5 років тому",
+      "kind": "relative"
+    },
+    {
+      "text": "учора",
+      "kind": "relative"
+    },
+    {
+      "text": "через 3 секунди",
+      "kind": "relative"
+    },
+    {
+      "text": "минулого тижня",
+      "kind": "relative"
+    },
+    {
+      "text": "5 днів",
+      "kind": "unit"
+    },
+    {
+      "text": "5 градусів Цельсія",
+      "kind": "unit"
+    },
+    {
+      "text": "2 літри",
+      "kind": "unit"
+    },
+    {
+      "text": "2 хвилини",
+      "kind": "unit"
+    },
+    {
+      "text": "2 мегабайти",
+      "kind": "unit"
+    },
+    {
+      "text": "5 годин",
+      "kind": "unit"
+    },
+    {
+      "text": "5 кілометрів за годину",
+      "kind": "unit"
+    },
+    {
+      "text": "5 гігабайтів",
+      "kind": "unit"
+    },
+    {
+      "text": "пʼятниця, 19 липня 2024 р.",
+      "kind": "date"
+    },
+    {
+      "text": "пʼятниця, 6 листопада 2026 р.",
+      "kind": "date"
+    }
+  ]
+}

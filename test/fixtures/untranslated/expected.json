@@ -1,0 +1,60 @@
+{
+ "u01-clean": [],
+ "u02-privacy": [
+  [
+   "untranslated",
+   "settings.privacy"
+  ]
+ ],
+ "u03-two": [
+  [
+   "untranslated",
+   "settings.title"
+  ],
+  [
+   "untranslated",
+   "settings.notifications"
+  ]
+ ],
+ "u04-raw-key": [
+  [
+   "raw-key",
+   "paywall.cta_title"
+  ]
+ ],
+ "u05-placeholder": [
+  [
+   "placeholder",
+   "{{count}}"
+  ]
+ ],
+ "u06-shared": [],
+ "u07-missing": [
+  [
+   "untranslated",
+   "delete_account"
+  ]
+ ],
+ "u08-cta": [
+  [
+   "untranslated",
+   "home.cta"
+  ]
+ ],
+ "u09-mixed": [
+  [
+   "untranslated",
+   "greeting"
+  ],
+  [
+   "placeholder",
+   "%d"
+  ]
+ ],
+ "u10-domain": [
+  [
+   "raw-key",
+   "home.title"
+  ]
+ ]
+}

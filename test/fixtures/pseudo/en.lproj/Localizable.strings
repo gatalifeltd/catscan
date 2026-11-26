@@ -1,0 +1,9 @@
+/* Shop screen */
+"shop.title" = "Shop";
+"shop.buy" = "Buy %@ for %1$@";   // trailing comment
+"shop.quote" = "He said \"Hello\"\nand left\U00A0now";
+"shop.percent" = "100% sure, %d%% off";
+"shop.substitution" = "You have %#@items@";
+"shop.keyonly";
+"shop.url" = "https://example.com";
+"shop.empty" = "";

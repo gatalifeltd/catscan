@@ -1,0 +1,253 @@
+{
+  "locale": "vi",
+  "icu_locale": "vi",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Ả Rập Xê-út",
+      "kind": "region"
+    },
+    {
+      "text": "Kenya",
+      "kind": "region"
+    },
+    {
+      "text": "Philippines",
+      "kind": "region"
+    },
+    {
+      "text": "Vương quốc Anh",
+      "kind": "region"
+    },
+    {
+      "text": "Canada",
+      "kind": "region"
+    },
+    {
+      "text": "Các Tiểu Vương quốc Ả Rập Thống nhất",
+      "kind": "region"
+    },
+    {
+      "text": "Hàn Quốc",
+      "kind": "region"
+    },
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Hungary",
+      "kind": "region"
+    },
+    {
+      "text": "Ba Lan",
+      "kind": "region"
+    },
+    {
+      "text": "Bồ Đào Nha",
+      "kind": "region"
+    },
+    {
+      "text": "Singapore",
+      "kind": "region"
+    },
+    {
+      "text": "Tiếng Marathi",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Pháp",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Hàn",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Italy",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Hy Lạp",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Serbia",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Na Uy",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Mã Lai",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Hindi",
+      "kind": "language"
+    },
+    {
+      "text": "Tiếng Do Thái",
+      "kind": "language"
+    },
+    {
+      "text": "Franc Thụy sĩ",
+      "kind": "currency"
+    },
+    {
+      "text": "Krone Đan Mạch",
+      "kind": "currency"
+    },
+    {
+      "text": "Koruna Cộng hòa Séc",
+      "kind": "currency"
+    },
+    {
+      "text": "Krona Thụy Điển",
+      "kind": "currency"
+    },
+    {
+      "text": "Sheqel Israel mới",
+      "kind": "currency"
+    },
+    {
+      "text": "Đô la Mỹ",
+      "kind": "currency"
+    },
+    {
+      "text": "Tháng 6",
+      "kind": "month"
+    },
+    {
+      "text": "Tháng 7",
+      "kind": "month"
+    },
+    {
+      "text": "Tháng 3",
+      "kind": "month"
+    },
+    {
+      "text": "Tháng 11",
+      "kind": "month"
+    },
+    {
+      "text": "Thứ Năm",
+      "kind": "weekday"
+    },
+    {
+      "text": "Thứ Bảy",
+      "kind": "weekday"
+    },
+    {
+      "text": "Chủ Nhật",
+      "kind": "weekday"
+    },
+    {
+      "text": "Ngày",
+      "kind": "field"
+    },
+    {
+      "text": "Giây",
+      "kind": "field"
+    },
+    {
+      "text": "Phút",
+      "kind": "field"
+    },
+    {
+      "text": "Tuần",
+      "kind": "field"
+    },
+    {
+      "text": "thời đại",
+      "kind": "field"
+    },
+    {
+      "text": "5 quý trước",
+      "kind": "relative"
+    },
+    {
+      "text": "5 tháng trước",
+      "kind": "relative"
+    },
+    {
+      "text": "quý sau",
+      "kind": "relative"
+    },
+    {
+      "text": "năm sau",
+      "kind": "relative"
+    },
+    {
+      "text": "5 giờ trước",
+      "kind": "relative"
+    },
+    {
+      "text": "1 giờ trước",
+      "kind": "relative"
+    },
+    {
+      "text": "sau 3 tháng nữa",
+      "kind": "relative"
+    },
+    {
+      "text": "năm ngoái",
+      "kind": "relative"
+    },
+    {
+      "text": "sau 1 giờ nữa",
+      "kind": "relative"
+    },
+    {
+      "text": "sau 3 giờ nữa",
+      "kind": "relative"
+    },
+    {
+      "text": "5 kilôgam",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "5 độ C",
+      "kind": "unit"
+    },
+    {
+      "text": "2 độ C",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gigabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 lít",
+      "kind": "unit"
+    },
+    {
+      "text": "2 giờ",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilômét/giờ",
+      "kind": "unit"
+    },
+    {
+      "text": "Tháng 4",
+      "kind": "month"
+    },
+    {
+      "text": "Ireland",
+      "kind": "region"
+    }
+  ]
+}

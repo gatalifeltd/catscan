@@ -1,0 +1,253 @@
+{
+  "locale": "nn",
+  "icu_locale": "nn",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Belgia",
+      "kind": "region"
+    },
+    {
+      "text": "Sverige",
+      "kind": "region"
+    },
+    {
+      "text": "Georgia",
+      "kind": "region"
+    },
+    {
+      "text": "Romania",
+      "kind": "region"
+    },
+    {
+      "text": "Nigeria",
+      "kind": "region"
+    },
+    {
+      "text": "Marokko",
+      "kind": "region"
+    },
+    {
+      "text": "Ungarn",
+      "kind": "region"
+    },
+    {
+      "text": "New Zealand",
+      "kind": "region"
+    },
+    {
+      "text": "Armenia",
+      "kind": "region"
+    },
+    {
+      "text": "Finland",
+      "kind": "region"
+    },
+    {
+      "text": "Slovakia",
+      "kind": "region"
+    },
+    {
+      "text": "Polen",
+      "kind": "region"
+    },
+    {
+      "text": "rumensk",
+      "kind": "language"
+    },
+    {
+      "text": "finsk",
+      "kind": "language"
+    },
+    {
+      "text": "marathi",
+      "kind": "language"
+    },
+    {
+      "text": "thai",
+      "kind": "language"
+    },
+    {
+      "text": "polsk",
+      "kind": "language"
+    },
+    {
+      "text": "hindi",
+      "kind": "language"
+    },
+    {
+      "text": "tysk",
+      "kind": "language"
+    },
+    {
+      "text": "spansk",
+      "kind": "language"
+    },
+    {
+      "text": "armensk",
+      "kind": "language"
+    },
+    {
+      "text": "vietnamesisk",
+      "kind": "language"
+    },
+    {
+      "text": "kinesiske yuan",
+      "kind": "currency"
+    },
+    {
+      "text": "sveitsiske franc",
+      "kind": "currency"
+    },
+    {
+      "text": "australske dollar",
+      "kind": "currency"
+    },
+    {
+      "text": "japanske yen",
+      "kind": "currency"
+    },
+    {
+      "text": "ungarske forintar",
+      "kind": "currency"
+    },
+    {
+      "text": "brasilianske real",
+      "kind": "currency"
+    },
+    {
+      "text": "januar",
+      "kind": "month"
+    },
+    {
+      "text": "juli",
+      "kind": "month"
+    },
+    {
+      "text": "oktober",
+      "kind": "month"
+    },
+    {
+      "text": "juni",
+      "kind": "month"
+    },
+    {
+      "text": "torsdag",
+      "kind": "weekday"
+    },
+    {
+      "text": "søndag",
+      "kind": "weekday"
+    },
+    {
+      "text": "fredag",
+      "kind": "weekday"
+    },
+    {
+      "text": "vekedag",
+      "kind": "field"
+    },
+    {
+      "text": "kvartal",
+      "kind": "field"
+    },
+    {
+      "text": "minutt",
+      "kind": "field"
+    },
+    {
+      "text": "tidsalder",
+      "kind": "field"
+    },
+    {
+      "text": "tidssone",
+      "kind": "field"
+    },
+    {
+      "text": "førre veke",
+      "kind": "relative"
+    },
+    {
+      "text": "førre månad",
+      "kind": "relative"
+    },
+    {
+      "text": "om 3 veker",
+      "kind": "relative"
+    },
+    {
+      "text": "om 1 time",
+      "kind": "relative"
+    },
+    {
+      "text": "for 5 sekund sidan",
+      "kind": "relative"
+    },
+    {
+      "text": "for 5 veker sidan",
+      "kind": "relative"
+    },
+    {
+      "text": "i går",
+      "kind": "relative"
+    },
+    {
+      "text": "neste veke",
+      "kind": "relative"
+    },
+    {
+      "text": "om 1 sekund",
+      "kind": "relative"
+    },
+    {
+      "text": "neste månad",
+      "kind": "relative"
+    },
+    {
+      "text": "2 døgn",
+      "kind": "unit"
+    },
+    {
+      "text": "2 grader celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabyte",
+      "kind": "unit"
+    },
+    {
+      "text": "2 liter",
+      "kind": "unit"
+    },
+    {
+      "text": "2 prosent",
+      "kind": "unit"
+    },
+    {
+      "text": "2 veker",
+      "kind": "unit"
+    },
+    {
+      "text": "2 månadar",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometer per time",
+      "kind": "unit"
+    },
+    {
+      "text": "måndag 3. mars 2025",
+      "kind": "date"
+    },
+    {
+      "text": "a.m./p.m.",
+      "kind": "field"
+    }
+  ]
+}

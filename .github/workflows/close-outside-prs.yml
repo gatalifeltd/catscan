@@ -1,0 +1,39 @@
+# catscan does not accept outside code. A pull request from anyone who is not an owner, member or
+# collaborator gets one fixed comment and is closed. pull_request_target runs in the base repo's context, so this
+# workflow checks out nothing and runs no repository or pull request code: one pinned github-script step that reads
+# author_association from the event. scripts/test/close-outside-prs.test.mjs drives the script below.
+name: close outside pull requests
+on:
+  pull_request_target:
+    types: [opened, reopened]
+permissions: {}
+jobs:
+  close:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
+        with:
+          script: |
+            const INSIDE = new Set(["OWNER", "MEMBER", "COLLABORATOR"]);
+            const pr = context.payload.pull_request;
+            if (!pr || INSIDE.has(pr.author_association)) return "kept";
+            const { owner, repo } = context.repo;
+            const body = [
+              "Thank you for the pull request. catscan does not accept outside code: the maintainers write every change themselves (see CONTRIBUTING.md).",
+              "",
+              `Please open an issue instead (https://github.com/${owner}/${repo}/issues/new/choose) with the bug report, wrong-OCR report or feature request template, and describe the change. We take it from there.`,
+              "",
+              "This pull request was closed automatically; no CI ran on it.",
+            ].join("\n");
+            // Close first: a failed comment (rate limit, locked thread) must never leave the pull request open.
+            await github.rest.pulls.update({ owner, repo, pull_number: pr.number, state: "closed" });
+            try {
+              await github.rest.issues.createComment({ owner, repo, issue_number: pr.number, body });
+            } catch (e) {
+              core.warning(`closed, but the comment failed: ${e.message}`);
+            }
+            return "closed";

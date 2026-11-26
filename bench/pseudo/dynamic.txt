@@ -1,0 +1,2 @@
+# TODO-039 T2 gate: user content that is never pseudo-localized (one regex per line, whole line).
+(Anna|Ben|Chloe|David) [A-Z][a-z]+

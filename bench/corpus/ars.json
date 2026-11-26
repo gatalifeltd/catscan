@@ -1,0 +1,253 @@
+{
+  "locale": "ars",
+  "icu_locale": "ars",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "السويد",
+      "kind": "region"
+    },
+    {
+      "text": "رومانيا",
+      "kind": "region"
+    },
+    {
+      "text": "اليابان",
+      "kind": "region"
+    },
+    {
+      "text": "الأرجنتين",
+      "kind": "region"
+    },
+    {
+      "text": "كوريا الجنوبية",
+      "kind": "region"
+    },
+    {
+      "text": "أرمينيا",
+      "kind": "region"
+    },
+    {
+      "text": "فيتنام",
+      "kind": "region"
+    },
+    {
+      "text": "فرنسا",
+      "kind": "region"
+    },
+    {
+      "text": "كولومبيا",
+      "kind": "region"
+    },
+    {
+      "text": "المملكة المتحدة",
+      "kind": "region"
+    },
+    {
+      "text": "الولايات المتحدة",
+      "kind": "region"
+    },
+    {
+      "text": "ليتوانيا",
+      "kind": "region"
+    },
+    {
+      "text": "البرتغالية",
+      "kind": "language"
+    },
+    {
+      "text": "الصينية",
+      "kind": "language"
+    },
+    {
+      "text": "الفنلندية",
+      "kind": "language"
+    },
+    {
+      "text": "الأوكرانية",
+      "kind": "language"
+    },
+    {
+      "text": "الرومانية",
+      "kind": "language"
+    },
+    {
+      "text": "الإيطالية",
+      "kind": "language"
+    },
+    {
+      "text": "التشيكية",
+      "kind": "language"
+    },
+    {
+      "text": "الصربية",
+      "kind": "language"
+    },
+    {
+      "text": "الإنجليزية",
+      "kind": "language"
+    },
+    {
+      "text": "الهنغارية",
+      "kind": "language"
+    },
+    {
+      "text": "جنيه إسترليني",
+      "kind": "currency"
+    },
+    {
+      "text": "يوان صيني",
+      "kind": "currency"
+    },
+    {
+      "text": "زلوتي بولندي",
+      "kind": "currency"
+    },
+    {
+      "text": "شيكل إسرائيلي جديد",
+      "kind": "currency"
+    },
+    {
+      "text": "روبية هندي",
+      "kind": "currency"
+    },
+    {
+      "text": "ليرة تركية",
+      "kind": "currency"
+    },
+    {
+      "text": "مايو",
+      "kind": "month"
+    },
+    {
+      "text": "أبريل",
+      "kind": "month"
+    },
+    {
+      "text": "ديسمبر",
+      "kind": "month"
+    },
+    {
+      "text": "نوفمبر",
+      "kind": "month"
+    },
+    {
+      "text": "الأربعاء",
+      "kind": "weekday"
+    },
+    {
+      "text": "الأحد",
+      "kind": "weekday"
+    },
+    {
+      "text": "الخميس",
+      "kind": "weekday"
+    },
+    {
+      "text": "اليوم",
+      "kind": "field"
+    },
+    {
+      "text": "الثواني",
+      "kind": "field"
+    },
+    {
+      "text": "الشهر",
+      "kind": "field"
+    },
+    {
+      "text": "الدقائق",
+      "kind": "field"
+    },
+    {
+      "text": "الساعات",
+      "kind": "field"
+    },
+    {
+      "text": "قبل ٥ ثوانِ",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال ٣ ساعات",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل ٥ أيام",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل ٥ سنوات",
+      "kind": "relative"
+    },
+    {
+      "text": "قبل ٥ دقائق",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال ٣ دقائق",
+      "kind": "relative"
+    },
+    {
+      "text": "الربع القادم",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال ٣ أسابيع",
+      "kind": "relative"
+    },
+    {
+      "text": "خلال ٣ ثوانٍ",
+      "kind": "relative"
+    },
+    {
+      "text": "الربع الأخير",
+      "kind": "relative"
+    },
+    {
+      "text": "٢ غيغابايت",
+      "kind": "unit"
+    },
+    {
+      "text": "كيلومتران",
+      "kind": "unit"
+    },
+    {
+      "text": "٥ أمتار",
+      "kind": "unit"
+    },
+    {
+      "text": "٥ كيلومترات في الساعة",
+      "kind": "unit"
+    },
+    {
+      "text": "كيلوغرامان",
+      "kind": "unit"
+    },
+    {
+      "text": "لتران",
+      "kind": "unit"
+    },
+    {
+      "text": "أسبوعان",
+      "kind": "unit"
+    },
+    {
+      "text": "٥ ميغابايت",
+      "kind": "unit"
+    },
+    {
+      "text": "الاثنين، ٣ مارس ٢٠٢٥",
+      "kind": "date"
+    },
+    {
+      "text": "الجمعة، ١٩ يوليو ٢٠٢٤",
+      "kind": "date"
+    }
+  ]
+}

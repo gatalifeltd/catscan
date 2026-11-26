@@ -1,0 +1,4 @@
+# Screen ids the flows produce: shots/<platform>/<screen>.<locale>.png.
+onboarding
+settings
+game

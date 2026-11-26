@@ -1,0 +1,202 @@
+# catscan=0.12.4 macos=27.2 macos_build=26B123 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+mr,vision-accurate-rev3,false,2160,0,2880,2818,97.85,720,658,0.9139,0.0166,1337,37,103,683,0.9731,0.9285,27.5,0|0|0|0|0|12|0|0|0|707,0|0|0|3|0|43|0|0|0|664
+image,case,present,absent,truncated,cer,read
+mr/00-fit-12-light-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-12-light-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-12-dark-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-12-dark-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-16-light-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-16-light-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-16-dark-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-16-dark-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-24-light-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-24-light-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-24-dark-flat.png,fit,fail,pass,no,1,आइसलॅड
+mr/00-fit-24-dark-gradient.png,fit,fail,pass,no,1,आइसलॅड
+mr/01-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/01-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/01-clip-12-dark-gradient.png,clip,,pass,no,,
+mr/01-clip-24-dark-flat.png,clip,,pass,no,,
+mr/02-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/02-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/02-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/02-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/03-fit-12-light-gradient.png,fit,fail,pass,no,1,हाँगकॉँग एसएआर चीन
+mr/03-fit-12-dark-flat.png,fit,fail,pass,no,1,हाँगकॉंग एसएआर चीन
+mr/03-fit-12-dark-gradient.png,fit,fail,pass,no,1,हाँगकॉँग एसएआर चीन
+mr/03-fit-16-dark-flat.png,fit,fail,pass,no,1,हाँगकॉँग एसएआर चीन
+mr/03-fit-16-dark-gradient.png,fit,fail,pass,no,1,हाँगकॉँग एसएआर चीन
+mr/03-fit-24-light-flat.png,fit,fail,pass,no,1,हाँगकॉँग एसएआर चीन
+mr/03-fit-24-dark-flat.png,fit,fail,pass,no,1,हाँगकॉग एसएआर चीन
+mr/03-fit-24-dark-gradient.png,fit,fail,pass,no,1,हाँगकॉंग एसएआर चीन
+mr/03-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/04-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/04-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/07-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/07-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+mr/07-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/07-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+mr/07-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/08-fit-24-light-flat.png,fit,fail,pass,no,1,स्वित्झलंड
+mr/08-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/08-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+mr/08-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/08-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/08-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/08-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/08-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/09-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+mr/09-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/09-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/09-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/11-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/12-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/12-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/13-fit-24-light-flat.png,fit,pass,pass,screen-edge,0,
+mr/13-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/13-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/15-fit-24-light-flat.png,fit,pass,pass,screen-edge,0,
+mr/15-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/15-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/17-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+mr/17-clip-12-light-flat.png,clip,,pass,no,,
+mr/17-clip-24-dark-gradient.png,clip,,pass,no,,
+mr/18-fit-16-dark-gradient.png,fit,fail,pass,no,1,नॉर्वेंजियन
+mr/18-fit-24-dark-gradient.png,fit,fail,pass,no,1,नार्वेजियन
+mr/19-fit-24-light-flat.png,fit,fail,pass,no,1,जॉजियन
+mr/19-fit-24-light-gradient.png,fit,fail,pass,no,1,जॉजियन
+mr/19-fit-24-dark-flat.png,fit,fail,pass,no,1,जॉजियन
+mr/20-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/20-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/20-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/20-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+mr/20-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/20-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/21-fit-12-light-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-12-light-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-12-dark-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-12-dark-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-16-light-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-16-light-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-16-dark-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-16-dark-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-24-light-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-24-light-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-24-dark-flat.png,fit,fail,pass,no,1,बलोरियन
+mr/21-fit-24-dark-gradient.png,fit,fail,pass,no,1,बलोरियन
+mr/21-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/22-fit-16-dark-flat.png,fit,fail,pass,no,1,स्विस फ्रॅक
+mr/22-fit-24-light-flat.png,fit,fail,pass,no,1,स्विस फ्रॅक
+mr/22-fit-24-light-gradient.png,fit,fail,pass,no,1,स्विस फ्रॅक
+mr/22-fit-24-dark-flat.png,fit,fail,pass,no,1,स्विस फ्रॅक
+mr/22-fit-24-dark-gradient.png,fit,fail,pass,no,1,स्विस फ्रॅक
+mr/22-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/22-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/22-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/22-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/22-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+mr/22-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/22-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/22-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/22-clip-12-light-gradient.png,clip,,pass,no,,
+mr/22-clip-24-light-flat.png,clip,,pass,no,,
+mr/22-clip-24-light-gradient.png,clip,,pass,no,,
+mr/26-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/27-fit-12-light-flat.png,fit,pass,pass,screen-edge,0,
+mr/27-fit-12-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/27-fit-12-dark-flat.png,fit,pass,pass,screen-edge,0,
+mr/27-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/27-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/27-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/27-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/27-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/27-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/27-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+mr/27-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/27-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/27-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/28-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/28-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/28-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+mr/28-ellipsis-16-light-gradient.png,ellipsis,,pass,no,,
+mr/29-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/30-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/30-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/31-ellipsis-24-light-flat.png,ellipsis,,pass,no,,
+mr/31-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/32-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/32-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/32-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/32-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/33-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/33-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/34-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/34-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/34-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/37-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/37-clip-12-light-gradient.png,clip,,pass,no,,
+mr/37-clip-12-dark-gradient.png,clip,,pass,no,,
+mr/37-clip-16-dark-flat.png,clip,,pass,no,,
+mr/37-clip-24-light-flat.png,clip,,pass,no,,
+mr/37-clip-24-light-gradient.png,clip,,pass,no,,
+mr/38-clip-24-dark-gradient.png,clip,,pass,no,,
+mr/40-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/40-fit-16-light-gradient.png,fit,fail,pass,no,1,५तासांपूर्वी
+mr/42-fit-16-light-flat.png,fit,fail,pass,screen-edge,1,५तिमाहींपूर्वी
+mr/42-fit-16-light-gradient.png,fit,fail,pass,screen-edge,1,५तिमाहींपूर्वी
+mr/42-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/42-ellipsis-24-light-gradient.png,ellipsis,,pass,no,,
+mr/44-fit-12-light-flat.png,fit,fail,pass,no,1,१तासापूर्वी
+mr/44-fit-16-light-gradient.png,fit,fail,pass,no,1,१तासापूर्वी
+mr/44-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/46-fit-12-dark-flat.png,fit,pass,pass,screen-edge,0,
+mr/47-fit-12-dark-flat.png,fit,pass,pass,screen-edge,0,
+mr/47-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/47-fit-16-light-flat.png,fit,pass,pass,screen-edge,0,
+mr/47-fit-16-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/47-fit-16-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/49-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/49-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/49-clip-12-dark-gradient.png,clip,,pass,no,,
+mr/50-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/50-fit-24-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/50-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/50-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/50-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/50-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/50-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/50-clip-16-dark-flat.png,clip,,pass,no,,
+mr/51-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/52-ellipsis-12-light-flat.png,ellipsis,,pass,no,,
+mr/53-fit-16-light-gradient.png,fit,fail,pass,no,2,रतास
+mr/53-fit-24-light-gradient.png,fit,fail,pass,no,2,रतास
+mr/53-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/53-clip-12-light-flat.png,clip,,pass,no,,
+mr/53-clip-12-dark-gradient.png,clip,,pass,no,,
+mr/55-fit-12-light-gradient.png,fit,fail,pass,no,5,
+mr/55-fit-24-light-flat.png,fit,pass,pass,screen-edge,0,
+mr/55-fit-24-light-gradient.png,fit,pass,pass,screen-edge,0,
+mr/55-fit-24-dark-gradient.png,fit,fail,pass,screen-edge,1,2 दिवस
+mr/55-ellipsis-12-light-gradient.png,ellipsis,,pass,no,,
+mr/55-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/55-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/55-clip-16-light-flat.png,clip,,pass,no,,
+mr/56-ellipsis-12-dark-flat.png,ellipsis,,pass,no,,
+mr/56-ellipsis-12-dark-gradient.png,ellipsis,,pass,no,,
+mr/56-ellipsis-16-dark-flat.png,ellipsis,,pass,no,,
+mr/56-ellipsis-16-dark-gradient.png,ellipsis,,pass,no,,
+mr/56-ellipsis-24-dark-flat.png,ellipsis,,pass,no,,
+mr/56-ellipsis-24-dark-gradient.png,ellipsis,,pass,no,,
+mr/57-fit-12-light-gradient.png,fit,fail,pass,no,1,"शुक्रवार, १९ जुलै, २०२।"
+mr/57-fit-16-light-flat.png,fit,fail,pass,no,1,"शुक्रवार, १९ जुलै, २०२"
+mr/57-fit-16-dark-flat.png,fit,fail,pass,no,3,"शुक्रवार, १९ जुलै, २०२¾"
+mr/57-fit-16-dark-gradient.png,fit,fail,pass,no,1,"शुक्रवार, १९ जुलै, २०२।"
+mr/57-fit-24-light-gradient.png,fit,fail,pass,no,1,"शुक्रवार, १९ जुलै, २०२"
+mr/57-fit-24-dark-flat.png,fit,fail,pass,no,1,"शुक्रवार, १९ जुलै, २०२।"
+mr/58-fit-12-dark-flat.png,fit,pass,pass,screen-edge,0,
+mr/58-fit-12-dark-gradient.png,fit,pass,pass,screen-edge,0,
+mr/58-fit-16-light-flat.png,fit,fail,pass,screen-edge,1,4 आठवड्यांपूर्वी
+mr/58-fit-16-light-gradient.png,fit,fail,pass,no,1,4 आठवड्यांपूर्वी
+mr/58-fit-16-dark-gradient.png,fit,fail,pass,no,1,4 आठवड्यांपूर्वी
+mr/58-fit-24-dark-flat.png,fit,fail,pass,no,1,4 आठवड्यांपूर्वी

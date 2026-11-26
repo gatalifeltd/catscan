@@ -1,0 +1,62 @@
+{
+  "image": {
+    "width": 1080,
+    "height": 2400
+  },
+  "elements": [
+    {
+      "id": null,
+      "box": [
+        0,
+        0.0833,
+        1,
+        0.6667
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0444,
+        0.1,
+        0.5111,
+        0.025
+      ],
+      "clips": true,
+      "text": "Lieferadresse",
+      "scrolls": true
+    },
+    {
+      "id": "com.example:id/notify",
+      "box": [
+        0.8333,
+        0.7708,
+        0.1222,
+        0.0333
+      ],
+      "clips": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.0444,
+        0.7708,
+        0.0667,
+        0.03
+      ],
+      "clips": true,
+      "graphic": true
+    },
+    {
+      "id": null,
+      "box": [
+        0.1296,
+        0.775,
+        0.6852,
+        0.025
+      ],
+      "clips": true,
+      "text": "Benachrichtigungen"
+    }
+  ]
+}

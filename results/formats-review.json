@@ -1,0 +1,5 @@
+{
+ "script": "bench/formats-real.js",
+ "note": "Verdicts by flag id (true, false, true-per-file). The 2026-11-17 run gave 0 flags on 259 real screens, so there is nothing to judge.",
+ "verdicts": []
+}

@@ -1,0 +1,10 @@
+{
+  "file": "stacked-text/de/owner-sheet.png",
+  "sha256": "052459a0eadff02dda1665783871bd6549a406406bbf0b5707cf0c8a800131b0",
+  "source": "the owner, 2026-11-18: a sheet with its three pages drawn over each other (a shipped bug); boxes marked by hand, normalized top-left [x, y, w, h]",
+  "regions": [
+    { "role": "title", "box": [0.25, 0.765, 0.5, 0.035] },
+    { "role": "subtitle", "box": [0.33, 0.797, 0.34, 0.022] },
+    { "role": "counter", "box": [0.8, 0.555, 0.16, 0.03] }
+  ]
+}

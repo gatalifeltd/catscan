@@ -1,0 +1,129 @@
+{
+  "auditReportVersion": 2,
+  "vulnerabilities": {
+    "@blazediff/cli": {
+      "name": "@blazediff/cli",
+      "severity": "high",
+      "isDirect": true,
+      "via": [
+        "@blazediff/codec-sharp"
+      ],
+      "effects": [],
+      "range": ">=2.1.4",
+      "nodes": [
+        "node_modules/@blazediff/cli"
+      ],
+      "fixAvailable": {
+        "name": "@blazediff/cli",
+        "version": "2.1.3",
+        "isSemVerMajor": true
+      }
+    },
+    "@blazediff/codec-sharp": {
+      "name": "@blazediff/codec-sharp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        "sharp"
+      ],
+      "effects": [
+        "@blazediff/cli"
+      ],
+      "range": "*",
+      "nodes": [
+        "node_modules/@blazediff/codec-sharp"
+      ],
+      "fixAvailable": {
+        "name": "@blazediff/cli",
+        "version": "2.1.3",
+        "isSemVerMajor": true
+      }
+    },
+    "sharp": {
+      "name": "sharp",
+      "severity": "high",
+      "isDirect": false,
+      "via": [
+        {
+          "source": 1124066,
+          "name": "sharp",
+          "dependency": "sharp",
+          "title": "sharp inherited vulnerabilities in libvips: CVE-2026-33327, CVE-2026-33328, CVE-2026-35590, CVE-2026-35591",
+          "url": "https://github.com/advisories/GHSA-f88m-g3jw-g9cj",
+          "severity": "high",
+          "cwe": [
+            "CWE-1395"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.35.0"
+        },
+        {
+          "source": 1193725,
+          "name": "sharp",
+          "dependency": "sharp",
+          "title": "sharp: Vulnerabilities in libheif: GHSA-g89c-p67h-r497 and GHSA-2jg2-4ch7-h545",
+          "url": "https://github.com/advisories/GHSA-rgj7-g3m4-5g8c",
+          "severity": "high",
+          "cwe": [
+            "CWE-122"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.35.4"
+        },
+        {
+          "source": 1241331,
+          "name": "sharp",
+          "dependency": "sharp",
+          "title": "sharp : Vulnerability in librsvg dependency CVE-2026-96889",
+          "url": "https://github.com/advisories/GHSA-wq5f-xc86-pv6w",
+          "severity": "high",
+          "cwe": [
+            "CWE-416",
+            "CWE-1395"
+          ],
+          "cvss": {
+            "score": 0,
+            "vectorString": null
+          },
+          "range": "<0.35.5"
+        }
+      ],
+      "effects": [
+        "@blazediff/codec-sharp"
+      ],
+      "range": "<=0.35.5-rc.1",
+      "nodes": [
+        "node_modules/sharp"
+      ],
+      "fixAvailable": {
+        "name": "@blazediff/cli",
+        "version": "2.1.3",
+        "isSemVerMajor": true
+      }
+    }
+  },
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 3,
+      "critical": 0,
+      "total": 3
+    },
+    "dependencies": {
+      "prod": 28,
+      "dev": 0,
+      "optional": 38,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 65
+    }
+  }
+}

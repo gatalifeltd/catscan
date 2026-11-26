@@ -1,0 +1,5 @@
+{
+  "deep": "{a, plural, one {level one text} other {{b, plural, one {level two} other {{c, plural, one {level three} other {{d, plural, one {level four} other {{e, plural, one {level five} other {deepest text}}}}}}}}}}",
+  "wide": "{v0, plural, one {one0} two {two0} few {few0} many {many0} other {other0}} {v1, plural, one {one1} two {two1} few {few1} many {many1} other {other1}} {v2, plural, one {one2} two {two2} few {few2} many {many2} other {other2}} {v3, plural, one {one3} two {two3} few {few3} many {many3} other {other3}} {v4, plural, one {one4} two {two4} few {few4} many {many4} other {other4}} {v5, plural, one {one5} two {two5} few {few5} many {many5} other {other5}} {v6, plural, one {one6} two {two6} few {few6} many {many6} other {other6}} {v7, plural, one {one7} two {two7} few {few7} many {many7} other {other7}}",
+  "fine": "{n, plural, one {One left} other {# left}}"
+}

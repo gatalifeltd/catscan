@@ -1,0 +1,58 @@
+{
+  "_comment": "TODO-074 rendered positives: the probe apps' wrapping screens (bench/wrapping/rendered.mjs). Each screen is rows top to bottom; a row's items share its width equally; nav goes on top, tabs at the bottom. key names a string of probe-strings.json; id is the element id on both platforms.",
+  "screens": {
+    "store": [
+      [{ "kind": "nav", "id": "store_nav", "key": "store.nav" }],
+      [{ "kind": "segment", "id": "store_seg", "items": [{ "id": "store_seg_monthly", "key": "store.seg.monthly" }, { "id": "store_seg_yearly", "key": "store.seg.yearly" }, { "id": "store_seg_lifetime", "key": "store.seg.lifetime" }] }],
+      [{ "kind": "title", "id": "store_title", "key": "store.title" }],
+      [{ "kind": "subtitle", "id": "store_subtitle", "key": "store.subtitle" }],
+      [{ "kind": "button", "id": "store_trial", "key": "store.trial" }, { "kind": "button", "id": "store_restore", "key": "store.restore" }],
+      [{ "kind": "chip", "id": "store_chip_value", "key": "store.chip.value" }, { "kind": "chip", "id": "store_chip_family", "key": "store.chip.family" }, { "kind": "chip", "id": "store_chip_students", "key": "store.chip.students" }],
+      [{ "kind": "button", "id": "store_continue", "key": "store.continue" }],
+      [{ "kind": "tabs", "id": "store_tabs", "items": [{ "id": "store_tab_home", "key": "store.tab.home" }, { "id": "store_tab_search", "key": "store.tab.search" }, { "id": "store_tab_library", "key": "store.tab.library" }, { "id": "store_tab_profile", "key": "store.tab.profile" }] }]
+    ],
+    "profile": [
+      [{ "kind": "nav", "id": "profile_nav", "key": "profile.nav" }],
+      [{ "kind": "title", "id": "profile_title", "key": "profile.title" }],
+      [{ "kind": "subtitle", "id": "profile_subtitle", "key": "profile.subtitle" }],
+      [{ "kind": "button", "id": "profile_save", "key": "profile.save" }, { "kind": "button", "id": "profile_discard", "key": "profile.discard" }],
+      [{ "kind": "chip", "id": "profile_chip_photos", "key": "profile.chip.photos" }, { "kind": "chip", "id": "profile_chip_videos", "key": "profile.chip.videos" }, { "kind": "chip", "id": "profile_chip_music", "key": "profile.chip.music" }, { "kind": "chip", "id": "profile_chip_books", "key": "profile.chip.books" }],
+      [{ "kind": "button", "id": "profile_add", "key": "profile.add" }, { "kind": "button", "id": "profile_remove", "key": "profile.remove" }, { "kind": "button", "id": "profile_share", "key": "profile.share" }],
+      [{ "kind": "segment", "id": "profile_seg", "items": [{ "id": "profile_seg_public", "key": "profile.seg.public" }, { "id": "profile_seg_friends", "key": "profile.seg.friends" }, { "id": "profile_seg_private", "key": "profile.seg.private" }] }],
+      [{ "kind": "tabs", "id": "profile_tabs", "items": [{ "id": "profile_tab_feed", "key": "profile.tab.feed" }, { "id": "profile_tab_messages", "key": "profile.tab.messages" }, { "id": "profile_tab_alerts", "key": "profile.tab.alerts" }, { "id": "profile_tab_account", "key": "profile.tab.account" }] }]
+    ],
+    "alerts": [
+      [{ "kind": "nav", "id": "alerts_nav", "key": "alerts.nav" }],
+      [{ "kind": "title", "id": "alerts_title", "key": "alerts.title" }],
+      [{ "kind": "subtitle", "id": "alerts_subtitle", "key": "alerts.subtitle" }],
+      [{ "kind": "button", "id": "alerts_on", "key": "alerts.on" }, { "kind": "button", "id": "alerts_later", "key": "alerts.later" }],
+      [{ "kind": "chip", "id": "alerts_chip_daily", "key": "alerts.chip.daily" }, { "kind": "chip", "id": "alerts_chip_weekly", "key": "alerts.chip.weekly" }, { "kind": "chip", "id": "alerts_chip_mentions", "key": "alerts.chip.mentions" }],
+      [{ "kind": "button", "id": "alerts_sound", "key": "alerts.sound" }, { "kind": "button", "id": "alerts_vibrate", "key": "alerts.vibrate" }, { "kind": "button", "id": "alerts_silent", "key": "alerts.silent" }],
+      [{ "kind": "segment", "id": "alerts_seg", "items": [{ "id": "alerts_seg_all", "key": "alerts.seg.all" }, { "id": "alerts_seg_unread", "key": "alerts.seg.unread" }, { "id": "alerts_seg_archived", "key": "alerts.seg.archived" }] }],
+      [{ "kind": "tabs", "id": "alerts_tabs", "items": [{ "id": "alerts_tab_inbox", "key": "alerts.tab.inbox" }, { "id": "alerts_tab_updates", "key": "alerts.tab.updates" }, { "id": "alerts_tab_settings", "key": "alerts.tab.settings" }] }]
+    ],
+    "order": [
+      [{ "kind": "nav", "id": "order_nav", "key": "order.nav" }],
+      [{ "kind": "title", "id": "order_title", "key": "order.title" }],
+      [{ "kind": "subtitle", "id": "order_subtitle", "key": "order.subtitle" }],
+      [{ "kind": "button", "id": "order_coupon", "key": "order.coupon" }, { "kind": "button", "id": "order_address", "key": "order.address" }],
+      [{ "kind": "chip", "id": "order_chip_express", "key": "order.chip.express" }, { "kind": "chip", "id": "order_chip_standard", "key": "order.chip.standard" }, { "kind": "chip", "id": "order_chip_pickup", "key": "order.chip.pickup" }],
+      [{ "kind": "button", "id": "order_edit", "key": "order.edit" }, { "kind": "button", "id": "order_delete", "key": "order.delete" }, { "kind": "button", "id": "order_gift", "key": "order.gift" }, { "kind": "button", "id": "order_later", "key": "order.later" }],
+      [{ "kind": "button", "id": "order_place", "key": "order.place" }],
+      [{ "kind": "segment", "id": "order_seg", "items": [{ "id": "order_seg_card", "key": "order.seg.card" }, { "id": "order_seg_wallet", "key": "order.seg.wallet" }, { "id": "order_seg_bank", "key": "order.seg.bank" }] }],
+      [{ "kind": "tabs", "id": "order_tabs", "items": [{ "id": "order_tab_shop", "key": "order.tab.shop" }, { "id": "order_tab_cart", "key": "order.tab.cart" }, { "id": "order_tab_orders", "key": "order.tab.orders" }, { "id": "order_tab_help", "key": "order.tab.help" }] }]
+    ],
+    "account": [
+      [{ "kind": "nav", "id": "account_nav", "key": "account.nav" }],
+      [{ "kind": "title", "id": "account_title", "key": "account.title" }],
+      [{ "kind": "subtitle", "id": "account_subtitle", "key": "account.subtitle" }],
+      [{ "kind": "button", "id": "account_signup", "key": "account.signup" }, { "kind": "button", "id": "account_email", "key": "account.email" }],
+      [{ "kind": "button", "id": "account_code", "key": "account.code" }, { "kind": "button", "id": "account_try", "key": "account.try" }],
+      [{ "kind": "button", "id": "account_full", "key": "account.full" }, { "kind": "button", "id": "account_rate", "key": "account.rate" }],
+      [{ "kind": "button", "id": "account_sync", "key": "account.sync" }, { "kind": "button", "id": "account_link", "key": "account.link" }],
+      [{ "kind": "chip", "id": "account_chip_new", "key": "account.chip.new" }, { "kind": "chip", "id": "account_chip_top", "key": "account.chip.top" }, { "kind": "chip", "id": "account_chip_sale", "key": "account.chip.sale" }],
+      [{ "kind": "segment", "id": "account_seg", "items": [{ "id": "account_seg_day", "key": "account.seg.day" }, { "id": "account_seg_week", "key": "account.seg.week" }, { "id": "account_seg_month", "key": "account.seg.month" }] }],
+      [{ "kind": "tabs", "id": "account_tabs", "items": [{ "id": "account_tab_lists", "key": "account.tab.lists" }, { "id": "account_tab_shared", "key": "account.tab.shared" }, { "id": "account_tab_me", "key": "account.tab.me" }] }]
+    ]
+  }
+}

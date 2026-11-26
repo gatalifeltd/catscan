@@ -1,0 +1,74 @@
+{
+ "todo": "073",
+ "note": "Images stay in datasets/ (gitignored) or a temp dir. Counts are the screens bench/safe-area.js read for results/safe-area.json; images_sha256 covers the sorted per-image sha256 list of the folder's PNGs. Committed results name a real screen only by a hash of its path inside its set (D34).",
+ "profile_table": "2026-11-22",
+ "synthetic": {
+  "generator": "bench/safe-area/generate.swift",
+  "plan": "bench/safe-area.js (seed 73): ink 1, 2, 4, 8, 16, 24 or 32 px past the zone outline (D33; the home indicator 1 to 24 px, since 32 reaches the screen edge), or 2, 4 or 8 px short of it; even screen numbers dev, odd held out",
+  "output": "a temp dir (node bench/safe-area.js generates it; --keep <dir> keeps it)",
+  "images": 726,
+  "score_digest": "57052e8ce4b0bc32",
+  "rendered_on": "macOS 27.2.1 (26B131), Apple M5",
+  "profiles": [
+   "iphone-17-pro",
+   "iphone-14",
+   "ipad-pro-13-inch-m5",
+   "iphone-se-3rd-generation",
+   "iphone-12",
+   "iphone-13",
+   "pixel-9",
+   "pixel-9-pro-xl"
+  ]
+ },
+ "rendered": {
+  "script": "bench/safe-area/rendered.mjs",
+  "probe": "bench/devices/probe-ios",
+  "devices": [
+   "iphone-17-pro",
+   "iphone-14",
+   "ipad-pro-13-inch-m5"
+  ],
+  "orientations": [
+   "portrait",
+   "landscape-left",
+   "landscape-right"
+  ],
+  "images": 54,
+  "output": "a temp dir (--keep <dir> keeps it); results/safe-area-rendered.json"
+ },
+ "real": {
+  "folders": [
+   {
+    "path": "datasets/truncation",
+    "images": 343,
+    "images_sha256": "47d0be2f24070fdcaf41c322e8ff57e5258524743c8de5ea37dcfecde40a8ef5"
+   },
+   {
+    "path": "datasets/truncation-extra",
+    "images": 293,
+    "images_sha256": "877d70bacb2310f53dfaebe397ce47098b2688bd53461df56d80902ba1d80b5c"
+   },
+   {
+    "path": "datasets/d1",
+    "images": 259,
+    "images_sha256": "c52c8f9e43c6b66a757eeb5bee861f6ce8093d2f6f18570db6ebec46fe9a4dd6"
+   },
+   {
+    "path": "datasets/truncation-android",
+    "images": 192,
+    "images_sha256": "0c94c6e227b168b542a007bacb0bbb9e31263b9d5e991da01fe45a7c52715f67",
+    "profile": "pixel-7"
+   },
+   {
+    "path": "datasets/truncation-android-extra",
+    "images": 144,
+    "images_sha256": "683bed7818892076f632004af73498600f3d847c2f97a27cfd5cc89747c64041",
+    "profile": "pixel-7"
+   }
+  ],
+  "images": 1231,
+  "matched": 696,
+  "with_boxes": 684,
+  "android": "1080x2400 lab screens from an unrecorded lab AVD, run with pixel-7 (D42); datasets/d2 (store and e2e screens of unknown devices) is not counted (D10)"
+ }
+}

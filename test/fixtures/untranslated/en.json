@@ -1,0 +1,15 @@
+{
+  "home": { "title": "Welcome back", "cta": "Start your free trial" },
+  "settings": { "title": "Settings", "privacy": "Privacy", "notifications": "Notifications", "language": "Language", "logout": "Sign out" },
+  "paywall": { "cta_title": "Unlock everything", "restore": "Restore purchases" },
+  "items_one": "{{count}} item",
+  "items_other": "{{count}} items",
+  "download": "Download",
+  "download_start": "Start download",
+  "email": "Email",
+  "video": "Video",
+  "ok": "OK",
+  "brand": "Catscan Pro",
+  "delete_account": "Delete account",
+  "greeting": "Hello, {{name}}"
+}

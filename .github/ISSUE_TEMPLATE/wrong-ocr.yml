@@ -1,0 +1,37 @@
+name: Wrong OCR
+description: catscan read text that is not on the screen, or missed text that is.
+labels: [ocr]
+body:
+  - type: textarea
+    id: read
+    attributes:
+      label: What catscan read
+      description: The `catscan read --json` output for the image, or the lines that are wrong.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: The text on the screen
+    validations:
+      required: true
+  - type: input
+    id: locale
+    attributes:
+      label: Language or locale
+      placeholder: de, ja, pt-BR
+    validations:
+      required: true
+  - type: textarea
+    id: image
+    attributes:
+      label: Image
+      description: A synthetic or shareable image that shows the problem. Never attach a screenshot you are not allowed to publish.
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `npx -y @catscan/cli doctor --json`
+      render: json

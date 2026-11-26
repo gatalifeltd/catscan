@@ -1,0 +1,253 @@
+{
+  "locale": "lt",
+  "icu_locale": "lt",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Nigerija",
+      "kind": "region"
+    },
+    {
+      "text": "Kroatija",
+      "kind": "region"
+    },
+    {
+      "text": "Tailandas",
+      "kind": "region"
+    },
+    {
+      "text": "Jungtinės Valstijos",
+      "kind": "region"
+    },
+    {
+      "text": "Latvija",
+      "kind": "region"
+    },
+    {
+      "text": "Serbija",
+      "kind": "region"
+    },
+    {
+      "text": "Filipinai",
+      "kind": "region"
+    },
+    {
+      "text": "Peru",
+      "kind": "region"
+    },
+    {
+      "text": "Ispanija",
+      "kind": "region"
+    },
+    {
+      "text": "Vengrija",
+      "kind": "region"
+    },
+    {
+      "text": "Italija",
+      "kind": "region"
+    },
+    {
+      "text": "Suomija",
+      "kind": "region"
+    },
+    {
+      "text": "čekų",
+      "kind": "language"
+    },
+    {
+      "text": "kroatų",
+      "kind": "language"
+    },
+    {
+      "text": "olandų",
+      "kind": "language"
+    },
+    {
+      "text": "rumunų",
+      "kind": "language"
+    },
+    {
+      "text": "hebrajų",
+      "kind": "language"
+    },
+    {
+      "text": "norvegų",
+      "kind": "language"
+    },
+    {
+      "text": "arabų",
+      "kind": "language"
+    },
+    {
+      "text": "persų",
+      "kind": "language"
+    },
+    {
+      "text": "turkų",
+      "kind": "language"
+    },
+    {
+      "text": "švedų",
+      "kind": "language"
+    },
+    {
+      "text": "Turkijos lira",
+      "kind": "currency"
+    },
+    {
+      "text": "Danijos krona",
+      "kind": "currency"
+    },
+    {
+      "text": "Šveicarijos frankas",
+      "kind": "currency"
+    },
+    {
+      "text": "Vietnamo dongas",
+      "kind": "currency"
+    },
+    {
+      "text": "Švedijos krona",
+      "kind": "currency"
+    },
+    {
+      "text": "Vengrijos forintas",
+      "kind": "currency"
+    },
+    {
+      "text": "rugsėjis",
+      "kind": "month"
+    },
+    {
+      "text": "spalis",
+      "kind": "month"
+    },
+    {
+      "text": "sausis",
+      "kind": "month"
+    },
+    {
+      "text": "lapkritis",
+      "kind": "month"
+    },
+    {
+      "text": "pirmadienis",
+      "kind": "weekday"
+    },
+    {
+      "text": "šeštadienis",
+      "kind": "weekday"
+    },
+    {
+      "text": "penktadienis",
+      "kind": "weekday"
+    },
+    {
+      "text": "diena",
+      "kind": "field"
+    },
+    {
+      "text": "mėnuo",
+      "kind": "field"
+    },
+    {
+      "text": "laiko juosta",
+      "kind": "field"
+    },
+    {
+      "text": "minutė",
+      "kind": "field"
+    },
+    {
+      "text": "valanda",
+      "kind": "field"
+    },
+    {
+      "text": "po 3 dienų",
+      "kind": "relative"
+    },
+    {
+      "text": "prieš 5 metus",
+      "kind": "relative"
+    },
+    {
+      "text": "prieš 5 sekundes",
+      "kind": "relative"
+    },
+    {
+      "text": "prieš 1 sekundę",
+      "kind": "relative"
+    },
+    {
+      "text": "vakar",
+      "kind": "relative"
+    },
+    {
+      "text": "prieš 1 minutę",
+      "kind": "relative"
+    },
+    {
+      "text": "po 3 mėnesių",
+      "kind": "relative"
+    },
+    {
+      "text": "prieš 5 minutes",
+      "kind": "relative"
+    },
+    {
+      "text": "kitą mėnesį",
+      "kind": "relative"
+    },
+    {
+      "text": "po 1 valandos",
+      "kind": "relative"
+    },
+    {
+      "text": "2 mėnesiai",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilogramai",
+      "kind": "unit"
+    },
+    {
+      "text": "2 litrai",
+      "kind": "unit"
+    },
+    {
+      "text": "5 valandos",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometrai per valandą",
+      "kind": "unit"
+    },
+    {
+      "text": "5 procentai",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litrai",
+      "kind": "unit"
+    },
+    {
+      "text": "5 mėnesiai",
+      "kind": "unit"
+    },
+    {
+      "text": "gegužė",
+      "kind": "month"
+    },
+    {
+      "text": "2 savaitės",
+      "kind": "unit"
+    }
+  ]
+}

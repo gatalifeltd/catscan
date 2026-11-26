@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 GATALIFE LTD
+# Ends on the settings screen, so 'maestro hierarchy' can dump it after 'maestro test' exits.
+# Tagged so 'maestro test flows/ --exclude-tags boxes' leaves it out of the screenshot run.
+appId: ${APP_ID}
+tags:
+  - boxes
+---
+- launchApp:
+    arguments: { AppleLanguages: "(${LOCALE})", AppleLocale: "${LOCALE}" }   # iOS; Android sets the locale before the run
+- tapOn: { id: "next" }
+- extendedWaitUntil:
+    visible: { id: "play" }
+    timeout: 15000

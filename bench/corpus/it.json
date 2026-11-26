@@ -1,0 +1,253 @@
+{
+  "locale": "it",
+  "icu_locale": "it",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Indonesia",
+      "kind": "region"
+    },
+    {
+      "text": "Iran",
+      "kind": "region"
+    },
+    {
+      "text": "Filippine",
+      "kind": "region"
+    },
+    {
+      "text": "Australia",
+      "kind": "region"
+    },
+    {
+      "text": "Lituania",
+      "kind": "region"
+    },
+    {
+      "text": "Israele",
+      "kind": "region"
+    },
+    {
+      "text": "Ungheria",
+      "kind": "region"
+    },
+    {
+      "text": "Stati Uniti",
+      "kind": "region"
+    },
+    {
+      "text": "Brasile",
+      "kind": "region"
+    },
+    {
+      "text": "Norvegia",
+      "kind": "region"
+    },
+    {
+      "text": "Romania",
+      "kind": "region"
+    },
+    {
+      "text": "Portogallo",
+      "kind": "region"
+    },
+    {
+      "text": "ebraico",
+      "kind": "language"
+    },
+    {
+      "text": "greco",
+      "kind": "language"
+    },
+    {
+      "text": "inglese",
+      "kind": "language"
+    },
+    {
+      "text": "olandese",
+      "kind": "language"
+    },
+    {
+      "text": "armeno",
+      "kind": "language"
+    },
+    {
+      "text": "bulgaro",
+      "kind": "language"
+    },
+    {
+      "text": "arabo",
+      "kind": "language"
+    },
+    {
+      "text": "persiano",
+      "kind": "language"
+    },
+    {
+      "text": "vietnamita",
+      "kind": "language"
+    },
+    {
+      "text": "italiano",
+      "kind": "language"
+    },
+    {
+      "text": "yen giapponese",
+      "kind": "currency"
+    },
+    {
+      "text": "yuan cinese",
+      "kind": "currency"
+    },
+    {
+      "text": "dollaro canadese",
+      "kind": "currency"
+    },
+    {
+      "text": "peso messicano",
+      "kind": "currency"
+    },
+    {
+      "text": "fiorino ungherese",
+      "kind": "currency"
+    },
+    {
+      "text": "corona norvegese",
+      "kind": "currency"
+    },
+    {
+      "text": "giugno",
+      "kind": "month"
+    },
+    {
+      "text": "dicembre",
+      "kind": "month"
+    },
+    {
+      "text": "ottobre",
+      "kind": "month"
+    },
+    {
+      "text": "gennaio",
+      "kind": "month"
+    },
+    {
+      "text": "giovedì",
+      "kind": "weekday"
+    },
+    {
+      "text": "venerdì",
+      "kind": "weekday"
+    },
+    {
+      "text": "sabato",
+      "kind": "weekday"
+    },
+    {
+      "text": "anno",
+      "kind": "field"
+    },
+    {
+      "text": "minuto",
+      "kind": "field"
+    },
+    {
+      "text": "AM/PM",
+      "kind": "field"
+    },
+    {
+      "text": "mese",
+      "kind": "field"
+    },
+    {
+      "text": "giorno della settimana",
+      "kind": "field"
+    },
+    {
+      "text": "tra 3 mesi",
+      "kind": "relative"
+    },
+    {
+      "text": "trimestre scorso",
+      "kind": "relative"
+    },
+    {
+      "text": "5 minuti fa",
+      "kind": "relative"
+    },
+    {
+      "text": "tra 3 settimane",
+      "kind": "relative"
+    },
+    {
+      "text": "trimestre prossimo",
+      "kind": "relative"
+    },
+    {
+      "text": "domani",
+      "kind": "relative"
+    },
+    {
+      "text": "tra 3 secondi",
+      "kind": "relative"
+    },
+    {
+      "text": "tra 3 minuti",
+      "kind": "relative"
+    },
+    {
+      "text": "5 ore fa",
+      "kind": "relative"
+    },
+    {
+      "text": "ieri",
+      "kind": "relative"
+    },
+    {
+      "text": "5 litri",
+      "kind": "unit"
+    },
+    {
+      "text": "2 percento",
+      "kind": "unit"
+    },
+    {
+      "text": "5 gradi Celsius",
+      "kind": "unit"
+    },
+    {
+      "text": "2 settimane",
+      "kind": "unit"
+    },
+    {
+      "text": "2 chilogrammi",
+      "kind": "unit"
+    },
+    {
+      "text": "5 percento",
+      "kind": "unit"
+    },
+    {
+      "text": "5 chilogrammi",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metri",
+      "kind": "unit"
+    },
+    {
+      "text": "lunedì 3 marzo 2025",
+      "kind": "date"
+    },
+    {
+      "text": "Taiwan",
+      "kind": "region"
+    }
+  ]
+}

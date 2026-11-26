@@ -1,0 +1,12 @@
+<!doctype html>
+<!-- TODO-088 fixture: one shop screen in en and de (?lang=de), DOM text so the page has element boxes. -->
+<html><head><meta charset="utf-8"><title>shop</title>
+<style>body{margin:0;background:#fff;font:28px Helvetica,Arial,sans-serif;color:#111}main{padding:40px;width:560px}
+h1{font-size:44px;margin:0 0 24px}p{margin:0 0 18px}button{font:inherit;width:220px;padding:10px;background:#1a5fd0;color:#fff;border:0}</style></head>
+<body><main><h1 id="title"></h1><p id="price"></p><p id="date"></p><button id="buy"></button></main>
+<script>
+const de = new URLSearchParams(location.search).get("lang") === "de";
+const t = de ? { title: "Laden", price: "Preis: 4,99 €", date: "Angebot bis 31.12.2026", buy: "Jetzt kaufen und sparen" }
+  : { title: "Shop", price: "Price: $4.99", date: "Offer ends 12/31/2026", buy: "Buy now" };
+for (const [k, v] of Object.entries(t)) document.getElementById(k).textContent = v;
+</script></body></html>

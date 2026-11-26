@@ -1,0 +1,253 @@
+{
+  "locale": "sq",
+  "icu_locale": "sq",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v26.13.0",
+  "icu": "79.1",
+  "cldr": "49.0",
+  "unicode": "18.0",
+  "strings": [
+    {
+      "text": "Holandë",
+      "kind": "region"
+    },
+    {
+      "text": "Gjermani",
+      "kind": "region"
+    },
+    {
+      "text": "Afrika e Jugut",
+      "kind": "region"
+    },
+    {
+      "text": "Norvegji",
+      "kind": "region"
+    },
+    {
+      "text": "Kenia",
+      "kind": "region"
+    },
+    {
+      "text": "Estoni",
+      "kind": "region"
+    },
+    {
+      "text": "Irlandë",
+      "kind": "region"
+    },
+    {
+      "text": "Ukrainë",
+      "kind": "region"
+    },
+    {
+      "text": "Japoni",
+      "kind": "region"
+    },
+    {
+      "text": "Slloveni",
+      "kind": "region"
+    },
+    {
+      "text": "Indonezi",
+      "kind": "region"
+    },
+    {
+      "text": "Armeni",
+      "kind": "region"
+    },
+    {
+      "text": "tajlandisht",
+      "kind": "language"
+    },
+    {
+      "text": "italisht",
+      "kind": "language"
+    },
+    {
+      "text": "koreanisht",
+      "kind": "language"
+    },
+    {
+      "text": "rumanisht",
+      "kind": "language"
+    },
+    {
+      "text": "greqisht",
+      "kind": "language"
+    },
+    {
+      "text": "anglisht",
+      "kind": "language"
+    },
+    {
+      "text": "malajisht",
+      "kind": "language"
+    },
+    {
+      "text": "çekisht",
+      "kind": "language"
+    },
+    {
+      "text": "gjeorgjisht",
+      "kind": "language"
+    },
+    {
+      "text": "bullgarisht",
+      "kind": "language"
+    },
+    {
+      "text": "Uoni koreano-jugor",
+      "kind": "currency"
+    },
+    {
+      "text": "Dollari australian",
+      "kind": "currency"
+    },
+    {
+      "text": "Donga vietnameze",
+      "kind": "currency"
+    },
+    {
+      "text": "Sterlina britanike",
+      "kind": "currency"
+    },
+    {
+      "text": "Korona suedeze",
+      "kind": "currency"
+    },
+    {
+      "text": "Korona daneze",
+      "kind": "currency"
+    },
+    {
+      "text": "qershor",
+      "kind": "month"
+    },
+    {
+      "text": "shtator",
+      "kind": "month"
+    },
+    {
+      "text": "shkurt",
+      "kind": "month"
+    },
+    {
+      "text": "nëntor",
+      "kind": "month"
+    },
+    {
+      "text": "e enjte",
+      "kind": "weekday"
+    },
+    {
+      "text": "e mërkurë",
+      "kind": "weekday"
+    },
+    {
+      "text": "e martë",
+      "kind": "weekday"
+    },
+    {
+      "text": "muaj",
+      "kind": "field"
+    },
+    {
+      "text": "tremujor",
+      "kind": "field"
+    },
+    {
+      "text": "ditë e javës",
+      "kind": "field"
+    },
+    {
+      "text": "brezi orar",
+      "kind": "field"
+    },
+    {
+      "text": "minutë",
+      "kind": "field"
+    },
+    {
+      "text": "pas 3 orësh",
+      "kind": "relative"
+    },
+    {
+      "text": "nesër",
+      "kind": "relative"
+    },
+    {
+      "text": "5 javë më parë",
+      "kind": "relative"
+    },
+    {
+      "text": "5 sekonda më parë",
+      "kind": "relative"
+    },
+    {
+      "text": "pas 3 ditësh",
+      "kind": "relative"
+    },
+    {
+      "text": "5 minuta më parë",
+      "kind": "relative"
+    },
+    {
+      "text": "5 vjet më parë",
+      "kind": "relative"
+    },
+    {
+      "text": "5 orë më parë",
+      "kind": "relative"
+    },
+    {
+      "text": "pas 3 sekondash",
+      "kind": "relative"
+    },
+    {
+      "text": "pas 1 ore",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilogramë",
+      "kind": "unit"
+    },
+    {
+      "text": "2 orë",
+      "kind": "unit"
+    },
+    {
+      "text": "5 kilometra në orë",
+      "kind": "unit"
+    },
+    {
+      "text": "2 minuta",
+      "kind": "unit"
+    },
+    {
+      "text": "5 përqind",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metra",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litra",
+      "kind": "unit"
+    },
+    {
+      "text": "5 megabajt",
+      "kind": "unit"
+    },
+    {
+      "text": "e premte, 19 korrik 2024",
+      "kind": "date"
+    },
+    {
+      "text": "e hënë, 3 mars 2025",
+      "kind": "date"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "spec": 14,
+  "script": "scripts/e2e-maestro.sh",
+  "started_at": "2026-11-22T19:57:14Z",
+  "platforms": {
+    "ios": {
+      "wall_s": {
+        "build": 12,
+        "clean_run": 179,
+        "large_run": 141,
+        "drop_run": 74,
+        "fault_run": 94,
+        "total": 507
+      },
+      "device": {
+        "udid": "00EC33A8-26F0-48FC-9CAC-F828C26F62F3",
+        "runtime": "iOS 27.2 (24B8117)",
+        "device_type": "iPhone 17"
+      },
+      "text_size_at_start": "large",
+      "large": {
+        "exit": 1,
+        "failing": {
+          "check-de": [
+            "settings"
+          ],
+          "untranslated-de": [],
+          "truncated-de": [],
+          "check-fr": [],
+          "untranslated-fr": [],
+          "truncated-fr": []
+        }
+      }
+    },
+    "android": {
+      "wall_s": {
+        "build": 2,
+        "clean_run": 63,
+        "large_run": 58,
+        "drop_run": 25,
+        "fault_run": 60,
+        "total": 223
+      },
+      "device": {
+        "udid": "emulator-5600",
+        "api": 36,
+        "image": "system-images;android-36.1;google_apis_playstore;arm64-v8a",
+        "avd": "catscan-maestro-e2e"
+      },
+      "text_size_at_start": "1.0",
+      "large": {
+        "exit": 1,
+        "failing": {
+          "check-de": [],
+          "untranslated-de": [],
+          "truncated-de": [],
+          "check-fr": [],
+          "untranslated-fr": [],
+          "truncated-fr": []
+        }
+      }
+    }
+  },
+  "versions": {
+    "catscan": "0.54.0",
+    "maestro": "2.6.0",
+    "xcode": "Xcode 27.2 Build version 27B52",
+    "macos": "27.2.1 (26B131)",
+    "gradle": "9.9.1",
+    "agp": "9.5.1",
+    "kotlin": "2.4.21",
+    "compose_bom": "2026.09.00",
+    "compile_sdk": "37",
+    "java": "openjdk version \"17.0.19\" 2026-04-21 LTS",
+    "tesseract": "tesseract 5.5.4"
+  },
+  "vision_timeout_s": 180,
+  "load_average_start": [
+    22,
+    16,
+    18
+  ],
+  "combined": {
+    "command": "catscan report out/*.json --layout '{screen}.{locale}' --expect-devices ios,android --expect-text-sizes default,large --expect-locales de,fr --expect-screens screens.txt --out out/all.html",
+    "exit": 1,
+    "coverage": "received 24 of 24 expected cells (3 screens x 2 locales x 2 devices x 2 text sizes), 0 missing, 0 duplicate",
+    "large_text_badges": [
+      "ios/large/de/settings"
+    ]
+  },
+  "wall_s": 734,
+  "load_average_end": [
+    4,
+    36,
+    43
+  ],
+  "failures": [
+    "android clean: run-all.sh exits 0 (got 1)",
+    "android clean: check de passes every screen (failing: onboarding)",
+    "android: onboarding.de.png shows \"Willkommen\" (locale switch)"
+  ],
+  "pass": false,
+  "work_dir": "(temporary)"
+}

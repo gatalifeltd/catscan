@@ -1,0 +1,253 @@
+{
+  "locale": "es",
+  "icu_locale": "es",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Hungría",
+      "kind": "region"
+    },
+    {
+      "text": "Argentina",
+      "kind": "region"
+    },
+    {
+      "text": "Egipto",
+      "kind": "region"
+    },
+    {
+      "text": "Suiza",
+      "kind": "region"
+    },
+    {
+      "text": "Estonia",
+      "kind": "region"
+    },
+    {
+      "text": "Austria",
+      "kind": "region"
+    },
+    {
+      "text": "Irán",
+      "kind": "region"
+    },
+    {
+      "text": "Francia",
+      "kind": "region"
+    },
+    {
+      "text": "Israel",
+      "kind": "region"
+    },
+    {
+      "text": "Japón",
+      "kind": "region"
+    },
+    {
+      "text": "Taiwán",
+      "kind": "region"
+    },
+    {
+      "text": "Rusia",
+      "kind": "region"
+    },
+    {
+      "text": "noruego",
+      "kind": "language"
+    },
+    {
+      "text": "indonesio",
+      "kind": "language"
+    },
+    {
+      "text": "alemán",
+      "kind": "language"
+    },
+    {
+      "text": "danés",
+      "kind": "language"
+    },
+    {
+      "text": "árabe",
+      "kind": "language"
+    },
+    {
+      "text": "español",
+      "kind": "language"
+    },
+    {
+      "text": "sueco",
+      "kind": "language"
+    },
+    {
+      "text": "portugués",
+      "kind": "language"
+    },
+    {
+      "text": "griego",
+      "kind": "language"
+    },
+    {
+      "text": "chino",
+      "kind": "language"
+    },
+    {
+      "text": "dólar estadounidense",
+      "kind": "currency"
+    },
+    {
+      "text": "real brasileño",
+      "kind": "currency"
+    },
+    {
+      "text": "won surcoreano",
+      "kind": "currency"
+    },
+    {
+      "text": "esloti polaco",
+      "kind": "currency"
+    },
+    {
+      "text": "rupia india",
+      "kind": "currency"
+    },
+    {
+      "text": "corona sueca",
+      "kind": "currency"
+    },
+    {
+      "text": "diciembre",
+      "kind": "month"
+    },
+    {
+      "text": "julio",
+      "kind": "month"
+    },
+    {
+      "text": "septiembre",
+      "kind": "month"
+    },
+    {
+      "text": "mayo",
+      "kind": "month"
+    },
+    {
+      "text": "jueves",
+      "kind": "weekday"
+    },
+    {
+      "text": "miércoles",
+      "kind": "weekday"
+    },
+    {
+      "text": "domingo",
+      "kind": "weekday"
+    },
+    {
+      "text": "zona horaria",
+      "kind": "field"
+    },
+    {
+      "text": "minuto",
+      "kind": "field"
+    },
+    {
+      "text": "a. m./p. m.",
+      "kind": "field"
+    },
+    {
+      "text": "día de la semana",
+      "kind": "field"
+    },
+    {
+      "text": "segundo",
+      "kind": "field"
+    },
+    {
+      "text": "hace 1 hora",
+      "kind": "relative"
+    },
+    {
+      "text": "mañana",
+      "kind": "relative"
+    },
+    {
+      "text": "el mes pasado",
+      "kind": "relative"
+    },
+    {
+      "text": "dentro de 3 horas",
+      "kind": "relative"
+    },
+    {
+      "text": "ayer",
+      "kind": "relative"
+    },
+    {
+      "text": "dentro de 3 semanas",
+      "kind": "relative"
+    },
+    {
+      "text": "el trimestre pasado",
+      "kind": "relative"
+    },
+    {
+      "text": "hace 5 horas",
+      "kind": "relative"
+    },
+    {
+      "text": "la próxima semana",
+      "kind": "relative"
+    },
+    {
+      "text": "el próximo mes",
+      "kind": "relative"
+    },
+    {
+      "text": "5 metros",
+      "kind": "unit"
+    },
+    {
+      "text": "5 semanas",
+      "kind": "unit"
+    },
+    {
+      "text": "2 megabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metros",
+      "kind": "unit"
+    },
+    {
+      "text": "2 semanas",
+      "kind": "unit"
+    },
+    {
+      "text": "5 por ciento",
+      "kind": "unit"
+    },
+    {
+      "text": "2 gigabytes",
+      "kind": "unit"
+    },
+    {
+      "text": "2 horas",
+      "kind": "unit"
+    },
+    {
+      "text": "lunes, 3 de marzo de 2025",
+      "kind": "date"
+    },
+    {
+      "text": "viernes, 6 de noviembre de 2026",
+      "kind": "date"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "spec": "07",
+  "script": "bench/video.js",
+  "take": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "duration": 6,
+    "codec": "h264",
+    "labels": 12,
+    "every": 0.5
+  },
+  "gate": {
+    "ms_per_frame": 100,
+    "recall": 1
+  },
+  "frames": 12,
+  "ms_per_frame": {
+    "median": 65.4,
+    "runs": [
+      62.8,
+      63.2,
+      65.4,
+      67.1,
+      68.8
+    ]
+  },
+  "recall": 1,
+  "missed": [],
+  "pass": true,
+  "tools": {
+    "catscan": "0.8.0",
+    "macos": "27.2 (26B123)",
+    "vision_revision": 3,
+    "chip": "Apple M5",
+    "host_class": "physical",
+    "node": "v24.18.0",
+    "generator": "test/fixtures/video.swift"
+  }
+}

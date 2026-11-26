@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/gatalifeltd/catscan/core/schema/device-profile.schema.json",
+  "title": "catscan device profile",
+  "description": "A device's hidden screen zones in portrait screenshot pixels, origin top left. Shipped profiles are measured by bench/devices/*-profiles.mjs; docs/recipes/device-profile.md writes one for any other device. fit --device-profile <file> reads it.",
+  "type": "object",
+  "required": ["device_profile", "id", "screen", "zones"],
+  "properties": {
+    "device_profile": { "const": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "name": { "type": "string" },
+    "platform": { "enum": ["ios", "ipados", "android"] },
+    "screen": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": { "type": "integer", "minimum": 1, "description": "Portrait width in pixels (at most the height)." },
+        "height": { "type": "integer", "minimum": 1 },
+        "scale": { "type": "number", "description": "Pixels per point (iOS) or per dp (Android)." }
+      }
+    },
+    "measured": {
+      "type": "object",
+      "description": "Where the numbers came from: the Xcode or SDK build, the date and the script.",
+      "properties": { "tool": { "type": "string" }, "date": { "type": "string" }, "script": { "type": "string" } }
+    },
+    "zones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["kind"],
+        "properties": {
+          "kind": { "enum": ["cutout", "corner", "home-indicator"] },
+          "runs": { "type": "array", "items": { "type": "array", "minItems": 3, "maxItems": 3, "items": { "type": "integer", "minimum": 0 } }, "description": "cutout and corner: hidden pixel runs [y, x0, x1), one or more per row." },
+          "box": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "integer", "minimum": 0 }, "description": "home-indicator: [x, y, width, height]." }
+        }
+      }
+    },
+    "landscape": {
+      "type": "object",
+      "properties": { "home-indicator": { "type": "object", "required": ["box"], "properties": { "box": { "type": "array", "minItems": 4, "maxItems": 4, "items": { "type": "integer", "minimum": 0 } } } } },
+      "description": "The home indicator's box in landscape pixels (it moves when the device turns); required with a home-indicator zone."
+    }
+  },
+  "if": { "properties": { "zones": { "contains": { "properties": { "kind": { "const": "home-indicator" } } } } } },
+  "then": { "required": ["landscape"], "properties": { "landscape": { "required": ["home-indicator"] } } }
+}

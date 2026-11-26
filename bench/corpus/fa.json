@@ -1,0 +1,253 @@
+{
+  "locale": "fa",
+  "icu_locale": "fa",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "ارمنستان",
+      "kind": "region"
+    },
+    {
+      "text": "لوکزامبورگ",
+      "kind": "region"
+    },
+    {
+      "text": "پاکستان",
+      "kind": "region"
+    },
+    {
+      "text": "امارات متحدهٔ عربی",
+      "kind": "region"
+    },
+    {
+      "text": "نیجریه",
+      "kind": "region"
+    },
+    {
+      "text": "اسلوونی",
+      "kind": "region"
+    },
+    {
+      "text": "مالزی",
+      "kind": "region"
+    },
+    {
+      "text": "فرانسه",
+      "kind": "region"
+    },
+    {
+      "text": "شیلی",
+      "kind": "region"
+    },
+    {
+      "text": "صربستان",
+      "kind": "region"
+    },
+    {
+      "text": "فیلیپین",
+      "kind": "region"
+    },
+    {
+      "text": "اندونزی",
+      "kind": "region"
+    },
+    {
+      "text": "هلندی",
+      "kind": "language"
+    },
+    {
+      "text": "تایلندی",
+      "kind": "language"
+    },
+    {
+      "text": "چینی",
+      "kind": "language"
+    },
+    {
+      "text": "کروات",
+      "kind": "language"
+    },
+    {
+      "text": "اوکراینی",
+      "kind": "language"
+    },
+    {
+      "text": "اسپانیایی",
+      "kind": "language"
+    },
+    {
+      "text": "مراتی",
+      "kind": "language"
+    },
+    {
+      "text": "رومانیایی",
+      "kind": "language"
+    },
+    {
+      "text": "ژاپنی",
+      "kind": "language"
+    },
+    {
+      "text": "روسی",
+      "kind": "language"
+    },
+    {
+      "text": "کورونای جمهوری چک",
+      "kind": "currency"
+    },
+    {
+      "text": "روپیهٔ هند",
+      "kind": "currency"
+    },
+    {
+      "text": "یوآن چین",
+      "kind": "currency"
+    },
+    {
+      "text": "کرون دانمارک",
+      "kind": "currency"
+    },
+    {
+      "text": "پزوی مکزیک",
+      "kind": "currency"
+    },
+    {
+      "text": "دلار استرالیا",
+      "kind": "currency"
+    },
+    {
+      "text": "اسفند",
+      "kind": "month"
+    },
+    {
+      "text": "آبان",
+      "kind": "month"
+    },
+    {
+      "text": "فروردین",
+      "kind": "month"
+    },
+    {
+      "text": "بهمن",
+      "kind": "month"
+    },
+    {
+      "text": "چهارشنبه",
+      "kind": "weekday"
+    },
+    {
+      "text": "یکشنبه",
+      "kind": "weekday"
+    },
+    {
+      "text": "سه‌شنبه",
+      "kind": "weekday"
+    },
+    {
+      "text": "ق.ظ/ب.ظ",
+      "kind": "field"
+    },
+    {
+      "text": "روز هفته",
+      "kind": "field"
+    },
+    {
+      "text": "دوره",
+      "kind": "field"
+    },
+    {
+      "text": "دقیقه",
+      "kind": "field"
+    },
+    {
+      "text": "سه‌ماهه",
+      "kind": "field"
+    },
+    {
+      "text": "۳ سال بعد",
+      "kind": "relative"
+    },
+    {
+      "text": "۵ ماه پیش",
+      "kind": "relative"
+    },
+    {
+      "text": "هفتهٔ آینده",
+      "kind": "relative"
+    },
+    {
+      "text": "۵ هفته پیش",
+      "kind": "relative"
+    },
+    {
+      "text": "۱ ثانیه پیش",
+      "kind": "relative"
+    },
+    {
+      "text": "۳ ساعت بعد",
+      "kind": "relative"
+    },
+    {
+      "text": "سال آینده",
+      "kind": "relative"
+    },
+    {
+      "text": "فردا",
+      "kind": "relative"
+    },
+    {
+      "text": "۵ روز پیش",
+      "kind": "relative"
+    },
+    {
+      "text": "۱ ثانیه بعد",
+      "kind": "relative"
+    },
+    {
+      "text": "۵ درصد",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ لیتر",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ درصد",
+      "kind": "unit"
+    },
+    {
+      "text": "۵ مگابایت",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ ساعت",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ درجهٔ سلسیوس",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ کیلوگرم",
+      "kind": "unit"
+    },
+    {
+      "text": "۲ مگابایت",
+      "kind": "unit"
+    },
+    {
+      "text": "۱۴۰۳ تیر ۲۹, جمعه",
+      "kind": "date"
+    },
+    {
+      "text": "ماه گذشته",
+      "kind": "relative"
+    }
+  ]
+}

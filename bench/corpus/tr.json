@@ -1,0 +1,253 @@
+{
+  "locale": "tr",
+  "icu_locale": "tr",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "Sırbistan",
+      "kind": "region"
+    },
+    {
+      "text": "Macaristan",
+      "kind": "region"
+    },
+    {
+      "text": "Arjantin",
+      "kind": "region"
+    },
+    {
+      "text": "Birleşik Arap Emirlikleri",
+      "kind": "region"
+    },
+    {
+      "text": "Estonya",
+      "kind": "region"
+    },
+    {
+      "text": "Finlandiya",
+      "kind": "region"
+    },
+    {
+      "text": "Birleşik Krallık",
+      "kind": "region"
+    },
+    {
+      "text": "İsveç",
+      "kind": "region"
+    },
+    {
+      "text": "Slovenya",
+      "kind": "region"
+    },
+    {
+      "text": "Slovakya",
+      "kind": "region"
+    },
+    {
+      "text": "Yeni Zelanda",
+      "kind": "region"
+    },
+    {
+      "text": "Gürcistan",
+      "kind": "region"
+    },
+    {
+      "text": "Malayca",
+      "kind": "language"
+    },
+    {
+      "text": "Felemenkçe",
+      "kind": "language"
+    },
+    {
+      "text": "Çekçe",
+      "kind": "language"
+    },
+    {
+      "text": "Çince",
+      "kind": "language"
+    },
+    {
+      "text": "Ermenice",
+      "kind": "language"
+    },
+    {
+      "text": "Arapça",
+      "kind": "language"
+    },
+    {
+      "text": "İngilizce",
+      "kind": "language"
+    },
+    {
+      "text": "İspanyolca",
+      "kind": "language"
+    },
+    {
+      "text": "Almanca",
+      "kind": "language"
+    },
+    {
+      "text": "Fransızca",
+      "kind": "language"
+    },
+    {
+      "text": "Endonezya rupisi",
+      "kind": "currency"
+    },
+    {
+      "text": "ABD doları",
+      "kind": "currency"
+    },
+    {
+      "text": "Japon yeni",
+      "kind": "currency"
+    },
+    {
+      "text": "Macar forinti",
+      "kind": "currency"
+    },
+    {
+      "text": "Norveç kronu",
+      "kind": "currency"
+    },
+    {
+      "text": "Danimarka kronu",
+      "kind": "currency"
+    },
+    {
+      "text": "Aralık",
+      "kind": "month"
+    },
+    {
+      "text": "Eylül",
+      "kind": "month"
+    },
+    {
+      "text": "Ekim",
+      "kind": "month"
+    },
+    {
+      "text": "Temmuz",
+      "kind": "month"
+    },
+    {
+      "text": "Çarşamba",
+      "kind": "weekday"
+    },
+    {
+      "text": "Pazar",
+      "kind": "weekday"
+    },
+    {
+      "text": "Cumartesi",
+      "kind": "weekday"
+    },
+    {
+      "text": "dakika",
+      "kind": "field"
+    },
+    {
+      "text": "hafta",
+      "kind": "field"
+    },
+    {
+      "text": "saat dilimi",
+      "kind": "field"
+    },
+    {
+      "text": "ÖÖ/ÖS",
+      "kind": "field"
+    },
+    {
+      "text": "saniye",
+      "kind": "field"
+    },
+    {
+      "text": "gelecek yıl",
+      "kind": "relative"
+    },
+    {
+      "text": "geçen çeyrek",
+      "kind": "relative"
+    },
+    {
+      "text": "geçen ay",
+      "kind": "relative"
+    },
+    {
+      "text": "1 saat önce",
+      "kind": "relative"
+    },
+    {
+      "text": "3 gün sonra",
+      "kind": "relative"
+    },
+    {
+      "text": "3 yıl sonra",
+      "kind": "relative"
+    },
+    {
+      "text": "gelecek ay",
+      "kind": "relative"
+    },
+    {
+      "text": "3 saat sonra",
+      "kind": "relative"
+    },
+    {
+      "text": "3 ay sonra",
+      "kind": "relative"
+    },
+    {
+      "text": "5 çeyrek önce",
+      "kind": "relative"
+    },
+    {
+      "text": "2 kilometre",
+      "kind": "unit"
+    },
+    {
+      "text": "5 saat",
+      "kind": "unit"
+    },
+    {
+      "text": "yüzde 5",
+      "kind": "unit"
+    },
+    {
+      "text": "5 santigrat derece",
+      "kind": "unit"
+    },
+    {
+      "text": "2 metre",
+      "kind": "unit"
+    },
+    {
+      "text": "2 kilogram",
+      "kind": "unit"
+    },
+    {
+      "text": "5 litre",
+      "kind": "unit"
+    },
+    {
+      "text": "5 ay",
+      "kind": "unit"
+    },
+    {
+      "text": "6 Kasım 2026 Cuma",
+      "kind": "date"
+    },
+    {
+      "text": "5 gün önce",
+      "kind": "relative"
+    }
+  ]
+}

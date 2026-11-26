@@ -1,0 +1,14 @@
+{
+  "home": { "title": "Willkommen zurück", "cta": "Kostenlos testen" },
+  "settings": { "title": "Einstellungen", "privacy": "Datenschutz", "notifications": "Mitteilungen", "language": "Sprache", "logout": "Abmelden" },
+  "paywall": { "cta_title": "Alles freischalten", "restore": "Käufe wiederherstellen" },
+  "items_one": "{{count}} Artikel",
+  "items_other": "{{count}} Artikel",
+  "download": "Herunterladen",
+  "download_start": "Download starten",
+  "email": "E-Mail",
+  "video": "Video",
+  "ok": "OK",
+  "brand": "Catscan Pro",
+  "greeting": "Hallo, {{name}}"
+}

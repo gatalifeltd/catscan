@@ -1,0 +1,253 @@
+{
+  "locale": "ja",
+  "icu_locale": "ja",
+  "source": "Unicode CLDR via Node Intl (DisplayNames, DateTimeFormat, RelativeTimeFormat, NumberFormat)",
+  "license": "Unicode License v3",
+  "seed": 5,
+  "node": "v24.18.0",
+  "icu": "78.3",
+  "cldr": "48.0",
+  "unicode": "17.0",
+  "strings": [
+    {
+      "text": "トルコ",
+      "kind": "region"
+    },
+    {
+      "text": "オーストリア",
+      "kind": "region"
+    },
+    {
+      "text": "ポーランド",
+      "kind": "region"
+    },
+    {
+      "text": "イギリス",
+      "kind": "region"
+    },
+    {
+      "text": "ギリシャ",
+      "kind": "region"
+    },
+    {
+      "text": "ルクセンブルク",
+      "kind": "region"
+    },
+    {
+      "text": "フランス",
+      "kind": "region"
+    },
+    {
+      "text": "タイ",
+      "kind": "region"
+    },
+    {
+      "text": "リトアニア",
+      "kind": "region"
+    },
+    {
+      "text": "メキシコ",
+      "kind": "region"
+    },
+    {
+      "text": "ジョージア",
+      "kind": "region"
+    },
+    {
+      "text": "イタリア",
+      "kind": "region"
+    },
+    {
+      "text": "ペルシア語",
+      "kind": "language"
+    },
+    {
+      "text": "セルビア語",
+      "kind": "language"
+    },
+    {
+      "text": "オランダ語",
+      "kind": "language"
+    },
+    {
+      "text": "マレー語",
+      "kind": "language"
+    },
+    {
+      "text": "ルーマニア語",
+      "kind": "language"
+    },
+    {
+      "text": "中国語",
+      "kind": "language"
+    },
+    {
+      "text": "ノルウェー語",
+      "kind": "language"
+    },
+    {
+      "text": "ロシア語",
+      "kind": "language"
+    },
+    {
+      "text": "ハンガリー語",
+      "kind": "language"
+    },
+    {
+      "text": "ドイツ語",
+      "kind": "language"
+    },
+    {
+      "text": "インドネシア ルピア",
+      "kind": "currency"
+    },
+    {
+      "text": "中国人民元",
+      "kind": "currency"
+    },
+    {
+      "text": "日本円",
+      "kind": "currency"
+    },
+    {
+      "text": "スイス フラン",
+      "kind": "currency"
+    },
+    {
+      "text": "ユーロ",
+      "kind": "currency"
+    },
+    {
+      "text": "オーストラリア ドル",
+      "kind": "currency"
+    },
+    {
+      "text": "9月",
+      "kind": "month"
+    },
+    {
+      "text": "7月",
+      "kind": "month"
+    },
+    {
+      "text": "6月",
+      "kind": "month"
+    },
+    {
+      "text": "12月",
+      "kind": "month"
+    },
+    {
+      "text": "金曜日",
+      "kind": "weekday"
+    },
+    {
+      "text": "火曜日",
+      "kind": "weekday"
+    },
+    {
+      "text": "木曜日",
+      "kind": "weekday"
+    },
+    {
+      "text": "四半期",
+      "kind": "field"
+    },
+    {
+      "text": "時代",
+      "kind": "field"
+    },
+    {
+      "text": "午前/午後",
+      "kind": "field"
+    },
+    {
+      "text": "来週",
+      "kind": "relative"
+    },
+    {
+      "text": "3 か月後",
+      "kind": "relative"
+    },
+    {
+      "text": "3 週間後",
+      "kind": "relative"
+    },
+    {
+      "text": "明日",
+      "kind": "relative"
+    },
+    {
+      "text": "来月",
+      "kind": "relative"
+    },
+    {
+      "text": "1 分後",
+      "kind": "relative"
+    },
+    {
+      "text": "昨年",
+      "kind": "relative"
+    },
+    {
+      "text": "5 か月前",
+      "kind": "relative"
+    },
+    {
+      "text": "5 秒前",
+      "kind": "relative"
+    },
+    {
+      "text": "昨日",
+      "kind": "relative"
+    },
+    {
+      "text": "5 日",
+      "kind": "unit"
+    },
+    {
+      "text": "5 時間",
+      "kind": "unit"
+    },
+    {
+      "text": "摂氏 5 度",
+      "kind": "unit"
+    },
+    {
+      "text": "2 時間",
+      "kind": "unit"
+    },
+    {
+      "text": "2 分",
+      "kind": "unit"
+    },
+    {
+      "text": "2 キロメートル",
+      "kind": "unit"
+    },
+    {
+      "text": "2 か月",
+      "kind": "unit"
+    },
+    {
+      "text": "2 週間",
+      "kind": "unit"
+    },
+    {
+      "text": "2025年3月3日月曜日",
+      "kind": "date"
+    },
+    {
+      "text": "5 年前",
+      "kind": "relative"
+    },
+    {
+      "text": "韓国ウォン",
+      "kind": "currency"
+    },
+    {
+      "text": "2 キログラム",
+      "kind": "unit"
+    }
+  ]
+}

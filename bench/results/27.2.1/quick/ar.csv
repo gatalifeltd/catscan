@@ -1,0 +1,10 @@
+# catscan=0.17.2 macos=27.2.1 macos_build=26B131 vision_revision=3
+locale,engine,gated,images,errors,checks,correct,check_accuracy,fit_images,fit_read,fit_recall,cer,trunc_tp,trunc_fp,trunc_fn,trunc_tn,trunc_precision,trunc_recall,median_ms,conf_fit,conf_clip
+ar,vision-accurate-rev3,true,30,0,40,39,97.5,10,9,0.9,0.0698,15,0,5,10,1,0.75,14,0|0|0|0|0|1|0|0|0|8,0|0|0|0|0|4|0|0|0|3
+image,case,present,absent,truncated,cer,read
+ar/02-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+ar/03-clip-16-light-flat.png,clip,,pass,no,,
+ar/04-ellipsis-16-light-flat.png,ellipsis,,pass,no,,
+ar/05-clip-16-light-flat.png,clip,,pass,no,,
+ar/09-fit-16-light-flat.png,fit,fail,pass,no,6,
+ar/09-clip-16-light-flat.png,clip,,pass,no,,

@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 GATALIFE LTD
+appId: ${APP_ID}
+---
+- launchApp:
+    arguments: { AppleLanguages: "(${LOCALE})", AppleLocale: "${LOCALE}" }   # iOS; Android sets the locale before the run
+- tapOn: { id: "next" }
+- extendedWaitUntil:
+    visible: { id: "play" }
+    timeout: 15000
+- takeScreenshot: shots/${PLATFORM}/settings.${LOCALE}

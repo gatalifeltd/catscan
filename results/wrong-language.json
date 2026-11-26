@@ -1,0 +1,771 @@
+{
+  "todo": "036 T2",
+  "script": "bench/wrong-language.js",
+  "strings": "bench/wrong-language/strings.json",
+  "seed": 36,
+  "screens": 600,
+  "locales": [
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt-BR",
+    "pl",
+    "tr",
+    "ru",
+    "uk",
+    "ja",
+    "ko",
+    "zh-Hans"
+  ],
+  "decoy_screens": 108,
+  "own_language_sentences": 176,
+  "seeded": {
+    "catalog_swaps": 611,
+    "uncatalogued_foreign": 195
+  },
+  "gate": {
+    "catalog": {
+      "precision": 0.97,
+      "recall": 0.9
+    },
+    "langid": {
+      "precision": 0.95
+    }
+  },
+  "catalog": {
+    "tp": 353,
+    "fp": 0,
+    "fn": 258,
+    "precision": 1,
+    "precision_ci95": [
+      0.9892,
+      1
+    ],
+    "recall": 0.9413,
+    "recall_ci95": [
+      0.9128,
+      0.9609
+    ],
+    "eligible": 375,
+    "eligible_share": 0.6137,
+    "recall_all": 0.5777,
+    "recall_all_ci95": [
+      0.5382,
+      0.6163
+    ],
+    "language_correct": 0.9603,
+    "pass": true,
+    "false_positives": [],
+    "recall_readable": {
+      "seeded": 379,
+      "found": 353,
+      "recall": 0.9314,
+      "ci95": [
+        0.9014,
+        0.9528
+      ]
+    },
+    "recall_cross_script": {
+      "seeded": 232,
+      "found": 0,
+      "recall": 0,
+      "ci95": [
+        0,
+        0.0163
+      ]
+    },
+    "misses": [
+      {
+        "line": "隐私",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "3 товарів",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "保存更改",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "За вашим запитом нічого не знайдено",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "出了点问题，请重试",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "За вашим запитом нічого не знайдено",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "アカウントを削除",
+        "language": "ja",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "确定要删除您的账户吗？",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Редагувати профіль",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Скасувати",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Завантажити",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "继续结账",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "更改您的个人资料照片",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "홈",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "홈",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Перейти до оплати",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Відновити покупки",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Немає підключення до інтернету",
+        "language": "uk",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "3 товаров",
+        "language": "ru",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Нет подключения к интернету",
+        "language": "ru",
+        "run": "de",
+        "readable": false
+      }
+    ]
+  },
+  "langid_combined": {
+    "tp": 140,
+    "fp": 0,
+    "fn": 55,
+    "precision": 1,
+    "precision_ci95": [
+      0.9733,
+      1
+    ],
+    "recall": 0.9603,
+    "recall_ci95": [
+      0.9105,
+      0.9829
+    ],
+    "eligible": 126,
+    "eligible_share": 0.6462,
+    "recall_all": 0.7179,
+    "recall_all_ci95": [
+      0.651,
+      0.7764
+    ],
+    "language_correct": 1,
+    "pass": true,
+    "false_positives": [],
+    "recall_readable": {
+      "seeded": 126,
+      "found": 121,
+      "recall": 0.9603,
+      "ci95": [
+        0.9105,
+        0.9829
+      ]
+    },
+    "recall_cross_script": {
+      "seeded": 69,
+      "found": 19,
+      "recall": 0.2754,
+      "ci95": [
+        0.1839,
+        0.3905
+      ]
+    },
+    "misses": [
+      {
+        "line": "Twoje zamówienie zostało wysłane i wkrótce dotrze",
+        "language": "pl",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "주소를 인증하려면 이메일을 확인하세요",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "阅读我们团队的最新消息",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "新功能将在下次更新中推出",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "주소를 인증하려면 이메일을 확인하세요",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "주소를 인증하려면 이메일을 확인하세요",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "다음 업데이트에서 새로운 기능이 추가됩니다",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "다음 업데이트에서 새로운 기능이 추가됩니다",
+        "language": "ko",
+        "run": "fr",
+        "readable": false
+      },
+      {
+        "line": "チームからの最新ニュースをお読みください",
+        "language": "ja",
+        "run": "fr",
+        "readable": false
+      },
+      {
+        "line": "次回のアップデートで新機能が追加されます",
+        "language": "ja",
+        "run": "fr",
+        "readable": false
+      },
+      {
+        "line": "新功能将在下次更新中推出",
+        "language": "zh-Hans",
+        "run": "fr",
+        "readable": false
+      },
+      {
+        "line": "阅读我们团队的最新消息",
+        "language": "zh-Hans",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "次回のアップデートで新機能が追加されます",
+        "language": "ja",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "メールを確認してアドレスを認証してください",
+        "language": "ja",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "新功能将在下次更新中推出",
+        "language": "zh-Hans",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "ご注文の商品は発送済みで、まもなく届きます",
+        "language": "ja",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "ご注文の商品は発送済みで、まもなく届きます",
+        "language": "ja",
+        "run": "es",
+        "readable": false
+      },
+      {
+        "line": "저희 팀의 최신 소식을 읽어 보세요",
+        "language": "ko",
+        "run": "it",
+        "readable": false
+      },
+      {
+        "line": "このオファーは期間限定でご利用いただけます",
+        "language": "ja",
+        "run": "it",
+        "readable": false
+      },
+      {
+        "line": "주문하신 상품이 발송되어 곧 도착합니다",
+        "language": "ko",
+        "run": "it",
+        "readable": false
+      }
+    ],
+    "note": "language ID after catalog evidence; recall over the uncatalogued foreign sentences"
+  },
+  "langid_standalone": {
+    "tp": 348,
+    "fp": 0,
+    "fn": 458,
+    "precision": 1,
+    "precision_ci95": [
+      0.9891,
+      1
+    ],
+    "recall": 0.9675,
+    "recall_ci95": [
+      0.9394,
+      0.9828
+    ],
+    "eligible": 277,
+    "eligible_share": 0.3437,
+    "recall_all": 0.4318,
+    "recall_all_ci95": [
+      0.398,
+      0.4662
+    ],
+    "language_correct": 0.9943,
+    "pass": true,
+    "false_positives": [],
+    "recall_readable": {
+      "seeded": 505,
+      "found": 268,
+      "recall": 0.5307,
+      "ci95": [
+        0.4871,
+        0.5738
+      ]
+    },
+    "recall_cross_script": {
+      "seeded": 301,
+      "found": 80,
+      "recall": 0.2658,
+      "ci95": [
+        0.2191,
+        0.3184
+      ]
+    },
+    "misses": [
+      {
+        "line": "隐私",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "保存更改",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Ayarlar",
+        "language": "tr",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Powiadomienia",
+        "language": "pl",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Seçenekler",
+        "language": "tr",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "出了点问题，请重试",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Impostazioni",
+        "language": "it",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "주소를 인증하려면 이메일을 확인하세요",
+        "language": "ko",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Esci",
+        "language": "it",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Opzioni",
+        "language": "it",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Iniciar descarga",
+        "language": "es",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Carrinho",
+        "language": "pt-BR",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Gizlilik",
+        "language": "tr",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "アカウントを削除",
+        "language": "ja",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "确定要删除您的账户吗？",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "阅读我们团队的最新消息",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "Esci",
+        "language": "it",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "Olá, Anna",
+        "language": "pt-BR",
+        "run": "de",
+        "readable": true
+      },
+      {
+        "line": "继续结账",
+        "language": "zh-Hans",
+        "run": "de",
+        "readable": false
+      },
+      {
+        "line": "En ligne",
+        "language": "fr",
+        "run": "de",
+        "readable": true
+      }
+    ],
+    "note": "--languages alone over every seeded foreign line, catalog swaps included"
+  },
+  "per_locale": {
+    "de": {
+      "catalog": {
+        "tp": 25,
+        "fp": 0,
+        "fn": 23
+      },
+      "langid": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 7
+      },
+      "standalone": {
+        "tp": 33,
+        "fp": 0,
+        "fn": 33
+      }
+    },
+    "fr": {
+      "catalog": {
+        "tp": 35,
+        "fp": 0,
+        "fn": 21
+      },
+      "langid": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 4
+      },
+      "standalone": {
+        "tp": 29,
+        "fp": 0,
+        "fn": 42
+      }
+    },
+    "es": {
+      "catalog": {
+        "tp": 20,
+        "fp": 0,
+        "fn": 22
+      },
+      "langid": {
+        "tp": 12,
+        "fp": 0,
+        "fn": 6
+      },
+      "standalone": {
+        "tp": 33,
+        "fp": 0,
+        "fn": 27
+      }
+    },
+    "it": {
+      "catalog": {
+        "tp": 27,
+        "fp": 0,
+        "fn": 25
+      },
+      "langid": {
+        "tp": 13,
+        "fp": 0,
+        "fn": 4
+      },
+      "standalone": {
+        "tp": 31,
+        "fp": 0,
+        "fn": 38
+      }
+    },
+    "pt-BR": {
+      "catalog": {
+        "tp": 32,
+        "fp": 0,
+        "fn": 19
+      },
+      "langid": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 3
+      },
+      "standalone": {
+        "tp": 33,
+        "fp": 0,
+        "fn": 36
+      }
+    },
+    "pl": {
+      "catalog": {
+        "tp": 35,
+        "fp": 0,
+        "fn": 23
+      },
+      "langid": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 4
+      },
+      "standalone": {
+        "tp": 42,
+        "fp": 0,
+        "fn": 35
+      }
+    },
+    "tr": {
+      "catalog": {
+        "tp": 27,
+        "fp": 0,
+        "fn": 23
+      },
+      "langid": {
+        "tp": 11,
+        "fp": 0,
+        "fn": 3
+      },
+      "standalone": {
+        "tp": 30,
+        "fp": 0,
+        "fn": 34
+      }
+    },
+    "ru": {
+      "catalog": {
+        "tp": 40,
+        "fp": 0,
+        "fn": 11
+      },
+      "langid": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 4
+      },
+      "standalone": {
+        "tp": 27,
+        "fp": 0,
+        "fn": 37
+      }
+    },
+    "uk": {
+      "catalog": {
+        "tp": 42,
+        "fp": 0,
+        "fn": 13
+      },
+      "langid": {
+        "tp": 15,
+        "fp": 0,
+        "fn": 7
+      },
+      "standalone": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 56
+      }
+    },
+    "ja": {
+      "catalog": {
+        "tp": 21,
+        "fp": 0,
+        "fn": 24
+      },
+      "langid": {
+        "tp": 14,
+        "fp": 0,
+        "fn": 3
+      },
+      "standalone": {
+        "tp": 25,
+        "fp": 0,
+        "fn": 37
+      }
+    },
+    "ko": {
+      "catalog": {
+        "tp": 23,
+        "fp": 0,
+        "fn": 21
+      },
+      "langid": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 6
+      },
+      "standalone": {
+        "tp": 16,
+        "fp": 0,
+        "fn": 39
+      }
+    },
+    "zh-Hans": {
+      "catalog": {
+        "tp": 26,
+        "fp": 0,
+        "fn": 33
+      },
+      "langid": {
+        "tp": 9,
+        "fp": 0,
+        "fn": 4
+      },
+      "standalone": {
+        "tp": 28,
+        "fp": 0,
+        "fn": 44
+      }
+    }
+  },
+  "perf": {
+    "catalogs": 13,
+    "keys_per_catalog": 1100,
+    "image": "1290x2790, 30 lines",
+    "copies": 20,
+    "check_ms_per_image": 111,
+    "untranslated_without_wrong_language_ms_per_image": 119,
+    "untranslated_ms_per_image": 207,
+    "cpu_ms_per_image": {
+      "check": 148,
+      "untranslated_without_wrong_language": 154.5,
+      "untranslated": 249
+    },
+    "load_average_1m": {
+      "start": 97.5,
+      "end": 133.1
+    },
+    "cores": 10,
+    "budget_ms": 50,
+    "pass": false
+  },
+  "tools": {
+    "catscan": "0.35.1",
+    "macos": "27.2.1 (26B131)",
+    "vision_revision": 3,
+    "node": "v26.13.0",
+    "icu": "79.1",
+    "unicode": "18.0",
+    "generator": "test/fixtures/generate.swift",
+    "recognizer": "NaturalLanguage NLLanguageRecognizer (macOS system framework)"
+  },
+  "pass": false
+}

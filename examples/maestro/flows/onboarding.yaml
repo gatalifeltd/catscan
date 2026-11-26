@@ -1,0 +1,11 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 GATALIFE LTD
+# One screenshot per screen, named shots/<platform>/<screen>.<locale>.
+appId: ${APP_ID}
+---
+- launchApp:
+    arguments: { AppleLanguages: "(${LOCALE})", AppleLocale: "${LOCALE}" }   # iOS; Android sets the locale before the run
+- extendedWaitUntil:
+    visible: { id: "next" }
+    timeout: 15000
+- takeScreenshot: shots/${PLATFORM}/onboarding.${LOCALE}

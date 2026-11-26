@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "catscan": { "command": "npx", "args": ["-y", "@catscan/mcp@0.1.0"] }
+  }
+}

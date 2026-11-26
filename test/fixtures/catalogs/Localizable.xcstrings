@@ -1,0 +1,45 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Done editing" : { },
+    "settings.title" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Account settings" } },
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Kontoeinstellungen" } },
+        "pt" : { "stringUnit" : { "state" : "translated", "value" : "Configurações da conta" } }
+      }
+    },
+    "photos.count" : {
+      "localizations" : {
+        "en" : { "variations" : { "plural" : {
+          "one" : { "stringUnit" : { "state" : "translated", "value" : "%lld photo selected" } },
+          "other" : { "stringUnit" : { "state" : "translated", "value" : "%lld photos selected" } }
+        } } }
+      }
+    },
+    "device.hint" : {
+      "localizations" : {
+        "en" : { "variations" : { "device" : {
+          "iphone" : { "stringUnit" : { "state" : "translated", "value" : "Tap here to begin" } },
+          "mac" : { "stringUnit" : { "state" : "translated", "value" : "Click here to begin" } }
+        } } }
+      }
+    },
+    "folder.files" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : { "state" : "translated", "value" : "Found %#@files@ in the folder" },
+          "substitutions" : { "files" : { "argNum" : 1, "formatSpecifier" : "lld", "variations" : { "plural" : {
+            "one" : { "stringUnit" : { "state" : "translated", "value" : "%arg file" } },
+            "other" : { "stringUnit" : { "state" : "translated", "value" : "%arg files" } }
+          } } } }
+        }
+      }
+    },
+    "brand" : {
+      "shouldTranslate" : false,
+      "localizations" : { "en" : { "stringUnit" : { "state" : "translated", "value" : "Catscan Studio" } } }
+    }
+  },
+  "version" : "1.0"
+}

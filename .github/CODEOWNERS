@@ -1,0 +1,3 @@
+# Owner review is required for CI and for what npm publishes.
+/.github/workflows/ @gatalifeltd
+/packages/*/package.json @gatalifeltd

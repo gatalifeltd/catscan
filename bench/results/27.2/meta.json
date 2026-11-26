@@ -1,0 +1,277 @@
+{
+  "spec": "05",
+  "quick": false,
+  "command": "npm run bench -- --record",
+  "locales": [
+    "en",
+    "fr",
+    "it",
+    "de",
+    "es",
+    "pt-BR",
+    "zh-Hans",
+    "zh-Hant",
+    "yue-Hans",
+    "yue-Hant",
+    "ko",
+    "ja",
+    "ru",
+    "uk",
+    "th",
+    "vi",
+    "ar",
+    "ars",
+    "tr",
+    "id",
+    "cs",
+    "da",
+    "nl",
+    "no",
+    "nn",
+    "nb",
+    "ms",
+    "pl",
+    "ro",
+    "sv",
+    "fi",
+    "hi",
+    "mr",
+    "el",
+    "he",
+    "bg",
+    "sr",
+    "sr-Latn",
+    "hu",
+    "fa",
+    "ka",
+    "hy"
+  ],
+  "commit": "8d93eb9f4512d9c4955ae1e23b6e378d40e9111c",
+  "date": "2026-11-09",
+  "timing": "under load: 0 simulator(s) booted, 2 emulator(s) running; sequential check over the quick variant's fit images, median of the response ms",
+  "machine": "Mac17,2",
+  "tools": {
+    "catscan": "0.12.4",
+    "macos": "27.2",
+    "macos_build": "26B123",
+    "vision_revision": 3,
+    "chip": "Apple M5",
+    "host_class": "physical",
+    "node": "v26.13.0",
+    "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+    "tesseract": "tesseract 5.5.4",
+    "leptonica": "leptonica-1.87.0",
+    "tessdata": {
+      "script/Greek": "52e201e4a22336d89ee202b579aca04f15ffd6e5e6af1fe164498f2c7de898e6",
+      "heb": "11f9e43ab227f786352a50f75c94c2e9906f1baba86d93276da19da7ce0904db",
+      "bul": "aebc9b0fcc8cfaf8a9f38a02bb7b85052bd850744696a2c11cf0081820e5b21e",
+      "srp": "aa41ae3d9cc705e60d398ab38a5c3cc8b772c0d420c7d4f0859beb13d0e321b6",
+      "srp_latn": "54b2e001bd8a336bdffc249c1487b8b7cb712f0a031f2551930ba050ebefa2a0",
+      "hun": "35067e7cfe102dcdc953f9a758fdfaa6296b17a1ee6d874ee780fa306430b9fb",
+      "fas": "db1c0a91208aff00d3cf1ed2c1d23f76419afd5f024688b4f71adc3f2ce4a505",
+      "kat": "557abb6f1c68bc1b286f1bdd00bb6b82f85a427a91899807dab6c2f6c7986731",
+      "hye": "b701d0d95799a716143dedb0197504e56f27a1bb133d6607ff5778c6988cb67c"
+    }
+  },
+  "corpus": {
+    "seed": 5,
+    "node": "v24.18.0",
+    "icu": "78.3",
+    "cldr": "48.0"
+  },
+  "fonts": {
+    "en": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "it": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "de": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "es": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "pt-BR": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "zh-Hans": [
+      ".PingFangUIDisplaySC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "zh-Hant": [
+      ".PingFangUIDisplayTC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "yue-Hans": [
+      ".PingFangUIDisplaySC-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "yue-Hant": [
+      ".PingFangUIDisplayHK-Regular 22.0d5e2",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ko": [
+      ".AppleSDGothicNeoI-Regular 22.0d2e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ja": [
+      ".HiraKakuInterface-W4 22.0d2e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ru": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "uk": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "th": [
+      ".SFNS-Regular 22.0d5e1",
+      ".ThonburiUI-Regular 22.0d2e2"
+    ],
+    "vi": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ar": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ars": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "tr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "id": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "cs": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "da": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "no": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nn": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "nb": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ms": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "pl": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ro": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sv": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fi": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hi": [
+      ".SFDevanagari-Regular 22.0d6e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "mr": [
+      ".SFDevanagari-Regular 22.0d6e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "el": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "he": [
+      ".SFHebrew-Regular 22.0d3e3",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "bg": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sr": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "sr-Latn": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hu": [
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "fa": [
+      ".SFArabic-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "ka": [
+      ".SFGeorgian-Regular 22.0d4e1",
+      ".SFNS-Regular 22.0d5e1"
+    ],
+    "hy": [
+      ".SFArmenian-Regular 22.0d3e4",
+      ".SFNS-Regular 22.0d5e1"
+    ]
+  },
+  "runs": [
+    {
+      "command": "npm run bench -- --record",
+      "locales": [
+        "en",
+        "fr",
+        "it",
+        "de",
+        "es",
+        "pt-BR",
+        "zh-Hans",
+        "zh-Hant",
+        "yue-Hans",
+        "yue-Hant",
+        "ko",
+        "ja",
+        "ru",
+        "uk",
+        "th",
+        "vi",
+        "ar",
+        "ars",
+        "tr",
+        "id",
+        "cs",
+        "da",
+        "nl",
+        "no",
+        "nn",
+        "nb",
+        "ms",
+        "pl",
+        "ro",
+        "sv",
+        "fi",
+        "hi",
+        "mr",
+        "el",
+        "he",
+        "bg",
+        "sr",
+        "sr-Latn",
+        "hu",
+        "fa",
+        "ka",
+        "hy"
+      ],
+      "commit": "8d93eb9f4512d9c4955ae1e23b6e378d40e9111c",
+      "date": "2026-11-09",
+      "timing": "under load: 0 simulator(s) booted, 2 emulator(s) running; sequential check over the quick variant's fit images, median of the response ms"
+    }
+  ]
+}

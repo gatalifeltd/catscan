@@ -1,0 +1,77 @@
+{
+  "welcome": [
+    [
+      "Welcome,",
+      "!"
+    ]
+  ],
+  "apostrophe": [
+    [
+      "Don't stop now"
+    ]
+  ],
+  "quoted": [
+    [
+      "Keep   these   spaces"
+    ]
+  ],
+  "escapes": [
+    [
+      "Ask \"why\" @ home?"
+    ]
+  ],
+  "unicode": [
+    [
+      "Café is open today"
+    ]
+  ],
+  "newline": [
+    [
+      "Line one here\nLine two here"
+    ]
+  ],
+  "cdata": [
+    [
+      "Bold deals inside"
+    ]
+  ],
+  "html": [
+    [
+      "Escaped markup works too"
+    ]
+  ],
+  "percent": [
+    [
+      "100% done already"
+    ]
+  ],
+  "alias": [
+    [
+      "Don't stop now"
+    ]
+  ],
+  "cycle_a": [
+    []
+  ],
+  "cycle_b": [
+    []
+  ],
+  "songs": [
+    [
+      "song found"
+    ],
+    [
+      "songs found"
+    ]
+  ],
+  "planets[0]": [
+    [
+      "Mercury planet"
+    ]
+  ],
+  "planets[1]": [
+    [
+      "Venus planet"
+    ]
+  ]
+}

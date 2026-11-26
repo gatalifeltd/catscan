@@ -1,0 +1,31 @@
+{
+  "image": {
+    "width": 390,
+    "height": 844
+  },
+  "elements": [
+    {
+      "id": "title",
+      "box": [
+        0.041,
+        0.1185,
+        0.5128,
+        0.0284
+      ],
+      "clips": true,
+      "text": "Einstellungen"
+    },
+    {
+      "id": null,
+      "box": [
+        0.7692,
+        0.4739,
+        0.2308,
+        0.0237
+      ],
+      "clips": false,
+      "text": "Angebot der Woche",
+      "offscreen": true
+    }
+  ]
+}

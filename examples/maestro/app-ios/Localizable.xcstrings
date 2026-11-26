@@ -1,0 +1,62 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "game.complete" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Level geschafft" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Level complete" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Niveau terminé" } }
+      }
+    },
+    "game.score" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Punkte 1200" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Score 1200" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Score : 1200" } }
+      }
+    },
+    "onboarding.body" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Prüfe jeden Bildschirm in jeder Sprache." } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Check every screen in every language." } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Vérifiez chaque écran dans chaque langue." } }
+      }
+    },
+    "onboarding.next" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Weiter" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Next" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Suivant" } }
+      }
+    },
+    "onboarding.title" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Willkommen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Welcome" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Bienvenue" } }
+      }
+    },
+    "settings.notifications" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Benachrichtigungseinstellungen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Notification settings" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réglages des alertes" } }
+      }
+    },
+    "settings.play" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Spielen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Play" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Jouer" } }
+      }
+    },
+    "settings.title" : {
+      "localizations" : {
+        "de" : { "stringUnit" : { "state" : "translated", "value" : "Einstellungen" } },
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "fr" : { "stringUnit" : { "state" : "translated", "value" : "Réglages" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

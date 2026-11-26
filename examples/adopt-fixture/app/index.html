@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright 2026 GATALIFE LTD -->
+<!-- A canvas menu: its text is drawn with fillText, so the DOM and accessibility tree cannot see it. -->
+<meta charset="utf-8">
+<title>adopt fixture</title>
+<style>body { margin: 0; background: #123; }</style>
+<canvas id="menu" width="800" height="450"></canvas>
+<script src="strings.js"></script>
+<script>
+  const lng = new URLSearchParams(location.search).get("lng") || "en";
+  const s = window.STRINGS[lng];
+  const ctx = document.getElementById("menu").getContext("2d");
+  ctx.fillStyle = "#123";
+  ctx.fillRect(0, 0, 800, 450);
+  ctx.fillStyle = "#fff";
+  ctx.textAlign = "center";
+  ctx.font = "bold 56px Helvetica, Arial, sans-serif";
+  ctx.fillText(s.title, 400, 170);
+  ctx.font = "44px Helvetica, Arial, sans-serif";
+  ctx.fillText(s.play, 400, 300);
+  document.body.dataset.ready = "1";
+</script>

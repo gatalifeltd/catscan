@@ -1,0 +1,95 @@
+{
+  "home.title": [
+    [
+      "Welcome back,",
+      "!"
+    ]
+  ],
+  "home.cta": [
+    [
+      "Start your free trial"
+    ]
+  ],
+  "home.items[0]": [
+    [
+      "First item here"
+    ]
+  ],
+  "home.items[1]": [
+    [
+      "Second item here"
+    ]
+  ],
+  "greeting": [
+    [
+      "Hello",
+      ", good morning"
+    ]
+  ],
+  "order": [
+    [
+      "Order",
+      "has shipped"
+    ]
+  ],
+  "cart_one": [
+    [
+      "item in your cart"
+    ]
+  ],
+  "cart_other": [
+    [
+      "items in your cart"
+    ]
+  ],
+  "sale": [
+    [
+      "Save 50% on everything"
+    ]
+  ],
+  "price": [
+    [
+      "Total price:",
+      "euros"
+    ]
+  ],
+  "files": [
+    [
+      "file selected"
+    ],
+    [
+      "files selected"
+    ]
+  ],
+  "mixed": [
+    [
+      "Bold offer ends tonight\nShop now please"
+    ]
+  ],
+  "inbox": [
+    [
+      "She has one message"
+    ],
+    [
+      "She has",
+      "messages"
+    ],
+    [
+      "They have one message"
+    ],
+    [
+      "They have",
+      "messages"
+    ]
+  ],
+  "braces": [
+    [
+      "Use {curly braces} with care"
+    ]
+  ],
+  "short": [
+    [
+      "OK"
+    ]
+  ]
+}

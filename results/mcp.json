@@ -1,0 +1,312 @@
+{
+  "spec": "09",
+  "script": "bench/mcp.js",
+  "images": 20,
+  "tokenizer": {
+    "endpoint": "count_tokens",
+    "model": "claude-opus-5-5"
+  },
+  "targets": {
+    "check_text_tokens_max": 150,
+    "check_text_bytes_max_without_key": 340,
+    "overhead_median_ms": 30
+  },
+  "check_text_tokens": {
+    "median": 112,
+    "max": 146
+  },
+  "read_screen_tokens": {
+    "median": 106.5,
+    "max": 138
+  },
+  "check_text_bytes": {
+    "median": 230,
+    "max": 326
+  },
+  "read_screen_bytes": {
+    "median": 194.5,
+    "max": 258
+  },
+  "overhead_ms": {
+    "median": 0.6,
+    "mcp_median": 57,
+    "direct_median": 56.6,
+    "samples": 100
+  },
+  "replies": [
+    {
+      "image": "01-en-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 223,
+        "tokens": 109
+      },
+      "read_screen": {
+        "lines": 3,
+        "bytes": 251,
+        "tokens": 133
+      }
+    },
+    {
+      "image": "02-en-small.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 219,
+        "tokens": 109
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 179,
+        "tokens": 98
+      }
+    },
+    {
+      "image": "03-de-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 223,
+        "tokens": 111
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 179,
+        "tokens": 101
+      }
+    },
+    {
+      "image": "04-fr-tablet.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 233,
+        "tokens": 115
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 194,
+        "tokens": 107
+      }
+    },
+    {
+      "image": "05-es-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 226,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 202,
+        "tokens": 113
+      }
+    },
+    {
+      "image": "06-pt-BR-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 230,
+        "tokens": 117
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 195,
+        "tokens": 110
+      }
+    },
+    {
+      "image": "07-ru-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 229,
+        "tokens": 111
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 212,
+        "tokens": 104
+      }
+    },
+    {
+      "image": "08-uk-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 230,
+        "tokens": 111
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 221,
+        "tokens": 111
+      }
+    },
+    {
+      "image": "09-pl-small.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 223,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 189,
+        "tokens": 108
+      }
+    },
+    {
+      "image": "10-ja-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 240,
+        "tokens": 120
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 205,
+        "tokens": 111
+      }
+    },
+    {
+      "image": "11-zh-Hans-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 233,
+        "tokens": 119
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 189,
+        "tokens": 107
+      }
+    },
+    {
+      "image": "12-ko-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 240,
+        "tokens": 119
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 199,
+        "tokens": 108
+      }
+    },
+    {
+      "image": "13-it-landscape.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 227,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 186,
+        "tokens": 102
+      }
+    },
+    {
+      "image": "14-en-raw-key.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 235,
+        "tokens": 114
+      },
+      "read_screen": {
+        "lines": 1,
+        "bytes": 141,
+        "tokens": 73
+      }
+    },
+    {
+      "image": "15-en-wrapped.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 231,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 195,
+        "tokens": 103
+      }
+    },
+    {
+      "image": "16-en-tall-tiled.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 231,
+        "tokens": 113
+      },
+      "read_screen": {
+        "lines": 3,
+        "bytes": 258,
+        "tokens": 138
+      }
+    },
+    {
+      "image": "17-de-umlauts.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 227,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 187,
+        "tokens": 102
+      }
+    },
+    {
+      "image": "18-sv-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 220,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 177,
+        "tokens": 103
+      }
+    },
+    {
+      "image": "19-en-short.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 326,
+        "tokens": 146
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 170,
+        "tokens": 98
+      }
+    },
+    {
+      "image": "20-th-phone.png",
+      "check_text": {
+        "verdict": "pass",
+        "bytes": 234,
+        "tokens": 112
+      },
+      "read_screen": {
+        "lines": 2,
+        "bytes": 205,
+        "tokens": 106
+      }
+    }
+  ],
+  "tools": {
+    "catscan": "0.10.0",
+    "macos": "27.2 (26B123)",
+    "vision_revision": 3,
+    "chip": "Apple M5",
+    "host_class": "physical",
+    "node": "v24.18.0",
+    "mcp_sdk": "1.32.2",
+    "swift": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)",
+    "git": "2e94383",
+    "clean_tree": true,
+    "date": "2026-11-05"
+  },
+  "pass": true
+}
