@@ -1,7 +1,7 @@
 # This repo's CI. Every job runs on a GitHub-hosted runner; a self-hosted runner never
-# serves this repo, and scripts/check-workflows.mjs --product refuses any other runs-on. Outside pull requests
-# are closed before anything runs (close-outside-prs.yml), and fork workflows need approval for all outside
-# collaborators. The golden tests and the nightly bench join once they run on a hosted runner image.
+# serves this repo, and scripts/check-workflows.mjs --product refuses any other runs-on. Pull requests are turned
+# off in the repository settings; if they are ever turned back on, outside ones are closed before anything runs
+# (close-outside-prs.yml, the backstop), and fork workflows need approval for all outside collaborators. The golden tests and the nightly bench join once they run on a hosted runner image.
 name: ci
 on:
   pull_request:

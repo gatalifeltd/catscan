@@ -1,4 +1,5 @@
-# catscan does not accept outside code. A pull request from anyone who is not an owner, member or
+# catscan does not accept outside code, and pull requests are turned off in the repository settings. This workflow
+# stays as a backstop in case they are ever turned back on: a pull request from anyone who is not an owner, member or
 # collaborator gets one fixed comment and is closed. pull_request_target runs in the base repo's context, so this
 # workflow checks out nothing and runs no repository or pull request code: one pinned github-script step that reads
 # author_association from the event. scripts/test/close-outside-prs.test.mjs drives the script below.

@@ -3,7 +3,7 @@
 #   1. `npm ci && npm run screenshots`: the step that makes your screenshots;
 #   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
 #   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
-# First green run without expectations: npx @catscan/cli@1.0.0 check shots --present "<text every screen shows>" --junit catscan.xml --baseline catscan-baseline.json
+# First green run without expectations: npx @catscan/cli@1.0.1 check shots --present "<text every screen shows>" --junit catscan.xml --baseline catscan-baseline.json
 # Pushing a release tag is the approval: tag only a build whose screens were reviewed. The tag job stores the
 # approved baseline in the project's generic package registry; merge requests fetch the latest one.
 # The tag job approves the run it makes on the tag commit: tag a commit whose merge-request run was reviewed, with no
@@ -23,7 +23,7 @@
     - npm ci && npm run screenshots
     # Only if you ship a locale catscan reads with Tesseract, such as el, he, hr or et (catscan languages lists them; the doctor line fails with the install command until this runs; install options: https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/tesseract.md):
     # - brew install tesseract tesseract-lang
-    - npx @catscan/cli@1.0.0 doctor --expect-locales-from locales
+    - npx @catscan/cli@1.0.1 doctor --expect-locales-from locales
 
 catscan-review:
   extends: .catscan
@@ -32,7 +32,7 @@ catscan-review:
   script:
     # Before the first approval there is none: catscan warns baseline-missing and every cell is new.
     - 'curl --fail --silent --header "JOB-TOKEN: $CI_JOB_TOKEN" --output catscan-baseline.json "$BASELINE_URL" || { rm -f catscan-baseline.json; echo "no approved baseline yet"; }'
-    - npx @catscan/cli@1.0.0 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --gitlab-codequality catscan-cq.json --results catscan-results.json --report catscan.html --baseline catscan-baseline.json
+    - npx @catscan/cli@1.0.1 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --gitlab-codequality catscan-cq.json --results catscan-results.json --report catscan.html --baseline catscan-baseline.json
     # Optional: stop the job while any cell needs review (exit codes, JUnit and Code Quality carry no baseline result).
     # - jq -e '.baseline.review.cells == 0' catscan-results.json
   artifacts:
@@ -48,7 +48,7 @@ catscan-approve:
   rules:
     - if: $CI_COMMIT_TAG
   script:
-    - npx @catscan/cli@1.0.0 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --results catscan-results.json
+    - npx @catscan/cli@1.0.1 check shots --expect checks.yaml --expect-locales-from locales --junit catscan.xml --results catscan-results.json
     # Refuses (exit 1) a run with error, needs-reader, unsupported, missing or ambiguous cells: fix them and tag again.
-    - npx @catscan/cli@1.0.0 results baseline catscan-results.json --out catscan-baseline.json
+    - npx @catscan/cli@1.0.1 results baseline catscan-results.json --out catscan-baseline.json
     - 'curl --fail --silent --header "JOB-TOKEN: $CI_JOB_TOKEN" --upload-file catscan-baseline.json "$BASELINE_URL"'

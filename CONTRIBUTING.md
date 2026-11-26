@@ -2,15 +2,13 @@
 
 ## How contributions work
 
-catscan does not accept outside code. The maintainers write every change themselves, so there is no contributor license agreement and no pull request review queue.
-
-You help most with an issue:
+catscan does not accept pull requests. The maintainers write every change themselves, so there is no contributor license agreement and no review queue. Issues are the way in:
 
 - **Bug report:** what you ran, what you expected, what happened, and the output of `npx -y @catscan/cli doctor --json`.
 - **Wrong-OCR report:** the text catscan read and the text on screen. Attach a synthetic or shareable image only; never a screenshot you are not allowed to publish.
 - **Feature request:** the check you need and the screens it is for.
 
-Pull requests from outside the project are closed automatically with a pointer to these templates, and no CI runs on them. If you already wrote a fix, describe it in the issue; the maintainers take it from there.
+Pull requests are turned off for this repository. If you already wrote a fix, describe it in an issue; the maintainers take it from there.
 
 ## Build and test
 

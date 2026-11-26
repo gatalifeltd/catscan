@@ -4,6 +4,15 @@ catscan checks the text on your app and game screenshots, on your Mac, and tells
 
 ![catscan in a terminal checks a phone cart screen that shows a raw key, a cut-off button label, text drawn over an icon and a French line on an English screen](docs/media/catscan-demo.gif)
 
+## Works with
+
+- **Playwright:** the [`@catscan/playwright`](docs/recipes/playwright.md) matchers assert screen text inside your web tests.
+- **Maestro:** check every screen of a flow after the run ([recipe](docs/recipes/maestro.md), [example project](examples/maestro/)); `catscan boxes maestro` turns a `maestro hierarchy` dump into element boxes.
+- **XCUITest, UIAutomator and Espresso:** `catscan boxes xcuitest` and `catscan boxes uiautomator` turn the element dump your test saves into boxes for the truncation and overlap checks ([capture guide](docs/truncation-capture.md)).
+- **Any other tool:** catscan checks PNG, JPEG and HEIC screenshots, and MP4 and MOV recordings, however they were made.
+- **CI:** ready files for GitHub Actions, GitLab, CircleCI, Bitrise, Codemagic and Azure Pipelines in [`examples/ci/`](examples/ci/); Jenkins, Buildkite and any CI that reads JUnit XML through `--junit`. The job runs on an Apple silicon Mac ([CI recipes](docs/recipes/ci.md)).
+- **Coding agents:** Claude Code, Codex, Cursor and any agent that reads `AGENTS.md` ([Agent skills](#agent-skills)).
+
 ## How it works
 
 Your tests already take screenshots. catscan reads them with Apple's Vision framework on the Neural Engine, in about 25 ms an image, and checks what it read against what should be there: the strings in your catalogs, the locale of the run, the element boxes your test dumped, the phone the screen was taken on. Each check returns `PASS` or `FAIL`, an exit code for CI and `--json` for agents. Screenshots never leave the machine.

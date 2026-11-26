@@ -2,6 +2,15 @@
 
 All notable changes to catscan, newest first. catscan was developed privately before its first public version; earlier versions are not listed.
 
+## [1.0.1] - 2026-11-26
+
+### Docs
+- The README opens with a "Works with" section: Playwright, Maestro, XCUITest, UIAutomator and Espresso element dumps, screenshots from any tool, the ready CI files and the coding agents catscan supports.
+- CONTRIBUTING says pull requests are turned off and issues are the way to report bugs, wrong OCR and feature requests.
+
+### Fixed
+- The repository's own unit tests run green from a fresh clone: two helper scripts the Maestro end-to-end and package smoke scripts import now ship with them, and tests that need maintainer-only files skip outside the maintainers' checkout.
+
 ## [1.0.0] - 2026-11-26
 
 The first public release. From this version on, catscan follows semantic versioning. A breaking change to the CLI, its exit codes and JSON output, the results schema, the MCP tools or the library API comes only in a new major version.

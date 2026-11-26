@@ -1,6 +1,6 @@
 {
   "name": "@catscan/playwright",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Playwright matchers for catscan: assert on text drawn on the screen, canvas included (macOS, Apple Vision).",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/playwright" },
@@ -12,7 +12,7 @@
   "files": ["src", "index.d.ts"],
   "engines": { "node": ">=22" },
   "dependencies": {
-    "@catscan/core-js": "1.0.0"
+    "@catscan/core-js": "1.0.1"
   },
   "peerDependencies": {
     "@playwright/test": ">=1.50.0 <2"

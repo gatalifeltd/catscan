@@ -1,6 +1,6 @@
 {
   "name": "@catscan/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for catscan: on-device screenshot and video text checks for coding agents (macOS, Apple Vision).",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/mcp" },
@@ -17,7 +17,7 @@
     "zod": "4.6.7"
   },
   "optionalDependencies": {
-    "@catscan/cli": "1.0.0",
-    "@catscan/core-js": "1.0.0"
+    "@catscan/cli": "1.0.1",
+    "@catscan/core-js": "1.0.1"
   }
 }

@@ -449,6 +449,9 @@ test("release-lib behavior-changes refuses a symlinked target and leaves an unre
 });
 
 // TODO-094: a temp lab root holding copies of the real carrier files, so every pattern runs on the real text.
+// The carrier files (scripts/public-paths.txt, docs/public-release.md, the goldens) live only in the lab, so these tests
+// skip in the product repo, where the release runs from the lab anyway.
+const labTest = fs.existsSync(path.join(ROOT, "scripts/public-paths.txt")) ? test : test.skip;
 const CURRENT = fs.readFileSync(path.join(ROOT, "VERSION"), "utf8").trim();
 function carrierRepo() {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "catscan-bump-"));
@@ -466,7 +469,7 @@ const readIn = (root, f) => fs.readFileSync(path.join(root, f), "utf8");
 // Value: protects=one bump moves every real carrier and versions agrees after it; fails_when=a carrier pattern stops
 // matching the real text, a carrier drops out of the list, or a second run rewrites anything; why_new=no writer existed
 // (TODO-094); seam=none; no_claim=gstack /ship Step 12 accepting the pre-bumped VERSION
-test("bump: every real carrier moves to the new version, versions agrees, and a second run changes nothing (TODO-094)", () => {
+labTest("bump: every real carrier moves to the new version, versions agrees, and a second run changes nothing (TODO-094)", () => {
   const root = carrierRepo();
   const lock = JSON.parse(readIn(root, "package-lock.json"));
   lock.packages["node_modules/not-ours"] = { version: CURRENT };
@@ -490,7 +493,7 @@ test("bump: every real carrier moves to the new version, versions agrees, and a 
 // Value: protects=a bump writes nothing and names the file when a carrier is stale or has nothing to replace;
 // fails_when=bump half-writes or skips an unmatched carrier silently; why_new=new command (TODO-094); seam=none;
 // no_claim=none beyond protects
-test("bump: a stale carrier or one with no version to replace is named and nothing is written (TODO-094)", () => {
+labTest("bump: a stale carrier or one with no version to replace is named and nothing is written (TODO-094)", () => {
   const root = carrierRepo();
   const swift = "core/Sources/CatscanCore/Model.swift";
   fs.writeFileSync(path.join(root, swift), readIn(root, swift).replace(`catscanVersion = "${CURRENT}"`, 'catscanVersion = "0.0.1"'));
@@ -525,7 +528,7 @@ test("bump: a stale carrier or one with no version to replace is named and nothi
 // Value: protects=the queue rebump (VERSION already moved by gstack) and a renumber of an unreleased version;
 // fails_when=--from is ignored, or --renumber prepends a second Lab entry or a second CHANGELOG heading;
 // why_new=new options (TODO-094 D1, D2); seam=none; no_claim=gstack's queue pick itself
-test("bump: --from moves carriers after VERSION moved; --renumber renames the unreleased entry and heading (TODO-094)", () => {
+labTest("bump: --from moves carriers after VERSION moved; --renumber renames the unreleased entry and heading (TODO-094)", () => {
   const root = carrierRepo();
   apply(root, planBump(root, "9.9.9", { date: "2030-01-02" }).writes);
   for (const f of ["VERSION", "package.json"]) fs.writeFileSync(path.join(root, f), readIn(root, f).replace("9.9.9", "9.9.10"));
@@ -544,7 +547,7 @@ test("bump: --from moves carriers after VERSION moved; --renumber renames the un
 // Value: protects=a missed carrier fails versions/docs:check in the lab and is skipped outside it; fails_when=a new
 // carrier is unchecked, a lab carrier can vanish silently, or docs:check stops running the check; why_new=new carriers
 // and wiring (TODO-094 T2, D6); seam=none; no_claim=CI's docs-check job (runs the same script)
-test("versions: stale lockfile, Swift, golden, recipe, results and Lab row carriers are named; absent ones only in the lab (TODO-094)", () => {
+labTest("versions: stale lockfile, Swift, golden, recipe, results and Lab row carriers are named; absent ones only in the lab (TODO-094)", () => {
   const root = carrierRepo();
   const edits = {
     "package-lock.json": (t) => t.replace(`"@catscan/core-js": "${CURRENT}"`, '"@catscan/core-js": "0.0.1"'),
@@ -584,7 +587,7 @@ test("versions: stale lockfile, Swift, golden, recipe, results and Lab row carri
 // writes despite problems, or maps a stale carrier to exit 0/2; why_new=planBump tests stop before the CLI writes;
 // seam=none (the script and its one local import are copied into a temp lab root, so ROOT is that root);
 // no_claim=behavior-changes.json refresh (no BEHAVIOR_FILE in the fixture)
-test("release-lib bump CLI: writes every carrier, exits 1 with no write on a stale one, rerun is a no-op (TODO-094)", () => {
+labTest("release-lib bump CLI: writes every carrier, exits 1 with no write on a stale one, rerun is a no-op (TODO-094)", () => {
   // Not realpath'd on purpose: os.tmpdir() is a symlink on macOS, so this also proves the CLI guard runs through one.
   const root = carrierRepo();
   for (const f of ["scripts/release-lib.mjs", "scripts/public-paths.mjs"]) fs.copyFileSync(path.join(ROOT, f), path.join(root, f));
@@ -613,7 +616,7 @@ test("release-lib bump CLI: writes every carrier, exits 1 with no write on a sta
 // Value: protects=--renumber never renames a released version, and a malformed carrier or a missing CHANGELOG is a
 // named problem with nothing written; fails_when=--renumber on a new release renames the released heading and Lab
 // entry, or a bad file throws a stack; why_new=devex review D9, D11; seam=none; no_claim=none beyond protects
-test("bump: --renumber is refused unless the newest release is the old version; a bad file is a named problem (TODO-094 D9, D11)", () => {
+labTest("bump: --renumber is refused unless the newest release is the old version; a bad file is a named problem (TODO-094 D9, D11)", () => {
   const root = carrierRepo();
   // The fixture's newest heading is VERSION, as on main: released there, unreleased on a branch past main.
   let r = planBump(root, "9.9.9", { renumber: true, released: true });
@@ -641,7 +644,7 @@ test("bump: --renumber is refused unless the newest release is the old version; 
 // lacks, even when the branch added its heading in a merge; fails_when=a lower target is accepted, a version main
 // released is renamed, or a heading added by a merge resolution reads as released; why_new=final review (Codex) and
 // its fix-check; seam=none; no_claim=a stale origin/main ref (the message says to fetch)
-test("bump: an older target is refused; --renumber renames only a version origin/main has not released (TODO-094)", () => {
+labTest("bump: an older target is refused; --renumber renames only a version origin/main has not released (TODO-094)", () => {
   const root = carrierRepo();
   assert.deepEqual(planBump(root, "0.0.1"), { writes: {}, problems: [`0.0.1 is older than ${CURRENT}; bump never moves carriers back`] });
   const git = (...a) => execFileSync("git", ["-c", "user.name=t", "-c", "user.email=t@t", ...a], { cwd: root, encoding: "utf8" });
@@ -664,7 +667,7 @@ test("bump: an older target is refused; --renumber renames only a version origin
 // Value: protects=a usage error exits 2 before any write; fails_when=a bad version, a missing value or a flag as the
 // value of --from/--note reaches planBump or writes; why_new=review: the earlier version ran on the real checkout;
 // seam=none; no_claim=none beyond protects
-test("release-lib bump: a bad or missing version or flag value exits 2 and writes nothing (TODO-094)", () => {
+labTest("release-lib bump: a bad or missing version or flag value exits 2 and writes nothing (TODO-094)", () => {
   const root = carrierRepo();
   for (const f of ["scripts/release-lib.mjs", "scripts/public-paths.mjs"]) fs.copyFileSync(path.join(ROOT, f), path.join(root, f));
   for (const args of [["bump"], ["bump", "1.2"], ["bump", "--from", "1.2.3"], ["bump", "9.9.9", "--note"], ["bump", "9.9.9", "--note", "--renumber"], ["bump", "9.9.9", "--from"]]) {

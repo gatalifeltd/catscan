@@ -43,7 +43,7 @@ Pin the server to the version of your other catscan packages. npm installs the c
 ### Claude Code
 
 ```bash
-claude mcp add catscan -- npx -y @catscan/mcp@1.0.0
+claude mcp add catscan -- npx -y @catscan/mcp@1.0.1
 ```
 
 ### Cursor
@@ -51,7 +51,7 @@ claude mcp add catscan -- npx -y @catscan/mcp@1.0.0
 `.cursor/mcp.json` in the project:
 
 ```json
-{ "mcpServers": { "catscan": { "command": "npx", "args": ["-y", "@catscan/mcp@1.0.0"] } } }
+{ "mcpServers": { "catscan": { "command": "npx", "args": ["-y", "@catscan/mcp@1.0.1"] } } }
 ```
 
 ### Codex
@@ -61,7 +61,7 @@ claude mcp add catscan -- npx -y @catscan/mcp@1.0.0
 ```toml
 [mcp_servers.catscan]
 command = "npx"
-args = ["-y", "@catscan/mcp@1.0.0"]
+args = ["-y", "@catscan/mcp@1.0.1"]
 ```
 
 An unpinned `npx -y @catscan/mcp` runs whatever npm has that day, which can differ from the CLI your tests run.

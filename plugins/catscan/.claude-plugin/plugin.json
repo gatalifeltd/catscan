@@ -1,6 +1,6 @@
 {
   "name": "catscan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Agent skills from catscan: screen-check has the agent check screenshots with catscan instead of opening them; test-speedup makes a test suite and its CI faster and cheaper without weakening what it proves; catscan-adopt wires catscan checks into a project's existing tests; catscan-upgrade moves every place a project holds catscan to one version.",
   "author": {
     "name": "GATALIFE LTD"

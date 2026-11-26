@@ -1,6 +1,6 @@
 {
   "name": "@catscan/cli-darwin-arm64",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The signed and notarized catscan-core binary for @catscan/cli on Apple silicon macOS. Installed by @catscan/core-js; not used directly.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/cli-darwin-arm64" },
