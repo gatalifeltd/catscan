@@ -22,6 +22,44 @@ function hostedOnly(block) {
   return !/\$\{\{|group:|labels:/.test(block) && labels.length > 0 && labels.every(hosted);
 }
 
+// The product test matrix spans the promised macOS lines: `runs-on: ${{ matrix.<key> }}` resolves to the job's own
+// one-line literal list strategy.matrix.<key>: [...]. Fail closed: an `include:` (it can add any label), a computed or
+// one-line matrix or any other expression keeps the block unresolved, so hostedOnly refuses it. YAML allows a quoted
+// key and space before the colon (`include :`), so the strategy and matrix lookups accept both (outside-voice review).
+const keyLine = (k) => new RegExp(`^\\s*(["']?)${k}\\1\\s*:(\\s|$)`);
+function resolveMatrix(block, body, keyIndent) {
+  const m = block.match(/^\s*runs-on:\s*\$\{\{\s*matrix\.([\w-]+)\s*\}\}\s*$/);
+  if (!m) return block;
+  const sub = (from, ind, k) => {
+    for (let i = from; i < body.length; i++) {
+      if (!body[i].trim()) continue;
+      if (indentOf(body[i]) < ind) return -1;
+      if (indentOf(body[i]) === ind && keyLine(k).test(body[i])) return i;
+    }
+    return -1;
+  };
+  const opens = (i) => /:\s*$/.test(body[i]) && body[i + 1] !== undefined && indentOf(body[i + 1]) > indentOf(body[i]);
+  const st = sub(0, keyIndent, 'strategy');
+  if (st < 0 || !opens(st)) return block;
+  const mx = sub(st + 1, indentOf(body[st + 1]), 'matrix');
+  if (mx < 0 || !opens(mx)) return block;
+  const ind = indentOf(body[mx + 1]);
+  const end = body.findIndex((l, i) => i > mx && l.trim() && indentOf(l) < ind);
+  const matrix = body.slice(mx + 1, end < 0 ? body.length : end).filter((l) => l.trim());
+  // Allowlist, not denylist: YAML has escaped, quoted and anchored spellings of `include`, so every matrix key must be
+  // a plain name holding a one-line literal list, and only `exclude:` (it can only remove cells) may nest (Codex pass 2).
+  let current = null;
+  const lists = {};
+  for (const l of matrix) {
+    if (indentOf(l) > ind) { if (current !== 'exclude') return block; continue; }
+    const kv = l.match(/^\s*([A-Za-z_][\w-]*):(?:\s+(\[[^\]$&*!|>]*\]))?\s*$/);
+    if (!kv || kv[1] === 'include' || (kv[1] === 'exclude') === Boolean(kv[2])) return block;
+    current = kv[1];
+    if (kv[2]) lists[kv[1]] = kv[2];
+  }
+  return lists[m[1]] ? `runs-on: ${lists[m[1]]}` : block;
+}
+
 // TODO-066: no dependency code runs on the owner's Mac before the npm audit gate (D3). Fail closed: every whole-word
 // npm or npx token in a run line is a command (an absolute path before it too), whatever precedes it, and every npm
 // subcommand outside SAFE counts as one that installs (npm 11 aliases included).
@@ -244,7 +282,7 @@ export function checkWorkflow(name, text, { product = false } = {}) {
       const ro = key('runs-on');
       let block = ro >= 0 ? body[ro] : '';
       if (ro >= 0) for (let i = ro + 1; i < body.length && (indentOf(body[i]) > keyIndent || !body[i].trim()); i++) block += `\n${body[i]}`;
-      const reachable = ro < 0 || !hostedOnly(block);
+      const reachable = ro < 0 || !hostedOnly(resolveMatrix(block, body, keyIndent));
       if (product && ro >= 0 && reachable) {
         err(j.at + ro + 2, `job ${j.name} may run on a self-hosted runner: runs-on must name GitHub-hosted labels only (ubuntu-*, macos-*, windows-*)`);
       }

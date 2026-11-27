@@ -2,6 +2,15 @@
 
 All notable changes to catscan, newest first. catscan was developed privately before its first public version; earlier versions are not listed.
 
+## [1.0.3] - 2026-11-27
+
+### Docs
+- The README opens with what catscan checks (truncated and overlapping text, missing strings and raw keys, untranslated and wrong-language text, number, date and price formats), where it runs (locally on Apple silicon Macs, screenshots never leave the machine) and how Playwright tests and mobile test tools use it.
+- The README "Works with" entry for Playwright names what the matchers check in browser-rendered text, Canvas and WebGL included: missing text, truncation, overlap and untranslated strings.
+
+### Changed
+- The repository's CI runs the full test suite on every macOS and Node line catscan supports (macOS 15 and 26, Node 22 and 26), and every release passes it before its packages are published to npm.
+
 ## [1.0.2] - 2026-11-26
 
 ### Fixed

@@ -1,6 +1,6 @@
 {
   "name": "@catscan/cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On-device text checks for app and game screenshots on macOS (Apple Vision).",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/cli" },
@@ -11,6 +11,6 @@
   "files": ["bin"],
   "engines": { "node": ">=22" },
   "dependencies": {
-    "@catscan/core-js": "1.0.2"
+    "@catscan/core-js": "1.0.3"
   }
 }

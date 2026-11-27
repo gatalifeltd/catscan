@@ -9,7 +9,7 @@ import os from "node:os";
 import path from "node:path";
 import { execFileSync, spawnSync } from "node:child_process";
 import Ajv from "ajv";
-import { ROOT, PACKAGES, PUBLIC_REPO, SERVER_JSON, PLUGIN_JSON, MARKETPLACE_JSON, BEHAVIOR_FILE, JSON_CARRIERS, TEXT_CARRIERS, carrierFiles, planBump, parseBehaviorChanges, buildBehaviorChanges, behaviorProblems, publicBehaviorChanges, versionProblems, metadataProblems, minos, mainProblem, notarized, packProblems, selfTestProblem } from "../release-lib.mjs";
+import { ROOT, PACKAGES, PUBLIC_REPO, SERVER_JSON, PLUGIN_JSON, MARKETPLACE_JSON, BEHAVIOR_FILE, JSON_CARRIERS, TEXT_CARRIERS, carrierFiles, planBump, parseBehaviorChanges, buildBehaviorChanges, behaviorProblems, publicBehaviorChanges, versionProblems, metadataProblems, minos, mainProblem, notarized, packProblems, selfTestProblem, publicCiProblems, PUBLIC_SLUG } from "../release-lib.mjs";
 
 function fakeRepo(edit = () => {}) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "catscan-release-"));
@@ -698,4 +698,71 @@ labTest("release-lib bump: a bad or missing version or flag value exits 2 and wr
   const p = spawnSync(process.execPath, ["--preserve-symlinks-main", path.join(root, "scripts/release-lib.mjs"), "bump"], { encoding: "utf8" });
   assert.equal(p.status, 2, p.stderr);
   fs.rmSync(root, { recursive: true, force: true });
+});
+
+// Value: protects=npm publishes only after the public CI matrix passed on the land commit of this version; fails_when=a red, running, missing or other-commit run, or a non-land head, lets the release through; why_new=public CI ran only after publish in 1.0.0; seam=gh JSON (publicCiState); no_claim=what each CI job checks
+test("publicCiProblems: only a completed green push run on the land commit of this export passes", () => {
+  assert.equal(PUBLIC_SLUG, "gatalifeltd/catscan");
+  const T = "c".repeat(40);
+  const commit = { sha: "a".repeat(40), subject: "chore: land v1.0.3", tree: T };
+  const ok = (c, runs) => publicCiProblems("1.0.3", c, runs, T);
+  const run = (o) => ({ databaseId: 7, headSha: commit.sha, event: "push", status: "completed", conclusion: "success", ...o });
+  assert.deepEqual(ok(commit, [run()]), []);
+  assert.deepEqual(ok(commit, [run(), run({ conclusion: "failure" })]), [], "the newest run decides");
+  assert.match(ok(null, []).join(), /no branch land\/v1\.0\.3/);
+  assert.match(ok({ ...commit, subject: "fix: something" }, [run()]).join(), /not the land commit/);
+  assert.match(ok({ ...commit, subject: "chore: land v1.0.2" }, [run()]).join(), /not the land commit/);
+  assert.match(ok(commit, []).join(), /no ci run/);
+  assert.match(ok(commit, [run({ headSha: "b".repeat(40) })]).join(), /no ci run/);
+  assert.match(ok(commit, [run({ event: "workflow_dispatch" })]).join(), /no ci run/);
+  assert.match(ok(commit, [run({ status: "in_progress", conclusion: "" })]).join(), /is in_progress/);
+  for (const conclusion of ["failure", "cancelled", "skipped", "timed_out", ""]) {
+    assert.match(ok(commit, [run({ conclusion })]).join(), /concluded/, conclusion);
+  }
+  // A re-cut tag or a stale land commit: green CI on another tree never passes, and no tree given fails closed.
+  assert.match(ok({ ...commit, tree: "d".repeat(40) }, [run()]).join(), /not the export of this tag/);
+  assert.match(publicCiProblems("1.0.3", commit, [run()], undefined).join(), /none given/);
+  assert.match(ok({ ...commit, tree: undefined }, [run()]).join(), /not the export of this tag/);
+});
+
+// Value: protects=the public-ci CLI reads the land state with gh and fails closed; fails_when=a gh error, a missing branch or another tree exits 0, or a bad version or no tree reaches gh; why_new=publicCiState had live probes only; seam=none (a stub gh on PATH); no_claim=real GitHub API shapes
+test("release-lib public-ci: a stub gh drives every exit; any gh failure fails closed", () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), "catscan-ci-gate-"));
+  const SHA = "a".repeat(40), TREE = "c".repeat(40);
+  const gh = (mode) => {
+    fs.writeFileSync(path.join(dir, "gh"), `#!/bin/sh
+case "$*" in
+  *git/ref/heads/*) [ "${mode}" = 404 ] && { echo "gh: Not Found (HTTP 404)" >&2; exit 1; }
+    [ "${mode}" = 500 ] && { echo "gh: Server Error (HTTP 500)" >&2; exit 1; }
+    echo '{"object":{"sha":"${SHA}"}}' ;;
+  *commits/*) echo '{"commit":{"message":"chore: land v1.0.3","tree":{"sha":"${TREE}"}}}' ;;
+  "run list"*) echo '[{"databaseId":7,"headSha":"${SHA}","event":"push","status":"completed","conclusion":"${mode === "red" ? "failure" : "success"}"}]' ;;
+  *) exit 9 ;;
+esac
+`, { mode: 0o755 });
+  };
+  const cli = (...args) => spawnSync(process.execPath, [path.join(ROOT, "scripts/release-lib.mjs"), "public-ci", ...args],
+    { encoding: "utf8", env: { ...process.env, PATH: `${dir}:${process.env.PATH}` } });
+  try {
+    gh("green");
+    let r = cli("1.0.3", "--tree", TREE);
+    assert.equal(r.status, 0, r.stderr);
+    assert.match(r.stdout, /public ci green on land\/v1\.0\.3/);
+    r = cli("1.0.3", "--tree", "d".repeat(40));
+    assert.equal(r.status, 1);
+    assert.match(r.stderr, /not the export of this tag/);
+    for (const args of [["1.0.3"], ["1.0", "--tree", TREE], ["1.0.3", "--tree", "short"]]) assert.equal(cli(...args).status, 2, args.join(" "));
+    gh("red");
+    assert.match(cli("1.0.3", "--tree", TREE).stderr, /concluded failure/);
+    gh("404");
+    r = cli("1.0.3", "--tree", TREE);
+    assert.equal(r.status, 1);
+    assert.match(r.stderr, /no branch land\/v1\.0\.3/);
+    gh("500");
+    r = cli("1.0.3", "--tree", TREE);
+    assert.equal(r.status, 1);
+    assert.match(r.stderr, /cannot read the public CI state: .*HTTP 500/);
+  } finally {
+    fs.rmSync(dir, { recursive: true, force: true });
+  }
 });

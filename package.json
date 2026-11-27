@@ -1,6 +1,6 @@
 {
   "name": "catscan",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "On-device visual checks for screenshots and video on macOS.",
   "license": "Apache-2.0",
   "repository": {

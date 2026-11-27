@@ -8,6 +8,9 @@
 #                                  `catscan-notary` notarytool profile (D19) and `npm login` with 2FA
 #   scripts/release.sh --dry-run   steps 1-4 only: no signing, no notarization, no publishing; an untagged HEAD is
 #                                  allowed, so the self-hosted runner can run it
+#   --skip-public-ci               a real run without the public CI gate (only when the product repo has never had a
+#                                  land): otherwise npm publishes only after the product repo's ci.yml passed on the
+#                                  pushed land branch land/vX.Y.Z (read-only gh; run with GH_TOKEN set)
 set -euo pipefail
 
 IDENTITY="Developer ID Application: GATALIFE LTD (JK3T6SMS5W)"
@@ -18,11 +21,14 @@ SIZE_BUDGET=$((10 * 1024 * 1024))
 PACKAGES=(cli-darwin-arm64 core-js cli mcp playwright) # publish order (D10)
 
 DRY_RUN=0
-case "${1:-}" in
-  "") ;;
-  --dry-run) DRY_RUN=1 ;;
-  *) echo "usage: scripts/release.sh [--dry-run]" >&2; exit 2 ;;
-esac
+SKIP_PUBLIC_CI=0
+for a in "$@"; do
+  case "$a" in
+    --dry-run) DRY_RUN=1 ;;
+    --skip-public-ci) SKIP_PUBLIC_CI=1 ;;
+    *) echo "usage: scripts/release.sh [--dry-run] [--skip-public-ci]" >&2; exit 2 ;;
+  esac
+done
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
@@ -33,13 +39,14 @@ BIN_DIR="packages/cli-darwin-arm64/bin"
 BIN_DEST="$BIN_DIR/catscan-core"
 OUT=".build/release-packs"
 ZIPDIR=""
+LAND_TMP=""
 # The copied binary exists only for packing; a checkout always runs core/.build (spec 08 D5).
-trap 'rm -rf "$BIN_DIR"; [ -z "$ZIPDIR" ] || rm -rf "$ZIPDIR"' EXIT
+trap 'rm -rf "$BIN_DIR"; [ -z "$ZIPDIR" ] || rm -rf "$ZIPDIR"; [ -z "$LAND_TMP" ] || rm -rf "$LAND_TMP"' EXIT
 
 say "step 1: checkout, tag and versions for $VERSION"
 [ -z "$(git status --porcelain)" ] || die "the checkout is not clean - try: commit or stash, then rerun"
 TAG="$(git describe --exact-match --tags HEAD 2>/dev/null || true)"
-# Spec 25 D19: npm publishes before the land, so the files that will land are checked here; the real run needs the
+# Spec 25 D19: npm publishes before main moves to the land, so the files that will land are checked here; the real run needs the
 # private name list, the dry run on the runner prints a notice without it (D17).
 NAMES=required
 [ "$DRY_RUN" = 0 ] || NAMES=if-available
@@ -57,6 +64,23 @@ else
   node scripts/release-lib.mjs versions "$TAG" || die "release metadata or tag check failed - try: fix each problem printed above, or git tag v$VERSION on the release commit"
   git fetch --quiet origin +refs/heads/main:refs/remotes/origin/main
   node scripts/release-lib.mjs on-main || die "HEAD is not on origin/main - try: merge the release PR, then tag its commit on main"
+fi
+
+# Public CI gates npm, checked before the build and notarization so a red or running CI costs nothing: the land branch
+# land/vX.Y.Z on the product repo holds the land commit whose tree is exactly this tag's export (a re-cut tag or a
+# stale land commit never passes), and its CI matrix (every promised macOS and Node line) passed on it. Fails closed.
+if [ "$DRY_RUN" = 0 ]; then
+  if [ "$SKIP_PUBLIC_CI" = 1 ]; then
+    say "public CI gate skipped (--skip-public-ci)"
+  else
+    LAND_TMP="$(mktemp -d)"
+    scripts/land-public.sh "$VERSION" --dry-run --out "$LAND_TMP/export" > "$LAND_TMP/land.log" 2>&1 \
+      || { tail -20 "$LAND_TMP/land.log" >&2; die "the export of v$VERSION failed (above)"; }
+    { git init -q --bare "$LAND_TMP/git" && GIT_DIR="$LAND_TMP/git" git --work-tree="$LAND_TMP/export" add -A -f \
+      && LAND_TREE="$(GIT_DIR="$LAND_TMP/git" git write-tree)"; } || die "could not hash the export of v$VERSION"
+    node scripts/release-lib.mjs public-ci "$VERSION" --tree "$LAND_TREE" \
+      || die "public CI is not green on land/v$VERSION for this tag - try: push land/v$VERSION to the product repo, wait for gh run watch --repo gatalifeltd/catscan --exit-status <run id> to pass, then rerun (--skip-public-ci only before the first land)"
+  fi
 fi
 
 say "step 2: swift build -c release --arch arm64"

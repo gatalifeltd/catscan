@@ -1,12 +1,16 @@
 # catscan
 
-catscan checks the text on your app and game screenshots, on your Mac, and tells you what is wrong in a verdict, not a wall of OCR. It finds the localization and UI text bugs testers otherwise find by eye, in 61 locales (about 55 languages; [full list](#benchmarks)).
+catscan checks rendered UI text in web pages, app and game screenshots, and screen recordings. It catches truncated and overlapping text, missing strings and raw keys, untranslated and wrong-language text, and wrong number, date and price formats, across 61 locales (about 55 languages; [full list](#benchmarks)).
+
+For web apps, [`@catscan/playwright`](docs/recipes/playwright.md) adds visual text assertions directly to your Playwright tests, including text drawn in Canvas and WebGL. For mobile apps and games, the CLI checks the screenshots and recordings your existing test tools already capture (Maestro, XCUITest, Espresso). Coding agents (Claude Code, Codex, Cursor) get the same verdicts through the MCP server and [agent skills](#agent-skills): a few dozen tokens instead of the screenshot.
+
+catscan runs locally on Apple silicon Macs, using Apple Vision on the Neural Engine. It returns actionable PASS/FAIL verdicts instead of raw OCR, and it never sends your screenshots anywhere.
 
 ![catscan in a terminal checks a phone cart screen that shows a raw key, a cut-off button label, text drawn over an icon and a French line on an English screen](docs/media/catscan-demo.gif)
 
 ## Works with
 
-- **Playwright:** the [`@catscan/playwright`](docs/recipes/playwright.md) matchers assert screen text inside your web tests.
+- **Playwright:** [`@catscan/playwright`](docs/recipes/playwright.md) adds visual text assertions to your web tests. It checks browser-rendered text, including Canvas and WebGL, for missing text, truncation, overlap and untranslated strings.
 - **Maestro:** check every screen of a flow after the run ([recipe](docs/recipes/maestro.md), [example project](examples/maestro/)); `catscan boxes maestro` turns a `maestro hierarchy` dump into element boxes.
 - **XCUITest, UIAutomator and Espresso:** `catscan boxes xcuitest` and `catscan boxes uiautomator` turn the element dump your test saves into boxes for the truncation and overlap checks ([capture guide](docs/truncation-capture.md)).
 - **Any other tool:** catscan checks PNG, JPEG and HEIC screenshots, and MP4 and MOV recordings, however they were made.

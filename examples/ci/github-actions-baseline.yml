@@ -3,7 +3,7 @@
 #   1. `npm ci && npm run screenshots`: the step that makes your screenshots;
 #   2. `shots`: the folder they land in, as shots/<locale>/<screen>.png;
 #   3. `checks.yaml` (per-screen checks, docs/cli.md) and `locales` (your string catalogs, which name the locales).
-# First green run without expectations: npx @catscan/cli@1.0.2 check shots --present "<text every screen shows>" --format github --baseline catscan-baseline.json
+# First green run without expectations: npx @catscan/cli@1.0.3 check shots --present "<text every screen shows>" --format github --baseline catscan-baseline.json
 # Pushing a release tag is the approval: tag only a build whose screens were reviewed. The tag job stores the
 # approved baseline as an asset of that tag's release; pull requests fetch the newest release that has one.
 # The tag job approves the run it makes on the tag commit: tag a commit whose pull-request run was reviewed, with no
@@ -32,14 +32,14 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with: { node-version: 26.13.0 }
       - run: npm ci && npm run screenshots
-      - run: npx @catscan/cli@1.0.2 doctor --expect-locales-from locales
+      - run: npx @catscan/cli@1.0.3 doctor --expect-locales-from locales
       # The newest release with an approved baseline. Before the first approval there is none: catscan warns
       # baseline-missing and every cell is new. A failed lookup fails the job instead of comparing with nothing.
       - env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           TAG=$(gh api "repos/$GITHUB_REPOSITORY/releases?per_page=100" --jq '[.[] | select(any(.assets[]; .name == "catscan-baseline.json"))][0].tag_name // empty')
           if [ -n "$TAG" ]; then gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern catscan-baseline.json --clobber; else echo "no approved baseline yet"; fi
-      - run: npx @catscan/cli@1.0.2 check shots --expect checks.yaml --expect-locales-from locales --format github --results catscan-results.json --report catscan.html --baseline catscan-baseline.json
+      - run: npx @catscan/cli@1.0.3 check shots --expect checks.yaml --expect-locales-from locales --format github --results catscan-results.json --report catscan.html --baseline catscan-baseline.json
       # Optional: stop the job while any cell needs review (exit codes, annotations and JUnit carry no baseline result).
       # - run: jq -e '.baseline.review.cells == 0' catscan-results.json
       - if: always()
@@ -57,10 +57,10 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with: { node-version: 26.13.0 }
       - run: npm ci && npm run screenshots
-      - run: npx @catscan/cli@1.0.2 doctor --expect-locales-from locales
-      - run: npx @catscan/cli@1.0.2 check shots --expect checks.yaml --expect-locales-from locales --format github --results catscan-results.json
+      - run: npx @catscan/cli@1.0.3 doctor --expect-locales-from locales
+      - run: npx @catscan/cli@1.0.3 check shots --expect checks.yaml --expect-locales-from locales --format github --results catscan-results.json
       # Refuses (exit 1) a run with error, needs-reader, unsupported, missing or ambiguous cells: fix them and tag again.
-      - run: npx @catscan/cli@1.0.2 results baseline catscan-results.json --out catscan-baseline.json
+      - run: npx @catscan/cli@1.0.3 results baseline catscan-results.json --out catscan-baseline.json
       - env: { GH_TOKEN: "${{ github.token }}" }
         run: |
           gh release view "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" > /dev/null 2>&1 || gh release create "$GITHUB_REF_NAME" --repo "$GITHUB_REPOSITORY" --verify-tag --notes ""

@@ -101,6 +101,28 @@ test("product mode refuses expressions, groups and custom labels in runs-on", ()
   for (const runsOn of ["macos-26", "ubuntu-24.04", "ubuntu-24.04-arm", "macos-15-intel", "[macos-26]", "\n      - macos-15", "macos-26 # note"]) assert.deepEqual(checkWorkflow("ci.yml", wf({ runsOn }), { product: true }), [], runsOn);
 });
 
+// Value: protects=the product test matrix over the promised macOS lines passes, while a matrix that can reach another runner fails; fails_when=matrix.os resolution trusts an include, a computed matrix or another job's list; why_new=public CI spans macos-15 and macos-26; seam=none; no_claim=GitHub's matrix expansion
+test("product mode resolves runs-on: ${{ matrix.os }} only from the job's literal hosted list", () => {
+  const job = (matrix) => `name: t\non: push\npermissions:\n  contents: read\njobs:\n  build:\n    strategy:\n      fail-fast: false\n      matrix:\n${matrix}    runs-on: \${{ matrix.os }}\n    steps:\n      - run: npm test\n`;
+  for (const ok of ["        os: [macos-15, macos-26]\n        node: [22.23.5, 26.13.0]\n", "        node: [22]\n        os: ['macos-26'] # note\n        exclude:\n          - os: macos-26\n"]) {
+    assert.deepEqual(checkWorkflow("ci.yml", job(ok), { product: true }), [], ok);
+  }
+  for (const bad of ["        os: [macos-26, catscan]\n", "        os: [macos-26]\n        include:\n          - os: catscan\n", "        os: ${{ fromJSON(vars.OS) }}\n",
+    "        os:\n          - macos-26\n", "        node: [22]\n", "        os: [macos-26, self-hosted]\n",
+    "        os: [macos-26]\n        include :\n          - os: catscan\n", "        os: [macos-26]\n        'include':\n          - os: catscan\n",
+    "        os: [macos-26]\n        \"incl\\u0075de\":\n          - os: catscan\n", "        os: [macos-26]\n        <<: *more\n",
+    "        os: [macos-26]\n        node: [22]\n          - os: catscan\n", "        os: &l [macos-26]\n", "        os: [macos-26]\n        {include: [{os: catscan}]}\n"]) {
+    assert.match(checkWorkflow("ci.yml", job(bad), { product: true }).join(), /runs-on must name GitHub-hosted labels only/, bad);
+  }
+  const noStrategy = `name: t\non: push\npermissions:\n  contents: read\njobs:\n  build:\n    runs-on: \${{ matrix.os }}\n    steps:\n      - run: x\n  other:\n    strategy:\n      matrix:\n        os: [macos-26]\n    runs-on: macos-26\n    steps:\n      - run: x\n`;
+  assert.match(checkWorkflow("ci.yml", noStrategy, { product: true }).join(), /job build may run on a self-hosted runner/);
+  // A one-line matrix is never read as a block: its job-level siblings are not the matrix (red-team review).
+  const oneLine = `name: t\non: push\npermissions:\n  contents: read\njobs:\n  build:\n    strategy:\n      matrix: \${{ fromJSON(vars.M) }}\n    needs: [ubuntu-24]\n    runs-on: \${{ matrix.needs }}\n    steps:\n      - run: x\n`;
+  assert.match(checkWorkflow("ci.yml", oneLine, { product: true }).join(), /job build may run on a self-hosted runner/);
+  // A quoted matrix key is refused too: plain names only, so no YAML spelling of include can slip through.
+  assert.match(checkWorkflow("ci.yml", job("        \"os\" : [macos-15, macos-26]\n"), { product: true }).join(), /self-hosted runner/);
+});
+
 // Value: protects=TODO-066 D3-D7, no dependency install script or import runs on a runner the owner's Mac can serve before an unconditional audit, and installs there come only from the audited lockfile; fails_when=a rule is dropped, a multi-line block or an alias slips past, a conditional audit counts, or runner inference falls back to the literal self-hosted; why_new=no install rule existed; seam=none; no_claim=real YAML parsing and npm's alias list beyond the ones named
 test("lab mode: installs skip scripts, follow an unconditional audit, and come from the lockfile on a Mac-reachable job", () => {
   const AUDIT = "      - run: node scripts/check-audit.mjs\n";

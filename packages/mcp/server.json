@@ -5,12 +5,12 @@
   "description": "On-device screenshot and video text checks for coding agents on macOS (Apple Vision).",
   "repository": { "url": "https://github.com/gatalifeltd/catscan", "source": "github", "subfolder": "packages/mcp" },
   "websiteUrl": "https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/mcp.md",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "@catscan/mcp",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "runtimeHint": "npx",
       "transport": { "type": "stdio" }
     }

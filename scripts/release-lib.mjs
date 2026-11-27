@@ -456,6 +456,51 @@ export function selfTestProblem(doctorJson) {
   return null;
 }
 
+/** The product repo's slug for read-only `gh` calls (the release gate below). */
+export const PUBLIC_SLUG = new URL(PUBLIC_REPO).pathname.slice(1);
+
+/**
+ * Why npm must not publish `version` yet, or [] (public CI gates npm publish): the land branch `land/v<version>` on the
+ * product repo holds the land commit of this version, its tree is `tree` (the git tree of this tag's export, so a
+ * re-cut tag or a stale land commit cannot pass), and its newest ci.yml push run on that commit completed green.
+ * `commit` is { sha, subject, tree }; `runs` is `gh run list --json databaseId,headSha,status,conclusion,event` output.
+ */
+export function publicCiProblems(version, commit, runs, tree) {
+  const branch = `land/v${version}`;
+  if (!commit?.sha) return [`no branch ${branch} on ${PUBLIC_REPO}`];
+  if (commit.subject !== `chore: land v${version}`) return [`${branch} head ${commit.sha.slice(0, 12)} is "${commit.subject}", not the land commit "chore: land v${version}"`];
+  if (!/^[0-9a-f]{40}$/.test(tree || "") || commit.tree !== tree) return [`${branch} head ${commit.sha.slice(0, 12)} has tree ${commit.tree || "?"}, not the export of this tag (${tree || "none given"}): land this tag again`];
+  // gh lists the newest run first; a rerun keeps the run id and updates its state.
+  const run = (runs || []).find((r) => r.headSha === commit.sha && r.event === "push");
+  if (!run) return [`no ci run on ${branch} at ${commit.sha.slice(0, 12)} yet`];
+  if (run.status !== "completed") return [`ci run ${run.databaseId} on ${branch} is ${run.status}`];
+  if (run.conclusion !== "success") return [`ci run ${run.databaseId} on ${branch} concluded ${run.conclusion}`];
+  return [];
+}
+
+function gh(args) {
+  const r = spawnSync("gh", args, { encoding: "utf8" });
+  if (r.status !== 0) throw new Error(`gh ${args.join(" ")}: ${(r.stderr || r.error?.message || "").trim()}`);
+  return r.stdout;
+}
+
+/** Reads the land branch and its ci runs with read-only `gh` calls; any gh failure is a problem (fail closed). */
+export function publicCiState(version, slug = PUBLIC_SLUG) {
+  const branch = `land/v${version}`;
+  let sha;
+  try {
+    sha = JSON.parse(gh(["api", `repos/${slug}/git/ref/heads/${branch}`])).object?.sha;
+  } catch (e) {
+    if (/HTTP 404/.test(e.message)) return { commit: null, runs: [] };
+    throw e;
+  }
+  const { message, tree } = JSON.parse(gh(["api", `repos/${slug}/commits/${sha}`])).commit;
+  const subject = message.split("\n")[0];
+  const runs = JSON.parse(gh(["run", "list", "--repo", slug, "--workflow", "ci.yml", "--branch", branch, "--commit", sha,
+    "--event", "push", "--limit", "20", "--json", "databaseId,headSha,status,conclusion,event"]));
+  return { commit: { sha, subject, tree: tree?.sha }, runs };
+}
+
 // Compare both sides resolved: run through a symlinked checkout (macOS /var -> /private/var, or with
 // --preserve-symlinks-main) a plain comparison is false and every subcommand exited 0 doing nothing, so `versions`
 // passed a stale tree (TODO-094 QA, review).
@@ -540,8 +585,25 @@ if (invoked !== null && invoked === real(fileURLToPath(import.meta.url))) {
     }
     fs.writeFileSync(target, text);
     process.exit(problems.length ? 1 : 0);
+  } else if (cmd === "public-ci") {
+    const at = process.argv.indexOf("--tree");
+    const tree = at > 0 ? process.argv[at + 1] : "";
+    if (!/^\d+\.\d+\.\d+$/.test(arg || "") || !/^[0-9a-f]{40}$/.test(tree || "")) {
+      console.error("usage: release-lib.mjs public-ci <X.Y.Z> --tree <git tree sha of the tag's export>");
+      process.exit(2);
+    }
+    let problems;
+    try {
+      const { commit, runs } = publicCiState(arg);
+      problems = publicCiProblems(arg, commit, runs, tree);
+    } catch (e) {
+      problems = [`cannot read the public CI state: ${e.message}`];
+    }
+    for (const p of problems) console.error(`release: ${p}`);
+    if (!problems.length) console.log(`release: public ci green on land/v${arg}`);
+    process.exit(problems.length ? 1 : 0);
   } else {
-    console.error("usage: release-lib.mjs versions [<tag>] | bump <X.Y.Z> | minos <min> | on-main | notarized | pack-files | self-test | behavior-changes");
+    console.error("usage: release-lib.mjs versions [<tag>] | bump <X.Y.Z> | minos <min> | on-main | notarized | pack-files | self-test | behavior-changes | public-ci <X.Y.Z> --tree <sha>");
     process.exit(2);
   }
 }
