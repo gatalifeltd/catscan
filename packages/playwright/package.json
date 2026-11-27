@@ -1,18 +1,18 @@
 {
   "name": "@catscan/playwright",
-  "version": "1.0.3",
-  "description": "Playwright matchers for catscan: assert on text drawn on the screen, canvas included (macOS, Apple Vision).",
+  "version": "1.0.4",
+  "description": "Playwright matchers for catscan: assert on the text drawn on the screen, canvas and WebGL included, and fail on missing, truncated, overlapping or untranslated text. Runs on Apple silicon Macs, locally or on macOS CI runners.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/playwright" },
   "homepage": "https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/playwright.md",
   "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
-  "keywords": ["playwright", "matchers", "canvas", "macos", "apple-vision", "ocr", "visual-testing", "localization"],
+  "keywords": ["ui-testing", "visual-testing", "text-testing", "localization-testing", "ocr", "quality-assurance", "ci", "catscan", "playwright", "e2e-testing", "visual-regression", "matchers", "canvas", "web-testing", "web-test-automation", "screenshot-testing", "localization", "i18n", "l10n", "apple-vision", "macos"],
   "main": "src/index.js",
   "types": "index.d.ts",
   "files": ["src", "index.d.ts"],
   "engines": { "node": ">=22" },
   "dependencies": {
-    "@catscan/core-js": "1.0.3"
+    "@catscan/core-js": "1.0.4"
   },
   "peerDependencies": {
     "@playwright/test": ">=1.50.0 <2"

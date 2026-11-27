@@ -2,17 +2,7 @@
 
 Maestro checks screens through the accessibility tree. Text drawn by a game engine, a canvas or a web view without accessibility labels is invisible to `assertVisible`, so a screen can show a raw key or the wrong language and still pass. catscan reads the screenshots your flows already take, with Apple Vision on the Mac, and fails on raw keys, untranslated strings, missing text and cut-off labels.
 
-Maestro's `runScript` sandbox cannot start processes, so catscan runs next to the flow, not inside a step. Tested with catscan 1.0.3, Maestro 2.6.0, Xcode 27.2 (iOS 27.2 simulator) and an Android 16 QPR2 emulator (API 36.1); [`results/maestro-e2e/`](../../results/maestro-e2e/) has every version of the last end-to-end run.
-
-## 0. First verdict (one minute)
-
-On one locale's Maestro screenshots you already have, with no expect file and no catalog:
-
-```sh
-catscan untranslated path/to/de-screenshots --locale de
-```
-
-It reports raw keys (`onboarding.title`) and unfilled placeholders (`{count}`) on every screen, including text `assertVisible` cannot see. Every input is read in the `--locale` language, so the argument holds one locale's screenshots: a folder, or `*.de.png`.
+Maestro's `runScript` sandbox cannot start processes, so catscan runs next to the flow, not inside a step. Tested with catscan 1.0.4, Maestro 2.6.0, Xcode 27.2 (iOS 27.2 simulator) and an Android 16 QPR2 emulator (API 36.1); [`results/maestro-e2e/`](../../results/maestro-e2e/) has every version of the last end-to-end run.
 
 ## Install
 
@@ -23,14 +13,26 @@ It reports raw keys (`onboarding.title`) and unfilled placeholders (`{count}`) o
    catscan doctor
    ```
 
+   The commands on this page call `catscan` on PATH: install with `-g` as above, or install it in the project (`npm install -D @catscan/cli`) and prefix each with `npx -p @catscan/cli`.
+
 2. Maestro 2.6.0 (`curl -fsSL "https://get.maestro.mobile.dev" | MAESTRO_VERSION=2.6.0 bash`), plus Xcode for iOS, or the Android SDK with an API 33+ emulator for Android.
+
+## First verdict (one minute)
+
+On one locale's Maestro screenshots you already have, with no expect file and no catalog:
+
+```sh
+catscan untranslated path/to/de-screenshots --locale de
+```
+
+It reports raw keys (`onboarding.title`) and unfilled placeholders (`{count}`) on every screen, including text `assertVisible` cannot see. Every input is read in the `--locale` language, so the argument holds one locale's screenshots: a folder, or `*.de.png`.
 
 ## 1. After the run (recommended)
 
 [`examples/maestro/`](../../examples/maestro/) holds two sample apps (SwiftUI and Kotlin Compose, both `org.catscan.sample`), shared flows, expect files and two scripts. Build and install the app for one platform, pick the device, then run every flow for every locale:
 
 ```sh
-cd examples/maestro
+git clone https://github.com/gatalifeltd/catscan && cd catscan/examples/maestro
 maestro list-devices
 export MAESTRO_UDID=<the device id>
 # iOS: build, then install on that simulator

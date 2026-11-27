@@ -29,7 +29,8 @@ export const SURFACES = [
   ['reader-facing', ['README.md', 'CHANGELOG.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'SECURITY.md',
     'TRADEMARKS.md', 'docs/**', 'examples/**', 'plugins/**', '.claude-plugin/**', '.github/**', 'core/schema/**',
     'bench/**/*.md', 'packages/core-js/src/report/page.js', 'packages/core-js/src/report/page.css',
-    'packages/core-js/src/report/overlay.js', 'packages/playwright/index.d.ts', 'packages/*/package.json']],
+    'packages/core-js/src/report/overlay.js', 'packages/playwright/index.d.ts', 'packages/*/package.json',
+    'packages/*/README.md']],
   // The checker's own rule literals spell what they match; its messages are kept clean by hand.
   ['source', ['scripts/check-internal.mjs']],
   ['runtime', ['packages/*/src/**', 'packages/*/bin/**', 'bin/**', 'core/Sources/**', 'bench/languages/table.js',

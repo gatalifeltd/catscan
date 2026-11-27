@@ -1,16 +1,16 @@
 {
   "name": "@catscan/cli",
-  "version": "1.0.3",
-  "description": "On-device text checks for app and game screenshots on macOS (Apple Vision).",
+  "version": "1.0.4",
+  "description": "Command line for catscan: checks rendered UI text in app and game screenshots, web pages and screen recordings for truncation, overlap, missing, untranslated and wrong-language strings and wrong formats, with PASS/FAIL verdicts. Runs on Apple silicon Macs, locally or on macOS CI runners.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/cli" },
   "homepage": "https://github.com/gatalifeltd/catscan#readme",
   "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
-  "keywords": ["cli", "macos", "apple-vision", "ocr", "screenshot-testing", "visual-testing", "localization", "i18n", "l10n", "lqa"],
+  "keywords": ["ui-testing", "visual-testing", "text-testing", "localization-testing", "ocr", "quality-assurance", "ci", "catscan", "cli", "screenshot-testing", "video-testing", "mobile-testing", "localization", "i18n", "l10n", "lqa", "app-localization", "game-localization", "qa", "local-ci", "cloud-ci", "local-first", "apple-vision", "macos"],
   "bin": { "catscan": "bin/catscan.js" },
   "files": ["bin"],
   "engines": { "node": ">=22" },
   "dependencies": {
-    "@catscan/core-js": "1.0.3"
+    "@catscan/core-js": "1.0.4"
   }
 }

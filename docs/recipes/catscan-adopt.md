@@ -53,10 +53,10 @@ are in the [test-speedup recipe](./test-speedup.md#install). In Claude Code run 
 into the tests. Other agents: copy `plugins/catscan/skills/catscan-adopt/` into the agent's skills
 folder.
 
-### catscan itself, before npm publish
+### catscan itself
 
-The npm packages are not published yet. Until they are, build catscan once from a checkout and give
-the skill its path:
+With the npm packages installed, the skill finds catscan by itself. Contributors who work from a checkout build
+catscan once and give the skill its path:
 
 ```bash
 npm ci

@@ -59,11 +59,11 @@ import { expect } from "@catscan/playwright"; // Playwright's expect with the ca
 
 test("home", async ({ page }) => {
   await page.goto("/");
-  await expect(page).toHaveNoUntranslated({ readyText: "Play" });
+  await expect(page).toHaveNoUntranslated({ readyText: "Play" }); // a word your page shows once loaded
 });
 ```
 
-It fails on a raw key or an unfilled placeholder drawn anywhere on the screen, canvas included.
+It fails on a raw key or an unfilled placeholder drawn anywhere on the screen, canvas included. Replace `"Play"` with a word your page always shows once it has loaded: the check waits for it, so it never reads a loading frame.
 
 ## 4. Project setup
 
@@ -219,15 +219,15 @@ Then run each check as its own CI step that runs even when an earlier step faile
 others:
 
 ```bash
-npx catscan formats test-results/catscan --results catscan-formats.json
+npx -p @catscan/cli catscan formats test-results/catscan --results catscan-formats.json
 ```
 
 ```bash
-npx catscan fit test-results/catscan --boxes test-results/catscan --reasons wrapped --results catscan-fit.json
+npx -p @catscan/cli catscan fit test-results/catscan --boxes test-results/catscan --reasons wrapped --results catscan-fit.json
 ```
 
 ```bash
-npx catscan contrast test-results/catscan --boxes test-results/catscan --experimental --results catscan-contrast.json
+npx -p @catscan/cli catscan contrast test-results/catscan --boxes test-results/catscan --experimental --results catscan-contrast.json
 ```
 
 - `formats` runs its default rules (number, date, mixed currency); add `--storefront <region>` or `--prices <file>`
@@ -277,7 +277,7 @@ timeout. Check the text against `catscan-lines.txt`, or raise `timeout`.
 `catscan needs-reader`: catscan reads this locale (`el`, `he`, `hr` and the other Tesseract locales) with Tesseract,
 which is not installed or lacks the language data. The Fix names the command for this Mac, usually
 `brew install tesseract tesseract-lang`; rerun the tests afterwards, no restart needed. `onUnsupported: "skip"` does
-not skip it. `npx catscan doctor --expect-locales el` checks the setup.
+not skip it. `npx -p @catscan/cli catscan doctor --expect-locales el` checks the setup.
 
 ### unsupported
 
@@ -288,7 +288,8 @@ not skip it. `npx catscan doctor --expect-locales el` checks the setup.
 
 `CatscanUnsupportedPlatformError` (`unsupported-platform`, `unsupported-os`, `unsupported-node`, `binary-not-found`,
 `binary-version-mismatch`): not macOS 15+ on Apple silicon with Node 22+, or the catscan binary is missing. Run the
-tests on an Apple silicon Mac and build catscan (step 1); on mixed CI use step 7.
+tests on an Apple silicon Mac; for a missing or mismatched binary, reinstall (`npm install -D @catscan/playwright`, or a
+clean `npm ci`) and run `npx -p @catscan/cli catscan doctor`. On mixed CI use step 7.
 
 ### timeout
 
@@ -303,7 +304,7 @@ for that assertion, or `fallback: "none"` for fast local runs.
 ### core-timeout
 
 `catscan core-timeout`: catscan-core stopped answering several times in a row. Rerun the job; if it repeats, run
-`npx catscan doctor`.
+`npx -p @catscan/cli catscan doctor`.
 
 ### missing-catalog
 
@@ -368,7 +369,7 @@ package ([Upgrade](upgrade.md)).
 
 ### binary-failed
 
-catscan-core could not start or exited. Run `npx catscan doctor` and rebuild if it says so.
+catscan-core could not start or exited. Run `npx -p @catscan/cli catscan doctor` and rebuild if it says so.
 
 ### other-errors
 

@@ -64,7 +64,7 @@ try {
   // The binary package is staged outside the repo with the local build, so a release binary in packages/ is untouched.
   const binPkg = path.join(tmp, "cli-darwin-arm64");
   fs.mkdirSync(path.join(binPkg, "bin"), { recursive: true });
-  fs.copyFileSync(path.join(ROOT, "packages/cli-darwin-arm64/package.json"), path.join(binPkg, "package.json"));
+  for (const f of ["package.json", "README.md"]) fs.copyFileSync(path.join(ROOT, "packages/cli-darwin-arm64", f), path.join(binPkg, f));
   fs.copyFileSync(BIN, path.join(binPkg, "bin/catscan-core"));
   fs.chmodSync(path.join(binPkg, "bin/catscan-core"), 0o755);
   const unlock = packLock(ROOT);
@@ -78,7 +78,7 @@ try {
   } finally { unlock(); }
   const binTarball = packed.find((p) => p.name === "@catscan/cli-darwin-arm64");
   assert.ok(binTarball.size < SIZE_BUDGET, `@catscan/cli-darwin-arm64 tarball is ${binTarball.size} bytes, over the 10 MB budget`);
-  assert.deepEqual(binTarball.files.map((f) => f.path).sort(), ["bin/catscan-core", "package.json"]);
+  assert.deepEqual(binTarball.files.map((f) => f.path).sort(), ["README.md", "bin/catscan-core", "package.json"]);
   app = path.join(tmp, "app");
   fs.mkdirSync(app);
   fs.writeFileSync(path.join(app, "package.json"), JSON.stringify({ name: "catscan-pack-smoke", private: true, overrides }));

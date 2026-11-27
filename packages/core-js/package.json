@@ -1,12 +1,12 @@
 {
   "name": "@catscan/core-js",
-  "version": "1.0.3",
-  "description": "Shared Node layer for catscan: binary launcher, serve client, renderers, exit code.",
+  "version": "1.0.4",
+  "description": "Shared Node layer of catscan: launches the catscan binary, talks to its serve process, renders results and maps them to exit codes. The base of @catscan/cli, @catscan/mcp and @catscan/playwright.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/core-js" },
   "homepage": "https://github.com/gatalifeltd/catscan#readme",
   "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
-  "keywords": ["macos", "apple-vision", "ocr", "screenshot-testing"],
+  "keywords": ["ui-testing", "visual-testing", "text-testing", "localization-testing", "ocr", "quality-assurance", "ci", "catscan", "screenshot-testing", "local-first", "apple-vision", "macos"],
   "main": "src/index.js",
   "files": ["src", "schema", "behavior-changes.json"],
   "engines": { "node": ">=22" },
@@ -16,6 +16,6 @@
     "yaml": "2.9.1"
   },
   "optionalDependencies": {
-    "@catscan/cli-darwin-arm64": "1.0.3"
+    "@catscan/cli-darwin-arm64": "1.0.4"
   }
 }

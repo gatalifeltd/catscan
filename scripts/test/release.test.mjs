@@ -194,10 +194,10 @@ test("release: the notarization match reads all of spctl's output (review)", () 
   assert.equal(r.status, 0, r.stderr);
 });
 
-test("release: the binary tarball holds exactly package.json and bin/catscan-core (review)", () => {
-  assert.deepEqual(packProblems("package/package.json\npackage/bin/catscan-core\n"), []);
-  assert.deepEqual(packProblems("package/package.json\npackage/bin/catscan-core\npackage/bin/catscan-core.dSYM/x\n"), ["unexpected package/bin/catscan-core.dSYM/x"]);
-  assert.deepEqual(packProblems("package/package.json\n"), ["missing package/bin/catscan-core"]);
+test("release: the binary tarball holds exactly package.json, README.md and bin/catscan-core (review)", () => {
+  assert.deepEqual(packProblems("package/package.json\npackage/README.md\npackage/bin/catscan-core\n"), []);
+  assert.deepEqual(packProblems("package/package.json\npackage/README.md\npackage/bin/catscan-core\npackage/bin/catscan-core.dSYM/x\n"), ["unexpected package/bin/catscan-core.dSYM/x"]);
+  assert.deepEqual(packProblems("package/package.json\n"), ["missing package/README.md", "missing package/bin/catscan-core"]);
 });
 
 test("release: the binary to ship must pass its own self-test before publishing (review)", () => {

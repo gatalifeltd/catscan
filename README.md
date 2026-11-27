@@ -13,6 +13,7 @@ catscan runs locally on Apple silicon Macs, using Apple Vision on the Neural Eng
 - **Playwright:** [`@catscan/playwright`](docs/recipes/playwright.md) adds visual text assertions to your web tests. It checks browser-rendered text, including Canvas and WebGL, for missing text, truncation, overlap and untranslated strings.
 - **Maestro:** check every screen of a flow after the run ([recipe](docs/recipes/maestro.md), [example project](examples/maestro/)); `catscan boxes maestro` turns a `maestro hierarchy` dump into element boxes.
 - **XCUITest, UIAutomator and Espresso:** `catscan boxes xcuitest` and `catscan boxes uiautomator` turn the element dump your test saves into boxes for the truncation and overlap checks ([capture guide](docs/truncation-capture.md)).
+- **Cypress, Selenium, WebdriverIO and other web tools:** save viewport screenshots (`cy.screenshot()`, `browser.saveScreenshot()`), then run `npx -p @catscan/cli catscan check`, `untranslated` or `truncated` on the folder. For the truncation and overlap boxes, run the plain DOM page script from the [capture guide](docs/truncation-capture.md#playwright-web) through the tool's execute-script call, save its result as `<screen>.pw.json` next to the PNG and convert it with `catscan boxes playwright`.
 - **Any other tool:** catscan checks PNG, JPEG and HEIC screenshots, and MP4 and MOV recordings, however they were made.
 - **CI:** ready files for GitHub Actions, GitLab, CircleCI, Bitrise, Codemagic and Azure Pipelines in [`examples/ci/`](examples/ci/); Jenkins, Buildkite and any CI that reads JUnit XML through `--junit`. The job runs on an Apple silicon Mac ([CI recipes](docs/recipes/ci.md)).
 - **Coding agents:** Claude Code, Codex, Cursor and any agent that reads `AGENTS.md` ([Agent skills](#agent-skills)).
@@ -61,23 +62,28 @@ Apple silicon Mac, macOS 15 or later, Node 22 or later.
 
 ```bash
 npm install --save-dev @catscan/cli
-npx catscan doctor
+npx -p @catscan/cli catscan doctor
 ```
+
+`doctor` only checks this machine (Node, macOS, the signed binary, Vision); it runs no check on your screens. Pick the package for where you work; each one installs the catscan binary:
+
+- **CLI and CI:** `@catscan/cli`, as above ([`docs/cli.md`](docs/cli.md), [CI recipes](docs/recipes/ci.md)).
+- **Playwright tests:** `npm install --save-dev @catscan/playwright` ([recipe](docs/recipes/playwright.md)).
+- **Coding agents:** the MCP server `npx -y @catscan/mcp@1.0.4` in the agent's MCP config, at the version of your other `@catscan/` packages ([recipe](docs/recipes/mcp.md)), and the `catscan` plugin for the [agent skills](#agent-skills).
 
 ## First run
 
-Take a screenshot with Cmd+Shift+4, then:
+Take a screenshot with Cmd+Shift+4. Type `npx -p @catscan/cli catscan read `, drag the screenshot into the terminal (it pastes the quoted path) and press Return. Then check a word it printed:
 
 ```bash
-npx catscan read ~/Desktop/Screenshot*.png
-npx catscan check ~/Desktop/Screenshot*.png --present "<a word you saw>"
+npx -p @catscan/cli catscan check <dragged path> --present "<a word you saw>"
 ```
 
 `PASS` and exit 0 mean catscan read it. Then point it at a folder of per-locale screenshots:
 
 ```bash
-npx catscan untranslated shots/de --locale de --base locales/en.json --catalog locales/de.json
-npx catscan truncated shots/de --locale de --boxes shots/de --report catscan-report.html
+npx -p @catscan/cli catscan untranslated shots/de --locale de --base locales/en.json --catalog locales/de.json
+npx -p @catscan/cli catscan truncated shots/de --locale de --boxes shots/de --report catscan-report.html
 ```
 
 The report is one offline page: a locale x screen matrix where a missing screenshot shows as `missing`, and the failing screenshots with their boxes drawn ([`docs/report.md`](docs/report.md)). Next: the recipe for your stack in [`docs/start-here.md`](docs/start-here.md).

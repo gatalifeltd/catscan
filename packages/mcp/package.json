@@ -1,12 +1,12 @@
 {
   "name": "@catscan/mcp",
-  "version": "1.0.3",
-  "description": "MCP server for catscan: on-device screenshot and video text checks for coding agents (macOS, Apple Vision).",
+  "version": "1.0.4",
+  "description": "MCP server for catscan: coding agents check the text in screenshots and recordings (missing, truncated, overlapping, untranslated) from a short verdict instead of loading the image. Runs on Apple silicon Macs, locally or in macOS CI.",
   "license": "Apache-2.0",
   "repository": { "type": "git", "url": "git+https://github.com/gatalifeltd/catscan.git", "directory": "packages/mcp" },
   "homepage": "https://github.com/gatalifeltd/catscan/blob/main/docs/recipes/mcp.md",
   "bugs": { "url": "https://github.com/gatalifeltd/catscan/issues" },
-  "keywords": ["mcp", "mcp-server", "model-context-protocol", "coding-agents", "macos", "apple-vision", "ocr", "screenshot-testing", "localization"],
+  "keywords": ["ui-testing", "visual-testing", "text-testing", "localization-testing", "ocr", "quality-assurance", "ci", "catscan", "mcp", "ai-agents", "mcp-server", "model-context-protocol", "coding-agents", "screenshot-testing", "mobile-testing", "localization", "local-first", "apple-vision", "macos"],
   "mcpName": "io.github.gatalifeltd/catscan",
   "bin": { "catscan-mcp": "bin/catscan-mcp.js" },
   "main": "src/server.js",
@@ -17,7 +17,7 @@
     "zod": "4.6.7"
   },
   "optionalDependencies": {
-    "@catscan/cli": "1.0.3",
-    "@catscan/core-js": "1.0.3"
+    "@catscan/cli": "1.0.4",
+    "@catscan/core-js": "1.0.4"
   }
 }

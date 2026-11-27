@@ -70,7 +70,7 @@ The same text is in `CHANGELOG.md` under each release's `### Behavior changes`.
    `plugins/catscan/skills/` folders over the installed ones.
 5. **Rule blocks.** Rerun the updated skill's installer, for example
    `node <skills>/test-speedup/scripts/agent-rules.mjs --root .`; a second run changes nothing.
-6. **Check.** On a Mac, `npx catscan doctor` must pass `binary` and `version`. Anywhere else doctor fails `platform`
+6. **Check.** On a Mac, `npx -p @catscan/cli catscan doctor` must pass `binary` and `version`. Anywhere else doctor fails `platform`
    and has no binary to check, so skip it there. Everywhere, a search for `@catscan/` must show no old version left.
 7. **Baselines.** Run the CI command on your current screenshots. If cells now need review because the reader
    changed, look at them, then approve the run again with `catscan results baseline`.

@@ -38,7 +38,7 @@ class CatscanUnsupportedPlatformError extends CatscanError {}
 function wrap(e) {
   if (e && typeof e.message === "string" && e.message.startsWith("catscan ") && e.anchor) return e;
   const code = (e && typeof e.code === "string" && e.code) || "internal";
-  return fail(code, e && e.message ? e.message : String(e), (e && e.hint) || "rerun; if it repeats, run npx catscan doctor");
+  return fail(code, e && e.message ? e.message : String(e), (e && e.hint) || "rerun; if it repeats, run npx -p @catscan/cli catscan doctor");
 }
 
 const PLATFORM_CODES = new Set(["unsupported-platform", "unsupported-os", "unsupported-node", "binary-not-found", "binary-version-mismatch"]);
@@ -54,20 +54,20 @@ function startError(e) {
  * A skipped check must never pass; error, internal and protocol envelopes are never retried.
  */
 function classify(env, warnings = []) {
-  if (!env || typeof env !== "object") return { kind: "throw", error: fail("internal", "catscan-core sent no envelope", "rerun; if it repeats, run npx catscan doctor") };
+  if (!env || typeof env !== "object") return { kind: "throw", error: fail("internal", "catscan-core sent no envelope", "rerun; if it repeats, run npx -p @catscan/cli catscan doctor") };
   if (!env.verdict || env.verdict === "error" || isInternal(env)) {
     const er = env.error || { code: "internal", message: "malformed response" };
-    return { kind: "throw", error: fail(er.code || "internal", er.message, er.hint || "rerun; if it repeats, run npx catscan doctor") };
+    return { kind: "throw", error: fail(er.code || "internal", er.message, er.hint || "rerun; if it repeats, run npx -p @catscan/cli catscan doctor") };
   }
   // TODO-065: catscan reads this locale once its reader is installed, so the test fails with the install hint;
   // onUnsupported: "skip" is for hosts catscan cannot run on (spec 13 D8), never for this.
   if (env.verdict === "needs-reader") {
     const er = env.error || {};
-    return { kind: "throw", error: fail("needs-reader", er.message || `catscan reads the locale ${env.locale} with a reader that is not installed`, er.hint || "npx catscan doctor --expect-locales " + env.locale) };
+    return { kind: "throw", error: fail("needs-reader", er.message || `catscan reads the locale ${env.locale} with a reader that is not installed`, er.hint || "npx -p @catscan/cli catscan doctor --expect-locales " + env.locale) };
   }
   if (env.verdict === "unsupported") {
     const er = env.error || {};
-    return { kind: "unsupported", error: fail("unsupported", er.message || `catscan cannot read the locale ${env.locale}`, er.hint || "pass locale, or run npx catscan languages") };
+    return { kind: "unsupported", error: fail("unsupported", er.message || `catscan cannot read the locale ${env.locale}`, er.hint || "pass locale, or run npx -p @catscan/cli catscan languages") };
   }
   const missing = [...warnings, ...(env.warnings || [])].find((w) => w && w.code === "catalog-missing");
   if (missing) return { kind: "throw", error: fail("catalog-missing", missing.message, missing.hint || "add the catalog file for this locale") };

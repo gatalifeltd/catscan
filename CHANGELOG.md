@@ -2,6 +2,12 @@
 
 All notable changes to catscan, newest first. catscan was developed privately before its first public version; earlier versions are not listed.
 
+## [1.0.4] - 2026-11-27
+
+### Docs
+- Every npm package has a README on its npm page: what the package is, how to install it, a minimal working example, the requirements and links to the full docs. `@catscan/cli-darwin-arm64` says it is installed by the other packages and is not meant to be installed directly.
+- Each npm package's description says what the package does; those of `@catscan/cli`, `@catscan/mcp` and `@catscan/playwright` also say they run on Apple silicon Macs, locally or on macOS CI runners. The keywords add the repository topics that apply to each package, so the packages show up in npm search for UI, text and localization testing, screenshot testing, Playwright, MCP and coding agents.
+
 ## [1.0.3] - 2026-11-27
 
 ### Docs

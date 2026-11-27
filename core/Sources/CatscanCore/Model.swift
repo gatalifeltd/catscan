@@ -2,7 +2,7 @@
 // Copyright 2026 GATALIFE LTD
 import Foundation
 
-public let catscanVersion = "1.0.3"
+public let catscanVersion = "1.0.4"
 public let serveProtocol = 23 // 2: catalog checks and inventory (spec 02); 3: untranslated (spec 17 D21); 4: video (spec 07 D3); 5: truncated (spec 06 D22); 6: thumbnail (spec 18 D6); 7: overlap (spec 12 D1); 8: truncated reason overflow (TODO-036 D1); 9: text_record (TODO-038 T1); 10: pseudo (TODO-039 T2); 11: overlap boxes and allow, boxes graphic (TODO-046); 12: overlap occlusion, boxes panel and scrolls (TODO-049); 13: wrong_language (TODO-036 T2); 14: formats (TODO-036 T3); 15: uncatalogued (TODO-036 T4); 16: overlap stacked (TODO-067); 17: glyphs (TODO-036 T5); 18: fit (TODO-073); 19: fit orientation portrait-upside-down (TODO-073 D39); 20: fit wrapped and orphan (TODO-074); 21: contrast (TODO-054); 23: overlap geometry, stacked default-on (TODO-067 D17)
 
 /// A warning, or the error of an input (spec 00, "Warnings and errors").

@@ -139,7 +139,7 @@ cp "$OUT/.behavior-changes.lab.json" "$BC" && rm "$OUT/.behavior-changes.lab.jso
 BIN_TGZ="$OUT/catscan-cli-darwin-arm64-$VERSION.tgz"
 SIZE="$(stat -f %z "$BIN_TGZ")"
 [ "$SIZE" -lt "$SIZE_BUDGET" ] || die "$BIN_TGZ is $SIZE bytes, over the 10 MB budget"
-tar -tzf "$BIN_TGZ" | node scripts/release-lib.mjs pack-files || die "$BIN_TGZ must hold exactly package.json and bin/catscan-core"
+tar -tzf "$BIN_TGZ" | node scripts/release-lib.mjs pack-files || die "$BIN_TGZ must hold exactly package.json, README.md and bin/catscan-core"
 ls -l "$OUT"
 
 if [ "$DRY_RUN" = 1 ]; then

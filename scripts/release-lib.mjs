@@ -51,6 +51,10 @@ export const TEXT_CARRIERS = [
   { files: "examples/ci/*", re: /(@catscan\/cli@)([^\s"'`),]+)/g, say: "pins @catscan/cli@" },
   // TODO-059 T4: the MCP recipe pins the server it documents, so an upgrade has a version to move.
   { files: "docs/recipes/mcp.md", re: /(@catscan\/mcp@)([^\s"'`),\]]+)/g, say: "pins @catscan/mcp@", keep: ["<version>"] },
+  // The README's install list pins the server the same way.
+  { files: "README.md", re: /(@catscan\/mcp@)([^\s"'`),\]]+)/g, say: "pins @catscan/mcp@", keep: ["<version>"] },
+  // The npm page of @catscan/mcp shows the same setup, pinned to the version it ships in.
+  { files: "packages/mcp/README.md", re: /(@catscan\/mcp@)([^\s"'`),\]]+)/g, say: "pins @catscan/mcp@" },
   { files: "core/Sources/CatscanCore/Model.swift", re: /(catscanVersion = ")([^"]*)/g, say: "catscanVersion is ", lab: true },
   { files: "test/golden/*/read.jsonl", re: /("catscan":")([^"]*)/g, say: "stamps catscan ", lab: true },
   { files: "docs/recipes/maestro.md", re: /(Tested with catscan )([^\s,]+)/g, say: "says Tested with catscan ", lab: true },
@@ -438,9 +442,9 @@ export function notarized(spctlOutput) {
   return /: accepted$/m.test(out) && !/: rejected/m.test(out) && /^source=Notarized Developer ID$/m.test(out);
 }
 
-/** Entries of the binary tarball beyond exactly package.json and bin/catscan-core: nothing else ships (review). */
+/** Entries of the binary tarball beyond exactly package.json, README.md and bin/catscan-core: nothing else ships (review). */
 export function packProblems(tarList) {
-  const want = ["package/bin/catscan-core", "package/package.json"];
+  const want = ["package/README.md", "package/bin/catscan-core", "package/package.json"];
   const got = tarList.split("\n").map((l) => l.trim()).filter(Boolean).sort();
   const extra = got.filter((f) => !want.includes(f)).map((f) => `unexpected ${f}`);
   const missing = want.filter((f) => !got.includes(f)).map((f) => `missing ${f}`);
